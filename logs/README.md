@@ -13,5 +13,4 @@ Use this directory for:
 
 Do not place final thesis deliverables here. Put final reports, slides, and shareable outputs in `outputs/`.
 
-Current status: initialized only. No project-wide execution log has been added yet.
-
+Current status: initialized and in use. See the dated Markdown files in this directory for cleanup, environment, and process records.

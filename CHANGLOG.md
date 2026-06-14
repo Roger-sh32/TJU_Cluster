@@ -4,6 +4,27 @@ This file records project-container changes at the repository root.
 
 Note: the filename follows the requested spelling `CHANGLOG.md`.
 
+## 2026-06-14
+
+### Changed
+
+- Added root `README.md` as the GitHub-facing project entrypoint.
+- Updated Markdown entry documents after Git initialization.
+- Clarified ignored local data directories and current HDBSCAN caution notes.
+- Fixed mojibake in repository-level Markdown references.
+
+### Existing Content Recognized
+
+- `environment.yml` records the reproducible `autodrive-cluster` environment.
+- `activate_project.ps1` provides a local PowerShell activation helper.
+- `HDBSCAN/logs.md` records the 2026-06-14 `intersection_flag` feature extraction change.
+
+### Not Done
+
+- No experiment was rerun.
+- No result table was regenerated.
+- No dataset file was added to Git.
+
 ## 2026-06-13
 
 ### Changed

@@ -11,7 +11,7 @@ Current technical focus:
 - Dataset: `nuScenes v1.0-trainval`
 - Main method track: scene feature engineering + UMAP/HDBSCAN clustering + corner case scoring
 - Baseline/legacy track: KMeans clustering experiments
-- Thesis outputs: Tongji MEM proposal, technical route documents, and later dissertation materials
+- Thesis outputs: Tongji MEM proposal, mid-term materials, technical route documents, and later dissertation materials
 
 ## How AI Should Collaborate
 
@@ -25,11 +25,19 @@ Current technical focus:
 
 ## Where To Look First
 
+For GitHub-facing project orientation:
+
+- `README.md`
+
+For AI collaboration rules and content placement:
+
+- `AGENTS.md`
+
 For HDBSCAN feature extraction, clustering, corner scoring, and scene review:
 
 - `HDBSCAN/`
 - Start with `HDBSCAN/README.md`
-- Then inspect `scripts/scene_feature_hdbscan.py`, `scripts/cluster_umap_hdbscan.py`, `scripts/corner_case_detection.py`, and `scripts/review_nuscenes_scenes.py`
+- Then inspect `HDBSCAN/scripts/scene_feature_hdbscan.py`, `HDBSCAN/scripts/cluster_umap_hdbscan.py`, `HDBSCAN/scripts/corner_case_detection.py`, and `HDBSCAN/scripts/review_nuscenes_scenes.py`
 
 For KMeans baseline and older clustering experiments:
 
@@ -116,14 +124,17 @@ Examples:
 
 - `knowledge/sources/` already contains real source materials.
 - `outputs/开题/` already contains proposal-stage deliverables.
-- `HDBSCAN/` already contains scripts, result tables, analysis workbooks, and a local `README.md`.
-- `knowledge/wiki/` is currently initialized as a place for reusable knowledge, but no real wiki article has been added yet.
-- `logs/` is currently initialized as the project-wide process log area.
+- `outputs/中期/` contains the current mid-term outline.
+- `HDBSCAN/` contains scripts, result tables, analysis workbooks, and a local `README.md`.
+- `Kmeans/` contains the baseline/legacy KMeans track.
+- `knowledge/wiki/` is initialized as a place for reusable knowledge, but no full wiki article has been added yet.
+- `logs/` is initialized and in use as the project-wide process log area.
 
 ## Current Cautions
 
 - Some HDBSCAN CSV results may not exactly match the latest script versions. Check timestamps and `HDBSCAN/README.md` before using them as reproducible results.
 - Existing HDBSCAN feature tables do not reliably include `scene_token` / `scene_name`, which limits direct traceability back to nuScenes scenes.
+- `intersection_flag` extraction was revised on 2026-06-14, but historical CSV results have not yet been regenerated.
 - OpenCV in the current environment may have `GUI: NONE`; scene playback may fall back to GIF export.
 - Some nuScenes camera files may be missing locally, so scene review exports can fail for affected scenes.
-
+- `nuScenes/`, `exports/`, and `Kmeans/聚类/` are intentionally ignored by Git.
