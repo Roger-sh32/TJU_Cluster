@@ -1,0 +1,17 @@
+# Source dataset and generated preview assets.
+nuScenes/
+exports/
+Kmeans/聚类/
+
+# Python cache and local runtime artifacts.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments and editor noise.
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+~$*

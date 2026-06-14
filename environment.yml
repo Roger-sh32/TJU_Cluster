@@ -1,0 +1,22 @@
+name: autodrive-cluster
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - hdbscan
+  - umap-learn
+  - pillow
+  - pip
+  - pip:
+      - nuscenes-devkit
+      - pyquaternion
+      - tqdm
+      - fire
+      - descartes
+      - opencv-python-headless
