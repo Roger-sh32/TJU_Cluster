@@ -279,6 +279,9 @@ for scene_idx, scene in enumerate(tqdm(nusc.scene[:850], desc="Processing scenes
     ego_heading_change_total = np.sum(np.abs(np.diff(ego_yaws))) if len(ego_yaws) > 1 else 0.0
 
     scene_features.append({
+        'scene_name': scene['name'],
+        'scene_token': scene['token'],
+        'log_location': map_name,
         'frame_count': frame_count,
 
         # 周围车辆速度/密度特征

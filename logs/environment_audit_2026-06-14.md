@@ -373,3 +373,149 @@ git --version
 - `D:\Python\Conda\envs\autodrive-cluster\python.exe`
 - 核心依赖可导入
 - `git version 2.54.0.windows.1`
+
+## 2026-06-14 Python 3.7 卸载与 Launcher 更新
+
+用户确认无其他项目依赖 `D:\Python\Python37\python.exe` 后，执行了 Python 3.7 清理。
+
+### 已执行
+
+卸载 Python 3.7：
+
+```powershell
+winget uninstall --id Python.Python.3.7 -e --accept-source-agreements
+```
+
+升级 Python Launcher：
+
+```powershell
+winget upgrade --id Python.Launcher -e --accept-package-agreements --accept-source-agreements
+```
+
+移除旧 Python Launcher：
+
+```powershell
+winget uninstall --id Python.Launcher --version "< 3.7.8" --accept-source-agreements
+```
+
+Python 3.7 卸载后仍残留包目录，未直接删除，已改名备份：
+
+- 原目录：`D:\Python\Python37`
+- 备份目录：`D:\Python\Python37.uninstalled-backup-20260614`
+
+### 当前 Python 安装清单
+
+当前 Windows 卸载清单中仅保留：
+
+- `Miniconda3 py313_25.9.1-3 (Python 3.13.9 64-bit)`
+- `Python Launcher 3.13.5150.0`
+
+当前 `py`：
+
+```powershell
+where.exe py
+py -0p
+py --version
+```
+
+结果：
+
+- `C:\Users\MSI\AppData\Local\Programs\Python\Launcher\py.exe`
+- `py` 可识别 Microsoft Store Python 3.10
+- `py --version` 输出 `Python 3.10.11`
+
+### 项目环境复测
+
+执行：
+
+```powershell
+. .\activate_project.ps1
+python --version
+python -c 'import sys, pandas, hdbscan, umap, nuscenes; print(sys.executable); print(123)'
+python -m pip check
+```
+
+结果：
+
+- `Python 3.9.23`
+- `D:\Python\Conda\envs\autodrive-cluster\python.exe`
+- 核心依赖导入正常
+- `No broken requirements found.`
+
+## 2026-06-14 python.exe 弹窗排查
+
+用户反馈 Windows 弹窗：
+
+```text
+python.exe - 应用程序异常
+应用程序发生异常 未知的软件异常 (0xc06d007f)
+```
+
+### 已排查
+
+直接运行以下 Python 均未复现弹窗：
+
+- Microsoft Store Python 3.10
+- Conda 项目环境 `D:\Python\Conda\envs\autodrive-cluster\python.exe`
+
+项目环境仍正常：
+
+```powershell
+. .\activate_project.ps1
+python --version
+python -c 'import sys; print(sys.executable)'
+```
+
+输出：
+
+- `Python 3.9.23`
+- `D:\Python\Conda\envs\autodrive-cluster\python.exe`
+
+### 已发现并处理
+
+VS Code Python 扩展缓存中仍保留旧解释器：
+
+- `D:\Python\Python37\python.exe`
+
+已备份并删除相关 locator 缓存文件：
+
+- 备份目录：`C:\Users\MSI\.codex\vscode-pythonLocator-backup-20260614-202625`
+- 删除文件：
+  - `C:\Users\MSI\AppData\Roaming\Code\User\globalStorage\ms-python.python\pythonLocator\e700657700ca3726.3.json`
+  - `C:\Users\MSI\AppData\Roaming\Code\User\globalStorage\ms-python.python\pythonLocator\e700657700ca3726.4.json`
+
+复查：
+
+```powershell
+rg -n "Python37|D:\\Python\\Python37|Python37.uninstalled" "C:\Users\MSI\AppData\Roaming\Code\User\globalStorage\ms-python.python" -S
+```
+
+结果：
+
+- 无匹配。
+
+### 仍需管理员权限处理
+
+机器级 PATH 中发现一个损坏项：
+
+```text
+C:;Windows\system32
+```
+
+正确值应为：
+
+```text
+C:\Windows\system32
+```
+
+当前非管理员进程无法写入 Machine PATH。若后续仍有异常弹窗，建议用“管理员 PowerShell”执行：
+
+```powershell
+[Environment]::SetEnvironmentVariable(
+  'Path',
+  'D:\虚拟机\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\cmd',
+  'Machine'
+)
+```
+
+执行后需要重启 VS Code / Cursor / 终端。

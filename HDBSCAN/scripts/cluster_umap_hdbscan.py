@@ -4,9 +4,16 @@ import pandas as pd
 import numpy as np
 import umap
 import hdbscan
-import matplotlib.pyplot as plt
 from pathlib import Path
 from sklearn.preprocessing import StandardScaler
+
+try:
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+except Exception as exc:
+    plt = None
+    print(f"Matplotlib unavailable, skip cluster plot: {exc}")
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 HDBSCAN_ROOT = SCRIPT_DIR.parent
@@ -72,7 +79,9 @@ umap_model = umap.UMAP(
     min_dist=umap_best_params["min_dist"],
     n_components=umap_best_params["n_components"],
     metric=umap_best_params["metric"],
-    random_state=42
+    random_state=42,
+    n_jobs=1,
+    low_memory=True
 )
 X_umap = umap_model.fit_transform(X)
 
@@ -91,6 +100,8 @@ labels = clusterer.fit_predict(X_umap)
 # 7. 保存聚类结果
 # =========================
 df_out = df_raw.copy()  # 保留原始字符串列：scene_token 等
+for i in range(X_umap.shape[1]):
+    df_out[f"umap_{i}"] = X_umap[:, i]
 df_out["cluster"] = labels
 df_out.to_csv(TABLES_DIR / "scene_features_umap_hdbscan.csv", index=False)
 
@@ -101,9 +112,10 @@ print("Cluster count:", len(set(labels)))
 # =========================
 # 8. 可视化
 # =========================
-plt.figure(figsize=(8, 6))
-plt.scatter(X_umap[:, 0], X_umap[:, 1], c=labels, cmap="Spectral", s=12)
-plt.title("UMAP + HDBSCAN Clustering")
-plt.grid(True)
-plt.savefig(PICTURES_DIR / "Figure_1.png", dpi=150, bbox_inches="tight")
-plt.show()
+if plt is not None:
+    plt.figure(figsize=(8, 6))
+    plt.scatter(X_umap[:, 0], X_umap[:, 1], c=labels, cmap="Spectral", s=12)
+    plt.title("UMAP + HDBSCAN Clustering")
+    plt.grid(True)
+    plt.savefig(PICTURES_DIR / "Figure_1.png", dpi=150, bbox_inches="tight")
+    plt.close()

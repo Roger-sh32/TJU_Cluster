@@ -15,7 +15,11 @@ TABLES_DIR.mkdir(exist_ok=True)
 df = pd.read_csv(TABLES_DIR / "scene_features_umap_hdbscan.csv")
 
 # 特征列（排除 cluster 列）
-feature_cols = [c for c in df.columns if c not in ["cluster"]]
+feature_cols = [
+    c for c in df.select_dtypes(include=[np.number]).columns
+    if c not in ["cluster", "corner_score", "corner_score_norm", "rarity", "atypical", "risk"]
+    and not c.startswith("umap_")
+]
 
 # 聚类标签
 labels = df["cluster"].values
