@@ -47,6 +47,10 @@ conda env update -f environment.yml --prune
 
 注意：当前环境使用 `opencv-python-headless`，因此 OpenCV GUI 窗口可能不可用；场景回看脚本会优先使用 GIF fallback。
 
+Windows 与 macOS 协同开发、nuScenes 数据放置、Git 同步边界和当前环境状态见：
+
+- `docs/development_environment.md`
+
 ## HDBSCAN 主流程
 
 从 `HDBSCAN/` 目录执行：
