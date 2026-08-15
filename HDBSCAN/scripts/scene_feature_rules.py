@@ -600,7 +600,10 @@ def is_evasive_lane_change(
     maximum_brief_obstacle_distance=20.0,
 ):
     """Identify obstacle avoidance while excluding ordinary turning maneuvers."""
-    obstacle_evidence = stationary_max_duration >= minimum_stationary_duration
+    obstacle_evidence = (
+        stationary_max_duration >= minimum_stationary_duration
+        or (lateral_shift >= 4.0 and net_heading_change <= 0.10)
+    )
     return bool(
         stationary_event_count > 0
         and obstacle_evidence

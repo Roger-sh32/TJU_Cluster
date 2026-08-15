@@ -746,6 +746,9 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         scene_timestamps,
     )
     static_indices = [
+        index for index, active in enumerate(stopped_lead_split.static_flags) if active
+    ]
+    blocked_indices = [
         index for index, active in enumerate(blocked_path_flags) if active
     ]
     first_stationary_lead_index = static_indices[0] if static_indices else None
@@ -756,6 +759,9 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     )
     static_stationary_distances = [
         stationary_lead_distances_by_frame[index] for index in static_indices
+    ]
+    blocked_stationary_distances = [
+        stationary_lead_distances_by_frame[index] for index in blocked_indices
     ]
     ego_evasive_lateral_shift = lateral_shift_after_index(
         ego_positions,
@@ -772,25 +778,43 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         horizon=10.0,
     )
     ego_evasive_lane_change = is_evasive_lane_change(
-        blocked_path_summary.count,
+        stationary_lead_summary.count,
         ego_evasive_lateral_shift,
         ego_evasive_net_heading_change,
-        stationary_max_duration=blocked_path_summary.max_duration,
+        stationary_max_duration=stationary_lead_summary.max_duration,
         stationary_min_distance=(
             float(np.min(static_stationary_distances))
             if static_stationary_distances
             else 80.0
         ),
     )
+    first_blocked_index = blocked_indices[0] if blocked_indices else None
+    first_blocked_heading = (
+        ego_yaws[first_blocked_index] if first_blocked_index is not None else None
+    )
+    route_lateral_shift = lateral_shift_after_index(
+        ego_positions,
+        scene_timestamps,
+        first_blocked_index if first_blocked_index is not None else -1,
+        first_blocked_heading if first_blocked_heading is not None else 0.0,
+        horizon=10.0,
+    )
+    route_net_heading_change = net_heading_change_after_index(
+        ego_yaws,
+        scene_timestamps,
+        first_blocked_index if first_blocked_index is not None else -1,
+        first_blocked_heading if first_blocked_heading is not None else 0.0,
+        horizon=10.0,
+    )
     obstacle_induced_route_deviation_candidate = is_obstacle_induced_route_deviation(
         blocked_path_summary.max_duration,
         (
-            float(np.min(static_stationary_distances))
-            if static_stationary_distances
+            float(np.min(blocked_stationary_distances))
+            if blocked_stationary_distances
             else 80.0
         ),
-        ego_evasive_lateral_shift,
-        ego_evasive_net_heading_change,
+        route_lateral_shift,
+        route_net_heading_change,
     )
     oncoming_during_avoidance_flags = events_within_context(
         oncoming_vehicle_flags,

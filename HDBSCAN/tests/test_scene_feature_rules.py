@@ -322,8 +322,8 @@ class SceneFeatureRulesTest(unittest.TestCase):
             )
         )
 
-    def test_evasive_lane_change_rejects_brief_distant_obstacle_despite_shift(self):
-        self.assertFalse(
+    def test_evasive_lane_change_accepts_brief_obstacle_with_strong_recovered_shift(self):
+        self.assertTrue(
             self.rules.is_evasive_lane_change(
                 stationary_event_count=1,
                 lateral_shift=4.8,

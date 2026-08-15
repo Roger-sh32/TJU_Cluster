@@ -4,6 +4,23 @@ This file records project-container changes at the repository root.
 
 Note: the filename follows the requested spelling `CHANGLOG.md`.
 
+## 2026-08-15
+
+### Changed
+
+- Added construction-blockage and obstacle-induced route-deviation features.
+- Filtered false TTC and stationary-obstacle events caused by ego turning past static opposing or roadside vehicles.
+- Tightened evasive-maneuver evidence while retaining strong heading-recovered obstacle avoidance.
+- Added sustained VRU relevance for strict risk scoring while preserving raw proximity diagnostics.
+- Expanded the HDBSCAN semantic feature whitelist from 45 to 48 fields.
+- Regenerated independent 50-scene validation, clustering-chain, and corner-score outputs without overwriting formal 850-scene results.
+
+### Validation
+
+- Added and passed 69 unit tests.
+- Verified `scene-0071`, `scene-0067`, `scene-0103`, `scene-0102`, and `scene-0126` against user labels.
+- Preserved historical positive controls `scene-0011` and `scene-0026`.
+
 ## 2026-06-14
 
 ### Changed
