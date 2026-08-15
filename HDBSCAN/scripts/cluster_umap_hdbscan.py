@@ -1,11 +1,14 @@
 '''UMAP + HDBSCAN 聚类脚本'''
 
+import os
 import pandas as pd
 import numpy as np
 import umap
 import hdbscan
 from pathlib import Path
 from sklearn.preprocessing import StandardScaler
+
+from feature_selection import select_clustering_features
 
 try:
     import matplotlib
@@ -22,14 +25,19 @@ PICTURES_DIR = HDBSCAN_ROOT / "pictures"
 TABLES_DIR.mkdir(exist_ok=True)
 PICTURES_DIR.mkdir(exist_ok=True)
 
+FEATURE_INPUT_NAME = os.getenv("SCENE_CLUSTER_FEATURE_INPUT", "scene_features.csv")
+CLUSTER_OUTPUT_NAME = os.getenv("SCENE_CLUSTER_CLUSTER_OUTPUT", "scene_features_umap_hdbscan.csv")
+CLUSTER_FIGURE_NAME = os.getenv("SCENE_CLUSTER_CLUSTER_FIGURE", "Figure_1.png")
+
 # =========================
 # 1. 加载特征表
 # =========================
 print("Loading features...")
-df_raw = pd.read_csv(TABLES_DIR / "scene_features.csv")
+df_raw = pd.read_csv(TABLES_DIR / FEATURE_INPUT_NAME)
 
-# 只保留数值列（非常关键）
-df = df_raw.select_dtypes(include=[np.number]).copy()
+# 只使用场景语义和交互特征，不让风险结果与哨兵值定义聚类。
+df = select_clustering_features(df_raw)
+print("Clustering features:", list(df.columns))
 
 # 处理 inf 和 nan
 df = df.replace([np.inf, -np.inf], 30.0).fillna(0.0)
@@ -103,9 +111,11 @@ df_out = df_raw.copy()  # 保留原始字符串列：scene_token 等
 for i in range(X_umap.shape[1]):
     df_out[f"umap_{i}"] = X_umap[:, i]
 df_out["cluster"] = labels
-df_out.to_csv(TABLES_DIR / "scene_features_umap_hdbscan.csv", index=False)
+df_out["cluster_probability"] = clusterer.probabilities_
+df_out["cluster_outlier_score"] = clusterer.outlier_scores_
+df_out.to_csv(TABLES_DIR / CLUSTER_OUTPUT_NAME, index=False)
 
-print("✔ 聚类完成，结果保存到 scene_features_umap_hdbscan.csv")
+print(f"✔ 聚类完成，结果保存到 {CLUSTER_OUTPUT_NAME}")
 print("Cluster count:", len(set(labels)))
 
 
@@ -117,5 +127,5 @@ if plt is not None:
     plt.scatter(X_umap[:, 0], X_umap[:, 1], c=labels, cmap="Spectral", s=12)
     plt.title("UMAP + HDBSCAN Clustering")
     plt.grid(True)
-    plt.savefig(PICTURES_DIR / "Figure_1.png", dpi=150, bbox_inches="tight")
+    plt.savefig(PICTURES_DIR / CLUSTER_FIGURE_NAME, dpi=150, bbox_inches="tight")
     plt.close()

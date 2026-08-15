@@ -4,6 +4,71 @@
 
 当前目录内已有一套独立结果，不应与仓库根目录下的同名 CSV 混用。根目录的历史文件来自更早的实验链路，字段结构与本目录结果不完全一致。
 
+## 0. 当前开发状态（2026-07-11）
+
+当前脚本已经进入“特征收紧与重构”阶段，正式 850 场景结果尚未用最新脚本全量重跑。
+
+已更新但尚未全量重跑的内容：
+
+- `scripts/scene_feature_hdbscan.py`
+  - 路口特征拆分为 `intersection_density` 和 `lane_connector_density`
+  - 前车/TTC 改为基于 ego 坐标系的前向与横向筛选
+  - 重车特征新增 `truck_bus_dynamic_ratio`
+  - VRU 特征新增 `pedestrian_front_ratio`、`pedestrian_crossing_risk_ratio`、`crosswalk_pedestrian_ratio`
+  - 两轮车新增 `two_wheeler_dynamic_ratio`
+  - ego 动态新增 `ego_decel_min`、`ego_hard_accel_ratio`
+  - 支持 `SCENE_CLUSTER_MAX_SCENES` 和 `SCENE_CLUSTER_FEATURE_OUTPUT` 做小样本验证
+- `scripts/cluster_umap_hdbscan.py`
+  - 支持 `SCENE_CLUSTER_FEATURE_INPUT`、`SCENE_CLUSTER_CLUSTER_OUTPUT`、`SCENE_CLUSTER_CLUSTER_FIGURE`
+- `scripts/corner_case_detection.py`
+  - 风险分数改为加权风险组件
+  - `corner_score` 权重改为 `rarity=0.25`、`atypical_norm=0.25`、`risk=0.50`
+  - 支持 `SCENE_CLUSTER_CLUSTER_INPUT` 和 `SCENE_CLUSTER_SCORE_OUTPUT`
+
+当前 debug 验证产物：
+
+- `tables/scene_features_debug_50.csv`
+- `tables/scene_features_debug_50_umap_hdbscan.csv`
+- `tables/scene_features_debug_50_with_corner_score.csv`
+
+这些 debug 文件只用于验证新特征定义，不应当替代正式论文结果。正式结果仍以完整 850 场景重跑后的 `scene_features.csv`、`scene_features_umap_hdbscan.csv`、`scene_features_with_corner_score.csv` 为准。
+
+### 2026-07-11 事件窗口化 V2 验证
+
+在用户人工复核 5 个场景后，当前开发版进一步将“目标暴露、路径交互、危险后果”拆开：
+
+- 新增纯规则模块 `scripts/scene_feature_rules.py`，识别同车道跟随、合流暴露/冲突、横向交通暴露/冲突和 VRU 横穿暴露/冲突。
+- ego 速度和加速度改用真实 sample 时间戳，航向变化处理 `+/-pi` 跳变。
+- 周边车辆统计限制为自车 50 米内，前车距离改为车身净间距并过滤重叠标注。
+- TTC 同车道横向中心带收紧为 `1.8m`，避免相邻车道和右转车辆进入纵向 TTC。
+- 新增事件比例、事件次数和最长持续时间；路口停车作为“主动让行”上下文记录。
+- 聚类改用 `scripts/feature_selection.py` 的显式场景语义白名单，不再输入 TTC、急刹、默认距离和 `frame_count`。
+- HDBSCAN 输出新增 `cluster_probability` 和 `cluster_outlier_score`。
+- corner score 改由 `scripts/corner_scoring.py` 计算纵向、合流/横穿、VRU、自车响应四组固定阈值风险，不再对风险特征逐列做批次 MinMax。
+- 决策过程新增起始停车、行驶后停车、再起步、静止前车、避让换道、VRU 事件次数和真实后续轨迹相关性。
+- VRU 补充同车道暴露、同向行走和“静止障碍避让窗口内 VRU 冲突”复合特征，分别描述车道占用与避障遮挡风险。
+- 同车道 VRU 进一步使用 walkway 与自车 lane 中心线约束；严格 VRU 风险使用录像中的同步未来轨迹和真实车道进入复核，远距离或始终位于人行道的 VRU 只保留为暴露。
+- 合流候选要求正向速度、同向 annotation 朝向和至少 1 秒持续时间；对向车辆不再仅因未来最近距离较小而算作合流。
+- 侧向同向车辆进一步拆分为超车暴露、非超车的未来路径汇合、实际进入当前 ego lane 三层语义；超车本身不直接增加风险评分。
+- VRU 观测相关性新增场景内最近接近时刻，用于区分冲突前接近、驶过后近距和路线分离。
+- TTC 最小值新增目标 annotation/instance、类别、场景时刻、净距离、横向位置、目标速度、相对速度和航向差，支持从场景级数值回溯到具体参与者。
+- 前方停止目标拆分为当前停止、永久静止障碍和场景内曾运动的暂时停车前车；左转横向车流交互与停车前/后横向冲突分别输出。
+- 地图控制新增交通灯、停车标志、转向停车和非信号路口密度；交通灯相位在 nuScenes 中不可用。
+- 评分拆分为 `observed_risk` 和 `decision_demand`：停车让行降低当前剩余冲突，但非信号环境下的观察与通行决策需求仍单独保留；检测到高密度交通灯控制时，非信号路口决策需求按最高 80% 衰减。
+
+V2 debug 产物：
+
+- `tables/scene_features_v2_debug_50.csv`
+- `tables/scene_features_v2_debug_50_umap_hdbscan.csv`
+- `tables/scene_features_v2_debug_50_with_corner_score.csv`
+- `tables/scene_features_decision_debug_50.csv`
+- `tables/scene_features_decision_debug_50_umap_hdbscan.csv`
+- `tables/scene_features_decision_debug_50_with_corner_score.csv`
+
+注意：最新 50 条调试表包含 95 列原始场景字段，并形成两个开发簇（28/22）。该批次经过多轮人工案例定向调参，不能用其 `corner_score` 排名或簇分布作为论文正式结论；正式结论仍需完整 850 场景复跑和独立抽样验证。
+
+第二个独立开发批次使用 nuScenes scene 表索引 `50:100`，输出为 `tables/scene_features_batch_0051_0100*.csv`。实际 scene 名范围为 `scene-0053` 至 `scene-0126`，共 50 条、113 列原始字段。加入事件归因特征后当前固定参数将 50 条均标为噪声，因此该批次仅用于规则验证。详细命令、抽样方法和人工审核问题见 `logs/feature_batch_0051_0100_2026-07-12.md`。
+
 ## 1. 当前目录文件清单
 
 ### 1.0 目录结构
@@ -20,9 +85,12 @@
 
 | 文件 | 类型 | 作用 | 当前状态 | 备注 |
 | --- | --- | --- | --- | --- |
-| `scripts/scene_feature_hdbscan.py` | 主流程脚本 | 从 `nuScenes` 提取场景级特征，输出 `tables/scene_features.csv` | 当前版本可运行 | 输出 850 个场景、24 个特征；不包含 `scene_token` / `scene_name` |
-| `scripts/cluster_umap_hdbscan.py` | 主流程脚本 | 对特征做标准化、UMAP 降维、HDBSCAN 聚类 | 当前版本可运行 | 输出 `tables/scene_features_umap_hdbscan.csv` 和 `pictures/Figure_1.png` |
-| `scripts/corner_case_detection.py` | 主流程脚本 | 基于聚类结果计算 `rarity / atypical / risk / corner_score` | 当前版本可运行 | 输出 `tables/scene_features_with_corner_score.csv` |
+| `scripts/scene_feature_hdbscan.py` | 主流程脚本 | 从 `nuScenes` 提取场景与事件特征，输出 `tables/scene_features.csv` | V2 debug 已验证 | 当前输出包含 `scene_token` / `scene_name`，正式 850 表尚未重跑 |
+| `scripts/scene_feature_rules.py` | 规则模块 | 车辆/VRU 交互分类、事件持续时间和航向变化 | 单元测试覆盖 | 不直接读取 nuScenes |
+| `scripts/feature_selection.py` | 聚类输入模块 | 明确场景语义白名单 | 单元测试覆盖 | 排除结果型风险和哨兵值 |
+| `scripts/cluster_umap_hdbscan.py` | 主流程脚本 | 对白名单特征做标准化、UMAP 降维、HDBSCAN 聚类 | V2 debug 已验证 | 额外输出成员概率和离群分数 |
+| `scripts/corner_scoring.py` | 评分模块 | 计算分组物理风险和综合 corner score | 单元测试覆盖 | 不使用批次 MinMax 定义危险阈值 |
+| `scripts/corner_case_detection.py` | 主流程脚本 | 加载聚类表并调用分组评分 | V2 debug 已验证 | 输出 `tables/scene_features_with_corner_score.csv` |
 | `scripts/grid_search.py` | 试验脚本 | 搜索 UMAP/HDBSCAN 超参数组合 | 当前目录下无对应输出文件 | 属于参数试验脚本，不是主结果链路的一部分 |
 | `scripts/review_nuscenes_scenes.py` | 工具脚本 | 回看具体场景；支持按 `scene_name` 播放或导出 GIF | 当前版本可用 | OpenCV GUI 不可用时会自动回退为 GIF 导出 |
 
