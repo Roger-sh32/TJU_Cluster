@@ -24,6 +24,7 @@ from scene_feature_rules import (
     is_oncoming_vehicle,
     is_overtaking_exposure,
     is_turning_projection_artifact,
+    is_route_deviation_context_supported,
     is_vru_path_conflict,
     lateral_shift_after_index,
     left_turn_cross_traffic_flags,
@@ -781,7 +782,7 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
             else 80.0
         ),
     )
-    obstacle_induced_route_deviation = is_obstacle_induced_route_deviation(
+    obstacle_induced_route_deviation_candidate = is_obstacle_induced_route_deviation(
         blocked_path_summary.max_duration,
         (
             float(np.min(static_stationary_distances))
@@ -790,10 +791,6 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         ),
         ego_evasive_lateral_shift,
         ego_evasive_net_heading_change,
-    )
-    route_deviation_demand = route_deviation_decision_demand(
-        blocked_path_summary.ratio,
-        obstacle_induced_route_deviation,
     )
     oncoming_during_avoidance_flags = events_within_context(
         oncoming_vehicle_flags,
@@ -1015,6 +1012,20 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     heavy_merge_observed_summary = summarize_events(heavy_merge_observed_flags, scene_timestamps)
     dangerous_ttc_summary = summarize_events(dangerous_ttc_flags, scene_timestamps)
     intersection_stop_summary = summarize_events(intersection_stop_flags, scene_timestamps)
+    route_deviation_context_supported = is_route_deviation_context_supported(
+        traffic_light_control_frames / frame_count if frame_count > 0 else 0.0,
+        crossing_exposure_summary.ratio,
+        intersection_stop_summary.ratio,
+        left_turn_cross_traffic_interaction_summary.ratio,
+    )
+    obstacle_induced_route_deviation = bool(
+        obstacle_induced_route_deviation_candidate
+        and route_deviation_context_supported
+    )
+    route_deviation_demand = route_deviation_decision_demand(
+        blocked_path_summary.ratio,
+        obstacle_induced_route_deviation,
+    )
 
     scene_features.append({
         'scene_name': scene['name'],

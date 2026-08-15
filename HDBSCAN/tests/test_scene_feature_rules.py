@@ -428,6 +428,32 @@ class SceneFeatureRulesTest(unittest.TestCase):
             0.0,
         )
 
+    def test_route_deviation_context_rejects_normal_intersection_turns(self):
+        self.assertFalse(
+            self.rules.is_route_deviation_context_supported(
+                traffic_light_density=0.8,
+                crossing_exposure_ratio=0.0,
+                intersection_stop_ratio=0.0,
+                left_turn_cross_traffic_ratio=0.0,
+            )
+        )
+        self.assertFalse(
+            self.rules.is_route_deviation_context_supported(
+                traffic_light_density=0.0,
+                crossing_exposure_ratio=0.125,
+                intersection_stop_ratio=0.15,
+                left_turn_cross_traffic_ratio=0.125,
+            )
+        )
+        self.assertTrue(
+            self.rules.is_route_deviation_context_supported(
+                traffic_light_density=0.0,
+                crossing_exposure_ratio=0.0,
+                intersection_stop_ratio=0.0,
+                left_turn_cross_traffic_ratio=0.0,
+            )
+        )
+
     def test_faster_aligned_side_vehicle_is_overtaking_exposure(self):
         self.assertTrue(
             self.rules.is_overtaking_exposure(

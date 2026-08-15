@@ -659,3 +659,24 @@ def route_deviation_decision_demand(
     if not route_deviation_flag:
         return 0.0
     return float(np.clip(blocked_path_obstacle_ratio / full_scale_ratio, 0.0, 1.0))
+
+
+def is_route_deviation_context_supported(
+    traffic_light_density,
+    crossing_exposure_ratio,
+    intersection_stop_ratio,
+    left_turn_cross_traffic_ratio,
+    maximum_traffic_light_density=0.3,
+    crossing_exposure_threshold=0.1,
+    intersection_stop_threshold=0.1,
+):
+    """Reject ordinary signalized turns and cross-traffic yielding decisions."""
+    if traffic_light_density >= maximum_traffic_light_density:
+        return False
+    if left_turn_cross_traffic_ratio > 0.0:
+        return False
+    is_cross_traffic_yield = (
+        crossing_exposure_ratio >= crossing_exposure_threshold
+        and intersection_stop_ratio >= intersection_stop_threshold
+    )
+    return not is_cross_traffic_yield
