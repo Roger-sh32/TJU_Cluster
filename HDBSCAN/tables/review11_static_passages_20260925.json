@@ -1,0 +1,726 @@
+{
+  "created_at_utc": "2026-09-25T16:00:17.134220+00:00",
+  "scope": "development_diagnostic_only",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "HDBSCAN/scripts/audit_static_passages.py",
+    "--features",
+    "HDBSCAN/tables/scene_features_review11_20260925.csv",
+    "--audit",
+    "HDBSCAN/tables/review11_trajectory_audit_20260925.json",
+    "--output-prefix",
+    "HDBSCAN/tables/review11_static_passages_20260925"
+  ],
+  "parameters": {
+    "ego_width_m": 1.85,
+    "ego_length_m": 4.5,
+    "maximum_forward_m": 30,
+    "maximum_lateral_m": 6,
+    "maximum_clearance_m": 3,
+    "maximum_sample_gap_s": 1,
+    "minimum_pass_span_s": 1,
+    "minimum_ego_travel_m": 5,
+    "low_speed_limit_mps": 1,
+    "lateral_motion_m": 1.5,
+    "curved_heading_change_rad": 0.35
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review11_20260925.csv",
+      "sha256": "39c9dd1a136cc5758529636c966f2566d2eb7647c5b6fdeedcb636d22c212887"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review11_trajectory_audit_20260925.json",
+      "sha256": "ff31d7960929666c2d729ec164c4d684492907f912346fce08bba4f7863b11fd"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review11_20260925.csv.manifest.json",
+      "sha256": "c6a65bec47f0c0165fc2979c7512491e6010fd237ad19c085d985f2a8c55aa43"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\audit_static_passages.py",
+      "sha256": "85f1d0142390827724ec029907e76a6a1aae56ca77acf1240849eb235e5e86c8"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "d36d2eb2229cc40ff27d2f50b398681bb964a4b9da6e6b587fd0afc0097313cc"
+    }
+  ],
+  "maps": {
+    "singapore-onenorth": {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-onenorth.json",
+      "sha256": "17939122b940d7faff50fa7ff623ded7f739549a781c32dff1ecd1ac7bebca02"
+    },
+    "boston-seaport": {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\boston-seaport.json",
+      "sha256": "fc33712481efd763be39ce7edca0ec924d2d1fe20e1c89d52e21bf43d86e6b59"
+    }
+  },
+  "markdown": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review11_static_passages_20260925.md",
+    "sha256": "ed5e0c27040346135613302d2f1812f7cbd59bb31489c28853187741fe747e53"
+  },
+  "scenes": {
+    "scene-0007": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0011": {
+      "candidates": [
+        {
+          "instance_token": "8d13c51c14d94ebfbeaff26a611f284a",
+          "category": "vehicle.truck",
+          "start_s": 5.498090982437134,
+          "end_s": 13.999305963516235,
+          "pass_sample_s": 8.49904179573059,
+          "frame_count": 18,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.17925612837929822,
+          "whole_track_peak_speed_mps": 0.22808209774895152,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.803891161787528,
+          "lateral_clearance_m": 1.4901589049624009,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 4.391551867579622,
+          "ego_heading_change_rad": 0.19618929755764425,
+          "path_evidence": "lateral_motion_observed",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            },
+            "ego_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "f076581134024c35a0a45b1a930fcbe4",
+          "category": "vehicle.truck",
+          "start_s": 1.5013189315795898,
+          "end_s": 11.951140880584717,
+          "pass_sample_s": 6.498441934585571,
+          "frame_count": 22,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.20868020087105443,
+          "whole_track_peak_speed_mps": 0.20868020087105443,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.4430101578970687,
+          "lateral_clearance_m": 0.8526740530717807,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 10.881079606908127,
+          "ego_heading_change_rad": 0.48369902102073103,
+          "path_evidence": "curved_path_uncertain",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            },
+            "ego_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "8a557d57675e48eb801633e3e327d939",
+          "category": "vehicle.truck",
+          "start_s": 6.498441934585571,
+          "end_s": 17.947995901107788,
+          "pass_sample_s": 11.951140880584717,
+          "frame_count": 24,
+          "motion_status": "low_speed_uncertain",
+          "passage_peak_speed_mps": 0.21642614337093002,
+          "whole_track_peak_speed_mps": 0.36155502228652747,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.6030655022466417,
+          "lateral_clearance_m": 1.6305562548267196,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 0.3760546410077126,
+          "ego_heading_change_rad": 0.25475577690547624,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": false,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "1105e9d7-262b-44aa-b622-75d49c89b8a9",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            },
+            "ego_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "eed5e2e84e364f5d9e86059147a7355a",
+          "category": "vehicle.truck",
+          "start_s": 8.49904179573059,
+          "end_s": 19.500146865844727,
+          "pass_sample_s": 13.999305963516235,
+          "frame_count": 23,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.21135991432896223,
+          "whole_track_peak_speed_mps": 0.21135991432896223,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.19743353311925813,
+          "lateral_clearance_m": 1.0102218981798876,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 1.2388515216223537,
+          "ego_heading_change_rad": 0.2569333047132445,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            },
+            "ego_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "7d64ed1495ef4078ba29f76396c1bd3a",
+          "category": "vehicle.truck",
+          "start_s": 10.950276851654053,
+          "end_s": 19.500146865844727,
+          "pass_sample_s": 16.948242902755737,
+          "frame_count": 18,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.2013684310434437,
+          "whole_track_peak_speed_mps": 0.27368333994611876,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.189496701818241,
+          "lateral_clearance_m": 2.6441589960986667,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 0.9800910091848714,
+          "ego_heading_change_rad": 0.21700495820553245,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": false,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            },
+            "ego_layers": {
+              "lane": "1105e9d7-262b-44aa-b622-75d49c89b8a9",
+              "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        }
+      ],
+      "excluded": []
+    },
+    "scene-0026": {
+      "candidates": [
+        {
+          "instance_token": "cdbe22c7e3ca471f95af977f950c623f",
+          "category": "vehicle.car",
+          "start_s": 0.0,
+          "end_s": 9.050297021865845,
+          "pass_sample_s": 5.050761938095093,
+          "frame_count": 19,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.4495399946271014,
+          "whole_track_peak_speed_mps": 0.6988979450573752,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.6646878966853618,
+          "lateral_clearance_m": 1.451801148508184,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 1.5064408574643275,
+          "ego_heading_change_rad": 0.4170333557360902,
+          "path_evidence": "curved_path_uncertain",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "3b054222-19a4-44fe-b003-e26be95dfa6e",
+              "road_segment": "41f676a4-cc0e-49a0-9142-fae373410901"
+            },
+            "ego_layers": {
+              "lane": "3b054222-19a4-44fe-b003-e26be95dfa6e",
+              "road_segment": "41f676a4-cc0e-49a0-9142-fae373410901"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "b3aed680542247009e9bb3dcd5596221",
+          "category": "vehicle.car",
+          "start_s": 0.0,
+          "end_s": 8.04997205734253,
+          "pass_sample_s": 3.5505259037017822,
+          "frame_count": 17,
+          "motion_status": "low_speed_uncertain",
+          "passage_peak_speed_mps": 0.49384475632631286,
+          "whole_track_peak_speed_mps": 0.49384475632631286,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 1.0562196741208452,
+          "lateral_clearance_m": 1.104537945297058,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 1.5064408574643275,
+          "ego_heading_change_rad": 0.40814681803647973,
+          "path_evidence": "curved_path_uncertain",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "3b054222-19a4-44fe-b003-e26be95dfa6e",
+              "road_segment": "41f676a4-cc0e-49a0-9142-fae373410901"
+            },
+            "ego_layers": {
+              "lane": "3b054222-19a4-44fe-b003-e26be95dfa6e",
+              "road_segment": "41f676a4-cc0e-49a0-9142-fae373410901"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        }
+      ],
+      "excluded": []
+    },
+    "scene-0030": {
+      "candidates": [
+        {
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "category": "vehicle.motorcycle",
+          "start_s": 4.8986570835113525,
+          "end_s": 13.349010944366455,
+          "pass_sample_s": 8.898975133895874,
+          "frame_count": 18,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.3147989336699652,
+          "whole_track_peak_speed_mps": 0.5791429845421293,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.4635968075816197,
+          "lateral_clearance_m": 0.8439454293371453,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 9.274857320628488,
+          "ego_heading_change_rad": 0.29142931422650853,
+          "path_evidence": "lateral_motion_observed",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "a4170650-be87-4a26-9bf0-9ea4098783e6",
+              "road_segment": "b2924fd0-6346-422a-aad7-fad68475178f"
+            },
+            "ego_layers": {
+              "lane": "a4170650-be87-4a26-9bf0-9ea4098783e6",
+              "road_segment": "b2924fd0-6346-422a-aad7-fad68475178f"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        }
+      ],
+      "excluded": [
+        {
+          "instance_token": "1462e9f27d254a5bb0b570fc87db040c",
+          "category": "vehicle.motorcycle",
+          "start_s": 3.898376941680908,
+          "end_s": 11.899135112762451,
+          "pass_sample_s": 7.898460149765015,
+          "frame_count": 17,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.11939985124791423,
+          "whole_track_peak_speed_mps": 0.29417297075707943,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.4181686262741636,
+          "lateral_clearance_m": 1.6064335756900587,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 8.72265105503135,
+          "ego_heading_change_rad": 0.29949479015511926,
+          "path_evidence": "lateral_motion_observed",
+          "map_context": {
+            "available": true,
+            "on_drivable": false,
+            "same_lane": false,
+            "same_road": false,
+            "actor_layers": {
+              "lane": "",
+              "road_segment": ""
+            },
+            "ego_layers": {
+              "lane": "a4170650-be87-4a26-9bf0-9ea4098783e6",
+              "road_segment": "b2924fd0-6346-422a-aad7-fad68475178f"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true,
+          "exclusion": "off_drivable_surface"
+        }
+      ]
+    },
+    "scene-0042": {
+      "candidates": [
+        {
+          "instance_token": "9a40b6773c3b459d8e68859e1205b851",
+          "category": "vehicle.car",
+          "start_s": 3.397922992706299,
+          "end_s": 8.400084972381592,
+          "pass_sample_s": 5.901221990585327,
+          "frame_count": 11,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.15155873813857357,
+          "whole_track_peak_speed_mps": 0.2128591575362438,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.5980844421985747,
+          "lateral_clearance_m": 1.4198504526937736,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 0.3752599060561117,
+          "ego_heading_change_rad": 0.027537288687142336,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "04275473-4cc9-457f-9475-5411a8361e70",
+              "road_segment": "bb26dd34-46fb-453b-821a-1daae8c50d0b"
+            },
+            "ego_layers": {
+              "lane": "04275473-4cc9-457f-9475-5411a8361e70",
+              "road_segment": "bb26dd34-46fb-453b-821a-1daae8c50d0b"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "adeac5d0524f40359579085ca5e475c9",
+          "category": "vehicle.car",
+          "start_s": 3.897819995880127,
+          "end_s": 8.899322032928467,
+          "pass_sample_s": 6.401608943939209,
+          "frame_count": 11,
+          "motion_status": "low_speed_uncertain",
+          "passage_peak_speed_mps": 0.4037800317195123,
+          "whole_track_peak_speed_mps": 0.4037800317195123,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.6484944101532003,
+          "lateral_clearance_m": 1.473185222052415,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 0.4443563697401882,
+          "ego_heading_change_rad": 0.028957153363944332,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": true,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "04275473-4cc9-457f-9475-5411a8361e70",
+              "road_segment": "bb26dd34-46fb-453b-821a-1daae8c50d0b"
+            },
+            "ego_layers": {
+              "lane": "04275473-4cc9-457f-9475-5411a8361e70",
+              "road_segment": "bb26dd34-46fb-453b-821a-1daae8c50d0b"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        },
+        {
+          "instance_token": "531acdf6cae24c7e965ca4aad9e78603",
+          "category": "vehicle.car",
+          "start_s": 10.898280143737793,
+          "end_s": 15.751058101654053,
+          "pass_sample_s": 13.29812502861023,
+          "frame_count": 11,
+          "motion_status": "low_speed_uncertain",
+          "passage_peak_speed_mps": 0.43515813101373757,
+          "whole_track_peak_speed_mps": 0.8198711048482721,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 3.48459940308779,
+          "lateral_clearance_m": 1.352108130011053,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 1.4840991160975463,
+          "ego_heading_change_rad": 0.08553505757675728,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": false,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "",
+              "road_segment": "8c97e7cb-5ab7-4971-8f5b-03bdbdc9efd1"
+            },
+            "ego_layers": {
+              "lane": "",
+              "road_segment": "8c97e7cb-5ab7-4971-8f5b-03bdbdc9efd1"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        }
+      ],
+      "excluded": []
+    },
+    "scene-0053": {
+      "candidates": [],
+      "excluded": [
+        {
+          "instance_token": "9e27b8dee97e4f2faac9947aadb20f43",
+          "category": "vehicle.bicycle",
+          "start_s": 12.65063190460205,
+          "end_s": 17.350791931152344,
+          "pass_sample_s": 14.851428031921387,
+          "frame_count": 10,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.014564122963608232,
+          "whole_track_peak_speed_mps": 0.4766115370244643,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.677055389166914,
+          "lateral_clearance_m": 2.2838516477659,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 7.034032303787416,
+          "ego_heading_change_rad": 0.1841487483616311,
+          "path_evidence": "lateral_motion_observed",
+          "map_context": {
+            "available": true,
+            "on_drivable": false,
+            "same_lane": false,
+            "same_road": false,
+            "actor_layers": {
+              "lane": "",
+              "road_segment": ""
+            },
+            "ego_layers": {
+              "lane": "561a2167-f1d1-43df-9e15-734f321e2654",
+              "road_segment": "2c9f1709-014f-4fd0-aff8-ed938188972d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true,
+          "exclusion": "off_drivable_surface"
+        },
+        {
+          "instance_token": "2ce9d79dd19544cdba6856342fe65021",
+          "category": "vehicle.bicycle",
+          "start_s": 8.148984909057617,
+          "end_s": 13.150499820709229,
+          "pass_sample_s": 11.150995016098022,
+          "frame_count": 11,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.12443542327243866,
+          "whole_track_peak_speed_mps": 0.12443542327243866,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.12414507642273022,
+          "lateral_clearance_m": 2.0630403303771567,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 7.931035632653021,
+          "ego_heading_change_rad": 0.32257521883831286,
+          "path_evidence": "lateral_motion_observed",
+          "map_context": {
+            "available": true,
+            "on_drivable": false,
+            "same_lane": false,
+            "same_road": false,
+            "actor_layers": {
+              "lane": "",
+              "road_segment": ""
+            },
+            "ego_layers": {
+              "lane": "",
+              "road_segment": "f3e1d800-41c5-4ce0-8ec3-3650f2876b68"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true,
+          "exclusion": "off_drivable_surface"
+        },
+        {
+          "instance_token": "8259bd12edcc4b89970c493b79bffff7",
+          "category": "vehicle.car",
+          "start_s": 14.851428031921387,
+          "end_s": 17.85013198852539,
+          "pass_sample_s": 17.350791931152344,
+          "frame_count": 7,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.09110661465338643,
+          "whole_track_peak_speed_mps": 0.27365969862218065,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.26730693967791064,
+          "lateral_clearance_m": 2.8072024778619937,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 0.30195569077546214,
+          "ego_heading_change_rad": 0.03932724432869983,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": false,
+            "same_road": false,
+            "actor_layers": {
+              "lane": "28a4ef40-b423-4525-a1b2-4f2f5f1d73c3",
+              "road_segment": "73ea36b0-f65f-46c0-86eb-fe96ecbb972b"
+            },
+            "ego_layers": {
+              "lane": "",
+              "road_segment": "3c66492a-f63b-4e81-b919-0bb57d8b5361"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true,
+          "exclusion": "road_relation_not_supported"
+        }
+      ]
+    },
+    "scene-0055": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0056": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0067": {
+      "candidates": [
+        {
+          "instance_token": "ddee9e856b394d609136309ec843b69c",
+          "category": "vehicle.truck",
+          "start_s": 0.8989338874816895,
+          "end_s": 8.848842859268188,
+          "pass_sample_s": 4.3988659381866455,
+          "frame_count": 17,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.07204693974655135,
+          "whole_track_peak_speed_mps": 0.07204693974655135,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.2184330561064173,
+          "lateral_clearance_m": 2.810740263303564,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 6.814636942793125,
+          "ego_heading_change_rad": 0.5701330966973684,
+          "path_evidence": "curved_path_uncertain",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": false,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "e39e4059-3a55-42f9-896f-475d89a70e86",
+              "road_segment": "2b462721-c914-403f-bd89-abf433cafd2d"
+            },
+            "ego_layers": {
+              "lane": "34c01bd5-f649-42e2-be32-30f9a4d02b25",
+              "road_segment": "2b462721-c914-403f-bd89-abf433cafd2d"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        }
+      ],
+      "excluded": []
+    },
+    "scene-0068": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0073": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0074": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0097": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0103": {
+      "candidates": [
+        {
+          "instance_token": "3620feb00d744241a94855f3a8913a78",
+          "category": "vehicle.car",
+          "start_s": 4.500560998916626,
+          "end_s": 16.900155067443848,
+          "pass_sample_s": 11.900806903839111,
+          "frame_count": 26,
+          "motion_status": "static_supported",
+          "passage_peak_speed_mps": 0.12478034265547663,
+          "whole_track_peak_speed_mps": 0.16459897744510285,
+          "motion_elsewhere_observed": false,
+          "whole_track_diameter_m": 0.440735748493358,
+          "lateral_clearance_m": 2.3903535608772364,
+          "clearance_note": "Approximate body projection at nearest longitudinal keyframe, not minimum swept clearance.",
+          "ego_lateral_range_m": 0.8776761319232271,
+          "ego_heading_change_rad": 0.043920350239760486,
+          "path_evidence": "no_clear_lateral_maneuver",
+          "map_context": {
+            "available": true,
+            "on_drivable": true,
+            "same_lane": false,
+            "same_road": true,
+            "actor_layers": {
+              "lane": "",
+              "road_segment": "d222b4f9-3c46-4193-8687-3d9b8a9932a7"
+            },
+            "ego_layers": {
+              "lane": "",
+              "road_segment": "d222b4f9-3c46-4193-8687-3d9b8a9932a7"
+            }
+          },
+          "avoidance_cause": "undetermined",
+          "diagnostic_only": true
+        }
+      ],
+      "excluded": []
+    },
+    "scene-0109": {
+      "candidates": [],
+      "excluded": []
+    },
+    "scene-0122": {
+      "candidates": [],
+      "excluded": []
+    }
+  }
+}

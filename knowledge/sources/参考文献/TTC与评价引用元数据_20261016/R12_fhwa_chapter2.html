@@ -1,0 +1,456 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Description" content="This is the Turner-Fairbank Highway Research Center." />
+<meta name="Keywords" content="Public Roads, Research and Technology Transporter, Transporter, Turner-Fairbank, Highway Administration, TFHRC, Federal Highway Administration, FHWA, Department of Transportation, DOT, research, highways" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+
+<title>Chapter 2 - Surrogate Safety Assessment Model and Validation: Final Report, June 2008 - FHWA-HRT-08-051</title>
+<link rel="STYLESHEET" type="text/css" href="/publications/research/techbrief.css" />
+<link rel="STYLESHEET" type="text/css" href="/css/fhwadoc.css" /> 
+<link href="//www.fhwa.dot.gov//css/fhwa2/screen.css" media="screen" rel="stylesheet" type="text/css" /> <!-- general stylesheet -->
+<link href="//www.fhwa.dot.gov//css/fhwa2/dropdown.css" rel="stylesheet" type="text/css" /> <!-- submenu dropdown -->
+<link href="//www.fhwa.dot.gov//css/fhwa2/print.css" media="print" rel="stylesheet" type="text/css" /> <!-- print stylesheet -->
+
+
+
+
+<script type="text/javascript" src="/includes/fhwaload.js"></script> <!-- forsee code -->
+
+
+
+<link rel="icon" href="//www.fhwa.dot.gov//images/fhwa2/icon/favicon.ico" type="image/x-icon" /> <!-- favicon -->
+<link rel="apple-touch-icon" href="//www.fhwa.dot.gov//images/fhwa2/icon/appledotseal.png" />
+<link rel="image_src" href="//www.fhwa.dot.gov//images/fhwa2/icon/imgdotseallg.png" />
+
+
+<style type="text/css">
+a:link, a:visited {text-decoration:underline; color:#000;}
+a:hover {text-decoration:underline; color:#03F;}
+<!--h1,h2,h3,h4,h5,h6 { font-weight:bold; color:#06C;}-->
+h4{ font-weight:bold; font-style:italic; font-size:16px; color:black !important;}
+h5{ font-weight:bold; font-size:14px; color:black !important;}
+h6{ font-weight:bold; font-size:13px; font-style:italic; color:black !important;}
+h2 a, h2{font-size:20px; text-transform:capitalize; font-weight:bold; }
+h3{font-size:18px; color:#000 !important}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+
+<body id="programs" class="prgmoffice nosectiontitle returntop tfhrc">
+<a id="top" name="top"></a>
+<!-- page title for printing -->
+<div class="printonly">
+	<p>U.S. Department of Transportation<br />
+    	<span id="printfhwatitle">Federal Highway Administration</span><br />
+        1200 New Jersey Avenue, SE<br />Washington, DC 20590<br />
+        202-366-4000</p>
+   	<hr />
+</div> <!-- start fhwa header -->
+
+
+<!-- start fhwa header -->
+
+
+<div id="fhwaheader">
+	<div class="fhwacontainer">
+ 	<a href="#content" class="floatleft noprint" tabindex="1"><img src="/images/1x1.gif" width="1" height="1" alt="Skip to content" /></a>
+  <div class="logo">
+  	<a href="https://highways.dot.gov/" tabindex="2"><img class="imgdotfhwalg" src="/images/fhwa2/bg/imgdotfhwalg.png" alt="U.S. Department of Transportation/Federal Highway Administration" /><img class="imgdotfhwasm" src="/images/fhwa2/bg/imgdotfhwasm.png" alt="U.S. Department of Transportation/Federal Highway Administration" /></a>
+  	</div>
+	
+
+	<div class="dropdown">
+	<ul>
+	<li class="arrow-whtdwn mnabout"><a href="/about/" tabindex="3">About</a>
+		
+	 
+<ul>
+	<li><a href="https://highways.dot.gov/about/fhwa-organization">FHWA Organization</a></li>
+   	<li><a href="https://highways.dot.gov/about/headquarters-offices">Headquarters Offices</a></li>
+    <li><a href="https://highways.dot.gov/about/field-offices">Field Offices</a></li>
+    <li><a href="https://highways.dot.gov/careers">Careers</a></li>
+    <li><a href="https://highways.dot.gov/about/business-opportunities">Business Opportunities</a></li>
+    <li><a href="https://highways.dot.gov/about/staff-directories">Staff Directories</a></li>
+    <li><a href="https://highways.dot.gov/highway-history">Highway History</a></li>
+</ul>
+	</li>
+	<li class="arrow-whtdwn mnprograms"><a href="/programs/" tabindex="4">Programs</a>
+		
+	 
+<ul><li><a href="/cfo/doing_business_with_fhwa.cfm">Acquisition Management</a></li>
+	
+	
+	<li><a href="https://highways.dot.gov/federal-lands">Federal Lands Highway</a></li>
+    <li><a href="/infrastructure/">Infrastructure</a></li>
+    <li><a href="/innovativeprograms/">Innovative Program Delivery</a></li>
+    <li><a href="https://ops.fhwa.dot.gov/">Operations</a></li>
+    <li><a href="/hep/">Planning, Environment, and Realty</a></li>
+    <li><a href="/policy/">Policy</a></li>
+    <li><a href="https://highways.dot.gov/research/">Research, Development &amp; Technology</a></li>
+    <li><a href="https://highways.dot.gov/safety/">Safety</a></li>
+    <li><a href="/resources/topics/">Browse by Topics</a></li>
+</ul>
+		</li>
+	<li class="arrow-whtdwn mnresources"><a href="/resources/" tabindex="5">Resources</a>
+		
+			 
+<ul>
+  <li><a  href="/resources/topics/" title="Core Highway Topics"> Core Highway Topics</a></li>
+  <li><a href="https://highways.dot.gov/fed-aid-essentials" title="Federal-Aid Essentials">Federal-Aid Essentials</a></li>
+  <li><a href="https://highways.dot.gov/automation" title="Automation">Automation</a></li>
+  <li><a href="https://highways.dot.gov/resources/publications-statistics" title="Publications &amp; Statistics">Publications &amp; Statistics</a></li>
+  <li><a   href="/resources/legsregs/" title="Laws &amp; Regulations">Laws &amp; Regulations</a></li>
+  <li><a href="/pgc/" title="Policy &amp; Guidance Center">Policy &amp; Guidance Center</a></li>
+  <li><a href="https://highways.dot.gov/section-508" title="Section 508">Section 508</a></li>
+  <li><a  href="/resources/training.cfm" title="Professional Development">Professional Development</a></li>
+  <li><a href="https://highways.dot.gov/nhi/home">National Highway Institute (NHI)</a></li>
+  <li><a href="/resourcecenter/" title="Resource Center">Resource Center</a></li>
+  <li><a href="https://highways.dot.gov/resources/accessibility-resource-library" title="Accessibility Resource Library">Accessibility Resource Library</a></li>
+  <li><a href="https://highways.dot.gov/research/resources/research-library/federal-highway-administration-research-library" title="FHWA Research Library">FHWA Research Library</a></li>
+</ul>
+		</li>
+	<li class="arrow-whtdwn mnbriefing"><a href="/briefingroom/" tabindex="6">Briefing Room</a>
+	 
+	 
+<ul><li><a href="https://highways.dot.gov/newsroom/press-releases" title="Press Releases">Press Releases</a></li>
+	<li><a href="https://highways.dot.gov/newsroom/speeches-and-testimony" title="Speeches &amp; Testimony">Speeches &amp; Testimony</a></li>
+    <li><a href="https://www.flickr.com/photos/fhwa/" title="Photos" target="_blank" rel="noopener noreferrer">Photos</a></li>
+    <li><a href="https://www.youtube.com/user/USDOTFHWA/featured"  title="Videos" target="_blank" rel="noopener noreferrer">Videos</a></li>
+    <li><a href="https://highways.dot.gov/newsroom/media-contacts" title="Media Contacts">Media Contacts</a></li>
+</ul>
+	</li>
+	<li class="mncontact"><a href="/contact/" tabindex="7">Contact</a></li>
+	
+	<li class="mnsearch"><a href="https://search.usa.gov/search?utf8=%E2%9C%93&amp;affiliate=dot-fhwa" tabindex="8"><span>Search FHWA</span></a></li>
+	
+	</ul>
+	</div>
+	
+	
+  <div class="socialbtns"><a href="https://www.facebook.com/pages/Federal-Highway-Administration/175380479155058" title="Like Us on Facebook" target="_blank" rel="noopener noreferrer" tabindex="9"><img src="/images/fhwa2/icon/facebook_med.png" alt="Facebook icon" /></a><a href="https://www.youtube.com/user/USDOTFHWA" title="Watch Us on YouTube" target="_blank" rel="noopener noreferrer" tabindex="10"><img src="/images/fhwa2/icon/youtube_med.png" alt="YouTube icon" /></a><a href="https://twitter.com/USDOTFHWA" title="Follow Us on Twitter" target="_blank" rel="noopener noreferrer" tabindex="11"><img src="/images/fhwa2/icon/twitter_med.png" alt="Twitter icon" /></a><a href="https://www.flickr.com/photos/fhwa/" title="See Our Photos on Flickr" target="_blank" rel="noopener noreferrer" tabindex="12"><img src="/images/fhwa2/icon/flickr_med.png" alt="Flickr icon" /></a><a href="https://www.linkedin.com/company/federal-highway-administration" title="Connect with Us on LinkedIn" target="_blank" rel="noopener noreferrer" tabindex="13"><img src="/images/fhwa2/icon/linkedin_med.png" alt="LinkedIn" /></a><a href="https://www.instagram.com/federalhighwayadmin/" title="See our photos on Instagram" target="_blank" rel="noopener noreferrer" tabindex="14"><img src="/images/fhwa2/icon/instagram_med.png" alt="Instagram" /></a></div>
+  
+ 	</div>
+	<div class="clearall"></div>
+</div>
+
+<!-- end fhwa header -->
+
+
+<!-- end fhwa header -->
+
+
+<div id="programtitle">
+	<div class="fhwacontainer">
+    	<p style="font-size:20px; font-family: Arial, Helvetica, sans-serif;"><strong>Federal Highway Administration Research and Technology</strong><br /><span style="font-size:18px">Coordinating, Developing, and Delivering Highway Transportation Innovations</span></p>
+   	</div>
+</div>
+
+
+
+
+<div style="background-color:#FFF; text-align:left; margin:0 auto;">
+
+
+
+
+
+
+<div id="fhwanavmenu">
+<div style="padding-right:40px;">
+<div class="search">
+<fieldset>
+<form accept-charset="UTF-8" action="//search.usa.gov/search" class="has-query-term" name="allsearch"  id="search-bar" method="get">
+<div style="margin:0;padding:0;display:inline;"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="affiliate" name="affiliate" type="hidden" value="dot-fhwa" />
+<input id="sitelimit" name="sitelimit" type="hidden" value="fhwa.dot.gov/research" />
+<input id="dc" name="dc" type="hidden" value="2557" />
+<input style="border-left: #fff 3px solid;
+    color: #666;
+    float: left;
+    font-size: 12px;
+    height: 22px;
+    width: 184px;" class="srchbox" id="query" name="query" type="text" maxlength="256" value=" Search Research &amp; Technology" onblur="if(this.value == '') {this.value = ' Search Research &amp; Technology';}" onfocus="if(this.value == ' Search Research &amp; Technology'){this.value = '';}" />
+<input style="float:right;" type="image" class="srchbtn" src="/images/fhwa2/bg/imgbgsrchbtn.png" name="commit" value="Search"  title="Submit Search" />
+</form>
+</fieldset>
+</div>
+</div>
+</div>
+
+	
+   
+    
+    
+    
+
+
+
+
+
+
+
+
+
+<!--top navigation -->
+<table align="center" border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+<tr><td bgcolor="#6699FF" align="center"><img src="/publications/images/reports2.gif" width="375" height="50" alt="Report" /></td>
+</tr>
+<tr><td bgcolor="#6699FF" align="center"><span><strong>This report is an archived publication and may contain dated technical, contact, and link information</strong></span></td>
+</tr>
+</table><table align="center" border="0" cellpadding="5" cellspacing="0" width="90%">
+<tr>
+  <td align="right" valign="top"><ul class="b2c"> 
+    <li class="b2c">
+      <a href= 'https://www.fhwa.dot.gov/'>Federal Highway Administration</a> &gt; 
+    </li>
+  
+    <li class="b2c">
+      <a href= '/publications/'>Publications</a> &gt; 
+    </li>
+  
+    <li class="b2c">
+      <a href= '/publications/lists/021.cfm'>Research Publications</a> &gt; 
+    </li>
+  
+    <li class="b2c">
+      <a href= 'index.cfm' >08051</a> &gt;
+    </li>
+  
+    <li class="b2c">
+      <a href= 'index.cfm'>02.Cfm</a> &gt; 
+    </li>
+   <li class="b2c"> Surrogate Safety Assessment Model and Validation: Final Report </li> </ul></td>
+</tr>
+
+</table>
+
+
+<table align="center" border="0" cellpadding="5" cellspacing="0" width="90%">
+<tr><td align="right"><div align="right"><strong>Publication Number: FHWA-HRT-08-051<br />
+    Date: June 2008<br />
+  </strong></div>
+    </td>  
+</tr>
+<!-- Content Starts -->
+<tr><td id="container">
+<a name="content" id="content"></a>
+<h1 align="center"><span class="center style3">Surrogate Safety Assessment Model and Validation: Final Report</span></h1>
+<!--<p align="center" class="minor">FHWA  Contact: John Doremi,<br /> 
+  HRDI-10, (202) 493-3052, John.doremi@dot.gov</p>-->
+<div align="center"><a href="08051.pdf"><strong>PDF Version</strong></a> (3.39 MB)</div>
+<p class="pdfview">PDF files can be viewed with the <a href="/exit.cfm?link=https://get.adobe.com/reader/">Acrobat&reg; Reader&reg;</a></p>
+
+
+<h2>Chapter 2. SSAM Software</h2>
+<p>This chapter provides a brief overview of the SSAM software, developed to automate the process of identifying conflicts and calculating surrogate safety measures. <a href="footnote.cfm#f2">[3]</a> The software overview is organized into the following sections:</p>
+<ul>
+<li>SSAM workflow.</li>
+<li>Conflict identification algorithms.</li>
+<li>Terms and definitions.</li>
+</ul>
+
+<p>The SSAM software and corresponding user manual are available upon request from the Federal Highway Administration (FHWA). <a href="footnote.cfm#f4">[4]</a></p>
+<h3><a name="ssam"></a>SSAM Workflow</h3>
+<p>This section provides an overview of the typical workflow of using the SSAM software, tracing the flow of information through various input data, tasks or operations, and resulting outputs. In doing so, many of the screens of SSAMs graphic user interface (GUI) are introduced.</p>
+<p>SSAM operates by processing data describing the trajectories of vehicles driving through a traffic facility (e.g., a signalized intersection) and identifying conflicts. The vehicle trajectory input data for SSAM are generated by traffic simulation software in a trajectory file format (where files are labeled with a .trj file extension), specially designed for SSAM. SSAM calculates surrogate measures of safety corresponding to each vehicle-to-vehicle interaction and determines whether or not each interaction satisfies the criteria to be deemed an official conflict. A table of all identified conflicts and their corresponding surrogate safety measures is then presented to the user. Figure 1 illustrates the workflow for using SSAM. <a name="fig1" id="fig1"></a></p>
+<p align="center"><img width="552" height="166" src="images/image007.jpg" alt="Figure 1. Illustration. SSAM Operational Concept. This screen shows the operational concept of SSAM. First, the traffic simulation software generates the SSAM input data-the vehicle trajectory file. Then, SSAM loads the files to process them. The results are presented to the user." /></p>
+<p align="center"><strong>Figure 1. Illustration. SSAM Operational Concept.</strong></p>
+<p>The traffic engineer begins the analysis by first enabling output of vehicle interaction (or trajectory) data in the simulation model of his or her choice. The traffic engineer then runs the simulation model for a number of iterations (replications with alternate random number seeds) to obtain a statistically sufficient set of simulation output data. The traffic engineer then launches the stand-alone SSAM application. The user interface of SSAM is shown in figure 2.</p>
+<a name="fig2" id="fig2"></a>
+<p align="center"><img width="575" height="347" src="images/image008.jpg" alt="Figure 2. Screen Capture. SSAM User Interface after Launching. This is when SSAM is launched the first time after installation." /></p>
+<p align="center"><strong>Figure 2. Screen Capture. SSAM User Interface after Launching.</strong></p>
+<p>The user begins by defining a new conflict analysis <em>case</em> by using the Menus to create a new case file (or alternatively to open an existing case file). The user interface provides a tree-view listing of all existing case documents in the left-hand pane of the display, as shown in figure 3 (with a single existing case document). One or more case documents may be viewed in the workspace in the right-hand pane. Figure 3 shows a case document where various views of its corresponding input and output data are organized in a multi-tabbed format. In particular, the Configuration tab (or panel), shown in figure 3, allows the user to browse the file system and select one or more trajectory files to be processed for the current case. The software uses two threshold values for surrogate measures of safety to delineate which vehicle-to-vehicle interactions are classified as conflicts. These two thresholds are applied to the value of</p>
+<ul>
+<li>Time-to-collision (TTC).</li>
+<li>Post-encroachment time (PET).</li>
+</ul>
+<p>The software provides default threshold values for these measures, which the analyst may optionally override with his or her preferred alternate values. SSAM utilizes a default TTC value of 1.5 seconds, as suggested in previous research.<sup>(<a href="ref.cfm#ref10">10</a>, <a href="ref.cfm#ref11">11</a>)</sup> Use of a PET threshold is attributed to research by Hyden.<sup>(<a href="ref.cfm#ref12">12</a>)</sup></p>
+<p>Once the conflict identification thresholds are determined, the user presses the Analyze button, and simulation (trajectory) data are processed to identify vehicle-to-vehicle interactions which satisfy the conflict classification criteria.</p>
+<p>Each conflict identified during analysis (including data from the trajectory files of all corresponding replications of the simulation) is listed in a table (the conflict table) under the Conflicts tab, which is shown in the right-hand pane in figure 4. The conflict table shows all conflict details, including the time, location, and all surrogate measures of safety for that conflict. <a name="fig3" id="fig3"></a></p>
+<p align="center"><img width="531" height="297" src="images/image009.jpg" alt="Figure 3. Screen Capture. SSAM User Interface with Case File Defined. This is a screen capture of the SSAM user interface for the defined case file. An example case file named &quot;Sam1&quot; appears in a tree view in the left-hand pane of the display. The detailed configuration of this case file is shown in the right-hand pane of the display." /></p>
+<p align="center"><strong>Figure 3. Screen Capture. SSAM User Interface with Case File Defined.</strong></p>
+<a name="fig4" id="fig4"></a>
+<p align="center"><img width="508" height="310" src="images/image010.jpg" alt="Figure 4. Screen Capture. SSAM User Interface with Conflicts Tab Selected. This is a screen capture of the SSAM user interface for the conflict tab of the example case file. Each conflict identified in the case is listed in the conflict table, which is shown in the right-hand pane of the display. The conflict table shows all conflict details, including the time, location, and all surrogate measures of safety for that conflict." /></p>
+<p align="center"><strong>Figure 4. Screen Capture. SSAM User Interface with Conflicts Tab Selected.</strong></p>
+<p>SSAM also provides a Summary screen for each case, as shown in figure 5. Users click the summary tab to switch from the conflict table to a view of summary statistics. Summary statistics include the number of different conflict types for each simulation replication, as well as the average and total values over all replications. Additionally, average values of each proposed surrogate measure are presented in the summary.<a name="fig5" id="fig5"></a></p>
+<p align="center"><img width="564" height="330" src="images/image011.jpg" alt="Figure 5. Screen Capture. SSAM User Interface with Summary Tab Selected. This is a screen capture of the SSAM user interface for the summary tab of the example case file. Summary statistics include the number of different conflict types for each simulation replication and the average and total values over all replications. Additionally, average values of each proposed surrogate measure are presented in the summary." /></p>
+<p align="center"><strong>Figure 5. Screen Capture. SSAM User Interface with Summary Tab Selected.</strong></p>
+<p>SSAM also includes a Filter tool, shown in figure 6, which can be accessed via the Filter tab of the case display. By configuring filter parameters, the user can effectively instruct the software, Show me all rear-end conflict events where the speed differential was greater than 40.25 km/h (25 mi/h) occurring in lane 5 of link 12. Once the filter is applied, only those conflicts satisfying the filter criteria appear in the conflict table, and the summary statistics are recomputed for this subset of the conflicts.</p>
+<p>SSAM also supports analysis and report generation by providing copy and paste features so that data from the filtered conflict table may be transferred to a spreadsheet application such as Microsoft Excel&reg;. Alternatively, the table can be exported (i.e., saved to a file) in comma separated values (CSV) format, which is a universal format that can be imported into other applications for statistical analysis, charting, and report generation. Figure 7 shows an exported CSV file as it appears when opened with the Microsoft Excel spreadsheet application.<a name="fig6" id="fig6"></a></p>
+<p align="center"><img width="564" height="309" src="images/image012.jpg" alt="Figure 6. Screen Capture. SSAM User Interface with Filter Tab Selected. This is a screen capture of the SSAM user interface for the filter tab of the example case file. By configuring the filter parameters, only those conflicts satisfying the filter criteria will display in the conflict table once the filter is applied, and the summary statistics will recompute for this subset of the conflicts." /></p>
+<p align="center"><strong>Figure 6. Screen Capture. SSAM User Interface with Filter Tab Selected.</strong>
+<a name="fig7" id="fig7"></a></p>
+<p align="center"><img width="564" height="290" src="images/image013.jpg" alt="Figure 7. Screen Capture. CSV File from SSAM. This is a screen capture of a Microsoft Excel&reg; file named as &quot;export.csv&quot;. This file is exported from SSAM and contains detailed information for all conflicts." /></p>
+<p align="center"><strong>Figure 7. Screen Capture. CSV File from SSAM.</strong></p>
+<p>In addition, the SSAM software also features two additional screens which also appear as tabs on the user-interface. These additional screens are a Map panel and a <em>t</em>-test panel. The Map panel allows a user to display a map or image of the underlying roadway network and overlay conflicts on that map. The map display can be exported to an image file to facilitate report generation. In additional, the <em>t-</em>test panel can be used to calculate statistical property of the conflict data to facilitate comparisons.</p>
+<p>More information about SSAM is available in a corresponding user manual.</p>
+<h3><a name="conflict">CONFLICT IDENTIFICATION ALGORITHMS</a></h3>
+<p>This section summarizes the algorithms used by SSAM to identify conflicts from the vehicle trajectory files (TRJ files) to be processed. This can be a computationally intensive task depending on the size of the TRJ file, which is a function of the number of vehicles in the network model and the amount of time simulated. A high-end computer might require more than 10 minutes to process data from 5 hours of traffic for a single intersection model. Large multi-intersection networks might require hours of processing time. The following steps summarize the technique to identify conflicts:</p>
+<h4><a name="step1" id="step1">Step 1</a></h4>
+<p>Determine the dimensions of the analysis area based on the header name in the TRJ file. These dimensions define the width and height of a rectangular analysis area and indicate if trajectory data are provided in English or metric units. SSAM constructs a zone grid to cover the entire rectangular analysis area, as shown in figure 8. Individual square zones cover 15.25-m by 15.25-m (50-ft by 50-ft) areas depending on the units specified in the TRJ file. By dividing the region into these zones, the number of vehicle-to-vehicle comparisons necessary to identify potential conflicts is reduced considerably.<a name="fig8" id="fig8"></a></p>
+<p align="center"><img src="images/image015.gif" width="534" height="227" alt="Figure 8. Illustration. Illustration of Zone Grid. This screen illustrates the concept of zone grid. SSAM reads in the header of the TRJ file, which defines the dimensions of the analysis area. These dimension data are used to set up a zone grid in SSAM, which is the region containing all observable vehicles' positions within the TRJ file. The whole region is then divided into many small square zones, each having a zone side of 15 m (50 ft)." /></p>
+<p align="center"><strong>Figure 8. Illustration. Illustration of Zone Grid.</strong></p>
+<h4><a name="step2" id="step2">Step 2</a></h4>
+<p>Analyze a single time step of a trajectory file. For each vehicle in the analysis region, SSAM projects that vehicles expected location as a function of its current speed, if it were to continue traveling along its (future) path for up to the duration of the configured time-to-collision (TTC) value. A vehicles projected path is based on a look ahead over the next 10 seconds of trajectory data. The path, as shown in figure 9, is a set of straight line segments (labeled <em>S</em>) connecting the vehicles future downstream locations (labeled <em>X</em>). The threshold TTC value is configured by the user of SSAM, typically with a threshold value of order of 1.5 seconds. Conflicts with TTC values larger than 1.5 seconds are not generally considered in the safety community to be severe enough events for recording in a traditional field conflict study. <a name="fig9" id="fig9"></a></p>
+<p align="center"><img width="525" height="185" src="images/image016.gif" alt="Figure 9. Illustration. Illustration of Vehicle Path. This screen illustrates how to define a vehicle path in SSAM. Each vehicle in the zone grid during a single time step of trajectory file is projected forward along its path over the duration of the threshold TTC value (e.g., S1, S2, etc.). The vehicle's path is the set of line segments composed of the vehicle's sequential locations in the future." /></p>
+<p align="center"><strong>Figure 9. Illustration. Illustration of Vehicle Path.</strong></p>
+<p>The process of projecting the distance that a vehicle may progress forward during the specified look-ahead time interval and the calculation of the exact coordinates of that projected vehicle position occurs as follows, assuming SSAM is going to analyze the conflicts for vehicle <em>A</em> at time <em>t</em><sub>1.</sub> First, SSAM extracts all data related with vehicle <em>A</em> from the trajectory file, such as vehicle <em>A</em>s location, speed, acceleration, etc., at time <em>t</em><sub>1</sub> and several time steps after <em>t</em><sub>1.</sub> Each location is denoted as (x<sub>1</sub>,y<sub>1</sub>), (x<sub>2</sub>,y<sub>2</sub>), etc. Then SSAM projects vehicle <em>A</em>s distance forward along its trajectory defined by those locations:</p>
+<ol type="1">
+<li>Each vehicle is defined as a polygon (rectangle) with four corner points (shown in figure 10).</li>
+<li>The forward distance that the vehicle will travel is calculated in the MaxTTC interval, denoted as DIS<sub>1</sub>= <em>V</em><sub>1</sub> * MaxTTC (shown in figure 10).</li>
+<li>The vehicles next time step location (x<sub>2</sub>,y<sub>2</sub>) is calculated based on the distance from current location to that location, denoted as <em>DIS</em><sub>2</sub>=<strong>|</strong>Location (<em>t</em>+1)-Location (<em>t</em>)<strong>|</strong> (shown in figure 10).</li>
+<li>If DIS<sub>2</sub> is less than DIS<sub>1</sub>, then DIS<sub>2</sub> is subtracted from DIS<sub>1</sub> and the previous two calculations are repeated, updating DIS<sub>1</sub>=DIS<sub>1</sub>-DIS<sub>2</sub> and DIS<sub>2</sub>=<strong>|</strong>Location (<em>t</em>+2)-Location (<em>t</em>+1)<strong>|</strong> and comparing the new DIS<sub>1</sub> and DIS<sub>2</sub> (shown in figure 11). <a name="fig10" id="fig10"></a></li>
+</ol>
+<p align="center"><img src="images/image017.gif" width="430" height="240" alt="Figure 10. Illustration. DIS1 and DIS2. This screen illustrates how to calculate the distance that the vehicle will travel in the maxTTC interval and the distance from current location to next-time-step location." /></p>
+<p align="center"><strong>Figure 10. Illustration. DIS <sub>1</sub> and DIS <sub>2</sub>.</strong>
+<a name="fig11" id="fig11"></a></p>
+<p align="center"><img src="images/image018.gif" width="480" height="265" alt="Figure 11. Illustration. Updated DIS1 and DIS2 when Old DIS1 > DIS2. This screen illustrates how to update DIS1 and DIS2 when old DIS1 is greater than DIS2. If DIS2 is less than DIS1, then subtract DIS2 from DIS1 and update DIS1 as DIS1 minus DIS2 and DIS2 as the distance from the current location to the next time step location." /></p>
+<p align="center"><strong>Figure 11. Illustration. Updated DIS <sub>1</sub> and DIS <sub>2</sub> when Old DIS <sub>1</sub> &gt; DIS <sub>2</sub>.</strong></p>
+
+<ol start="5" type="1">
+<li>If DIS<sub>2</sub> is more than DIS<sub>1</sub>, then the x-y position is calculated to locate the projection point within the segment of DIS<sub>2</sub> (shown in figure 12).</li>
+</ol>
+<a name="fig12" id="fig12"></a>
+<p align="center"><img src="images/image019.gif" width="493" height="297" alt="Figure 12. Illustration. Projection Point when DIS1 &lt; DIS2. This screen illustrates how to update DIS1 and DIS2 when old DIS1 is smaller than DIS2. If DIS2 is more than DIS1, then calculate the x-y position of the vehicle where the projection point within the segment of DIS2 in the distance of DIS1 will be located." /></p>
+<p align="center"><strong>Figure 12. Illustration. Projection Point when DIS <sub>1</sub> &lt; DIS <sub>2</sub>.</strong></p>
+<h4><a name="step3" id="step3"></a>Step 3</h4>
+<p>For each vehicle, calculate the rectangular perimeter delineating the location and orientation of that vehicle at its projected future position. Overlay that rectangle on the zone grid, calculating which (rectangular) zones in the grid will contain at least some portion of that vehicle. For each zone the vehicle will occupy, add the vehicle to that zone, or rather, add that vehicle to a list of occupants maintained for each zone. Any time a vehicle is added into a zone that currently contains one or more other vehicles, check for overlap of the new vehicle (rectangle) with each of the other vehicles (rectangles) in that zone. It is possible that two vehicles may partially occupy the same zone without overlapping. However, two overlapping rectangles indicate that a future collision is projected for this pair of vehicles, and therefore, a potential conflict has been identified, as portrayed in figure 13. SSAM maintains a list of all conflicting vehicle-pairs (all conflict events) for the current time-step. Each time-step, the list is prepopulated with all conflicting vehicle-pairs from the prior time-step. If the current vehicle being added to the zone grid overlaps with any other vehicle, that vehicle-pair is added to the conflict list for the current time-step (if not already in the list).<a name="fig13" id="fig13"></a></p>
+<p align="center"><img src="images/image020.gif" width="433" height="277" alt="Figure 13. Illustration. Checking Conflict Between Two Vehicles at MaxTTC. This screen illustrates how to check conflict between two vehicles at Max TTC within the zone grid. Place all vehicles' projections on the zone grid and calculate which zones the vehicles are fully or partially within. Any time two vehicles are in the same zone, check for overlap of the vehicle rectangles, which indicates that a conflict has been identified. This check is done by testing all sides of one vehicle for intersection with all sides of the other vehicle over the entire 0-maxTTC range of projection times." /></p>
+<p align="center"><strong>Figure 13. Illustration. Checking Conflict Between Two Vehicles at MaxTTC.</strong>
+<a name="step4" id="step4"></a></p>
+<h4>Step 4</h4>
+<p>Continue so that SSAM can perform more detailed processing of each conflicting vehicle-pair in the list for the current time-step as follows:</p>
+<ol>
+<li>First, update the TTC of the vehicle-pair. This is done by iteratively shortening the future projection timeline by a tenth of second and reprojecting both vehicles as before over successively short distances until the pair of vehicles no longer overlaps in their projected locations. In this way, a more accurate TTC value is established for this time-step. This is portrayed in figure 14, where the TTC values have reduced from the maxTTC value of 1.5 seconds (illustrated previously in figure 13) to a TTC value of 1.3 seconds. Instead of the large overlap in figure 13, the vehicles in figure 14 have just barely come into contact. Note that if the projection timeline reduces to 0 seconds and the vehicles still overlap, then this is a crash.</li>
+<li>At this point, various surrogate safety measures, such as the minTTC (taking the minimum of the current TTC value and that of the prior time-step, if applicable), are calculated and updated. Also, the current (actual) positions of both vehicles are recorded for post-encroachment analysis.</li>
+<li>If it was found that the vehicle-pair does not overlap over any projection time between 0 and maxTTC, then this vehicle-pair has made its way into the conflict event list by virtue of being in the list during the prior time-step. In this case, the event remains in the list, watching for the one vehicle (the trailing vehicle) to eventually occupy (or encroach on) on a position formerly held by the other vehicle (the leading vehicle). The time differential between when the leading vehicle occupied this location and the trailing vehicle arrived is the post-encroachment time (PET). If a post-encroachment was observed, then the minimum PET is updated, and this conflict event remains in the list, as the post-encroachment could potentially reduce as the vehicle trajectories progress over time.</li>
+<li>If a vehicle-pair in the conflict event list is no longer on an imminent collision course, and it is clear that PET to any prior positions could not further reduce the minimum PET, or the maximum PET has elapsed, then this vehicle-pair is identified for removal from the conflict event list. Prior to removal, all final surrogate measures are computed, including conflict starting and end points, conflict angles, and DeltaV. Also, the conflict is classified at this time as a crossing conflict, rear-end conflict, or lane-change conflict. The next section defines all surrogate measures and provides the conflict type classification logic. If this conflict event has ended, then the conflict and all surrogate measures are added to the conflict table, and the event is removed from the tracking list.</li>
+</ol>
+<a name="fig14" id="fig14"></a>
+<p align="center"><img src="images/image021.gif" width="433" height="277" alt="Figure 14. Illustration. Checking Conflict Between Two Vehicles at TTC=1.3 (Vehicles No Longer in Conflict). This screen further illustrates how to check conflicts between two vehicles at a TTC equal to 1.3, a value less than maxTTC of 1.5. Reproject the vehicles' positions over smaller increments (denoted as TTC) ranging from maxTTC to 0 (in this case 1.3) and check for overlapping of the two vehicles. In this case, the two vehicles are no longer in conflict when TTC is at 1.3." /></p>
+<p align="center"><strong>Figure 14. Illustration. Checking Conflict Between Two Vehicles at TTC = 1.3 (Vehicles No Longer in Conflict).</strong></p>
+<h3><a name="terms"></a>TERMS AND DEFINITIONS</h3>
+<p>SSAM computes and records the following data or measures for each conflict identified in the vehicle-trajectory input data. This information is provided in the Conflicts table on the Conflicts panel. It is possible to filter out several of the conflicts based on specified ranges of these values, using the Filter tool. This data may also be exported for use in other third-party processing software, such as Microsoft Excel&reg;, where more complicated analysis options may be available.</p>
+<p><strong>tMinTTC</strong> is the simulation time when the minimum TTC (time-to-collision) value for this conflict was observed.</p>
+<p><strong>xMinPET</strong> is the x-coordinate specifying the approximate location of the conflict at the time when the minimum PET was observed. More specifically, this location corresponds to the center of the (first) vehicle where the subsequent arrival of the second vehicle to the same location was the shortest encroachment observed.</p>
+<p><strong>yMinPET</strong> is the y-coordinate specifying the approximate location of the conflict at the time when the minimum PET was observed. More specifically, this location corresponds to the center of the (first) vehicle where the subsequent arrival of the second vehicle to the same location was the shortest encroachment observed.</p>
+<p><strong>ConflictAngle</strong> is an approximate angle of hypothetical collision between conflicting vehicles based on the estimated heading of the each vehicle (see explanation of <strong>FirstHeading</strong>). The angle, expressed in the perspective of the first vehicle to arrive at the conflict point, conveys the direction from which the second vehicle is approaching the first vehicle. The angle ranges from -180&deg; to +180&deg;, where a <em>negative</em> angle indicates approach from the left and a positive angle indicates approach from the right. An angle of 180&deg;  (or -180&deg;) indicates a direct head-on approach, and an angle of 0&deg;  (or -0&deg;) indicates a direct rear approach, as illustrated in figure 15.<a name="fig15" id="fig15"></a></p>
+<p align="center"><img width="324" height="289" src="images/image022.gif" alt="Figure 15. Illustration. Conflict Angle. This screen illustrates the conflict angle in SSAM. It is an approximate angle of hypothetical collision between conflicting vehicles based on the estimated heading of the each vehicle. The angle, expressed in the perspective of the first vehicle to arrive at the conflict point, conveys the direction from which the second vehicle is approaching the first vehicle. The angle ranges from negative180 degrees to positive180 degrees, where a negative angle indicates the approach from the left and a positive angle indicates approach from the right. An angle of 180 degrees (or negative 180 degrees) indicates a head-on approach, and an angle of 0 degrees (or negative 0 degrees) indicates a rear approach. In this case, the conflict angle is 45 degrees." /></p>
+<p align="center"><strong>Figure 15. Illustration. Conflict Angle.</strong></p>
+<p><strong>ClockAngle</strong> is an alternative expression of the conflict angle in terms of more familiar clock-hand positions. Again, the angle is expressed in the perspective of the first vehicle, with the clock time indicating the angle from which the second vehicle is approaching. The 12:00 position is directly ahead of the first vehicle, 3:00 is to the right, 6:00 is directly behind, and 9:00 is to the left, as illustrated in figure 16.<a name="fig16" id="fig16"></a></p>
+<p align="center"><img width="368" height="328" src="images/image023.gif" alt="Figure 16. Illustration. Clock Angle. This screen illustrates the clock angle in SSAM. It is an alternative expression of the conflict angle in terms of more familiar clock hand positions. The angle is expressed in the perspective of the first vehicle, with the clock time indicating the angle from which the second vehicle is approaching. The 12:00 position is directly ahead of the first vehicle, 3:00 is to the right, 6:00 is directly behind, and 9:00 is to the left. In this case, the clock angle is 4:30." /></p>
+<p align="center"><strong>Figure 16. Illustration. Clock Angle.</strong></p>
+<p><strong>PostCrashV</strong> is an estimate of the post collision velocity of both vehicles. This estimate assumes that the vehicles did crash at the estimated <strong>ConflictAngle</strong>, at velocities observed at the <strong>tMinTTC</strong>. It also assumes an inelastic collision between the center of mass of both vehicles, where both vehicles subsequently deflect in the same direction and at the same velocity.</p>
+<p><strong>PostCrashHeading</strong> is the estimated heading of both vehicles following a hypothetical collision (as discussed in <strong>PostCrashV</strong>). This heading is expressed as the angle measured counterclockwise from the x-axis (which is assumed to point right), such that 0&deg; is right, 90&deg;  is up, 180&deg;  is left, and 270&deg;  is down. The angle ranges from 0&deg;  to 360&deg;.</p>
+<p><strong>FirstVID (SecondVID)</strong> is the vehicle identification number of the first (second) vehicle. The first vehicle is the vehicle that arrives to the conflict point first. The second vehicle subsequently arrives to the same location. In rare cases (actually collisions), both vehicles arrive to a location simultaneously, in which case the tie between first and second vehicle in broken arbitrarily.</p>
+<p><strong>FirstLink (SecondLink)</strong> is a number indicating which link the first (second) vehicle is traveling on at <strong>tMinTTC</strong>.</p>
+<p><strong>FirstLane (SecondLane)</strong> is a number indicating in which lane the first (second) vehicle is traveling on at <strong>tMinTTC</strong>.</p>
+<p><strong>FirstLength (SecondLength)</strong> is the length of the first (second) vehicle in feet or meters.</p>
+<p><strong>FirstWidth (SecondWidth)</strong> is the width of the first (second) vehicle in feet or meters.</p>
+<p><strong>FirstHeading (SecondHeading)</strong> is the heading of the first (second) vehicle during the conflict. This heading is approximated by the change in position from the start of the conflict to the end of the conflict. Note that in most non-rear-end conflicts, at least one vehicle is turning throughout the conflict. Its actually heading would vary accordingly throughout the conflict. If the vehicle does not move during the conflict, then the direction in which it is facing is taken as the heading. This heading is expressed as the angle measured counterclockwise from the x-axis (which is assumed to point right), such that 0&deg; is right, 90&deg;  is up, 180&deg;  is left, and 270&deg;  is down. The angle ranges from 0&deg; to 360&deg;.</p>
+<p><strong>FirstVMinTTC (SecondVMinTTC)</strong> is the velocity (speed) of the first (second) vehicle at <strong>tMinTTC</strong>.</p>
+<p><strong>xFirstCSP (xSecondCSP)</strong> is the x-coordinate of the first (second) vehicle at the conflict starting point (CSP). The CSP is the location of the vehicle at <strong>tMinTTC</strong>.</p>
+<p><strong>yFirstCSP (ySecondCSP)</strong> is the y-coordinate of the first (second) vehicle at the CSP. The CSP is the location of the vehicle at <strong>tMinTTC</strong>.</p>
+<p><strong>xFirstCEP (xSecondCEP)</strong> is the x-coordinate of the first (second) vehicle at the conflict ending point (CEP). The CEP is the location of the vehicle at either the last time step where the TTC value is below the specified threshold or where the last post-encroachment value was observed, whichever occurs later in the conflict timeline.</p>
+<p><strong>yFirstCEP (ySecondCEP)</strong> is the y-coordinate of the first (second) vehicle at the CEP. The CEP is the location of the vehicle at either the last time step where the TTC value is below the specified threshold or where the last post-encroachment value was observed, whichever occurs later in the conflict timeline.</p>
+<a name="def"></a><h4>Definitions of Surrogate Measures Computed by SSAM</h4>
+<p><strong>TTC</strong> is the minimum time-to-collision value observed during the conflict. This estimate is based on the current location, speed, and future trajectory of two vehicles at a given instant. A TTC value is defined for each time step during the conflict event. A conflict event is concluded after the TTC value rises back above the critical threshold value. This value is recorded in seconds.</p>
+<p><strong>PET</strong> is the minimum post-encroachment time observed during the conflict. Post-encroachment time is the time between when the first vehicle last occupied a position and the time when the second vehicle subsequently arrived to the same position. A value of zero indicates a collision. A post-encroachment time is associated with each time step during a conflict. A conflict event is concluded when the final PET value is recorded at the last location where a time-to-collision value was still below the critical threshold value. This value is recorded in seconds.</p>
+<p><strong>MaxS</strong> is the maximum speed of either vehicle throughout the conflict (i.e., while the TTC is less than the specified threshold). This value is expressed in feet per second or meters per second, depending on the units specified in the corresponding trajectory file.</p>
+<p><strong>DeltaS</strong> is the difference in vehicle speeds as observed at <strong>tMinTTC</strong>. More precisely, this value is mathematically defined as the magnitude of the difference in vehicle velocities (or trajectories), such that if <em>v<sub>1</sub></em> and <em>v<sub>2 </sub></em>are the velocity vectors of the first and second vehicles respectively, then <strong>DeltaS =</strong> || <em>v<sub>1</sub></em> - <em>v<sub>2</sub></em> ||. For context, consider an example where both vehicles are traveling at the same speed, <em>v</em>. If they are traveling in the same direction, <strong>DeltaS</strong> = 0. If they have a perpendicular crossing path, <strong>DeltaS</strong> = (<em>&#8730;2</em>)<em>v</em>. If they are approaching each other head on, <strong>DeltaS</strong> = <em>2v</em>.</p>
+<p><strong>DR</strong> is the initial deceleration rate of the second vehicle, recorded as the instantaneous acceleration rate. If the vehicle brakes (i.e., reacts), this is the first negative acceleration value observed during the conflict. If the vehicle does not brake, this is the lowest acceleration value observed during the conflict. This value is expressed in feet per second or meters per second, depending on the units specified in the corresponding trajectory file.</p>
+<p><strong>MaxD</strong> is the maximum deceleration of the second vehicle, recorded as the minimum instantaneous acceleration rate observed during the conflict. A negative value indicates deceleration (braking or release of gas pedal). A positive value indicates that the vehicle did not decelerate during the conflict. This value is expressed in feet per second or meters per second, depending on the units specified in the corresponding trajectory file.</p>
+<p><strong>ConflictType</strong> describes whether the conflict is the result of a rear end, lane change, or crossing movement. If link and lane information is not available for both vehicles then the event type is classified based solely on the absolute value of the <strong>ConflictAngle</strong> as follows. The type is classified as a rear-end conflict if ||<strong>ConflictAngle||</strong> &lt; 30&deg;, a crossing conflict if ||<strong>ConflictAngle||</strong> &gt; 85&deg;, or otherwise a lane-changing conflict. However, the simulation model that produced the vehicle trajectory data can generally provide link and lane information for both vehiclesthough the coding of these values may vary significantly from one simulation vendor to the next. If link and lane information is available, that information is utilized for classification in the case that the vehicles both occupy the same lane (of the same link) at either the start or end of the conflict event. If the vehicles both occupy the same lane at the start and end of the event, then it is classified as a rear-end event. If either vehicle ends the conflict event in a different lane than it started (while having not changed links), then the event is classified as a lane-change. If either of the vehicles changes links over the course of the event, then the conflict angle determines the classification as previously described, with the following possible exception). For two vehicles that begin the conflict event in the same lane but change links over the course of the event, the classification logic considers only rear-end or lane-change types, based on the conflict angle (using the threshold value previously mentioned). Note that vehicle maneuvers such as changing lanes into an adjacent turn bay lane or entering into an intersection area may be consider changing links, depending on the underlying simulation model. In some cases, vehicles which appear to be traveling in the same lane may actually by considered by the simulation model as traveling on different links that happen to overlap.</p>
+<p><strong>Max</strong><strong>DeltaV</strong> is the maximum <strong>DeltaV</strong> value of either vehicle in the conflict (see <strong>FirstDeltaV</strong> or <strong>SecondDeltaV</strong> for more information).</p>
+<p><strong>FirstDeltaV (SecondDeltaV)</strong> is the change between conflict velocity (given by speed <strong>FirstVMinTTC</strong> and heading <strong>FirstHeading</strong>) and the postcollision velocity (given by speed <strong>PostCrashV</strong> and heading <strong>PostCrashHeading</strong>). This is a surrogate for the severity of the conflict, calculated assuming a hypothetical collision of the two vehicles in the conflict.</p>
+
+<p align="center"><strong><a href="01.cfm">Previous</a> | <a href="index.cfm#toc">Table of Contents</a> | <a href="03a.cfm">Next</a></strong></p></td>
+</tr>
+</table>
+
+<!-- Content Ends below here is the footer includes -->
+		
+  
+  
+  <div id="footer" style="border-top:#999 3px solid;">
+    <div style=" margin-left:10%;">
+      <table id="footermain" align="left" border="0" cellpadding="2" cellspacing="5">
+        <tr>
+          <td class="left" style="line-height:1.5em"><div class="zeromarginblue">
+              
+              Page Owner: Office of Research, Development, and Technology, Office of Safety, RDT <br/>
+            </div>
+            
+            
+            
+            <div class="zeromargin"> 
+                  Topics: research, safety<br/>
+                
+                  Keywords: research, safety, Surrogate measures, safety, traffic simulation, validation, traffic conflicts, conflicts, crashes, accidents, prediction <br/>
+                
+                  TRT Terms: research, Safety and security, Safety, Transportation safety<br/>
+                
+                  Scheduled Update: Archive -  No Update needed <br/>
+                   </div>
+            
+            
+            
+            
+            <div id="moddate"> This page last modified on 03/08/2016  </div></td>
+        </tr>
+        
+        
+      </table>
+    </div>
+  </div>
+  
+  
+  
+   <div class="clearall"></div> 
+	</div>
+
+    <!-- return to top -->
+    <table><tr><td><p class="txtright txtsmall noprint returntoplink">&nbsp;</p></td></tr></table>
+
+    
+    
+<!-- end content -->        
+
+
+
+<!-- start fhwa footer -->
+<div id="fhwafooter">
+	<div class="fhwacontainer">
+    	<div class="fhwasign" title="U.S. Department of Transportation/Federal Highway Administration"></div>
+        <div class="noprint"><a href="/privacy.cfm">Privacy Policy</a> | <a href="/foia/">Freedom of Information Act (FOIA)</a> | <a href="https://highways.dot.gov/section-508/our-commitment">Accessibility</a> | <a href="/webpolicies/publishschedule.cfm">Web Policies &amp; Notices</a> | <a href="https://www.transportation.gov/civil-rights/civil-rights-awareness-enforcement/no-fear-act">No Fear Act</a> | <a href="https://www.oig.dot.gov/Hotline">Report Waste, Fraud and Abuse</a> <br /> <a href="https://www.transportation.gov/">U.S. DOT Home</a> | <a href="https://www.usa.gov/">USA.gov</a> | <a href="https://www.whitehouse.gov/">WhiteHouse.gov</a><br /><br /></div>
+        <div>
+            <a href="https://highways.dot.gov/">Federal Highway Administration</a> | 1200 New Jersey Avenue, SE | Washington, DC 20590 | 202-366-4000
+                        
+            <br /><a href="/research/">Turner-Fairbank Highway Research Center</a> | 6300 Georgetown Pike | McLean, VA | 22101		
+            	
+            
+     	</div>
+    </div>
+</div>
+<!-- end fhwa footer -->
+
+</body>
+</html> 

@@ -1,0 +1,199 @@
+{
+  "version": "crossing_candidate_v6_1_replay_20261015",
+  "created_at_utc": "2026-10-15T11:37:37.053726+00:00",
+  "stage": "fixed_before_candidate_replay",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/crossing_v6_1_replay_20261015.py",
+    "prepare"
+  ],
+  "parent_protocol_sha256": "ae7db74041abe8758746d0819e5afe9fa8df48112d3864b13d1e76e412b9fd23",
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_protocol_20261014.json",
+      "sha256": "ae7db74041abe8758746d0819e5afe9fa8df48112d3864b13d1e76e412b9fd23",
+      "bytes": 7694
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_comparison_20261014.json",
+      "sha256": "3b811a32cc26a11a647b9c6acede9759a5f2a569c59a0945b877c85161d4cbbb",
+      "bytes": 4409
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv",
+      "sha256": "b9e753e34ff803956d161368aa1577d0517209ef052129fa8343b221e9f8e633",
+      "bytes": 33848
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv.manifest.json",
+      "sha256": "06db29cec4c62a3102e0af94eade668fec6e84df8d111a678994c5246a58b9e0",
+      "bytes": 1994
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_evidence_20261014.json",
+      "sha256": "0337d03b460c9cdf7e3e5bc9b469f925b9e37fcc20fa2ccadf30a2ebc0fcd42d",
+      "bytes": 170903
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff",
+      "bytes": 45134
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\crossing_candidate_v6_1.py",
+      "sha256": "f13e3603aa95b532c04c39d5a03e3df84049b6f6b4a5374ec68a8f2210befc7b",
+      "bytes": 4787
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_crossing_candidate_v6_1.py",
+      "sha256": "0ca2868639118414199af65b09fb2f3d4d0855c8c4e13c353b965b3a3e6dd8ef",
+      "bytes": 6214
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\crossing_v6_1_replay_20261015.py",
+      "sha256": "ad0bea69e7449035bcf705bf814d80c246beee61ce7bb4c701d318725ba17320",
+      "bytes": 15422
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_crossing_v6_1_replay_20261015.py",
+      "sha256": "242081b7d8cbd1ffdff40b8944394d7c760585f25f8a6913f60e75866b2643e6",
+      "bytes": 2127
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\crossing_v6_boundary_20261015.md",
+      "sha256": "afcfdd19be0b85f2e5ac3144b1406694d89ff783c83c09de4e2861f0aac5aa99",
+      "bytes": 8733
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\crossing_v6_replay_20261014.py",
+      "sha256": "e7baebcedc846f4714b2213b5773284b852689be533f6547b7e47f688fbc3168",
+      "bytes": 19787
+    }
+  ],
+  "runtime": {
+    "python": "3.9.23",
+    "executable": {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+      "sha256": "102dc158e0428a9ee945f010b33acf67091575725042ba537dcc8371efef0e14",
+      "bytes": 96256
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "nuscenes-devkit": "1.2.0",
+      "shapely": "2.0.7",
+      "pyquaternion": "0.9.9"
+    }
+  },
+  "names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "tokens": [
+    "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+    "bc219c0fa63b43b4b9dddab47fce1fef",
+    "c075fbdd97124beaba95bc5c25149f30",
+    "d1e57234fd6a463d963670938f9f556e",
+    "b79d940da8df43d09ee972c2414ffeca",
+    "82aef599650d462db73731b7ff40918b",
+    "9047b53fd41540649dce014a128cbe1b",
+    "c6c092a66329470f836714f46b92d59b",
+    "6d4b2bd795ae4c66900ad98ccd2371a6",
+    "446af4b1d7da4735a607bc3e45c2e0b3",
+    "83773bcf46ac486383529098de0542dd",
+    "cb0cd06a1dd84271968466d7b65e48f8",
+    "b0b26c1e5a1140e69598422f12ae1dc0",
+    "5557f4edc1464442812293e2ea90a586",
+    "78c5f7d7b547483c906d8524a8c3190f",
+    "cba3ddd5c3664a43b6a08e586e094900",
+    "2eb4d7f00e584a548aa0b899638bfb0a",
+    "ddb615d9bb22484cabc6545b632a1025",
+    "fcbccedd61424f1b85dcbf8f897f9754",
+    "3b2ee26cb8484f77895bc336663df502",
+    "fb73d1a6c16147ee9416faf6b310fadb",
+    "e6cb595f6df44b3999db28c65f2244ac",
+    "ba76f4185aa34ed3bff467ac640da902",
+    "c0d3796765e2452d990309b2568adac5",
+    "e0b14a8e11994763acba690bbcc3f56a",
+    "16e50a63b809463099cb4c378fe0641e",
+    "30783e1b472a4101b82be19e41636ba2",
+    "c5b36e5275cc4a2285d095e87347c49a",
+    "0e247ba64b9d4a34a7256b6c173b1b5d"
+  ],
+  "allowed_changes": [
+    "left_turn_cross_traffic_interaction_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand"
+  ],
+  "boundary_controls": {
+    "scene_name": "scene-0068",
+    "truck": "727349048e9044d98846cbeeb3a1b5fd",
+    "truck_frames": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "car": "64a805096d9047a6bbc73734b0a90e67",
+    "forbidden_car_frame": 24,
+    "retained_crossing_frames": [
+      15,
+      16
+    ]
+  },
+  "outputs": [
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv.manifest.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_events_20261015.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_comparison_20261015.json",
+    "F:\\Scene_cluster\\outputs\\人工复核\\横向交互v6_1事件连续性对照_20261015.md"
+  ],
+  "semantics": "Historical same-target episode only; retained known route-potential response seed; forward<=6s; gap<=.75s",
+  "geometry_and_current_crossings_changed": false,
+  "new_extraction": false,
+  "fit_allowed": false,
+  "evaluation_used": false
+}

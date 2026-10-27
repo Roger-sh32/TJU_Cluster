@@ -1,0 +1,100 @@
+{
+  "started_at_utc": "2026-10-11T03:00:21.969840+00:00",
+  "pid": 23968,
+  "phase": "completed",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\transfer_protocol_v2.json",
+    "sha256": "73ee4228aa3c1c8466ea6005ffb24cefb995f56a019a1553186b20b2ef78c5eb",
+    "bytes": 60290
+  },
+  "completed_parts": [
+    {
+      "part": 3,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval03_blobs_camera.tgz",
+        "sha256": "15af91f64049109f5f9a55a2b361a168f10e5331a8dca86d6bce257e2555eddd",
+        "bytes": 16599534206
+      },
+      "restored_files": 0
+    },
+    {
+      "part": 4,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval04_blobs_camera.tgz",
+        "sha256": "c2a1374fd72b45395946294a134458a1c843b926fa89021a08fe87655c61c9e3",
+        "bytes": 17820165067
+      },
+      "restored_files": 23561
+    },
+    {
+      "part": 5,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval05_blobs_camera.tgz",
+        "sha256": "7258ce4fe0fd9436878448ccd6734c8170d1115dd5dee06db231d83ac2d8ee9b",
+        "bytes": 14852318156
+      },
+      "restored_files": 28413
+    },
+    {
+      "part": 6,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval06_blobs_camera.tgz",
+        "sha256": "0425fa5b7e924977a100ea2b42391c98bf79b3bd4b9a70a7ef81defb45e77527",
+        "bytes": 14477516576
+      },
+      "restored_files": 39695
+    },
+    {
+      "part": 7,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval07_blobs_camera.tgz",
+        "sha256": "9ba043bd1041795840aac85097b91deb169c84d340b3a32bf51d81143b44cbb7",
+        "bytes": 16065659931
+      },
+      "restored_files": 235
+    },
+    {
+      "part": 8,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval08_blobs_camera.tgz",
+        "sha256": "9cd40fc6c07a610a4ab297f8c489037ca11aa63a886da35b831cac9d0aba908d",
+        "bytes": 16743348010
+      },
+      "restored_files": 14562
+    },
+    {
+      "part": 9,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval09_blobs_camera.tgz",
+        "sha256": "c2b87e49b37ac57dd7b1a83dd5f6b609c2b8227eadc9185c3e2a6e90dc98fc1a",
+        "bytes": 19302674331
+      },
+      "restored_files": 49069
+    },
+    {
+      "part": 10,
+      "archive": {
+        "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\packages\\v1.0-trainval10_blobs_camera.tgz",
+        "sha256": "1038a6204633067310b894da3793bca0a39f758fee039d22cf91a34757cbc89a",
+        "bytes": 27323394106
+      },
+      "restored_files": 21034
+    }
+  ],
+  "remaining_files": 0,
+  "updated_at_utc": "2026-10-11T20:58:02.552261+00:00",
+  "part": 10,
+  "downloaded_bytes": 27323394106,
+  "package_bytes": 27323394106,
+  "attempt": 1,
+  "range_end": 27323394105,
+  "last_network_error": null,
+  "restored_in_part": 21034,
+  "skipped_in_part": 0,
+  "audited_file_count": 210000,
+  "report": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\media_recovery_audit_20261011.json",
+    "sha256": "ec708a4c29f1320a2b585b25ccef82efd95d63fb098af1e6c8f1fd6c3f7add3f",
+    "bytes": 10792
+  }
+}

@@ -1,0 +1,7 @@
+SOURCE HDBSCAN\tables\scene_features_crossing_v6_1_replay29_20261015.csv SHA256 081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147
+SOURCE HDBSCAN\tables\crossing_v5_2_regression29_trajectory_20261013.json SHA256 1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60
+SOURCE F:\Scene_cluster\HDBSCAN\scripts\scene_feature_rules.py SHA256 6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d
+Traceback (most recent call last):
+  File "<stdin>", line 29, in <module>
+  File "<stdin>", line 29, in <dictcomp>
+ValueError: could not convert string to float: 'singapore-onenorth'

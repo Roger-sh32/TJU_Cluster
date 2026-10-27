@@ -1,0 +1,9 @@
+Fixed names: ['scene-0002', 'scene-0007', 'scene-0011', 'scene-0014', 'scene-0026', 'scene-0030', 'scene-0032', 'scene-0042', 'scene-0053', 'scene-0055', 'scene-0056', 'scene-0067', 'scene-0068', 'scene-0073', 'scene-0074', 'scene-0093', 'scene-0097', 'scene-0102', 'scene-0103', 'scene-0107', 'scene-0109', 'scene-0122', 'scene-0151', 'scene-0158', 'scene-0453', 'scene-0552', 'scene-0669', 'scene-0815', 'scene-0816']
+{
+  "stage": "candidate_feature_extraction",
+  "preflight_only": true,
+  "fit_scope": "development",
+  "scene_count": 29,
+  "split_sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+  "semantic_feature_count": null
+}

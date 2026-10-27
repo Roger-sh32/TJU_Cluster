@@ -1,0 +1,346 @@
+{
+  "created_at_utc": "2026-10-01T03:43:19.312283+00:00",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/check_crossing_case0552_20261001.py"
+  ],
+  "scope": "single development trajectory diagnosis and media existence, not semantic acceptance",
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_case0552_20261001.csv",
+      "sha256": "1449ce52a83a41a15150f9c407ce2a020c2a31ff81499becd5b77765da653960"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_regression33_20261001.csv",
+      "sha256": "0591b1ac43f3161e0b4900e738c38a640765fd0e29cb11e0d1e99184bbd4507f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_case0552_trajectory_20261001.json",
+      "sha256": "7950e0741806b177b502d4a15146019f0f9f42fa23af128351e8e5afad932dd7"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_case0552_20261001.csv.quality.json",
+      "sha256": "f5a91d8ea7c2ba4894cbdeed2a3187ba82d44b941d76fa0852a6a39ffa0f74ed"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\check_crossing_case0552_20261001.py",
+      "sha256": "e9efbc08824898046889771d9d1c523b048e9e070e6a574dbaad919c2b0a9ab4"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\evaluation_media_audit_20260926.py",
+      "sha256": "ae06907415d8b3a12eb65ee45c349f209defe99e47fc054c440f4db52f628310"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample.json",
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample_data.json",
+      "sha256": "6dcad49f0b9bd7b1cef04e2a0ff2ac2879b46b938e8d48153f00693cebb4de21"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sensor.json",
+      "sha256": "4d5c96570e2d8b09b88ce4c605e40ee43c4909f97bea5741185f18f92eb491ae"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\calibrated_sensor.json",
+      "sha256": "67781a5dd7b2504b046ef89d6dcb267b12d1cc91af21f1ec5758624588e99865"
+    }
+  ],
+  "scene_name": "scene-0552",
+  "scene_token": "16e50a63b809463099cb4c378fe0641e",
+  "description": "Bendy bus, school bus, parking lot, turn left, parked bus, overtake truck",
+  "exact_batch_reproduction": true,
+  "rejected_candidates": [
+    {
+      "index": 27,
+      "instance_token": "661bbc09751c415a879050c906308a6d",
+      "category": "vehicle.car",
+      "heading_change": 1.1652508032330973,
+      "minimum_future_route_distance": 8.456643879803163,
+      "actor_width": 1.823,
+      "actor_bounding_diameter": 4.761778029265959,
+      "yielding_response": false,
+      "future_complete": true,
+      "rejected_turning_projection": true,
+      "scene_time_s": 13.398247957229614,
+      "ego_speed_mps": 3.9981807590141263,
+      "actor_forward_m": 20.984232422678417,
+      "actor_lateral_m": -16.3494045334106
+    },
+    {
+      "index": 28,
+      "instance_token": "661bbc09751c415a879050c906308a6d",
+      "category": "vehicle.car",
+      "heading_change": 0.9758343992821112,
+      "minimum_future_route_distance": 7.6971906856782795,
+      "actor_width": 1.823,
+      "actor_bounding_diameter": 4.761778029265959,
+      "yielding_response": false,
+      "future_complete": true,
+      "rejected_turning_projection": true,
+      "scene_time_s": 13.898118019104004,
+      "ego_speed_mps": 3.8459521747951846,
+      "actor_forward_m": 14.851214485026256,
+      "actor_lateral_m": -18.005013936625673
+    }
+  ],
+  "keyframe_count": 41,
+  "keyframes_present": 0,
+  "keyframes": [
+    {
+      "sample_token": "5b90526901414d2aa5db2b9fdaf858eb",
+      "timestamp": 1535489136012404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489136012404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "aa9848eff6fd40a88148dadfa611b10b",
+      "timestamp": 1535489136512404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489136512404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "5a2d3dfe7075436fb5826dfc45e53495",
+      "timestamp": 1535489136912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489136912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "f56b256d74d5484fbb1be4ac42546a7c",
+      "timestamp": 1535489137412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489137412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "509430f5472a4a47bde26cf3bee935fb",
+      "timestamp": 1535489137912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489137912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "fb51300f4f894631bbf2a1c0970e0701",
+      "timestamp": 1535489138412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489138412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "bca4a3f7ae0748c3b7b2f6e537c1518c",
+      "timestamp": 1535489138912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489138912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "9e597bf087df4d7fae593e7793e87e4e",
+      "timestamp": 1535489139412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489139412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "ca025b0fd09d40f8bc1dacec54d6b937",
+      "timestamp": 1535489139912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489139912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "c735e5f28290490b9fe269fcc6f1f895",
+      "timestamp": 1535489140412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489140412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "bc73130bbe4e4361922e99edbed1d8e6",
+      "timestamp": 1535489140912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489140912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "f984bba40e134fb7ac6e7abf11a20b69",
+      "timestamp": 1535489141412414,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489141412414.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "9831d9d23688450281465c2786c5e3a3",
+      "timestamp": 1535489141912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489141912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "9410ca9b3f9c4f528756dc5a009f20fd",
+      "timestamp": 1535489142412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489142412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "2e70460e06f942f08adadadf3e434050",
+      "timestamp": 1535489142912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489142912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "f748001963c7443f88b5988cebcbcc22",
+      "timestamp": 1535489143412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489143412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "815d072a4ff24e4db5f487150c37da38",
+      "timestamp": 1535489143912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489143912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "0aaca2f368ea4089a3e025efcae32588",
+      "timestamp": 1535489144412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489144412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "0849315c62f8452ea3614656c362c79c",
+      "timestamp": 1535489144912547,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489144912547.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "8b763668a6014211a290deba61280f16",
+      "timestamp": 1535489145412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489145412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "28d95d22c2e94cc4a8b3dab896e4b70b",
+      "timestamp": 1535489145912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489145912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "51d5918ad83c4a66a08e93123a9fc51a",
+      "timestamp": 1535489146412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489146412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "dc814c6970ba4437ace28e775f5b9835",
+      "timestamp": 1535489146912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489146912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "e858e7a613c54860b354e63cd8ae1fc5",
+      "timestamp": 1535489147412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489147412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "75bde66b01454744904d51c1fa92f246",
+      "timestamp": 1535489147912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489147912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "bffcf51dadb047a5b6d1d377709ba188",
+      "timestamp": 1535489148412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489148412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "c6558fcf7c034d939c3aa0b6a6feb048",
+      "timestamp": 1535489148912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489148912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "0323d6b741144f2a945da4027415efa1",
+      "timestamp": 1535489149412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489149412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "d078f5c7222e4f08b54822118a284d6e",
+      "timestamp": 1535489149912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489149912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "bf6ce332b3274836b301a965d8c44789",
+      "timestamp": 1535489150412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489150412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "7c25767f512d4c3a81bccb2f6951b2f9",
+      "timestamp": 1535489150912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489150912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "54de2c07683841cf8626494bdc4ae1d4",
+      "timestamp": 1535489151412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489151412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "a3b250411f83435d89d0dc388fd3aaa6",
+      "timestamp": 1535489151912414,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489151912414.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "fc6968b9cc604f30b6073e5368787e04",
+      "timestamp": 1535489152412456,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489152412456.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "5ef15615bc08428bab23b2a84e84961e",
+      "timestamp": 1535489152912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489152912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "770abd0f6da94887bdda0cb07915e343",
+      "timestamp": 1535489153412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489153412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "4c0bf77388194efbb1e7d184d9731807",
+      "timestamp": 1535489153912404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489153912404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "750123005f1d4566a68270072997382b",
+      "timestamp": 1535489154412404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489154412404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "8623a21e5c2945b09e324e82f11784f2",
+      "timestamp": 1535489154862404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489154862404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "e9df1bab66024009bcceb92426467173",
+      "timestamp": 1535489155362404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489155362404.jpg",
+      "exists_nonempty": false
+    },
+    {
+      "sample_token": "3ead22fb59124848bf3e17e39f87be8e",
+      "timestamp": 1535489155862404,
+      "path": "F:\\Scene_cluster\\nuScenes\\samples\\CAM_FRONT\\n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489155862404.jpg",
+      "exists_nonempty": false
+    }
+  ],
+  "keyframes_decoded": false,
+  "sweeps_checked": false,
+  "semantic_validity_verified": false,
+  "expert_review_required": true
+}

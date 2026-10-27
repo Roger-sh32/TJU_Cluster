@@ -1,0 +1,20 @@
+test_ast_parameter_reader_does_not_execute_module (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_changed_or_missing_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_correct_number_with_wrong_source_is_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+test_duplicate_or_extra_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_fact_table_exact_values (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_nonliteral_or_ambiguous_parameters_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_unclosed_math_block_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+
+======================================================================
+FAIL: test_correct_number_with_wrong_source_is_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 29, in test_correct_number_with_wrong_source_is_refused
+    self.module().validate_fact_table('| F01 | 样本 | 700 / 150 | S05 |', {'F01': '700 / 150'})
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.540s
+
+FAILED (failures=1)

@@ -1,0 +1,40 @@
+{
+  "scene_name": "scene-0552",
+  "description": "Bendy bus, school bus, parking lot, turn left, parked bus, overtake truck",
+  "rejected_candidates": [
+    {
+      "index": 27,
+      "instance_token": "661bbc09751c415a879050c906308a6d",
+      "category": "vehicle.car",
+      "heading_change": 1.1652508032330973,
+      "minimum_future_route_distance": 8.456643879803163,
+      "actor_width": 1.823,
+      "actor_bounding_diameter": 4.761778029265959,
+      "yielding_response": false,
+      "future_complete": true,
+      "rejected_turning_projection": true,
+      "scene_time_s": 13.398247957229614,
+      "ego_speed_mps": 3.9981807590141263,
+      "actor_forward_m": 20.984232422678417,
+      "actor_lateral_m": -16.3494045334106
+    },
+    {
+      "index": 28,
+      "instance_token": "661bbc09751c415a879050c906308a6d",
+      "category": "vehicle.car",
+      "heading_change": 0.9758343992821112,
+      "minimum_future_route_distance": 7.6971906856782795,
+      "actor_width": 1.823,
+      "actor_bounding_diameter": 4.761778029265959,
+      "yielding_response": false,
+      "future_complete": true,
+      "rejected_turning_projection": true,
+      "scene_time_s": 13.898118019104004,
+      "ego_speed_mps": 3.8459521747951846,
+      "actor_forward_m": 14.851214485026256,
+      "actor_lateral_m": -18.005013936625673
+    }
+  ],
+  "keyframe_count": 41,
+  "keyframes_present": 0
+}

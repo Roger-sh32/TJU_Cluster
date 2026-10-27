@@ -1,0 +1,580 @@
+{
+  "version": "longitudinal_candidate_v7_20261015",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+    "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d",
+    "bytes": 8398
+  },
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_baseline_20261015.json",
+      "sha256": "44aab6ab4b2065d4aa98b9d070324b0c70d071b7198dc372242249ccd3c4d925",
+      "bytes": 1177
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+      "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93",
+      "bytes": 33264
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+      "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c",
+      "bytes": 2287
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+      "sha256": "a3082bb3d7be151e1a38bb611436bec36e01d15cc7317912565caedacbaa1667",
+      "bytes": 1131507
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\纵向目标v7固定29条对照_20261015.md",
+      "sha256": "84d1b4ca79395179657918e4f7f21bb38f1354c820026c62be3582d0e03f9a19",
+      "bytes": 7868
+    }
+  ],
+  "changes": [
+    {
+      "scene_name": "scene-0002",
+      "column": "car_following_ratio",
+      "v6_1": 0.1,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "following_event_count",
+      "v6_1": 2,
+      "v7": 0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "following_max_duration",
+      "v6_1": 1.4000978469848633,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "stopped_lead_ratio",
+      "v6_1": 0.025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "stationary_lead_obstacle_ratio",
+      "v6_1": 0.025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "stationary_lead_event_count",
+      "v6_1": 1,
+      "v7": 0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "stationary_lead_min_dist",
+      "v6_1": 11.380521655738708,
+      "v7": 80.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "ego_evasive_lateral_shift",
+      "v6_1": 43.13337892766679,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "ego_evasive_net_heading_change",
+      "v6_1": 0.9094827187559482,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "close_following_ratio",
+      "v6_1": 0.05,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "front_vehicle_min_dist",
+      "v6_1": 11.380521655738708,
+      "v7": 80.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc",
+      "v6_1": 3.667110142116583,
+      "v7": 30.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_scene_time",
+      "v6_1": 3.099886178970337,
+      "v7": -1.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_annotation_token",
+      "v6_1": "cfd887c5d8c14b9cae8101bb5c92a384",
+      "v7": "none"
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_instance_token",
+      "v6_1": "f81272dbd16345f8b460bf0e69de5a80",
+      "v7": "none"
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_category",
+      "v6_1": "vehicle.car",
+      "v7": "none"
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_clearance",
+      "v6_1": 11.380521655738708,
+      "v7": 80.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_lateral_distance",
+      "v6_1": -0.09817682745285605,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_speed",
+      "v6_1": 0.02474432494841057,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_forward_speed",
+      "v6_1": -0.022014072479455016,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_relative_speed",
+      "v6_1": 3.103403283428541,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "min_ttc_target_heading_delta",
+      "v6_1": -2.170788487219927,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "ttc_valid_ratio",
+      "v6_1": 0.025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "car_following_ratio",
+      "v6_1": 0.024390243902439025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "following_event_count",
+      "v6_1": 1,
+      "v7": 0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "following_max_duration",
+      "v6_1": 0.49987101554870605,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "stopped_lead_ratio",
+      "v6_1": 0.024390243902439025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "stationary_lead_obstacle_ratio",
+      "v6_1": 0.024390243902439025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "stationary_lead_event_count",
+      "v6_1": 1,
+      "v7": 0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "stationary_lead_min_dist",
+      "v6_1": 23.02637987327746,
+      "v7": 80.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "ego_evasive_lateral_shift",
+      "v6_1": 50.88830610840417,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "ego_evasive_net_heading_change",
+      "v6_1": 0.09053575117532996,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "front_vehicle_min_dist",
+      "v6_1": 23.02637987327746,
+      "v7": 80.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc",
+      "v6_1": 3.07190850704381,
+      "v7": 30.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_scene_time",
+      "v6_1": 9.901901960372925,
+      "v7": -1.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_annotation_token",
+      "v6_1": "1a3280e4959d42fbbf837610bf73336e",
+      "v7": "none"
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_instance_token",
+      "v6_1": "a322f2092ecc46fa8538b7270990acbb",
+      "v7": "none"
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_category",
+      "v6_1": "vehicle.truck",
+      "v7": "none"
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_clearance",
+      "v6_1": 23.02637987327746,
+      "v7": 80.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_lateral_distance",
+      "v6_1": 0.19453470642871085,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_speed",
+      "v6_1": 0.10893970659856995,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_forward_speed",
+      "v6_1": -0.10525147140186884,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_relative_speed",
+      "v6_1": 7.495789611076808,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "min_ttc_target_heading_delta",
+      "v6_1": -2.0348046616347473,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "ttc_valid_ratio",
+      "v6_1": 0.024390243902439025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0067",
+      "column": "car_following_ratio",
+      "v6_1": 0.5,
+      "v7": 0.45
+    },
+    {
+      "scene_name": "scene-0067",
+      "column": "following_event_count",
+      "v6_1": 3,
+      "v7": 4
+    },
+    {
+      "scene_name": "scene-0093",
+      "column": "car_following_ratio",
+      "v6_1": 0.05128205128205128,
+      "v7": 0.02564102564102564
+    },
+    {
+      "scene_name": "scene-0093",
+      "column": "following_max_duration",
+      "v6_1": 1.501950740814209,
+      "v7": 0.9997787475585938
+    },
+    {
+      "scene_name": "scene-0093",
+      "column": "front_vehicle_min_dist",
+      "v6_1": 47.08251961318326,
+      "v7": 49.8933691661718
+    },
+    {
+      "scene_name": "scene-0102",
+      "column": "car_following_ratio",
+      "v6_1": 0.05,
+      "v7": 0.025
+    },
+    {
+      "scene_name": "scene-0102",
+      "column": "following_max_duration",
+      "v6_1": 0.9992110729217529,
+      "v7": 0.4998791217803955
+    },
+    {
+      "scene_name": "scene-0102",
+      "column": "close_following_ratio",
+      "v6_1": 0.05,
+      "v7": 0.025
+    },
+    {
+      "scene_name": "scene-0102",
+      "column": "front_vehicle_min_dist",
+      "v6_1": 11.323564623586359,
+      "v7": 13.251958299067912
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "car_following_ratio",
+      "v6_1": 0.0975609756097561,
+      "v7": 0.07317073170731707
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "following_event_count",
+      "v6_1": 3,
+      "v7": 2
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "stopped_lead_ratio",
+      "v6_1": 0.0975609756097561,
+      "v7": 0.07317073170731707
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "stationary_lead_obstacle_ratio",
+      "v6_1": 0.07317073170731707,
+      "v7": 0.04878048780487805
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "stationary_lead_event_count",
+      "v6_1": 3,
+      "v7": 2
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "stationary_lead_min_dist",
+      "v6_1": 27.19425286396612,
+      "v7": 32.2984921614491
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "ego_evasive_lateral_shift",
+      "v6_1": 32.104118971838396,
+      "v7": 22.541793628621864
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "ego_evasive_net_heading_change",
+      "v6_1": 1.4951070477568316,
+      "v7": 0.9758343992821115
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "front_vehicle_min_dist",
+      "v6_1": 27.19425286396612,
+      "v7": 29.353529243282708
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc",
+      "v6_1": 6.679787558322406,
+      "v7": 7.500511265298755
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_scene_time",
+      "v6_1": 12.397926092147827,
+      "v7": 14.398539066314697
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_annotation_token",
+      "v6_1": "4b2f9f0301c64a0ab54c2b5d8eb4a65c",
+      "v7": "7435337f4e38495385dda829c17c6539"
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_instance_token",
+      "v6_1": "8109784ca0a84c8d9726c18818b2a1e1",
+      "v7": "3df0bafd3b7d4b3aaefb3925073a5808"
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_category",
+      "v6_1": "vehicle.bus.rigid",
+      "v7": "vehicle.car"
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_clearance",
+      "v6_1": 27.19425286396612,
+      "v7": 29.353529243282708
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_lateral_distance",
+      "v6_1": 0.9692634973541363,
+      "v7": 1.7027653675010903
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_speed",
+      "v6_1": 0.0410453527630176,
+      "v7": 0.3117612664180767
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_forward_speed",
+      "v6_1": -0.034077950622792036,
+      "v7": -0.25294498710679153
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_relative_speed",
+      "v6_1": 4.071125410281134,
+      "v7": 3.9135371183411616
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "min_ttc_target_heading_delta",
+      "v6_1": -2.3246298277192468,
+      "v7": -0.9459993547170629
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "ttc_valid_ratio",
+      "v6_1": 0.0975609756097561,
+      "v7": 0.07317073170731707
+    }
+  ],
+  "changed_scenes": [
+    "scene-0002",
+    "scene-0056",
+    "scene-0067",
+    "scene-0093",
+    "scene-0102",
+    "scene-0552"
+  ],
+  "clustering_changes": [
+    {
+      "scene_name": "scene-0002",
+      "column": "car_following_ratio",
+      "v6_1": 0.1,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "following_max_duration",
+      "v6_1": 1.4000978469848633,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0002",
+      "column": "stationary_lead_obstacle_ratio",
+      "v6_1": 0.025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "car_following_ratio",
+      "v6_1": 0.024390243902439025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "following_max_duration",
+      "v6_1": 0.49987101554870605,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0056",
+      "column": "stationary_lead_obstacle_ratio",
+      "v6_1": 0.024390243902439025,
+      "v7": 0.0
+    },
+    {
+      "scene_name": "scene-0067",
+      "column": "car_following_ratio",
+      "v6_1": 0.5,
+      "v7": 0.45
+    },
+    {
+      "scene_name": "scene-0093",
+      "column": "car_following_ratio",
+      "v6_1": 0.05128205128205128,
+      "v7": 0.02564102564102564
+    },
+    {
+      "scene_name": "scene-0093",
+      "column": "following_max_duration",
+      "v6_1": 1.501950740814209,
+      "v7": 0.9997787475585938
+    },
+    {
+      "scene_name": "scene-0102",
+      "column": "car_following_ratio",
+      "v6_1": 0.05,
+      "v7": 0.025
+    },
+    {
+      "scene_name": "scene-0102",
+      "column": "following_max_duration",
+      "v6_1": 0.9992110729217529,
+      "v7": 0.4998791217803955
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "car_following_ratio",
+      "v6_1": 0.0975609756097561,
+      "v7": 0.07317073170731707
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "stationary_lead_obstacle_ratio",
+      "v6_1": 0.07317073170731707,
+      "v7": 0.04878048780487805
+    }
+  ],
+  "baseline_reproduction_passed": true,
+  "unchanged_crossing_vru_and_weights": true,
+  "formal_fit_refused": true,
+  "evaluation_used": false,
+  "semantic_acceptance": false
+}

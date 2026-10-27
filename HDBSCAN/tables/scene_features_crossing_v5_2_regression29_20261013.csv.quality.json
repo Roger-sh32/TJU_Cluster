@@ -1,0 +1,318 @@
+{
+  "created_at_utc": "2026-10-13T01:49:29.272567+00:00",
+  "scope": "pre-fill scene aggregates and caught query exceptions only",
+  "scene_count": 29,
+  "column_count": 129,
+  "scene_names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "nonfinite_cell_count": 39,
+  "nonfinite_by_column": {
+    "merge_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 17,
+      "negative_inf": 0
+    },
+    "vru_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 22,
+      "negative_inf": 0
+    }
+  },
+  "nonfinite_cells": [
+    {
+      "scene_name": "scene-0002",
+      "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0002",
+      "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0011",
+      "scene_token": "c075fbdd97124beaba95bc5c25149f30",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0014",
+      "scene_token": "d1e57234fd6a463d963670938f9f556e",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0014",
+      "scene_token": "d1e57234fd6a463d963670938f9f556e",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0026",
+      "scene_token": "b79d940da8df43d09ee972c2414ffeca",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0026",
+      "scene_token": "b79d940da8df43d09ee972c2414ffeca",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0030",
+      "scene_token": "82aef599650d462db73731b7ff40918b",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0030",
+      "scene_token": "82aef599650d462db73731b7ff40918b",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0032",
+      "scene_token": "9047b53fd41540649dce014a128cbe1b",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0032",
+      "scene_token": "9047b53fd41540649dce014a128cbe1b",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0042",
+      "scene_token": "c6c092a66329470f836714f46b92d59b",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0053",
+      "scene_token": "6d4b2bd795ae4c66900ad98ccd2371a6",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0055",
+      "scene_token": "446af4b1d7da4735a607bc3e45c2e0b3",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0055",
+      "scene_token": "446af4b1d7da4735a607bc3e45c2e0b3",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0056",
+      "scene_token": "83773bcf46ac486383529098de0542dd",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0068",
+      "scene_token": "b0b26c1e5a1140e69598422f12ae1dc0",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0073",
+      "scene_token": "5557f4edc1464442812293e2ea90a586",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0074",
+      "scene_token": "78c5f7d7b547483c906d8524a8c3190f",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0093",
+      "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0093",
+      "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0097",
+      "scene_token": "2eb4d7f00e584a548aa0b899638bfb0a",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0102",
+      "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0103",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0109",
+      "scene_token": "fb73d1a6c16147ee9416faf6b310fadb",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0122",
+      "scene_token": "e6cb595f6df44b3999db28c65f2244ac",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0122",
+      "scene_token": "e6cb595f6df44b3999db28c65f2244ac",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0151",
+      "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0158",
+      "scene_token": "c0d3796765e2452d990309b2568adac5",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0158",
+      "scene_token": "c0d3796765e2452d990309b2568adac5",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0453",
+      "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0453",
+      "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0552",
+      "scene_token": "16e50a63b809463099cb4c378fe0641e",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0552",
+      "scene_token": "16e50a63b809463099cb4c378fe0641e",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0669",
+      "scene_token": "30783e1b472a4101b82be19e41636ba2",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0815",
+      "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0815",
+      "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0816",
+      "scene_token": "0e247ba64b9d4a34a7256b6c173b1b5d",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0816",
+      "scene_token": "0e247ba64b9d4a34a7256b6c173b1b5d",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    }
+  ],
+  "query_exception_count": 0,
+  "query_exception_counts_by_stage": {},
+  "query_errors": [],
+  "observed_checks_clean": false,
+  "semantic_validity_verified": false,
+  "legacy_fill_policy": {
+    "nan": 0.0,
+    "positive_inf": 30.0,
+    "negative_inf": 30.0
+  },
+  "limitations": [
+    "No guarantee about intermediate values discarded before scene aggregation.",
+    "Empty observations and explicit finite defaults are not calculation errors here.",
+    "Counts are exceptions, not affected frames or rates; one frame may raise repeatedly.",
+    "No semantic, risk or expert acceptance; zeros still require contextual interpretation."
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+    "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan_v5_2.py",
+    "sha256": "a34af552a0bdc396cec210aed1ebf63c5e20d75c0e084f987e51c1d3302e2974"
+  },
+  "audit_code": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\extraction_audit.py",
+    "sha256": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+  }
+}

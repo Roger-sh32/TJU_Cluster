@@ -1,0 +1,9 @@
+HEAD 03: 16599534206 bytes
+HEAD 04: 17820165067 bytes
+HEAD 05: 14852318156 bytes
+HEAD 06: 14477516576 bytes
+HEAD 07: 16065659931 bytes
+HEAD 08: 16743348010 bytes
+HEAD 09: 19302674331 bytes
+HEAD 10: 27323394106 bytes
+{"protocol": {"path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\protocol.json", "sha256": "7400a5e08fbe20ef98ccad2e04757790e0f8bdaf7a96dd91f82d85452885f9a5", "bytes": 57726}, "counts": {"development_keyframe_present": 119, "development_associated_nonkeyframe_present": 574, "evaluation_associated_nonkeyframe_present": 28259, "evaluation_keyframe_present": 5886, "evaluation_keyframe_missing_or_empty": 30312, "evaluation_associated_nonkeyframe_missing_or_empty": 145074, "development_associated_nonkeyframe_missing_or_empty": 979, "development_keyframe_missing_or_empty": 204}, "selected_file_count": 211407}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-16",
+  "scope": "Only two listed public driving-assistance appendices; no ZIP/dataset/media",
+  "tls": "Verified certifi CA and hostname check",
+  "source_page_record": {
+    "path": "knowledge\\sources\\标准项目\\来源核验_20261016\\S17_cicap.html",
+    "sha256": "23aef72f3473b4b9852c671a43f126b4daaafb089e0214e34df008be67e582d7"
+  },
+  "records": [
+    {
+      "file": "CICAP2024_A1.pdf",
+      "official_source_page": "https://www.c-ncap.org.cn/cncap-guicheng-detail?id=15",
+      "listed_url": "https://cncap.obs.cn-north-4.myhuaweicloud.com/cms/files/附录A.1《中国智能网联汽车技术规程（C-ICAP）》（2024版）-基础行车辅助测评细则.pdf",
+      "requested_url": "https://cncap.obs.cn-north-4.myhuaweicloud.com/cms/files/%E9%99%84%E5%BD%95A.1%E3%80%8A%E4%B8%AD%E5%9B%BD%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E6%B1%BD%E8%BD%A6%E6%8A%80%E6%9C%AF%E8%A7%84%E7%A8%8B%EF%BC%88C-ICAP%EF%BC%89%E3%80%8B%EF%BC%882024%E7%89%88%EF%BC%89-%E5%9F%BA%E7%A1%80%E8%A1%8C%E8%BD%A6%E8%BE%85%E5%8A%A9%E6%B5%8B%E8%AF%84%E7%BB%86%E5%88%99.pdf",
+      "started_at_utc": "2026-10-16T01:37:02.637945+00:00",
+      "max_response_bytes": 12582912,
+      "saved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "CICAP2024_A2.pdf",
+      "official_source_page": "https://www.c-ncap.org.cn/cncap-guicheng-detail?id=15",
+      "listed_url": "https://cncap.obs.cn-north-4.myhuaweicloud.com/cms/files/附录A.2《中国智能网联汽车技术规程（C-ICAP）》（2024版）-领航行车辅助测评规则.pdf",
+      "requested_url": "https://cncap.obs.cn-north-4.myhuaweicloud.com/cms/files/%E9%99%84%E5%BD%95A.2%E3%80%8A%E4%B8%AD%E5%9B%BD%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E6%B1%BD%E8%BD%A6%E6%8A%80%E6%9C%AF%E8%A7%84%E7%A8%8B%EF%BC%88C-ICAP%EF%BC%89%E3%80%8B%EF%BC%882024%E7%89%88%EF%BC%89-%E9%A2%86%E8%88%AA%E8%A1%8C%E8%BD%A6%E8%BE%85%E5%8A%A9%E6%B5%8B%E8%AF%84%E8%A7%84%E5%88%99.pdf",
+      "started_at_utc": "2026-10-16T01:37:02.774681+00:00",
+      "max_response_bytes": 12582912,
+      "saved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ]
+}

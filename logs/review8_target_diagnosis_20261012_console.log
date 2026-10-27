@@ -1,0 +1,61 @@
+PREFLIGHT PASS: eight v4 development cases; no output collisions.
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 32.114 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 17.3 seconds.
+======
+
+Processing scenes:   0%|          | 0/8 [00:00<?, ?it/s]
+Processing scenes:  12%|█▎        | 1/8 [00:05<00:40,  5.78s/it]
+Processing scenes:  25%|██▌       | 2/8 [00:12<00:36,  6.11s/it]
+Processing scenes:  38%|███▊      | 3/8 [00:19<00:33,  6.67s/it]
+Processing scenes:  50%|█████     | 4/8 [00:25<00:25,  6.50s/it]
+Processing scenes:  62%|██████▎   | 5/8 [00:32<00:19,  6.49s/it]
+Processing scenes:  75%|███████▌  | 6/8 [00:43<00:16,  8.20s/it]
+Processing scenes:  88%|████████▊ | 7/8 [00:50<00:07,  7.60s/it]
+Processing scenes: 100%|██████████| 8/8 [00:56<00:00,  7.08s/it]
+Processing scenes: 100%|██████████| 8/8 [00:56<00:00,  7.00s/it]
+===== 场景特征表已保存 =====
+   scene_name  ... map_available
+0  scene-0002  ...             1
+1  scene-0093  ...             1
+2  scene-0102  ...             1
+3  scene-0453  ...             1
+4  scene-0552  ...             1
+
+[5 rows x 129 columns]
+共 8 个场景特征，已保存到: F:\Scene_cluster\HDBSCAN\tables\scene_features_target_diagnosis8_20261012.csv
+Pre-fill nonfinite cells: 14; caught query exceptions: 0; audit: F:\Scene_cluster\HDBSCAN\tables\scene_features_target_diagnosis8_20261012.csv.quality.json
+DIAGNOSED scene-0002: 1 crossing, 0 VRU, 1 static frames
+DIAGNOSED scene-0093: 1 crossing, 0 VRU, 0 static frames
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\diagnose_review8_20261012.py", line 296, in <module>
+    main()
+  File "F:\Scene_cluster\logs\diagnose_review8_20261012.py", line 279, in main
+    findings = diagnose(ns, frame)
+  File "F:\Scene_cluster\logs\diagnose_review8_20261012.py", line 219, in diagnose
+    vru = vru_candidates(ns, audit, scene, row.vru_path_conflict_ratio)
+  File "F:\Scene_cluster\logs\diagnose_review8_20261012.py", line 133, in vru_candidates
+    layer = nusc_map.layers_on_point(*position, ['walkway', 'road_segment', 'lane', 'lane_connector'])
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\nuscenes\map_expansion\map_api.py", line 448, in layers_on_point
+    return self.explorer.layers_on_point(x, y, layer_names=layer_names)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\nuscenes\map_expansion\map_api.py", line 1469, in layers_on_point
+    layers_on_point.update({layer_name: self.record_on_point(x, y, layer_name)})
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\nuscenes\map_expansion\map_api.py", line 1482, in record_on_point
+    raise ValueError("{} is not a polygon layer".format(layer_name))
+ValueError: lane_connector is not a polygon layer

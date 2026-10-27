@@ -1,0 +1,10 @@
+Waiting for extraction completion manifest: F:\Scene_cluster\HDBSCAN\tables\scene_features_development_audit700_20260927.csv.manifest.json
+{
+  "scene_count": 700,
+  "nonfinite_cell_count": 1078,
+  "query_exception_count": 0,
+  "changed_risk_cell_count": 0,
+  "requires_review": false,
+  "review_reasons": []
+}
+F:\Scene_cluster\HDBSCAN\tables\development_audit700_comparison_20260927.json

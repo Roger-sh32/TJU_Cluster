@@ -1,0 +1,101 @@
+{
+  "version": "longitudinal_protection_diagnosis_v1_20261015",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/diagnose_longitudinal_protection_v1_20261015.py",
+    "prepare"
+  ],
+  "created_at_utc": "2026-10-15T13:21:17.659075+00:00",
+  "parent_sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d",
+  "parent_report_sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3",
+  "focus": [
+    "scene-0669",
+    "scene-0011",
+    "scene-0030",
+    "scene-0074",
+    "scene-0026"
+  ],
+  "diagnostic_windows_s": [
+    1.0,
+    3.0,
+    6.0,
+    10.0
+  ],
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+      "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d",
+      "bytes": 8398
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+      "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3",
+      "bytes": 14970
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+      "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93",
+      "bytes": 33264
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+      "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c",
+      "bytes": 2287
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+      "sha256": "a3082bb3d7be151e1a38bb611436bec36e01d15cc7317912565caedacbaa1667",
+      "bytes": 1131507
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+      "bytes": 30874
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\crossing_candidate_v6.py",
+      "sha256": "4403f470ddf11105320a155ce5c22c077a684c189aaae396f50aa73335e0b35d",
+      "bytes": 7176
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\diagnose_longitudinal_protection_v1_20261015.py",
+      "sha256": "5da8c0aed47a78cb34954d0ed5c551317662814467c49ae0cb952e5c15b60498",
+      "bytes": 18270
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_longitudinal_protection_diagnosis_v1_20261015.py",
+      "sha256": "6e4346c9ae265e48fd61457a4c9d20fdef4483292b9144d89f4d8395998e0b65",
+      "bytes": 8193
+    }
+  ],
+  "runtime": {
+    "python": "3.9.23",
+    "executable": {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+      "sha256": "102dc158e0428a9ee945f010b33acf67091575725042ba537dcc8371efef0e14",
+      "bytes": 96256
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "nuscenes-devkit": "1.2.0",
+      "shapely": "2.0.7",
+      "pyquaternion": "0.9.9"
+    }
+  },
+  "outputs": [
+    "F:\\Scene_cluster\\logs\\longitudinal_protection_diagnosis_v1_evidence_20261015.json",
+    "F:\\Scene_cluster\\outputs\\人工复核\\纵向绕行保护根因诊断_20261015.md",
+    "F:\\Scene_cluster\\logs\\longitudinal_protection_diagnosis_v1_seal_20261015.json"
+  ],
+  "stage": "diagnosis_only_no_feature_updates",
+  "new_thresholds_or_filter": false,
+  "feature_updates": false,
+  "evaluation_used": false,
+  "model_used": false
+}

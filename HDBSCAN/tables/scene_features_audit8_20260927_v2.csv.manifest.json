@@ -1,0 +1,59 @@
+{
+  "created_at_utc": "2026-09-27T08:07:43.575040+00:00",
+  "stage": "feature_extraction",
+  "fit_scope": "development",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "HDBSCAN/scripts/scene_feature_hdbscan.py"
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+    "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+  },
+  "output": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_audit8_20260927_v2.csv",
+    "sha256": "78480963c5e28b06638060f8a46745d57c4b14a3ce54bb7c6391eeb7c74763a8"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+    "sha256": "a11c0e1ee604e1e2a546f7c1fb99955bef0a0e353ba776567d764535378a827d"
+  },
+  "guard": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+    "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db"
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+  },
+  "scene_names": [
+    "scene-0001",
+    "scene-0011",
+    "scene-0042",
+    "scene-0062",
+    "scene-0073",
+    "scene-0315",
+    "scene-0399",
+    "scene-0536"
+  ],
+  "semantic_features": [],
+  "extra": {
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "d36d2eb2229cc40ff27d2f50b398681bb964a4b9da6e6b587fd0afc0097313cc"
+    },
+    "extraction_audit_code": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\extraction_audit.py",
+      "sha256": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+    },
+    "quality_audit": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_audit8_20260927_v2.csv.quality.json",
+      "sha256": "cacfd93e7a901581dfbcf73339ac4042fb6ebac670620e626d37cade0d88ba6a"
+    }
+  }
+}

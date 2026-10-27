@@ -1,0 +1,655 @@
+{
+  "created_at_utc": "2026-10-12T13:23:14.722720+00:00",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/complete_target_diagnosis8_20261012.py"
+  ],
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_protocol_20261012.json",
+    "sha256": "f8c69b34de416bd3fe4d76033fa9e41521e645a430417b49afc0f31df51ae30b",
+    "bytes": 9378
+  },
+  "continuation": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_continuation_protocol_20261012.json",
+    "sha256": "d2ce73cd9424d272648d70f5b7b880860add1a8b9b8b278ce283f23a2199f908",
+    "bytes": 3250
+  },
+  "features": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_target_diagnosis8_20261012.csv",
+    "sha256": "724c99be7f5a64aa5ff185ea4a9d9b93ba2548b8c5a79c73131837dfc4c558f7",
+    "bytes": 11843
+  },
+  "trajectory": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_trajectory_20261012.json",
+    "sha256": "d578d62128add1c9d3010fb509c13fbdc7e25517fb4d4e55d20a6afec55cc810",
+    "bytes": 2859540
+  },
+  "quality": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_target_diagnosis8_20261012.csv.quality.json",
+    "sha256": "edf299ac22f7211660c306125f01ba8e9f040cf3c2d9c8cb03819c5ef7760186",
+    "bytes": 4646
+  },
+  "scenes": [
+    {
+      "scene_name": "scene-0002",
+      "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+      "crossing_candidates": [
+        {
+          "index": 9,
+          "instance_token": "d3ddc3c284824cf78beb4830f6768682",
+          "category": "vehicle.motorcycle",
+          "heading_change": 0.49574690503272967,
+          "minimum_future_route_distance": 5.115411638187839,
+          "actor_width": 1.007,
+          "actor_bounding_diameter": 2.145060605204431,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 4.499427080154419,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 3.495962595269815,
+          "forward_m": 45.092787180851964,
+          "lateral_m": 15.795590357949317,
+          "actor_heading_delta": -2.725680900725537,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.950432062149048
+        }
+      ],
+      "minimum_ttc": {
+        "time_s": 3.099886178970337,
+        "ttc_s": 3.667110142116583,
+        "instance_token": "f81272dbd16345f8b460bf0e69de5a80",
+        "category": "vehicle.car",
+        "target_speed_mps": 0.02474432494841057,
+        "heading_delta_rad": -2.170788487219927,
+        "local_heading_change_rad": 0.6856146694021348,
+        "current_filter_rejects": false,
+        "ego_lane_center_distance_m": 8.571313649184441,
+        "future_actor_to_ego_route_min_distance_m": 8.54791440511905,
+        "future_complete_not_asserted": true,
+        "target_forward_m": 15.961021655738708,
+        "target_lateral_m": -0.09817682745285605
+      },
+      "vru_candidates": [],
+      "static_obstacle_frames": [
+        {
+          "index": 6,
+          "time_s": 3.099886178970337,
+          "instance_token": "f81272dbd16345f8b460bf0e69de5a80"
+        }
+      ],
+      "temporal_events": [],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0093",
+      "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+      "crossing_candidates": [
+        {
+          "index": 5,
+          "instance_token": "538c49a01ce2444a8466285313bc2951",
+          "category": "vehicle.car",
+          "heading_change": 1.054216054807001,
+          "minimum_future_route_distance": 11.30362739594594,
+          "actor_width": 1.517,
+          "actor_bounding_diameter": 4.495677145881364,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 2.4993999004364014,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 5.437496132589221,
+          "forward_m": 34.00294944212657,
+          "lateral_m": -19.06310785555201,
+          "actor_heading_delta": 2.065076674204802,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.901165962219238
+        }
+      ],
+      "minimum_ttc": {
+        "time_s": 0.4998898506164551,
+        "ttc_s": 8.13563971021716,
+        "instance_token": "c872036989a64849b2a6ef3385f8e0d9",
+        "category": "vehicle.car",
+        "target_speed_mps": 0.0,
+        "heading_delta_rad": -3.070689170254362,
+        "local_heading_change_rad": 0.2948274997205429,
+        "current_filter_rejects": false,
+        "ego_lane_center_distance_m": null,
+        "future_actor_to_ego_route_min_distance_m": 37.318466071884565,
+        "future_complete_not_asserted": true,
+        "target_forward_m": 54.6978691661718,
+        "target_lateral_m": -0.5809234457898818
+      },
+      "vru_candidates": [],
+      "static_obstacle_frames": [],
+      "temporal_events": [],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0102",
+      "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+      "crossing_candidates": [
+        {
+          "index": 4,
+          "instance_token": "1b452075bf2548ff9c559ebb93722fa0",
+          "category": "vehicle.car",
+          "heading_change": 1.3194379914134498,
+          "minimum_future_route_distance": 6.127951996388723,
+          "actor_width": 2.138,
+          "actor_bounding_diameter": 5.662163279171663,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 1.999497890472412,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 3.108240313046141,
+          "forward_m": 9.739573159322717,
+          "lateral_m": 19.555219831904946,
+          "actor_heading_delta": -1.67743786874186,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.9006431102752686
+        }
+      ],
+      "minimum_ttc": null,
+      "vru_candidates": [
+        {
+          "index": 8,
+          "time_s": 3.899458885192871,
+          "annotation_token": "73012190577e41e19aeab91338f4547f",
+          "instance_token": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+          "category": "human.pedestrian.adult",
+          "forward_m": 19.40577912956147,
+          "lateral_m": 1.3538237647174656,
+          "lateral_speed_mps": -1.1457234839993538,
+          "ego_speed_mps": 3.8346540596926157,
+          "on_walkway": true,
+          "map_layers": {
+            "walkway": "e6fc8c35-c08f-49b4-a7ac-1dd923496d88",
+            "road_segment": "",
+            "lane": "",
+            "lane_connector": null
+          },
+          "ego_lane_center_distance_m": 11.053055865749116,
+          "observed_closest_distance_m": 9.840706176993281,
+          "future_actor_span_s": 7.9497740268707275,
+          "future_actor_count": 17,
+          "physical_barrier_verified_by_map": false
+        },
+        {
+          "index": 9,
+          "time_s": 4.400439023971558,
+          "annotation_token": "33a27cc303a94c3ea1fdb3c39dfd1620",
+          "instance_token": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+          "category": "human.pedestrian.adult",
+          "forward_m": 17.123794026271423,
+          "lateral_m": 4.537184662221013,
+          "lateral_speed_mps": -1.0226919526586518,
+          "ego_speed_mps": 3.957216807350161,
+          "on_walkway": true,
+          "map_layers": {
+            "walkway": "e6fc8c35-c08f-49b4-a7ac-1dd923496d88",
+            "road_segment": "",
+            "lane": "",
+            "lane_connector": null
+          },
+          "ego_lane_center_distance_m": 10.780780443318712,
+          "observed_closest_distance_m": 9.840706176993281,
+          "future_actor_span_s": 7.948852062225342,
+          "future_actor_count": 17,
+          "physical_barrier_verified_by_map": false
+        },
+        {
+          "index": 10,
+          "time_s": 4.899770975112915,
+          "annotation_token": "12b7dfab9411462689b1f146cc63dd99",
+          "instance_token": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+          "category": "human.pedestrian.adult",
+          "forward_m": 14.583062211689484,
+          "lateral_m": 6.880989869030421,
+          "lateral_speed_mps": -0.8620497610159646,
+          "ego_speed_mps": 3.8599341252631767,
+          "on_walkway": true,
+          "map_layers": {
+            "walkway": "e6fc8c35-c08f-49b4-a7ac-1dd923496d88",
+            "road_segment": "",
+            "lane": "",
+            "lane_connector": null
+          },
+          "ego_lane_center_distance_m": 10.519596354180457,
+          "observed_closest_distance_m": 9.840706176993281,
+          "future_actor_span_s": 7.949939012527466,
+          "future_actor_count": 17,
+          "physical_barrier_verified_by_map": false
+        }
+      ],
+      "static_obstacle_frames": [],
+      "temporal_events": [],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0453",
+      "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+      "crossing_candidates": [
+        {
+          "index": 1,
+          "instance_token": "2b0744142b054357a5fd4a984f78baaf",
+          "category": "vehicle.car",
+          "heading_change": 1.13001419277597,
+          "minimum_future_route_distance": 5.0355846659031585,
+          "actor_width": 1.917,
+          "actor_bounding_diameter": 4.789385137990053,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 0.49930500984191895,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 4.283193567676071,
+          "forward_m": 21.091795393227372,
+          "lateral_m": -11.318690122075838,
+          "actor_heading_delta": 2.6101419083019595,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.89787483215332
+        }
+      ],
+      "minimum_ttc": {
+        "time_s": 1.4990530014038086,
+        "ttc_s": 15.844516003349879,
+        "instance_token": "fe88ae70d97c469cabb96a1de538804f",
+        "category": "vehicle.car",
+        "target_speed_mps": 1.8390936043265953,
+        "heading_delta_rad": -0.1651566749032667,
+        "local_heading_change_rad": 1.097940529092282,
+        "current_filter_rejects": false,
+        "ego_lane_center_distance_m": null,
+        "future_actor_to_ego_route_min_distance_m": 31.305548987102128,
+        "future_complete_not_asserted": true,
+        "target_forward_m": 49.072457515452186,
+        "target_lateral_m": 0.24025724934389103
+      },
+      "vru_candidates": [],
+      "static_obstacle_frames": [],
+      "temporal_events": [
+        {
+          "scene_name": "scene-0453",
+          "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+          "event_type": "low_speed_stop",
+          "instance_token": "",
+          "category": "",
+          "start_s": 8.3485848903656,
+          "end_s": 19.39838194847107,
+          "observed_span_s": 11.049797058105469,
+          "frame_count": 23,
+          "phase": "during_stop",
+          "related_stop_id": 1,
+          "ego_speed_min": 0.0006302657228819739,
+          "ego_speed_max": 0.8516085326388099,
+          "stop_sign_context_observed": true,
+          "stop_reason": "undetermined"
+        }
+      ],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0552",
+      "scene_token": "16e50a63b809463099cb4c378fe0641e",
+      "crossing_candidates": [
+        {
+          "index": 27,
+          "instance_token": "661bbc09751c415a879050c906308a6d",
+          "category": "vehicle.car",
+          "heading_change": 1.1652508032330973,
+          "minimum_future_route_distance": 8.456643879803163,
+          "actor_width": 1.823,
+          "actor_bounding_diameter": 4.761778029265959,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 13.398247957229614,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 3.9981807590141263,
+          "forward_m": 20.984232422678417,
+          "lateral_m": -16.3494045334106,
+          "actor_heading_delta": 1.9394127092748674,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.950392007827759
+        },
+        {
+          "index": 28,
+          "instance_token": "661bbc09751c415a879050c906308a6d",
+          "category": "vehicle.car",
+          "heading_change": 0.9758343992821112,
+          "minimum_future_route_distance": 7.6971906856782795,
+          "actor_width": 1.823,
+          "actor_bounding_diameter": 4.761778029265959,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 13.898118019104004,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 3.8459521747951846,
+          "forward_m": 14.851214485026256,
+          "lateral_m": -18.005013936625673,
+          "actor_heading_delta": 1.7384769282073285,
+          "ego_available_future_s": 5.950392961502075,
+          "actor_observed_future_s": 5.950392961502075
+        }
+      ],
+      "minimum_ttc": {
+        "time_s": 12.397926092147827,
+        "ttc_s": 6.679787558322406,
+        "instance_token": "8109784ca0a84c8d9726c18818b2a1e1",
+        "category": "vehicle.bus.rigid",
+        "target_speed_mps": 0.0410453527630176,
+        "heading_delta_rad": -2.3246298277192468,
+        "local_heading_change_rad": 0.4963059078873493,
+        "current_filter_rejects": false,
+        "ego_lane_center_distance_m": 24.543566106914756,
+        "future_actor_to_ego_route_min_distance_m": 24.090771041679204,
+        "future_complete_not_asserted": true,
+        "target_forward_m": 33.74075286396612,
+        "target_lateral_m": 0.9692634973541363
+      },
+      "vru_candidates": [],
+      "static_obstacle_frames": [
+        {
+          "index": 25,
+          "time_s": 12.397926092147827,
+          "instance_token": "8109784ca0a84c8d9726c18818b2a1e1"
+        },
+        {
+          "index": 28,
+          "time_s": 13.898118019104004,
+          "instance_token": "ea8274545a234a8aad2bf2d600cb1bd8"
+        },
+        {
+          "index": 33,
+          "time_s": 16.401369094848633,
+          "instance_token": "07e9396834cb433ea84ebaa6fa58195d"
+        }
+      ],
+      "temporal_events": [
+        {
+          "scene_name": "scene-0552",
+          "scene_token": "16e50a63b809463099cb4c378fe0641e",
+          "event_type": "low_speed_stop",
+          "instance_token": "",
+          "category": "",
+          "start_s": 2.900282144546509,
+          "end_s": 9.399234056472778,
+          "observed_span_s": 6.4989519119262695,
+          "frame_count": 14,
+          "phase": "during_stop",
+          "related_stop_id": 1,
+          "ego_speed_min": 0.0042248235999754555,
+          "ego_speed_max": 0.5991318334522835,
+          "stop_sign_context_observed": true,
+          "stop_reason": "undetermined"
+        }
+      ],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0669",
+      "scene_token": "30783e1b472a4101b82be19e41636ba2",
+      "crossing_candidates": [
+        {
+          "index": 8,
+          "instance_token": "10693027878f4b5892acb4064d9530d5",
+          "category": "vehicle.car",
+          "heading_change": 0.9468810877048641,
+          "minimum_future_route_distance": 8.132837876880572,
+          "actor_width": 2.165,
+          "actor_bounding_diameter": 5.641925646443775,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 3.847081184387207,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 5.413948281530241,
+          "forward_m": 31.89468809207079,
+          "lateral_m": -16.52165833788778,
+          "actor_heading_delta": 2.2247221995930575,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.900123834609985
+        }
+      ],
+      "minimum_ttc": {
+        "time_s": 3.847081184387207,
+        "ttc_s": 3.36368416871326,
+        "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+        "category": "vehicle.car",
+        "target_speed_mps": 0.0,
+        "heading_delta_rad": 2.26025710306261,
+        "local_heading_change_rad": 0.6915429399579467,
+        "current_filter_rejects": false,
+        "ego_lane_center_distance_m": null,
+        "future_actor_to_ego_route_min_distance_m": 11.409504822081349,
+        "future_complete_not_asserted": true,
+        "target_forward_m": 22.805312124815632,
+        "target_lateral_m": 0.46303458032194644
+      },
+      "vru_candidates": [],
+      "static_obstacle_frames": [
+        {
+          "index": 3,
+          "time_s": 1.4986591339111328,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5"
+        },
+        {
+          "index": 4,
+          "time_s": 1.8984551429748535,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5"
+        },
+        {
+          "index": 5,
+          "time_s": 2.347452163696289,
+          "instance_token": "8c933940fb2d477896c388972c452343"
+        },
+        {
+          "index": 7,
+          "time_s": 3.34720516204834,
+          "instance_token": "fe685eb2dbb64c50b12a357d003c5811"
+        },
+        {
+          "index": 8,
+          "time_s": 3.847081184387207,
+          "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1"
+        }
+      ],
+      "temporal_events": [],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0815",
+      "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+      "crossing_candidates": [
+        {
+          "index": 10,
+          "instance_token": "1f95e72f92f24b87a4c6b84cb8e4d7ba",
+          "category": "vehicle.car",
+          "heading_change": 1.3300991101320656,
+          "minimum_future_route_distance": 7.331897874331027,
+          "actor_width": 1.855,
+          "actor_bounding_diameter": 5.0147089646359335,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 4.95120096206665,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 3.0643521526106423,
+          "forward_m": 27.181894640660293,
+          "lateral_m": -19.322051817617886,
+          "actor_heading_delta": 1.7964490589706252,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.998554944992065
+        },
+        {
+          "index": 38,
+          "instance_token": "46b40721e62b4af28c4e0dc7b98a0243",
+          "category": "vehicle.car",
+          "heading_change": 0.010915559281540366,
+          "minimum_future_route_distance": 46.648525105633375,
+          "actor_width": 2.006,
+          "actor_bounding_diameter": 5.0394607846475,
+          "yielding_response": false,
+          "future_complete": false,
+          "rejected_turning_projection": false,
+          "time_s": 18.95003890991211,
+          "retained": true,
+          "raw_candidate": true,
+          "rejection_blockers": [
+            "incomplete_future",
+            "turn_below_threshold"
+          ],
+          "ego_speed_mps": 8.923342001855081,
+          "forward_m": 49.38645924677506,
+          "lateral_m": -12.535229831891886,
+          "actor_heading_delta": 1.4878701254990017,
+          "ego_available_future_s": 0.49980688095092773,
+          "actor_observed_future_s": 0.49980688095092773
+        }
+      ],
+      "minimum_ttc": null,
+      "vru_candidates": [],
+      "static_obstacle_frames": [],
+      "temporal_events": [
+        {
+          "scene_name": "scene-0815",
+          "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+          "event_type": "low_speed_stop",
+          "instance_token": "",
+          "category": "",
+          "start_s": 0.5004749298095703,
+          "end_s": 2.9506278038024902,
+          "observed_span_s": 2.45015287399292,
+          "frame_count": 6,
+          "phase": "during_stop",
+          "related_stop_id": 1,
+          "ego_speed_min": 4.299903284728459e-07,
+          "ego_speed_max": 0.421416406267591,
+          "stop_sign_context_observed": false,
+          "stop_reason": "undetermined"
+        },
+        {
+          "scene_name": "scene-0815",
+          "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+          "event_type": "predicted_crossing",
+          "instance_token": "46b40721e62b4af28c4e0dc7b98a0243",
+          "category": "vehicle.car",
+          "start_s": 18.95003890991211,
+          "end_s": 18.95003890991211,
+          "observed_span_s": 0.0,
+          "frame_count": 1,
+          "phase": "after_last_stop",
+          "related_stop_id": 1,
+          "ego_speed_min": 8.923342001855081,
+          "ego_speed_max": 8.923342001855081,
+          "stop_sign_context_observed": false,
+          "stop_reason": "undetermined"
+        }
+      ],
+      "human_feedback_not_automatic_label": true
+    },
+    {
+      "scene_name": "scene-0816",
+      "scene_token": "0e247ba64b9d4a34a7256b6c173b1b5d",
+      "crossing_candidates": [
+        {
+          "index": 12,
+          "instance_token": "b2baf4ed34a44bcfa3cc429c88703951",
+          "category": "vehicle.trailer",
+          "heading_change": 1.2456745709526986,
+          "minimum_future_route_distance": 20.483316980969796,
+          "actor_width": 3.244,
+          "actor_bounding_diameter": 17.648700802042057,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": true,
+          "time_s": 6.049408912658691,
+          "retained": false,
+          "raw_candidate": true,
+          "rejection_blockers": [],
+          "ego_speed_mps": 5.245714539284386,
+          "forward_m": 19.47688318524561,
+          "lateral_m": -16.4327902546741,
+          "actor_heading_delta": -1.7063223226132553,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.9515039920806885
+        },
+        {
+          "index": 16,
+          "instance_token": "88205935e9274718b82a6dfedd7eb03e",
+          "category": "vehicle.truck",
+          "heading_change": 0.5330610976417207,
+          "minimum_future_route_distance": 5.920671412594082,
+          "actor_width": 3.334,
+          "actor_bounding_diameter": 10.876587930044973,
+          "yielding_response": false,
+          "future_complete": true,
+          "rejected_turning_projection": false,
+          "time_s": 8.000794887542725,
+          "retained": true,
+          "raw_candidate": true,
+          "rejection_blockers": [
+            "within_footprint_route_margin"
+          ],
+          "ego_speed_mps": 4.41974947294211,
+          "forward_m": 29.707087663990094,
+          "lateral_m": -19.965153150118567,
+          "actor_heading_delta": 2.0688557884807577,
+          "ego_available_future_s": 6.0,
+          "actor_observed_future_s": 5.898422002792358
+        }
+      ],
+      "minimum_ttc": null,
+      "vru_candidates": [],
+      "static_obstacle_frames": [],
+      "temporal_events": [
+        {
+          "scene_name": "scene-0816",
+          "scene_token": "0e247ba64b9d4a34a7256b6c173b1b5d",
+          "event_type": "predicted_crossing",
+          "instance_token": "88205935e9274718b82a6dfedd7eb03e",
+          "category": "vehicle.truck",
+          "start_s": 8.000794887542725,
+          "end_s": 8.000794887542725,
+          "observed_span_s": 0.0,
+          "frame_count": 1,
+          "phase": "no_stop_observed",
+          "related_stop_id": null,
+          "ego_speed_min": 4.41974947294211,
+          "ego_speed_max": 4.41974947294211,
+          "stop_sign_context_observed": false,
+          "stop_reason": "undetermined"
+        }
+      ],
+      "human_feedback_not_automatic_label": true
+    }
+  ],
+  "exact_candidate_rows_reproduced": true,
+  "query_exception_count": 0,
+  "nonfinite_diagnostic_cell_count": 14,
+  "non_geometric_point_query": {
+    "lane_connector": "unknown_not_queried"
+  },
+  "evaluation_used": false,
+  "production_rules_changed": false,
+  "semantic_acceptance": false
+}

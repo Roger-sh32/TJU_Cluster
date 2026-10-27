@@ -4,6 +4,14 @@ import pandas as pd
 
 
 class FeatureSelectionTest(unittest.TestCase):
+    def test_new_route_context_is_selected_but_target_ids_are_not(self):
+        from HDBSCAN.scripts.feature_selection import select_clustering_features
+        columns = ['adjacent_lane_intrusion_ratio', 'side_entry_candidate_ratio',
+                   'crossing_route_conflict_ratio', 'stop_sign_stop_candidate']
+        frame = pd.DataFrame({name: [0.0] for name in columns})
+        frame['side_entry_candidate_instances'] = 'target-token'
+        self.assertEqual(list(select_clustering_features(frame)), columns)
+
     def test_only_semantic_context_and_interaction_features_are_selected(self):
         from HDBSCAN.scripts.feature_selection import select_clustering_features
 

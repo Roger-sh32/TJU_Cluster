@@ -1,0 +1,19 @@
+{
+  "phase": "completed_candidate_requires_review",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+    "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d",
+    "bytes": 8398
+  },
+  "claim": {
+    "path": "F:\\Scene_cluster\\logs\\longitudinal_v7_replay29_20261015_claim.json",
+    "sha256": "0c122a24fb53691a92915ab68682d2ba17975157b15cf16027afa6e1aada450e",
+    "bytes": 285
+  },
+  "report": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+    "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3",
+    "bytes": 14970
+  },
+  "completed_at_utc": "2026-10-15T12:24:06.565842+00:00"
+}

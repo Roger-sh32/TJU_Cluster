@@ -1,0 +1,221 @@
+{
+  "created_at_utc": "2026-10-13T01:06:50.528688+00:00",
+  "version": "crossing_candidate_v5_20261013",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_regression29_protocol_20261013.json",
+    "sha256": "6228932584778793d29dda6a13a4e2b27f5c6cf324190a9ce2f521733a38e075",
+    "bytes": 11662
+  },
+  "features": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_regression29_20261013.csv",
+    "sha256": "3d6aa9b5ebfd4b4ae0eecc8b0707354ca2a5e10d1a448db3d95b3139a35b6355",
+    "bytes": 33855
+  },
+  "quality": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_regression29_20261013.csv.quality.json",
+    "sha256": "99afa40b503cc8a03cbce6ce2b99752ac171c96f64c08e2527f943982eb71c66",
+    "bytes": 9671
+  },
+  "trajectory": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_regression29_trajectory_20261013.json",
+    "sha256": "77d56272c3fadf4be4d9c9f537cba96b91b0dcd692ef8949d0256e9239a96ae5",
+    "bytes": 7363506
+  },
+  "manifest": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_regression29_20261013.csv.manifest.json",
+    "sha256": "2aef8a0810bb0acac33094e592d2070075d2b5752a24be852cdd8cfe249d5e7a",
+    "bytes": 3444
+  },
+  "changes": [
+    {
+      "scene_name": "scene-0068",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v4": 0.23076923076923078,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0068",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "v4": 0.23076923076923078,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0068",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v4": 0.6153846153846154,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0068",
+      "column": "crossing_conflict_max_duration",
+      "v4": 3.0495575666427612,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0073",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v4": 0.2,
+      "v5": 0.15
+    },
+    {
+      "scene_name": "scene-0073",
+      "column": "crossing_conflict_post_stop_ratio",
+      "v4": 0.05,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0453",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v4": 0.0,
+      "v5": 0.024390243902439025
+    },
+    {
+      "scene_name": "scene-0453",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "v4": 0.0,
+      "v5": 0.024390243902439025
+    },
+    {
+      "scene_name": "scene-0453",
+      "column": "crossing_conflict_max_duration",
+      "v4": 0.0,
+      "v5": 0.49988651275634766
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v4": 0.4634146341463415,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0815",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v4": 0.025,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0815",
+      "column": "crossing_conflict_post_stop_ratio",
+      "v4": 0.025,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0815",
+      "column": "crossing_conflict_max_duration",
+      "v4": 0.49988579750061035,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0816",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v4": 0.024390243902439025,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0816",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "v4": 0.024390243902439025,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0816",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v4": 0.2682926829268293,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0816",
+      "column": "crossing_conflict_max_duration",
+      "v4": 0.49988090991973877,
+      "v5": 0.0
+    }
+  ],
+  "changed_scenes": [
+    "scene-0068",
+    "scene-0073",
+    "scene-0453",
+    "scene-0552",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "clustering_changes": [
+    {
+      "scene_name": "scene-0068",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v4": 0.6153846153846154,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0552",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v4": 0.4634146341463415,
+      "v5": 0.0
+    },
+    {
+      "scene_name": "scene-0816",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v4": 0.2682926829268293,
+      "v5": 0.0
+    }
+  ],
+  "candidate_state_counts": {
+    "contradicted_turning_projection": 10,
+    "prediction_only": 2,
+    "unknown_future": 12,
+    "response_protected_prediction": 13,
+    "contradicted_synchronized_turn": 1
+  },
+  "unresolved_by_scene": {
+    "scene-0002": 0.0,
+    "scene-0007": 0.0,
+    "scene-0011": 0.0,
+    "scene-0014": 0.0,
+    "scene-0026": 0.0,
+    "scene-0030": 0.0,
+    "scene-0032": 0.0,
+    "scene-0042": 0.0,
+    "scene-0053": 0.0,
+    "scene-0055": 0.0,
+    "scene-0056": 0.0,
+    "scene-0067": 0.0,
+    "scene-0068": 0.23076923076923078,
+    "scene-0073": 0.05,
+    "scene-0074": 0.0,
+    "scene-0093": 0.0,
+    "scene-0097": 0.0,
+    "scene-0102": 0.0,
+    "scene-0103": 0.0,
+    "scene-0107": 0.0,
+    "scene-0109": 0.0,
+    "scene-0122": 0.0,
+    "scene-0151": 0.0,
+    "scene-0158": 0.0,
+    "scene-0453": 0.0,
+    "scene-0552": 0.0,
+    "scene-0669": 0.0,
+    "scene-0815": 0.025,
+    "scene-0816": 0.0
+  },
+  "query_exception_count": 0,
+  "nonfinite_diagnostic_cells": 39,
+  "v4_unchanged": true,
+  "formal_fit_refused": true,
+  "evaluation_used": false,
+  "semantic_acceptance": false,
+  "score_note": "Resolved vs uncertainty-inclusive sensitivity, not safety labels or monotone bounds; no weights changed.",
+  "risk_comparison": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_regression29_risk_20261013.csv",
+    "sha256": "365b5d6b3bae23385c8fd840e2d6ba5edf72a8a460fcf57d48dcb6a228205558",
+    "bytes": 7387
+  },
+  "document": {
+    "path": "F:\\Scene_cluster\\outputs\\人工复核\\横向交互v5回归对照_20261013.md",
+    "sha256": "1f8ee7fccc79487942321b41b3209ca344f4abef37fbd91258f53280fc41f72d",
+    "bytes": 5026
+  },
+  "pending": {
+    "path": "F:\\Scene_cluster\\outputs\\人工复核\\待人工复核清单_20261013.md",
+    "sha256": "5fbd76536b0e08d6b47cedb7d7e5a48a0808b821881a3f41ec413fb98456e2d7",
+    "bytes": 3656
+  }
+}

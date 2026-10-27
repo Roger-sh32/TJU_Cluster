@@ -1,0 +1,1735 @@
+{
+  "version": "short_static_diagnosis_v2_20261015",
+  "scope": [
+    "scene-0011",
+    "scene-0030",
+    "scene-0042",
+    "scene-0074",
+    "scene-0669"
+  ],
+  "scenes": [
+    {
+      "scene_name": "scene-0011",
+      "scene_token": "c075fbdd97124beaba95bc5c25149f30",
+      "reproduced_strict_fields": {
+        "stationary_lead_obstacle_ratio": 0.025,
+        "stationary_lead_event_count": 1,
+        "stationary_lead_min_dist": 27.863665523416955,
+        "ego_evasive_lateral_shift": 4.832621600416648,
+        "ego_evasive_net_heading_change": 0.07608489641806315,
+        "ego_evasive_lane_change_flag": 1
+      },
+      "static_max_legacy_duration_s": 0.49990010261535645,
+      "static_target_episodes": [
+        [
+          11
+        ]
+      ],
+      "static_anchor_count": 1,
+      "blocked_anchor_count": 0,
+      "static_anchors": [
+        {
+          "index": 11,
+          "scene_time_s": 5.498090982437134,
+          "instance_token": "8a557d57675e48eb801633e3e327d939",
+          "annotation_token": "e4f255bfe6ba4084b8e7032b47403311",
+          "category": "vehicle.truck",
+          "clearance_m": 27.863665523416955,
+          "heading_delta_rad": -3.0295166903274353,
+          "target_speed_mps": 0.11361577094494564,
+          "scene_target_max_speed_mps": 0.36155502228652747,
+          "bounded_stationary": false,
+          "target_position": [
+            979.426,
+            651.616
+          ],
+          "blocked": false,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.4999120235443115,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 3.8513132211612535,
+              "observed_speed_mean_mps": 4.016342043297616,
+              "anchor_speed_mps": 3.8513132211612535,
+              "lateral_shift_m": 0.07609247307539047,
+              "net_heading_change_rad": 0.07034114889883902,
+              "accumulated_heading_change_rad": 0.07034114889883902,
+              "path_length_m": 2.0903175705283297
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.501044988632202,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 3.8513132211612535,
+              "observed_speed_mean_mps": 4.607794102781593,
+              "anchor_speed_mps": 3.8513132211612535,
+              "lateral_shift_m": 1.0110303588546605,
+              "net_heading_change_rad": 0.09310071529151909,
+              "accumulated_heading_change_rad": 0.11432072475163757,
+              "path_length_m": 11.902649689648054
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.952621936798096,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 3.8513132211612535,
+              "observed_speed_mean_mps": 5.074149712402697,
+              "anchor_speed_mps": 3.8513132211612535,
+              "lateral_shift_m": 2.8973411961946542,
+              "net_heading_change_rad": 0.13657783751875963,
+              "accumulated_heading_change_rad": 0.16038575751463702,
+              "path_length_m": 30.806891793075884
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.600494861602783,
+              "observed_speed_count": 20,
+              "observed_speed_min_mps": 3.8513132211612535,
+              "observed_speed_mean_mps": 5.009001515732985,
+              "anchor_speed_mps": 3.8513132211612535,
+              "lateral_shift_m": 4.832621600416648,
+              "net_heading_change_rad": 0.07608489641806315,
+              "accumulated_heading_change_rad": 0.22110446317269972,
+              "path_length_m": 48.63634089488939
+            }
+          ]
+        }
+      ],
+      "candidate_stage_counts": {
+        "selected_static": 1,
+        "selected_not_static": 13
+      },
+      "minimum_ttc_event": {
+        "frame_index": 25,
+        "scene_time": 12.45100998878479,
+        "ttc": 4.880104314891523,
+        "annotation_token": "bc36045758f54eaa9ee02050651c3271",
+        "instance_token": "1e33e49bbc8a4f368892118eb603166f",
+        "category": "vehicle.car",
+        "clearance": 20.520032500747426,
+        "lateral_distance": 1.5907729770127954,
+        "target_speed": 0.948006796935749,
+        "target_forward_speed": 0.8455318007416135,
+        "relative_speed": 4.20483481021728,
+        "heading_delta": 0.26423383035108206
+      },
+      "route_queries": [
+        {
+          "index": 11,
+          "instance_token": "8a557d57675e48eb801633e3e327d939",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 1.299364743961584,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 5.498090982437134
+        },
+        {
+          "index": 25,
+          "instance_token": "1e33e49bbc8a4f368892118eb603166f",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.0327524837909005,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "minimum_ttc"
+          ],
+          "scene_time_s": 12.45100998878479
+        }
+      ],
+      "no_static_evidence_means_obstacle_absence": false,
+      "target_identity_human_confirmed": false,
+      "causal_acceptance": false,
+      "feature_updates": false
+    },
+    {
+      "scene_name": "scene-0030",
+      "scene_token": "82aef599650d462db73731b7ff40918b",
+      "reproduced_strict_fields": {
+        "stationary_lead_obstacle_ratio": 0.15,
+        "stationary_lead_event_count": 1,
+        "stationary_lead_min_dist": 11.598880068943082,
+        "ego_evasive_lateral_shift": 11.210243448558941,
+        "ego_evasive_net_heading_change": 0.16976417025567336,
+        "ego_evasive_lane_change_flag": 1
+      },
+      "static_max_legacy_duration_s": 2.9998230934143066,
+      "static_target_episodes": [
+        [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      ],
+      "static_anchor_count": 6,
+      "blocked_anchor_count": 6,
+      "static_anchors": [
+        {
+          "index": 9,
+          "scene_time_s": 4.398782968521118,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "annotation_token": "af4a1fcba0fc4c419fa36ce5992901f3",
+          "category": "vehicle.motorcycle",
+          "clearance_m": 28.746252790349594,
+          "heading_delta_rad": -0.16685988841225052,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.5791429845421293,
+          "bounded_stationary": true,
+          "target_position": [
+            886.841,
+            1468.111
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 9,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.4998741149902344,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 7.232880596188032,
+              "observed_speed_mean_mps": 7.266270402123112,
+              "anchor_speed_mps": 7.299660208058191,
+              "lateral_shift_m": 0.03699529630516318,
+              "net_heading_change_rad": 0.01691290651604027,
+              "accumulated_heading_change_rad": 0.01691290651604027,
+              "path_length_m": 3.6155297868495313
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 9,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.9998230934143066,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.869615672541434,
+              "anchor_speed_mps": 7.299660208058191,
+              "lateral_shift_m": 1.3578846980248205,
+              "net_heading_change_rad": 0.14685227695969916,
+              "accumulated_heading_change_rad": 0.14685227695969916,
+              "path_length_m": 20.392667869657743
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 9,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.500339031219482,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.848708361822232,
+              "anchor_speed_mps": 7.299660208058191,
+              "lateral_shift_m": 4.414552456192835,
+              "net_heading_change_rad": 0.1898286577453976,
+              "accumulated_heading_change_rad": 0.1955927478770385,
+              "path_length_m": 37.444705077808685
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 9,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.84987497329712,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 4.476429775083817,
+              "observed_speed_mean_mps": 6.608558625391419,
+              "anchor_speed_mps": 7.299660208058191,
+              "lateral_shift_m": 11.210243448558941,
+              "net_heading_change_rad": 0.16976417025567336,
+              "accumulated_heading_change_rad": 0.3997172639803521,
+              "path_length_m": 64.95001397262257
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "scene_time_s": 4.8986570835113525,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "annotation_token": "53cd7369c5b5438793db45fbe13a1361",
+          "category": "vehicle.motorcycle",
+          "clearance_m": 25.14688819769128,
+          "heading_delta_rad": -0.14994698189621025,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.5791429845421293,
+          "bounded_stationary": true,
+          "target_position": [
+            886.841,
+            1468.111
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 10,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.5004410743713379,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 6.997489896565777,
+              "observed_speed_mean_mps": 7.115185246376905,
+              "anchor_speed_mps": 7.232880596188032,
+              "lateral_shift_m": 0.04125801408955132,
+              "net_heading_change_rad": 0.019901990117007884,
+              "accumulated_heading_change_rad": 0.019901990117007884,
+              "path_length_m": 3.5018313617399595
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 10,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.999803066253662,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.760160930250563,
+              "anchor_speed_mps": 7.232880596188032,
+              "lateral_shift_m": 1.5139863954683568,
+              "net_heading_change_rad": 0.15790161859781482,
+              "accumulated_heading_change_rad": 0.15790161859781482,
+              "path_length_m": 20.042923275008114
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 10,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.500846862792969,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.852795920361956,
+              "anchor_speed_mps": 7.232880596188032,
+              "lateral_shift_m": 4.495930994714188,
+              "net_heading_change_rad": 0.1941544102953212,
+              "accumulated_heading_change_rad": 0.19991850042696213,
+              "path_length_m": 37.50633756110665
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 10,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.849879026412964,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 3.6955263325617436,
+              "observed_speed_mean_mps": 6.436933202748731,
+              "anchor_speed_mps": 7.232880596188032,
+              "lateral_shift_m": 10.372654253630607,
+              "net_heading_change_rad": 0.07820674631141024,
+              "accumulated_heading_change_rad": 0.4574488748925347,
+              "path_length_m": 63.181797119081786
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "scene_time_s": 5.39909815788269,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "annotation_token": "42ef5e31e91446a494454588d18db9fe",
+          "category": "vehicle.motorcycle",
+          "clearance_m": 21.653516830766296,
+          "heading_delta_rad": -0.13004499177920237,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.5791429845421293,
+          "bounded_stationary": true,
+          "target_position": [
+            886.841,
+            1468.111
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9992039203643799,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 6.646338638667549,
+              "observed_speed_mean_mps": 6.840845447299791,
+              "anchor_speed_mps": 6.997489896565777,
+              "lateral_shift_m": 0.1817364136213353,
+              "net_heading_change_rad": 0.05376239302993291,
+              "accumulated_heading_change_rad": 0.05376239302993291,
+              "path_length_m": 6.7571999089681585
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.9997918605804443,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.665584953887655,
+              "anchor_speed_mps": 6.997489896565777,
+              "lateral_shift_m": 1.6136794384558772,
+              "net_heading_change_rad": 0.14377945712221663,
+              "accumulated_heading_change_rad": 0.14377945712221663,
+              "path_length_m": 19.82934089629471
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.500863790512085,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.849222547564213,
+              "anchor_speed_mps": 6.997489896565777,
+              "lateral_shift_m": 4.468326383224765,
+              "net_heading_change_rad": 0.19786277253496087,
+              "accumulated_heading_change_rad": 0.2036268626666018,
+              "path_length_m": 37.60279929576077
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 11,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.849308967590332,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 2.972338259179715,
+              "observed_speed_mean_mps": 6.234050234319763,
+              "anchor_speed_mps": 6.997489896565777,
+              "lateral_shift_m": 9.196442166595865,
+              "net_heading_change_rad": 0.020347209163037006,
+              "accumulated_heading_change_rad": 0.5161988501329662,
+              "path_length_m": 61.165751501512254
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "scene_time_s": 5.898959159851074,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "annotation_token": "a47477748e194fef95714ce5bbe050ab",
+          "category": "vehicle.motorcycle",
+          "clearance_m": 18.21183454105664,
+          "heading_delta_rad": -0.10543501600267047,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.5791429845421293,
+          "bounded_stationary": true,
+          "target_position": [
+            886.841,
+            1468.111
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 12,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9997689723968506,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 6.53388271965463,
+              "observed_speed_mean_mps": 6.686309721662742,
+              "anchor_speed_mps": 6.878707806666045,
+              "lateral_shift_m": 0.20872974518192366,
+              "net_heading_change_rad": 0.05735370015338349,
+              "accumulated_heading_change_rad": 0.05735370015338348,
+              "path_length_m": 6.588527279181464
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 12,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.4999308586120605,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.610267463441301,
+              "anchor_speed_mps": 6.878707806666045,
+              "lateral_shift_m": 1.1706232349871648,
+              "net_heading_change_rad": 0.11916948134568471,
+              "accumulated_heading_change_rad": 0.11916948134568472,
+              "path_length_m": 16.390943119806877
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 12,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.500306844711304,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.8616270922640235,
+              "anchor_speed_mps": 6.878707806666045,
+              "lateral_shift_m": 4.2620694676476205,
+              "net_heading_change_rad": 0.19606824351821905,
+              "accumulated_heading_change_rad": 0.20183233364985997,
+              "path_length_m": 37.73260028142238
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 12,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.949431896209717,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 2.1468104622795594,
+              "observed_speed_mean_mps": 6.003065499353752,
+              "anchor_speed_mps": 6.878707806666045,
+              "lateral_shift_m": 7.755064113686284,
+              "net_heading_change_rad": 0.11609477224877196,
+              "accumulated_heading_change_rad": 0.5627264616656373,
+              "path_length_m": 59.01540550440986
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "scene_time_s": 6.39830207824707,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "annotation_token": "c3ab4620f00248b48ceaceac1a9f7e86",
+          "category": "vehicle.motorcycle",
+          "clearance_m": 14.87213660912344,
+          "heading_delta_rad": -0.07628259874926946,
+          "target_speed_mps": 0.06347543962253835,
+          "scene_target_max_speed_mps": 0.5791429845421293,
+          "bounded_stationary": true,
+          "target_position": [
+            886.841,
+            1468.111
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 13,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.5004260540008545,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 6.53388271965463,
+              "observed_speed_mean_mps": 6.590110679161089,
+              "anchor_speed_mps": 6.646338638667549,
+              "lateral_shift_m": 0.05473206313752166,
+              "net_heading_change_rad": 0.028201282899982475,
+              "accumulated_heading_change_rad": 0.02820128289998247,
+              "path_length_m": 3.269725146701138
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 13,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.5006730556488037,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.585958562257152,
+              "anchor_speed_mps": 6.646338638667549,
+              "lateral_shift_m": 1.0442408131067973,
+              "net_heading_change_rad": 0.08713501902646326,
+              "accumulated_heading_change_rad": 0.09289910915810418,
+              "path_length_m": 16.439141256922913
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 13,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.500833034515381,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.855627229449035,
+              "anchor_speed_mps": 6.646338638667549,
+              "lateral_shift_m": 3.82297087155483,
+              "net_heading_change_rad": 0.18529731867691826,
+              "accumulated_heading_change_rad": 0.19106140880855915,
+              "path_length_m": 37.81626193293328
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 13,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.950504064559937,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 1.330297180450122,
+              "observed_speed_mean_mps": 5.738855469533947,
+              "anchor_speed_mps": 6.646338638667549,
+              "lateral_shift_m": 6.1690261466578775,
+              "net_heading_change_rad": 0.1830044686594272,
+              "accumulated_heading_change_rad": 0.5713313235694906,
+              "path_length_m": 56.362304150882736
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "scene_time_s": 6.898728132247925,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "annotation_token": "9962510f71ce44d19fb8b538c7764e98",
+          "category": "vehicle.motorcycle",
+          "clearance_m": 11.598880068943082,
+          "heading_delta_rad": -0.04808131584928699,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.5791429845421293,
+          "bounded_stationary": true,
+          "target_position": [
+            886.826,
+            1468.083
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 14,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9997320175170898,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.5219031912221785,
+              "anchor_speed_mps": 6.53388271965463,
+              "lateral_shift_m": 0.2004160415954903,
+              "net_heading_change_rad": 0.05603595255089156,
+              "accumulated_heading_change_rad": 0.056035952550891555,
+              "path_length_m": 6.514166857598857
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 14,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.500476837158203,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.640130767653733,
+              "anchor_speed_mps": 6.53388271965463,
+              "lateral_shift_m": 0.8447847196730507,
+              "net_heading_change_rad": 0.06277955911244693,
+              "accumulated_heading_change_rad": 0.06854364924408785,
+              "path_length_m": 16.656704314556443
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 14,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.5002758502960205,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 6.498349841989807,
+              "observed_speed_mean_mps": 6.853810198621759,
+              "anchor_speed_mps": 6.53388271965463,
+              "lateral_shift_m": 3.3413666527958092,
+              "net_heading_change_rad": 0.16308009948922872,
+              "accumulated_heading_change_rad": 0.16884418962086967,
+              "path_length_m": 37.857935243976094
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 14,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.949946880340576,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 0.8639687920648779,
+              "observed_speed_mean_mps": 5.463504524457629,
+              "anchor_speed_mps": 6.53388271965463,
+              "lateral_shift_m": 4.7240188619254155,
+              "net_heading_change_rad": 0.23440330546686391,
+              "accumulated_heading_change_rad": 0.5663275945769624,
+              "path_length_m": 53.52445010779754
+            }
+          ]
+        }
+      ],
+      "candidate_stage_counts": {
+        "map_unsupported": 7,
+        "selected_static": 6
+      },
+      "minimum_ttc_event": {
+        "frame_index": 14,
+        "scene_time": 6.898728132247925,
+        "ttc": 1.7751895108328755,
+        "annotation_token": "9962510f71ce44d19fb8b538c7764e98",
+        "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+        "category": "vehicle.motorcycle",
+        "clearance": 11.598880068943082,
+        "lateral_distance": 1.4768044853661344,
+        "target_speed": 0.0,
+        "target_forward_speed": -0.0,
+        "relative_speed": 6.53388271965463,
+        "heading_delta": -0.04808131584928699
+      },
+      "route_queries": [
+        {
+          "index": 9,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.6965163894810261,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 4.398782968521118
+        },
+        {
+          "index": 10,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.6965163894237203,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 4.8986570835113525
+        },
+        {
+          "index": 11,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.6965163894237203,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 5.39909815788269
+        },
+        {
+          "index": 12,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.6965163894237203,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 5.898959159851074
+        },
+        {
+          "index": 13,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.6965163894237203,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 6.39830207824707
+        },
+        {
+          "index": 14,
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "relation": "potential_route_overlap",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 0.6965163894237203,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected",
+            "minimum_ttc"
+          ],
+          "scene_time_s": 6.898728132247925
+        }
+      ],
+      "no_static_evidence_means_obstacle_absence": false,
+      "target_identity_human_confirmed": false,
+      "causal_acceptance": false,
+      "feature_updates": false
+    },
+    {
+      "scene_name": "scene-0042",
+      "scene_token": "c6c092a66329470f836714f46b92d59b",
+      "reproduced_strict_fields": {
+        "stationary_lead_obstacle_ratio": 0.0,
+        "stationary_lead_event_count": 0,
+        "stationary_lead_min_dist": 80.0,
+        "ego_evasive_lateral_shift": 0.0,
+        "ego_evasive_net_heading_change": 0.0,
+        "ego_evasive_lane_change_flag": 0
+      },
+      "static_max_legacy_duration_s": 0.0,
+      "static_target_episodes": [],
+      "static_anchor_count": 0,
+      "blocked_anchor_count": 0,
+      "static_anchors": [],
+      "candidate_stage_counts": {
+        "selected_not_static": 19
+      },
+      "minimum_ttc_event": null,
+      "route_queries": [],
+      "no_static_evidence_means_obstacle_absence": false,
+      "target_identity_human_confirmed": false,
+      "causal_acceptance": false,
+      "feature_updates": false
+    },
+    {
+      "scene_name": "scene-0074",
+      "scene_token": "78c5f7d7b547483c906d8524a8c3190f",
+      "reproduced_strict_fields": {
+        "stationary_lead_obstacle_ratio": 0.1,
+        "stationary_lead_event_count": 2,
+        "stationary_lead_min_dist": 20.833329364912352,
+        "ego_evasive_lateral_shift": 54.48182627779405,
+        "ego_evasive_net_heading_change": 0.974216789227641,
+        "ego_evasive_lane_change_flag": 0
+      },
+      "static_max_legacy_duration_s": 1.5001957416534424,
+      "static_target_episodes": [
+        [
+          20
+        ],
+        [
+          22
+        ],
+        [
+          23
+        ],
+        [
+          24
+        ]
+      ],
+      "static_anchor_count": 4,
+      "blocked_anchor_count": 3,
+      "static_anchors": [
+        {
+          "index": 20,
+          "scene_time_s": 9.751086950302124,
+          "instance_token": "698274afaabd4874a9d6ab422f88b155",
+          "annotation_token": "82343fe7824a4e25a255fc9f28a79f92",
+          "category": "vehicle.car",
+          "clearance_m": 29.681817792666482,
+          "heading_delta_rad": -0.6435064093873046,
+          "target_speed_mps": 0.022129226889092045,
+          "scene_target_max_speed_mps": 0.34980656020086937,
+          "bounded_stationary": false,
+          "target_position": [
+            2140.485,
+            852.032
+          ],
+          "blocked": false,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 20,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9990301132202148,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 2.907292248169865,
+              "observed_speed_mean_mps": 3.3823169200339875,
+              "anchor_speed_mps": 2.907292248169865,
+              "lateral_shift_m": 0.6995319645434348,
+              "net_heading_change_rad": 0.39329396690371254,
+              "accumulated_heading_change_rad": 0.39329396690371254,
+              "path_length_m": 3.6164788652310222
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 20,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.8995540142059326,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 2.907292248169865,
+              "observed_speed_mean_mps": 4.3399811817791925,
+              "anchor_speed_mps": 2.907292248169865,
+              "lateral_shift_m": 6.671466830358016,
+              "net_heading_change_rad": 0.8756594539653068,
+              "accumulated_heading_change_rad": 0.8756594539653066,
+              "path_length_m": 13.208954864725248
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 20,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.898795127868652,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 2.907292248169865,
+              "observed_speed_mean_mps": 5.8588768853733635,
+              "anchor_speed_mps": 2.907292248169865,
+              "lateral_shift_m": 25.247099101572445,
+              "net_heading_change_rad": 0.976519854502635,
+              "accumulated_heading_change_rad": 0.9765198545026351,
+              "path_length_m": 36.14871806876716
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 20,
+              "complete_bracket": false,
+              "gap_present": false,
+              "sampled_span_s": 9.399033069610596,
+              "observed_speed_count": 20,
+              "observed_speed_min_mps": 2.907292248169865,
+              "observed_speed_mean_mps": 7.356619630368226,
+              "anchor_speed_mps": 2.907292248169865,
+              "lateral_shift_m": 54.48182627779405,
+              "net_heading_change_rad": 0.974216789227641,
+              "accumulated_heading_change_rad": 0.983596929052971,
+              "path_length_m": 71.63427123422143
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "scene_time_s": 10.750117063522339,
+          "instance_token": "3629afad16744aa09d2ce46970f071b6",
+          "annotation_token": "90be3a7501624981870e430ad6f5132c",
+          "category": "vehicle.car",
+          "clearance_m": 20.833329364912352,
+          "heading_delta_rad": 2.14920385136839,
+          "target_speed_mps": 0.046649325414491384,
+          "scene_target_max_speed_mps": 0.4003109149579968,
+          "bounded_stationary": false,
+          "target_position": [
+            2145.491,
+            864.738
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 22,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.5004408359527588,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 3.828159953112772,
+              "observed_speed_mean_mps": 4.1172121466343885,
+              "anchor_speed_mps": 3.828159953112772,
+              "lateral_shift_m": 0.17555459482520763,
+              "net_heading_change_rad": 0.18537915369249897,
+              "accumulated_heading_change_rad": 0.18537915369249897,
+              "path_length_m": 2.2050746098165024
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 22,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.8505008220672607,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 3.828159953112772,
+              "observed_speed_mean_mps": 5.316950148329602,
+              "anchor_speed_mps": 3.828159953112772,
+              "lateral_shift_m": 5.738027152117821,
+              "net_heading_change_rad": 0.5434141654941592,
+              "accumulated_heading_change_rad": 0.5434141654941592,
+              "path_length_m": 15.852799277124934
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 22,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.900084972381592,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 3.828159953112772,
+              "observed_speed_mean_mps": 6.829485271588808,
+              "anchor_speed_mps": 3.828159953112772,
+              "lateral_shift_m": 19.83826372579655,
+              "net_heading_change_rad": 0.5826756274121292,
+              "accumulated_heading_change_rad": 0.5843922239498391,
+              "path_length_m": 42.00348102072224
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 22,
+              "complete_bracket": false,
+              "gap_present": false,
+              "sampled_span_s": 8.40000295639038,
+              "observed_speed_count": 18,
+              "observed_speed_min_mps": 3.828159953112772,
+              "observed_speed_mean_mps": 7.822977877798631,
+              "anchor_speed_mps": 3.828159953112772,
+              "lateral_shift_m": 33.97918984188127,
+              "net_heading_change_rad": 0.5809228223239284,
+              "accumulated_heading_change_rad": 0.5903029621492585,
+              "path_length_m": 68.0177923689904
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "scene_time_s": 11.250557899475098,
+          "instance_token": "e172f8f667924406a343ee7cfd82b98c",
+          "annotation_token": "61970397e46148dbaa31d7a2ee31a100",
+          "category": "vehicle.car",
+          "clearance_m": 25.665147229385134,
+          "heading_delta_rad": 2.046797650312922,
+          "target_speed_mps": 0.030273241850491916,
+          "scene_target_max_speed_mps": 0.2501190566709754,
+          "bounded_stationary": false,
+          "target_position": [
+            2153.567,
+            865.821
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 23,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.8996720314025879,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 4.406264340156005,
+              "observed_speed_mean_mps": 4.824344674000868,
+              "anchor_speed_mps": 4.406264340156005,
+              "lateral_shift_m": 0.4792801755991196,
+              "net_heading_change_rad": 0.2114122773591237,
+              "accumulated_heading_change_rad": 0.2114122773591237,
+              "path_length_m": 4.50509213868128
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 23,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.899710178375244,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 4.406264340156005,
+              "observed_speed_mean_mps": 5.833369479793035,
+              "anchor_speed_mps": 4.406264340156005,
+              "lateral_shift_m": 4.640358303828824,
+              "net_heading_change_rad": 0.3803501554030181,
+              "accumulated_heading_change_rad": 0.38035015540301814,
+              "path_length_m": 17.73882341532402
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 23,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.899518966674805,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 4.406264340156005,
+              "observed_speed_mean_mps": 7.317083903920992,
+              "anchor_speed_mps": 4.406264340156005,
+              "lateral_shift_m": 14.929521100566957,
+              "net_heading_change_rad": 0.3978294318120366,
+              "accumulated_heading_change_rad": 0.3995460283497466,
+              "path_length_m": 44.88060490397024
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 23,
+              "complete_bracket": false,
+              "gap_present": false,
+              "sampled_span_s": 7.899562120437622,
+              "observed_speed_count": 17,
+              "observed_speed_min_mps": 4.406264340156005,
+              "observed_speed_mean_mps": 8.057967167486034,
+              "anchor_speed_mps": 4.406264340156005,
+              "lateral_shift_m": 22.857403603884567,
+              "net_heading_change_rad": 0.3955436686314295,
+              "accumulated_heading_change_rad": 0.40492380845675957,
+              "path_length_m": 65.8127177591739
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "scene_time_s": 11.75042986869812,
+          "instance_token": "edf689d881fb46c982b544effc665974",
+          "annotation_token": "820583fa0e044ef8a1db00b51862cafe",
+          "category": "vehicle.car",
+          "clearance_m": 31.044629477469137,
+          "heading_delta_rad": 1.793951823004439,
+          "target_speed_mps": 0.061928056043474615,
+          "scene_target_max_speed_mps": 0.39413564184564337,
+          "bounded_stationary": false,
+          "target_position": [
+            2161.917,
+            865.803
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 24,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9002110958099365,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 4.800518028731368,
+              "observed_speed_mean_mps": 5.275551057398793,
+              "anchor_speed_mps": 4.800518028731368,
+              "lateral_shift_m": 0.395411260491459,
+              "net_heading_change_rad": 0.16631355370021528,
+              "accumulated_heading_change_rad": 0.16631355370021528,
+              "path_length_m": 4.987756989365152
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 24,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.9008231163024902,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 4.800518028731368,
+              "observed_speed_mean_mps": 6.3306237932465965,
+              "anchor_speed_mps": 4.800518028731368,
+              "lateral_shift_m": 3.529160976811952,
+              "net_heading_change_rad": 0.2619318972358117,
+              "accumulated_heading_change_rad": 0.2619318972358117,
+              "path_length_m": 19.290469288733266
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 24,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.900751113891602,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 4.800518028731368,
+              "observed_speed_mean_mps": 7.784905475002659,
+              "anchor_speed_mps": 4.800518028731368,
+              "lateral_shift_m": 10.842040318982132,
+              "net_heading_change_rad": 0.26518430886425415,
+              "accumulated_heading_change_rad": 0.2708455919597693,
+              "path_length_m": 47.7365127980006
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 24,
+              "complete_bracket": false,
+              "gap_present": false,
+              "sampled_span_s": 7.3996901512146,
+              "observed_speed_count": 16,
+              "observed_speed_min_mps": 4.800518028731368,
+              "observed_speed_mean_mps": 8.286198594194161,
+              "anchor_speed_mps": 4.800518028731368,
+              "lateral_shift_m": 14.81503753746146,
+              "net_heading_change_rad": 0.26487088896254957,
+              "accumulated_heading_change_rad": 0.27425102878787966,
+              "path_length_m": 63.41307335886133
+            }
+          ]
+        }
+      ],
+      "candidate_stage_counts": {
+        "selected_not_static": 4,
+        "selected_temporary_stop": 1,
+        "not_selected_nearest": 7,
+        "selected_static": 4
+      },
+      "minimum_ttc_event": {
+        "frame_index": 21,
+        "scene_time": 10.250216960906982,
+        "ttc": 4.573877161633135,
+        "annotation_token": "151eb322dec54060b1afce716d29d7b5",
+        "instance_token": "1e889ae875c548cdb6f5195b66420c16",
+        "category": "vehicle.car",
+        "clearance": 16.010571728775933,
+        "lateral_distance": 0.16793774812346918,
+        "target_speed": 0.09131996167642462,
+        "target_forward_speed": -0.08893907056800242,
+        "relative_speed": 3.5004376293873283,
+        "heading_delta": 2.2972007189933628
+      },
+      "route_queries": [
+        {
+          "index": 21,
+          "instance_token": "1e889ae875c548cdb6f5195b66420c16",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 6.194148582640191,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "minimum_ttc"
+          ],
+          "scene_time_s": 10.250216960906982
+        },
+        {
+          "index": 22,
+          "instance_token": "3629afad16744aa09d2ce46970f071b6",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 6.461149767340273,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 10.750117063522339
+        },
+        {
+          "index": 20,
+          "instance_token": "698274afaabd4874a9d6ab422f88b155",
+          "relation": "unknown",
+          "future_complete": false,
+          "spatial_clearance_lower_m": null,
+          "passage_observed": false,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 9.751086950302124
+        },
+        {
+          "index": 24,
+          "instance_token": "edf689d881fb46c982b544effc665974",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 5.981228865634909,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 11.75042986869812
+        },
+        {
+          "index": 23,
+          "instance_token": "e172f8f667924406a343ee7cfd82b98c",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 5.809893563535083,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 11.250557899475098
+        }
+      ],
+      "no_static_evidence_means_obstacle_absence": false,
+      "target_identity_human_confirmed": false,
+      "causal_acceptance": false,
+      "feature_updates": false
+    },
+    {
+      "scene_name": "scene-0669",
+      "scene_token": "30783e1b472a4101b82be19e41636ba2",
+      "reproduced_strict_fields": {
+        "stationary_lead_obstacle_ratio": 0.12195121951219512,
+        "stationary_lead_event_count": 2,
+        "stationary_lead_min_dist": 18.210812124815632,
+        "ego_evasive_lateral_shift": 46.804568354567564,
+        "ego_evasive_net_heading_change": 1.3820861347384856,
+        "ego_evasive_lane_change_flag": 0
+      },
+      "static_max_legacy_duration_s": 1.348671555519104,
+      "static_target_episodes": [
+        [
+          3,
+          4
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ]
+      ],
+      "static_anchor_count": 5,
+      "blocked_anchor_count": 5,
+      "static_anchors": [
+        {
+          "index": 3,
+          "scene_time_s": 1.4986591339111328,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "annotation_token": "f1e77799c0bd4e5693aca5362759cd69",
+          "category": "vehicle.car",
+          "clearance_m": 27.480830288552255,
+          "heading_delta_rad": 1.7384800348030751,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.0,
+          "bounded_stationary": true,
+          "target_position": [
+            1540.771,
+            823.42
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 3,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.8487930297851562,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 2.6079603070542228,
+              "observed_speed_mean_mps": 3.2134368143558434,
+              "anchor_speed_mps": 2.6079603070542228,
+              "lateral_shift_m": 0.182347255708742,
+              "net_heading_change_rad": 0.1254220782041111,
+              "accumulated_heading_change_rad": 0.1254220782041111,
+              "path_length_m": 2.999524163941281
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 3,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.848860025405884,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 2.6079603070542228,
+              "observed_speed_mean_mps": 4.308495158117359,
+              "anchor_speed_mps": 2.6079603070542228,
+              "lateral_shift_m": 4.0083312525677055,
+              "net_heading_change_rad": 0.6640872472867261,
+              "accumulated_heading_change_rad": 0.6640872472867261,
+              "path_length_m": 13.259569250173866
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 3,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.849215984344482,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 2.6079603070542228,
+              "observed_speed_mean_mps": 4.821468626185374,
+              "anchor_speed_mps": 2.6079603070542228,
+              "lateral_shift_m": 18.170095813271498,
+              "net_heading_change_rad": 1.4088701470772442,
+              "accumulated_heading_change_rad": 1.408870147077244,
+              "path_length_m": 29.521119213780082
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 3,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.748708963394165,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 2.6079603070542228,
+              "observed_speed_mean_mps": 5.813847039108402,
+              "anchor_speed_mps": 2.6079603070542228,
+              "lateral_shift_m": 46.804568354567564,
+              "net_heading_change_rad": 1.3820861347384856,
+              "accumulated_heading_change_rad": 1.5422798341898165,
+              "path_length_m": 58.44483348762286
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "scene_time_s": 1.8984551429748535,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "annotation_token": "7cf41203d3644052b6df69cb0330a944",
+          "category": "vehicle.car",
+          "clearance_m": 26.23961799558363,
+          "heading_delta_rad": 1.7887073211111586,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.0,
+          "bounded_stationary": true,
+          "target_position": [
+            1540.771,
+            823.42
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 4,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9488949775695801,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 3.2109115336433227,
+              "observed_speed_mean_mps": 3.853492118215177,
+              "anchor_speed_mps": 3.2109115336433227,
+              "lateral_shift_m": 0.34857984156763444,
+              "net_heading_change_rad": 0.18580211033019767,
+              "accumulated_heading_change_rad": 0.18580211033019767,
+              "path_length_m": 3.979415592378772
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 4,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.948935031890869,
+              "observed_speed_count": 7,
+              "observed_speed_min_mps": 3.2109115336433227,
+              "observed_speed_mean_mps": 4.696988988351654,
+              "anchor_speed_mps": 3.2109115336433227,
+              "lateral_shift_m": 5.116455230558166,
+              "net_heading_change_rad": 0.7667377318539741,
+              "accumulated_heading_change_rad": 0.7667377318539743,
+              "path_length_m": 14.63888103893987
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 4,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.949292898178101,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 3.2109115336433227,
+              "observed_speed_mean_mps": 5.135824021420959,
+              "anchor_speed_mps": 3.2109115336433227,
+              "lateral_shift_m": 20.48051432971879,
+              "net_heading_change_rad": 1.3951734728680327,
+              "accumulated_heading_change_rad": 1.395173472868032,
+              "path_length_m": 31.58384909184473
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 4,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.848793983459473,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 3.2109115336433227,
+              "observed_speed_mean_mps": 6.035753410819001,
+              "anchor_speed_mps": 3.2109115336433227,
+              "lateral_shift_m": 49.129242097937336,
+              "net_heading_change_rad": 1.3290263025003928,
+              "accumulated_heading_change_rad": 1.4948850938117424,
+              "path_length_m": 60.79425624791414
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "scene_time_s": 2.347452163696289,
+          "instance_token": "8c933940fb2d477896c388972c452343",
+          "annotation_token": "5b2ad4ea74044e929156e366fe43dc31",
+          "category": "vehicle.truck",
+          "clearance_m": 20.77692417933784,
+          "heading_delta_rad": 1.843586480526994,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.3732406371459694,
+          "bounded_stationary": false,
+          "target_position": [
+            1541.723,
+            827.679
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 5,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.9997529983520508,
+              "observed_speed_count": 3,
+              "observed_speed_min_mps": 3.8214386023699856,
+              "observed_speed_mean_mps": 4.516930626341178,
+              "anchor_speed_mps": 3.8214386023699856,
+              "lateral_shift_m": 0.581531942549234,
+              "net_heading_change_rad": 0.24719493161638972,
+              "accumulated_heading_change_rad": 0.24719493161638972,
+              "path_length_m": 4.863460612003252
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 5,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.4999380111694336,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 3.8214386023699856,
+              "observed_speed_mean_mps": 4.944668564136376,
+              "anchor_speed_mps": 3.8214386023699856,
+              "lateral_shift_m": 4.168479761697476,
+              "net_heading_change_rad": 0.6915429399579465,
+              "accumulated_heading_change_rad": 0.6915429399579467,
+              "path_length_m": 12.92306649160586
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 5,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.500295877456665,
+              "observed_speed_count": 12,
+              "observed_speed_min_mps": 3.8214386023699856,
+              "observed_speed_mean_mps": 5.296233395402429,
+              "anchor_speed_mps": 3.8214386023699856,
+              "lateral_shift_m": 19.006078688731773,
+              "net_heading_change_rad": 1.319978680972005,
+              "accumulated_heading_change_rad": 1.3199786809720044,
+              "path_length_m": 29.868034544510717
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 5,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.900208950042725,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 3.8214386023699856,
+              "observed_speed_mean_mps": 6.239027535092321,
+              "anchor_speed_mps": 3.8214386023699856,
+              "lateral_shift_m": 50.70980641569034,
+              "net_heading_change_rad": 1.2548582685880538,
+              "accumulated_heading_change_rad": 1.420717059899404,
+              "path_length_m": 62.82135730059001
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "scene_time_s": 3.34720516204834,
+          "instance_token": "fe685eb2dbb64c50b12a357d003c5811",
+          "annotation_token": "a2ad4a5b7bae464987fffbe4e99a5af8",
+          "category": "vehicle.car",
+          "clearance_m": 22.4094909085452,
+          "heading_delta_rad": 2.111097044623576,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.0,
+          "bounded_stationary": true,
+          "target_position": [
+            1534.816,
+            828.818
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 7,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.4998760223388672,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 5.201227058021327,
+              "observed_speed_mean_mps": 5.307587669775784,
+              "anchor_speed_mps": 5.201227058021327,
+              "lateral_shift_m": 0.19130880943066464,
+              "net_heading_change_rad": 0.14268488693878598,
+              "accumulated_heading_change_rad": 0.142684886938786,
+              "path_length_m": 2.7063029321196823
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 7,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.501049041748047,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 5.201227058021327,
+              "observed_speed_mean_mps": 5.304005982724939,
+              "anchor_speed_mps": 5.201227058021327,
+              "lateral_shift_m": 4.712150487571978,
+              "net_heading_change_rad": 0.7500134613232067,
+              "accumulated_heading_change_rad": 0.7500134613232063,
+              "path_length_m": 13.316939112427894
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 7,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.900105953216553,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 5.201227058021327,
+              "observed_speed_mean_mps": 6.009879163102759,
+              "anchor_speed_mps": 5.201227058021327,
+              "lateral_shift_m": 23.7182495172174,
+              "net_heading_change_rad": 1.0680375992365108,
+              "accumulated_heading_change_rad": 1.1110943500507897,
+              "path_length_m": 35.68457211286386
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 7,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.900770902633667,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 5.201227058021327,
+              "observed_speed_mean_mps": 6.538022106394436,
+              "anchor_speed_mps": 5.201227058021327,
+              "lateral_shift_m": 49.038542062290375,
+              "net_heading_change_rad": 1.0120533093686659,
+              "accumulated_heading_change_rad": 1.177912100680015,
+              "path_length_m": 65.27441490074945
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "scene_time_s": 3.847081184387207,
+          "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+          "annotation_token": "a627a14ae98b4bb9a9ea825ff336c08b",
+          "category": "vehicle.car",
+          "clearance_m": 18.210812124815632,
+          "heading_delta_rad": 2.26025710306261,
+          "target_speed_mps": 0.0,
+          "scene_target_max_speed_mps": 0.27713026120664835,
+          "bounded_stationary": true,
+          "target_position": [
+            1534.759,
+            833.675
+          ],
+          "blocked": true,
+          "windows": [
+            {
+              "horizon_s": 1.0,
+              "anchor_index": 8,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 0.5004379749298096,
+              "observed_speed_count": 2,
+              "observed_speed_min_mps": 5.375854105570193,
+              "observed_speed_mean_mps": 5.394901193550217,
+              "anchor_speed_mps": 5.413948281530241,
+              "lateral_shift_m": 0.18698904902012942,
+              "net_heading_change_rad": 0.14878535052743921,
+              "accumulated_heading_change_rad": 0.14878535052743924,
+              "path_length_m": 2.69028154210965
+            },
+            {
+              "horizon_s": 3.0,
+              "anchor_index": 8,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 2.50103497505188,
+              "observed_speed_count": 6,
+              "observed_speed_min_mps": 5.241171617540478,
+              "observed_speed_mean_mps": 5.329077453407503,
+              "anchor_speed_mps": 5.413948281530241,
+              "lateral_shift_m": 4.816518558293738,
+              "net_heading_change_rad": 0.738159203206591,
+              "accumulated_heading_change_rad": 0.7381592032065907,
+              "path_length_m": 13.285725355469832
+            },
+            {
+              "horizon_s": 6.0,
+              "anchor_index": 8,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 5.900123834609985,
+              "observed_speed_count": 13,
+              "observed_speed_min_mps": 5.241171617540478,
+              "observed_speed_mean_mps": 6.203357242488655,
+              "anchor_speed_mps": 5.413948281530241,
+              "lateral_shift_m": 23.369042922764393,
+              "net_heading_change_rad": 0.9019843161545664,
+              "accumulated_heading_change_rad": 0.9917778592551616,
+              "path_length_m": 36.83567154005749
+            },
+            {
+              "horizon_s": 10.0,
+              "anchor_index": 8,
+              "complete_bracket": true,
+              "gap_present": false,
+              "sampled_span_s": 9.900765895843506,
+              "observed_speed_count": 21,
+              "observed_speed_min_mps": 5.241171617540478,
+              "observed_speed_mean_mps": 6.632526403990856,
+              "anchor_speed_mps": 5.413948281530241,
+              "lateral_shift_m": 45.95771264895445,
+              "net_heading_change_rad": 0.8750864447845512,
+              "accumulated_heading_change_rad": 1.0409452360959008,
+              "path_length_m": 66.16009376370033
+            }
+          ]
+        }
+      ],
+      "candidate_stage_counts": {
+        "selected_not_static": 11,
+        "selected_static": 5,
+        "not_selected_nearest": 5,
+        "legacy_ttc_postfilter": 2
+      },
+      "minimum_ttc_event": {
+        "frame_index": 8,
+        "scene_time": 3.847081184387207,
+        "ttc": 3.36368416871326,
+        "annotation_token": "a627a14ae98b4bb9a9ea825ff336c08b",
+        "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+        "category": "vehicle.car",
+        "clearance": 18.210812124815632,
+        "lateral_distance": 0.46303458032194644,
+        "target_speed": 0.0,
+        "target_forward_speed": -0.0,
+        "relative_speed": 5.413948281530241,
+        "heading_delta": 2.26025710306261
+      },
+      "route_queries": [
+        {
+          "index": 5,
+          "instance_token": "8c933940fb2d477896c388972c452343",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 9.785016522341055,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 2.347452163696289
+        },
+        {
+          "index": 8,
+          "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 9.270073094410446,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected",
+            "minimum_ttc"
+          ],
+          "scene_time_s": 3.847081184387207
+        },
+        {
+          "index": 3,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 14.386448887383287,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 1.4986591339111328
+        },
+        {
+          "index": 4,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 14.386448887383363,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 1.8984551429748535
+        },
+        {
+          "index": 7,
+          "instance_token": "fe685eb2dbb64c50b12a357d003c5811",
+          "relation": "separated_observed_route",
+          "future_complete": true,
+          "spatial_clearance_lower_m": 13.072556230474216,
+          "passage_observed": true,
+          "diagnostic_roles": [
+            "static_selected"
+          ],
+          "scene_time_s": 3.34720516204834
+        }
+      ],
+      "no_static_evidence_means_obstacle_absence": false,
+      "target_identity_human_confirmed": false,
+      "causal_acceptance": false,
+      "feature_updates": false
+    }
+  ],
+  "feature_updates": false,
+  "evaluation_used": false,
+  "absence_inferred": false
+}

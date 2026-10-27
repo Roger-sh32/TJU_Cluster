@@ -1,0 +1,9 @@
+test_cumulative_gif_timing (logs.test_development_media_review_20261012.ReviewContracts) ... ok
+test_nearest_sampling_preserves_last_and_order (logs.test_development_media_review_20261012.ReviewContracts) ... ok
+test_reject_evaluation (logs.test_development_media_review_20261012.ReviewContracts) ... ok
+test_reject_wrong_identity (logs.test_development_media_review_20261012.ReviewContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK

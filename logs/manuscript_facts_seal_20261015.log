@@ -1,0 +1,7 @@
+VERIFIED: synthetic arithmetic, source/output seals and evidence ledger; no real evaluation.
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 10, "prediction_only": 2, "unknown_future": 12, "response_protected_prediction": 13, "contradicted_synchronized_turn": 1}}
+{"phase": "verified", "scenes": 29, "changed": ["scene-0067", "scene-0068", "scene-0073", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"unknown_future": 22, "response_protected_prediction": 15, "contradicted_turning_projection": 1}}
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 8, "prediction_only": 2, "response_protected_prediction": 15, "unknown_future": 12, "contradicted_synchronized_turn": 1}}
+VERIFIED original source/runtime/output seals and exact29 replay; no extraction/fit/evaluation.
+VERIFIED original seals, exact29 historical replay and formal fit refusal; no crossing/unknown changes.
+SEALED original index SHA256=d7b82321ea70e63293a20668ea88d99763597b8a9692465095a9ccdaf0d18ac9

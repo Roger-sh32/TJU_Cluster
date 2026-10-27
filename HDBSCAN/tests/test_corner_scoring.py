@@ -28,6 +28,62 @@ def score_row(**overrides):
 
 
 class CornerScoringTest(unittest.TestCase):
+    def test_uncontrolled_yield_preserves_approach_conflict_when_ego_stops_safely(self):
+        result = score_row(crossing_vehicle_conflict_ratio=0.2,
+                           crossing_conflict_max_duration=3.0,
+                           crossing_route_conflict_ratio=0.0,
+                           crossing_route_conflict_max_duration=0.0,
+                           stop_sign_stop_candidate=0)
+        self.assertGreater(result.interaction_risk, 0.0)
+
+    def test_side_entry_exposure_adds_decision_value_without_claiming_observed_merge(self):
+        result = score_row(side_entry_candidate_ratio=0.2)
+        self.assertEqual(result.interaction_risk, 0.0)
+        self.assertGreater(result.decision_demand, 0.0)
+        self.assertLessEqual(result.decision_demand, 0.3)
+
+    def test_stop_sign_without_route_conflict_preserves_uncertain_approach_risk(self):
+        result = score_row(
+            crossing_vehicle_exposure_ratio=0.6,
+            crossing_vehicle_conflict_ratio=0.2,
+            crossing_conflict_max_duration=3.0,
+            crossing_route_conflict_ratio=0.0,
+            crossing_route_conflict_max_duration=0.0,
+            non_signalized_intersection_density=0.8,
+            stop_sign_stop_candidate=1,
+            ego_stop_from_motion_flag=1,
+        )
+        self.assertGreater(result.interaction_risk, 0.0)
+        self.assertGreater(result.decision_demand, 0.0)
+        self.assertLessEqual(result.decision_demand, 0.4)
+
+    def test_stop_sign_does_not_suppress_left_turn_gap_selection(self):
+        result = score_row(
+            crossing_vehicle_exposure_ratio=0.125,
+            crossing_route_conflict_ratio=0.0,
+            non_signalized_intersection_density=0.8,
+            stop_sign_stop_candidate=1,
+            ego_stop_from_motion_flag=1,
+            left_turn_cross_traffic_interaction_ratio=0.125,
+        )
+        self.assertAlmostEqual(result.decision_demand, 0.3125)
+
+    def test_stop_sign_does_not_remove_confirmed_route_conflict(self):
+        result = score_row(
+            crossing_vehicle_exposure_ratio=0.6,
+            crossing_route_conflict_ratio=0.2,
+            crossing_route_conflict_max_duration=3.0,
+            non_signalized_intersection_density=0.8,
+            stop_sign_stop_candidate=1,
+        )
+        self.assertGreater(result.interaction_risk, 0.0)
+        self.assertGreater(result.decision_demand, 0.4)
+
+    def test_observed_intrusion_contributes_even_without_instantaneous_merge(self):
+        result = score_row(adjacent_lane_intrusion_ratio=0.1,
+                           adjacent_lane_intrusion_max_duration=1.5)
+        self.assertGreater(result.interaction_risk, 0.0)
+
     def test_no_valid_ttc_is_not_longitudinal_risk(self):
         result = score_row(min_ttc=0.5, ttc_valid_ratio=0.0)
         self.assertEqual(result.longitudinal_risk, 0.0)

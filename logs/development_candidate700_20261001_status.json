@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-10-01T04:50:37.839024+00:00",
+  "wrapper_pid": 23700,
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_protocol_20261001.json",
+    "sha256": "0da16090e6ccf9475eaaaa0b92922c49a9427b59273cd67d4c74caf7d9ddf0ee"
+  },
+  "phase": "completed_requires_review",
+  "console": "F:\\Scene_cluster\\logs\\development_candidate700_20261001_console.log",
+  "child_pid": 27408,
+  "child_exit_code": 0,
+  "report": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_comparison_20261001.json",
+    "sha256": "96ab2e1f8cc99bb5bf2d64ace048d40ec26cb1212d2350a21748fe866a6b515e"
+  },
+  "raw_quality_checks_clear": true,
+  "updated_at_utc": "2026-10-01T06:25:58.184279+00:00"
+}

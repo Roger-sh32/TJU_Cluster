@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-16",
+  "scope": "Bounded metadata and 64x64 synthetic linear algebra only; no model fit, extraction, pickle or evaluation",
+  "probes": [
+    {
+      "environment": "autodrive-cluster",
+      "probe": "metadata",
+      "command": [
+        "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "-c",
+        "import json,sys,importlib.metadata as m; names=['numpy','scipy','pandas','scikit-learn','umap-learn','hdbscan','nuscenes-devkit','opencv-python-headless','matplotlib']; print(json.dumps({'executable':sys.executable,'python':sys.version,'packages':{n:m.version(n) if list(m.distributions(name=n)) else None for n in names}}),flush=True)"
+      ],
+      "started_at_utc": "2026-10-16T01:13:11.722587+00:00",
+      "timeout_seconds": 15,
+      "process_env_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MKL_THREADING_LAYER": "SEQUENTIAL"
+      },
+      "timed_out": false,
+      "returncode": 0,
+      "stdout": "{\"executable\": \"D:\\\\Python\\\\Conda\\\\envs\\\\autodrive-cluster\\\\python.exe\", \"python\": \"3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]\", \"packages\": {\"numpy\": \"1.26.4\", \"scipy\": \"1.13.1\", \"pandas\": \"2.3.1\", \"scikit-learn\": \"1.6.1\", \"umap-learn\": \"0.5.5\", \"hdbscan\": \"0.8.39\", \"nuscenes-devkit\": \"1.2.0\", \"opencv-python-headless\": \"4.11.0.86\", \"matplotlib\": \"3.9.4\"}}\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.180103
+    },
+    {
+      "environment": "autodrive-cluster",
+      "probe": "linear_algebra",
+      "command": [
+        "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "-c",
+        "import faulthandler; faulthandler.dump_traceback_later(10,exit=True); print('start',flush=True); import numpy as np; print('numpy_imported',flush=True); a=np.arange(4096,dtype=float).reshape(64,64)/4096; b=a@a.T; print('dot',bool(np.isfinite(b).all()),float(b[0,0]),flush=True); from scipy.linalg import svd; print('scipy_imported',flush=True); s=svd(b,compute_uv=False); print('svd',bool(np.isfinite(s).all()),float(s[0]),flush=True); faulthandler.cancel_dump_traceback_later()"
+      ],
+      "started_at_utc": "2026-10-16T01:13:11.902690+00:00",
+      "timeout_seconds": 15,
+      "process_env_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MKL_THREADING_LAYER": "SEQUENTIAL"
+      },
+      "timed_out": false,
+      "returncode": 0,
+      "stdout": "start\r\nnumpy_imported\r\ndot True 0.0050868988037109375\r\nscipy_imported\r\nsvd True 1364.812542915606\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.897602
+    },
+    {
+      "environment": "autodrive-umap-smoke",
+      "probe": "metadata",
+      "command": [
+        "D:\\Python\\Conda\\envs\\autodrive-umap-smoke\\python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "-c",
+        "import json,sys,importlib.metadata as m; names=['numpy','scipy','pandas','scikit-learn','umap-learn','hdbscan','nuscenes-devkit','opencv-python-headless','matplotlib']; print(json.dumps({'executable':sys.executable,'python':sys.version,'packages':{n:m.version(n) if list(m.distributions(name=n)) else None for n in names}}),flush=True)"
+      ],
+      "started_at_utc": "2026-10-16T01:13:12.800292+00:00",
+      "timeout_seconds": 15,
+      "process_env_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MKL_THREADING_LAYER": "SEQUENTIAL"
+      },
+      "timed_out": false,
+      "returncode": 0,
+      "stdout": "{\"executable\": \"D:\\\\Python\\\\Conda\\\\envs\\\\autodrive-umap-smoke\\\\python.exe\", \"python\": \"3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]\", \"packages\": {\"numpy\": \"1.24.4\", \"scipy\": \"1.10.1\", \"pandas\": \"2.3.1\", \"scikit-learn\": \"1.3.2\", \"umap-learn\": \"0.5.5\", \"hdbscan\": \"0.8.39\", \"nuscenes-devkit\": null, \"opencv-python-headless\": null, \"matplotlib\": null}}\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.23426
+    },
+    {
+      "environment": "autodrive-umap-smoke",
+      "probe": "linear_algebra",
+      "command": [
+        "D:\\Python\\Conda\\envs\\autodrive-umap-smoke\\python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "-c",
+        "import faulthandler; faulthandler.dump_traceback_later(10,exit=True); print('start',flush=True); import numpy as np; print('numpy_imported',flush=True); a=np.arange(4096,dtype=float).reshape(64,64)/4096; b=a@a.T; print('dot',bool(np.isfinite(b).all()),float(b[0,0]),flush=True); from scipy.linalg import svd; print('scipy_imported',flush=True); s=svd(b,compute_uv=False); print('svd',bool(np.isfinite(s).all()),float(s[0]),flush=True); faulthandler.cancel_dump_traceback_later()"
+      ],
+      "started_at_utc": "2026-10-16T01:13:13.034552+00:00",
+      "timeout_seconds": 15,
+      "process_env_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MKL_THREADING_LAYER": "SEQUENTIAL"
+      },
+      "timed_out": false,
+      "returncode": 0,
+      "stdout": "start\r\nnumpy_imported\r\ndot True 0.0050868988037109375\r\nscipy_imported\r\nsvd True 1364.812542915606\r\n",
+      "stderr": "",
+      "elapsed_seconds": 2.961203
+    }
+  ]
+}

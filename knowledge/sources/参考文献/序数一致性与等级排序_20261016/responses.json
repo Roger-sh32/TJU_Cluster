@@ -1,0 +1,35 @@
+{
+  "scope": "Actual official/author-institution HTTP responses; not a systematic review",
+  "rows": [
+    {
+      "name": "alpha.pdf",
+      "url": "https://www.asc.upenn.edu/sites/default/files/2021-03/Computing%20Krippendorff%27s%20Alpha-Reliability.pdf",
+      "requested_at_utc": "2026-10-16T13:49:47.078404+00:00",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)"
+    },
+    {
+      "name": "alpha_portal.html",
+      "url": "https://www.asc.upenn.edu/krippendorffs-alpha-reliability",
+      "requested_at_utc": "2026-10-16T13:49:47.103840+00:00",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)"
+    },
+    {
+      "name": "kappa_sklearn_1_6.html",
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.cohen_kappa_score.html",
+      "requested_at_utc": "2026-10-16T13:49:47.105842+00:00",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)"
+    },
+    {
+      "name": "ndcg_sklearn_1_6.html",
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.ndcg_score.html",
+      "requested_at_utc": "2026-10-16T13:49:47.108842+00:00",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)"
+    },
+    {
+      "name": "ir_ranked_evaluation.html",
+      "url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html",
+      "requested_at_utc": "2026-10-16T13:49:47.112843+00:00",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)"
+    }
+  ]
+}

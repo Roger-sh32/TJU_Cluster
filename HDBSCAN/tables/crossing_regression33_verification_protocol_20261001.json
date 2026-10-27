@@ -1,0 +1,27 @@
+{
+  "created_at_utc": "2026-10-01T03:38:45.685561+00:00",
+  "scope": "review corrections before reading extraction values; original sampling protocol unchanged",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_regression33_protocol_20261001.json",
+    "sha256": "dd504a746cebd4f7b8001f00b7e4a2cd0671fe056c450611a9aa2a733ab6f614"
+  },
+  "original_recipe": {
+    "path": "F:\\Scene_cluster\\logs\\crossing_regression33_20261001_pre_review.py",
+    "sha256": "51c8cc4a6f0436163768a91f19480096f7331ce2fb57499029e50f1eee049244"
+  },
+  "checker": {
+    "path": "F:\\Scene_cluster\\logs\\crossing_regression33_20261001.py",
+    "sha256": "675fd87c93f108e7fd2582c70a389ac1ecd7d61adfc5801425f6b3d5ef25ff2e"
+  },
+  "comparison_helper": {
+    "path": "F:\\Scene_cluster\\logs\\check_development_audit700_20260927.py",
+    "sha256": "4302d8a117b07c42a7addefe147932483304e7c018be9d132cabd939e815ea06"
+  },
+  "reasons": [
+    "Risk can increase when removed left-turn gating restores merge risk; record instead of rejecting.",
+    "Route deviation flag and decision demand are known downstream dependencies.",
+    "Bind original and amended analysis recipes and the imported comparison helper."
+  ],
+  "new_outcome_values_inspected": false,
+  "sampling_or_production_sources_changed": false
+}

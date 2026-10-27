@@ -1,0 +1,15 @@
+test_complete_far_turn_is_rejected (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_exact_rows_rejects_drift_and_duplicate (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_near_route_is_not_proof_of_safety (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_short_future_and_response_are_separate_blockers (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_unknown_size_cannot_clear_actor (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_nonpolygon_is_reported_unknown_not_sent_to_api (logs.test_complete_target_diagnosis8_20261012.ContinuationTests) ... ok
+test_only_named_geometry_helpers_load_no_extraction (logs.test_complete_target_diagnosis8_20261012.ContinuationTests) ... ok
+test_invalid_dimensions_are_not_safe_evidence (logs.test_target_geometry_20261012.GeometryContracts) ... ok
+test_long_parallel_truck_is_not_its_circumscribed_circle (logs.test_target_geometry_20261012.GeometryContracts) ... ok
+test_rotation_protects_crosswise_vehicle_end (logs.test_target_geometry_20261012.GeometryContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.018s
+
+OK

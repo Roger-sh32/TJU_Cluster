@@ -1,0 +1,114 @@
+======================================================================
+FAIL: test_existing_avoidance_context_is_protected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 55, in test_existing_avoidance_context_is_protected
+    self.assertFalse(self.module().should_reject(self.candidate(), 'separated_observed_route', True))
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_filter_precedes_nearest_selection_and_finds_alternative (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 20, in test_filter_precedes_nearest_selection_and_finds_alternative
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_forward_static_obstacle_is_protected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 43, in test_forward_static_obstacle_is_protected
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_missing_map_does_not_prove_separation (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 60, in test_missing_map_does_not_prove_separation
+    self.assertFalse(self.module().should_reject(c, 'separated_observed_route', False))
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_offroad_or_overlapping_candidate_not_selected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 29, in test_offroad_or_overlapping_candidate_not_selected
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_rejection_boolean_context_is_strict (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 76, in test_rejection_boolean_context_is_strict
+    self.module().should_reject(self.candidate(), 'separated_observed_route', 'False')
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_selection_does_not_mutate_source (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 68, in test_selection_does_not_mutate_source
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_static_opposite_turn_requires_known_route_separation (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 36, in test_static_opposite_turn_requires_known_route_separation
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_straight_motion_not_filtered_as_turn_projection (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 65, in test_straight_motion_not_filtered_as_turn_projection
+    self.assertFalse(self.module().should_reject(c, 'separated_observed_route', False))
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_temporarily_stopped_motorcycle_is_protected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 49, in test_temporarily_stopped_motorcycle_is_protected
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+======================================================================
+FAIL: test_tie_preserves_original_annotation_order (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 25, in test_tie_preserves_original_annotation_order
+    m = self.module()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_longitudinal_candidate_v7.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('HDBSCAN.scripts.longitudinal_candidate_v7'),
+AssertionError: unexpectedly None : Independent longitudinal candidate missing
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+FAILED (failures=11)

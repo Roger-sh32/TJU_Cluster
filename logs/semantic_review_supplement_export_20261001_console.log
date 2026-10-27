@@ -1,0 +1,10 @@
+Metadata rows scanned: 500000
+Metadata rows scanned: 1000000
+Metadata rows scanned: 1500000
+Metadata rows scanned: 2000000
+Metadata rows scanned: 2500000
+scene-0107: 118 frames, 19.45s, camera_sweeps_nearest_6hz
+scene-0151: 116 frames, 19.10s, camera_sweeps_nearest_6hz
+scene-0032: 118 frames, 19.65s, camera_sweeps_nearest_6hz
+scene-0014: 117 frames, 19.40s, camera_sweeps_nearest_6hz
+Report: F:\Scene_cluster\HDBSCAN\tables\semantic_review_supplement_media_20261001.json; exported 4/5

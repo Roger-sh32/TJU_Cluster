@@ -1,0 +1,134 @@
+{
+  "generated_at_utc": "2026-09-25T01:48:45.299273+00:00",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "python_version": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.1",
+    "nuscenes-devkit": "1.2.0",
+    "shapely": "2.0.7"
+  },
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review9_20260925.csv",
+      "sha256": "e219431852fb33e5ddb12a8d99676ba39f3e5edf06b47bc789cfeeb66956a7e6"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review8_20260922.csv",
+      "sha256": "135904ed1c33a4fc701e13f53ea59c15406933e095297493f13c8dd104305950"
+    }
+  ],
+  "scripts_at_audit_time": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\audit_feature_revision.py",
+      "sha256": "9ef10b08b82cb6764e84ec3bbbd95260906573fcfc51ba7d4e951baca9883c6f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+      "sha256": "7982f8a911786579cc63479026502948875b3e0e14b4f81e597ad36999a687fe"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "734ae20da4555c020a6daddecfb1ba78c6df7ddb66287884627bef0dddb1fc8e"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "sha256": "77b40cdd37dc4e1b9f6f3a8c8dccf4ee3218fee90a97a2781f73d8854878487c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+    }
+  ],
+  "scene_count": 14,
+  "scene_names": [
+    "scene-0007",
+    "scene-0011",
+    "scene-0026",
+    "scene-0030",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0097",
+    "scene-0103",
+    "scene-0109",
+    "scene-0122"
+  ],
+  "semantic_feature_count": 52,
+  "semantic_features": [
+    "avg_speed",
+    "speed_std",
+    "avg_vehicle_count",
+    "neighbor_density_std",
+    "neighbor_speed_std",
+    "pedestrian_nearby_ratio",
+    "pedestrian_front_ratio",
+    "ego_avg_speed",
+    "ego_speed_std",
+    "ego_heading_change_total",
+    "ego_stopped_at_scene_start",
+    "ego_stop_from_motion_flag",
+    "ego_restart_after_stop_flag",
+    "car_following_ratio",
+    "following_max_duration",
+    "merge_exposure_ratio",
+    "merge_observed_relevance_ratio",
+    "merge_lane_entry_relevance_ratio",
+    "adjacent_lane_intrusion_ratio",
+    "side_entry_candidate_ratio",
+    "overtaking_exposure_ratio",
+    "crossing_vehicle_exposure_ratio",
+    "crossing_route_conflict_ratio",
+    "left_turn_crossing_yield_ratio",
+    "left_turn_cross_traffic_interaction_ratio",
+    "vru_crossing_exposure_ratio",
+    "same_lane_vru_exposure_ratio",
+    "same_direction_vru_ratio",
+    "vru_path_conflict_ratio",
+    "vru_observed_relevance_ratio",
+    "vru_crosswalk_conflict_ratio",
+    "obstacle_avoidance_vru_conflict_ratio",
+    "oncoming_during_avoidance_ratio",
+    "stationary_lead_obstacle_ratio",
+    "temporarily_stopped_lead_ratio",
+    "blocked_path_obstacle_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand",
+    "ego_evasive_lane_change_flag",
+    "truck_bus_dynamic_ratio",
+    "bicycle_ratio",
+    "motorcycle_ratio",
+    "two_wheeler_dynamic_ratio",
+    "intersection_density",
+    "lane_connector_density",
+    "ped_crossing_density",
+    "intersection_stop_ratio",
+    "traffic_light_control_density",
+    "stop_sign_control_density",
+    "stop_sign_stop_candidate",
+    "turn_stop_control_density",
+    "non_signalized_intersection_density"
+  ],
+  "all_zero_semantic_features": [
+    "adjacent_lane_intrusion_ratio",
+    "crossing_route_conflict_ratio",
+    "same_direction_vru_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand"
+  ],
+  "missing_baseline_scenes": [],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review9_20260925_risk.csv",
+      "sha256": "5b051aa4ea36d8870f0bc2d7e7617ebaf60066930aa6d38deed18bae40d54ff8"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review9_20260925_comparison.csv",
+      "sha256": "892909b3618a6bfc7c7595c3e4fcdab19e03ab2c3d55396d27e2dd9090d6f86a"
+    }
+  ],
+  "note": "Risk-only audit; no clustering or corner-score rerun. Baseline risks are recalculated with the current scorer and historical available fields."
+}

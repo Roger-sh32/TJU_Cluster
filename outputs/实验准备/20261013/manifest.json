@@ -1,0 +1,339 @@
+{
+  "created_at_utc": "2026-10-13T12:09:33.403638+00:00",
+  "china_day": "2026-10-13",
+  "stage": "synthetic_statistics_and_evidence_preparation",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/prepare_experiment_readiness_20261013.py",
+    "--synthetic-demo"
+  ],
+  "python": "3.9.23",
+  "executable": {
+    "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "sha256": "102dc158e0428a9ee945f010b33acf67091575725042ba537dcc8371efef0e14",
+    "bytes": 96256
+  },
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff",
+      "bytes": 45134
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_audit700_comparison_20260927.json",
+      "sha256": "628d342e378d759c8fa45113e06e185a575e30c734f62ae9cb458caacba581f0",
+      "bytes": 2766
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv",
+      "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+      "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.quality.json",
+      "sha256": "b05d6f47e296074efc3117c486160040fa5166c0eb010f7951bfd3a44e3ee58b"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.manifest.json",
+      "sha256": "93cc883ead4f904aa3d3e788dd9e6a3410b37328cffec82b50cfc216259dffcf"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_comparison_20261001.json",
+      "sha256": "96ab2e1f8cc99bb5bf2d64ace048d40ec26cb1212d2350a21748fe866a6b515e",
+      "bytes": 15483
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_protocol_20261001.json",
+      "sha256": "0da16090e6ccf9475eaaaa0b92922c49a9427b59273cd67d4c74caf7d9ddf0ee"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv",
+      "sha256": "748eb9a498e7eeeaeb250294241c6f8b62ecf9a0df398571fe592265d7f7b741"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv.manifest.json",
+      "sha256": "4a709932302da68e9f1a8dbf5b7bbb8d12eb198f0b31de004221c073f59d1fc7"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv.quality.json",
+      "sha256": "c5585e09e1e6b516cb12c25b1c72832cfefcd44c9f2a4071772e7c36fed36aae"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_comparison_20261013.json",
+      "sha256": "160b527a62320f5c2715200a14380eebb016069dc8e3b782786ed9198a6a3a46",
+      "bytes": 6815
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_protocol_20261013.json",
+      "sha256": "06408591e3646a37e5bbd9824b42bebc17f5794ba7657cf0515ad808abe32846",
+      "bytes": 13595
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv",
+      "sha256": "19108e421555355e82cc4d6ad41defc5f67e075ac8d99bf7db5e253659057333",
+      "bytes": 33934
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv.quality.json",
+      "sha256": "8e661bfbd206231d658381a4b518538ca532a276e5b2365dd60bcb9f0457fac9",
+      "bytes": 9673
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv.manifest.json",
+      "sha256": "444553bead871eadff2809d664732c22e880150ab174d60aa5c86d397b9806a4",
+      "bytes": 3458
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_risk_20261013.csv",
+      "sha256": "4f01cd7e72a62832ec593539381f50038c6b022b5f977fbf5a2f5433f5d2d799",
+      "bytes": 7497
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\横向交互v5_2回归对照_20261013.md",
+      "sha256": "7af0d0a9addd1211d6ac8b01b23ccaf8563e0c6c93ff314e980dd5fa73dbbf21",
+      "bytes": 5729
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\待人工复核清单_v5_2_20261013.md",
+      "sha256": "0781fe77850933b234ac38e703db4af960be42a7b9fa771031ba9f52d798cb82",
+      "bytes": 4081
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\summary.json",
+      "sha256": "d66eba709c2de095874ab8d79a2b9508e2c96e3116959dd81b579a3a7297c356",
+      "bytes": 49797
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv",
+      "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.manifest.json",
+      "sha256": "93cc883ead4f904aa3d3e788dd9e6a3410b37328cffec82b50cfc216259dffcf"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.quality.json",
+      "sha256": "b05d6f47e296074efc3117c486160040fa5166c0eb010f7951bfd3a44e3ee58b"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s1_seed42.csv",
+      "sha256": "e7858dbcf10200326b12062c65844b93c127ffda9a5e71ceb1529654d98cc5e2"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s5_seed42.csv",
+      "sha256": "fe08e44c88c18878a7f5305126134659a83cdbd1c6881987073caf0e0ccd3d22"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s1_seed7.csv",
+      "sha256": "9f62aba624a36edc86a2219c56f8d1a4829a6bc335eaba3ed4c71e19cd4bf78a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s5_seed7.csv",
+      "sha256": "7e0a12535301761e2407a3826cf631a9f5402ddac6ab4a0397f54f6ffd10605f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s1_seed19.csv",
+      "sha256": "336f2765ed2ceef701623e6cf246e669d3bf7fc3d84ce2a9ddef0a1b14ace637"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s5_seed19.csv",
+      "sha256": "e169e81ffd1e9e4c80f9aaf71743637494c00dda69aaaf267bd88260955a77e6"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s1_seed73.csv",
+      "sha256": "2a677070c57b2e40ebcad4d0586140933bbcb3345ae3cf7c83331e7766769787"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s5_seed73.csv",
+      "sha256": "133ad181e998d9251b10a340118d443badb0151bce5185b182b3fe60c9ea6c4f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s1_seed101.csv",
+      "sha256": "47a204c1d38c826279363bde20fe5d0005722c3f9bffa40057d441820d095d9a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n15_s5_seed101.csv",
+      "sha256": "90a10bb84a989de35ad002b892280b9bdb7ababf66f84566d682a44e295960a7"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s1_seed42.csv",
+      "sha256": "e8a71a2358af0e336c9b8907e451ec8fe1b0e07e6adde0491dd9c8bc09cb5b88"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s5_seed42.csv",
+      "sha256": "1430d657cba5eb98430315401ecaac0f92a89b77e6683eea7be5c78116083c2b"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s1_seed7.csv",
+      "sha256": "0afcee51490d4523749343475d3cf58e86c6ea2133af57cf1543708ba9f2d4b4"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s5_seed7.csv",
+      "sha256": "5517821cb05d5a7fb4d04e7e59f5e8bca7b68635fecec1abe7d7bd603969c191"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s1_seed19.csv",
+      "sha256": "6223c1b4b9b505bf4cb1e3733d59958111696e78d5695cb99b6e3688f9091e11"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s5_seed19.csv",
+      "sha256": "f482c4fdc405aef20541b5322b28bd9faa8c2a20685b4d7fd276e79d798ea4d7"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s1_seed73.csv",
+      "sha256": "152a7ccadd73e17f7370a993ab40f340efb9db8dc9499b360bf309f387272e77"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s5_seed73.csv",
+      "sha256": "66dfcac58725471865273b2bd6b67507a21e78259f7496b4db8dc64adaf5ff6a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s1_seed101.csv",
+      "sha256": "4bef02c80360f9776e2edb9c58f5efb9ed1faa34b25dfa23f1813ceda46f02f6"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s5_seed101.csv",
+      "sha256": "2ef4ea898e33e2fb3df53f635159816c8f9f0d5a5441fd9b9f593c27a9b6ee05"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\runs.csv",
+      "sha256": "2fd2c14f8ada4046e587eb9a3f953213470c48b647fc8f41f186aca67d7da2db"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\configurations.csv",
+      "sha256": "1427d19d2c563c3501b83defe1881d74192b3cacdae676d2618e2aab56e8dd94"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\pairwise.csv",
+      "sha256": "1a12a057f42dfb07eca692bb05c83dc3a053acf24544258832fac6ebdec5d96b"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_fit_summary_20260927.json",
+      "sha256": "4e547383a6bc84c60bd43a1bea32c8e3c8c3357007bbefff25aa18ae8b52f5b8",
+      "bytes": 12458
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+      "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260927_umap_hdbscan.csv",
+      "sha256": "6de5f671f32c0c92b4248ddfc479d3b09a094a50190dadc8f240ffae23fa1dfe"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260927_with_corner_score.csv",
+      "sha256": "821df6df5e7dbed8a60956304dd49ffa6de11906d46d4d5d6a1aa47936b6473f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260927_umap_hdbscan.model\\manifest.json",
+      "sha256": "62f985f9daa554a5e2098b45b86baad6ae5cd1475d21f49b7ca7431791086c10"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_priority_ranking_20260927.csv",
+      "sha256": "f4e665d9e33fa1eec0071b0c53424eaabc7b0b747fb10feaa8dd642ba83dbf26"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\media_recovery_audit_20261011.json",
+      "sha256": "ec708a4c29f1320a2b585b25ccef82efd95d63fb098af1e6c8f1fd6c3f7add3f",
+      "bytes": 10792
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\crossing_v5_2_regression29_20261013_status.json",
+      "sha256": "d89555852ecd57a3d55cc3a2f0c50dcc0e5d376476d8c8dd8d379022d9e82b7b",
+      "bytes": 570
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py",
+      "sha256": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552",
+      "bytes": 12595
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "sha256": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620",
+      "bytes": 10137
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+      "bytes": 2153
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+      "bytes": 30874
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+      "sha256": "2c0d6b2b46e573af3f559d7c6e0f750697d4868bc22ce4e6e1f04a6c60781859",
+      "bytes": 67931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+      "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db",
+      "bytes": 8223
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\extraction_audit.py",
+      "sha256": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707",
+      "bytes": 3236
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\prepare_experiment_readiness_20261013.py",
+      "sha256": "7283ca6e9d6f8bbbacb3df7dd87012c68949ae8820859f48a1a926d07a7593a7",
+      "bytes": 15635
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_experiment_readiness_20261013.py",
+      "sha256": "9dc14d30e42ef4e187d6457ad78cdee115cf3fa7fcaacecba8799c5bdb660b5e",
+      "bytes": 3613
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\evaluation_metrics.py",
+      "sha256": "1c4f1cf858953a4244cb19d5ed3313a752105c1c109784c4f9a9915f1ebbe7dc",
+      "bytes": 9287
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_evaluation_metrics.py",
+      "sha256": "b298dbfb61f858704b218c9fb5e9576dc088e90727db495c9e8d3afa252fcbca",
+      "bytes": 7170
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_evaluation_split.py",
+      "sha256": "f6e346be2a532c60c3afc49c794ce3b73d480ea5b9e60ea51f755d9b95160c3a",
+      "bytes": 5878
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\wiki\\独立评价与专家盲评协议.md",
+      "sha256": "bdd31422b2ff04ceacad6591333fc7b42f16842d1118e7b862ea5d93aeed7bbd",
+      "bytes": 7729
+    }
+  ],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261013\\synthetic_metrics.json",
+      "sha256": "aaa5e4273c1983b98e32a4cdd82bc1d1f8a3dde5d50d36a333233d8c45cef338",
+      "bytes": 326497
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261013\\实验收尾证据与下一步.md",
+      "sha256": "8554bb085278635d2b27d752c739e54cc81ae4b4e44cb35f46567d854331e752",
+      "bytes": 5551
+    }
+  ],
+  "real_evaluation_accessed": false,
+  "feature_or_model_changed": false,
+  "formal_evaluation_ready": false,
+  "semantic_acceptance": false
+}

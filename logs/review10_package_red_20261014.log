@@ -1,0 +1,50 @@
+test_camera_path_cannot_escape_source_dataset (logs.test_review10_package_20261014.ReviewPackageContracts) ... ERROR
+test_exact_fixed_ten_current_development_only (logs.test_review10_package_20261014.ReviewPackageContracts) ... ERROR
+test_identity_mismatch_and_duplicate_or_extra_selection_refused (logs.test_review10_package_20261014.ReviewPackageContracts) ... ERROR
+test_missing_front_keyframes_cannot_silently_fallback_or_replace (logs.test_review10_package_20261014.ReviewPackageContracts) ... ERROR
+test_missing_sweeps_fallback_is_explicit_and_uses_only_real_keyframes (logs.test_review10_package_20261014.ReviewPackageContracts) ... ERROR
+
+======================================================================
+ERROR: test_camera_path_cannot_escape_source_dataset (logs.test_review10_package_20261014.ReviewPackageContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_review10_package_20261014.py", line 52, in test_camera_path_cannot_escape_source_dataset
+    from logs.build_review10_package_20261014 import camera_pool
+ModuleNotFoundError: No module named 'logs.build_review10_package_20261014'
+
+======================================================================
+ERROR: test_exact_fixed_ten_current_development_only (logs.test_review10_package_20261014.ReviewPackageContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_review10_package_20261014.py", line 13, in test_exact_fixed_ten_current_development_only
+    from logs.build_review10_package_20261014 import NAMES, validate_scope
+ModuleNotFoundError: No module named 'logs.build_review10_package_20261014'
+
+======================================================================
+ERROR: test_identity_mismatch_and_duplicate_or_extra_selection_refused (logs.test_review10_package_20261014.ReviewPackageContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_review10_package_20261014.py", line 21, in test_identity_mismatch_and_duplicate_or_extra_selection_refused
+    from logs.build_review10_package_20261014 import NAMES, validate_scope
+ModuleNotFoundError: No module named 'logs.build_review10_package_20261014'
+
+======================================================================
+ERROR: test_missing_front_keyframes_cannot_silently_fallback_or_replace (logs.test_review10_package_20261014.ReviewPackageContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_review10_package_20261014.py", line 32, in test_missing_front_keyframes_cannot_silently_fallback_or_replace
+    from logs.build_review10_package_20261014 import camera_pool
+ModuleNotFoundError: No module named 'logs.build_review10_package_20261014'
+
+======================================================================
+ERROR: test_missing_sweeps_fallback_is_explicit_and_uses_only_real_keyframes (logs.test_review10_package_20261014.ReviewPackageContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_review10_package_20261014.py", line 40, in test_missing_sweeps_fallback_is_explicit_and_uses_only_real_keyframes
+    from logs.build_review10_package_20261014 import camera_pool
+ModuleNotFoundError: No module named 'logs.build_review10_package_20261014'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=5)

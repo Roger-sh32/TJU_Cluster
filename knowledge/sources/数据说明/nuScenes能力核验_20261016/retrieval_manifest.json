@@ -1,0 +1,18 @@
+{
+  "scope": "One original public schema response, unmodified bytes",
+  "tls": "certifi CA and hostname verification",
+  "records": [
+    {
+      "requested_url": "https://raw.githubusercontent.com/nutonomy/nuscenes-devkit/master/docs/schema_nuscenes.md",
+      "resolved_url": "https://raw.githubusercontent.com/nutonomy/nuscenes-devkit/master/docs/schema_nuscenes.md",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-16T01:43:39.299218+00:00",
+      "content_type": "text/plain; charset=utf-8",
+      "etag": "\"982ec4be32ad86839346b1b5430dfbee91aadcb19c4901c5893713d6d0bd317c\"",
+      "bytes": 10333,
+      "sha256": "07b34570d0df3e8d75dd2c9f1b8251275a16fd4b83ac7d0ec2db9334d2325385",
+      "file": "schema_nuscenes_master.md",
+      "version_caution": "Live upstream master snapshot; not proof of equivalence to installed nuscenes-devkit 1.2.0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_crosswise_long_vehicle_end_protects_actual_proximity (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_inputs_are_not_mutated (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_invalid_ego_timeline_fails_closed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_with_unknown_heading_stays_unknown (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_local_v51_unknown_and_other_target_are_not_anchors (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_low_speed_or_braking_protection_survives_spatial_miss (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_missing_actor_frame_cannot_clear_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_near_horizon_bracketing_sample_is_not_missing_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_no_link_to_stop_beyond_response_horizon (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_observed_near_end_is_not_downgraded_to_unknown_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_old_projection_rejection_remains_explicit (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_one_frame_speed_dip_is_not_sustained_soft_response (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_placeholder_initial_speed_cannot_anchor_a_left_turn (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_short_future_is_unknown_not_negative_or_confirmed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_straight_driving_prediction_not_cleared_by_turn_filter (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_sustained_soft_deceleration_preserves_rolling_yield_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_candidate_is_not_an_interaction_anchor (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_geometry_does_not_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_heading_cannot_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_wait_then_release_link_protects_same_target_not_later_other_target (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_changed_prepared_protocol_is_refused_before_launch (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_current_formal_fitter_refuses_candidate_manifest (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_diff_keeps_allowed_change_and_rejects_order_drift (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_diff_refuses_unrelated_change (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_frozen_runtime_mismatch_is_refused (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_positive_control_gate_refuses_lost_yield_and_preserves_input (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_publication_uses_actual_grouped_risk_column (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+test_uncertainty_inclusion_is_not_dropped_from_comparison (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.177s
+
+OK

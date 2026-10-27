@@ -1,0 +1,25 @@
+test_bootstrap_does_not_silently_drop_too_small_cohorts (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_bootstrap_refuses_missing_labels_or_group_membership (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_budget_savings_keep_negative_result_and_require_same_target (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_duplicate_review_or_unexpected_identity_is_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_invalid_ranking_labels_k_and_recall_targets_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_log_bootstrap_identical_methods_have_zero_difference (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_log_bootstrap_uses_same_resample_and_retains_sign (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_missing_outside_top_k_also_disables_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_no_positive_does_not_report_zero_recall_or_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_padded_log_identity_cannot_invent_independent_groups (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_precision_recall_budget_and_unattainable_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_random_baseline_materializes_metric_iterators_once (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_seeded_random_baseline_reproducible_without_mutation (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_three_independent_reviews_median_and_missing_not_zero (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_unknown_top_k_bounds_no_backfill_no_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_altered_packet_seal_is_refused_before_reading_payload (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_bound_report_refuses_changed_linked_artifact (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_existing_packet_is_refused_without_overwrite (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_output_scope_refuses_outside_deliverables (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_synthetic_fixture_never_uses_real_scene_or_expert_ids (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.289s
+
+OK

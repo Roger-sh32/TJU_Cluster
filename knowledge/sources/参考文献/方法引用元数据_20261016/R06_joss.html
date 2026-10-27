@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47852178-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47852178-4');
+  </script>
+
+  <title>Journal of Open Source Software: hdbscan: Hierarchical density based clustering</title>
+  <link rel="stylesheet" href="/assets/application-f79ecdb22353135f7016bd9cc4a598c5f774ed8cde8a0c0e65e58df6acfe87f4.css" media="all" />
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-df5a46b91e72d278d5a7a1cd9443f0dc2cca3910d86834bc36bd5184c8281bc9.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-b86d83036ff04169e5bf3ebbc82e0ad528456259e47091b448f41a3cadabdb40.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-dd364f16ec9504dfb72672295637a1c8838773b01c0b441bd41008124c407894.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+    "chartkick": "/assets/chartkick-8eb76e6cbdb540d495739fce84049fd038e59e7fd55c9e08e47b0b5a74b62db4.js",
+    "Chart.bundle": "/assets/Chart.bundle-f9da773cb982870fc03e616b7bcbfcc56462d3b0188cd9e441f8d8398c7e9482.js",
+    "jquery": "https://ga.jspm.io/npm:jquery@3.6.0/dist/jquery.js",
+    "jquery-ujs": "https://ga.jspm.io/npm:jquery-ujs@1.2.3/src/rails.js",
+    "bootstrap": "https://ga.jspm.io/npm:bootstrap@4.3.1/dist/js/bootstrap.js",
+    "popper.js": "https://ga.jspm.io/npm:popper.js@1.16.1/dist/umd/popper.js",
+    "stimulus-autocomplete": "https://ga.jspm.io/npm:stimulus-autocomplete@3.0.2/src/autocomplete.js",
+    "controllers/application": "/assets/controllers/application-be831a1b6a870183a0658d3e9c13c6da218a1234275567dff4eefef7f7775b81.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
+    "custom/clipboards": "/assets/custom/clipboards-48e2c73c8ef9808e78c861d052caddbed05a0f81ac9f4f8aaaa8090bcfa76c6b.js",
+    "custom/editors": "/assets/custom/editors-2e61a0aab32b84eb5eeae0d0067bd2b49ed1983d97e2eeec51363b698541e8b8.js",
+    "custom/home": "/assets/custom/home-0b2de9e6deaba03f8cae782e1c1437dc0b2bb6a39cad38d5f690565f8203a915.js",
+    "custom/loading_jquery": "/assets/custom/loading_jquery-d236c90c9cc902cd6a766deccda5187a1d0fdd60385d6e7f9ead103d82252a60.js",
+    "custom/papers": "/assets/custom/papers-ce601133df30d3d1e0b730c63030931b8113c83e98cc9f751a13a0d2655d86a8.js",
+    "custom/sortable": "/assets/custom/sortable-1a1bd1a9b51409ff79f27d466bf8d3cfb3bd7403bb2b29b67eb17b861dc61718.js",
+    "custom/transitions": "/assets/custom/transitions-1af839d3603dbc483aef21c4da58ceaa823018620db771eb05c7be268c125261.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-df5a46b91e72d278d5a7a1cd9443f0dc2cca3910d86834bc36bd5184c8281bc9.js">
+<link rel="modulepreload" href="/assets/turbo.min-b86d83036ff04169e5bf3ebbc82e0ad528456259e47091b448f41a3cadabdb40.js">
+<link rel="modulepreload" href="/assets/stimulus.min-dd364f16ec9504dfb72672295637a1c8838773b01c0b441bd41008124c407894.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+<link rel="modulepreload" href="/assets/chartkick-8eb76e6cbdb540d495739fce84049fd038e59e7fd55c9e08e47b0b5a74b62db4.js">
+<link rel="modulepreload" href="/assets/Chart.bundle-f9da773cb982870fc03e616b7bcbfcc56462d3b0188cd9e441f8d8398c7e9482.js">
+<link rel="modulepreload" href="https://ga.jspm.io/npm:jquery@3.6.0/dist/jquery.js">
+<link rel="modulepreload" href="https://ga.jspm.io/npm:jquery-ujs@1.2.3/src/rails.js">
+<link rel="modulepreload" href="https://ga.jspm.io/npm:bootstrap@4.3.1/dist/js/bootstrap.js">
+<link rel="modulepreload" href="https://ga.jspm.io/npm:popper.js@1.16.1/dist/umd/popper.js">
+<link rel="modulepreload" href="https://ga.jspm.io/npm:stimulus-autocomplete@3.0.2/src/autocomplete.js">
+<link rel="modulepreload" href="/assets/controllers/application-be831a1b6a870183a0658d3e9c13c6da218a1234275567dff4eefef7f7775b81.js">
+<link rel="modulepreload" href="/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js">
+<link rel="modulepreload" href="/assets/custom/clipboards-48e2c73c8ef9808e78c861d052caddbed05a0f81ac9f4f8aaaa8090bcfa76c6b.js">
+<link rel="modulepreload" href="/assets/custom/editors-2e61a0aab32b84eb5eeae0d0067bd2b49ed1983d97e2eeec51363b698541e8b8.js">
+<link rel="modulepreload" href="/assets/custom/home-0b2de9e6deaba03f8cae782e1c1437dc0b2bb6a39cad38d5f690565f8203a915.js">
+<link rel="modulepreload" href="/assets/custom/loading_jquery-d236c90c9cc902cd6a766deccda5187a1d0fdd60385d6e7f9ead103d82252a60.js">
+<link rel="modulepreload" href="/assets/custom/papers-ce601133df30d3d1e0b730c63030931b8113c83e98cc9f751a13a0d2655d86a8.js">
+<link rel="modulepreload" href="/assets/custom/sortable-1a1bd1a9b51409ff79f27d466bf8d3cfb3bd7403bb2b29b67eb17b861dc61718.js">
+<link rel="modulepreload" href="/assets/custom/transitions-1af839d3603dbc483aef21c4da58ceaa823018620db771eb05c7be268c125261.js">
+<script type="module">import "application"</script>
+  <script type="module">import "custom/clipboards"</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FGfPo9SAsU1EFruDb8qZwpPcA8e8S520RGo1vxSVz2uuFy77CkQTt7WIIwXtBytFcHmdCY2oFNneOFOsgNeunQ" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="home" type="application/atom+xml" title="Papers" href="/papers.atom">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- clipboard.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+
+  <!-- Altmetric -->
+  <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+  <!-- Dimensions -->
+  <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+  <!-- facebook open graph tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://joss.theoj.org/papers/10.21105/joss.00205" />
+  <meta property="og:site_name" content="Journal of Open Source Software" />
+  <meta property="og:title" content="hdbscan: Hierarchical density based clustering" />
+  <meta property="og:description" content="McInnes et al, (2017), hdbscan: Hierarchical density based clustering, Journal of Open Source Software, 2(11), 205, doi:10.21105/joss.00205" />
+  <meta property="og:image" content="https://joss.theoj.org/logo_large.jpg" />
+
+  <!-- twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" value="hdbscan: Hierarchical density based clustering" />
+  <meta name="twitter:site" content="">
+  <meta name="twitter:description" value="McInnes et al, (2017), hdbscan: Hierarchical density based clustering, Journal of Open Source Software, 2(11), 205, doi:10.21105/joss.00205" />
+  <meta name="twitter:image" content="https://joss.theoj.org/logo_large.jpg" />
+  <meta name="twitter:url" value="https://joss.theoj.org/papers/10.21105/joss.00205" />
+  <meta name="twitter:label1" value="ISSN" />
+  <meta name="twitter:data1" value="2475-9066" />
+
+  <!-- Google Scholar Tags -->
+
+  <meta name="citation_title" content="hdbscan: Hierarchical density based clustering">
+  <meta name="citation_author" content="Leland McInnes">
+<meta name="citation_author" content="John Healy">
+<meta name="citation_author" content="Steve Astels">
+
+  <meta name="citation_publication_date" content="2017/03/21">
+  <meta name="citation_journal_title" content="Journal of Open Source Software">
+  <meta name="citation_doi" content="10.21105/joss.00205">
+  <meta name="citation_issn" content="2475-9066">
+  <meta name="citation_volume" content="2">
+  <meta name="citation_issue" content="11">
+  <meta name="citation_firstpage" content="205">
+  <meta name="citation_abstract_html_url" content="https://joss.theoj.org/papers/10.21105/joss.00205">
+  <meta name="citation_pdf_url" content="https://joss.theoj.org/papers/10.21105/joss.00205.pdf">
+</head>
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+
+  <a class="navbar-brand" href="/">
+    <img src="/assets/logo_medium-5f8ee81bd1f2a8d84c42254f1addc510aad3b4acd4242be8cf69c2f860b1704e.png" width="48" height="48" />
+    <img src="/assets/joss-3941a7301703d0bb0ca6eb564b9856ccf41d2452909d7404c83fc589e68e5ee7.svg" />
+  </a>
+
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+
+
+
+      <a class="nav-item nav-link" href="/about">About</a>
+      <a class="nav-item nav-link" href="/papers/published">Papers</a>
+      <a target="_blank" class="nav-item nav-link" href="https://joss.readthedocs.io/en/latest/index.html">Docs</a>
+      <a class="nav-item nav-link" href="http://blog.joss.theoj.org/">Blog</a>
+      <a class="nav-item nav-link" href="/papers/new">Submit</a>
+      <form class="button_to" method="post" action="/auth/orcid"><button class="nav-item nav-link btn orcid" data-turbo="false" type="submit">Log in with ORCID</button><input type="hidden" name="authenticity_token" value="z4uKvya-hkHgDuQFPwPU04Qt67L-_lg4R8PRHm_Upr6hLBZfvA-GCs-Azb3M9MIoeuLnNiyLvLAHuT8br3yePw" autocomplete="off" /></form>
+      <a target="_blank" class="nav-item nav-link" href="https://github.com/openjournals/joss"><img src="/assets/github-602a2a727b721fb4f2162df06888f580f65cdc14cdc2dfd7c82f3cbb44e07f41.svg" /></a>
+    </div>
+
+    <div class="rss-dropdown dropdown">
+      <a class="dropdown-toggle" size="48" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><img src="/assets/rss-sm-9288eaac3970144f8632d608dce86b4c008ead8e14e74dfd6d9fbbb2cd16877d.svg" /></a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+        
+        <a class="dropdown-item" href="/papers/active.atom">Active Papers</a>
+        <a class="dropdown-item" href="/papers/published.atom">Published Papers</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+  </header>
+
+  <div class="container">
+    
+
+
+    
+  </div>
+
+    <div class="container paper-show">
+  
+
+
+  <div class="paper-title">
+    <span class="__dimensions_badge_embed__" data-doi="10.21105/joss.00205" data-hide-zero-citations="true"></span>
+    <div class="paper-meta">
+      <h1>hdbscan: Hierarchical density based clustering</h1>
+      <span class="badge-lang"><a href="/papers/in/Python">Python</a></span>
+      <span class="badge-lang"><a href="/papers/in/Jupyter%20Notebook">Jupyter Notebook</a></span>
+      <span class="small">Submitted 26 February 2017</span>
+      •
+      <span class="small">Published 21 March 2017</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div id="joss-paper-pdf-container" class="col-md-9">
+      <object id="joss-paper" data="https://www.theoj.org/joss-papers/joss.00205/10.21105.joss.00205.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&view=FitH" type="application/pdf" style="width:100%; height:100%;">
+        <embed src="https://www.theoj.org/joss-papers/joss.00205/10.21105.joss.00205.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0" type="application/pdf"  style="width:100%; height:100%;" />
+      </object>
+    </div>
+    <div class="col-md-3 paper-sidebar">
+  <div class="btn-group-vertical" role="group" aria-label="...">
+
+      <a class="btn paper-btn" href="https://github.com/scikit-learn-contrib/hdbscan">
+        <img src="/assets/gh-icon-0770aa38f90d61397e1eef2cc5796caac609a4986481504fd863b14727f6db85.svg" />
+        Software repository
+</a>
+      <a class="btn paper-btn" href="https://github.com/openjournals/joss-reviews/issues/205">
+        <img src="/assets/icon_docs-06db54444289117db462aed3899d5ac70c0de20b80ffee740df9d4c0500398b8.svg" />
+        Paper review
+</a>
+      <a class="btn paper-btn" href="https://joss.theoj.org/papers/10.21105/joss.00205.pdf">
+        <img src="/assets/dl-icon-0171a5e2a9533e28a07f7f640c7b4542ea8ef7cff0ed14fc6b6a3b0c4b993217.svg" />
+        Download paper
+</a>
+      <a class="btn paper-btn" href="https://doi.org/10.5281/zenodo.401403">
+        <img src="/assets/hist-icon-a85e687858da8b643689f5a325d3e90655f5cad46da5d849862e90414c7baa54.svg" />
+        Software archive
+</a>  </div>
+
+    <div class="label">Review</div>
+    <p>Editor: <a title="GitHub profile for @danielskatz" target="_blank" href="https://github.com/danielskatz">@danielskatz</a> (<a href="/papers/edited_by/@danielskatz">all papers</a>)<br>Reviewers: <a title="GitHub profile for @zhaozhang" target="_blank" href="https://github.com/zhaozhang">@zhaozhang</a> (<a title="All papers reviewed by @zhaozhang" href="/papers/reviewed_by/@zhaozhang">all reviews</a>)</p>
+
+  <div class="label">Authors</div>
+  <p><a href="/papers/by/Leland McInnes">Leland McInnes</a> (<a target="_blank" href="http://orcid.org/0000-0003-2143-6834">0000-0003-2143-6834</a>), <a href="/papers/by/John Healy">John Healy</a>, <a href="/papers/by/Steve Astels">Steve Astels</a></p>
+
+  <div class="label">Citation</div>
+  <p id="citationstring" style="padding-bottom: 0px;margin: 0px;">McInnes et al, (2017), hdbscan: Hierarchical density based clustering, Journal of Open Source Software, 2(11), 205, doi:10.21105/joss.00205</p>
+
+  <div id="bibtex" style="position:absolute;left:-10000px;height:0px;padding:0px;">@article{McInnes2017,
+  doi = {10.21105/joss.00205},
+  url = {https://doi.org/10.21105/joss.00205},
+  year = {2017},
+  publisher = {The Open Journal},
+  volume = {2},
+  number = {11},
+  pages = {205},
+  author = {McInnes, Leland and Healy, John and Astels, Steve},
+  title = {hdbscan: Hierarchical density based clustering},
+  journal = {Journal of Open Source Software}
+}
+</div>
+  <div style="margin-bottom: 10px;"><a class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#citationstring" href="#">Copy citation string</a> &middot; <a class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#bibtex" href="#">Copy BibTeX</a>&nbsp;&nbsp;<svg data-component="Octicon" height="16" class="octicon octicon-paste" aria-label="Copy" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path d="M3.626 3.533a.249.249 0 0 0-.126.217v9.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-9.5a.249.249 0 0 0-.126-.217.75.75 0 0 1 .752-1.298c.541.313.874.89.874 1.515v9.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-9.5c0-.625.333-1.202.874-1.515a.75.75 0 0 1 .752 1.298ZM5.75 1h4.5a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 4.75v-3A.75.75 0 0 1 5.75 1Zm.75 3h3V2.5h-3Z"></path></svg></div>
+
+  <div class="label">Tags</div>
+  <p>
+    <span class="badge-lang"><a href="/papers/tagged/clustering">clustering</a></span>
+    <span class="badge-lang"><a href="/papers/tagged/unsupervised%20learning">unsupervised learning</a></span>
+    <span class="badge-lang"><a href="/papers/tagged/machine%20learning">machine learning</a></span>
+  </p>
+  <div class="label">Altmetrics</div>
+  <div style='padding-bottom: 10px;' data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-hide-no-mentions='false' data-doi="10.21105/joss.00205"></div>
+
+  <div class="label">Markdown badge</div>
+  <p><img src="https://joss.theoj.org/papers/10.21105/joss.00205/status.svg" /> &nbsp; <a href="#" class="clipboard-btn" data-clipboard-text="[![DOI](https://joss.theoj.org/papers/10.21105/joss.00205/status.svg)](https://doi.org/10.21105/joss.00205)"><svg data-component="Octicon" height="16" class="octicon octicon-paste" aria-label="Copy" viewBox="0 0 16 16" version="1.1" width="16" role="img"><path d="M3.626 3.533a.249.249 0 0 0-.126.217v9.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-9.5a.249.249 0 0 0-.126-.217.75.75 0 0 1 .752-1.298c.541.313.874.89.874 1.515v9.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-9.5c0-.625.333-1.202.874-1.515a.75.75 0 0 1 .752 1.298ZM5.75 1h4.5a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 4.75v-3A.75.75 0 0 1 5.75 1Zm.75 3h3V2.5h-3Z"></path></svg></a></p>
+
+  <div class="label">License</div>
+  <p>Authors of JOSS papers retain copyright.</p>
+  <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+</div>
+
+  </div>
+</div>
+
+
+  <div class="container-fluid">
+    <div class="row footer">
+  <div class="col-sm-6">
+    <a href="https://opensource.org"><img height="65px" src="/assets/osi-fba45a3fe3a1a7a2aea190b377d03d9ee2471c56d8a38400e50550b239c27b17.png" /></a>
+    <p>Journal of Open Source Software is an <a href="https://opensource.org/affiliates/list">affiliate</a> of the <a href="https://opensource.org">Open Source Initiative</a>.</p>
+  </div>
+
+  <div class="col-sm-6">
+    <a href="https://numfocus.org"><img height="60px" src="/assets/numfocus-7fc6cca1c1f7ce876e711d8b5e847f86dc12cfca0715cbd2ad23e1ef911e14cb.png" /></a>
+    <p>Journal of Open Source Software is part of <a href="http://www.theoj.org/">Open Journals</a>, which is a <a href="https://www.numfocus.org/open-source-projects/">NumFOCUS-sponsored project</a>.</p>
+  </div>
+</div>
+
+<div class="row cc">
+  <img height="48px" src="/assets/cc-logo-6bd73c91b31e18e58c9d77aae34fac59234b70adf38e1d7113532cfdec98ab00.svg" />
+  <p>
+    <a href="/toc">Table of Contents</a>
+    <br>Public user content licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless otherwise specified.
+    <br>ISSN 2475-9066
+  </p>
+</div>
+
+  </div>
+</body>
+</html>

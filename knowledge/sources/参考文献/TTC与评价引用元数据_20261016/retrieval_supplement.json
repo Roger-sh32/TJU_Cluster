@@ -1,0 +1,57 @@
+{
+  "client_date": "2026-10-16",
+  "tls": "Verified certifi CA; hostname and certificate checking enabled",
+  "records": [
+    {
+      "file": "R07_pubmed.xml",
+      "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11189125&retmode=xml",
+      "host_utc": "2026-10-16T00:51:38.475011+00:00",
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11189125&retmode=xml",
+      "status": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "saved": true,
+      "bytes": 4859,
+      "sha256": "9fc30205341df892a353c45dbf3f27e7ae0729fdd0c28ceca5176efd5cc7b6f0"
+    },
+    {
+      "file": "R08_springer.html",
+      "requested_url": "https://link.springer.com/article/10.1007/BF01908075",
+      "host_utc": "2026-10-16T00:51:39.610360+00:00",
+      "final_url": "https://link.springer.com/article/10.1007/BF01908075?error=cookies_not_supported&code=6298401f-d36b-4853-9996-7ffa76c3d60c",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 289043,
+      "sha256": "a90bfd8aeeeb1f0776441b0de1b5b85bac543531b37993f318dcdebb6228d869"
+    },
+    {
+      "file": "R09_unranked_sets.html",
+      "requested_url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-sets-1.html",
+      "host_utc": "2026-10-16T00:51:44.422721+00:00",
+      "final_url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-sets-1.html",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "saved": true,
+      "bytes": 16554,
+      "sha256": "87f89e227470202e8d1b71f9618c442c574cb8169800b115129c952b980b3a2e"
+    },
+    {
+      "file": "R11_wiley.html",
+      "requested_url": "https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2007.00593.x",
+      "host_utc": "2026-10-16T00:51:45.266869+00:00",
+      "saved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "R12_fhwa_chapter2.html",
+      "requested_url": "https://www.fhwa.dot.gov/publications/research/safety/08051/02.cfm",
+      "host_utc": "2026-10-16T00:51:45.955525+00:00",
+      "final_url": "https://www.fhwa.dot.gov/publications/research/safety/08051/02.cfm",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "saved": true,
+      "bytes": 52589,
+      "sha256": "968c359b15c8088b26b25b21a9fd1b98f760eb5b52249c09bedcccfffd7102a1"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "created_at_utc": "2026-09-27T08:02:13.441475+00:00",
+  "scope": "pre-fill scene aggregates and caught query exceptions only",
+  "scene_count": 8,
+  "column_count": 129,
+  "scene_names": [
+    "scene-0001",
+    "scene-0011",
+    "scene-0042",
+    "scene-0062",
+    "scene-0073",
+    "scene-0315",
+    "scene-0399",
+    "scene-0536"
+  ],
+  "nonfinite_cell_count": 12,
+  "nonfinite_by_column": {
+    "merge_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 6,
+      "negative_inf": 0
+    },
+    "vru_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 6,
+      "negative_inf": 0
+    }
+  },
+  "nonfinite_cells": [
+    {
+      "scene_name": "scene-0001",
+      "scene_token": "73030fb67d3c46cfb5e590168088ae39",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0001",
+      "scene_token": "73030fb67d3c46cfb5e590168088ae39",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0011",
+      "scene_token": "c075fbdd97124beaba95bc5c25149f30",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0042",
+      "scene_token": "c6c092a66329470f836714f46b92d59b",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0062",
+      "scene_token": "762e6aac0d6f4c1b9b0286ab4b2da654",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0062",
+      "scene_token": "762e6aac0d6f4c1b9b0286ab4b2da654",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0073",
+      "scene_token": "5557f4edc1464442812293e2ea90a586",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0315",
+      "scene_token": "dbe2eceb3e4649289366f674c2ba4274",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0315",
+      "scene_token": "dbe2eceb3e4649289366f674c2ba4274",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0399",
+      "scene_token": "36349e9caeff483e9d8d25e9743b9f5b",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0536",
+      "scene_token": "6b80170cd8404e6298d353bf1fa8dc0c",
+      "column": "merge_observed_min_distance",
+      "kind": "positive_inf"
+    },
+    {
+      "scene_name": "scene-0536",
+      "scene_token": "6b80170cd8404e6298d353bf1fa8dc0c",
+      "column": "vru_observed_min_distance",
+      "kind": "positive_inf"
+    }
+  ],
+  "query_exception_count": 0,
+  "query_exception_counts_by_stage": {},
+  "query_errors": [],
+  "observed_checks_clean": false,
+  "semantic_validity_verified": false,
+  "legacy_fill_policy": {
+    "nan": 0.0,
+    "positive_inf": 30.0,
+    "negative_inf": 30.0
+  },
+  "limitations": [
+    "No guarantee about intermediate values discarded before scene aggregation.",
+    "Empty observations and explicit finite defaults are not calculation errors here.",
+    "Counts are exceptions, not affected frames or rates; one frame may raise repeatedly.",
+    "No semantic, risk or expert acceptance; zeros still require contextual interpretation."
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+    "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+    "sha256": "eba3b1ccbbab9017c7edfd8299e863f357076e94720f1b6c026304eba186fdc0"
+  },
+  "audit_code": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\extraction_audit.py",
+    "sha256": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+  }
+}

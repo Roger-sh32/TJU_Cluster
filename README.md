@@ -1,101 +1,84 @@
 # TJU Cluster
 
-这是一个面向同济 MEM 论文项目的 AI-native 研究与工程容器。
+同济 MEM 自动驾驶场景聚类与测试优先级研究项目。基于 `nuScenes v1.0-trainval` 提取场景级特征，探索 UMAP/HDBSCAN 聚类及高复核价值场景排序；KMeans 为历史基线方向。
 
-项目目标是基于 `nuScenes v1.0-trainval` 构建自动驾驶场景级特征，使用 UMAP/HDBSCAN 等聚类方法识别高价值、复杂或潜在安全关键场景，从而为自动驾驶路测提效和测试场景优先级排序提供依据。
+AI 协作以 [AGENTS.md](AGENTS.md) 为主入口。本页只说明当前状态和导航，不作为实验授权或最终有效性结论。
 
-## 当前重点
+## 当前状态
 
-- 主线方法：场景特征工程、UMAP/HDBSCAN 聚类、corner case 评分、场景回看。
-- 基线方法：KMeans 历史实验，用于后续对比。
-- 论文产出：开题材料、中期报告材料、技术路线和后续论文正文素材。
+截至 2026-10-16。“准备完成”和“开发重放”不等于论文实验完成。
 
-## 目录结构
+2026-10-24补充进展：[固定开发29条行人目标证据](outputs/人工复核/行人目标证据补充_20261024.md)已单独保存552个行人实例/8909条标注，22列按冻结上下文复算对照通过。0151的4个候选帧实际涉及5名行人，不能沿用自行车护栏反馈。仅补证，不改特征或评分、不做新拟合/评价；旧冻结轨迹文件仍不含完整行人轨迹，新证据另存。[过程与原摘要](logs/human_evidence_20261024.md)。下表主流程状态仍沿用此前审计，不因本次补证升级。
+
+| 环节 | 当前事实 | 限制与依据 |
+| --- | --- | --- |
+| 数据划分 | 自定义开发700条、评价150条，56/12个日志隔离 | 非官方train/val；旧850条曾参与无监督探索。[协议](knowledge/wiki/独立评价与专家盲评协议.md) |
+| 特征 | v4有700条完整开发表；v6.1/v7只在固定开发29条重放 | 最新候选尚未接入全量提取，语义及正式冻结仍待定。[恢复顺序](outputs/实验准备/20261016/执行链路审计与恢复顺序.md) |
+| 模型与排序 | 历史探索结果保留 | 没有最新候选的正式模型/排名，不能套旧簇号和TopK |
+| 评价媒体 | 已授权150评价/8开发范围的缺失媒体恢复完成 | 六路关键帧及前视关联非关键帧已解码，其他相机关联非关键帧仅检查存在/非空；不是全库或盲评包验收。[恢复核验](logs/development_media_review_20261012.md) |
+| 正式评价 | 统计函数、合成演示和专家说明已准备 | 专家/校准、规则/排序冻结、评价专用提取与预测未完成，无真实成绩 |
+| 环境 | 主环境导入和两环境限定小矩阵探针通过 | 不代表完整UMAP或700规模拟合已验证；不自动重装/混用环境。[链路审计](logs/execution_chain_audit_20261016.md) |
+
+**当前不要使用旧 `grid_search.py` 进行候选参数实验。** 它缺少提取来源门控，同表preflight与主入口不一致；修复仍暂挂。[缺口及绑定影响](logs/grid_binding_audit_20261016.md)已记录，不能刷新旧摘要来适配改动。
+
+KMeans也存在[候选来源门控与公平对照缺口](outputs/实验准备/20261016/KMeans公平对照链路审计.md)：同一候选预检查被主入口拒绝、被KMeans放行，修复未实施；共用52列不等于表示/搜索/排序量已可比。当前不启动KMeans实验。
+
+特征语义、正式实验和作者决定集中在[暂挂清单](logs/deferred_decisions_20261015.md)。已有反馈不重复按整场索取，不把开发案例当独立评价。
+
+## 按任务查阅
+
+行人补证已继续形成[逐目标原程序原因对照](outputs/人工复核/行人候选逐目标原因对照_20261024.md)：35目标帧中13满足原观测确认、8仅缺车道进入依据、14两条件均未满足。这些不是准确率/误报标签，不自动删除候选，0011/0067原观测正例保持。
+
+| 任务 | 入口 |
+| --- | --- |
+| 特征、聚类、评分与回看 | [HDBSCAN说明](HDBSCAN/README.md)，先看顶部重跑警示 |
+| KMeans历史基线 | [KMeans说明](Kmeans/README.md)，当前不启动新实验 |
+| 研究对象与数据框架写作 | [第三章事实稿](outputs/论文初稿/第三章_研究对象数据证据与总体框架事实稿_20261017.md)，数据/离线观测边界，不是正式实验结论 |
+| 方法与实现写作 | [方法稿引文补注件](outputs/论文初稿/方法与开发验证事实稿_引文补注_20261016.md)，原稿与索引不覆盖 |
+| 特征与聚类章节写作 | [第四章事实稿](outputs/论文初稿/第四章_场景级特征构建与无监督聚类方法事实稿_20261024.md)，52列有序释义/12主张/17来源；独立窄审发现的无图回退表述已在首次登记前纠正，修后为本代理定向检查，非最终独立清洁验收，见[过程](logs/feature_clustering_chapter_writing_20261024.md) |
+| 综合评分章节写作 | [第五章事实稿](outputs/论文初稿/第五章_关键场景综合评分方法事实稿_20261024.md)，12事实/15直接来源；原登记待审状态保留，后续同一版本窄审未发现P1/P2，非作者/方法/参数批准，见[后补记录](logs/scoring_chapter_writing_20261024.md) |
+| 实验与讨论写作 | [第六章开发验证与误差分析事实稿](outputs/论文初稿/第六章_开发验证与误差分析事实稿_20261016.md)，正式成绩留缺口 |
+| 专家材料准备 | [填写说明待校准稿](outputs/实验准备/20261016/专家盲评填写说明_待校准.md)，不是已发布盲评包 |
+| 标准、定义与引用边界 | [知识索引](knowledge/wiki/README.md)；R10页码见[补核修订](logs/r10_pagination_verification_20261016.md) |
+| HDBSCAN软件量/公式解释 | [0.8.39限定说明](knowledge/wiki/HDBSCAN公式与软件输出边界_20261024.md)，源包/本地wrapper与SYN核验，不是理论全文或真实拟合验收 |
+| 开发反馈与执行过程 | [HDBSCAN日志](HDBSCAN/logs.md)、[项目日志说明](logs/README.md) |
+
+这些草稿/准备材料仍待作者、学校或专家确认，不因来源或测试核对通过而升级为正式成绩。
+
+## 目录约定
 
 | 路径 | 内容 |
 | --- | --- |
-| `AGENTS.md` | AI 协作主入口，说明项目规则、目录约定和注意事项 |
-| `HDBSCAN/` | 当前主线实验：特征提取、聚类、评分和场景回看 |
-| `Kmeans/` | KMeans baseline / legacy track |
-| `knowledge/sources/` | 原始资料：论文、标准、课程材料、用户提供文件 |
-| `knowledge/wiki/` | 可复用知识：标准映射、特征体系、术语和结论 |
-| `logs/` | 执行记录：错误、实验、环境、清理和反馈 |
-| `outputs/` | 面向提交、汇报或分享的阶段性产出 |
-| `nuScenes/` | 本地数据集目录，已被 Git 忽略 |
-| `exports/` | 场景回看 GIF/图片等临时导出，已被 Git 忽略 |
+| `HDBSCAN/` | 主线脚本、表格、图片和版本说明 |
+| `Kmeans/` | 基线/历史实验 |
+| `knowledge/sources/` | 原始论文、标准和用户资料，不在原件中改写摘要 |
+| `knowledge/wiki/` | 可复用的定义、映射和经验 |
+| `logs/` | 执行、错误、实验、反馈和来源记录 |
+| `outputs/` | 论文、汇报和分享产出，草稿保留状态说明 |
+| `nuScenes/` | 原始数据，只读，不重组或修改 |
+| `exports/` | 临时回看素材，不等于最终论文产出 |
 
-## 环境
+## 只读入口检查
 
-推荐使用项目提供的 Conda 环境配置：
-
-```powershell
-conda env create -f environment.yml
-conda activate autodrive-cluster
-```
-
-如果环境已经存在，可用：
+现有 Windows 环境可直接指定解释器，不需要先在 VS Code 中激活：
 
 ```powershell
-conda env update -f environment.yml --prune
+& D:/Python/Conda/envs/autodrive-cluster/python.exe -c "import sys; print(sys.executable)"
+& D:/Python/Conda/envs/autodrive-cluster/python.exe HDBSCAN/scripts/review_nuscenes_scenes.py --help
 ```
 
-本地快速激活脚本：
+这些命令只确认解释器入口和回看参数，不提取场景、不拟合或导出媒体。此前记录过OpenCV无GUI支持的问题；本轮没有重新检查GUI，已有GIF方案可供查阅，具体回看/导出须按授权范围执行。
 
-```powershell
-.\activate_project.ps1
-```
+`environment.yml` 是配置资料，不应直接用它重装现有冻结环境或执行 `--prune`。跨设备初始化见[2026-06-27历史环境说明](docs/development_environment.md)，当前执行状态以本页引用的后续审计为准。
 
-注意：当前环境使用 `opencv-python-headless`，因此 OpenCV GUI 窗口可能不可用；场景回看脚本会优先使用 GIF fallback。
+## 来源与历史记录
 
-Windows 与 macOS 协同开发、nuScenes 数据放置、Git 同步边界和当前环境状态见：
+不要靠默认CSV文件名猜测当前结果。v4完整开发表是 `HDBSCAN/tables/scene_features_development_candidate700_20261001.csv`；后续v6.1/v7表是限定候选，不是新的全量正式数据。旧700拟合、旧33条回归和早期850条结果各保留来源，不能重命名或改manifest冒充最新版本。
 
-- `docs/development_environment.md`
+新结果须记录脚本、输入、环境、日期和输出路径；已绑定来源/输出不原地重写，不重复启动已完成的提取或导出。需要新规则或版本迁移时先按[暂挂清单](logs/deferred_decisions_20261015.md)处理。
 
-## HDBSCAN 主流程
+逐次历史见 [CHANGLOG.md](CHANGLOG.md) 与各执行日志。整理前的完整入口保留在[历史快照](logs/entry_docs_before_20261016/root_README.md)，其中旧状态和命令仅供追溯，不作为当前指南。
 
-从 `HDBSCAN/` 目录执行：
+## Git 与数据边界
 
-```powershell
-Set-Location F:\Scene_cluster\HDBSCAN
-python .\scripts\scene_feature_hdbscan.py
-python .\scripts\cluster_umap_hdbscan.py
-python .\scripts\corner_case_detection.py
-```
-
-主要输出：
-
-- `HDBSCAN/tables/scene_features.csv`
-- `HDBSCAN/tables/scene_features_umap_hdbscan.csv`
-- `HDBSCAN/tables/scene_features_with_corner_score.csv`
-- `HDBSCAN/pictures/Figure_1.png`
-
-场景回看示例：
-
-```powershell
-python .\scripts\review_nuscenes_scenes.py --scene-name scene-0061 --play
-```
-
-## 当前注意事项
-
-- 部分历史 CSV/XLSX 结果可能不是由最新脚本生成，使用前需核对 `HDBSCAN/README.md` 和 `HDBSCAN/logs.md`。
-- 近期已修正 `intersection_flag` 的提取逻辑，但当前历史表格尚未重跑。
-- `nuScenes/` 和 `Kmeans/聚类/` 是本地数据目录，不进入 Git。
-- 原始论文资料保留在 `knowledge/sources/`；整理后的可复用结论应写入 `knowledge/wiki/`。
-
-## Git 约定
-
-不要直接提交大数据集或临时导出文件。当前 `.gitignore` 已排除：
-
-- `nuScenes/`
-- `exports/`
-- `Kmeans/聚类/`
-- Python 缓存和 Word 临时锁文件
-
-常用提交流程：
-
-```powershell
-git status
-git add <具体文件或目录>
-git commit -m "说明这次修改"
-git push
-```
+`.gitignore` 已排除 `nuScenes/`、`exports/`、`Kmeans/聚类/`、Python缓存和本地环境等。不要提交数据集、模型大文件或临时媒体；提交前逐项检查具体文件。本轮整理不代表已提交或推送。

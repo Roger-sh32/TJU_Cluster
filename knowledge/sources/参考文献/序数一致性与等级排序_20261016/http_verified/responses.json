@@ -1,0 +1,55 @@
+{
+  "scope": "Actual official/author-institution HTTP responses; not a systematic review",
+  "rows": [
+    {
+      "name": "alpha.pdf",
+      "url": "https://www.asc.upenn.edu/sites/default/files/2021-03/Computing%20Krippendorff%27s%20Alpha-Reliability.pdf",
+      "requested_at_utc": "2026-10-16T13:50:35.895087+00:00",
+      "status": 200,
+      "final_url": "https://www.asc.upenn.edu/sites/default/files/2021-03/Computing%20Krippendorff%27s%20Alpha-Reliability.pdf",
+      "content_type": "application/pdf",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\序数一致性与等级排序_20261016\\http_verified\\alpha.pdf",
+      "bytes": 443314,
+      "sha256": "65efee3df57d5aafae69939ccfe8b4a4419ae4ef49772847bd648135385272c8"
+    },
+    {
+      "name": "alpha_portal.html",
+      "url": "https://www.asc.upenn.edu/krippendorffs-alpha-reliability",
+      "requested_at_utc": "2026-10-16T13:50:39.418314+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "kappa_sklearn_1_6.html",
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.cohen_kappa_score.html",
+      "requested_at_utc": "2026-10-16T13:50:40.064634+00:00",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.cohen_kappa_score.html",
+      "content_type": "text/html; charset=utf-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\序数一致性与等级排序_20261016\\http_verified\\kappa_sklearn_1_6.html",
+      "bytes": 113693,
+      "sha256": "67cb43be6f415ce5f3115c4bf3483e1c33b33b127bc78328ae84d2d05b01d263"
+    },
+    {
+      "name": "ndcg_sklearn_1_6.html",
+      "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.ndcg_score.html",
+      "requested_at_utc": "2026-10-16T13:50:42.118634+00:00",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.ndcg_score.html",
+      "content_type": "text/html; charset=utf-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\序数一致性与等级排序_20261016\\http_verified\\ndcg_sklearn_1_6.html",
+      "bytes": 116837,
+      "sha256": "8176c2368d4f5c456fbace864a49f41366abccca8dbf564bec5582e61927aaf2"
+    },
+    {
+      "name": "ir_ranked_evaluation.html",
+      "url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html",
+      "requested_at_utc": "2026-10-16T13:50:44.255502+00:00",
+      "status": 200,
+      "final_url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\序数一致性与等级排序_20261016\\http_verified\\ir_ranked_evaluation.html",
+      "bytes": 26992,
+      "sha256": "fda4071b4368a439738a16cef99dc1598f037e7e4eca350f463618f2271e93b5"
+    }
+  ]
+}

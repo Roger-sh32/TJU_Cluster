@@ -1,0 +1,14 @@
+{
+  "source_url": "https://www.jstor.org/stable/i348796",
+  "tool": "web.run open",
+  "request": {
+    "lineno": 25,
+    "response_length": "short"
+  },
+  "captured_at_utc": "2026-10-16T12:46:56.685731+00:00",
+  "file": "jstor_issue_webtool.txt",
+  "bytes": 9356,
+  "sha256": "24d6225e0c1104db7867e526076b112dc4716533081d88b1e94162738731b48b",
+  "kind": "Unmodified UTF-8 tool-returned extracted text, NOT raw HTTP HTML",
+  "scope": "Issue TOC bibliographic evidence only; not article full text"
+}

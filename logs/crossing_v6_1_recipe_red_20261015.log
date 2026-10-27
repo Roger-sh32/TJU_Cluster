@@ -1,0 +1,54 @@
+======================================================================
+FAIL: test_check_requires_original_digest (logs.test_crossing_v6_1_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 38, in test_check_requires_original_digest
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_1_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_current_crossing_column_cannot_change (logs.test_crossing_v6_1_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 14, in test_current_crossing_column_cannot_change
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_1_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_identity_order_is_frozen (logs.test_crossing_v6_1_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 31, in test_identity_order_is_frozen
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_1_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_only_local_history_and_documented_dependencies_allowed (logs.test_crossing_v6_1_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 23, in test_only_local_history_and_documented_dependencies_allowed
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_1_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_unrelated_car_cannot_be_restored_by_truck (logs.test_crossing_v6_1_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 43, in test_unrelated_car_cannot_be_restored_by_truck
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_1_replay_20261015.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_1_replay_20261015'))
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)

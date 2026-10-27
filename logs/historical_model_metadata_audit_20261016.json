@@ -1,0 +1,46 @@
+{
+  "scope": "JSON metadata only, no inspect_model/load_model/pickle or estimator prediction",
+  "model_manifest": "HDBSCAN\\tables\\scene_features_development_20260927_umap_hdbscan.model\\manifest.json",
+  "manifest_sha256": "62f985f9daa554a5e2098b45b86baad6ae5cd1475d21f49b7ca7431791086c10",
+  "historical_input": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+  "historical_training_count": 700,
+  "runtime_differences": {
+    "numpy": {
+      "historical": "1.24.4",
+      "current": "1.26.4"
+    },
+    "scikit-learn": {
+      "historical": "1.3.2",
+      "current": "1.6.1"
+    }
+  },
+  "source_differences": {
+    "frozen_model.py": {
+      "historical": "833ef8af650a6a2c9fbcefbda21d21266aa62cadac0655c011f5c06697a6c563",
+      "current": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552"
+    },
+    "scene_feature_rules.py": {
+      "historical": "d36d2eb2229cc40ff27d2f50b398681bb964a4b9da6e6b587fd0afc0097313cc",
+      "current": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d"
+    },
+    "scene_feature_hdbscan.py": {
+      "historical": "ca5c66204ba91bf4b9b5364eae5358ffb88fd3390c6610b9c89e1eed7a6d8ddf",
+      "current": "2c0d6b2b46e573af3f559d7c6e0f750697d4868bc22ce4e6e1f04a6c60781859"
+    },
+    "extraction_audit.py": {
+      "historical": null,
+      "current": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+    }
+  },
+  "current_main_runtime": {
+    "python": "3.9.23",
+    "platform": "Windows",
+    "numpy": "1.26.4",
+    "pandas": "2.3.1",
+    "scikit-learn": "1.6.1",
+    "umap-learn": "0.5.5",
+    "hdbscan": "0.8.39",
+    "numba": "0.58.1",
+    "joblib": "1.5.1"
+  }
+}

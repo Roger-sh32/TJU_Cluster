@@ -1,0 +1,10 @@
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 10, "prediction_only": 2, "unknown_future": 12, "response_protected_prediction": 13, "contradicted_synchronized_turn": 1}}
+{
+  "stage": "candidate_feature_extraction",
+  "preflight_only": true,
+  "fit_scope": "development",
+  "scene_count": 29,
+  "split_sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+  "semantic_feature_count": null
+}
+PREPARED:29 development scenes; independent v5.1, v4/v5 unchanged

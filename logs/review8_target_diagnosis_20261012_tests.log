@@ -1,0 +1,10 @@
+test_complete_far_turn_is_rejected (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_exact_rows_rejects_drift_and_duplicate (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_near_route_is_not_proof_of_safety (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_short_future_and_response_are_separate_blockers (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+test_unknown_size_cannot_clear_actor (logs.test_review8_target_diagnosis_20261012.DiagnosticContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.015s
+
+OK

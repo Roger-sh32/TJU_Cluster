@@ -1,0 +1,97 @@
+TY  - JOUR
+ID  - R07
+AU  - Minderhoud, Michiel M.
+AU  - Bovy, Piet H.L.
+TI  - Extended time-to-collision measures for road traffic safety assessment
+JO  - Accident Analysis & Prevention
+PY  - 2001
+VL  - 33
+IS  - 1
+SP  - 89
+EP  - 97
+DO  - 10.1016/S0001-4575(00)00019-1
+UR  - https://doi.org/10.1016/S0001-4575(00)00019-1
+AN  - PMID:11189125
+Y2  - 2026/10/16
+N1  - Crossref metadata and PubMed abstract verified. Supports TTC-based surrogate indicator background, not this project's 3-second threshold, clipped/default 30 seconds or implemented extended TTC measures. Not claimed as the earliest introduction of TTC; full text not read in this audit.
+ER  -
+
+TY  - JOUR
+ID  - R08
+AU  - Hubert, Lawrence
+AU  - Arabie, Phipps
+TI  - Comparing partitions
+JO  - Journal of Classification
+PY  - 1985
+VL  - 2
+IS  - 1
+SP  - 193
+EP  - 218
+DO  - 10.1007/BF01908075
+UR  - https://link.springer.com/article/10.1007/BF01908075
+Y2  - 2026/10/16
+N1  - Crossref metadata and Springer abstract verified; issue 1 follows Crossref. Partition agreement background, not a safety-label accuracy measure. Full-text equations not audited here.
+ER  -
+
+TY  - BOOK
+ID  - R09
+AU  - Manning, Christopher D.
+AU  - Raghavan, Prabhakar
+AU  - Schütze, Hinrich
+TI  - Introduction to Information Retrieval
+PY  - 2008
+PB  - Cambridge University Press
+SN  - 9780521865715
+DO  - 10.1017/CBO9780511809071
+UR  - https://nlp.stanford.edu/IR-book/
+Y2  - 2026/10/16
+N1  - Book publication year 2008; online HTML updated 2009-04-07 is not a separate 2009 book edition. Chapter 8 sections on unranked and ranked retrieval read for precision, recall and Precision at k. Application to scene review and the priority-2 positive definition are this project's conventions, not prescribed by this book.
+ER  -
+
+TY  - JOUR
+ID  - R10
+AU  - Efron, B.
+TI  - Bootstrap Methods: Another Look at the Jackknife
+JO  - The Annals of Statistics
+PY  - 1979
+VL  - 7
+IS  - 1
+DO  - 10.1214/aos/1176344552
+UR  - https://doi.org/10.1214/aos/1176344552
+Y2  - 2026/10/16
+N1  - Core bibliographic fields verified with Crossref. Crossref provides no page field; pagination intentionally omitted pending primary-source verification. Publisher page extraction unsuccessful, no full-text reading claimed. General bootstrap attribution only, not validation of this project's paired whole-log fixed-ranking interval or its coverage.
+ER  -
+
+TY  - JOUR
+ID  - R11
+AU  - Field, C. A.
+AU  - Welsh, A. H.
+TI  - Bootstrapping Clustered Data
+JO  - Journal of the Royal Statistical Society Series B: Statistical Methodology
+PY  - 2007
+VL  - 69
+IS  - 3
+SP  - 369
+EP  - 390
+DO  - 10.1111/j.1467-9868.2007.00593.x
+UR  - https://doi.org/10.1111/j.1467-9868.2007.00593.x
+Y2  - 2026/10/16
+N1  - Crossref core metadata and publisher abstract accessed via web; direct host HTML request returned HTTP403 and was not saved as content. Online publication 2007-05-22, print 2007-06-01. Grouped-data resampling background only, not a proof that this project's nonlinear TopK percentile statistic has calibrated coverage with twelve logs. Full text not audited.
+ER  -
+
+TY  - RPRT
+ID  - R12
+AU  - Gettman, Douglas
+AU  - Pu, Lili
+AU  - Sayed, Tarek
+AU  - Shelby, Steve
+TI  - Surrogate Safety Assessment Model and Validation: Final Report
+PY  - 2008
+DA  - 2008/06
+M1  - FHWA-HRT-08-051
+PB  - Federal Highway Administration
+UR  - https://www.fhwa.dot.gov/publications/research/safety/08051/
+Y2  - 2026/10/16
+N1  - Official FHWA report index/technical documentation page and chapter 2 HTML verified. Report date June 2008, not inferred from later website updates or secondary references. Report number is not a DOI. SSAM trajectory-based TTC/PET and its default 1.5-second TTC threshold do not authorize this project's 3-second threshold or imply SSAM conformance. Full report not read.
+ER  -
+

@@ -1,0 +1,14 @@
+{
+  "phase": "completed_candidate_requires_review",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_protocol_20261014.json",
+    "sha256": "ae7db74041abe8758746d0819e5afe9fa8df48112d3864b13d1e76e412b9fd23",
+    "bytes": 7694
+  },
+  "report": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_comparison_20261014.json",
+    "sha256": "3b811a32cc26a11a647b9c6acede9759a5f2a569c59a0945b877c85161d4cbbb",
+    "bytes": 4409
+  },
+  "completed_at_utc": "2026-10-14T12:58:20.196531+00:00"
+}

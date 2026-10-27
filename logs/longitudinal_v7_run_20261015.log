@@ -1,0 +1,8 @@
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 10, "prediction_only": 2, "unknown_future": 12, "response_protected_prediction": 13, "contradicted_synchronized_turn": 1}}
+{"phase": "verified", "scenes": 29, "changed": ["scene-0067", "scene-0068", "scene-0073", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"unknown_future": 22, "response_protected_prediction": 15, "contradicted_turning_projection": 1}}
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 8, "prediction_only": 2, "response_protected_prediction": 15, "unknown_future": 12, "contradicted_synchronized_turn": 1}}
+VERIFIED original source/runtime/output seals and exact29 replay; no extraction/fit/evaluation.
+VERIFIED original seals, exact29 historical replay and formal fit refusal; no crossing/unknown changes.
+Mapping official annotation identities for fixed development29 only...
+Exact baseline passed; starting conservative preselection gate.
+{"phase": "completed", "scenes": 29, "changed": ["scene-0002", "scene-0056", "scene-0067", "scene-0093", "scene-0102", "scene-0552"], "cells": 75}

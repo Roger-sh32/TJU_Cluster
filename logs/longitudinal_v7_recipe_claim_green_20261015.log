@@ -1,0 +1,106 @@
+test_baseline_difference_is_not_silently_tolerated (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_exclusive_run_claim_does_not_overwrite_first_owner (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ERROR
+test_existing_evasion_cannot_change_first_obstacle (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_failed_baseline_prevents_gate_and_feature_publication (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ERROR
+test_mismatched_static_trace_stops_before_gate (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_new_evasion_dependency_is_not_published_with_stale_vru (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_unrelated_column_change_is_rejected (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+
+======================================================================
+ERROR: test_exclusive_run_claim_does_not_overwrite_first_owner (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 53, in test_exclusive_run_claim_does_not_overwrite_first_owner
+    m.claim_run({'protocol': {'sha256': 'original'}})
+  File "F:\Scene_cluster\logs\longitudinal_v7_replay_20261015.py", line 280, in claim_run
+    write_json(CLAIM, dict(protocol=status['protocol'],
+  File "F:\Scene_cluster\logs\diagnose_review8_20261012.py", line 74, in write_json
+    with path.open('x' if exclusive else 'w', encoding='utf-8') as stream:
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1180, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1038, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 13] Permission denied: 'F:\\Scene_cluster\\logs\\tmpb3irnoc7\\claim.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 607, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+PermissionError: [WinError 5] 拒绝访问。: 'F:\\Scene_cluster\\logs\\tmpb3irnoc7'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 57, in test_exclusive_run_claim_does_not_overwrite_first_owner
+    self.assertEqual(path.read_bytes(), before)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 839, in __exit__
+    self.cleanup()
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 843, in cleanup
+    self._rmtree(self.name)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 825, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 759, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 610, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 811, in onerror
+    _resetperms(path)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 285, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 276, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'F:\\Scene_cluster\\logs\\tmpb3irnoc7'
+
+======================================================================
+ERROR: test_failed_baseline_prevents_gate_and_feature_publication (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 70, in test_failed_baseline_prevents_gate_and_feature_publication
+    m.run('synthetic')
+  File "F:\Scene_cluster\logs\longitudinal_v7_replay_20261015.py", line 290, in run
+    claim = claim_run(status)
+  File "F:\Scene_cluster\logs\longitudinal_v7_replay_20261015.py", line 280, in claim_run
+    write_json(CLAIM, dict(protocol=status['protocol'],
+  File "F:\Scene_cluster\logs\diagnose_review8_20261012.py", line 74, in write_json
+    with path.open('x' if exclusive else 'w', encoding='utf-8') as stream:
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1180, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1038, in _opener
+    return self._accessor.open(self, flags, mode)
+PermissionError: [Errno 13] Permission denied: 'F:\\Scene_cluster\\logs\\tmpt7jfoeol\\claim.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 607, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+PermissionError: [WinError 5] 拒绝访问。: 'F:\\Scene_cluster\\logs\\tmpt7jfoeol'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 73, in test_failed_baseline_prevents_gate_and_feature_publication
+    self.assertEqual(json.loads((root/'status.json').read_text())['phase'],
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 839, in __exit__
+    self.cleanup()
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 843, in cleanup
+    self._rmtree(self.name)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 825, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 759, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 610, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 811, in onerror
+    _resetperms(path)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 285, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 276, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'F:\\Scene_cluster\\logs\\tmpt7jfoeol'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.652s
+
+FAILED (errors=2)

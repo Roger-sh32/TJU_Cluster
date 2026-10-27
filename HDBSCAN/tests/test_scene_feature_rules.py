@@ -184,6 +184,8 @@ class SceneFeatureRulesTest(unittest.TestCase):
                 forward_dist=25.0,
                 lateral_dist=2.0,
                 obj_forward_speed=-4.0,
+                obj_lateral_speed=0.0,
+                heading_delta=math.pi,
             )
         )
 

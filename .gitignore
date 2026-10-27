@@ -16,3 +16,6 @@ tmp/
 .DS_Store
 Thumbs.db
 ~$*
+
+# Estimator payloads stay local; tracked manifests retain their provenance.
+*.pkl

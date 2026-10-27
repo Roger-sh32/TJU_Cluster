@@ -1,0 +1,28 @@
+======================================================================
+FAIL: test_fast_between_frame_encounter_cannot_be_cleared (HDBSCAN.tests.test_crossing_candidate_v6.RouteRelevanceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6.py", line 167, in test_fast_between_frame_encounter_cannot_be_cleared
+    self.assertTrue(item['effective_conflict'])
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_tiny_rotation_does_not_erase_connecting_hull (HDBSCAN.tests.test_crossing_candidate_v6.RouteRelevanceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6.py", line 158, in test_tiny_rotation_does_not_erase_connecting_hull
+    self.assertTrue(envelope.buffer(1e-9).covers(midpoint))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_distractor_cannot_replace_reviewed_yield_target (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 63, in test_distractor_cannot_replace_reviewed_yield_target
+    self.assertIsNotNone(function, 'Same-target event protection is missing')
+AssertionError: unexpectedly None : Same-target event protection is missing
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.780s
+
+FAILED (failures=3)

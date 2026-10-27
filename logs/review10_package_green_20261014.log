@@ -1,0 +1,10 @@
+test_camera_path_cannot_escape_source_dataset (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_exact_fixed_ten_current_development_only (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_identity_mismatch_and_duplicate_or_extra_selection_refused (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_missing_front_keyframes_cannot_silently_fallback_or_replace (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_missing_sweeps_fallback_is_explicit_and_uses_only_real_keyframes (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.270s
+
+OK

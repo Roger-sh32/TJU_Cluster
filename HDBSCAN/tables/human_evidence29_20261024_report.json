@@ -1,0 +1,279 @@
+{
+  "stage": "development_human_evidence_only",
+  "created_at_host_utc": "2026-10-24T03:00:44.403882+00:00",
+  "task_date_as_supplied": "2026-10-24 Asia/Shanghai",
+  "command": [
+    "logs/collect_human_evidence_20261024.py",
+    "--run"
+  ],
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+      "bytes": 14970,
+      "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv",
+      "bytes": 33934,
+      "sha256": "19108e421555355e82cc4d6ad41defc5f67e075ac8d99bf7db5e253659057333"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_20261012.json",
+      "bytes": 25103,
+      "sha256": "ca28a0801b7269cd61c91f11e7c9e6a8a2b1a57e4c5077d4f5063c1aa0a57df1"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan_v5_2.py",
+      "bytes": 70036,
+      "sha256": "a34af552a0bdc396cec210aed1ebf63c5e20d75c0e084f987e51c1d3302e2974"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "bytes": 30874,
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "bytes": 2153,
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "bytes": 10137,
+      "sha256": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+      "bytes": 8398,
+      "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_baseline_20261015.json",
+      "bytes": 1177,
+      "sha256": "44aab6ab4b2065d4aa98b9d070324b0c70d071b7198dc372242249ccd3c4d925"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+      "bytes": 33264,
+      "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+      "bytes": 2287,
+      "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+      "bytes": 1131507,
+      "sha256": "a3082bb3d7be151e1a38bb611436bec36e01d15cc7317912565caedacbaa1667"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\纵向目标v7固定29条对照_20261015.md",
+      "bytes": 7868,
+      "sha256": "84d1b4ca79395179657918e4f7f21bb38f1354c820026c62be3582d0e03f9a19"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_protocol_20261015.json",
+      "sha256": "51b6be617bb455bfd44a2d8bcf9010b73ee1d16bc7aa9f60963dacc9186c3209",
+      "bytes": 6936
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_comparison_20261015.json",
+      "sha256": "9cc0ff917895087587155ea65611099043ba288a8ec7f64513d1945c92bcc42a",
+      "bytes": 2694
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+      "sha256": "081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147",
+      "bytes": 33847
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv.manifest.json",
+      "sha256": "903baff3aa9667e21f502d4ec2125dccaa9085d58a974b94f30669f9c38407f9",
+      "bytes": 2284
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_events_20261015.json",
+      "sha256": "cd17b6785a181f6f26bc642d8229e1fdf8ab12fe255b121f955782dc0caabe49",
+      "bytes": 75967
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff",
+      "bytes": 45134
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample.json",
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d",
+      "bytes": 7424233
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample_annotation.json",
+      "sha256": "1f4f3835cb86f4efe49ccad3ae6f5f6a2d068422696de564c5892b5b06bea2a9",
+      "bytes": 583417244
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b",
+      "bytes": 285132
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\evaluation_media_audit_20260926.py",
+      "sha256": "ae06907415d8b3a12eb65ee45c349f209defe99e47fc054c440f4db52f628310",
+      "bytes": 9106
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\longitudinal_candidate_v7.py",
+      "sha256": "33059b93410c70148d161ce7adf94c1d58f1e96167edff31ce0f9157c76c5a3e",
+      "bytes": 10953
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_longitudinal_candidate_v7.py",
+      "sha256": "53e25d6521066915f3def82aa3097c86a56c006389df2d7bddf51b60e3613703",
+      "bytes": 8270
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\longitudinal_v7_replay_20261015.py",
+      "sha256": "f3fe00f96a3c6a07c2d890712ffa4227146dff0d90c46d3dfc6701fea5fa0fac",
+      "bytes": 20751
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_longitudinal_v7_replay_20261015.py",
+      "sha256": "53a2b2fedcec85171ec38e1f2944f77c28e47c49e3c224d6fef1f1e290b660ef",
+      "bytes": 4066
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\ttc_scope_diagnosis_20261015.md",
+      "sha256": "bcaf2e4ec0ec736b3c01127b991c781081c9c9941f93716566511bb1ca120cc5",
+      "bytes": 10387
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\nuscenes\\map_expansion\\map_api.py",
+      "bytes": 101428,
+      "sha256": "0eb406cfa70acb41cde9b9807b639bf72f83e1b5ba6a836157e5c92e2fec6a67"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\category.json",
+      "bytes": 4747,
+      "sha256": "30f64fb175e5bd7db99892d90f9034481bca491f26600c5c0d1a56106b198dfe"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\boston-seaport.json",
+      "bytes": 16244922,
+      "sha256": "fc33712481efd763be39ce7edca0ec924d2d1fe20e1c89d52e21bf43d86e6b59"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-hollandvillage.json",
+      "bytes": 8203967,
+      "sha256": "0c9209c277686e367b06ab5bbe2547ba357f7f790365cb4927f44ae0f78266b2"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-onenorth.json",
+      "bytes": 13809722,
+      "sha256": "17939122b940d7faff50fa7ff623ded7f739549a781c32dff1ecd1ac7bebca02"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-queenstown.json",
+      "bytes": 11011530,
+      "sha256": "c7e75f5a5643c4831aae1c99a0fdcc61e9ba3c01f98d922f0fafa34ea1062927"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\vru_evidence_inventory_20261017.json",
+      "bytes": 23204,
+      "sha256": "506c7ecc9c8bff0b33d2c4366410ba65f2ef727140a6ca482506206dee5c70ad"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\nuscenes_capability_inventory_20261016.json",
+      "bytes": 12100,
+      "sha256": "60bdcd2180bd68e854c7234f080271652b8814ed7ef5755776dd1e3b2fcbbdb0"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\collect_human_evidence_20261024.py",
+      "bytes": 35064,
+      "sha256": "f761bce11adcad5c3c00238d10026cb26467e0bfe5b6241192aff16467ad332c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_collect_human_evidence_20261024.py",
+      "bytes": 11462,
+      "sha256": "9ee483305376afb953cda0e7c2eb304a918dc052032d45fa02a6dca59c66175e"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\instance.json",
+      "bytes": 16012833,
+      "sha256": "8f8b19496ce45353874714ce23a9df7f47f48cb6203df2dd456ea0247d146461"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024.json",
+      "bytes": 14839364,
+      "sha256": "a80747e508464f6332d7d70dd03122118d1f0afec2a45ca2a48d7e5d7ebb07e4"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\行人目标证据补充_20261024.md",
+      "bytes": 2635,
+      "sha256": "f2a3280ac43bde80704aaeb21216319b0af0c7622d1423c49624447cf2c38a01"
+    }
+  ],
+  "runtime": {
+    "executable": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "1.26.4",
+      "nuscenes-devkit": "1.2.0",
+      "Shapely": "2.0.7"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "scene_count": 29,
+  "columns": [
+    "pedestrian_nearby_ratio",
+    "pedestrian_front_ratio",
+    "pedestrian_crossing_risk_ratio",
+    "crosswalk_pedestrian_ratio",
+    "vru_path_conflict_ratio",
+    "vru_observed_relevance_ratio",
+    "vru_observed_event_count",
+    "vru_observed_max_duration",
+    "vru_sustained_relevance_ratio",
+    "vru_sustained_max_duration",
+    "vru_observed_min_distance",
+    "vru_observed_min_distance_time",
+    "vru_crossing_exposure_ratio",
+    "same_lane_vru_exposure_ratio",
+    "same_direction_vru_ratio",
+    "vru_crossing_event_count",
+    "vru_conflict_event_count",
+    "vru_conflict_max_duration",
+    "vru_crosswalk_conflict_ratio",
+    "vru_crosswalk_conflict_event_count",
+    "obstacle_avoidance_vru_conflict_ratio",
+    "obstacle_avoidance_vru_conflict_event_count"
+  ],
+  "comparisons": 1276,
+  "comparison_abs_tolerance": 1e-12,
+  "comparison_rel_tolerance": 0,
+  "mismatches": [],
+  "old_inputs_unchanged": true,
+  "new_human_metadata_extraction": true,
+  "full_feature_extraction": false,
+  "feature_rule_score_change": false,
+  "fit": false,
+  "evaluation_used": false,
+  "semantic_acceptance": false,
+  "shared_metadata_scan_disclosure": "Shared JSON bytes decoded sequentially; only approved 29 sample annotations retained; only human geometry computed/output. No evaluation features, labels, media or scene-level evaluation semantics used."
+}

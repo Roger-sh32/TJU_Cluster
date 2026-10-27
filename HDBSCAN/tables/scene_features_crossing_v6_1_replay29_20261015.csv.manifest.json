@@ -1,0 +1,74 @@
+{
+  "stage": "candidate_feature_replay",
+  "fit_scope": "development",
+  "scene_names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "output": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+    "sha256": "081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147",
+    "bytes": 33847
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv",
+    "sha256": "b9e753e34ff803956d161368aa1577d0517209ef052129fa8343b221e9f8e633",
+    "bytes": 33848
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\crossing_v6_1_replay_20261015.py",
+    "sha256": "ad0bea69e7449035bcf705bf814d80c246beee61ce7bb4c701d318725ba17320",
+    "bytes": 15422
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+    "bytes": 2153
+  },
+  "extra": {
+    "formal_fit_allowed": false,
+    "new_extraction": false,
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+      "bytes": 30874
+    },
+    "version": "crossing_candidate_v6_1_replay_20261015",
+    "protocol": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_protocol_20261015.json",
+      "sha256": "51b6be617bb455bfd44a2d8bcf9010b73ee1d16bc7aa9f60963dacc9186c3209",
+      "bytes": 6936
+    }
+  }
+}

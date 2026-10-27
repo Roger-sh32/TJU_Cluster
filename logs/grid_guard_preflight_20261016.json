@@ -1,0 +1,21 @@
+{
+  "scope": "Only --preflight; no native clustering import or fits",
+  "command": [
+    "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+    "-X",
+    "utf8",
+    "-u",
+    "HDBSCAN/scripts/grid_search.py",
+    "--preflight"
+  ],
+  "input_stage": "candidate_feature_replay",
+  "input": "HDBSCAN/tables/scene_features_longitudinal_v7_replay29_20261015.csv",
+  "output": "HDBSCAN\\tables\\_grid_preflight_no_run_20261016.csv",
+  "started_at_utc": "2026-10-16T01:14:39.618503+00:00",
+  "elapsed_seconds": 0.551358,
+  "timed_out": false,
+  "returncode": 0,
+  "stdout": "{\r\n  \"stage\": \"parameter_search\",\r\n  \"preflight_only\": true,\r\n  \"fit_scope\": \"development\",\r\n  \"scene_count\": 29,\r\n  \"split_sha256\": \"0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa\",\r\n  \"semantic_feature_count\": 52\r\n}\r\n",
+  "stderr": "",
+  "outputs_absent": true
+}

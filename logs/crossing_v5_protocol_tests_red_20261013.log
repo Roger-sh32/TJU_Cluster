@@ -1,0 +1,28 @@
+test_changed_prepared_protocol_is_refused_before_launch (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ERROR
+test_current_formal_fitter_refuses_candidate_manifest (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_diff_keeps_allowed_change_and_rejects_order_drift (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_diff_refuses_unrelated_change (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_frozen_runtime_mismatch_is_refused (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ERROR
+test_publication_uses_actual_grouped_risk_column (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_uncertainty_inclusion_is_not_dropped_from_comparison (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+
+======================================================================
+ERROR: test_changed_prepared_protocol_is_refused_before_launch (logs.test_crossing_v5_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 78, in test_changed_prepared_protocol_is_refused_before_launch
+    recipe.load_bound_protocol()
+AttributeError: module 'logs.crossing_v5_regression_20261013' has no attribute 'load_bound_protocol'
+
+======================================================================
+ERROR: test_frozen_runtime_mismatch_is_refused (logs.test_crossing_v5_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 82, in test_frozen_runtime_mismatch_is_refused
+    runtime = recipe.runtime_record()
+AttributeError: module 'logs.crossing_v5_regression_20261013' has no attribute 'runtime_record'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.118s
+
+FAILED (errors=2)

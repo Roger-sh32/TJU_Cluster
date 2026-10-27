@@ -1,0 +1,252 @@
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_crosswise_long_vehicle_end_protects_actual_proximity (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_inputs_are_not_mutated (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_invalid_ego_timeline_fails_closed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_legacy_rejection_with_unknown_heading_stays_unknown (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_low_speed_or_braking_protection_survives_spatial_miss (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_missing_actor_frame_cannot_clear_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_near_horizon_bracketing_sample_is_not_missing_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_no_link_to_stop_beyond_response_horizon (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_observed_near_end_is_not_downgraded_to_unknown_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_old_projection_rejection_remains_explicit (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_one_frame_speed_dip_is_not_sustained_soft_response (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_short_future_is_unknown_not_negative_or_confirmed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_straight_driving_prediction_not_cleared_by_turn_filter (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_sustained_soft_deceleration_preserves_rolling_yield_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_unknown_candidate_is_not_an_interaction_anchor (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_unknown_geometry_does_not_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_unknown_heading_cannot_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_wait_then_release_link_protects_same_target_not_later_other_target (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_crosswise_long_vehicle_end_protects_actual_proximity (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_inputs_are_not_mutated (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_invalid_ego_timeline_fails_closed (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_legacy_rejection_with_unknown_heading_stays_unknown (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_low_speed_or_braking_protection_survives_spatial_miss (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_missing_actor_frame_cannot_clear_candidate (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_observed_near_end_is_not_downgraded_to_unknown_future (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_old_projection_rejection_remains_explicit (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_short_future_is_unknown_not_negative_or_confirmed (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_straight_driving_prediction_not_cleared_by_turn_filter (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_unknown_candidate_is_not_an_interaction_anchor (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_unknown_geometry_does_not_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_unknown_heading_cannot_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5.CrossingV5Tests) ... ok
+
+======================================================================
+ERROR: test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 97, in test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_crosswise_long_vehicle_end_protects_actual_proximity (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 34, in test_crosswise_long_vehicle_end_protects_actual_proximity
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_inputs_are_not_mutated (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 83, in test_inputs_are_not_mutated
+    self.audit(data)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_invalid_ego_timeline_fails_closed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 90, in test_invalid_ego_timeline_fails_closed
+    self.audit(data)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_legacy_rejection_cannot_override_between_frame_uncertainty (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 108, in test_legacy_rejection_cannot_override_between_frame_uncertainty
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_legacy_rejection_with_unknown_heading_stays_unknown (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 116, in test_legacy_rejection_with_unknown_heading_stays_unknown
+    self.assertEqual(self.audit(data)[0]['state'], 'unknown_geometry')
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_low_speed_or_braking_protection_survives_spatial_miss (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 49, in test_low_speed_or_braking_protection_survives_spatial_miss
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_missing_actor_frame_cannot_clear_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 65, in test_missing_actor_frame_cannot_clear_candidate
+    self.assertEqual(self.audit(data)[0]['state'], 'unknown_future')
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_near_horizon_bracketing_sample_is_not_missing_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 16, in test_near_horizon_bracketing_sample_is_not_missing_future
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_no_link_to_stop_beyond_response_horizon (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 48, in test_no_link_to_stop_beyond_response_horizon
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import local_left_interaction_flags
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_observed_near_end_is_not_downgraded_to_unknown_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 122, in test_observed_near_end_is_not_downgraded_to_unknown_future
+    self.assertEqual(self.audit(data)[0]['state'], 'observed_proximity')
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_old_projection_rejection_remains_explicit (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 78, in test_old_projection_rejection_remains_explicit
+    self.assertEqual(self.audit(data)[0]['state'], 'contradicted_turning_projection')
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_one_frame_speed_dip_is_not_sustained_soft_response (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 30, in test_one_frame_speed_dip_is_not_sustained_soft_response
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_short_future_is_unknown_not_negative_or_confirmed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 39, in test_short_future_is_unknown_not_negative_or_confirmed
+    item = self.audit(self.scene(1.5))[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_spatial_overlap_without_simultaneous_arrival_is_contradicted (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 25, in test_spatial_overlap_without_simultaneous_arrival_is_contradicted
+    item = self.audit(self.scene())[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_straight_driving_prediction_not_cleared_by_turn_filter (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 71, in test_straight_driving_prediction_not_cleared_by_turn_filter
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_sustained_soft_deceleration_preserves_rolling_yield_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 23, in test_sustained_soft_deceleration_preserves_rolling_yield_candidate
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_unknown_candidate_is_not_an_interaction_anchor (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 143, in test_unknown_candidate_is_not_an_interaction_anchor
+    evidence = self.audit(data)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_unknown_geometry_does_not_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 56, in test_unknown_geometry_does_not_certify_separation
+    item = self.audit(data)[0]
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_unknown_heading_cannot_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5.py", line 127, in test_unknown_heading_cannot_certify_separation
+    self.assertEqual(self.audit(data)[0]['state'], 'unknown_geometry')
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 9, in audit
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import crossing_candidate_audit
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+======================================================================
+ERROR: test_wait_then_release_link_protects_same_target_not_later_other_target (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 34, in test_wait_then_release_link_protects_same_target_not_later_other_target
+    from HDBSCAN.scripts.crossing_candidate_v5_1 import local_left_interaction_flags
+ModuleNotFoundError: No module named 'HDBSCAN.scripts.crossing_candidate_v5_1'
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.037s
+
+FAILED (errors=21)

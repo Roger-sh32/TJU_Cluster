@@ -1,0 +1,22 @@
+test_active_frame_without_identity_rejected (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_gap_cannot_be_a_complete_motion_window (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_gap_splits_episode_without_inventing_coverage (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_global_raw_protection_can_mix_different_target_episodes (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_initial_placeholder_not_an_observed_stop (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_invalid_timeline_and_boolean_anchor_rejected (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_minimum_target_is_queried_even_without_static_blockage (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_missing_geometry_identity_cannot_be_silently_skipped (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_non_grid_bracket_complete_but_sample_span_disclosed (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_normal_curve_can_trigger_frozen_raw_rule (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_original_parent_report_digest_is_pinned_before_trusting_outputs (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_partial_tail_reports_observation_without_complete_future (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_route_diagnosis_does_not_mutate_protected_source (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_tail_has_unknown_motion_not_safe_zero (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_target_switch_splits_episode (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_wrapped_yaw_not_full_circle_change (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_wrong_original_digest_fails_before_reading_protocol (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.614s
+
+OK

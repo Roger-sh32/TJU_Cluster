@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-10-01T09:51:14.509380+08:00",
+  "stage": "development_media_available_supplement_selection",
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv",
+      "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3",
+      "bytes": 695154
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\n30_s1_seed42.csv",
+      "sha256": "e8a71a2358af0e336c9b8907e451ec8fe1b0e07e6adde0491dd9c8bc09cb5b88",
+      "bytes": 94516
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\cluster_semantics_20260930.json",
+      "sha256": "420bd453d4c23c0934a7e432fa126da43c25fd38bd792ba5b396a16d8fa9aff2",
+      "bytes": 1395514
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\select_available_review_cases_20261001.py",
+      "sha256": "6e623fdbbcfb0b042280ba226e9bdd68304f1958354d2927b12f2684da616db7",
+      "bytes": 6683
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\evaluation_media_audit_20260926.py",
+      "sha256": "ae06907415d8b3a12eb65ee45c349f209defe99e47fc054c440f4db52f628310",
+      "bytes": 9106
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b",
+      "bytes": 285132
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample.json",
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d",
+      "bytes": 7424233
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample_data.json",
+      "sha256": "6dcad49f0b9bd7b1cef04e2a0ff2ac2879b46b938e8d48153f00693cebb4de21",
+      "bytes": 1345678379
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sensor.json",
+      "sha256": "4d5c96570e2d8b09b88ce4c605e40ee43c4909f97bea5741185f18f92eb491ae",
+      "bytes": 1185
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\calibrated_sensor.json",
+      "sha256": "67781a5dd7b2504b046ef89d6dcb267b12d1cc91af21f1ec5758624588e99865",
+      "bytes": 3268133
+    }
+  ],
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/select_available_review_cases_20261001.py"
+  ],
+  "eligible_keyframes_exist_count": 145,
+  "existing_gif_scene_exclusion_count": 41,
+  "selection_rule": "Same anchor cluster; exclude existing GIF scenes and original targets; prefer fresh logs; nearest standardized 52-feature RMS distance to missing target, tie by name.",
+  "supplements": [
+    {
+      "missing_target": "scene-0905",
+      "cluster": 5,
+      "supplement": "scene-0107",
+      "scene_token": "3b2ee26cb8484f77895bc336663df502",
+      "log_token": "53cf9c55dd8644bea67b9f009fc1ee38",
+      "location": "boston-seaport",
+      "standardized_feature_rms_distance": 0.7957679121126293,
+      "priority_rank": 77,
+      "risk": 0.31875,
+      "description": "Cross busy intersection, bendy bus changing lane",
+      "status": "keyframes_exist_not_yet_decoded"
+    },
+    {
+      "missing_target": "scene-0544",
+      "cluster": 3,
+      "supplement": "scene-0151",
+      "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+      "log_token": "da04ae0b72024818a6219d8dd138ea4b",
+      "location": "singapore-onenorth",
+      "standardized_feature_rms_distance": 0.9371606189926661,
+      "priority_rank": 203,
+      "risk": 0.16045958201090496,
+      "description": "Turn right, busy intersection, construction, peds, parked bicycles, construction vehicle, motorcycle",
+      "status": "keyframes_exist_not_yet_decoded"
+    },
+    {
+      "missing_target": "scene-0997",
+      "cluster": 9,
+      "supplement": "scene-0032",
+      "scene_token": "9047b53fd41540649dce014a128cbe1b",
+      "log_token": "bc41a49366734ebf978d6a71981537dc",
+      "location": "singapore-onenorth",
+      "standardized_feature_rms_distance": 0.6588288889281337,
+      "priority_rank": 116,
+      "risk": 0.016041666666666666,
+      "description": "Turn left, motorcycle driving, ped sitting",
+      "status": "keyframes_exist_not_yet_decoded"
+    },
+    {
+      "missing_target": "scene-0703",
+      "cluster": 8,
+      "supplement": "scene-0014",
+      "scene_token": "d1e57234fd6a463d963670938f9f556e",
+      "log_token": "d31dc715d1c34b99bd5afb0e3aea26ed",
+      "location": "singapore-onenorth",
+      "standardized_feature_rms_distance": 1.012985442302791,
+      "priority_rank": 348,
+      "risk": 0.005249999999999999,
+      "description": "Follow bus, cross intersection, nature",
+      "status": "keyframes_exist_not_yet_decoded"
+    }
+  ],
+  "limits": [
+    "Availability-based purposive development sampling, not random sampling or evaluation substitution.",
+    "Supplement cannot validate the missing original case; original questions remain pending.",
+    "Keyframes checked for existence/nonempty only; decode and sweeps checked during export."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "created_at_utc": "2026-10-12T13:23:31.514093+00:00",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/summarize_target_diagnosis8_20261012.py"
+  ],
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\summarize_target_diagnosis8_20261012.py",
+    "sha256": "f05e84a8a0fcbbd2aa45ecaf982c27d65c55533c387f786fb89aace2f7590b2b",
+    "bytes": 9760
+  },
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_protocol_20261012.json",
+    "sha256": "f8c69b34de416bd3fe4d76033fa9e41521e645a430417b49afc0f31df51ae30b",
+    "bytes": 9378
+  },
+  "report": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_20261012.json",
+    "sha256": "ca28a0801b7269cd61c91f11e7c9e6a8a2b1a57e4c5077d4f5063c1aa0a57df1",
+    "bytes": 25103
+  },
+  "document": {
+    "path": "F:\\Scene_cluster\\outputs\\人工复核\\八场景逐目标诊断_20261012.md",
+    "sha256": "2f310a3dc935fb62bb2ef238664e58996fccd5b5ad0bda2e01cd98d7c3558470",
+    "bytes": 8023
+  },
+  "exact_eight_rows": true,
+  "raw_projection_evidence_recomputed": true,
+  "frozen_sources_unchanged": true,
+  "evaluation_used": false,
+  "semantic_acceptance": false
+}

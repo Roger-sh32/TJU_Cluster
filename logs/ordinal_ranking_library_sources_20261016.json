@@ -1,0 +1,20 @@
+{
+  "parent_synthetic_sha256": "29f3a3746847851dd11b86755acf0c20dd8f2243f6cb908eeaefdd756e39e36a",
+  "scope": "Supplement actual metric module records; original inspect.getsourcefile records are decorator validation wrapper only, not metric definitions; no rerun or edits",
+  "actual_metric_modules": [
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\sklearn\\metrics\\_ranking.py",
+      "bytes": 78236,
+      "sha256": "1d27678dfe81a578645ff053ad1c2a1ddcb211555995663725319028eb1a55ef",
+      "definition": "ndcg_score",
+      "line": 1781
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\sklearn\\metrics\\_classification.py",
+      "bytes": 127037,
+      "sha256": "38a5f69f139fb7094df2c98d7270e5ae24b96c27a98ede671e1356d6e8c5bdcb",
+      "definition": "cohen_kappa_score",
+      "line": 677
+    }
+  ]
+}

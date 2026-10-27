@@ -1,0 +1,11 @@
+test_altered_packet_seal_is_refused_before_reading_payload (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_bound_report_refuses_changed_linked_artifact (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_existing_packet_is_refused_without_overwrite (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_output_scope_refuses_outside_deliverables (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_recorded_runtime_mismatch_is_refused_before_replay (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_synthetic_fixture_never_uses_real_scene_or_expert_ids (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.183s
+
+OK

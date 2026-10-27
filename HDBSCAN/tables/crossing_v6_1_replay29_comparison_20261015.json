@@ -1,0 +1,87 @@
+{
+  "version": "crossing_candidate_v6_1_replay_20261015",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_protocol_20261015.json",
+    "sha256": "51b6be617bb455bfd44a2d8bcf9010b73ee1d16bc7aa9f60963dacc9186c3209",
+    "bytes": 6936
+  },
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+      "sha256": "081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147",
+      "bytes": 33847
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv.manifest.json",
+      "sha256": "903baff3aa9667e21f502d4ec2125dccaa9085d58a974b94f30669f9c38407f9",
+      "bytes": 2284
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_events_20261015.json",
+      "sha256": "cd17b6785a181f6f26bc642d8229e1fdf8ab12fe255b121f955782dc0caabe49",
+      "bytes": 75967
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\横向交互v6_1事件连续性对照_20261015.md",
+      "sha256": "8f7bf1f9191d74a07d8d4612a8929967e43c3aa2adcbdee4c1704ee7f3e66d06",
+      "bytes": 2816
+    }
+  ],
+  "changes": [
+    {
+      "scene_name": "scene-0068",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v6": 0.23076923076923078,
+      "v6_1": 0.2564102564102564
+    }
+  ],
+  "changed_scenes": [
+    "scene-0068"
+  ],
+  "clustering_changes": [
+    {
+      "scene_name": "scene-0068",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v6": 0.23076923076923078,
+      "v6_1": 0.2564102564102564
+    }
+  ],
+  "controls": {
+    "rolling_yield_nonzero_representation": true,
+    "bus_context_nonzero_representation": true,
+    "bus_intrusion_unchanged": true,
+    "stop_and_raw_exposure_unchanged": true,
+    "later_pickup_causal_detection_claimed": false,
+    "semantic_acceptance": false,
+    "boundary": {
+      "scene_name": "scene-0068",
+      "truck": "727349048e9044d98846cbeeb3a1b5fd",
+      "truck_frames": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "car": "64a805096d9047a6bbc73734b0a90e67",
+      "forbidden_car_frame": 24,
+      "retained_crossing_frames": [
+        15,
+        16
+      ]
+    },
+    "historical_not_current_conflict": true,
+    "causal_acceptance": false
+  },
+  "restored_target_frames": 1,
+  "current_crossings_and_unknowns_unchanged": true,
+  "new_extraction": false,
+  "formal_fit_refused": true,
+  "evaluation_used": false,
+  "semantic_acceptance": false
+}

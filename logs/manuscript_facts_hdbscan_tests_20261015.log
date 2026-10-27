@@ -1,0 +1,391 @@
+test_identity_and_schema_mismatch_fail (test_audit700_check.Audit700CheckTest) ... ok
+test_known_distance_sentinel_does_not_hide_other_findings (test_audit700_check.Audit700CheckTest) ... ok
+test_real_changes_are_recorded_with_identity (test_audit700_check.Audit700CheckTest) ... ok
+test_row_order_does_not_create_a_feature_change (test_audit700_check.Audit700CheckTest) ... ok
+test_left_turn_cross_traffic_is_not_double_counted_as_merge_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_moving_approach_has_more_decision_demand_than_initial_stop (test_corner_scoring.CornerScoringTest) ... ok
+test_no_valid_ttc_is_not_longitudinal_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_non_signalized_intersection_keeps_decision_demand_when_initially_stopped (test_corner_scoring.CornerScoringTest) ... ok
+test_observed_intrusion_contributes_even_without_instantaneous_merge (test_corner_scoring.CornerScoringTest) ... ok
+test_observed_vru_relevance_overrides_distant_predicted_conflict (test_corner_scoring.CornerScoringTest) ... ok
+test_planned_intersection_stop_attenuates_lateral_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_red_light_cross_traffic_exposure_alone_is_not_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_route_deviation_demand_preserves_blocked_path_decision_value (test_corner_scoring.CornerScoringTest) ... ok
+test_side_entry_exposure_adds_decision_value_without_claiming_observed_merge (test_corner_scoring.CornerScoringTest) ... ok
+test_signalized_initial_queue_attenuates_close_following_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_stop_after_moving_reduces_observed_conflict_but_keeps_decision_demand (test_corner_scoring.CornerScoringTest) ... ok
+test_stop_sign_does_not_remove_confirmed_route_conflict (test_corner_scoring.CornerScoringTest) ... ok
+test_stop_sign_does_not_suppress_left_turn_gap_selection (test_corner_scoring.CornerScoringTest) ... ok
+test_stop_sign_without_route_conflict_preserves_uncertain_approach_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_sustained_merge_conflict_is_high_interaction_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_sustained_vru_conflict_is_high_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_sustained_vru_relevance_overrides_single_frame_observed_proximity (test_corner_scoring.CornerScoringTest) ... ok
+test_traffic_light_suppresses_non_signalized_decision_demand (test_corner_scoring.CornerScoringTest) ... ok
+test_ttc_above_three_seconds_is_not_critical (test_corner_scoring.CornerScoringTest) ... ok
+test_uncontrolled_yield_preserves_approach_conflict_when_ego_stops_safely (test_corner_scoring.CornerScoringTest) ... ok
+test_unobserved_merge_prediction_does_not_create_interaction_risk (test_corner_scoring.CornerScoringTest) ... ok
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_crosswise_long_vehicle_end_protects_actual_proximity (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_inputs_are_not_mutated (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_invalid_ego_timeline_fails_closed (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_legacy_rejection_with_unknown_heading_stays_unknown (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_low_speed_or_braking_protection_survives_spatial_miss (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_missing_actor_frame_cannot_clear_candidate (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_observed_near_end_is_not_downgraded_to_unknown_future (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_old_projection_rejection_remains_explicit (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_short_future_is_unknown_not_negative_or_confirmed (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_straight_driving_prediction_not_cleared_by_turn_filter (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_unknown_candidate_is_not_an_interaction_anchor (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_unknown_geometry_does_not_certify_separation (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_unknown_heading_cannot_certify_separation (test_crossing_candidate_v5.CrossingV5Tests) ... ok
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_crosswise_long_vehicle_end_protects_actual_proximity (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_inputs_are_not_mutated (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_invalid_ego_timeline_fails_closed (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_with_unknown_heading_stays_unknown (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_local_v51_unknown_and_other_target_are_not_anchors (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_low_speed_or_braking_protection_survives_spatial_miss (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_missing_actor_frame_cannot_clear_candidate (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_near_horizon_bracketing_sample_is_not_missing_future (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_no_link_to_stop_beyond_response_horizon (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_observed_near_end_is_not_downgraded_to_unknown_future (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_old_projection_rejection_remains_explicit (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_one_frame_speed_dip_is_not_sustained_soft_response (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_placeholder_initial_speed_cannot_anchor_a_left_turn (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_protection_does_not_erase_incomplete_future (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_selection_refuses_over_limit_or_outside_fixed_names (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_short_future_is_unknown_not_negative_or_confirmed (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_straight_driving_prediction_not_cleared_by_turn_filter (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_sustained_soft_deceleration_preserves_rolling_yield_candidate (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unbracketed_tail_is_unknown_not_contradicted (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_candidate_is_not_an_interaction_anchor (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_geometry_does_not_certify_separation (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_heading_cannot_certify_separation (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_wait_then_release_link_protects_same_target_not_later_other_target (test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_crosswise_long_vehicle_end_protects_actual_proximity (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_far_bracket_with_observation_gap_remains_unknown (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_inputs_are_not_mutated (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_invalid_bracket_proximity_cannot_confirm_horizon_event (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_invalid_ego_timeline_fails_closed (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_legacy_rejection_with_unknown_heading_stays_unknown (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_local_v51_unknown_and_other_target_are_not_anchors (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_low_speed_or_braking_protection_survives_spatial_miss (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_missing_actor_frame_cannot_clear_candidate (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_near_horizon_bracketing_sample_is_not_missing_future (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_no_link_to_stop_beyond_response_horizon (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_observed_near_end_is_not_downgraded_to_unknown_future (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_old_projection_rejection_remains_explicit (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_one_frame_speed_dip_is_not_sustained_soft_response (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_placeholder_initial_speed_cannot_anchor_a_left_turn (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_protection_does_not_erase_incomplete_future (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_real_bracketing_frame_covers_irregular_horizon (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_selection_refuses_over_limit_or_outside_fixed_names (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_short_future_is_unknown_not_negative_or_confirmed (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_straight_driving_prediction_not_cleared_by_turn_filter (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_sustained_soft_deceleration_preserves_rolling_yield_candidate (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_unbracketed_tail_is_unknown_not_contradicted (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_unknown_bracket_geometry_keeps_valid_within_horizon_proximity (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_unknown_candidate_is_not_an_interaction_anchor (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_unknown_geometry_does_not_certify_separation (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_unknown_heading_cannot_certify_separation (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_valid_bracket_proximity_after_horizon_is_prediction_only (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_wait_then_release_link_protects_same_target_not_later_other_target (test_crossing_candidate_v5_2.CrossingV52Tests) ... ok
+test_duplicate_target_frame_fails_closed (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_ego_gap_after_response_remains_unknown (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_fast_between_frame_encounter_cannot_be_cleared (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_inputs_are_not_mutated (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_instance_renaming_does_not_change_decision (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_invalid_dimensions_remain_unknown (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_known_proximity_is_not_removed (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_local_left_cannot_reintroduce_separated_target (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_malformed_yaw_shape_rejected (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_missing_actor_observation_cannot_certify_route_separation (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_missing_route_evidence_cannot_bypass_local_gate (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_prospective_route_overlap_preserves_successful_yield (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_rotation_shortest_angle_across_pi (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_short_future_cannot_clear_protected_prediction (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_stationary_route_does_not_prove_completed_passage (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_swept_envelope_contains_rotating_resizing_body (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_tiny_rotation_does_not_erase_connecting_hull (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_unrelated_parallel_vehicle_cannot_use_response_protection (test_crossing_candidate_v6.RouteRelevanceTests) ... ok
+test_boolean_route_index_cannot_alias_frame_one (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_boolean_seed_index_cannot_alias_frame_one (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_exposure_gap_splits_episode (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_history_does_not_mutate_current_crossing_evidence (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_invalid_speed_even_without_exposure_fails_closed (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_no_backwards_propagation_from_later_seed (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_no_label_outside_original_exposure (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_no_transfer_to_unrelated_vehicle (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_nonresponse_prediction_is_not_history_seed (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_restored_flag_has_same_target_seed_trace (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_same_target_continuous_tail_is_retained (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_separated_seed_cannot_restore_event (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_six_second_boundary_is_inclusive_not_extended (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_string_boolean_cannot_certify_seed_future (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_string_route_boolean_cannot_certify_seed_future (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_unknown_route_seed_cannot_establish_history_extension (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_unknown_seed_cannot_establish_history_extension (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_unknown_tail_keeps_only_historical_context (test_crossing_candidate_v6_1.EpisodeContinuityTests) ... ok
+test_bootstrap_does_not_silently_drop_too_small_cohorts (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_bootstrap_refuses_missing_labels_or_group_membership (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_budget_savings_keep_negative_result_and_require_same_target (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_duplicate_review_or_unexpected_identity_is_refused (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_invalid_ranking_labels_k_and_recall_targets_refused (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_log_bootstrap_identical_methods_have_zero_difference (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_log_bootstrap_uses_same_resample_and_retains_sign (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_missing_outside_top_k_also_disables_full_recall (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_no_positive_does_not_report_zero_recall_or_budget (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_padded_log_identity_cannot_invent_independent_groups (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_precision_recall_budget_and_unattainable_budget (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_random_baseline_materializes_metric_iterators_once (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_seeded_random_baseline_reproducible_without_mutation (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_three_independent_reviews_median_and_missing_not_zero (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_unknown_top_k_bounds_no_backfill_no_full_recall (test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_duplicate_scene_or_token_rejected (test_evaluation_split.EvaluationSplitTest) ... ok
+test_evidence_ignores_full_corpus_table_but_keeps_notes_and_previews (test_evaluation_split.EvaluationSplitTest) ... ok
+test_exact_count_and_log_isolation (test_evaluation_split.EvaluationSplitTest) ... ok
+test_impossible_count_does_not_split_logs (test_evaluation_split.EvaluationSplitTest) ... ok
+test_input_order_does_not_change_split (test_evaluation_split.EvaluationSplitTest) ... ok
+test_missing_log_or_unknown_exclusion_rejected (test_evaluation_split.EvaluationSplitTest) ... ok
+test_output_cannot_overwrite_frozen_partition (test_evaluation_split.EvaluationSplitTest) ... ok
+test_unavailable_location_rejected_instead_of_silent_bias (test_evaluation_split.EvaluationSplitTest) ... ok
+test_both_fit_entries_reject_full_corpus_before_native_import (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_extractor_preflight_never_constructs_nuscenes (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_extractor_rejects_colliding_audit_paths_before_dataset_load (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_grid_metric_failure_is_not_a_zero_score (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_hdbscan_and_grid_preflight_do_not_import_native_fit_libraries (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_kmeans_preflight_and_leak_rejection_before_scaling (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_named_evaluation_scene_rejected_before_dataset_load (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_scoring_entry_preflight_with_synthetic_provenance (test_experiment_partition.EntryPointPreflightTest) ... ok
+test_current_development_frame_passes (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_existing_output_is_protected (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_identity_and_duplicate_checks (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_mixed_or_evaluation_input_is_rejected_not_filtered (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_modified_partition_hash_rejected (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_nonfinite_cluster_evidence_is_rejected (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_old_schema_and_nonfinite_features_are_rejected (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_provenance_roundtrip_and_tampered_output (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_scene_selection_defaults_to_700_and_blocks_named_evaluation (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_scoring_rejects_unproven_legacy_cluster_file (test_experiment_partition.ExperimentPartitionTest) ... ok
+test_all_broad_handlers_are_instrumented (test_extraction_audit.ExtractionAuditTest) ... ok
+test_clean_frame_is_not_semantic_acceptance (test_extraction_audit.ExtractionAuditTest) ... ok
+test_error_counts_are_exact_examples_are_bounded (test_extraction_audit.ExtractionAuditTest) ... ok
+test_raw_nonfinite_cells_are_identified_without_mutation (test_extraction_audit.ExtractionAuditTest) ... ok
+test_new_route_context_is_selected_but_target_ids_are_not (test_feature_selection.FeatureSelectionTest) ... ok
+test_only_semantic_context_and_interaction_features_are_selected (test_feature_selection.FeatureSelectionTest) ... ok
+test_raises_when_no_supported_features_exist (test_feature_selection.FeatureSelectionTest) ... ok
+test_all_noise_reference_is_rejected_for_prediction (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_audit_implementation_is_bound_to_model_sources (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_changed_manifest_score_reference_rejected_on_load (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_each_risk_input_rejects_missing_invalid_and_nonfinite_values (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_evaluation_fit_overlap_bad_schema_and_overwrite_are_rejected (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_export_rejects_changed_risk_evidence_and_bad_risk_dtype (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_export_rejects_mismatched_clustering_evidence (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_export_rejects_other_batch_scaler_and_reducer (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_feature_provenance_rejects_missing_or_old_rule_manifest (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_preflight_integrity_check_never_unpickles (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_real_extraction_requires_hash_bound_quality_audit (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_roundtrip_predictions_do_not_refit_and_preserve_batch_results (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_tamper_is_rejected_before_unpickle (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_version_and_feature_order_mismatch_rejected (test_frozen_model.FrozenModelTest) ... D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+ok
+test_reference_is_fixed_across_prediction_batches (test_frozen_model.FrozenScoringTest) ... ok
+test_unknown_cluster_is_not_silently_treated_as_rare (test_frozen_model.FrozenScoringTest) ... ok
+test_bad_evidence_is_rejected_not_filled_with_zero (test_interaction_events.InteractionEventsTest) ... ok
+test_first_frame_crossing_does_not_export_placeholder_speed (test_interaction_events.InteractionEventsTest) ... ok
+test_first_speed_placeholder_and_brief_slowdown_are_not_stop (test_interaction_events.InteractionEventsTest) ... ok
+test_initial_stop_multiple_stops_and_gaps (test_interaction_events.InteractionEventsTest) ... ok
+test_markdown_does_not_claim_yield_causality (test_interaction_events.InteractionEventsTest) ... ok
+test_report_rejects_evaluation_identity_mismatch_and_duplicates (test_interaction_events.InteractionEventsTest) ... ok
+test_separates_actors_and_stop_phases_without_claiming_causality (test_interaction_events.InteractionEventsTest) ... ok
+test_baseline_replays_ttc_and_static_following_consistently (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_existing_avoidance_context_is_protected (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_filter_precedes_nearest_selection_and_finds_alternative (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_filtering_all_targets_recomputes_no_measurement_defaults (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_forward_static_obstacle_is_protected (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_integrated_gate_only_removes_known_separation (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_integrated_gate_retains_unknown_and_does_not_mutate_tracks (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_integrated_protected_context_never_queries_geometry (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_missing_annotation_identity_is_not_invented (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_missing_map_does_not_prove_separation (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_offroad_or_overlapping_candidate_not_selected (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_real_geometry_short_future_retains_all_eligible_targets (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_rejection_boolean_context_is_strict (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_selection_does_not_mutate_source (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_static_opposite_turn_requires_known_route_separation (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_straight_motion_not_filtered_as_turn_projection (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_temporarily_stopped_motorcycle_is_protected (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_tie_preserves_original_annotation_order (test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_configuration_summary_requires_all_five_successful_seeds (test_parameter_stability.ParameterStabilityTest) ... ok
+test_exact_approved_search_space (test_parameter_stability.ParameterStabilityTest) ... ok
+test_failed_fits_cannot_be_summarized_as_complete (test_parameter_stability.ParameterStabilityTest) ... ok
+test_full_corpus_is_rejected_not_silently_filtered (test_parameter_stability.ParameterStabilityTest) ... ok
+test_historical_table_is_rejected_after_extraction_source_change (test_parameter_stability.ParameterStabilityTest) ... ok
+test_largest_cluster_excludes_noise_but_denominator_is_all_scenes (test_parameter_stability.ParameterStabilityTest) ... ok
+test_preflight_does_not_import_native_libraries_or_create_outputs (test_parameter_stability.ParameterStabilityTest) ... ok
+test_summary_uses_all_ten_pairs_and_preserves_dominance (test_parameter_stability.ParameterStabilityTest) ... ok
+test_actor_on_unvisited_straight_extension_is_not_on_turn_route (test_route_context.RouteContextTest) ... ok
+test_bounded_annotation_jitter_can_recover_static_obstacle (test_route_context.RouteContextTest) ... ok
+test_bounded_track_rejects_creep_sparse_tracks_and_out_and_back_motion (test_route_context.RouteContextTest) ... ok
+test_curved_route_is_not_evasive_even_with_recovered_heading (test_route_context.RouteContextTest) ... ok
+test_intrusion_requires_actor_movement_toward_lane (test_route_context.RouteContextTest) ... ok
+test_known_short_avoidance_remains_supported (test_route_context.RouteContextTest) ... ok
+test_offroad_bicycle_is_not_a_longitudinal_target (test_route_context.RouteContextTest) ... ok
+test_oncoming_requires_opposing_heading_and_motion (test_route_context.RouteContextTest) ... ok
+test_slow_inward_facing_side_vehicle_is_candidate_not_parallel_parked_car (test_route_context.RouteContextTest) ... ok
+test_stationary_evidence_cannot_override_observed_motion (test_route_context.RouteContextTest) ... ok
+test_context_window_keeps_only_events_after_obstacle_detection (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_cross_traffic_at_red_light_is_exposure_not_conflict (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_cross_traffic_reaching_moving_ego_path_is_conflict (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_crossing_vru_is_not_same_direction (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_evasive_lane_change_accepts_brief_obstacle_with_strong_recovered_shift (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_evasive_lane_change_accepts_moderate_shift_with_heading_recovery (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_evasive_lane_change_rejects_brief_distant_obstacle_evidence (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_evasive_lane_change_rejects_close_obstacle_if_brief (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_evasive_lane_change_rejects_large_turn (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_event_partition_uses_first_stop_time (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_event_summary_counts_runs_and_duration (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_faster_aligned_side_vehicle_is_overtaking_exposure (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_front_vehicle_with_negative_forward_speed_is_oncoming (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_heading_change_wraps_across_pi_boundary (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_initially_stopped_then_restarts_is_not_conflict_induced_stop (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_lane_centerline_and_direction_define_mapped_vru_relation (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_lane_change_heading_returns_near_initial_direction (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_lateral_shift_after_obstacle_uses_frozen_ego_heading (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_left_turn_cross_traffic_keeps_exposure_when_conflict_precedes_yield (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_local_heading_change_uses_only_event_window (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_low_forward_speed_side_vehicle_is_not_merge (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_lower_ttc_event_keeps_candidate_provenance (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_moving_then_sustained_stop_is_decision_stop (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_observed_merge_requires_actual_ego_lane_entry (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_observed_path_distance_detects_shared_future_point (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_observed_path_distance_rejects_distant_future_interaction (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_observed_vru_requires_both_proximity_and_lane_entry (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_obstacle_induced_route_deviation_accepts_two_nuscenes_keyframes (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_obstacle_induced_route_deviation_allows_early_turn_at_visible_blockage (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_obstacle_induced_route_deviation_requires_sustained_close_blockage (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_opposing_actor_heading_is_not_aligned_with_ego (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_overlapping_front_center_is_rejected (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_route_deviation_context_rejects_normal_intersection_turns (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_route_deviation_demand_scales_blockage_ratio (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_same_lane_same_direction_vru_is_classified_separately (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_same_path_lead_is_not_crossing_or_merge (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_scene_batch_uses_start_index_and_safe_end_bound (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_short_event_filter_removes_single_frame_speed_noise (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_side_vehicle_closing_into_lane_is_merge_conflict (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_signed_heading_change_distinguishes_left_and_right (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_stop_line_types_distinguish_signal_and_non_signal_control (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_stopped_lead_history_separates_static_and_temporarily_stopped (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_synchronized_closest_approach_returns_relative_time (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_turning_maneuver_retains_large_heading_change (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_turning_projection_artifact_requires_static_opposing_target_and_turn (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_vehicle_behind_ego_is_not_merge_exposure (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_vehicle_near_lane_boundary_is_not_same_path_lead (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_vru_crossing_exposure_does_not_require_simultaneous_overlap (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_vru_must_be_predicted_to_enter_ego_corridor (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_vru_sustained_filter_keeps_two_frames_but_rejects_one (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_walkway_vru_is_not_assigned_to_ego_lane (test_scene_feature_rules.SceneFeatureRulesTest) ... ok
+test_all_noise_has_no_nonnoise_ari (test_seed_stability.SeedStabilityTest) ... ok
+test_identity_mismatch_is_rejected (test_seed_stability.SeedStabilityTest) ... ok
+test_labels_can_be_permuted_and_rows_reordered (test_seed_stability.SeedStabilityTest) ... ok
+test_top_k_ties_are_deterministic (test_seed_stability.SeedStabilityTest) ... ok
+test_complete_pass_is_diagnostic_not_evasive_maneuver (test_static_passages.StaticPassagesTest) ... ok
+test_gaps_and_incomplete_track_do_not_invent_passage (test_static_passages.StaticPassagesTest) ... ok
+test_later_motion_does_not_erase_static_passage (test_static_passages.StaticPassagesTest) ... ok
+test_lateral_motion_and_curve_do_not_claim_avoidance (test_static_passages.StaticPassagesTest) ... ok
+test_missing_dimensions_and_nonfinite_evidence_fail (test_static_passages.StaticPassagesTest) ... ok
+test_no_passing_far_target_and_moving_vehicle_are_not_candidates (test_static_passages.StaticPassagesTest) ... ok
+test_offroad_other_lane_and_unknown_map_are_not_confirmed (test_static_passages.StaticPassagesTest) ... ok
+test_pair_provenance_rejects_legacy_or_changed_audit (test_static_passages.StaticPassagesTest) ... ok
+test_parallel_parked_cars_remain_separate_instances (test_static_passages.StaticPassagesTest) ... ok
+test_small_speed_with_unbounded_drift_remains_uncertain (test_static_passages.StaticPassagesTest) ... ok
+test_sustained_creep_below_half_metre_per_second_is_not_static (test_static_passages.StaticPassagesTest) ... ok
+test_actor_gap_or_short_future_is_not_negative_evidence (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_actual_route_intersection_is_retained (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_braking_into_first_candidate_is_not_ignored (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_ego_gap_is_not_negative_evidence (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_full_track_rejects_projection_ignoring_initial_speed_placeholder (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_incomplete_or_unknown_future_is_not_negative_evidence (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_invalid_timeline_fails_explicitly (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_long_crosswise_bus_footprint_is_not_cleared_by_center_distance (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_low_speed_or_hard_brake_preserves_successful_yield (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_missing_or_unknown_dimension_preserves_candidate (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_nonfinite_actor_position_preserves_candidate (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_single_missing_actor_keyframe_is_not_complete_future (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_straight_driving_prediction_is_not_filtered (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_successful_yield_is_not_erased_by_observed_route (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_turning_path_misses_actor_without_yielding (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+test_wide_actor_footprint_near_route_is_retained (test_turning_crossing_projection.TurningCrossingProjectionTest) ... ok
+
+----------------------------------------------------------------------
+Ran 330 tests in 6.936s
+
+OK

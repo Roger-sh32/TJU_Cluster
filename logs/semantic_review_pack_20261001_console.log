@@ -1,0 +1,11 @@
+Metadata rows scanned: 500000
+Metadata rows scanned: 1000000
+Metadata rows scanned: 1500000
+Metadata rows scanned: 2000000
+Metadata rows scanned: 2500000
+scene-0158: 118 frames, 19.50s, camera_sweeps_nearest_6hz
+scene-0905: 40 missing keyframes; export skipped
+scene-0544: 41 missing keyframes; export skipped
+scene-0997: 41 missing keyframes; export skipped
+scene-0703: 40 missing keyframes; export skipped
+Report: F:\Scene_cluster\HDBSCAN\tables\semantic_review_media_20261001.json; exported 1/5

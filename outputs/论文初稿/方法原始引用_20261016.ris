@@ -1,0 +1,117 @@
+TY  - CONF
+ID  - R01
+AU  - Caesar, Holger
+AU  - Bankiti, Varun
+AU  - Lang, Alex H.
+AU  - Vora, Sourabh
+AU  - Liong, Venice Erin
+AU  - Xu, Qiang
+AU  - Krishnan, Anush
+AU  - Pan, Yu
+AU  - Baldan, Giancarlo
+AU  - Beijbom, Oscar
+TI  - nuScenes: A Multimodal Dataset for Autonomous Driving
+T2  - 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+PY  - 2020
+SP  - 11618
+EP  - 11628
+DO  - 10.1109/CVPR42600.2020.01164
+UR  - https://doi.org/10.1109/CVPR42600.2020.01164
+Y2  - 2026/10/16
+N1  - DOI/Crossref pagination: 11618-11628. CVF open-access record uses 11621-11631. These are alternative publication pagination records, not two studies; do not merge or import twice.
+ER  -
+
+TY  - GEN
+ID  - R02
+AU  - McInnes, Leland
+AU  - Healy, John
+AU  - Melville, James
+TI  - UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
+PY  - 2020
+DA  - 2020/09/18
+M3  - Preprint
+AN  - arXiv:1802.03426v3
+DO  - 10.48550/arXiv.1802.03426
+UR  - https://arxiv.org/abs/1802.03426v3
+Y2  - 2026/10/16
+N1  - Explicit version citation: v3 (2020-09-18), three authors. First submitted v1 (2018-02-09) had two authors. DataCite's unversioned DOI has publicationYear 2018 and current v3 creators; PY 2020 here intentionally denotes the cited version, not the first submission. The DOI is not version-specific. Preprint, not a peer-reviewed journal article.
+ER  -
+
+TY  - JOUR
+ID  - R03
+AU  - McInnes, Leland
+AU  - Healy, John
+AU  - Saul, Nathaniel
+AU  - Großberger, Lukas
+TI  - UMAP: Uniform Manifold Approximation and Projection
+JO  - Journal of Open Source Software
+PY  - 2018
+DA  - 2018/09/02
+VL  - 3
+IS  - 29
+SP  - 861
+DO  - 10.21105/joss.00861
+UR  - https://joss.theoj.org/papers/10.21105/joss.00861
+Y2  - 2026/10/16
+N1  - Software paper, not the algorithm preprint R02. 861 is an article identifier, not a page range. Software publication does not identify the installed package version in this project.
+ER  -
+
+TY  - CHAP
+ID  - R04
+AU  - Campello, Ricardo J. G. B.
+AU  - Moulavi, Davoud
+AU  - Sander, Joerg
+TI  - Density-Based Clustering Based on Hierarchical Density Estimates
+T2  - Advances in Knowledge Discovery and Data Mining
+T3  - Lecture Notes in Computer Science
+PY  - 2013
+VL  - 7819
+SP  - 160
+EP  - 172
+PB  - Springer
+CY  - Berlin, Heidelberg
+DO  - 10.1007/978-3-642-37456-2_14
+UR  - https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14
+Y2  - 2026/10/16
+N1  - PAKDD 2013 conference contribution published as a book chapter. Crossref type is book-chapter. Metadata and publisher abstract verified; full chapter not read in this audit. No paper-specific equation verification is claimed.
+ER  -
+
+TY  - JOUR
+ID  - R05
+AU  - Campello, Ricardo J. G. B.
+AU  - Moulavi, Davoud
+AU  - Zimek, Arthur
+AU  - Sander, Jörg
+TI  - Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection
+JO  - ACM Transactions on Knowledge Discovery from Data
+PY  - 2015
+DA  - 2015/07/22
+VL  - 10
+IS  - 1
+SP  - 5:1
+EP  - 5:51
+C7  - 5
+DO  - 10.1145/2733381
+UR  - https://doi.org/10.1145/2733381
+Y2  - 2026/10/16
+N1  - Article 5, 51 pages. Crossref stores page 1-51; author-affiliated JCU repository stores article 5 and pages 5:1-5:51, used here. ACM landing page was inaccessible; Crossref metadata and institutional metadata/abstract verified, not full text. If importer drops C7, preserve this article-number note.
+ER  -
+
+TY  - JOUR
+ID  - R06
+AU  - McInnes, Leland
+AU  - Healy, John
+AU  - Astels, Steve
+TI  - hdbscan: Hierarchical density based clustering
+JO  - Journal of Open Source Software
+PY  - 2017
+DA  - 2017/03/21
+VL  - 2
+IS  - 11
+SP  - 205
+DO  - 10.21105/joss.00205
+UR  - https://joss.theoj.org/papers/10.21105/joss.00205
+Y2  - 2026/10/16
+N1  - Python software paper, distinct from the HDBSCAN theory papers R04/R05. 205 is an article identifier, not a page range. Journal spelling follows the JOSS publisher page; Crossref prepends The. This citation is not an installed-version record.
+ER  -
+

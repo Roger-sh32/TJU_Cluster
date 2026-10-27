@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-16",
+  "scope": "Original article and issue metadata only; no fulltext/figures/formula audit",
+  "tls": "certifi CA and hostname verification, no bypass",
+  "records": [
+    {
+      "file": "projecteuclid_article.html",
+      "requested_url": "https://projecteuclid.org/journals/annals-of-statistics/volume-7/issue-1/Bootstrap-Methods-Another-Look-at-the-Jackknife/10.1214/aos/1176344552.full",
+      "started_at_utc": "2026-10-16T12:44:41.255349+00:00",
+      "saved": true,
+      "max_response_bytes": 2097152,
+      "final_url": "https://projecteuclid.org/journals/annals-of-statistics/volume-7/issue-1/Bootstrap-Methods-Another-Look-at-the-Jackknife/10.1214/aos/1176344552.full",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 1158,
+      "sha256": "a35c793d5a215c956bfad3d5a3417cba6ed16d0e588dedd182faf33b3c7ed723"
+    },
+    {
+      "file": "jstor_article.html",
+      "requested_url": "https://www.jstor.org/stable/2958830",
+      "started_at_utc": "2026-10-16T12:44:42.317363+00:00",
+      "saved": true,
+      "max_response_bytes": 2097152,
+      "final_url": "https://www.jstor.org/stable/2958830",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+    },
+    {
+      "file": "jstor_issue.html",
+      "requested_url": "https://www.jstor.org/stable/i348796",
+      "started_at_utc": "2026-10-16T12:44:43.945909+00:00",
+      "saved": true,
+      "max_response_bytes": 2097152,
+      "final_url": "https://www.jstor.org/stable/i348796",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+    }
+  ]
+}

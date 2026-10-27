@@ -1,0 +1,72 @@
+{
+  "scope": "targeted development regression; not full-batch semantic validation",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/verify_extraction_audit8_v2_20260927.py"
+  ],
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\verify_extraction_audit8_v2_20260927.py",
+    "sha256": "695e207319bc0d314c9a5e41344c6747c4bfd7a9c627f6764a7e0ea0eccc6b58"
+  },
+  "current": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_audit8_20260927_v2.csv",
+    "sha256": "78480963c5e28b06638060f8a46745d57c4b14a3ce54bb7c6391eeb7c74763a8"
+  },
+  "baseline": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+    "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+  },
+  "first_run": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_audit8_20260927.csv",
+    "sha256": "78480963c5e28b06638060f8a46745d57c4b14a3ce54bb7c6391eeb7c74763a8"
+  },
+  "quality": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_audit8_20260927_v2.csv.quality.json",
+    "sha256": "cacfd93e7a901581dfbcf73339ac4042fb6ebac670620e626d37cade0d88ba6a"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "scene_count": 8,
+  "column_count": 129,
+  "scene_names": [
+    "scene-0001",
+    "scene-0011",
+    "scene-0042",
+    "scene-0062",
+    "scene-0073",
+    "scene-0315",
+    "scene-0399",
+    "scene-0536"
+  ],
+  "locations": [
+    "boston-seaport",
+    "singapore-hollandvillage",
+    "singapore-onenorth",
+    "singapore-queenstown"
+  ],
+  "all_features_exactly_unchanged": true,
+  "first_run_exactly_unchanged": true,
+  "grouped_risk_exactly_unchanged": true,
+  "nonfinite_cell_count": 12,
+  "nonfinite_by_column": {
+    "merge_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 6,
+      "negative_inf": 0
+    },
+    "vru_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 6,
+      "negative_inf": 0
+    }
+  },
+  "query_exception_count": 0,
+  "nonfinite_clustering_columns": [],
+  "limitations": [
+    "Aggregates and caught exceptions only, not every intermediate.",
+    "Eight targeted scenes cannot clear all 700 development scenes.",
+    "Positive Inf diagnostic distances need context, not automatic error classification."
+  ]
+}

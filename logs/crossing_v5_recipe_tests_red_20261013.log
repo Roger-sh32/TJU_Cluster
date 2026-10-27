@@ -1,0 +1,81 @@
+test_current_formal_fitter_refuses_candidate_manifest (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ERROR
+test_diff_keeps_allowed_change_and_rejects_order_drift (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ERROR
+test_diff_refuses_unrelated_change (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ERROR
+test_uncertainty_inclusion_is_not_dropped_from_comparison (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ERROR
+
+======================================================================
+ERROR: test_current_formal_fitter_refuses_candidate_manifest (logs.test_crossing_v5_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 44, in test_current_formal_fitter_refuses_candidate_manifest
+    frame.to_csv(path, index=False)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\MSI\\AppData\\Local\\Temp\\tmpbiyypm34\\candidate.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 607, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\MSI\\AppData\\Local\\Temp\\tmpbiyypm34'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 47, in test_current_formal_fitter_refuses_candidate_manifest
+    require_feature_provenance(path, frame)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 839, in __exit__
+    self.cleanup()
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 843, in cleanup
+    self._rmtree(self.name)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 825, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 759, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\shutil.py", line 610, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 811, in onerror
+    _resetperms(path)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 285, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\tempfile.py", line 276, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\MSI\\AppData\\Local\\Temp\\tmpbiyypm34'
+
+======================================================================
+ERROR: test_diff_keeps_allowed_change_and_rejects_order_drift (logs.test_crossing_v5_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 19, in test_diff_keeps_allowed_change_and_rejects_order_drift
+    from logs.crossing_v5_regression_20261013 import compare_frames
+ModuleNotFoundError: No module named 'logs.crossing_v5_regression_20261013'
+
+======================================================================
+ERROR: test_diff_refuses_unrelated_change (logs.test_crossing_v5_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 11, in test_diff_refuses_unrelated_change
+    from logs.crossing_v5_regression_20261013 import compare_frames
+ModuleNotFoundError: No module named 'logs.crossing_v5_regression_20261013'
+
+======================================================================
+ERROR: test_uncertainty_inclusion_is_not_dropped_from_comparison (logs.test_crossing_v5_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_regression_20261013.py", line 29, in test_uncertainty_inclusion_is_not_dropped_from_comparison
+    from logs.crossing_v5_regression_20261013 import recompute_crossing_row
+ModuleNotFoundError: No module named 'logs.crossing_v5_regression_20261013'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.094s
+
+FAILED (errors=4)

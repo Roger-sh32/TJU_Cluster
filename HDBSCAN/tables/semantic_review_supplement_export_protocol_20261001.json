@@ -1,0 +1,30 @@
+{
+  "stage": "development_supplement_export_protocol",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/export_review_supplements_20261001.py"
+  ],
+  "selection": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\semantic_review_supplements_20261001.json",
+    "sha256": "c2e548fb0e78c8087b6cbd8c2e22830f253f88438ef1eb9862d6c333027f4942",
+    "bytes": 5273
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\export_review_supplements_20261001.py",
+    "sha256": "5f1ff9fd04d3a789b57bc06738193b90c4b664748065fb4d1c6ae5c1320731c3",
+    "bytes": 1641
+  },
+  "export_recipe": {
+    "path": "F:\\Scene_cluster\\logs\\build_semantic_review_pack_20261001.py",
+    "sha256": "d967d6a1066e4210a439750c564cd0055ef86204b3b7db77b1703d0a757220cf",
+    "bytes": 11733
+  },
+  "names": [
+    "scene-0107",
+    "scene-0151",
+    "scene-0032",
+    "scene-0014"
+  ],
+  "output_report": "F:\\Scene_cluster\\HDBSCAN\\tables\\semantic_review_supplement_media_20261001.json",
+  "output_directory": "F:\\Scene_cluster\\exports\\semantic_review_supplements_20261001"
+}

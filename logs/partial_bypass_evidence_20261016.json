@@ -1,0 +1,1913 @@
+{
+  "version": "partial_bypass_readonly_20261016",
+  "focus": [
+    "scene-0552",
+    "scene-0011",
+    "scene-0669"
+  ],
+  "input_bindings": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+      "bytes": 14970,
+      "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+      "bytes": 8398,
+      "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "bytes": 7367931,
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+      "bytes": 1131507,
+      "sha256": "a3082bb3d7be151e1a38bb611436bec36e01d15cc7317912565caedacbaa1667"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+      "bytes": 33264,
+      "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\longitudinal_candidate_v7.py",
+      "bytes": 10953,
+      "sha256": "33059b93410c70148d161ce7adf94c1d58f1e96167edff31ce0f9157c76c5a3e"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "bytes": 30874,
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\development_review_feedback10_20261014.md",
+      "bytes": 10908,
+      "sha256": "dca63c1c71621d1f4d94fcbe9f28493ba936b2dac16c5ef6ea42005aabd2ffcd"
+    }
+  ],
+  "scope": "Frozen development replay diagnosis; body projection is one-dimensional debugging, not lane occupancy or conflict",
+  "feature_updates": false,
+  "threshold_updates": false,
+  "human_target_acceptance": false,
+  "evaluation_used": false,
+  "scenes": [
+    {
+      "scene_name": "scene-0552",
+      "scene_token": "16e50a63b809463099cb4c378fe0641e",
+      "reproduced_field_count": 31,
+      "reproduced_fields": {
+        "car_following_ratio": 0.07317073170731707,
+        "following_event_count": 2,
+        "following_max_duration": 1.0003010034561157,
+        "close_following_ratio": 0.0,
+        "front_vehicle_min_dist": 29.353529243282708,
+        "stopped_lead_ratio": 0.07317073170731707,
+        "stationary_lead_obstacle_ratio": 0.04878048780487805,
+        "temporarily_stopped_lead_ratio": 0.0,
+        "blocked_path_obstacle_ratio": 0.0,
+        "stationary_lead_event_count": 2,
+        "stationary_lead_min_dist": 32.2984921614491,
+        "ego_evasive_lateral_shift": 22.541793628621864,
+        "ego_evasive_net_heading_change": 0.9758343992821115,
+        "ego_evasive_lane_change_flag": 0,
+        "obstacle_induced_route_deviation_flag": 0,
+        "route_deviation_decision_demand": 0.0,
+        "min_ttc": 7.500511265298755,
+        "min_ttc_scene_time": 14.398539066314697,
+        "min_ttc_target_annotation_token": "7435337f4e38495385dda829c17c6539",
+        "min_ttc_target_instance_token": "3df0bafd3b7d4b3aaefb3925073a5808",
+        "min_ttc_target_category": "vehicle.car",
+        "min_ttc_target_clearance": 29.353529243282708,
+        "min_ttc_target_lateral_distance": 1.7027653675010903,
+        "min_ttc_target_speed": 0.3117612664180767,
+        "min_ttc_target_forward_speed": -0.25294498710679153,
+        "min_ttc_relative_speed": 3.9135371183411616,
+        "min_ttc_target_heading_delta": -0.9459993547170629,
+        "dangerous_ttc_ratio": 0.0,
+        "dangerous_ttc_frame_ratio": 0.0,
+        "dangerous_ttc_max_duration": 0.0,
+        "ttc_valid_ratio": 0.07317073170731707
+      },
+      "static_summary": {
+        "ratio": 0.04878048780487805,
+        "count": 2,
+        "max_duration": 0.49987995624542236
+      },
+      "blocked_summary": {
+        "ratio": 0.0,
+        "count": 0,
+        "max_duration": 0.0
+      },
+      "static_anchors": [
+        {
+          "index": 28,
+          "scene_time_s": 13.898118019104004,
+          "selected": {
+            "index": 28,
+            "instance_token": "ea8274545a234a8aad2bf2d600cb1bd8",
+            "annotation_token": "4fa293f7f3734d679d93cbbd76a5d38e",
+            "category": "vehicle.car",
+            "clearance": 32.32939942873365,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.08785781546715912,
+            "target_forward_speed": -0.03803548024302009,
+            "heading_delta": 1.8329865072115956,
+            "lateral_distance": -0.09526488554216073,
+            "local_turn": 0.7903603321923531,
+            "permanent_static": true
+          }
+        },
+        {
+          "index": 33,
+          "scene_time_s": 16.401369094848633,
+          "selected": {
+            "index": 33,
+            "instance_token": "07e9396834cb433ea84ebaa6fa58195d",
+            "annotation_token": "0871d343e3ae40f79af84dfe1c51d82f",
+            "category": "vehicle.trailer",
+            "clearance": 32.2984921614491,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.052013523516248834,
+            "target_forward_speed": -0.0520123016318038,
+            "heading_delta": 0.014481370714861688,
+            "lateral_distance": 0.008658428426515152,
+            "local_turn": 0.31869983960809645,
+            "permanent_static": true
+          }
+        }
+      ],
+      "strict_condition_components": {
+        "positive_static_event_count": true,
+        "sustained_static_branch": false,
+        "brief_shift_branch": false,
+        "brief_heading_branch": false,
+        "brief_distance_branch": false,
+        "shift_in_strict_range": false,
+        "heading_in_strict_range": false
+      },
+      "first_static_index": 28,
+      "first_blocked_index": -1,
+      "existing_raw_deviation": false,
+      "existing_context_supported": false,
+      "existing_v7_scene_protection": false,
+      "static_anchor_local_windows_diagnostic_only": [
+        {
+          "index": 28,
+          "instance_token": "ea8274545a234a8aad2bf2d600cb1bd8",
+          "available_future_s": 5.950392961502075,
+          "window_s_requested": 10.0,
+          "horizon_complete": false,
+          "existing_shift_function_m": 22.541793628621864,
+          "existing_heading_function_rad": 0.9758343992821115
+        },
+        {
+          "index": 33,
+          "instance_token": "07e9396834cb433ea84ebaa6fa58195d",
+          "available_future_s": 3.4471418857574463,
+          "window_s_requested": 10.0,
+          "horizon_complete": false,
+          "existing_shift_function_m": 2.118125394958779,
+          "existing_heading_function_rad": 0.15979419599327851
+        }
+      ],
+      "heavy_tracks_after14s": [
+        {
+          "instance_token": "07e9396834cb433ea84ebaa6fa58195d",
+          "category": "vehicle.trailer",
+          "max_scene_speed_mps": 0.4815203260961487,
+          "bounded_stationary": true,
+          "permanent_static_by_existing_rule": true,
+          "frames": [
+            {
+              "index": 29,
+              "scene_time_s": 14.398539066314697,
+              "forward_m": 41.45398277932344,
+              "center_lateral_m": 26.324186333273698,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": 0.6255733616972371,
+              "speed_mps": 0.05195594136185975,
+              "ego_speed_mps": 3.66059213123437,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                21.083390821490738,
+                31.564981845056657
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 30,
+              "scene_time_s": 14.89896297454834,
+              "forward_m": 43.995975199452054,
+              "center_lateral_m": 17.776655192410125,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": 0.4247497817653596,
+              "speed_mps": 0.053892968564518175,
+              "ego_speed_mps": 3.664082677546452,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                13.612004309077644,
+                21.941306075742606
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 31,
+              "scene_time_s": 15.399955987930298,
+              "forward_m": 44.52074715337183,
+              "center_lateral_m": 10.000088166541769,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": 0.24800100592698218,
+              "speed_mps": 0.051935303811339706,
+              "ego_speed_mps": 3.754574738367842,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                6.922672366785916,
+                13.077503966297622
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 32,
+              "scene_time_s": 15.900949001312256,
+              "forward_m": 43.49649873523131,
+              "center_lateral_m": 3.847001238142977,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": 0.10682146778533431,
+              "speed_mps": 0.053954678070508084,
+              "ego_speed_mps": 3.915945494200092,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                1.7086510048858585,
+                5.9853514714000955
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 33,
+              "scene_time_s": 16.401369094848633,
+              "forward_m": 41.5624921614491,
+              "center_lateral_m": 0.008658428426515152,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": 0.014481370714861688,
+              "speed_mps": 0.052013523516248834,
+              "ego_speed_mps": 4.156640923320027,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": true,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": true,
+              "ledger_candidate": {
+                "index": 33,
+                "instance_token": "07e9396834cb433ea84ebaa6fa58195d",
+                "annotation_token": "0871d343e3ae40f79af84dfe1c51d82f",
+                "category": "vehicle.trailer",
+                "clearance": 32.2984921614491,
+                "supported": true,
+                "on_surface": true,
+                "target_speed": 0.052013523516248834,
+                "target_forward_speed": -0.0520123016318038,
+                "heading_delta": 0.014481370714861688,
+                "lateral_distance": 0.008658428426515152,
+                "local_turn": 0.31869983960809645,
+                "permanent_static": true
+              },
+              "selected": true,
+              "static_selected": true,
+              "body_lateral_projection_m": [
+                -1.4912637184574888,
+                1.5085805753105193
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 34,
+              "scene_time_s": 16.901239156723022,
+              "forward_m": 39.00660654725134,
+              "center_lateral_m": -1.94108160722451,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.035832028095240887,
+              "speed_mps": 0.05205177257848912,
+              "ego_speed_mps": 4.965492923887486,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -3.5899559797998757,
+                -0.29220723464914466
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 35,
+              "scene_time_s": 17.401111125946045,
+              "forward_m": 36.04948406499451,
+              "center_lateral_m": -2.865248663795007,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.0626049420896142,
+              "speed_mps": 0.054071265928581184,
+              "ego_speed_mps": 5.742374031355529,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -4.699833212792102,
+                -1.0306641147979128
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 36,
+              "scene_time_s": 17.900452136993408,
+              "forward_m": 32.68986935394997,
+              "center_lateral_m": -3.328297832380373,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.07870656071768423,
+              "speed_mps": 0.05207019061708644,
+              "ego_speed_mps": 6.584397973650357,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -5.273946437719096,
+                -1.38264922704165
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 37,
+              "scene_time_s": 18.399778127670288,
+              "forward_m": 29.09740998268954,
+              "center_lateral_m": -3.8625434430286143,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.09886922015083588,
+              "speed_mps": 0.05343423121150442,
+              "ego_speed_mps": 7.009175343717632,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -5.9465532265395655,
+                -1.778533659517663
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 38,
+              "scene_time_s": 18.849318027496338,
+              "forward_m": 25.632260699759343,
+              "center_lateral_m": -4.327610255180137,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.11877990320492263,
+              "speed_mps": 0.05207060774423579,
+              "ego_speed_mps": 7.486809956405642,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -6.547420946607295,
+                -2.1077995637529803
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 39,
+              "scene_time_s": 19.348639965057373,
+              "forward_m": 21.628094350270516,
+              "center_lateral_m": -4.820852586303989,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.14323195223097532,
+              "speed_mps": 0.0540509694946403,
+              "ego_speed_mps": 7.758191384521329,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -7.20622908214604,
+                -2.435476090461938
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 40,
+              "scene_time_s": 19.84851098060608,
+              "forward_m": 17.716328487336696,
+              "center_lateral_m": -4.996301120912888,
+              "length_m": 14.028,
+              "width_m": 2.797,
+              "heading_delta_rad": -0.15635214395450903,
+              "speed_mps": 0.0540509694946403,
+              "ego_speed_mps": 7.6591881327424085,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -7.469933318549825,
+                -2.5226689232759503
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            }
+          ],
+          "human_blocking_truck_identity_confirmed": false
+        },
+        {
+          "instance_token": "38c457868d8c4d6fbae5f30892162c2f",
+          "category": "vehicle.truck",
+          "max_scene_speed_mps": 7.714658402727954,
+          "bounded_stationary": false,
+          "permanent_static_by_existing_rule": false,
+          "frames": [
+            {
+              "index": 29,
+              "scene_time_s": 14.398539066314697,
+              "forward_m": -10.826202644897842,
+              "center_lateral_m": 8.11972641244529,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -0.988960354381916,
+              "speed_mps": 1.4155465946034367,
+              "ego_speed_mps": 3.66059213123437,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                4.944656314237559,
+                11.294796510653022
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 30,
+              "scene_time_s": 14.89896297454834,
+              "forward_m": -10.524321676567642,
+              "center_lateral_m": 9.649780236397659,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.1631807704607167,
+              "speed_mps": 0.9922948604950538,
+              "ego_speed_mps": 3.664082677546452,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                6.381192527249562,
+                12.918367945545755
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 31,
+              "scene_time_s": 15.399955987930298,
+              "forward_m": -10.483743417969293,
+              "center_lateral_m": 11.012113357548479,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.3132961336964912,
+              "speed_mps": 1.5868623278346663,
+              "ego_speed_mps": 3.754574738367842,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                7.742290562561054,
+                14.281936152535904
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 32,
+              "scene_time_s": 15.900949001312256,
+              "forward_m": -10.768954233454718,
+              "center_lateral_m": 11.7109500619416,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.4528712640761465,
+              "speed_mps": 1.8278961729327794,
+              "ego_speed_mps": 3.915945494200092,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                8.50598512745471,
+                14.91591499642849
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 33,
+              "scene_time_s": 16.401369094848633,
+              "forward_m": -11.677889589952109,
+              "center_lateral_m": 11.845005667547863,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.4737956183118246,
+              "speed_mps": 3.0030899147118912,
+              "ego_speed_mps": 4.156640923320027,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                8.655183744066557,
+                15.034827591029169
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 34,
+              "scene_time_s": 16.901239156723022,
+              "forward_m": -13.248385881177272,
+              "center_lateral_m": 11.005916821170661,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.4177884505977414,
+              "speed_mps": 3.683564884686815,
+              "ego_speed_mps": 4.965492923887486,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                7.778714015975801,
+                14.233119626365522
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 35,
+              "scene_time_s": 17.401111125946045,
+              "forward_m": -15.247592958812742,
+              "center_lateral_m": 9.64773218864809,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.2684276215832455,
+              "speed_mps": 4.240463190720505,
+              "ego_speed_mps": 5.742374031355529,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                6.370541749762752,
+                12.92492262753343
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 36,
+              "scene_time_s": 17.900452136993408,
+              "forward_m": -17.199918910769085,
+              "center_lateral_m": 8.17606468370479,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -1.0734906126664028,
+              "speed_mps": 4.922668710932636,
+              "ego_speed_mps": 6.584397973650357,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                4.943370463070158,
+                11.408758904339424
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 37,
+              "scene_time_s": 18.399778127670288,
+              "forward_m": -18.869787739106666,
+              "center_lateral_m": 6.763973564820542,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -0.9000679851114148,
+              "speed_mps": 5.64622917296675,
+              "ego_speed_mps": 7.009175343717632,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                3.6739500833604124,
+                9.853997046280671
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 38,
+              "scene_time_s": 18.849318027496338,
+              "forward_m": -20.1193783220063,
+              "center_lateral_m": 5.602055188431427,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -0.6741929410644424,
+              "speed_mps": 6.335369720653735,
+              "ego_speed_mps": 7.486809956405642,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                2.8358542590110813,
+                8.368256117851772
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 39,
+              "scene_time_s": 19.348639965057373,
+              "forward_m": -21.081707045718,
+              "center_lateral_m": 4.63345440655466,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -0.505059715912177,
+              "speed_mps": 7.714658402727953,
+              "ego_speed_mps": 7.758191384521329,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                2.2029213622326793,
+                7.06398745087664
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 40,
+              "scene_time_s": 19.84851098060608,
+              "forward_m": -21.295364632667088,
+              "center_lateral_m": 3.462641715556207,
+              "length_m": 6.203,
+              "width_m": 2.125,
+              "heading_delta_rad": -0.39440604538912744,
+              "speed_mps": 7.714658402727953,
+              "ego_speed_mps": 7.6591881327424085,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": false
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                1.2899331065682653,
+                5.635350324544149
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            }
+          ],
+          "human_blocking_truck_identity_confirmed": false
+        },
+        {
+          "instance_token": "4ba523468a6c4f29bee780e4c20c129f",
+          "category": "vehicle.construction",
+          "max_scene_speed_mps": 0.5947233793598156,
+          "bounded_stationary": false,
+          "permanent_static_by_existing_rule": false,
+          "frames": [
+            {
+              "index": 30,
+              "scene_time_s": 14.89896297454834,
+              "forward_m": -93.85523260435397,
+              "center_lateral_m": -14.527381382480392,
+              "length_m": 4.521,
+              "width_m": 2.316,
+              "heading_delta_rad": -2.740259299125617,
+              "speed_mps": 0.21983596421120719,
+              "ego_speed_mps": 3.664082677546452,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -16.47642329545755,
+                -12.578339469503232
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 32,
+              "scene_time_s": 15.900949001312256,
+              "forward_m": -97.63027671992386,
+              "center_lateral_m": 15.610989151695078,
+              "length_m": 4.521,
+              "width_m": 2.316,
+              "heading_delta_rad": -3.054978797581657,
+              "speed_mps": 0.21840290892641356,
+              "ego_speed_mps": 3.915945494200092,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                14.261784160685263,
+                16.960194142704893
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 33,
+              "scene_time_s": 16.401369094848633,
+              "forward_m": -97.94911002398597,
+              "center_lateral_m": 24.41996371210357,
+              "length_m": 4.521,
+              "width_m": 2.316,
+              "heading_delta_rad": 3.137468985282479,
+              "speed_mps": 0.2192646729147174,
+              "ego_speed_mps": 4.156640923320027,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                23.252652031985924,
+                25.587275392221215
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 34,
+              "scene_time_s": 16.901239156723022,
+              "forward_m": -99.18669972805482,
+              "center_lateral_m": 29.142970665596046,
+              "length_m": 4.521,
+              "width_m": 2.316,
+              "heading_delta_rad": 3.0887563978769017,
+              "speed_mps": 0.2203289626504732,
+              "ego_speed_mps": 4.965492923887486,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                27.867205873832606,
+                30.418735457359485
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 35,
+              "scene_time_s": 17.401111125946045,
+              "forward_m": -101.3567624356882,
+              "center_lateral_m": 31.597620958360274,
+              "length_m": 4.521,
+              "width_m": 2.316,
+              "heading_delta_rad": 3.0635843016919644,
+              "speed_mps": 0.0,
+              "ego_speed_mps": 5.742374031355529,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                30.26698347342841,
+                32.92825844329214
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 36,
+              "scene_time_s": 17.900452136993408,
+              "forward_m": -104.17523698433561,
+              "center_lateral_m": 33.12141316798034,
+              "length_m": 4.521,
+              "width_m": 2.316,
+              "heading_delta_rad": 3.049081800369488,
+              "speed_mps": 0.0,
+              "ego_speed_mps": 6.584397973650357,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                31.759542239953845,
+                34.48328409600684
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            }
+          ],
+          "human_blocking_truck_identity_confirmed": false
+        },
+        {
+          "instance_token": "88d91f55ae214473ae529bd01ab004be",
+          "category": "vehicle.truck",
+          "max_scene_speed_mps": 0.08487866859633872,
+          "bounded_stationary": false,
+          "permanent_static_by_existing_rule": true,
+          "frames": [
+            {
+              "index": 31,
+              "scene_time_s": 15.399955987930298,
+              "forward_m": 52.322594366915965,
+              "center_lateral_m": 11.951764383673051,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": 0.24353869876947898,
+              "speed_mps": 0.08395223424192921,
+              "ego_speed_mps": 3.754574738367842,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                9.863557640820861,
+                14.039971126525241
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 32,
+              "scene_time_s": 15.900949001312256,
+              "forward_m": 51.4812322225234,
+              "center_lateral_m": 4.680979137680289,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": 0.10298654826873868,
+              "speed_mps": 0.0846873430334582,
+              "ego_speed_mps": 3.915945494200092,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                2.981737760210809,
+                6.3802205151497695
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 33,
+              "scene_time_s": 16.401369094848633,
+              "forward_m": 49.577043408567384,
+              "center_lateral_m": 0.10159554327443068,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": 0.011273121278014631,
+              "speed_mps": 0.08414083999803595,
+              "ego_speed_mps": 4.156640923320027,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": true,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": true,
+              "ledger_candidate": {
+                "index": 33,
+                "instance_token": "88d91f55ae214473ae529bd01ab004be",
+                "annotation_token": "473eb4e8484a4fc184beb4f2bffa8570",
+                "category": "vehicle.truck",
+                "clearance": 44.27154340856738,
+                "supported": true,
+                "on_surface": true,
+                "target_speed": 0.08414083999803594,
+                "target_forward_speed": -0.07984066486724942,
+                "heading_delta": 0.011273121278014631,
+                "lateral_distance": 0.10159554327443068,
+                "local_turn": 0.31869983960809645,
+                "permanent_static": true
+              },
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -1.3252602684458121,
+                1.5284513549946734
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 34,
+              "scene_time_s": 16.901239156723022,
+              "forward_m": 47.001644428578906,
+              "center_lateral_m": -2.250912651725841,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.03841429621086956,
+              "speed_mps": 0.08289461844270678,
+              "ego_speed_mps": 4.965492923887486,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -3.759731367743135,
+                -0.7420939357085468
+              ],
+              "body_projection_intersects_lateral_strip_only": true
+            },
+            {
+              "index": 35,
+              "scene_time_s": 17.401111125946045,
+              "forward_m": 44.02034929448649,
+              "center_lateral_m": -3.3883122290267953,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.06456122637944928,
+              "speed_mps": 0.08422997849085491,
+              "ego_speed_mps": 5.742374031355529,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -4.975040977189399,
+                -1.8015834808641922
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 36,
+              "scene_time_s": 17.900452136993408,
+              "forward_m": 40.63829534145854,
+              "center_lateral_m": -3.978797887028369,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.08003752614677895,
+              "speed_mps": 0.08487288905597865,
+              "ego_speed_mps": 6.584397973650357,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -5.611133727794694,
+                -2.346462046262044
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 37,
+              "scene_time_s": 18.399778127670288,
+              "forward_m": 37.017062612289685,
+              "center_lateral_m": -4.673005179613192,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.09957488550351412,
+              "speed_mps": 0.08441369382500756,
+              "ego_speed_mps": 7.009175343717632,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -6.362355982114444,
+                -2.98365437711194
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 38,
+              "scene_time_s": 18.849318027496338,
+              "forward_m": 33.52237618944778,
+              "center_lateral_m": -5.293713023717753,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.11892261490337067,
+              "speed_mps": 0.0842331835761332,
+              "ego_speed_mps": 7.486809956405642,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -7.038890007191093,
+                -3.5485360402444135
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 39,
+              "scene_time_s": 19.348639965057373,
+              "forward_m": 29.478380591095018,
+              "center_lateral_m": -5.977897069943522,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.14274936886215908,
+              "speed_mps": 0.08289478427472832,
+              "ego_speed_mps": 7.758191384521329,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -7.790924262530223,
+                -4.1648698773568205
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 40,
+              "scene_time_s": 19.84851098060608,
+              "forward_m": 25.538925341197785,
+              "center_lateral_m": -6.254717372382411,
+              "length_m": 6.111,
+              "width_m": 2.785,
+              "heading_delta_rad": -0.15524357801218816,
+              "speed_mps": 0.08289478427472832,
+              "ego_speed_mps": 7.6591881327424085,
+              "same_path_components": {
+                "forward_window": true,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -8.102914734712979,
+                -4.406520010051844
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            }
+          ],
+          "human_blocking_truck_identity_confirmed": false
+        },
+        {
+          "instance_token": "9993b929a7a74989951c886ed8f736ec",
+          "category": "vehicle.trailer",
+          "max_scene_speed_mps": 1.1539828342300436,
+          "bounded_stationary": false,
+          "permanent_static_by_existing_rule": false,
+          "frames": [
+            {
+              "index": 29,
+              "scene_time_s": 14.398539066314697,
+              "forward_m": -3.0185968435652164,
+              "center_lateral_m": -14.831156438787156,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 1.0373292818583641,
+              "speed_mps": 0.07993221747982267,
+              "ego_speed_mps": 3.66059213123437,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -16.56501370343635,
+                -13.097299174137962
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 30,
+              "scene_time_s": 14.89896297454834,
+              "forward_m": -7.756978685199582,
+              "center_lateral_m": -13.743712400832248,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.7949471382644976,
+              "speed_mps": 0.0792403616068636,
+              "ego_speed_mps": 3.664082677546452,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -15.475471916108,
+                -12.011952885556495
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 31,
+              "scene_time_s": 15.399955987930298,
+              "forward_m": -11.941916823002517,
+              "center_lateral_m": -11.995526684856094,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.5765925451897174,
+              "speed_mps": 0.08046277840509554,
+              "ego_speed_mps": 3.754574738367842,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -13.638585118265935,
+                -10.352468251446252
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 32,
+              "scene_time_s": 15.900949001312256,
+              "forward_m": -15.482970709839739,
+              "center_lateral_m": -10.050920116431747,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.3938071898116642,
+              "speed_mps": 0.0791294907207445,
+              "ego_speed_mps": 3.915945494200092,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -11.559441170499468,
+                -8.542399062364026
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 33,
+              "scene_time_s": 16.401369094848633,
+              "forward_m": -18.434871177611964,
+              "center_lateral_m": -8.459786373348047,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.2599088612660199,
+              "speed_mps": 0.07941838174411939,
+              "ego_speed_mps": 4.156640923320027,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -9.837538468714534,
+                -7.08203427798156
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 34,
+              "scene_time_s": 16.901239156723022,
+              "forward_m": -21.330687863774934,
+              "center_lateral_m": -7.4480361337411605,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.16808290666779024,
+              "speed_mps": 0.10327371406370113,
+              "ego_speed_mps": 4.965492923887486,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -8.721690924203422,
+                -6.174381343278899
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 35,
+              "scene_time_s": 17.401111125946045,
+              "forward_m": -24.351407331351773,
+              "center_lateral_m": -6.810453794939343,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.14291081048285292,
+              "speed_mps": 0.10509565017431485,
+              "ego_speed_mps": 5.742374031355529,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -8.053659070046415,
+                -5.567248519832271
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 36,
+              "scene_time_s": 17.900452136993408,
+              "forward_m": -27.70439813226826,
+              "center_lateral_m": -6.356702165215982,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.1284083091603767,
+              "speed_mps": 0.10444803443365128,
+              "ego_speed_mps": 6.584397973650357,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -7.582005540408745,
+                -5.131398790023218
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 37,
+              "scene_time_s": 18.399778127670288,
+              "forward_m": -31.28453989768257,
+              "center_lateral_m": -5.730972367080719,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.10984471899598702,
+              "speed_mps": 0.10376744040305683,
+              "ego_speed_mps": 7.009175343717632,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -6.932985295205261,
+                -4.528959438956178
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 38,
+              "scene_time_s": 18.849318027496338,
+              "forward_m": -34.72138593068047,
+              "center_lateral_m": -5.045431547706051,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.091373667763754,
+              "speed_mps": 0.10509964923150907,
+              "ego_speed_mps": 7.486809956405642,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -6.223858999579413,
+                -3.8670040958326894
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 39,
+              "scene_time_s": 19.348639965057373,
+              "forward_m": -38.667382162114976,
+              "center_lateral_m": -4.122264621631437,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.06852067519664208,
+              "speed_mps": 0.10327392066467016,
+              "ego_speed_mps": 7.758191384521329,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -5.270955814095975,
+                -2.9735734291668994
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            },
+            {
+              "index": 40,
+              "scene_time_s": 19.84851098060608,
+              "forward_m": -42.50687528877737,
+              "center_lateral_m": -3.5669603845430906,
+              "length_m": 2.78,
+              "width_m": 2.112,
+              "heading_delta_rad": 0.0570012980800887,
+              "speed_mps": 0.10327392066467016,
+              "ego_speed_mps": 7.6591881327424085,
+              "same_path_components": {
+                "forward_window": false,
+                "center_lateral": false,
+                "forward_velocity": true,
+                "lateral_velocity": true
+              },
+              "same_path": false,
+              "ledger_candidate": null,
+              "selected": false,
+              "static_selected": false,
+              "body_lateral_projection_m": [
+                -4.700434204189188,
+                -2.433486564896993
+              ],
+              "body_projection_intersects_lateral_strip_only": false
+            }
+          ],
+          "human_blocking_truck_identity_confirmed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0011",
+      "scene_token": "c075fbdd97124beaba95bc5c25149f30",
+      "reproduced_field_count": 31,
+      "reproduced_fields": {
+        "car_following_ratio": 0.35,
+        "following_event_count": 2,
+        "following_max_duration": 6.452468156814575,
+        "close_following_ratio": 0.0,
+        "front_vehicle_min_dist": 20.520032500747426,
+        "stopped_lead_ratio": 0.025,
+        "stationary_lead_obstacle_ratio": 0.025,
+        "temporarily_stopped_lead_ratio": 0.0,
+        "blocked_path_obstacle_ratio": 0.0,
+        "stationary_lead_event_count": 1,
+        "stationary_lead_min_dist": 27.863665523416955,
+        "ego_evasive_lateral_shift": 4.832621600416648,
+        "ego_evasive_net_heading_change": 0.07608489641806315,
+        "ego_evasive_lane_change_flag": 1,
+        "obstacle_induced_route_deviation_flag": 0,
+        "route_deviation_decision_demand": 0.0,
+        "min_ttc": 4.880104314891523,
+        "min_ttc_scene_time": 12.45100998878479,
+        "min_ttc_target_annotation_token": "bc36045758f54eaa9ee02050651c3271",
+        "min_ttc_target_instance_token": "1e33e49bbc8a4f368892118eb603166f",
+        "min_ttc_target_category": "vehicle.car",
+        "min_ttc_target_clearance": 20.520032500747426,
+        "min_ttc_target_lateral_distance": 1.5907729770127954,
+        "min_ttc_target_speed": 0.948006796935749,
+        "min_ttc_target_forward_speed": 0.8455318007416135,
+        "min_ttc_relative_speed": 4.20483481021728,
+        "min_ttc_target_heading_delta": 0.26423383035108206,
+        "dangerous_ttc_ratio": 0.0,
+        "dangerous_ttc_frame_ratio": 0.0,
+        "dangerous_ttc_max_duration": 0.0,
+        "ttc_valid_ratio": 0.35
+      },
+      "static_summary": {
+        "ratio": 0.025,
+        "count": 1,
+        "max_duration": 0.49990010261535645
+      },
+      "blocked_summary": {
+        "ratio": 0.0,
+        "count": 0,
+        "max_duration": 0.0
+      },
+      "static_anchors": [
+        {
+          "index": 11,
+          "scene_time_s": 5.498090982437134,
+          "selected": {
+            "index": 11,
+            "instance_token": "8a557d57675e48eb801633e3e327d939",
+            "annotation_token": "e4f255bfe6ba4084b8e7032b47403311",
+            "category": "vehicle.truck",
+            "clearance": 27.863665523416955,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.11361577094494564,
+            "target_forward_speed": -0.039660088207772434,
+            "heading_delta": -3.0295166903274353,
+            "lateral_distance": -0.5126169241777063,
+            "local_turn": 0.3213421229022835,
+            "permanent_static": true
+          }
+        }
+      ],
+      "strict_condition_components": {
+        "positive_static_event_count": true,
+        "sustained_static_branch": false,
+        "brief_shift_branch": true,
+        "brief_heading_branch": true,
+        "brief_distance_branch": true,
+        "shift_in_strict_range": true,
+        "heading_in_strict_range": true
+      },
+      "first_static_index": 11,
+      "first_blocked_index": -1,
+      "existing_raw_deviation": false,
+      "existing_context_supported": false,
+      "existing_v7_scene_protection": true,
+      "static_anchor_local_windows_diagnostic_only": [
+        {
+          "index": 11,
+          "instance_token": "8a557d57675e48eb801633e3e327d939",
+          "available_future_s": 14.002055883407593,
+          "window_s_requested": 10.0,
+          "horizon_complete": true,
+          "existing_shift_function_m": 4.832621600416648,
+          "existing_heading_function_rad": 0.07608489641806315
+        }
+      ],
+      "heavy_tracks_after14s": []
+    },
+    {
+      "scene_name": "scene-0669",
+      "scene_token": "30783e1b472a4101b82be19e41636ba2",
+      "reproduced_field_count": 31,
+      "reproduced_fields": {
+        "car_following_ratio": 0.4146341463414634,
+        "following_event_count": 6,
+        "following_max_duration": 2.5004955530166626,
+        "close_following_ratio": 0.0,
+        "front_vehicle_min_dist": 18.210812124815632,
+        "stopped_lead_ratio": 0.12195121951219512,
+        "stationary_lead_obstacle_ratio": 0.12195121951219512,
+        "temporarily_stopped_lead_ratio": 0.0,
+        "blocked_path_obstacle_ratio": 0.12195121951219512,
+        "stationary_lead_event_count": 2,
+        "stationary_lead_min_dist": 18.210812124815632,
+        "ego_evasive_lateral_shift": 46.804568354567564,
+        "ego_evasive_net_heading_change": 1.3820861347384856,
+        "ego_evasive_lane_change_flag": 0,
+        "obstacle_induced_route_deviation_flag": 0,
+        "route_deviation_decision_demand": 0.0,
+        "min_ttc": 3.36368416871326,
+        "min_ttc_scene_time": 3.847081184387207,
+        "min_ttc_target_annotation_token": "a627a14ae98b4bb9a9ea825ff336c08b",
+        "min_ttc_target_instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+        "min_ttc_target_category": "vehicle.car",
+        "min_ttc_target_clearance": 18.210812124815632,
+        "min_ttc_target_lateral_distance": 0.46303458032194644,
+        "min_ttc_target_speed": 0.0,
+        "min_ttc_target_forward_speed": -0.0,
+        "min_ttc_relative_speed": 5.413948281530241,
+        "min_ttc_target_heading_delta": 2.26025710306261,
+        "dangerous_ttc_ratio": 0.0,
+        "dangerous_ttc_frame_ratio": 0.0,
+        "dangerous_ttc_max_duration": 0.0,
+        "ttc_valid_ratio": 0.14634146341463414
+      },
+      "static_summary": {
+        "ratio": 0.12195121951219512,
+        "count": 2,
+        "max_duration": 1.348671555519104
+      },
+      "blocked_summary": {
+        "ratio": 0.12195121951219512,
+        "count": 2,
+        "max_duration": 1.348671555519104
+      },
+      "static_anchors": [
+        {
+          "index": 3,
+          "scene_time_s": 1.4986591339111328,
+          "selected": {
+            "index": 3,
+            "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+            "annotation_token": "f1e77799c0bd4e5693aca5362759cd69",
+            "category": "vehicle.car",
+            "clearance": 27.480830288552255,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.0,
+            "target_forward_speed": -0.0,
+            "heading_delta": 1.7384800348030751,
+            "lateral_distance": -1.650740371485167,
+            "local_turn": 0.2981166565711546,
+            "permanent_static": true
+          }
+        },
+        {
+          "index": 4,
+          "scene_time_s": 1.8984551429748535,
+          "selected": {
+            "index": 4,
+            "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+            "annotation_token": "7cf41203d3644052b6df69cb0330a944",
+            "category": "vehicle.car",
+            "clearance": 26.23961799558363,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.0,
+            "target_forward_speed": -0.0,
+            "heading_delta": 1.7887073211111586,
+            "lateral_distance": -0.05704495533242415,
+            "local_turn": 0.432337050637841,
+            "permanent_static": true
+          }
+        },
+        {
+          "index": 5,
+          "scene_time_s": 2.347452163696289,
+          "selected": {
+            "index": 5,
+            "instance_token": "8c933940fb2d477896c388972c452343",
+            "annotation_token": "5b2ad4ea74044e929156e366fe43dc31",
+            "category": "vehicle.truck",
+            "clearance": 20.77692417933784,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.0,
+            "target_forward_speed": -0.0,
+            "heading_delta": 1.843586480526994,
+            "lateral_distance": -0.8381296918781445,
+            "local_turn": 0.5557314301053955,
+            "permanent_static": true
+          }
+        },
+        {
+          "index": 7,
+          "scene_time_s": 3.34720516204834,
+          "selected": {
+            "index": 7,
+            "instance_token": "fe685eb2dbb64c50b12a357d003c5811",
+            "annotation_token": "a2ad4a5b7bae464987fffbe4e99a5af8",
+            "category": "vehicle.car",
+            "clearance": 22.4094909085452,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.0,
+            "target_forward_speed": -0.0,
+            "heading_delta": 2.111097044623576,
+            "lateral_distance": 1.6349634285391392,
+            "local_turn": 0.6138599609786426,
+            "permanent_static": true
+          }
+        },
+        {
+          "index": 8,
+          "scene_time_s": 3.847081184387207,
+          "selected": {
+            "index": 8,
+            "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+            "annotation_token": "a627a14ae98b4bb9a9ea825ff336c08b",
+            "category": "vehicle.car",
+            "clearance": 18.210812124815632,
+            "supported": true,
+            "on_surface": true,
+            "target_speed": 0.0,
+            "target_forward_speed": -0.0,
+            "heading_delta": 2.26025710306261,
+            "lateral_distance": 0.46303458032194644,
+            "local_turn": 0.6915429399579467,
+            "permanent_static": true
+          }
+        }
+      ],
+      "strict_condition_components": {
+        "positive_static_event_count": true,
+        "sustained_static_branch": true,
+        "brief_shift_branch": false,
+        "brief_heading_branch": false,
+        "brief_distance_branch": true,
+        "shift_in_strict_range": false,
+        "heading_in_strict_range": false
+      },
+      "first_static_index": 3,
+      "first_blocked_index": 3,
+      "existing_raw_deviation": true,
+      "existing_context_supported": false,
+      "existing_v7_scene_protection": true,
+      "static_anchor_local_windows_diagnostic_only": [
+        {
+          "index": 3,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "available_future_s": 18.149266004562378,
+          "window_s_requested": 10.0,
+          "horizon_complete": true,
+          "existing_shift_function_m": 46.804568354567564,
+          "existing_heading_function_rad": 1.3820861347384856
+        },
+        {
+          "index": 4,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "available_future_s": 17.749469995498657,
+          "window_s_requested": 10.0,
+          "horizon_complete": true,
+          "existing_shift_function_m": 49.129242097937336,
+          "existing_heading_function_rad": 1.3290263025003928
+        },
+        {
+          "index": 5,
+          "instance_token": "8c933940fb2d477896c388972c452343",
+          "available_future_s": 17.30047297477722,
+          "window_s_requested": 10.0,
+          "horizon_complete": true,
+          "existing_shift_function_m": 50.70980641569034,
+          "existing_heading_function_rad": 1.2548582685880538
+        },
+        {
+          "index": 7,
+          "instance_token": "fe685eb2dbb64c50b12a357d003c5811",
+          "available_future_s": 16.30071997642517,
+          "window_s_requested": 10.0,
+          "horizon_complete": true,
+          "existing_shift_function_m": 49.038542062290375,
+          "existing_heading_function_rad": 1.0120533093686659
+        },
+        {
+          "index": 8,
+          "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+          "available_future_s": 15.800843954086304,
+          "window_s_requested": 10.0,
+          "horizon_complete": true,
+          "existing_shift_function_m": 45.95771264895445,
+          "existing_heading_function_rad": 0.8750864447845512
+        }
+      ],
+      "heavy_tracks_after14s": []
+    }
+  ]
+}

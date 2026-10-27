@@ -1,0 +1,158 @@
+{
+  "version": "crossing_candidate_v6_replay_20261014",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_protocol_20261014.json",
+    "sha256": "ae7db74041abe8758746d0819e5afe9fa8df48112d3864b13d1e76e412b9fd23",
+    "bytes": 7694
+  },
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv",
+      "sha256": "b9e753e34ff803956d161368aa1577d0517209ef052129fa8343b221e9f8e633",
+      "bytes": 33848
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv.manifest.json",
+      "sha256": "06db29cec4c62a3102e0af94eade668fec6e84df8d111a678994c5246a58b9e0",
+      "bytes": 1994
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_evidence_20261014.json",
+      "sha256": "0337d03b460c9cdf7e3e5bc9b469f925b9e37fcc20fa2ccadf30a2ebc0fcd42d",
+      "bytes": 170903
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\横向交互v6重放对照_20261014.md",
+      "sha256": "a2029c1d676f121c3e7e732687ecaab178f086e27b3c4cd472a856e2096374e3",
+      "bytes": 4228
+    }
+  ],
+  "changes": [
+    {
+      "scene_name": "scene-0067",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v5_2": 0.025,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0067",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "v5_2": 0.025,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0067",
+      "column": "crossing_conflict_max_duration",
+      "v5_2": 0.49988222122192383,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0068",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v5_2": 0.28205128205128205,
+      "v6": 0.23076923076923078
+    },
+    {
+      "scene_name": "scene-0073",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v5_2": 0.15,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0073",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "v5_2": 0.15,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0073",
+      "column": "crossing_conflict_max_duration",
+      "v5_2": 2.998154878616333,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0453",
+      "column": "crossing_vehicle_conflict_ratio",
+      "v5_2": 0.024390243902439025,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0453",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "v5_2": 0.024390243902439025,
+      "v6": 0.0
+    },
+    {
+      "scene_name": "scene-0453",
+      "column": "crossing_conflict_max_duration",
+      "v5_2": 0.49988651275634766,
+      "v6": 0.0
+    }
+  ],
+  "changed_scenes": [
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0453"
+  ],
+  "clustering_changes": [
+    {
+      "scene_name": "scene-0068",
+      "column": "left_turn_cross_traffic_interaction_ratio",
+      "v5_2": 0.28205128205128205,
+      "v6": 0.23076923076923078
+    }
+  ],
+  "crossing_states": {
+    "contradicted_observed_route": 18,
+    "response_protected_prediction": 7,
+    "unknown_future": 12,
+    "contradicted_synchronized_turn": 1
+  },
+  "route_states": {
+    "unknown": 109,
+    "separated_observed_route": 74,
+    "potential_route_overlap": 74
+  },
+  "controls": {
+    "rolling_yield_nonzero_representation": true,
+    "bus_context_nonzero_representation": true,
+    "bus_intrusion_unchanged": true,
+    "stop_and_raw_exposure_unchanged": true,
+    "later_pickup_causal_detection_claimed": false,
+    "semantic_acceptance": false,
+    "fixed_target_frames_retained": {
+      "scene-0068": {
+        "crossing": {
+          "727349048e9044d98846cbeeb3a1b5fd": [
+            15,
+            16
+          ]
+        }
+      },
+      "scene-0552": {
+        "local_left": {
+          "8f7327b31d334c768455a9e22adbc6db": [
+            0,
+            1,
+            2
+          ],
+          "8300fb2dc4554627a01ba8a3084325fe": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "bus_visual_identity_individually_confirmed": false,
+    "causal_acceptance": false
+  },
+  "formal_fit_refused": true,
+  "new_extraction": false,
+  "evaluation_used": false,
+  "semantic_acceptance": false
+}

@@ -1,0 +1,107 @@
+{
+  "client_date": "2026-10-16",
+  "scope": "Bibliographic raw metadata only; no dataset/model/evaluation access",
+  "tls": "Verified SSL context with explicit certifi CA file; verification enabled",
+  "certifi_version": "2025.08.03",
+  "records": [
+    {
+      "file": "R01_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1109/CVPR42600.2020.01164",
+      "host_utc": "2026-10-16T00:40:35.647756+00:00",
+      "final_url": "https://api.crossref.org/works/10.1109/CVPR42600.2020.01164",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 13918,
+      "sha256": "9db730a8f8489ce172086c9a81ea7aa927a0c0d091fa192f8204d96256516f44",
+      "saved": true
+    },
+    {
+      "file": "R03_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.21105/joss.00861",
+      "host_utc": "2026-10-16T00:40:36.742625+00:00",
+      "final_url": "https://api.crossref.org/works/10.21105/joss.00861",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3564,
+      "sha256": "8199313aa7f46846859bcbe960e7428b71af15765de8a20bde03f1a15ebf5d72",
+      "saved": true
+    },
+    {
+      "file": "R04_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1007/978-3-642-37456-2_14",
+      "host_utc": "2026-10-16T00:40:37.577740+00:00",
+      "final_url": "https://api.crossref.org/works/10.1007/978-3-642-37456-2_14",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 9560,
+      "sha256": "8d61366dc356cf5c22fac4914966022457673081b3f58dab78ca0214e80b4093",
+      "saved": true
+    },
+    {
+      "file": "R05_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1145/2733381",
+      "host_utc": "2026-10-16T00:40:38.812694+00:00",
+      "final_url": "https://api.crossref.org/works/10.1145/2733381",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 34730,
+      "sha256": "3456a32145fa4910ae2844d4cba03c2044b98336e0326a091f82b9b638f9dd25",
+      "saved": true
+    },
+    {
+      "file": "R06_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.21105/joss.00205",
+      "host_utc": "2026-10-16T00:40:40.040056+00:00",
+      "final_url": "https://api.crossref.org/works/10.21105/joss.00205",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3549,
+      "sha256": "91f07acb91cf17933c9d0c10c3e45d2ba7e153765ee8b9a9caf774c709661823",
+      "saved": true
+    },
+    {
+      "file": "R02_datacite.json",
+      "requested_url": "https://api.datacite.org/dois/10.48550/arxiv.1802.03426",
+      "host_utc": "2026-10-16T00:40:40.923806+00:00",
+      "final_url": "https://api.datacite.org/dois/10.48550/arxiv.1802.03426",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 10070,
+      "sha256": "5e4ad0552f7637a0f0ebe264d1cc7663166a333c87d2fc2c3ff2746bd507c3f0",
+      "saved": true
+    },
+    {
+      "file": "R02_arxiv_v1.html",
+      "requested_url": "https://arxiv.org/abs/1802.03426v1",
+      "host_utc": "2026-10-16T00:40:42.723454+00:00",
+      "final_url": "https://arxiv.org/abs/1802.03426v1",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 40475,
+      "sha256": "ce26980ff54ba582ecdd8b75f719844c543a4b842e474b32001a4b4da3a34ce8",
+      "saved": true
+    },
+    {
+      "file": "R02_arxiv_v3.html",
+      "requested_url": "https://arxiv.org/abs/1802.03426v3",
+      "host_utc": "2026-10-16T00:40:43.919017+00:00",
+      "final_url": "https://arxiv.org/abs/1802.03426v3",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 40629,
+      "sha256": "5542999fb845627bccf3b7db358c583b173ce955de38b61753169f0de59d5dac",
+      "saved": true
+    },
+    {
+      "file": "R01_cvf.html",
+      "requested_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Caesar_nuScenes_A_Multimodal_Dataset_for_Autonomous_Driving_CVPR_2020_paper.html",
+      "host_utc": "2026-10-16T00:40:45.071930+00:00",
+      "final_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Caesar_nuScenes_A_Multimodal_Dataset_for_Autonomous_Driving_CVPR_2020_paper.html",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5481,
+      "sha256": "a84a9e7080c9ba6fff1d45fa47ed66aee2e6e62353896407121b79451d0bcc9d",
+      "saved": true
+    }
+  ]
+}

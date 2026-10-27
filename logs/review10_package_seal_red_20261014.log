@@ -1,0 +1,16 @@
+test_verifier_rejects_redirected_protocol_even_with_same_seal (logs.test_review10_package_20261014.ReviewPackageContracts) ... ERROR
+
+======================================================================
+ERROR: test_verifier_rejects_redirected_protocol_even_with_same_seal (logs.test_review10_package_20261014.ReviewPackageContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_review10_package_20261014.py", line 108, in test_verifier_rejects_redirected_protocol_even_with_same_seal
+    recipe.verify(seal['sha256'])
+  File "F:\Scene_cluster\logs\build_review10_package_20261014.py", line 346, in verify
+    renderer.verify_record(status['report'])
+KeyError: 'report'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.395s
+
+FAILED (errors=1)

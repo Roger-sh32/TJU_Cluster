@@ -1,0 +1,36 @@
+======================================================================
+FAIL: test_boolean_route_index_cannot_alias_frame_one (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 145, in test_boolean_route_index_cannot_alias_frame_one
+    self.flags(data)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_boolean_seed_index_cannot_alias_frame_one (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 133, in test_boolean_seed_index_cannot_alias_frame_one
+    self.flags(data)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_string_boolean_cannot_certify_seed_future (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 139, in test_string_boolean_cannot_certify_seed_future
+    self.flags(data)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_string_route_boolean_cannot_certify_seed_future (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 151, in test_string_route_boolean_cannot_certify_seed_future
+    self.flags(data)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.008s
+
+FAILED (failures=4)

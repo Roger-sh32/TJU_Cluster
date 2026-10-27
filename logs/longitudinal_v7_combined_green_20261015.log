@@ -1,0 +1,27 @@
+test_baseline_replays_ttc_and_static_following_consistently (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_existing_avoidance_context_is_protected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_filter_precedes_nearest_selection_and_finds_alternative (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_filtering_all_targets_recomputes_no_measurement_defaults (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_forward_static_obstacle_is_protected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_integrated_gate_only_removes_known_separation (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_integrated_gate_retains_unknown_and_does_not_mutate_tracks (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_integrated_protected_context_never_queries_geometry (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_missing_annotation_identity_is_not_invented (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_missing_map_does_not_prove_separation (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_offroad_or_overlapping_candidate_not_selected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_rejection_boolean_context_is_strict (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_selection_does_not_mutate_source (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_static_opposite_turn_requires_known_route_separation (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_straight_motion_not_filtered_as_turn_projection (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_temporarily_stopped_motorcycle_is_protected (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_tie_preserves_original_annotation_order (HDBSCAN.tests.test_longitudinal_candidate_v7.LongitudinalTests) ... ok
+test_baseline_difference_is_not_silently_tolerated (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_existing_evasion_cannot_change_first_obstacle (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_mismatched_static_trace_stops_before_gate (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_new_evasion_dependency_is_not_published_with_stale_vru (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_unrelated_column_change_is_rejected (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.780s
+
+OK

@@ -1,0 +1,22 @@
+test_recorded_runtime_mismatch_is_refused_before_replay (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ERROR
+
+======================================================================
+ERROR: test_recorded_runtime_mismatch_is_refused_before_replay (logs.test_experiment_readiness_20261013.ReadinessContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_experiment_readiness_20261013.py", line 69, in test_recorded_runtime_mismatch_is_refused_before_replay
+    recipe.check_packet(directory, seal)
+  File "F:\Scene_cluster\logs\prepare_experiment_readiness_20261013.py", line 179, in check_packet
+    if json.loads((destination/'synthetic_metrics.json').read_text(encoding='utf-8')) != expected:
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1194, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1180, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1038, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\Scene_cluster\\HDBSCAN\\tests\\split_test_95c04c688d494f489fae9c2c5ff8a9d4\\synthetic_metrics.json'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.133s
+
+FAILED (errors=1)

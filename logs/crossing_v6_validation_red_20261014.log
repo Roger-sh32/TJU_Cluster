@@ -1,0 +1,16 @@
+F:\Scene_cluster\HDBSCAN\scripts\crossing_candidate_v5_2.py:36: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  c, s = math.cos(yaw), math.sin(yaw)
+F:\Scene_cluster\HDBSCAN\scripts\crossing_candidate_v5_2.py:32: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  return abs(math.atan2(math.sin(b-a), math.cos(b-a)))
+======================================================================
+FAIL: test_malformed_yaw_shape_rejected (HDBSCAN.tests.test_crossing_candidate_v6.RouteRelevanceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6.py", line 151, in test_malformed_yaw_shape_rejected
+    function([[0, 0], [1, 0]], [[0], [0]], [[2, 4], [2, 4]])
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.685s
+
+FAILED (failures=1)

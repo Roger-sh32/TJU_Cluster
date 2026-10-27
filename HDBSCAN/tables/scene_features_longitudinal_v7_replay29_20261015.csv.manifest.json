@@ -1,0 +1,74 @@
+{
+  "stage": "candidate_feature_replay",
+  "fit_scope": "development",
+  "scene_names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "output": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+    "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93",
+    "bytes": 33264
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+    "sha256": "081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147",
+    "bytes": 33847
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\longitudinal_v7_replay_20261015.py",
+    "sha256": "f3fe00f96a3c6a07c2d890712ffa4227146dff0d90c46d3dfc6701fea5fa0fac",
+    "bytes": 20751
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+    "bytes": 2153
+  },
+  "extra": {
+    "formal_fit_allowed": false,
+    "new_extraction": false,
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+      "bytes": 30874
+    },
+    "version": "longitudinal_candidate_v7_20261015",
+    "protocol": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+      "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d",
+      "bytes": 8398
+    }
+  }
+}

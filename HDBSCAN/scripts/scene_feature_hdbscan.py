@@ -1,5 +1,7 @@
 '''提取 nuScenes 场景特征的脚本'''
 import os
+import json
+import argparse
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -7,6 +9,14 @@ from pyquaternion import Quaternion
 from nuscenes import NuScenes
 from tqdm import tqdm
 from nuscenes.map_expansion.map_api import NuScenesMap
+from shapely.geometry import Point, LineString, Polygon
+from shapely.ops import unary_union
+from shapely.prepared import prep
+from extraction_audit import ExtractionAudit
+from experiment_partition import (
+    load_partition, select_development_scenes, assert_new_outputs, provenance_path,
+    preflight, write_run_manifest, file_record,
+)
 
 from scene_feature_rules import (
     classify_stop_line_controls,
@@ -32,7 +42,6 @@ from scene_feature_rules import (
     longitudinal_clearance,
     net_heading_change_after_index,
     partition_events_at_time,
-    select_scene_batch,
     select_lower_ttc_event,
     route_deviation_decision_demand,
     signed_net_heading_change,
@@ -42,6 +51,12 @@ from scene_feature_rules import (
     synchronized_path_min_distance,
     synchronized_path_closest_approach,
     wrapped_heading_change,
+    is_lane_supported_target,
+    is_adjacent_lane_intrusion,
+    distance_to_polyline,
+    is_side_entry_candidate,
+    is_bounded_stationary_track,
+    turning_crossing_projection_audit,
 )
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -50,9 +65,9 @@ PROJECT_ROOT = HDBSCAN_ROOT.parent
 TABLES_DIR = HDBSCAN_ROOT / "tables"
 TABLES_DIR.mkdir(exist_ok=True)
 
-MAX_SCENES = int(os.getenv("SCENE_CLUSTER_MAX_SCENES", "850"))
+MAX_SCENES = int(os.getenv("SCENE_CLUSTER_MAX_SCENES", "700"))
 SCENE_START_INDEX = int(os.getenv("SCENE_CLUSTER_START_INDEX", "0"))
-FEATURE_OUTPUT_NAME = os.getenv("SCENE_CLUSTER_FEATURE_OUTPUT", "scene_features.csv")
+FEATURE_OUTPUT_NAME = os.getenv("SCENE_CLUSTER_FEATURE_OUTPUT", "scene_features_development.csv")
 FRONT_MAX_DIST = 80.0
 FRONT_LATERAL_LIMIT = 4.0
 EGO_TTC_MIN_SPEED = 2.0
@@ -67,7 +82,32 @@ VRU_LATERAL_LIMIT = 8.0
 # =========================
 # 加载 nuScenes
 # =========================
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--preflight', action='store_true', help='Validate selection without loading NuScenes or extracting features.')
+args = parser.parse_args()
+partition = load_partition()
+metadata_path = PROJECT_ROOT / 'nuScenes/v1.0-trainval/scene.json'
+metadata_scenes = json.loads(metadata_path.read_text(encoding='utf-8'))
+selected_scene_records = select_development_scenes(
+    metadata_scenes, partition, os.getenv('SCENE_CLUSTER_SCENE_NAMES', ''),
+    SCENE_START_INDEX, MAX_SCENES,
+)
+selection_frame = pd.DataFrame([{'scene_name': scene['name'], 'scene_token': scene['token']}
+                                for scene in selected_scene_records])
+output_path = TABLES_DIR / FEATURE_OUTPUT_NAME
+quality_path = Path(str(output_path) + '.quality.json')
+planned_outputs = [output_path, provenance_path(output_path), quality_path]
+if os.getenv('SCENE_CLUSTER_AUDIT_OUTPUT'):
+    planned_outputs.append(TABLES_DIR / os.environ['SCENE_CLUSTER_AUDIT_OUTPUT'])
+resolved_outputs = [os.path.normcase(str(path.resolve())) for path in planned_outputs]
+if len(set(resolved_outputs)) != len(resolved_outputs):
+    raise ValueError('Colliding extraction output paths')
+assert_new_outputs(planned_outputs)
+if args.preflight:
+    preflight('feature_extraction', selection_frame, partition)
+    raise SystemExit(0)
 nusc = NuScenes(version='v1.0-trainval', dataroot=str(PROJECT_ROOT / 'nuScenes'), verbose=True)
+extraction_audit = ExtractionAudit()
 
 
 # =========================
@@ -183,12 +223,30 @@ def mapped_vru_lane_relation(nusc_map, ego_x, ego_y, obj_xy, obj_velocity, lane_
     )
 
 
+def longitudinal_map_distance(nusc_map, ego_x, ego_y, obj_xy, lane_cache):
+    lane = nusc_map.get_closest_lane(ego_x, ego_y, radius=4)
+    if not lane:
+        return None
+    if lane not in lane_cache:
+        lane_cache[lane] = nusc_map.discretize_lanes([lane], 1.0)[lane]
+    poses = lane_cache[lane]
+    if len(poses) < 3:
+        return None
+    index = min(range(len(poses)), key=lambda i: np.hypot(poses[i][0]-obj_xy[0], poses[i][1]-obj_xy[1]))
+    # Endpoint distance includes along-road distance to the next segment.
+    if index in (0, len(poses) - 1):
+        return None
+    return float(np.hypot(poses[index][0]-obj_xy[0], poses[index][1]-obj_xy[1]))
+
+
 scene_features = []
+scene_audits = []
+map_cache = {}
 
 # =========================
 # 主循环：遍历前 X 个 scene
 # =========================
-scene_batch = select_scene_batch(nusc.scene, SCENE_START_INDEX, MAX_SCENES)
+scene_batch = selected_scene_records
 for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     first_sample = nusc.get('sample', scene['first_sample_token'])
 
@@ -247,6 +305,14 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     instance_max_speeds = {}
     minimum_ttc_event = None
     crossing_yield_flags = []
+    vehicle_tracks = {}
+    crossing_candidates = []
+    stop_sign_stop_flags = []
+    rejected_lane_targets = 0
+    lane_target_map_unknown_count = 0
+    lane_target_audit = []
+    side_entry_flags = []
+    side_entry_instances = set()
 
     # 目标类别（truck / bus / bicycle / motorcycle）
     truck_bus_frames = 0
@@ -260,9 +326,15 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     # 地图（先占位，地图有问题也不让程序挂）
     map_name = nusc.get('log', scene['log_token'])['location']
     try:
-        nusc_map = NuScenesMap(dataroot=nusc.dataroot, map_name=map_name)
+        if map_name not in map_cache:
+            loaded_map = NuScenesMap(dataroot=nusc.dataroot, map_name=map_name)
+            polygons = [loaded_map.extract_polygon(token)
+                        for area in loaded_map.drivable_area for token in area['polygon_tokens']]
+            map_cache[map_name] = (loaded_map, prep(unary_union(polygons)))
+        nusc_map, drivable_surface = map_cache[map_name]
         map_available = True
-    except Exception:
+    except Exception as exc:
+        extraction_audit.record_error(scene, 'map_load', exc)
         nusc_map = None
         map_available = False
 
@@ -324,6 +396,7 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         traffic_light_control_here = False
         stop_sign_control_here = False
         turn_stop_control_here = False
+        stop_sign_stop_here = False
         ego_speed_current = ego_speeds[-1] if len(ego_speeds) > 0 else 0.0
 
         min_front_dist_for_ttc = np.inf
@@ -352,6 +425,7 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         has_oncoming_vehicle = False
         has_bicycle = False
         has_motorcycle = False
+        has_side_entry = False
         has_dynamic_two_wheeler = False
 
         for ann_token in ann_tokens:
@@ -394,8 +468,8 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                         )
                         if mapped_relation is not None:
                             vru_lane_relation = mapped_relation
-                    except Exception:
-                        pass
+                    except Exception as exc:
+                        extraction_audit.record_error(scene, 'vru_lane_relation', exc, frame_count - 1)
                 has_same_lane_vru |= vru_lane_relation.same_lane
                 has_same_direction_vru |= vru_lane_relation.same_direction
                 if dist_to_ego < 20:
@@ -439,6 +513,22 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                     quaternion_yaw(ann['rotation']),
                     yaw,
                 )
+                vehicle_tracks.setdefault(instance_token, []).append({
+                    'index': frame_count - 1, 'position': tuple(obj_xy),
+                    'forward': float(forward_dist), 'lateral': float(lateral_dist),
+                    'aligned': actor_heading_aligned, 'length': ann['size'][1],
+                    'width': ann['size'][0],
+                    'heading_delta': float(np.arctan2(np.sin(quaternion_yaw(ann['rotation']) - yaw),
+                                                      np.cos(quaternion_yaw(ann['rotation']) - yaw))),
+                    'category': category,
+                    'velocity': [float(obj_vx), float(obj_vy)],
+                    'crossing_conflict': interaction.crossing_conflict,
+                    'crossing_exposure': interaction.crossing_exposure,
+                })
+                actor_delta = vehicle_tracks[instance_token][-1]['heading_delta']
+                if is_side_entry_candidate(forward_dist, lateral_dist, actor_delta, obj_speed):
+                    has_side_entry = True
+                    side_entry_instances.add(instance_token)
                 merge_exposure = interaction.merge_exposure and actor_heading_aligned
                 merge_conflict = interaction.merge_conflict and actor_heading_aligned
                 has_merge_conflict_vehicle |= merge_conflict
@@ -458,18 +548,49 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                     )
                 has_crossing_exposure_vehicle |= interaction.crossing_exposure
                 has_crossing_conflict_vehicle |= interaction.crossing_conflict
+                if interaction.crossing_conflict:
+                    crossing_candidates.append((frame_count - 1, ann_token))
                 has_oncoming_vehicle |= is_oncoming_vehicle(
                     forward_dist,
                     lateral_dist,
                     obj_forward_speed,
+                    obj_lateral_speed=lateral_speed,
+                    heading_delta=actor_delta,
                 )
                 if interaction.same_path or merge_conflict or interaction.crossing_conflict:
                     has_path_conflict_vehicle = True
                 if interaction.same_path:
+                    supported = True
+                    if map_available:
+                        try:
+                            actor_yaw = quaternion_yaw(ann['rotation'])
+                            half_width, half_length = np.asarray(ann['size'][:2]) / 2
+                            footprint = Polygon([
+                                (obj_xy[0] + x*np.cos(actor_yaw) - y*np.sin(actor_yaw),
+                                 obj_xy[1] + x*np.sin(actor_yaw) + y*np.cos(actor_yaw))
+                                for x, y in [(-half_length, -half_width), (half_length, -half_width),
+                                             (half_length, half_width), (-half_length, half_width)]])
+                            on_surface = bool(drivable_surface.intersects(footprint))
+                            lane_distance = longitudinal_map_distance(
+                                nusc_map, ego_x, ego_y, obj_xy, lane_cache)
+                            # Current-lane distance is diagnostic only: ego may
+                            # already be steering away from a blocked lane.
+                            supported = is_lane_supported_target(on_surface)
+                            lane_target_audit.append({'index': frame_count - 1, 'instance': instance_token,
+                                'category': category, 'on_surface': on_surface,
+                                'lane_distance': lane_distance, 'supported': supported,
+                                'forward': float(forward_dist), 'lateral': float(lateral_dist)})
+                        except Exception as exc:
+                            extraction_audit.record_error(scene, 'vehicle_lane_support', exc, frame_count - 1)
+                            lane_target_map_unknown_count += 1
+                    else:
+                        lane_target_map_unknown_count += 1
+                    if not supported:
+                        rejected_lane_targets += 1
                     clearance = longitudinal_clearance(
                         forward_dist,
                         ann.get('size', [0.0, 4.0, 0.0])[1],
-                    )
+                    ) if supported else None
                     if clearance is not None and clearance < min_front_dist_for_ttc:
                         min_front_dist_for_ttc = clearance
                         nearest_front_forward_speed = obj_forward_speed
@@ -529,6 +650,7 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         if has_path_conflict_vehicle:
             path_conflict_vehicle_frames += 1
         following_flags.append(nearest_front_forward_speed is not None)
+        side_entry_flags.append(has_side_entry)
         merge_exposure_flags.append(has_merge_exposure_vehicle)
         merge_conflict_flags.append(has_merge_conflict_vehicle)
         overtaking_exposure_flags.append(has_overtaking_exposure)
@@ -633,8 +755,8 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                     intersection_frame_count += 1
                 if has_lane_connector:
                     lane_connector_frame_count += 1
-            except Exception:
-                pass
+            except Exception as exc:
+                extraction_audit.record_error(scene, 'intersection', exc, frame_count - 1)
 
             # Traffic-light phase is unavailable, but map stop-line types
             # distinguish signalized, stop-sign, and turn-stop infrastructure.
@@ -653,8 +775,19 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                 traffic_light_control_here = controls.traffic_light
                 stop_sign_control_here = controls.stop_sign
                 turn_stop_control_here = controls.turn_stop
-            except Exception:
-                pass
+                if ego_speed_current < 1.0 and controls.stop_sign:
+                    approach = LineString([
+                        (ego_x - 3 * np.cos(yaw), ego_y - 3 * np.sin(yaw)),
+                        (ego_x + 10 * np.cos(yaw), ego_y + 10 * np.sin(yaw)),
+                    ])
+                    for token in stop_line_records.get('stop_line', []):
+                        record = nusc_map.get('stop_line', token)
+                        if record.get('stop_line_type') == 'STOP_SIGN':
+                            polygon = nusc_map.extract_polygon(record['polygon_token'])
+                            if polygon.distance(Point(ego_x, ego_y)) <= 8.0 and polygon.intersects(approach):
+                                stop_sign_stop_here = True
+            except Exception as exc:
+                extraction_audit.record_error(scene, 'stop_line_controls', exc, frame_count - 1)
 
             # 人行横道
             try:
@@ -662,8 +795,8 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                 if 'ped_crossing' in rec_pc and len(rec_pc['ped_crossing']) > 0:
                     ped_crossing_here = True
                     ped_crossing_count += 1
-            except Exception:
-                pass
+            except Exception as exc:
+                extraction_audit.record_error(scene, 'pedestrian_crossing', exc, frame_count - 1)
 
         if ped_crossing_here and pedestrian_here:
             crosswalk_pedestrian_frames += 1
@@ -684,6 +817,7 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         crossing_yield_flags.append(
             bool(has_crossing_exposure_vehicle and ego_speed_current < 1.0)
         )
+        stop_sign_stop_flags.append(stop_sign_stop_here)
 
         # 下一帧
         if sample['next'] == "":
@@ -727,9 +861,16 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         scene_timestamps[1:],
     )
     stopped_lead_summary = summarize_events(stationary_lead_flags, scene_timestamps)
+    bounded_stationary_instances = {
+        instance for instance, track in vehicle_tracks.items()
+        if is_bounded_stationary_track(
+            [row['position'] for row in track],
+            [scene_timestamps[row['index']] for row in track])
+    }
     stopped_lead_split = split_stopped_lead_history(
         stationary_lead_instance_tokens,
         instance_max_speeds,
+        bounded_stationary_instances=bounded_stationary_instances,
     )
     stationary_lead_summary = summarize_events(
         stopped_lead_split.static_flags,
@@ -832,6 +973,67 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     merge_observed_min_distance = float("inf")
     vru_observed_min_distance = float("inf")
     vru_observed_min_distance_time = -1.0
+    intrusion_flags = [False] * frame_count
+    intrusion_instances = set()
+    for instance, track in vehicle_tracks.items():
+        for start_at, start in enumerate(track):
+            i = start['index']
+            for end in track[start_at + 1:]:
+                j = end['index']
+                duration = scene_timestamps[j] - scene_timestamps[i]
+                if duration > 4.0:
+                    break
+                _, actor_lateral_move = ego_frame_vector(
+                    np.asarray(end['position']) - np.asarray(start['position']), ego_yaws[i])
+                clearance = end['forward'] - 2.25 - end['length'] / 2
+                if is_adjacent_lane_intrusion(
+                    start['lateral'], end['lateral'], actor_lateral_move,
+                    clearance, duration, start['aligned'] and end['aligned'],
+                ):
+                    # Strong turns alter the reference frame; retain these as
+                    # exposure until lane-relative evidence is available.
+                    if wrapped_heading_change(ego_yaws[i:j + 1]) > 0.35:
+                        continue
+                    if abs(start['heading_delta']) > 0.6 or abs(end['heading_delta']) > 0.6:
+                        continue
+                    intrusion_flags[i:j + 1] = [True] * (j - i + 1)
+                    intrusion_instances.add(instance)
+
+    crossing_projection_audit = turning_crossing_projection_audit(
+        ego_positions, scene_timestamps, ego_yaws, [0.0] + ego_speeds, vehicle_tracks,
+    )
+    rejected_crossings = {(r['index'], r['instance_token']) for r in crossing_projection_audit
+                         if r['rejected_turning_projection']}
+    crossing_conflict_flags = [False] * frame_count
+    for instance, track in vehicle_tracks.items():
+        for row in track:
+            row['raw_crossing_conflict'] = row['crossing_conflict']
+            if (row['index'], instance) in rejected_crossings:
+                row['crossing_conflict'] = False
+            crossing_conflict_flags[row['index']] |= row['crossing_conflict']
+    crossing_candidates = [(i, token) for i, token in crossing_candidates
+                           if (i, nusc.get('sample_annotation', token)['instance_token']) not in rejected_crossings]
+    crossing_route_flags = [False] * frame_count
+    for frame_index, ann_token in crossing_candidates:
+        start_time = scene_timestamps[frame_index]
+        future_indices = [i for i in range(frame_index, frame_count)
+                          if scene_timestamps[i] - start_time <= 6.0]
+        route = [ego_positions[i] for i in future_indices]
+        ann = nusc.get('sample_annotation', ann_token)
+        while True:
+            actor_time = nusc.get('sample', ann['sample_token'])['timestamp'] / 1e6
+            if actor_time - start_time > 6.0:
+                break
+            actor_position = ann['translation'][:2]
+            ego_index = int(np.argmin(np.abs(np.asarray(scene_timestamps) - actor_time)))
+            near_in_time = abs(scene_timestamps[ego_index] - actor_time) <= 0.26
+            if (near_in_time and distance_to_polyline(actor_position, route) <= 2.5
+                    and np.linalg.norm(np.asarray(actor_position) - ego_positions[ego_index]) <= 10.0):
+                crossing_route_flags[frame_index] = True
+                break
+            if not ann['next']:
+                break
+            ann = nusc.get('sample_annotation', ann['next'])
     for frame_index, ann_token, is_heavy, was_overtaking in merge_exposure_candidates:
         ann = nusc.get('sample_annotation', ann_token)
         start_time = scene_timestamps[frame_index]
@@ -871,8 +1073,8 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                     if geometry is not None and geometry[0] <= 1.8:
                         enters_ego_lane = True
                         break
-                except Exception:
-                    pass
+                except Exception as exc:
+                    extraction_audit.record_error(scene, 'merge_observed_lane', exc, ego_index)
         if observed_distance <= 15.0 and (not was_overtaking or enters_ego_lane):
             merge_observed_flags[frame_index] = True
             if is_heavy:
@@ -929,8 +1131,8 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
                     if relation is not None and relation.same_lane:
                         enters_ego_lane = True
                         break
-                except Exception:
-                    pass
+                except Exception as exc:
+                    extraction_audit.record_error(scene, 'vru_observed_lane', exc, ego_index)
         if is_observed_vru_relevant(observed_distance, enters_ego_lane):
             vru_observed_flags[frame_index] = True
 
@@ -1035,6 +1237,11 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
     merge_lane_entry_summary = summarize_events(merge_lane_entry_flags, scene_timestamps)
     heavy_merge_observed_summary = summarize_events(heavy_merge_observed_flags, scene_timestamps)
     dangerous_ttc_summary = summarize_events(dangerous_ttc_flags, scene_timestamps)
+    intrusion_summary = summarize_events(intrusion_flags, scene_timestamps)
+    side_entry_summary = summarize_events(filter_short_events(
+        side_entry_flags, scene_timestamps, minimum_duration=0.8), scene_timestamps)
+    crossing_route_summary = summarize_events(crossing_route_flags, scene_timestamps)
+    stop_sign_stop_summary = summarize_events(stop_sign_stop_flags, scene_timestamps)
     intersection_stop_summary = summarize_events(intersection_stop_flags, scene_timestamps)
     route_deviation_context_supported = is_route_deviation_context_supported(
         traffic_light_control_frames / frame_count if frame_count > 0 else 0.0,
@@ -1051,9 +1258,37 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
         obstacle_induced_route_deviation,
     )
 
+    if os.getenv('SCENE_CLUSTER_AUDIT_OUTPUT'):
+        scene_audits.append({'scene_name': scene['name'],
+            'scene_token': scene['token'],
+            'times': [t - scene_timestamps[0] for t in scene_timestamps],
+            'ego_positions': ego_positions, 'ego_yaws': ego_yaws,
+            'vehicle_tracks': vehicle_tracks, 'lane_targets': lane_target_audit,
+            'ego_speeds': [0.0] + ego_speeds,
+            'stationary_lead_instances': stationary_lead_instance_tokens,
+            'static_obstacle_flags': stopped_lead_split.static_flags,
+            'instance_max_speeds': instance_max_speeds,
+            'bounded_stationary_instances': sorted(bounded_stationary_instances),
+            'crossing_conflict_flags': crossing_conflict_flags,
+            'crossing_exposure_flags': crossing_exposure_flags,
+            'crossing_yield_flags': crossing_yield_flags,
+            'stop_sign_stop_flags': stop_sign_stop_flags,
+            'crossing_route_flags': crossing_route_flags,
+            'crossing_projection_audit': crossing_projection_audit})
     scene_features.append({
         'scene_name': scene['name'],
         'scene_token': scene['token'],
+        'adjacent_lane_intrusion_ratio': intrusion_summary.ratio,
+        'side_entry_candidate_ratio': side_entry_summary.ratio,
+        'side_entry_candidate_instances': '|'.join(sorted(side_entry_instances)) or 'none',
+        'adjacent_lane_intrusion_max_duration': intrusion_summary.max_duration,
+        'adjacent_lane_intrusion_instances': '|'.join(sorted(intrusion_instances)) or 'none',
+        'crossing_route_conflict_ratio': crossing_route_summary.ratio,
+        'crossing_route_conflict_max_duration': crossing_route_summary.max_duration,
+        'stop_sign_stop_candidate': int(stop_sign_stop_summary.max_duration >= 0.8),
+        'stop_sign_stop_ratio': stop_sign_stop_summary.ratio,
+        'rejected_lane_target_count': rejected_lane_targets,
+        'lane_target_map_unknown_count': lane_target_map_unknown_count,
         'log_location': map_name,
         'frame_count': frame_count,
 
@@ -1189,12 +1424,30 @@ for scene_idx, scene in enumerate(tqdm(scene_batch, desc="Processing scenes")):
 # 保存场景特征表
 # =========================
 df = pd.DataFrame(scene_features)
+quality_report = extraction_audit.report(df)
+quality_report.update({'input': file_record(metadata_path), 'partition': partition['file'],
+                       'script': file_record(__file__),
+                       'audit_code': file_record(SCRIPT_DIR / 'extraction_audit.py')})
+with quality_path.open('x', encoding='utf-8') as stream:
+    json.dump(quality_report, stream, ensure_ascii=False, indent=2, allow_nan=False)
 df.replace([np.inf, -np.inf], 30.0, inplace=True)
 df = df.fillna(0.0)
 
 output_path = TABLES_DIR / FEATURE_OUTPUT_NAME
 df.to_csv(output_path, index=False)
+manifest_extra = {'feature_rules': file_record(SCRIPT_DIR / 'scene_feature_rules.py'),
+                  'extraction_audit_code': file_record(SCRIPT_DIR / 'extraction_audit.py'),
+                  'quality_audit': file_record(quality_path)}
+if os.getenv('SCENE_CLUSTER_AUDIT_OUTPUT'):
+    audit_path = TABLES_DIR / os.environ['SCENE_CLUSTER_AUDIT_OUTPUT']
+    with audit_path.open('x', encoding='utf-8') as stream:
+        json.dump(scene_audits, stream, ensure_ascii=False, default=lambda v: v.item())
+    manifest_extra['trajectory_audit'] = file_record(audit_path)
+write_run_manifest(output_path, 'feature_extraction', metadata_path, df, partition, __file__,
+                   extra=manifest_extra)
 
 print("===== 场景特征表已保存 =====")
 print(df.head())
 print(f"共 {len(df)} 个场景特征，已保存到: {output_path}")
+print(f"Pre-fill nonfinite cells: {quality_report['nonfinite_cell_count']}; "
+      f"caught query exceptions: {quality_report['query_exception_count']}; audit: {quality_path}")

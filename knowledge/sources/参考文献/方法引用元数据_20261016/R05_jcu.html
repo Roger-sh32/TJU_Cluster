@@ -1,0 +1,849 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>    Hierarchical density estimates for data clustering, visualization, and outlier detection  </title>
+	<link rel="icon" type="image/x-icon" href="https://researchonline.jcu.edu.au/images/favicon.ico" />
+
+<!-- Google Analytics -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-V9SW9VC0DG">// <!-- No script --></script>
+<script>//<![CDATA[
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V9SW9VC0DG');
+//]]></script>
+    <script type="text/javascript" src="//www.google.com/jsapi">// <!-- No script --></script> 
+    <script type="text/javascript"> 
+        google.load("visualization", "1", {packages:["corechart", "geochart"]}); 
+    </script>  
+    
+    <!-- END IRSTATS2 --> 
+    <title>    Hierarchical density estimates for data clustering, visualization, and outlier detection   - ResearchOnline@JCU</title>  
+
+    <link rel="Top" href="https://researchonline.jcu.edu.au/" />  
+    <link rel="Search" href="https://researchonline.jcu.edu.au/cgi/search" />  
+    <meta name="citation_doi" content="http://dx.doi.org/10.1145/2733381" />
+<meta name="eprints.eprintid" content="47065" />
+<meta name="eprints.rev_number" content="455" />
+<meta name="eprints.eprint_status" content="archive" />
+<meta name="eprints.userid" content="42011" />
+<meta name="eprints.source" content="WoK" />
+<meta name="eprints.dir" content="disk0/00/04/70/65" />
+<meta name="eprints.datestamp" content="2017-01-04 08:04:36" />
+<meta name="eprints.lastmod" content="2024-02-28 15:06:23" />
+<meta name="eprints.status_changed" content="2017-03-09 23:15:48" />
+<meta name="eprints.type" content="article" />
+<meta name="eprints.metadata_visibility" content="show" />
+<meta name="eprints.creators_jcu_creator_type" content="external" />
+<meta name="eprints.creators_jcu_creator_type" content="external" />
+<meta name="eprints.creators_jcu_creator_type" content="external" />
+<meta name="eprints.creators_jcu_creator_type" content="external" />
+<meta name="eprints.creators_name" content="Campello, Ricardo J.G.B." />
+<meta name="eprints.creators_name" content="Moulavi, Davoud" />
+<meta name="eprints.creators_name" content="Zimek, Arthur" />
+<meta name="eprints.creators_name" content="Sander, Jörg" />
+<meta name="eprints.creators_jcu_orgu" content="orgu_0001" />
+<meta name="eprints.creators_jcu_orgu" content="orgu_0001" />
+<meta name="eprints.creators_jcu_orgu" content="orgu_0001" />
+<meta name="eprints.creators_jcu_orgu" content="orgu_0001" />
+<meta name="eprints.creators_jcu_institution" content="Universidade de São Paulo, BRA" />
+<meta name="eprints.creators_jcu_institution" content="University of Alberta, CAN" />
+<meta name="eprints.creators_jcu_institution" content="Ludwig-Maximilians-Universität, München, DEU" />
+<meta name="eprints.creators_jcu_institution" content="University of Alberta, Canada" />
+<meta name="eprints.creators_jcu_user_id" content="05D4396B468498B43EFA7AF63B3D1D0F" />
+<meta name="eprints.lastcited" content="2024-02-28 15:06:20" />
+<meta name="eprints.external_id_provider" content="Scopus" />
+<meta name="eprints.external_id_identifier" content="2-s2.0-84938375176" />
+<meta name="eprints.external_id_count" content="406" />
+<meta name="eprints.title" content="Hierarchical density estimates for data clustering, visualization, and outlier detection" />
+<meta name="eprints.ispublished" content="pub" />
+<meta name="eprints.subjects" content="HASH(0x11c37298)" />
+<meta name="eprints.seo" content="HASH(0x1260e598)" />
+<meta name="eprints.full_text_status" content="restricted" />
+<meta name="eprints.article_type" content="article" />
+<meta name="eprints.keywords" content="data mining, clustering, algorithms, density-based clustering, hierarchical and nonhierarchical clustering, unsupervised and semisupervised clustering, data visualization, outlier detection, global/local outliers" />
+<meta name="eprints.abstract" content="An integrated framework for density-based cluster analysis, outlier detection, and data visualization is introduced in this article. The main module consists of an algorithm to compute hierarchical estimates of the level sets of a density, following Hartigan's classic model of density-contour clusters and trees. Such an algorithm generalizes and improves existing density-based clustering techniques with respect to different aspects. It provides as a result a complete clustering hierarchy composed of all possible density-based clusters following the nonparametric model adopted, for an infinite range of density thresholds. The resulting hierarchy can be easily processed so as to provide multiple ways for data visualization and exploration. It can also be further postprocessed so that: (i) a normalized score of &quot;outlierness&quot; can be assigned to each data object, which unifies both the global and local perspectives of outliers into a single definition; and (ii) a &quot;flat&quot; (i.e., nonhierarchical) clustering solution composed of clusters extracted from local cuts through the cluster tree (possibly corresponding to different density thresholds) can be obtained, either in an unsupervised or in a semisupervised way. In the unsupervised scenario, the algorithm corresponding to this postprocessing module provides a global, optimal solution to the formal problem of maximizing the overall stability of the extracted clusters. If partially labeled objects or instance-level constraints are provided by the user, the algorithm can solve the problem by considering both constraints violations/satisfactions and cluster stability criteria. An asymptotic complexity analysis, both in terms of running time and memory space, is described. Experiments are reported that involve a variety of synthetic and real datasets, including comparisons with state-of-the-art, density-based clustering and (global and local) outlier detection methods." />
+<meta name="eprints.date" content="2015-07" />
+<meta name="eprints.date_type" content="published" />
+<meta name="eprints.publication" content="ACM Transactions on Knowledge Discovery from Data" />
+<meta name="eprints.volume" content="10" />
+<meta name="eprints.article_number" content="5" />
+<meta name="eprints.issue" content="1" />
+<meta name="eprints.publisher" content="Association for Computing Machinery" />
+<meta name="eprints.pagerange" content="5:1-5:51" />
+<meta name="eprints.pages" content="51" />
+<meta name="eprints.id_number" content="10.1145/2733381" />
+<meta name="eprints.refereed" content="TRUE" />
+<meta name="eprints.issn" content="1556-472X" />
+<meta name="eprints.official_url" content="http://dx.doi.org/10.1145/2733381" />
+<meta name="eprints.has_tdh_url" content="FALSE" />
+<meta name="eprints.funders" content="National Sciences and Engineeering Research Council of Canada" />
+<meta name="eprints.funders" content="São Paulo Research Foundation (FAPESP)" />
+<meta name="eprints.funders" content="CNPq-Brazil" />
+<meta name="eprints.projects" content="FAPESP grant #2013/18698-4" />
+<meta name="eprints.projects" content="FAPESP grant #2010/20032-6" />
+<meta name="eprints.projects" content="CNPq grant #304137/2013-8" />
+<meta name="eprints.projects" content="CNPq grant #201239/2012-4" />
+<meta name="eprints.sensitivity" content="not_sensitive" />
+<meta name="eprints.openaccess" content="restricted" />
+<meta name="eprints.citation" content="  Campello, Ricardo J.G.B., Moulavi, Davoud, Zimek, Arthur, and Sander, Jörg  (2015) Hierarchical density estimates for data clustering, visualization, and outlier detection.  ACM Transactions on Knowledge Discovery from Data, 10 (1). 5.  5:1-5:51.     " />
+<meta name="eprints.document_url" content="https://researchonline.jcu.edu.au/47065/1/47065_Campell%20et%20al_2015.pdf" />
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+<meta name="DC.title" content="Hierarchical density estimates for data clustering, visualization, and outlier detection" />
+<meta name="DC.creator" content="Campello, Ricardo J.G.B." />
+<meta name="DC.creator" content="Moulavi, Davoud" />
+<meta name="DC.creator" content="Zimek, Arthur" />
+<meta name="DC.creator" content="Sander, Jörg" />
+<meta name="DC.description" content="An integrated framework for density-based cluster analysis, outlier detection, and data visualization is introduced in this article. The main module consists of an algorithm to compute hierarchical estimates of the level sets of a density, following Hartigan's classic model of density-contour clusters and trees. Such an algorithm generalizes and improves existing density-based clustering techniques with respect to different aspects. It provides as a result a complete clustering hierarchy composed of all possible density-based clusters following the nonparametric model adopted, for an infinite range of density thresholds. The resulting hierarchy can be easily processed so as to provide multiple ways for data visualization and exploration. It can also be further postprocessed so that: (i) a normalized score of &quot;outlierness&quot; can be assigned to each data object, which unifies both the global and local perspectives of outliers into a single definition; and (ii) a &quot;flat&quot; (i.e., nonhierarchical) clustering solution composed of clusters extracted from local cuts through the cluster tree (possibly corresponding to different density thresholds) can be obtained, either in an unsupervised or in a semisupervised way. In the unsupervised scenario, the algorithm corresponding to this postprocessing module provides a global, optimal solution to the formal problem of maximizing the overall stability of the extracted clusters. If partially labeled objects or instance-level constraints are provided by the user, the algorithm can solve the problem by considering both constraints violations/satisfactions and cluster stability criteria. An asymptotic complexity analysis, both in terms of running time and memory space, is described. Experiments are reported that involve a variety of synthetic and real datasets, including comparisons with state-of-the-art, density-based clustering and (global and local) outlier detection methods." />
+<meta name="DC.publisher" content="Association for Computing Machinery" />
+<meta name="DC.date" content="2015-07" />
+<meta name="DC.type" content="Article" />
+<meta name="DC.format" content="application/pdf" />
+<meta name="DC.identifier" content="https://researchonline.jcu.edu.au/47065/1/47065_Campell%20et%20al_2015.pdf" />
+<meta name="DC.relation" content="http://dx.doi.org/10.1145/2733381" />
+<meta name="DC.identifier" content="  Campello, Ricardo J.G.B., Moulavi, Davoud, Zimek, Arthur, and Sander, Jörg  (2015) Hierarchical density estimates for data clustering, visualization, and outlier detection.  ACM Transactions on Knowledge Discovery from Data, 10 (1). 5.  5:1-5:51.     " />
+<meta name="DC.relation" content="https://researchonline.jcu.edu.au/47065/" />
+<meta name="DC.rights" content="restricted" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/RDFXML/jcu-eprint-47065.rdf" type="application/rdf+xml" title="RDF+XML" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/BibTeX/jcu-eprint-47065.bib" type="text/plain" title="BibTeX" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/RDFNT/jcu-eprint-47065.nt" type="text/plain" title="RDF+N-Triples" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/JSON/jcu-eprint-47065.js" type="application/json; charset=utf-8" title="JSON" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/DC/jcu-eprint-47065.txt" type="text/plain; charset=utf-8" title="Dublin Core" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/Atom/jcu-eprint-47065.xml" type="application/atom+xml;charset=utf-8" title="Atom" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/Simple/jcu-eprint-47065.txt" type="text/plain; charset=utf-8" title="Simple Metadata" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/Refer/jcu-eprint-47065.refer" type="text/plain" title="Refer" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/METS/jcu-eprint-47065.xml" type="text/xml; charset=utf-8" title="METS" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/HTML/jcu-eprint-47065.html" type="text/html; charset=utf-8" title="HTML Citation" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/Text/jcu-eprint-47065.txt" type="text/plain; charset=utf-8" title="ASCII Citation" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/ContextObject/jcu-eprint-47065.xml" type="text/xml; charset=utf-8" title="OpenURL ContextObject" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/EndNote/jcu-eprint-47065.enw" type="text/plain; charset=utf-8" title="EndNote" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/MODS/jcu-eprint-47065.xml" type="text/xml; charset=utf-8" title="MODS" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/COinS/jcu-eprint-47065.txt" type="text/plain; charset=utf-8" title="OpenURL ContextObject in Span" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/DIDL/jcu-eprint-47065.xml" type="text/xml; charset=utf-8" title="MPEG-21 DIDL" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/XML/jcu-eprint-47065.xml" type="application/vnd.eprints.data+xml; charset=utf-8" title="EP3 XML" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/RIS/jcu-eprint-47065.ris" type="text/plain" title="Reference Manager" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/RDFN3/jcu-eprint-47065.n3" type="text/n3" title="RDF+N3" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/JCU_CSV/jcu-eprint-47065.csv" type="text/csv; charset=utf-8" title="Multiline CSV" />
+<link rel="alternate" href="https://researchonline.jcu.edu.au/cgi/export/eprint/47065/CSV/jcu-eprint-47065.csv" type="text/csv; charset=utf-8" title="Multiline CSV" />
+<link rel="Top" href="https://researchonline.jcu.edu.au/" />
+    <link rel="Sword" href="https://researchonline.jcu.edu.au/sword-app/servicedocument" />
+    <link rel="SwordDeposit" href="https://researchonline.jcu.edu.au/id/contents" />
+    <link rel="Search" type="text/html" href="http:///cgi/search" />
+    <link rel="Search" type="application/opensearchdescription+xml" href="http:///cgi/opensearchdescription" title="ResearchOnline@JCU" />
+    <script type="text/javascript">
+// <![CDATA[
+var eprints_http_root = "https://researchonline.jcu.edu.au";
+var eprints_http_cgiroot = "https://researchonline.jcu.edu.au/cgi";
+var eprints_oai_archive_id = "researchonline.jcu.edu.au";
+var eprints_logged_in = false;
+// ]]></script>
+    <style type="text/css">.ep_logged_in { display: none }</style>
+    <link rel="stylesheet" type="text/css" href="/style/auto-3.3.16.css" />
+    <script type="text/javascript" src="/javascript/auto-3.3.16.js"><!--padder--></script>
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="/style/ie6.css" />
+   <![endif]-->
+    <meta name="Generator" content="EPrints 3.3.16" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+      
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">// <!-- No script --></script>
+    <!-- Jquery and Prototype fight for '$' use, give prototype '$' -->
+    <script>
+       var $j = jQuery.noConflict();
+    </script>
+    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js">// <!-- No script --></script>
+
+    <!--<style type='text/css' media="screen">@import url(<epc:print expr="$config{rel_path}"/>/style/jcu/nojs.css);</style>-->
+    <!-- <link type="text/css" href="https://secure.jcu.edu.au/css/webassets/jcu_stylesheet.css" rel="stylesheet"/> -->   
+    <style type="text/css" media="screen">@import url(/style/jcu/jcu_researchOnline_custom.css);</style>
+</head>
+<body class="jcustatic-filled">
+
+
+<div class="jcustatic-jcunav">
+    <div class="jcustatic-jcunav-inside">
+            <div class="jcustatic-link">
+                <a href="https://www.jcu.edu.au/staff">Staff</a>
+
+
+            </div>
+            <div class="jcustatic-link">
+                <a href="https://my.jcu.edu.au/">JCU App</a>
+
+
+            </div>
+            <div class="jcustatic-link">
+                <a href="https://www.jcu.edu.au/library">Library</a>
+
+
+            </div>
+            <div class="jcustatic-link">
+                <a href="https://learn.jcu.edu.au/auth-saml/saml/login?apId=_449_1">LearnJCU</a>
+
+
+            </div>
+            <div class="jcustatic-link">
+                <a href="https://www.jcu.edu.au/jcu-contact-information">Contact</a>
+
+
+            </div>
+            <div class="jcustatic-link">
+                <a href="https://www.jcu.edu.au/give">Give</a>
+
+
+            </div>
+    </div>
+</div>
+<div> 
+<div class="jcustatic-header jcustatic-cf">
+    <div class="jcustatic-logowrap">
+        <a href="https://www.jcu.edu.au" title="JCU Home" class="jcustatic-logolink">
+            <img src="https://researchonline.jcu.edu.au/images/logos/jcu-2023.svg" alt="JCU Australia logo" />
+        </a>
+    </div>
+    <h1></h1>
+</div>
+</div>
+<div class="jcustatic-nav">
+    <div class="jcustatic-nav-inner">
+            <ul class="jcustatic-leftitems">
+                
+                        <li class="">
+                            
+                            
+                                        <a href="https://researchonline.jcu.edu.au">ResearchOnline</a>
+                            
+                        </li>
+                        <li class="">
+                            
+                            
+                                        <a href="https://researchonline.jcu.edu.au/information.html">About</a>
+                            
+                        </li>
+                        <li class="">
+                            
+                            
+                                        <a href="https://researchonline.jcu.edu.au/cgi/search/simple/">Search</a>
+                            
+                        </li>
+                        <li class="jcustatic-nav-dropdown">
+                            
+                            
+                                        <a href="https://researchonline.jcu.edu.au/view/">Browse</a>
+                                <ul>
+                                        <li>
+                                            
+                                                        <a href="https://researchonline.jcu.edu.au/view/jcu/">JCU Authors</a>
+                                        </li>
+                                        <li>
+                                            
+                                                        <a href="https://researchonline.jcu.edu.au/view/all/">All Authors</a>
+                                        </li>
+                                        <li>
+                                            
+                                                        <a href="https://researchonline.jcu.edu.au/view/orgu/">College or Centre</a>
+                                        </li>
+                                        <li>
+                                            
+                                                        <a href="https://researchonline.jcu.edu.au/view/year/">Year</a>
+                                        </li>
+                                        <li>
+                                            
+                                                        <a href="https://researchonline.jcu.edu.au/view/">Other</a>
+                                        </li>
+                                </ul>
+                            
+                        </li>
+                        <li class="">
+                            
+                            
+                                    
+                            
+                        </li>
+                        <li class="">
+                            
+                            
+                                        <a href="https://www.jcu.edu.au/library/about/contacts/researchonline">Contact Us</a>
+                            
+                        </li>
+            </ul>
+
+                <ul class="jcustatic-rightitems">
+                    
+                            <li class="jcustatic-nav-dropdown login-required">
+                                
+                                
+                                        <a href="https://researchonline.jcu.edu.au/cgi/users/home">Login</a>
+                                    <ul>
+                                            <li>
+                                                
+                                                        
+                                            </li>
+                                            <li>
+                                                
+                                                        
+                                            </li>
+                                            <li>
+                                                
+                                                        
+                                            </li>
+                                            <li>
+                                                
+                                                        
+                                            </li>
+                                    </ul>
+                                
+                            </li>
+                            <li class="no-login-required">
+                                
+                                
+                                        <a href="https://researchonline.jcu.edu.au/cgi/users/home">Login</a>
+                                
+                            </li>
+                </ul>
+            <script type="text/javascript">// <![CDATA[
+                // Sometimes (e.g. ePrints sites) we have to add nav sub-menus
+                // that might end up empty. This code prunes away the empty sub
+                // -menus, and if it finds a nav sub-menu, adds the right
+                // classname to make it render properly.
+                //
+                // Get the top level navigation (not sub navigation items)
+                const firstLevelItems = document.querySelectorAll('.jcustatic-nav-inner > ul > li')
+                for (const navItem of firstLevelItems) {
+                    const topLevelText = navItem.querySelector('.jcustatic-nav-inner > ul > li > a, .jcustatic-nav-inner > ul > li > span')
+                    if (!topLevelText || !topLevelText.innerText.trim()) {
+                        // No top level text for this nav item, so hide it
+                        navItem.style.display = 'none'
+                        navItem.classList.remove('jcustatic-nav-dropdown')
+                        continue
+                    }
+
+                    const dropdown = navItem.querySelector('.jcustatic-nav-inner > ul > li > ul')
+                    if (dropdown) {
+                        // this nav item has a dropdown of sub-items
+                        const dropdownItems = dropdown.querySelectorAll('li > a, li > span')
+
+                        // assume all the sub-items are blank, so no need for a dropdown
+                        navItem.classList.remove('jcustatic-nav-dropdown')
+                        // handle sub menu items
+                        for (const secondLevelItem of dropdownItems) {
+                            if (!secondLevelItem.innerText.trim()) {
+                                // Hide this item as it has no text
+                                secondLevelItem.style.display = 'none'
+                            } else {
+                                // found a real sub-item, so let's turn on
+                                // dropdown behaviour in our parent
+                                navItem.classList.add('jcustatic-nav-dropdown')
+                            }
+                        }
+                    }
+                }
+            // ]]></script>
+    </div>
+</div>
+<div class="jcustatic-contentblock-filled">
+<div class="jcustatic-contentblock">
+<div id="search-background"> </div>  
+        <div id="breadcrumb"> </div> 
+        <div id="content">  
+            <h1 class="ep_tm_pagetitle">  
+            
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <div style="text-align:right" class="addthis_inline_share_toolbox"></div>
+
+Hierarchical density estimates for data clustering, visualization, and outlier detection
+
+
+  
+            </h1>  
+            <div class="ep_summary_content"><div class="ep_summary_content_left"></div><div class="ep_summary_content_right"></div><div class="ep_summary_content_top"></div><div class="ep_summary_content_main">
+<style>
+
+.noaltmetric {
+    position: relative;
+    display: inline;
+    padding: 16px;
+}
+.hoverscopus {
+    position: relative;
+    display: inline; 
+    padding: 16px;
+}
+.hoverisi {
+    position: relative;
+    display: inline;
+    padding: 16px;
+}
+
+</style>
+  <p class="ep_block" style="margin-bottom: 1em">
+    
+
+
+    <span class="person_name">Campello, Ricardo J.G.B.</span>, <span class="person_name">Moulavi, Davoud</span>, <span class="person_name">Zimek, Arthur</span>, and <span class="person_name">Sander, Jörg</span>
+  
+
+(2015)
+
+<em>Hierarchical density estimates for data clustering, visualization, and outlier detection.</em>
+
+
+    ACM Transactions on Knowledge Discovery from Data, 10 (1). 5.  5:1-5:51.
+    
+
+
+  
+
+
+
+  </p>
+
+  
+
+  
+
+    
+  
+    <!-- Display the user-defined HTML content within the abstract --> 
+	
+
+    
+      
+      <table class="ep_block">
+        
+          <tr>
+            <td valign="top" align="right"><a href="https://researchonline.jcu.edu.au/47065/1/47065_Campell%20et%20al_2015.pdf" class="ep_document_link"><img class="ep_doc_icon" alt="[img]" src="https://researchonline.jcu.edu.au/style/images/fileicons/application_pdf.png" border="0" /></a></td>
+            <td valign="top">
+              
+
+<!-- document citation -->
+
+
+<span class="ep_document_citation">
+<span class="document_format">PDF (Published Version)</span>
+<!--<epc:if test="main"><br/><span class="document_filename"><print expr="main"/></span></epc:if>-->
+ - Published Version
+
+  <br />Restricted to Repository staff only
+
+
+</span>
+
+<br />
+              
+              
+                <!-- Remove request a copy button.
+              <epc:if test="!$doc.is_public() and $item.contact_email().is_set() and eprint_status = 'archive'">
+                 <form name="requestacopy" action="{$config{http_cgiurl}}/request_doc">
+                 <input name="docid" id="docid" value="{$doc{docid}}" type="hidden"/>
+                 <input class="ep_form_action_button" type="submit" value="Request a copy"/>
+                 </form>
+              </epc:if> -->
+  
+              <ul>
+              
+              </ul>
+            </td>
+          </tr>
+        
+      </table>
+    
+
+  
+
+
+    <div style="margin-bottom: 1em" class="ep_block">
+      DOI: <a href="http://dx.doi.org/10.1145/2733381" target="_blank">10.1145/2733381</a>
+    </div>
+  
+
+  
+    <div style="margin-bottom: 1em" class="ep_block">
+      View at Publisher Website: <a href="http://dx.doi.org/10.1145/2733381">http://dx.doi.org/10.1145/2733381</a>
+    </div>
+  
+
+<div style="text-align:center">
+<!--<div class="addthis_inline_share_toolbox"></div>-->
+
+<div>
+        
+
+	<div class="noaltmetric" style="display:inline-block">
+	<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1145/2733381 &lt;http://dx.doi.org/10.1145/2733381&gt;" data-hide-no-mentions="true" data-hide-less-than="1" class="altmetric-embed"></div>
+	 <div style="display:inline-block">
+                          
+                        </div>
+	</div>
+	
+
+        
+          
+
+          
+           
+			<div style="display:inline-block" class="hoverscopus">     
+			<div>	
+			<a href="http://www.scopus.com/record/display.url?eid=2-s2.0-84938375176&amp;origin=resultslist">
+				<img src="/images/scopus3.png" width="64px" height="64px" alt="Scopus" />
+                        </a>
+			</div>
+			<div style="display:inline-block">
+		        406				
+			</div>	
+			</div>
+           
+          
+                        
+		   
+                        
+
+          
+        
+
+	
+	        
+			<div style="display:inline-block" class="hoverisi">
+                        	<div>
+                        	<a href="/cgi/stats/report/eprint/47065">
+
+                        	<img src="/images/download.jpg" width="64px" height="64px" alt="Downloads" />
+                        	</a>
+                        	</div>
+                        	<div style="display:inline-block">
+                         		3
+                        	</div>
+			</div>
+		
+</div>
+
+
+
+<p></p>
+</div>
+
+<p><br /></p>
+
+
+  
+    <h2 class="ep_block">Abstract</h2>
+    <p style="text-align: center; margin: 1em auto 0em auto"><p>An integrated framework for density-based cluster analysis, outlier detection, and data visualization is introduced in this article. The main module consists of an algorithm to compute hierarchical estimates of the level sets of a density, following Hartigan's classic model of density-contour clusters and trees. Such an algorithm generalizes and improves existing density-based clustering techniques with respect to different aspects. It provides as a result a complete clustering hierarchy composed of all possible density-based clusters following the nonparametric model adopted, for an infinite range of density thresholds. The resulting hierarchy can be easily processed so as to provide multiple ways for data visualization and exploration. It can also be further postprocessed so that: (i) a normalized score of "outlierness" can be assigned to each data object, which unifies both the global and local perspectives of outliers into a single definition; and (ii) a "flat" (i.e., nonhierarchical) clustering solution composed of clusters extracted from local cuts through the cluster tree (possibly corresponding to different density thresholds) can be obtained, either in an unsupervised or in a semisupervised way. In the unsupervised scenario, the algorithm corresponding to this postprocessing module provides a global, optimal solution to the formal problem of maximizing the overall stability of the extracted clusters. If partially labeled objects or instance-level constraints are provided by the user, the algorithm can solve the problem by considering both constraints violations/satisfactions and cluster stability criteria. An asymptotic complexity analysis, both in terms of running time and memory space, is described. Experiments are reported that involve a variety of synthetic and real datasets, including comparisons with state-of-the-art, density-based clustering and (global and local) outlier detection methods.</p></p>
+  
+
+
+
+ 
+  
+ 
+
+  <table style="margin-bottom: 1em; margin-top: 1em;" cellpadding="3" class="ep_block">
+ 
+ 
+  
+  
+  
+
+  
+ 
+  
+   <tr style="border-top: none"><td style="border-top: none"></td></tr>
+<!--  </table>  	
+
+<table style="margin-bottom: 1em; margin-top: 1em;" cellpadding="3" class="ep_block">  	-->
+
+
+
+
+        <tr>
+        <th class="ep_row">Item ID:</th>
+                <td class="ep_row"> 47065</td>
+        </tr>
+
+
+
+  
+        <tr>
+        <th class="ep_row">Item Type:</th>
+         <td class="ep_row">
+         Article
+           
+           
+           
+           (Research - C1)
+           
+           
+           
+           
+          </td></tr>
+        
+
+
+
+
+    
+      
+
+
+	   
+	
+    
+    <!-- Added to list jcu seo and for without percentages -->
+
+    
+    
+
+
+    
+    
+      
+    
+      
+    
+      
+        
+              <tr>
+          	    <th class="ep_row">ISSN:</th>
+            	<td class="ep_row" valign="top">1556-472X</td>
+          	  </tr>	
+          	  	
+      
+    
+      
+        
+              <tr>
+          	    <th class="ep_row">Keywords:</th>
+            	<td class="ep_row" valign="top">data mining, clustering, algorithms, density-based clustering, hierarchical and nonhierarchical clustering, unsupervised and semisupervised clustering, data visualization, outlier detection, global/local outliers</td>
+          	  </tr>	
+          	  	
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+              <tr>
+          	    <th class="ep_row">Funders:</th>
+            	<td class="ep_row" valign="top">National Sciences and Engineeering Research Council of Canada, São Paulo Research Foundation (FAPESP), CNPq-Brazil</td>
+          	  </tr>	
+          	  	
+      
+    
+      
+        
+              <tr>
+          	    <th class="ep_row">Projects and Grants:</th>
+            	<td class="ep_row" valign="top">FAPESP grant #2013/18698-4, FAPESP grant #2010/20032-6, CNPq grant #304137/2013-8, CNPq grant #201239/2012-4</td>
+          	  </tr>	
+          	  	
+      
+    
+      
+    
+      
+        
+              <tr>
+          	    <th class="ep_row">Date Deposited:</th>
+            	<td class="ep_row" valign="top">04 Jan 2017 08:04</td>
+          	  </tr>	
+          	  	
+      
+    
+      
+        
+        	  <tr>
+            	<th class="ep_row">FoR Codes:</th>
+            	<td class="ep_row" valign="top"><a href="https://researchonline.jcu.edu.au/view/subjects/010401.html">01 MATHEMATICAL SCIENCES &gt; 0104 Statistics &gt; 010401 Applied Statistics @ 100%</a></td>
+              </tr>
+        	  	
+      
+    
+      
+        
+        	  <tr>
+            	<th class="ep_row">SEO Codes:</th>
+            	<td class="ep_row" valign="top"><a href="https://researchonline.jcu.edu.au/view/seo/seo=5F970101.html">97 EXPANDING KNOWLEDGE &gt; 970101 Expanding Knowledge in the Mathematical Sciences @ 100%</a></td>
+              </tr>
+        	  	
+      
+    
+
+
+
+   	
+    <tr>
+      <th class="ep_row">Downloads:</th>
+		<td class="ep_row" valign="top">
+		Total: 3<br />
+		
+		</td>
+    </tr>
+	
+
+    <tr>
+    	<!--<th align="right">More Statistics</th>-->
+    	<th></th>
+    	<td class="ep_row" valign="top"><a href="https://researchonline.jcu.edu.au/cgi/stats/report/eprint/47065">More Statistics</a></td>
+    </tr>    
+    <!--<tr>
+               <th align="right">URI:</th>
+      <td valign="top"><a href="{$item.uri()}"><epc:print expr="$item.uri()" /></a></td>
+    </tr>-->
+  </table>
+
+  
+  
+
+  
+  <div style="float:right"><p align="right">
+    <!--<h3>Actions (Repository Staff Only)</h3>-->
+    Actions (Repository Staff Only)
+    <table class="ep_summary_page_actions">
+    
+      <tr>
+        <td align="right"><a href="/cgi/users/home?screen=EPrint%3A%3AView&amp;eprintid=47065"><img src="/style/images/action_view.png" title="Item Control Page" alt="Item Control Page" class="ep_form_action_icon" /></a></td>
+        <td align="right">Item Control Page</td>
+      </tr>
+    
+    </table>
+</p></div>
+  
+
+</div><div class="ep_summary_content_bottom"></div><div class="ep_summary_content_after"></div></div>  
+        </div>  
+</div>
+</div>
+<footer class="jcustatic-footer sitefooter">
+        <div class="jcustatic-link">
+            <a href="https://libguides.jcu.edu.au/copyright-researchers/ResearchOnline">Copyright</a>
+        </div>
+        <div class="jcustatic-link">
+            <a href="https://www.jcu.edu.au/policy/research-management2/research-repository-policy">ResearchOnline Procedure</a>
+        </div>
+        <div class="jcustatic-link">
+            <a href="https://researchonline.jcu.edu.au/cgi/stats/report/">Statistics</a>
+        </div>
+</footer>
+
+<div class="jcustatic-footer">
+	<div class="jcustatic-inner-footer">
+		
+		<div class="jcustatic-upper-footer">
+		    <footer class="jcustatic-footer-universities">
+		        <a href="https://www.jcu.edu.au/gender-equity-action-and-research/gender-equity" title="Athena SWAN Bronze Award"><img src="https://researchonline.jcu.edu.au/images/partners/athena-swan-bronze-award.svg" alt="Athena SWAN Bronze Award logo" /></a>
+		        <a href="https://www.iru.edu.au/" title="Innovative Research Universities"><img src="https://researchonline.jcu.edu.au/images/partners/innovative-research-universities.svg" alt="Innovative Research Universities" /></a>
+		        <a href="https://www.universitiesaustralia.edu.au/" title="Universities Australia"><img src="https://researchonline.jcu.edu.au/images/partners/universities-australia.svg" alt="Universities Australia" /></a>
+		        <a href="https://www.jcu.edu.au/state-of-the-tropics" title="State of the Tropics"><img src="https://researchonline.jcu.edu.au/images/partners/state-of-the-tropics.svg" alt="State of the Tropics" /></a>
+		    </footer>
+		    <footer class="jcustatic-footer-traditional">
+		        <a href="https://www.jcu.edu.au/ierc" title="Go to Indigenous Education and Research Centre"><img class="jcustatic-flag" src="https://researchonline.jcu.edu.au/images/aboriginal-flag.svg" alt="Aboriginal flag" /></a>
+		        <a href="https://www.jcu.edu.au/ierc" title="Go to Indigenous Education and Research Centre"><img class="jcustatic-flag" src="https://researchonline.jcu.edu.au/images/torres-strait-flag.svg" alt="Torres Strait flag" /></a>
+		        <span class="jcustatic-text">We acknowledge Australian Aboriginal People and Torres Strait Islander People as the first inhabitants of
+		            the nation, and acknowledge Traditional Owners of the lands where our staff and students live, learn
+		            and work.
+		        </span>
+		    </footer>
+		</div>
+		
+		<div class="jcustatic-lower-footer">
+		    <ul class="jcustatic-footer-copyright">
+		        <li>© James Cook University 1995 to 2023</li>
+		        <li><a href="http://cricos.education.gov.au/Institution/InstitutionDetails.aspx?ProviderID=117">CRICOS Provider Code: 00117J</a></li>
+		        <li>ABN 46253211955</li>
+		    </ul>
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		    <ul class="jcustatic-footer-legal">
+		        <li><a href="https://www.jcu.edu.au/copyright-and-terms-of-use">Terms of use</a></li>
+		        <li><a href="https://www.jcu.edu.au/right-to-information-and-privacy">Privacy</a></li>
+		        <li><a href="https://www.jcu.edu.au/copyright-and-terms-of-use">Disclaimer</a></li>
+		    </ul>
+		</div>
+	</div>
+</div>	
+  
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57fac55b14a03bc6">// <!-- No script --></script> 
+
+<script>
+//<![CDATA[
+    function toggleElementVisibility(list, visible) {
+        for(const element of list) {
+            if(visible) {
+                element.classList.remove('hide-element');
+            }
+            else {
+                element.classList.add('hide-element');
+            }
+        }
+    }
+
+    var loggedInElements = document.getElementsByClassName("login-required");
+    var loggedOutElements = document.getElementsByClassName("no-login-required");
+
+    toggleElementVisibility(loggedInElements, window.eprints_logged_in);
+    toggleElementVisibility(loggedOutElements, !window.eprints_logged_in);
+//]]>
+</script>
+<script>// <![CDATA[
+
+(function() {
+	// if the branding support includes JS, it's here.
+
+	// for your debugging convenience
+	var console = window.console
+	// put all our stuff into a single object to avoid
+    // contaminating the global namespace.
+	window.JcuStatic = {}
+	var jcu = window.JcuStatic
+
+	// if we have local storage, put it into our object
+	try {
+		if (window.localStorage) { jcu.store = window.localStorage }
+	} catch (e) { /* oh well */ }
+
+	// if we have session storage, put it into our object
+	try {
+		if (window.sessionStorage) { jcu.sesh = window.sessionStorage }
+	} catch (e) { /* oh well */ }
+
+	// == JS for the cookie disclaimer =========================
+	if (!jcu.cookieDisclaimer) { jcu.cookieDisclaimer = {} }
+	var cd = jcu.cookieDisclaimer
+
+	// show the cookie disclaimer UNLESS we have session storage AND
+	// we've stored "cookies": "okay" in it.
+	if (!(jcu.sesh && (jcu.sesh.getItem('cookies') === 'okay'))) {
+		// get the disclaimer dialogue window thing
+		var discs = document.getElementsByClassName('jcustatic-cookie-disclaimer')
+		if (discs.length > 0) {
+			// found a disclaimer window
+			cd.window = discs[0]
+			// find the close buttons and make them close the window
+			var closeBtns = cd.window.getElementsByClassName('close')
+			for (var b = 0; b < closeBtns.length; b++) {
+				closeBtns[b].onclick = function() {
+					cd.window.style.display = 'none'
+					if (jcu.sesh) {
+						jcu.sesh.setItem('cookies', 'okay')
+					}
+				}
+			}
+            // make the disclaimer window visible
+			cd.window.style.display = 'initial'
+		}
+	}
+
+})()
+// ]]></script></body>
+</html>

@@ -1,0 +1,739 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Evaluation of ranked retrieval results</TITLE>
+<META NAME="description" CONTENT="Evaluation of ranked retrieval results">
+<META NAME="keywords" CONTENT="irbook">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="irbook.css">
+
+<LINK REL="next" HREF="assessing-relevance-1.html">
+<LINK REL="previous" HREF="evaluation-of-unranked-retrieval-sets-1.html">
+<LINK REL="up" HREF="evaluation-in-information-retrieval-1.html">
+<LINK REL="next" HREF="assessing-relevance-1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2445"
+  HREF="assessing-relevance-1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/next.png"></A> 
+<A NAME="tex2html2439"
+  HREF="evaluation-in-information-retrieval-1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/up.png"></A> 
+<A NAME="tex2html2433"
+  HREF="evaluation-of-unranked-retrieval-sets-1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/prev.png"></A> 
+<A NAME="tex2html2441"
+  HREF="contents-1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/contents.png"></A> 
+<A NAME="tex2html2443"
+  HREF="index-1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2446"
+  HREF="assessing-relevance-1.html">Assessing relevance</A>
+<B> Up:</B> <A NAME="tex2html2440"
+  HREF="evaluation-in-information-retrieval-1.html">Evaluation in information retrieval</A>
+<B> Previous:</B> <A NAME="tex2html2434"
+  HREF="evaluation-of-unranked-retrieval-sets-1.html">Evaluation of unranked retrieval</A>
+ &nbsp; <B>  <A NAME="tex2html2442"
+  HREF="contents-1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2444"
+  HREF="index-1.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001340000000000000000"></A><A NAME="sec:ranked-evaluation"></A> <A NAME="p:ranked-evaluation"></A>
+<BR>
+Evaluation of ranked retrieval results
+</H1> 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:precision-recall"></A><A NAME="p:precision-recall"></A><A NAME="10697"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8.2:</STRONG>
+Precision/recall graph.</CAPTION>
+<TR><TD><IMG
+ WIDTH="407" HEIGHT="344" ALIGN="BOTTOM" BORDER="0"
+ SRC="img532.png"
+ ALT="\includegraphics[totalheight=3in]{PrecisionRecall.eps}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Precision, recall, and the F&nbsp;measure are set-based measures.  They are
+computed using unordered sets of documents.  We need to extend these
+measures (or to define new measures) if we are to evaluate the ranked
+retrieval results that are now standard with search engines.
+In a ranked retrieval context, appropriate sets of retrieved documents are
+naturally given by the top <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> retrieved documents.  For each such set,
+precision and recall values can
+be plotted to give a <A NAME="10701"></A> <I>precision-recall curve</I> , such as the one shown
+in Figure <A HREF="#fig:precision-recall">8.2</A> .  Precision-recall curves have a
+distinctive saw-tooth shape: if the <IMG
+ WIDTH="64" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img533.png"
+ ALT="$(k+1)^{th}$">
+document retrieved is nonrelevant then recall is the same as for the top
+<IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> documents, but precision has dropped.  If it is relevant, then both
+precision and recall increase, and the curve jags up and to the right.
+It is often useful to remove these jiggles and the standard way to do
+this is with an interpolated precision: the <A NAME="p:interpolatedprecision"></A> <A NAME="10706"></A> <I>interpolated precision</I> 
+<IMG
+ WIDTH="46" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img534.png"
+ ALT="$p_{interp}$"> at a certain
+recall level <IMG
+ WIDTH="10" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$r$"> is defined as the highest precision found for any recall
+level <IMG
+ WIDTH="44" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img535.png"
+ ALT="$r' \ge r$">:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+p_{interp}(r) = \max_{r' \ge r} p(r')
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="149" HEIGHT="39" BORDER="0"
+ SRC="img536.png"
+ ALT="\begin{displaymath}
+p_{interp}(r) = \max_{r' \ge r} p(r')
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(42)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+The justification is that almost anyone would be
+prepared to look at a few more documents if it would increase the
+percentage of the viewed set that were relevant (that is, if the
+precision of the larger set is higher).  Interpolated precision
+is shown by a thinner line in Figure <A HREF="#fig:precision-recall">8.2</A> .  With
+this definition, the interpolated precision at a recall of 0 is
+well-defined (Exercise <A HREF="#ex:interp-prec">8.4</A> ). 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="RIGHT">Recall</TD>
+<TD ALIGN="RIGHT">Interp.</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="RIGHT">Precision</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.0</TD>
+<TD ALIGN="RIGHT">1.00</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.1</TD>
+<TD ALIGN="RIGHT">0.67</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.2</TD>
+<TD ALIGN="RIGHT">0.63</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.3</TD>
+<TD ALIGN="RIGHT">0.55</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.4</TD>
+<TD ALIGN="RIGHT">0.45</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.5</TD>
+<TD ALIGN="RIGHT">0.41</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.6</TD>
+<TD ALIGN="RIGHT">0.36</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.7</TD>
+<TD ALIGN="RIGHT">0.29</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.8</TD>
+<TD ALIGN="RIGHT">0.13</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">0.9</TD>
+<TD ALIGN="RIGHT">0.10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">1.0</TD>
+<TD ALIGN="RIGHT">0.08</TD>
+</TR>
+</TABLE>
+Calculation of 11-point Interpolated Average
+  Precision.This is for the precision-recall curve shown in Figure <A HREF="#fig:precision-recall">8.2</A> .<A NAME="tab:11-point"></A> <A NAME="p:11-point"></A>  
+
+</DIV>
+<BR>
+
+<P>
+Examining the entire precision-recall curve is very informative,
+but there is often a desire to
+boil this information down to a few numbers, or perhaps even a single
+number. The traditional way of
+doing this (used for instance in the first 8 TREC Ad Hoc evaluations)
+is the <A NAME="10724"></A> <I>11-point interpolated average precision</I> .  For each information
+need, the interpolated precision is measured at the 11 recall levels of
+0.0, 0.1, 0.2, ..., 1.0.  For the precision-recall curve in
+Figure <A HREF="#fig:precision-recall">8.2</A> , these 11 values are shown in Table <A HREF="#tab:11-point">8.1</A> . 
+For each recall level, we then calculate
+the arithmetic mean of 
+the interpolated precision at that recall level for each information
+need in the test collection.   A composite precision-recall curve showing 11
+points can then be graphed.  Figure <A HREF="#fig:trec-11-point">8.3</A>  shows an example graph of
+such results from a representative good system at TREC 8.
+
+<P>
+
+<DIV ALIGN="CENTER">
+
+<P><A NAME="fig:trec-11-point"></A><A NAME="p:trec-11-point"></A></P><IMG
+ WIDTH="679" HEIGHT="1016" ALIGN="BOTTOM" BORDER="0"
+ SRC="img537.png"
+ ALT="\includegraphics{PrecisionRecall11point.eps}">
+Averaged 11-point precision/recall graph across 50 queries for
+  a representative TREC system.The Mean Average Precision for this system is
+  0.2553.
+</DIV>
+
+<P>
+In recent years, other measures have become more common.  Most
+standard among the TREC community is 
+<A NAME="11014"></A>
+<A NAME="10737"></A> <I>Mean Average Precision</I> 
+<A NAME="p:map"></A> 
+  (MAP), which provides a single-figure measure of quality across recall
+levels.  Among evaluation measures, MAP has been shown to have
+especially good discrimination and stability.
+For a single information need, Average Precision is the average of the precision
+value obtained for the set of top 
+<IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> documents existing after each relevant document is retrieved, and this value is then averaged over information needs.
+That is, if the set of relevant documents for an information need <IMG
+ WIDTH="49" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img538.png"
+ ALT="$q_j \in Q$"> is <!-- MATH
+ $\{d_1,
+\ldots d_{m_j}\}$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img539.png"
+ ALT="$\{d_1,
+\ldots d_{m_j}\}$"> and 
+<IMG
+ WIDTH="26" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img540.png"
+ ALT="$R_{jk}$"> is the set of ranked retrieval results from the top result until
+you get to document <IMG
+ WIDTH="19" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img541.png"
+ ALT="$d_k$">, then
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{MAP}(Q) = \frac{1}{|Q|} \sum_{j=1}^{|Q|} \frac{1}{m_j}
+\sum_{k=1}^{m_j} \mbox{Precision}(R_{jk})
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="285" HEIGHT="59" BORDER="0"
+ SRC="img542.png"
+ ALT="\begin{displaymath}
+\mbox{MAP}(Q) = \frac{1}{\vert Q\vert} \sum_{j=1}^{\vert Q\vert} \frac{1}{m_j}
+\sum_{k=1}^{m_j} \mbox{Precision}(R_{jk})
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(43)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+When a relevant document is not retrieved at all,<A NAME="tex2html79"
+  HREF="footnode.html#foot10755"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/footnote.png"></SUP></A>the precision value in the above equation is
+taken to be 0.  For a single information need, the average precision approximates the area under the 
+uninterpolated precision-recall curve, and so the MAP is roughly the average area under the precision-recall curve for a set of queries.
+
+<P>
+Using MAP, fixed recall levels are not chosen,
+and there is no interpolation.  The MAP value for a test collection is
+the arithmetic mean of average precision values for individual information
+needs.  (This has the effect of weighting each information
+need equally in the final reported number, even if many documents are
+relevant to some queries whereas very few are relevant to other queries.)
+Calculated MAP
+scores normally vary widely across information needs when measured
+within a single
+system, for instance, between 0.1 and 0.7.  Indeed, there is normally more
+agreement in MAP for an individual information need across systems than
+for MAP scores for different information needs for the same system.
+This means that a set of test information needs must be large and
+diverse enough to be representative of system effectiveness
+across different queries.
+
+<P>
+<A NAME="p:precisionatk"></A> <A NAME="10757"></A>  The
+above measures factor in precision at all recall levels.
+For many prominent applications, particularly web search,
+this may not be germane to users.  What matters is
+rather how many good results there are on the first page or
+the first three pages.  This leads to measuring precision at
+fixed low levels of retrieved results, such as 10 or 30
+documents.  This is referred to as ``Precision at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$">'', for
+example ``Precision at 10''.  It has the advantage of not
+requiring any estimate of the size of the set of relevant
+documents but the disadvantages that it is the least stable of the
+commonly used evaluation measures and that it does not average
+well, since the total number of relevant documents for a
+query has a strong influence on precision at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$">.
+
+<P>
+An alternative, which alleviates this problem, is <A NAME="10759"></A> <I>R-precision</I> .
+It requires having a set of known  
+relevant documents <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.png"
+ ALT="$Rel$">, from which we calculate the
+precision of the top <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.png"
+ ALT="$Rel$"> documents returned.
+(The set <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.png"
+ ALT="$Rel$"> may be incomplete, such as when <IMG
+ WIDTH="27" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.png"
+ ALT="$Rel$"> is formed by
+creating relevance judgments for the pooled top <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> results of
+particular systems in a set of experiments.)  
+R-precision adjusts for the size
+of the set of relevant documents: A perfect system could score
+1 on this metric for each query, whereas, even a perfect system could
+only achieve a precision at 20 of 0.4 if there were only 8
+documents in the collection relevant to an information need.  
+Averaging this measure across queries thus makes more sense.  This measure
+is harder to explain to naive users than Precision at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> but easier to explain than MAP.
+If there are <IMG
+ WIDTH="37" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img544.png"
+ ALT="$\vert Rel\vert$"> relevant documents for a query, we examine the top
+<IMG
+ WIDTH="37" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img544.png"
+ ALT="$\vert Rel\vert$"> results of a system, and find that <IMG
+ WIDTH="10" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$r$"> are relevant, then by
+definition, not only is the precision (and hence R-precision) <IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img545.png"
+ ALT="$r/\vert Rel\vert$">,
+but the recall of this result set is also <IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img545.png"
+ ALT="$r/\vert Rel\vert$">.  Thus, R-precision
+turns out to be identical to the
+<A NAME="p:breakevenpoint"></A> <A NAME="10762"></A> <I>break-even point</I> , another measure
+which is sometimes used, defined in terms of this equality relationship holding. 
+Like Precision at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$">, R-precision describes only one point on
+the precision-recall curve, rather than attempting to summarize
+effectiveness across the curve, and it is somewhat unclear why you should
+be interested in the break-even point rather than either the best point on the curve (the
+point with maximal F-measure) or a retrieval level of interest to a particular application (Precision at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$">).  Nevertheless, R-precision turns out to be highly correlated with MAP empirically, despite measuring only a single point on the curve.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:ROC-curve"></A><A NAME="p:ROC-curve"></A><A NAME="11015"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8.4:</STRONG>
+The ROC curve corresponding to the precision-recall curve in
+  Figure <A HREF="#fig:precision-recall">8.2</A> .</CAPTION>
+<TR><TD><IMG
+ WIDTH="734" HEIGHT="1079" ALIGN="BOTTOM" BORDER="0"
+ SRC="img546.png"
+ ALT="\includegraphics{ROC-curve.eps}">
+.</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Another concept sometimes used in evaluation is an <A NAME="10770"></A> <I>ROC curve</I> .
+(``ROC'' stands for ``Receiver Operating 
+Characteristics'', but knowing that doesn't help most people.)
+An ROC curve plots the true positive rate or sensitivity against the
+false positive rate or (<!-- MATH
+ $1 - \mbox{specificity}$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img547.png"
+ ALT="$1 - \mbox{specificity}$">).  Here,
+<A NAME="10773"></A> <I>sensitivity</I>  is just another term for recall. 
+The false positive rate is given by <IMG
+ WIDTH="98" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img548.png"
+ ALT="$fp/(fp+tn)$">. 
+Figure <A HREF="#fig:ROC-curve">8.4</A>  shows the ROC curve
+corresponding to the precision-recall curve in
+Figure <A HREF="#fig:precision-recall">8.2</A> .  An ROC curve always goes from the bottom
+left to the top right of the graph.  For a good system, the graph climbs
+steeply on the left side.  
+For unranked result sets, <A NAME="10777"></A> <I>specificity</I> , given by <IMG
+ WIDTH="95" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img549.png"
+ ALT="$tn/(fp + tn)$">,
+was not seen as a very useful notion. Because the set
+of true negatives is always so large, its
+value would be almost 1 for all information needs (and,
+correspondingly, the value of 
+the false positive rate would be almost 0). That is, the
+``interesting'' part of Figure <A HREF="#fig:precision-recall">8.2</A>  is
+<!-- MATH
+ $0 < \mbox{recall} < 0.4$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img550.png"
+ ALT="$0 &lt; \mbox{recall} &lt; 0.4$">, a part which is compressed to a small
+corner of Figure <A HREF="#fig:ROC-curve">8.4</A> .  But an ROC curve could make sense when
+looking over the full retrieval spectrum, and it provides another way of
+looking at the data. 
+In many fields, a common aggregate measure is to report
+the area under the ROC curve, which is the ROC analog of MAP.
+Precision-recall curves 
+are sometimes loosely referred to as ROC curves.  This is
+understandable, but not accurate.
+
+<P>
+A final approach that has seen increasing adoption,
+especially when employed with machine learning approaches to
+ranking svm-ranking is measures of
+<A NAME="10783"></A> <I>cumulative gain</I> , and in particular <A NAME="10785"></A> <I>normalized
+  discounted cumulative gain</I> <A NAME="p:ndcg"></A>  (<A NAME="10788"></A> <I>NDCG</I> ).  NDCG is
+designed for situations of non-binary notions of relevance
+(cf. Section <A HREF="critiques-and-justifications-of-the-concept-of-relevance-1.html#sec:relevance">8.5.1</A> ).  Like precision at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$">, it is
+evaluated over some number <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> of top search results. For a set of
+queries <IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$Q$">, let
+<IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img551.png"
+ ALT="$R(j,d)$"> be the relevance score assessors gave to document
+<IMG
+ WIDTH="12" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img354.png"
+ ALT="$d$"> for query <IMG
+ WIDTH="9" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$j$">.  Then,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{NDCG}(Q, k) = \frac{1}{|Q|} \sum_{j=1}^{|Q|} Z_{kj} \sum_{m=1}^{k}
+\frac{2^{R(j,m)}-1}{\log_2(1+m)},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="308" HEIGHT="59" BORDER="0"
+ SRC="img552.png"
+ ALT="\begin{displaymath}
+\mbox{NDCG}(Q, k) = \frac{1}{\vert Q\vert} \sum_{j=1}^{\vert Q\vert} Z_{kj} \sum_{m=1}^{k}
+\frac{2^{R(j,m)}-1}{\log_2(1+m)},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(44)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <IMG
+ WIDTH="25" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img553.png"
+ ALT="$Z_{kj}$"> is a normalization factor calculated to make it so that a
+perfect ranking's NDCG at <IMG
+ WIDTH="11" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$k$"> for query <IMG
+ WIDTH="9" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$j$"> is 1.  For queries for which <IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img554.png"
+ ALT="$k' &lt; k$"> documents are retrieved, the last summation is done up to <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img555.png"
+ ALT="$k'$">.
+
+<P>
+<B>Exercises.</B>
+<UL>
+<LI><A NAME="ex:interp-prec"></A> What are the possible values for
+interpolated precision at a recall level of 0?
+
+<P>
+</LI>
+<LI>Must there always be a break-even
+point between precision and recall?  Either show there must
+be or give a counter-example.  
+
+<P>
+</LI>
+<LI>What
+is the relationship between the value of <IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img522.png"
+ ALT="$F_1$"> and the
+break-even point?
+
+<P>
+</LI>
+<LI>The <A NAME="10807"></A> <I>Dice coefficient</I>  of two sets is a measure of
+their intersection scaled by their size (giving a value in the range 0
+to 1): 
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{Dice}(X,Y) = \frac{2|X\cap Y|}{|X| + |Y|}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="163" HEIGHT="45" BORDER="0"
+ SRC="img556.png"
+ ALT="\begin{displaymath}
+\mbox{Dice}(X,Y) = \frac{2\vert X\cap Y\vert}{\vert X\vert + \vert Y\vert}
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(45)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Show that the balanced F-measure (<IMG
+ WIDTH="19" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img522.png"
+ ALT="$F_1$">) is equal to the Dice
+coefficient of the retrieved and relevant document sets.
+
+<P>
+</LI>
+<LI>Consider an information need for which there are 4 relevant documents in the collection.
+Contrast two systems run on this collection.  Their top 10 results are judged for relevance as follows (the leftmost item is the top ranked search result):
+<BLOCKQUOTE>
+  <TABLE CELLPADDING=3>
+<TR><TD ALIGN="LEFT">System 1</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">R</TD>
+</TR>
+<TR><TD ALIGN="LEFT">System 2</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+</TR>
+</TABLE>
+
+</BLOCKQUOTE>
+
+<OL>
+<LI>What is the MAP of each system?  Which has a higher MAP?
+</LI>
+<LI>Does this result intuitively make sense?  What does it say about what is important in getting a good MAP score?
+</LI>
+<LI>What is the R-precision of each system?  (Does it rank the systems the same as MAP?)
+</LI>
+</OL>
+
+<P>
+</LI>
+<LI>The following list of Rs and Ns represents relevant (R) and
+nonrelevant (N) returned documents in a ranked list of 20 documents
+retrieved in response to a query from a collection of 10,000
+documents. The top of the ranked list (the document the system thinks is
+most likely to be relevant) is on the left of the list. This list shows
+6 relevant documents.  Assume that there are 8 relevant documents in
+total in the collection.
+<BLOCKQUOTE>
+  <TABLE CELLPADDING=3>
+<TR><TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">R</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+<TD ALIGN="LEFT">&nbsp;</TD><TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="CENTER">R</TD>
+</TR>
+</TABLE>
+
+</BLOCKQUOTE>
+
+<OL>
+<LI>What is the precision of the system on the top 20?
+</LI>
+<LI>What is the F<IMG
+ WIDTH="10" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$_1$"> on the top 20?
+</LI>
+<LI>What is the uninterpolated precision of the system at 25% recall?
+</LI>
+<LI>What is the interpolated precision at 33% recall?
+</LI>
+<LI>Assume that these 20 documents are the complete result set of the
+  system. What is the MAP for the query?
+</LI>
+</OL>
+Assume, now, instead, that the system returned the entire 10,000
+documents in a ranked list, and these are the first 20 results returned.
+<DL COMPACT>
+<DT>f.</DT>
+<DD>What is the largest possible MAP that this
+  system could have?
+</DD>
+<DT>g.</DT>
+<DD>What is the smallest possible MAP that this
+  system could have?
+</DD>
+<DT>h.</DT>
+<DD>In a set of experiments, only the top 20 results are evaluated by
+  hand.  The result in (e) is used to approximate the range
+  (f)-(g).  For this example, how large (in absolute terms) can the
+  error for the MAP be by calculating (e) instead of (f) and (g) for
+  this query?
+</DD>
+</DL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2445"
+  HREF="assessing-relevance-1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/next.png"></A> 
+<A NAME="tex2html2439"
+  HREF="evaluation-in-information-retrieval-1.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/up.png"></A> 
+<A NAME="tex2html2433"
+  HREF="evaluation-of-unranked-retrieval-sets-1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/prev.png"></A> 
+<A NAME="tex2html2441"
+  HREF="contents-1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/contents.png"></A> 
+<A NAME="tex2html2443"
+  HREF="index-1.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="http://nlp.stanford.edu/IR-book/html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html2446"
+  HREF="assessing-relevance-1.html">Assessing relevance</A>
+<B> Up:</B> <A NAME="tex2html2440"
+  HREF="evaluation-in-information-retrieval-1.html">Evaluation in information retrieval</A>
+<B> Previous:</B> <A NAME="tex2html2434"
+  HREF="evaluation-of-unranked-retrieval-sets-1.html">Evaluation of unranked retrieval</A>
+ &nbsp; <B>  <A NAME="tex2html2442"
+  HREF="contents-1.html">Contents</A></B> 
+ &nbsp; <B>  <A NAME="tex2html2444"
+  HREF="index-1.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+&copy; 2008 Cambridge University Press<br>This is an automatically generated page. In case of formatting errors you may want to look at the <a href=http://informationretrieval.org>PDF edition</a> of the book.<br>
+2009-04-07
+</ADDRESS>
+</BODY>
+</HTML>

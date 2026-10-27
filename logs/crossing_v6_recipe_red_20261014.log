@@ -1,0 +1,64 @@
+======================================================================
+FAIL: test_allowed_crossing_change_has_explicit_parent_value (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 30, in test_allowed_crossing_change_has_explicit_parent_value
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_replay_20261014'),
+AssertionError: unexpectedly None : Bounded replay recipe is missing
+
+======================================================================
+FAIL: test_original_protocol_digest_required_for_check (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 56, in test_original_protocol_digest_required_for_check
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_replay_20261014'),
+AssertionError: unexpectedly None : Bounded replay recipe is missing
+
+======================================================================
+FAIL: test_positive_control_loss_fails (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 40, in test_positive_control_loss_fails
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_replay_20261014'),
+AssertionError: unexpectedly None : Bounded replay recipe is missing
+
+======================================================================
+FAIL: test_rejects_identity_reorder (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 23, in test_rejects_identity_reorder
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_replay_20261014'),
+AssertionError: unexpectedly None : Bounded replay recipe is missing
+
+======================================================================
+FAIL: test_rejects_unrelated_feature_change (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 15, in test_rejects_unrelated_feature_change
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_replay_20261014'),
+AssertionError: unexpectedly None : Bounded replay recipe is missing
+
+======================================================================
+FAIL: test_route_flag_requires_effective_same_target (logs.test_crossing_v6_replay_20261014.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 47, in test_route_flag_requires_effective_same_target
+    recipe = self.recipe()
+  File "F:\Scene_cluster\logs\test_crossing_v6_replay_20261014.py", line 9, in recipe
+    self.assertIsNotNone(importlib.util.find_spec('logs.crossing_v6_replay_20261014'),
+AssertionError: unexpectedly None : Bounded replay recipe is missing
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=6)

@@ -1,0 +1,57 @@
+{
+  "created_at_utc": "2026-09-25T01:48:20.771090+00:00",
+  "stage": "feature_extraction",
+  "fit_scope": "development",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "HDBSCAN/scripts/scene_feature_hdbscan.py"
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+    "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+  },
+  "output": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review9_20260925.csv",
+    "sha256": "e219431852fb33e5ddb12a8d99676ba39f3e5edf06b47bc789cfeeb66956a7e6"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+    "sha256": "7982f8a911786579cc63479026502948875b3e0e14b4f81e597ad36999a687fe"
+  },
+  "guard": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+    "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db"
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+  },
+  "scene_names": [
+    "scene-0007",
+    "scene-0011",
+    "scene-0026",
+    "scene-0030",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0097",
+    "scene-0103",
+    "scene-0109",
+    "scene-0122"
+  ],
+  "semantic_features": [],
+  "extra": {
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "734ae20da4555c020a6daddecfb1ba78c6df7ddb66287884627bef0dddb1fc8e"
+    }
+  }
+}

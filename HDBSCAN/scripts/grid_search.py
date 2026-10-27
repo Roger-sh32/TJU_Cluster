@@ -1,154 +1,92 @@
-'''UMAP + HDBSCAN 超参数网格搜索脚本'''
-import pandas as pd
-import numpy as np
-import umap
-import hdbscan
-from pathlib import Path
+"""Development-only UMAP/HDBSCAN parameter search."""
+
+import argparse
 from itertools import product
-from sklearn.preprocessing import StandardScaler
-from hdbscan import validity
-import traceback
-import warnings
-warnings.filterwarnings("ignore")
+import os
+from pathlib import Path
 
-SCRIPT_DIR = Path(__file__).resolve().parent
-HDBSCAN_ROOT = SCRIPT_DIR.parent
-TABLES_DIR = HDBSCAN_ROOT / "tables"
-TABLES_DIR.mkdir(exist_ok=True)
+import numpy as np
+import pandas as pd
 
-# =============================
-# 1. 加载特征表 + 限幅处理
-# =============================
-print("Loading features...")
-df = pd.read_csv(TABLES_DIR / "scene_features.csv")
-df = df.select_dtypes(include=[np.number])
-df = df.replace([np.inf, -np.inf], 30).fillna(0.0)
+from experiment_partition import (
+    load_development_features, assert_new_outputs, provenance_path,
+    preflight, write_run_manifest,
+)
 
-# --- 限幅：避免噪声破坏 UMAP/HDBSCAN 密度结构 ---
-clip_cols = {
-    "ego_max_abs_acc": 10.0,
-    "ego_jerk_std": 10.0,
-    "min_ttc": 30.0,
-    "min_headway": 10.0
-}
-for col, up in clip_cols.items():
-    if col in df.columns:
-        df[col] = df[col].clip(0, up)
+TABLES_DIR = Path(__file__).resolve().parents[1] / 'tables'
 
-# =============================
-# 2. StandardScaler 标准化
-# =============================
-print("Scaling features...")
-scaler = StandardScaler()
-X = scaler.fit_transform(df)
 
-# =============================
-# 3. 搜索空间定义
-# =============================
-umap_neighbors = [5, 10, 15, 30]
-umap_min_dist = [0.0, 0.05, 0.1, 0.2]
-umap_metrics = ['euclidean', 'manhattan', 'cosine']
-umap_n_components = [5, 10]          # ★ 新特征更适合的维度搜索
-
-hdb_min_cluster_size = [5, 10, 20, 30]
-hdb_min_samples = [1, 5, 10]
-
-# =============================
-# 4. 评估函数
-# =============================
-def evaluate(labels, clusterer):
-    """计算 cluster 数、噪声比例、persistence 稳定性"""
-    unique_clusters = [c for c in set(labels) if c != -1]
-    n_clusters = len(unique_clusters)
-    noise_ratio = np.mean(labels == -1)
-
+def evaluate(labels, embedding, validity_fn):
+    count = len(set(labels) - {-1})
+    result = {'clusters': count, 'noise_ratio': float(np.mean(labels == -1)),
+              'dbcv': np.nan, 'metric_status': 'not_applicable', 'metric_error': ''}
+    if count < 2:
+        return result
     try:
-        persistence = validity.validity_index(X_umap, labels)
-    except:
-        persistence = 0.0
+        score = float(validity_fn(np.asarray(embedding, dtype=np.float64), labels))
+        if not np.isfinite(score):
+            raise ValueError('DBCV is non-finite')
+        result.update(dbcv=score, metric_status='ok')
+    except Exception as exc:
+        result.update(metric_status='failed', metric_error=str(exc))
+    return result
 
-    return n_clusters, noise_ratio, persistence
 
-# =============================
-# 5. Grid Search
-# =============================
-results = []
-total_runs = (len(umap_neighbors) * len(umap_min_dist) *
-              len(umap_metrics) * len(umap_n_components) *
-              len(hdb_min_cluster_size) * len(hdb_min_samples))
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--preflight', action='store_true')
+    args = parser.parse_args()
+    input_path = TABLES_DIR / os.getenv('SCENE_CLUSTER_FEATURE_INPUT', 'scene_features_development.csv')
+    output = TABLES_DIR / os.getenv('SCENE_CLUSTER_GRID_OUTPUT', 'development_umap_hdbscan_grid_search.csv')
+    raw, features, partition = load_development_features(input_path)
+    assert_new_outputs([output, provenance_path(output)])
+    if args.preflight:
+        return preflight('parameter_search', raw, partition, features)
 
-print(f"\nTotal search combinations: {total_runs}\n")
+    import umap
+    import hdbscan
+    from hdbscan import validity
+    from sklearn.preprocessing import StandardScaler
 
-run_id = 0
-for n_nb, md, metric, nc, mcs, ms in product(
-    umap_neighbors, umap_min_dist, umap_metrics,
-    umap_n_components, hdb_min_cluster_size, hdb_min_samples):
+    scaled = StandardScaler().fit_transform(features)
+    # Retained historical search space; results are not a final parameter choice.
+    umap_options = list(product([5, 10, 15, 30], [0.0, 0.05, 0.1, 0.2],
+                                ['euclidean', 'manhattan', 'cosine'], [5, 10]))
+    hdb_options = list(product([5, 10, 20, 30], [1, 5, 10]))
+    print(f'{len(umap_options)} UMAP fits; {len(umap_options)*len(hdb_options)} clustering candidates')
+    rows = []
+    for neighbors, min_dist, metric, dimensions in umap_options:
+        config = dict(n_neighbors=neighbors, min_dist=min_dist, metric=metric, n_components=dimensions)
+        try:
+            embedded = umap.UMAP(**config, random_state=42, n_jobs=1,
+                                 low_memory=True).fit_transform(scaled)
+            embedding_error = None
+        except Exception as exc:
+            embedded, embedding_error = None, str(exc)
+        for size, samples in hdb_options:
+            row = dict(config, min_cluster_size=size, min_samples=samples,
+                       clusters=np.nan, noise_ratio=np.nan, dbcv=np.nan,
+                       metric_status='not_run', metric_error='', run_status='failed', error='')
+            try:
+                if embedding_error is not None:
+                    raise RuntimeError('UMAP failed: ' + embedding_error)
+                model = hdbscan.HDBSCAN(min_cluster_size=size, min_samples=samples,
+                                       prediction_data=True)
+                labels = model.fit_predict(embedded)
+                row.update(evaluate(labels, embedded, validity.validity_index))
+                row['run_status'] = 'ok'
+            except Exception as exc:
+                row['error'] = str(exc)
+            rows.append(row)
+        print(f'Completed {len(rows)} candidates', flush=True)
+    result = pd.DataFrame(rows)
+    result.to_csv(output, index=False)
+    write_run_manifest(output, 'parameter_search', input_path, raw, partition, __file__, features,
+                       {'seed': 42, 'umap_configurations': umap_options,
+                        'hdbscan_configurations': hdb_options,
+                        'note': 'DBCV is not cluster persistence or cross-seed stability.'})
+    print(f'Search diagnostics saved: {output}')
 
-    run_id += 1
-    print(f"[{run_id}/{total_runs}] Running: "
-          f"UMAP(nn={n_nb}, md={md}, metric={metric}, nc={nc}) | "
-          f"HDBSCAN(mcs={mcs}, ms={ms})")
 
-    try:
-        # ===== UMAP 降维 =====
-        reducer = umap.UMAP(
-            n_neighbors=n_nb,
-            min_dist=md,
-            n_components=nc,
-            metric=metric,
-            random_state=42
-        )
-        X_umap = reducer.fit_transform(X)
-
-        # ===== HDBSCAN 聚类 =====
-        clusterer = hdbscan.HDBSCAN(
-            min_cluster_size=mcs,
-            min_samples=ms,
-            prediction_data=True
-        )
-        labels = clusterer.fit_predict(X_umap)
-
-        # ===== 评估 =====
-        n_clusters, noise_ratio, persistence = evaluate(labels, clusterer)
-
-        results.append({
-            'n_neighbors': n_nb,
-            'min_dist': md,
-            'metric': metric,
-            'n_components': nc,
-            'min_cluster_size': mcs,
-            'min_samples': ms,
-            'clusters': n_clusters,
-            'noise_ratio': noise_ratio,
-            'persistence': persistence
-        })
-
-        print(f"   ⇒ clusters={n_clusters}, noise={noise_ratio:.2f}, "
-              f"persistence={persistence:.3f}")
-
-    except Exception as e:
-        print("   [ERROR] Failed:", e)
-        traceback.print_exc()
-        results.append({
-            'n_neighbors': n_nb,
-            'min_dist': md,
-            'metric': metric,
-            'n_components': nc,
-            'min_cluster_size': mcs,
-            'min_samples': ms,
-            'clusters': -1,
-            'noise_ratio': 1.0,
-            'persistence': 0.0
-        })
-        continue
-
-# =============================
-# 6. 保存结果
-# =============================
-df_res = pd.DataFrame(results)
-output_path = TABLES_DIR / "umap_hdbscan_grid_search.csv"
-df_res.to_csv(output_path, index=False)
-
-print("\n===== Grid Search 完成！======")
-print(f"结果已保存到 {output_path}")
-print(df_res.head())
+if __name__ == '__main__':
+    main()

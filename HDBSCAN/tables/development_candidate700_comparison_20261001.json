@@ -1,0 +1,434 @@
+{
+  "scope": "Development-only metadata extraction and structural QA; not semantic acceptance",
+  "candidate_version": "feature_candidate_v4_20261001",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_protocol_20261001.json",
+    "sha256": "0da16090e6ccf9475eaaaa0b92922c49a9427b59273cd67d4c74caf7d9ddf0ee"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv",
+    "sha256": "748eb9a498e7eeeaeb250294241c6f8b62ecf9a0df398571fe592265d7f7b741"
+  },
+  "manifest": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv.manifest.json",
+    "sha256": "4a709932302da68e9f1a8dbf5b7bbb8d12eb198f0b31de004221c073f59d1fc7"
+  },
+  "quality": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv.quality.json",
+    "sha256": "c5585e09e1e6b516cb12c25b1c72832cfefcd44c9f2a4071772e7c36fed36aae"
+  },
+  "source_hashes": {
+    "frozen_model.py": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552",
+    "corner_scoring.py": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620",
+    "feature_selection.py": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+    "scene_feature_rules.py": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+    "scene_feature_hdbscan.py": "2c0d6b2b46e573af3f559d7c6e0f750697d4868bc22ce4e6e1f04a6c60781859",
+    "experiment_partition.py": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db",
+    "extraction_audit.py": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+  },
+  "scene_count": 700,
+  "column_count": 129,
+  "clustering_feature_count": 52,
+  "all_development_members_present_once": true,
+  "structural_source_checks_passed": true,
+  "regression33_and_seven_controls_exactly_reproduced": true,
+  "map_available_scene_count": 700,
+  "intersection_flag_positive_count": 586,
+  "constant_clustering_features": [],
+  "query_exception_count": 0,
+  "query_exception_counts_by_stage": {},
+  "nonfinite_by_column": {
+    "merge_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 494,
+      "negative_inf": 0
+    },
+    "vru_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 584,
+      "negative_inf": 0
+    }
+  },
+  "nonfinite_cell_count": 1078,
+  "raw_quality_checks_clear": true,
+  "quality_review_reasons": [],
+  "feature_comparison": {
+    "changed_cell_count": 26,
+    "changed_scene_count": 9,
+    "changed_columns": [
+      "crossing_conflict_max_duration",
+      "crossing_conflict_post_stop_ratio",
+      "crossing_conflict_pre_stop_ratio",
+      "crossing_vehicle_conflict_ratio",
+      "left_turn_cross_traffic_interaction_ratio"
+    ],
+    "changes": [
+      {
+        "scene_name": "scene-0002",
+        "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0002",
+        "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0002",
+        "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+        "column": "left_turn_cross_traffic_interaction_ratio",
+        "old": 0.1,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0002",
+        "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+        "column": "crossing_conflict_max_duration",
+        "old": 0.4998779296875,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0093",
+        "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.02564102564102564,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0093",
+        "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.02564102564102564,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0093",
+        "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+        "column": "crossing_conflict_max_duration",
+        "old": 0.49988889694213867,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0102",
+        "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0102",
+        "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0102",
+        "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+        "column": "crossing_conflict_max_duration",
+        "old": 0.4998791217803955,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0151",
+        "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.05,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0151",
+        "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.05,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0151",
+        "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+        "column": "crossing_conflict_max_duration",
+        "old": 1.0002861022949219,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0453",
+        "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.024390243902439025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0453",
+        "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.024390243902439025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0453",
+        "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+        "column": "crossing_conflict_max_duration",
+        "old": 0.49988651275634766,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0552",
+        "scene_token": "16e50a63b809463099cb4c378fe0641e",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.04878048780487805,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0552",
+        "scene_token": "16e50a63b809463099cb4c378fe0641e",
+        "column": "crossing_conflict_post_stop_ratio",
+        "old": 0.04878048780487805,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0552",
+        "scene_token": "16e50a63b809463099cb4c378fe0641e",
+        "column": "crossing_conflict_max_duration",
+        "old": 0.999750018119812,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0669",
+        "scene_token": "30783e1b472a4101b82be19e41636ba2",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.024390243902439025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0669",
+        "scene_token": "30783e1b472a4101b82be19e41636ba2",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.024390243902439025,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0669",
+        "scene_token": "30783e1b472a4101b82be19e41636ba2",
+        "column": "crossing_conflict_max_duration",
+        "old": 0.49987852573394775,
+        "new": 0.0
+      },
+      {
+        "scene_name": "scene-0815",
+        "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.05,
+        "new": 0.025
+      },
+      {
+        "scene_name": "scene-0815",
+        "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+        "column": "crossing_conflict_post_stop_ratio",
+        "old": 0.05,
+        "new": 0.025
+      },
+      {
+        "scene_name": "scene-0816",
+        "scene_token": "0e247ba64b9d4a34a7256b6c173b1b5d",
+        "column": "crossing_vehicle_conflict_ratio",
+        "old": 0.04878048780487805,
+        "new": 0.024390243902439025
+      },
+      {
+        "scene_name": "scene-0816",
+        "scene_token": "0e247ba64b9d4a34a7256b6c173b1b5d",
+        "column": "crossing_conflict_pre_stop_ratio",
+        "old": 0.04878048780487805,
+        "new": 0.024390243902439025
+      }
+    ]
+  },
+  "changed_clustering_cell_count": 1,
+  "changed_clustering_fields": [
+    "left_turn_cross_traffic_interaction_ratio"
+  ],
+  "risk_changed_scenes": [
+    {
+      "scene_name": "scene-0002",
+      "scene_token": "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+      "log_location": "singapore-onenorth",
+      "longitudinal_risk_before": 0.03,
+      "longitudinal_risk_after": 0.03,
+      "interaction_risk_before": 0.24993896484375,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.085481689453125,
+      "observed_risk_after": 0.010499999999999999,
+      "decision_demand_before": 0.15,
+      "decision_demand_after": 0.15,
+      "risk_before": 0.115481689453125,
+      "risk_after": 0.040499999999999994,
+      "risk_delta": -0.074981689453125
+    },
+    {
+      "scene_name": "scene-0093",
+      "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+      "log_location": "boston-seaport",
+      "longitudinal_risk_before": 0.0,
+      "longitudinal_risk_after": 0.0,
+      "interaction_risk_before": 0.24994444847106934,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.07498333454132079,
+      "observed_risk_after": 0.0,
+      "decision_demand_before": 0.08875739644970412,
+      "decision_demand_after": 0.08875739644970412,
+      "risk_before": 0.09273481383126161,
+      "risk_after": 0.017751479289940825,
+      "risk_delta": -0.07498333454132079
+    },
+    {
+      "scene_name": "scene-0102",
+      "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+      "log_location": "boston-seaport",
+      "longitudinal_risk_before": 0.03,
+      "longitudinal_risk_after": 0.03,
+      "interaction_risk_before": 0.24993956089019775,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.08548186826705932,
+      "observed_risk_after": 0.010499999999999999,
+      "decision_demand_before": 0.0,
+      "decision_demand_after": 0.0,
+      "risk_before": 0.08548186826705932,
+      "risk_after": 0.010499999999999999,
+      "risk_delta": -0.07498186826705933
+    },
+    {
+      "scene_name": "scene-0151",
+      "scene_token": "ba76f4185aa34ed3bff467ac640da902",
+      "log_location": "singapore-onenorth",
+      "longitudinal_risk_before": 0.0,
+      "longitudinal_risk_after": 0.0,
+      "interaction_risk_before": 0.5001430511474609,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.15004291534423828,
+      "observed_risk_after": 0.0,
+      "decision_demand_before": 0.05208333333333333,
+      "decision_demand_after": 0.05208333333333333,
+      "risk_before": 0.16045958201090493,
+      "risk_after": 0.010416666666666666,
+      "risk_delta": -0.15004291534423828
+    },
+    {
+      "scene_name": "scene-0453",
+      "scene_token": "e0b14a8e11994763acba690bbcc3f56a",
+      "log_location": "boston-seaport",
+      "longitudinal_risk_before": 0.0,
+      "longitudinal_risk_after": 0.0,
+      "interaction_risk_before": 0.04998865127563475,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.014996595382690426,
+      "observed_risk_after": 0.0,
+      "decision_demand_before": 0.3902439024390244,
+      "decision_demand_after": 0.3902439024390244,
+      "risk_before": 0.09304537587049531,
+      "risk_after": 0.07804878048780489,
+      "risk_delta": -0.014996595382690422
+    },
+    {
+      "scene_name": "scene-0552",
+      "scene_token": "16e50a63b809463099cb4c378fe0641e",
+      "log_location": "boston-seaport",
+      "longitudinal_risk_before": 0.0,
+      "longitudinal_risk_after": 0.0,
+      "interaction_risk_before": 0.499875009059906,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.1499625027179718,
+      "observed_risk_after": 0.0,
+      "decision_demand_before": 1.0,
+      "decision_demand_after": 1.0,
+      "risk_before": 0.3499625027179718,
+      "risk_after": 0.2,
+      "risk_delta": -0.1499625027179718
+    },
+    {
+      "scene_name": "scene-0669",
+      "scene_token": "30783e1b472a4101b82be19e41636ba2",
+      "log_location": "boston-seaport",
+      "longitudinal_risk_before": 0.0,
+      "longitudinal_risk_after": 0.0,
+      "interaction_risk_before": 0.2336830506479837,
+      "interaction_risk_after": 0.0,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.0701049151943951,
+      "observed_risk_after": 0.0,
+      "decision_demand_before": 0.1546698393813206,
+      "decision_demand_after": 0.1546698393813206,
+      "risk_before": 0.10103888307065922,
+      "risk_after": 0.03093396787626412,
+      "risk_delta": -0.0701049151943951
+    },
+    {
+      "scene_name": "scene-0815",
+      "scene_token": "c5b36e5275cc4a2285d095e87347c49a",
+      "log_location": "boston-seaport",
+      "longitudinal_risk_before": 0.0014999999999999998,
+      "longitudinal_risk_after": 0.0014999999999999998,
+      "interaction_risk_before": 0.25,
+      "interaction_risk_after": 0.24994289875030518,
+      "vru_risk_before": 0.0,
+      "vru_risk_after": 0.0,
+      "ego_response_risk_before": 0.0,
+      "ego_response_risk_after": 0.0,
+      "observed_risk_before": 0.075525,
+      "observed_risk_after": 0.07550786962509155,
+      "decision_demand_before": 0.03,
+      "decision_demand_after": 0.03,
+      "risk_before": 0.081525,
+      "risk_after": 0.08150786962509156,
+      "risk_delta": -1.7130374908441715e-05
+    }
+  ],
+  "review_flags": {
+    "unexpected_columns": [],
+    "risk_increased_scenes": [],
+    "requires_review": true,
+    "pending_semantic_scenes": [
+      "scene-0002",
+      "scene-0093",
+      "scene-0102",
+      "scene-0453",
+      "scene-0552",
+      "scene-0669",
+      "scene-0815",
+      "scene-0816"
+    ]
+  },
+  "semantic_validity_verified": false,
+  "fit_started": false,
+  "model_or_ranking_replaced": false
+}

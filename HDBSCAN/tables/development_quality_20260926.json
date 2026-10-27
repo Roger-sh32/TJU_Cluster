@@ -1,0 +1,409 @@
+{
+  "created_at_utc": "2026-09-26T15:49:52.628302+00:00",
+  "scope": "development structural quality only, not semantic validation",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/validate_development_batch_20260926.py",
+    "--wait-seconds",
+    "14400"
+  ],
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\validate_development_batch_20260926.py",
+    "sha256": "63ad726edfde97843d3314b8776be1c5b456ff40792a6269e588700f4e0698a3"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+    "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+  },
+  "extraction_manifest": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv.manifest.json",
+    "sha256": "5e16b877ffc6ec4b01ba32a44c08f3e7089ebb9992be94da915cba070091ca44"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "scene_count": 700,
+  "column_count": 129,
+  "clustering_feature_count": 52,
+  "all_development_members_present_once": true,
+  "all_output_numeric_values_finite": true,
+  "map_available_scene_count": 700,
+  "intersection_flag_positive_count": 586,
+  "constant_clustering_features": [],
+  "all_zero_clustering_features": [],
+  "features": {
+    "avg_speed": {
+      "min": 0.0003972109417352,
+      "max": 15.383913753393216,
+      "mean": 2.197919115483655,
+      "unique": 700,
+      "zero_count": 0
+    },
+    "speed_std": {
+      "min": 0.0012224281031349,
+      "max": 5.390311614891196,
+      "mean": 0.990944290783356,
+      "unique": 700,
+      "zero_count": 0
+    },
+    "avg_vehicle_count": {
+      "min": 0.55,
+      "max": 62.9,
+      "mean": 14.439034106137765,
+      "unique": 630,
+      "zero_count": 0
+    },
+    "neighbor_density_std": {
+      "min": 0.1542574468374819,
+      "max": 18.160596289350494,
+      "mean": 3.5804749713822845,
+      "unique": 678,
+      "zero_count": 0
+    },
+    "neighbor_speed_std": {
+      "min": 0.0010390997192072,
+      "max": 6.753656738999693,
+      "mean": 2.2194364411912315,
+      "unique": 700,
+      "zero_count": 0
+    },
+    "pedestrian_nearby_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5321317341195391,
+      "unique": 110,
+      "zero_count": 107
+    },
+    "pedestrian_front_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.31564897703922096,
+      "unique": 100,
+      "zero_count": 206
+    },
+    "ego_avg_speed": {
+      "min": 9.17151163340062e-07,
+      "max": 17.676148443633252,
+      "mean": 5.14377497045875,
+      "unique": 700,
+      "zero_count": 0
+    },
+    "ego_speed_std": {
+      "min": 4.5669276159483805e-07,
+      "max": 5.890197904393275,
+      "mean": 1.565799945782415,
+      "unique": 700,
+      "zero_count": 0
+    },
+    "ego_heading_change_total": {
+      "min": 0.0013228093474695,
+      "max": 3.809301707997297,
+      "mean": 0.7552466707984348,
+      "unique": 700,
+      "zero_count": 0
+    },
+    "ego_stopped_at_scene_start": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.18,
+      "unique": 2,
+      "zero_count": 574
+    },
+    "ego_stop_from_motion_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.20142857142857143,
+      "unique": 2,
+      "zero_count": 559
+    },
+    "ego_restart_after_stop_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.21857142857142858,
+      "unique": 2,
+      "zero_count": 547
+    },
+    "car_following_ratio": {
+      "min": 0.0,
+      "max": 0.975609756097561,
+      "mean": 0.2766406012686501,
+      "unique": 99,
+      "zero_count": 221
+    },
+    "following_max_duration": {
+      "min": 0.0,
+      "max": 20.45067512989044,
+      "mean": 4.807593395709992,
+      "unique": 478,
+      "zero_count": 217
+    },
+    "merge_exposure_ratio": {
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.03656160100062539,
+      "unique": 41,
+      "zero_count": 549
+    },
+    "merge_observed_relevance_ratio": {
+      "min": 0.0,
+      "max": 0.325,
+      "mean": 0.004444474224962029,
+      "unique": 14,
+      "zero_count": 668
+    },
+    "merge_lane_entry_relevance_ratio": {
+      "min": 0.0,
+      "max": 0.225,
+      "mean": 0.0019138524077548463,
+      "unique": 8,
+      "zero_count": 684
+    },
+    "adjacent_lane_intrusion_ratio": {
+      "min": 0.0,
+      "max": 0.5365853658536586,
+      "mean": 0.014415840257303672,
+      "unique": 23,
+      "zero_count": 663
+    },
+    "side_entry_candidate_ratio": {
+      "min": 0.0,
+      "max": 0.8048780487804879,
+      "mean": 0.009079223621906548,
+      "unique": 22,
+      "zero_count": 652
+    },
+    "overtaking_exposure_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.11484966050209952,
+      "unique": 75,
+      "zero_count": 460
+    },
+    "crossing_vehicle_exposure_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.15616510318949342,
+      "unique": 93,
+      "zero_count": 276
+    },
+    "crossing_route_conflict_ratio": {
+      "min": 0.0,
+      "max": 0.2,
+      "mean": 0.00028571428571428574,
+      "unique": 2,
+      "zero_count": 699
+    },
+    "left_turn_crossing_yield_ratio": {
+      "min": 0.0,
+      "max": 0.575,
+      "mean": 0.004567787903153757,
+      "unique": 16,
+      "zero_count": 664
+    },
+    "left_turn_cross_traffic_interaction_ratio": {
+      "min": 0.0,
+      "max": 0.725,
+      "mean": 0.020141226659519344,
+      "unique": 37,
+      "zero_count": 651
+    },
+    "vru_crossing_exposure_ratio": {
+      "min": 0.0,
+      "max": 0.975,
+      "mean": 0.07905018761726079,
+      "unique": 68,
+      "zero_count": 439
+    },
+    "same_lane_vru_exposure_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.014403310104529617,
+      "unique": 30,
+      "zero_count": 638
+    },
+    "same_direction_vru_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.006911551862771374,
+      "unique": 17,
+      "zero_count": 673
+    },
+    "vru_path_conflict_ratio": {
+      "min": 0.0,
+      "max": 0.325,
+      "mean": 0.015440342178147054,
+      "unique": 32,
+      "zero_count": 584
+    },
+    "vru_observed_relevance_ratio": {
+      "min": 0.0,
+      "max": 0.225,
+      "mean": 0.002722326454033771,
+      "unique": 14,
+      "zero_count": 676
+    },
+    "vru_crosswalk_conflict_ratio": {
+      "min": 0.0,
+      "max": 0.1794871794871795,
+      "mean": 0.005239748056821226,
+      "unique": 18,
+      "zero_count": 645
+    },
+    "obstacle_avoidance_vru_conflict_ratio": {
+      "min": 0.0,
+      "max": 0.225,
+      "mean": 0.0003214285714285714,
+      "unique": 2,
+      "zero_count": 699
+    },
+    "oncoming_during_avoidance_ratio": {
+      "min": 0.0,
+      "max": 0.5,
+      "mean": 0.003740127758420441,
+      "unique": 12,
+      "zero_count": 689
+    },
+    "stationary_lead_obstacle_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.05376025194317876,
+      "unique": 56,
+      "zero_count": 536
+    },
+    "temporarily_stopped_lead_ratio": {
+      "min": 0.0,
+      "max": 0.95,
+      "mean": 0.03227561869025283,
+      "unique": 49,
+      "zero_count": 597
+    },
+    "blocked_path_obstacle_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.05138023764853033,
+      "unique": 49,
+      "zero_count": 575
+    },
+    "obstacle_induced_route_deviation_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.022857142857142857,
+      "unique": 2,
+      "zero_count": 684
+    },
+    "route_deviation_decision_demand": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01670940170940171,
+      "unique": 8,
+      "zero_count": 684
+    },
+    "ego_evasive_lane_change_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.04285714285714286,
+      "unique": 2,
+      "zero_count": 670
+    },
+    "truck_bus_dynamic_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.36910379254891446,
+      "unique": 109,
+      "zero_count": 214
+    },
+    "bicycle_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.22800848744751184,
+      "unique": 90,
+      "zero_count": 405
+    },
+    "motorcycle_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.21159492539980346,
+      "unique": 86,
+      "zero_count": 419
+    },
+    "two_wheeler_dynamic_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.11246935584740461,
+      "unique": 72,
+      "zero_count": 508
+    },
+    "intersection_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5800222237112481,
+      "unique": 108,
+      "zero_count": 36
+    },
+    "lane_connector_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.8136442196015368,
+      "unique": 95,
+      "zero_count": 13
+    },
+    "ped_crossing_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.323655722326454,
+      "unique": 104,
+      "zero_count": 232
+    },
+    "intersection_stop_ratio": {
+      "min": 0.0,
+      "max": 0.975609756097561,
+      "mean": 0.14798910033056376,
+      "unique": 79,
+      "zero_count": 463
+    },
+    "traffic_light_control_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.3395644822657018,
+      "unique": 93,
+      "zero_count": 371
+    },
+    "stop_sign_control_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2836989636379881,
+      "unique": 98,
+      "zero_count": 302
+    },
+    "stop_sign_stop_candidate": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.09,
+      "unique": 2,
+      "zero_count": 637
+    },
+    "turn_stop_control_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5239650451174842,
+      "unique": 110,
+      "zero_count": 132
+    },
+    "non_signalized_intersection_density": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.35087018672384523,
+      "unique": 107,
+      "zero_count": 172
+    }
+  },
+  "limitations": [
+    "Extractor currently replaces Inf with 30 and NaN with zero before writing.",
+    "Finite output does not prove that intermediate calculations were all valid.",
+    "No source-level nonfinite replacement audit exists for this run.",
+    "No semantic or expert validation, no evaluation prediction, no model fit in this QA.",
+    "Constant fields are reported, not automatically dropped or retuned."
+  ]
+}

@@ -153,6 +153,69 @@ def is_vru_path_conflict(
     return lateral_closing and abs(obj_lateral_speed) >= 0.3 and enters_corridor
 
 
+def is_turning_crossing_projection(
+    heading_change, minimum_route_distance, actor_bounding_diameter, yielding_response, future_complete,
+):
+    """Reject straight-line crossings contradicted by a fully observed turning route."""
+    if not np.isfinite([heading_change, minimum_route_distance, actor_bounding_diameter]).all():
+        return False
+    return bool(future_complete and not yielding_response and actor_bounding_diameter >= 0
+                and heading_change > 0.35
+                and minimum_route_distance > LANE_HALF_WIDTH + actor_bounding_diameter / 2)
+
+
+def turning_crossing_projection_audit(positions, times, yaws, speeds, vehicle_tracks, horizon=6.0):
+    """Return per-target evidence; incomplete futures never justify rejection."""
+    times = np.asarray(times, dtype=float)
+    positions = np.asarray(positions, dtype=float)
+    yaws = np.asarray(yaws, dtype=float)
+    speeds = np.asarray(speeds, dtype=float)
+    if (positions.shape != (len(times), 2) or yaws.shape != times.shape or speeds.shape != times.shape
+            or not np.isfinite(times).all() or not np.isfinite(positions).all()
+            or not np.isfinite(yaws).all() or not np.isfinite(speeds).all()
+            or np.any(np.diff(times) <= 0)):
+        raise ValueError('Invalid crossing projection timeline')
+    evidence = []
+    for instance, track in vehicle_tracks.items():
+        for candidate in track:
+            if not candidate['crossing_conflict']:
+                continue
+            index = candidate['index']
+            future = [i for i in range(index, len(times)) if times[i]-times[index] <= horizon]
+            actor_future = [r for r in track if r['index'] in future]
+            actor_times = [times[r['index']] for r in actor_future]
+            actor_positions = np.asarray([r['position'] for r in actor_future], dtype=float)
+            positions_known = (actor_positions.shape == (len(actor_future), 2)
+                               and np.isfinite(actor_positions).all())
+            complete = (times[future[-1]]-times[index] >= horizon-.26
+                        and actor_times[-1]-times[index] >= horizon-.26
+                        and not np.any(np.diff(times[future]) > .75)
+                        and not np.any(np.diff(actor_times) > .75)
+                        and positions_known)
+            route = positions[future].tolist()
+            distance = (min(distance_to_polyline(p, route) for p in actor_positions)
+                        if positions_known else float('inf'))
+            unwrapped = np.unwrap(yaws[future])
+            turn = float(np.max(np.abs(unwrapped-unwrapped[0])))
+            # Ignore frame-zero placeholder; preserve low-speed or braking responses.
+            moving = [i for i in future if i > 0]
+            yielding = any(speeds[i] < MIN_MOVING_EGO_SPEED for i in moving)
+            braking = ([index - 1] if index > 1 else []) + moving
+            yielding |= any((speeds[j]-speeds[i])/(times[j]-times[i]) <= -3.0
+                            for i, j in zip(braking, braking[1:]))
+            # A circumscribed footprint also protects the ends of crosswise long vehicles.
+            dimensions = np.asarray([[r.get('width'), r.get('length')] for r in actor_future], dtype=float)
+            width = float(dimensions[0, 0])
+            diameter = (float(np.max(np.linalg.norm(dimensions, axis=1)))
+                        if np.isfinite(dimensions).all() and np.all(dimensions > 0) else float('nan'))
+            rejected = is_turning_crossing_projection(turn, distance, diameter, yielding, complete)
+            evidence.append({'index': index, 'instance_token': instance, 'category': candidate['category'],
+                'heading_change': turn, 'minimum_future_route_distance': float(distance),
+                'actor_width': width, 'actor_bounding_diameter': diameter, 'yielding_response': bool(yielding),
+                'future_complete': bool(complete), 'rejected_turning_projection': rejected})
+    return evidence
+
+
 def is_vru_crossing_exposure(
     forward_dist,
     lateral_dist,
@@ -238,12 +301,22 @@ def is_oncoming_vehicle(
     obj_forward_speed,
     maximum_forward_distance=60.0,
     maximum_lateral_distance=8.0,
+    *,
+    obj_lateral_speed,
+    heading_delta,
 ):
-    """Identify an actor approaching ego from the forward road corridor."""
+    """Require opposing orientation and motion, not merely a negative projection."""
+    if not np.isfinite([forward_dist, lateral_dist, obj_forward_speed,
+                        obj_lateral_speed, heading_delta]).all():
+        return False
+    speed = np.hypot(obj_forward_speed, obj_lateral_speed)
+    direction_limit = -np.sqrt(0.5)
     return bool(
         0.0 < forward_dist <= maximum_forward_distance
         and abs(lateral_dist) <= maximum_lateral_distance
         and obj_forward_speed <= -1.0
+        and np.cos(heading_delta) <= direction_limit
+        and obj_forward_speed / max(speed, 1e-12) <= direction_limit
     )
 
 
@@ -285,18 +358,36 @@ def select_scene_batch(scenes, start_index, count):
     return scenes[start_index:start_index + count]
 
 
+def is_bounded_stationary_track(positions, timestamps):
+    """Accept small annotation jitter, not slow travel or an unobserved gap."""
+    if len(positions) != len(timestamps) or len(positions) < 5:
+        return False
+    points = np.asarray(positions, dtype=float)
+    times = np.asarray(timestamps, dtype=float)
+    if points.shape != (len(times), 2) or not np.isfinite(points).all() or not np.isfinite(times).all():
+        return False
+    dt = np.diff(times)
+    if times[-1] - times[0] < 2.0 or np.any(dt <= 0) or np.any(dt > 1.0):
+        return False
+    speeds = np.linalg.norm(np.diff(points, axis=0), axis=1) / dt
+    diameter = np.max(np.linalg.norm(points[:, None, :] - points[None, :, :], axis=2))
+    return bool(diameter <= 0.5 and np.max(speeds) < 1.0 and np.quantile(speeds, 0.9) <= 0.5)
+
+
 def split_stopped_lead_history(
     frame_instance_tokens,
     instance_max_speeds,
     static_speed_threshold=0.5,
     dynamic_speed_threshold=1.0,
+    bounded_stationary_instances=(),
 ):
     """Separate permanently static obstacles from actors that move elsewhere in the scene."""
     static_flags = []
     temporary_flags = []
     for token in frame_instance_tokens:
         max_speed = instance_max_speeds.get(token, 0.0) if token else 0.0
-        static_flags.append(bool(token and max_speed <= static_speed_threshold))
+        bounded_jitter = token in bounded_stationary_instances and max_speed < dynamic_speed_threshold
+        static_flags.append(bool(token and (max_speed <= static_speed_threshold or bounded_jitter)))
         temporary_flags.append(bool(token and max_speed >= dynamic_speed_threshold))
     return StoppedLeadSplit(static_flags, temporary_flags)
 
@@ -597,18 +688,73 @@ def is_evasive_lane_change(
     stationary_max_duration=float("inf"),
     stationary_min_distance=0.0,
     minimum_stationary_duration=1.0,
-    maximum_brief_obstacle_distance=20.0,
+    maximum_brief_obstacle_distance=30.0,
+    maximum_lateral_shift=15.0,
+    maximum_brief_lateral_shift=8.0,
 ):
     """Identify obstacle avoidance while excluding ordinary turning maneuvers."""
     obstacle_evidence = (
         stationary_max_duration >= minimum_stationary_duration
-        or (lateral_shift >= 4.0 and net_heading_change <= 0.10)
+        or (
+            4.0 <= lateral_shift <= maximum_brief_lateral_shift
+            and net_heading_change <= 0.10
+            and stationary_min_distance <= maximum_brief_obstacle_distance
+        )
     )
     return bool(
         stationary_event_count > 0
         and obstacle_evidence
-        and lateral_shift >= minimum_lateral_shift
+        and minimum_lateral_shift <= lateral_shift <= maximum_lateral_shift
         and net_heading_change <= maximum_net_heading_change
+    )
+
+
+def is_lane_supported_target(on_drivable_surface):
+    """Reject positive off-road evidence, not distance to one selected lane.
+
+    None means map evidence is unavailable, not that the actor is off-road.
+    A current-lane centreline cannot establish the intended path around a blockage.
+    """
+    return on_drivable_surface is not False
+
+
+def is_side_entry_candidate(forward, lateral, heading_delta, speed):
+    """A slow side-access actor pointing inward is exposure, not observed merging."""
+    return bool(
+        0.0 < forward <= 30.0 and 2.5 < abs(lateral) <= 8.0
+        and speed < 2.0 and np.cos(heading_delta) > 0.3
+        and np.sign(lateral) * np.sin(heading_delta) < -0.35
+    )
+
+
+def distance_to_polyline(point, positions):
+    """Distance to a recorded route including the segments between keyframes."""
+    positions = np.asarray(positions, dtype=float)
+    if len(positions) == 0:
+        return float('inf')
+    point = np.asarray(point, dtype=float)
+    if len(positions) == 1:
+        return float(np.linalg.norm(point - positions[0]))
+    starts = positions[:-1]
+    segments = positions[1:] - starts
+    lengths_sq = np.sum(segments * segments, axis=1)
+    fractions = np.sum((point - starts) * segments, axis=1) / np.maximum(lengths_sq, 1e-12)
+    projections = starts + np.clip(fractions, 0, 1)[:, None] * segments
+    return float(np.min(np.linalg.norm(projections - point, axis=1)))
+
+
+def is_adjacent_lane_intrusion(initial_lateral, final_lateral,
+                               actor_lateral_displacement, forward_clearance,
+                               duration, heading_aligned):
+    """Require actor motion and observed corridor entry, not faster parallel passing."""
+    return bool(
+        heading_aligned
+        and 0.8 <= duration <= 4.0
+        and 2.5 <= abs(initial_lateral) <= 8.0
+        and abs(final_lateral) <= 2.5
+        and abs(initial_lateral) - abs(final_lateral) >= 0.8
+        and np.sign(initial_lateral) * actor_lateral_displacement <= -0.8
+        and 0.0 < forward_clearance <= 25.0
     )
 
 

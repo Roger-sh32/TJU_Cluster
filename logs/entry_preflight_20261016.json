@@ -1,0 +1,54 @@
+{
+  "scope": "Native imports and development29 guard preflight only; no fit, pickle or evaluation semantics",
+  "thread_overrides": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "MKL_THREADING_LAYER": "SEQUENTIAL"
+  },
+  "nonexistent_outputs_before_after": [
+    "HDBSCAN\\tables\\_preflight_no_run_20261016.csv",
+    "HDBSCAN\\tables\\_preflight_no_run_20261016.csv.manifest.json",
+    "HDBSCAN\\tables\\_preflight_no_run_20261016.model",
+    "HDBSCAN\\pictures\\_preflight_no_run_20261016.png"
+  ],
+  "rows": [
+    {
+      "probe": "main_native_imports",
+      "command": [
+        "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "-c",
+        "import faulthandler; faulthandler.dump_traceback_later(20,exit=True); import nuscenes; print('nuscenes',flush=True); import umap; print('umap',flush=True); import hdbscan,sklearn,cv2; print('imports_ok',flush=True); print(next((v.strip() for v in cv2.getBuildInformation().splitlines() if v.strip().startswith('GUI:')),'GUI unknown'),flush=True); faulthandler.cancel_dump_traceback_later()"
+      ],
+      "started_at_utc": "2026-10-16T01:14:00.365424+00:00",
+      "elapsed_seconds": 8.486357,
+      "timeout_seconds": 25,
+      "timed_out": false,
+      "returncode": 0,
+      "stdout": "nuscenes\r\numap\r\nimports_ok\r\nGUI:                           NONE\r\n",
+      "stderr": ""
+    },
+    {
+      "probe": "candidate_fit_preflight",
+      "command": [
+        "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "HDBSCAN/scripts/cluster_umap_hdbscan.py",
+        "--preflight"
+      ],
+      "started_at_utc": "2026-10-16T01:14:08.851781+00:00",
+      "elapsed_seconds": 0.622721,
+      "timeout_seconds": 25,
+      "timed_out": false,
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py\", line 77, in <module>\r\n    main()\r\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py\", line 27, in main\r\n    require_feature_provenance(input_path, raw)\r\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py\", line 63, in require_feature_provenance\r\n    raise ValueError('Feature extraction version/provenance mismatch')\r\nValueError: Feature extraction version/provenance mismatch\r\n"
+    }
+  ]
+}

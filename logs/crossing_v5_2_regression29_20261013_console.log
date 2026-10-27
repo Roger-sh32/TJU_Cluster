@@ -1,0 +1,66 @@
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 25.952 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 6.0 seconds.
+======
+
+Processing scenes:   0%|          | 0/29 [00:00<?, ?it/s]
+Processing scenes:   3%|▎         | 1/29 [00:05<02:32,  5.44s/it]
+Processing scenes:   7%|▋         | 2/29 [00:15<03:46,  8.39s/it]
+Processing scenes:  10%|█         | 3/29 [00:22<03:17,  7.61s/it]
+Processing scenes:  14%|█▍        | 4/29 [00:28<02:51,  6.88s/it]
+Processing scenes:  17%|█▋        | 5/29 [00:33<02:33,  6.39s/it]
+Processing scenes:  21%|██        | 6/29 [00:38<02:15,  5.91s/it]
+Processing scenes:  24%|██▍       | 7/29 [00:42<01:56,  5.28s/it]
+Processing scenes:  28%|██▊       | 8/29 [00:49<02:01,  5.77s/it]
+Processing scenes:  31%|███       | 9/29 [00:57<02:07,  6.36s/it]
+Processing scenes:  34%|███▍      | 10/29 [01:01<01:47,  5.64s/it]
+Processing scenes:  38%|███▊      | 11/29 [01:08<01:49,  6.08s/it]
+Processing scenes:  41%|████▏     | 12/29 [01:22<02:23,  8.42s/it]
+Processing scenes:  45%|████▍     | 13/29 [01:34<02:33,  9.61s/it]
+Processing scenes:  48%|████▊     | 14/29 [01:40<02:09,  8.66s/it]
+Processing scenes:  52%|█████▏    | 15/29 [01:49<01:59,  8.55s/it]
+Processing scenes:  55%|█████▌    | 16/29 [01:55<01:40,  7.72s/it]
+Processing scenes:  59%|█████▊    | 17/29 [02:11<02:04, 10.40s/it]
+Processing scenes:  62%|██████▏   | 18/29 [02:18<01:43,  9.39s/it]
+Processing scenes:  66%|██████▌   | 19/29 [02:26<01:28,  8.81s/it]
+Processing scenes:  69%|██████▉   | 20/29 [02:47<01:54, 12.69s/it]
+Processing scenes:  72%|███████▏  | 21/29 [02:56<01:31, 11.46s/it]
+Processing scenes:  76%|███████▌  | 22/29 [03:03<01:10, 10.10s/it]
+Processing scenes:  79%|███████▉  | 23/29 [03:12<00:58,  9.80s/it]
+Processing scenes:  83%|████████▎ | 24/29 [03:21<00:48,  9.63s/it]
+Processing scenes:  86%|████████▌ | 25/29 [03:27<00:34,  8.54s/it]
+Processing scenes:  90%|████████▉ | 26/29 [03:34<00:23,  7.85s/it]
+Processing scenes:  93%|█████████▎| 27/29 [03:45<00:17,  8.79s/it]
+Processing scenes:  97%|█████████▋| 28/29 [03:51<00:07,  7.97s/it]
+Processing scenes: 100%|██████████| 29/29 [03:56<00:00,  7.30s/it]
+Processing scenes: 100%|██████████| 29/29 [03:56<00:00,  8.17s/it]
+===== 场景特征表已保存 =====
+   scene_name  ... map_available
+0  scene-0002  ...             1
+1  scene-0007  ...             1
+2  scene-0011  ...             1
+3  scene-0014  ...             1
+4  scene-0026  ...             1
+
+[5 rows x 129 columns]
+共 29 个场景特征，已保存到: F:\Scene_cluster\HDBSCAN\tables\scene_features_crossing_v5_2_regression29_20261013.csv
+Pre-fill nonfinite cells: 39; caught query exceptions: 0; audit: F:\Scene_cluster\HDBSCAN\tables\scene_features_crossing_v5_2_regression29_20261013.csv.quality.json
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 10, "prediction_only": 2, "unknown_future": 12, "response_protected_prediction": 13, "contradicted_synchronized_turn": 1}}
+{"phase": "verified", "scenes": 29, "changed": ["scene-0067", "scene-0068", "scene-0073", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"unknown_future": 22, "response_protected_prediction": 15, "contradicted_turning_projection": 1}}
+{"phase": "verified", "scenes": 29, "changed": ["scene-0068", "scene-0073", "scene-0453", "scene-0552", "scene-0815", "scene-0816"], "cells": 17, "states": {"contradicted_turning_projection": 8, "prediction_only": 2, "response_protected_prediction": 15, "unknown_future": 12, "contradicted_synchronized_turn": 1}}

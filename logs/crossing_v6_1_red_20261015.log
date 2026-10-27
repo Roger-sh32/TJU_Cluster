@@ -1,0 +1,40 @@
+======================================================================
+FAIL: test_no_transfer_to_unrelated_vehicle (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 46, in test_no_transfer_to_unrelated_vehicle
+    result = self.audit(data)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 35, in audit
+    self.assertIsNotNone(function, 'Historical episode audit is missing')
+AssertionError: unexpectedly None : Historical episode audit is missing
+
+======================================================================
+FAIL: test_restored_flag_has_same_target_seed_trace (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 103, in test_restored_flag_has_same_target_seed_trace
+    result = self.audit(self.scene())
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 35, in audit
+    self.assertIsNotNone(function, 'Historical episode audit is missing')
+AssertionError: unexpectedly None : Historical episode audit is missing
+
+======================================================================
+FAIL: test_same_target_continuous_tail_is_retained (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 39, in test_same_target_continuous_tail_is_retained
+    self.assertTrue(self.flags(self.scene())[12])
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_six_second_boundary_is_inclusive_not_extended (HDBSCAN.tests.test_crossing_candidate_v6_1.EpisodeContinuityTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v6_1.py", line 81, in test_six_second_boundary_is_inclusive_not_extended
+    self.assertTrue(result[14])
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.004s
+
+FAILED (failures=4)

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\Python\Conda\envs\autodrive-cluster\lib\pathlib.py", line 1195, in read_text
+    return f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 901: illegal multibyte sequence

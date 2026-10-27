@@ -1,0 +1,411 @@
+{
+  "created_at_utc": "2026-09-27T07:58:01.164026+00:00",
+  "scope": "development seed sensitivity only; no model selection or expert validation",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-umap-smoke\\python.exe",
+    "HDBSCAN/scripts/seed_stability.py",
+    "--input",
+    "HDBSCAN/tables/scene_features_development_20260926.csv",
+    "--baseline",
+    "HDBSCAN/tables/scene_features_development_20260927_umap_hdbscan.csv",
+    "--output-dir",
+    "HDBSCAN/tables/seed_stability_20260927"
+  ],
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\seed_stability.py",
+    "sha256": "96f7886d3522b8bcbce82c9e6bb2bbc516ee3fb235c5d6d77acf4fe405f8ff9d"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+    "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+  },
+  "baseline": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260927_umap_hdbscan.csv",
+    "sha256": "6de5f671f32c0c92b4248ddfc479d3b09a094a50190dadc8f240ffae23fa1dfe"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "sources": {
+    "frozen_model.py": "833ef8af650a6a2c9fbcefbda21d21266aa62cadac0655c011f5c06697a6c563",
+    "corner_scoring.py": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620",
+    "feature_selection.py": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+    "scene_feature_rules.py": "d36d2eb2229cc40ff27d2f50b398681bb964a4b9da6e6b587fd0afc0097313cc",
+    "scene_feature_hdbscan.py": "ca5c66204ba91bf4b9b5364eae5358ffb88fd3390c6610b9c89e1eed7a6d8ddf",
+    "experiment_partition.py": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db"
+  },
+  "runtime": {
+    "python": "3.9.23",
+    "platform": "Windows",
+    "numpy": "1.24.4",
+    "pandas": "2.3.1",
+    "scikit-learn": "1.3.2",
+    "umap-learn": "0.5.5",
+    "hdbscan": "0.8.39",
+    "numba": "0.58.1",
+    "joblib": "1.5.1"
+  },
+  "seeds": [
+    42,
+    7,
+    19,
+    73,
+    101
+  ],
+  "parameters": {
+    "umap": {
+      "n_neighbors": 15,
+      "min_dist": 0.0,
+      "n_components": 10,
+      "metric": "cosine",
+      "random_state": 42,
+      "n_jobs": 1,
+      "low_memory": true
+    },
+    "hdbscan": {
+      "min_cluster_size": 20,
+      "min_samples": 1,
+      "prediction_data": true
+    },
+    "model_manifest": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260927_umap_hdbscan.model\\manifest.json",
+      "sha256": "62f985f9daa554a5e2098b45b86baad6ae5cd1475d21f49b7ca7431791086c10"
+    },
+    "scope": "development fit with frozen estimator export; formal evaluation prediction pending"
+  },
+  "scene_count": 700,
+  "runs": [
+    {
+      "seed": 42,
+      "clusters": 12,
+      "noise_count": 54,
+      "elapsed_seconds": 4.811999999976251,
+      "top20": [
+        "scene-1081",
+        "scene-0071",
+        "scene-0277",
+        "scene-0916",
+        "scene-0253",
+        "scene-0997",
+        "scene-0363",
+        "scene-0436",
+        "scene-1016",
+        "scene-0501",
+        "scene-0660",
+        "scene-0761",
+        "scene-1080",
+        "scene-0626",
+        "scene-0417",
+        "scene-0262",
+        "scene-0424",
+        "scene-0403",
+        "scene-0164",
+        "scene-0068"
+      ],
+      "vs_baseline": {
+        "ari_all": 1.0,
+        "ari_joint_nonnoise": 1.0,
+        "joint_nonnoise_count": 646,
+        "noise_membership_agreement": 1.0,
+        "top_k_overlap_count": 20,
+        "top_k_overlap_fraction": 1.0,
+        "top_k_jaccard": 1.0
+      }
+    },
+    {
+      "seed": 7,
+      "clusters": 8,
+      "noise_count": 0,
+      "elapsed_seconds": 1.4060000000172295,
+      "top20": [
+        "scene-0238",
+        "scene-0239",
+        "scene-0240",
+        "scene-0678",
+        "scene-0277",
+        "scene-0068",
+        "scene-0676",
+        "scene-0071",
+        "scene-0436",
+        "scene-0425",
+        "scene-1080",
+        "scene-0761",
+        "scene-0218",
+        "scene-0363",
+        "scene-0127",
+        "scene-0500",
+        "scene-1109",
+        "scene-0424",
+        "scene-0916",
+        "scene-0501"
+      ],
+      "vs_baseline": {
+        "ari_all": 0.3492947377971263,
+        "ari_joint_nonnoise": 0.43060348665200127,
+        "joint_nonnoise_count": 646,
+        "noise_membership_agreement": 0.9228571428571428,
+        "top_k_overlap_count": 10,
+        "top_k_overlap_fraction": 0.5,
+        "top_k_jaccard": 0.3333333333333333
+      }
+    },
+    {
+      "seed": 19,
+      "clusters": 8,
+      "noise_count": 0,
+      "elapsed_seconds": 1.4689999999827705,
+      "top20": [
+        "scene-1081",
+        "scene-1080",
+        "scene-0626",
+        "scene-0071",
+        "scene-1016",
+        "scene-0317",
+        "scene-0068",
+        "scene-0678",
+        "scene-0425",
+        "scene-0238",
+        "scene-1079",
+        "scene-0422",
+        "scene-0916",
+        "scene-0127",
+        "scene-1109",
+        "scene-0500",
+        "scene-0436",
+        "scene-0067",
+        "scene-0239",
+        "scene-0660"
+      ],
+      "vs_baseline": {
+        "ari_all": 0.35748051055287444,
+        "ari_joint_nonnoise": 0.44056930580966247,
+        "joint_nonnoise_count": 646,
+        "noise_membership_agreement": 0.9228571428571428,
+        "top_k_overlap_count": 9,
+        "top_k_overlap_fraction": 0.45,
+        "top_k_jaccard": 0.2903225806451613
+      }
+    },
+    {
+      "seed": 73,
+      "clusters": 15,
+      "noise_count": 64,
+      "elapsed_seconds": 1.3910000000032596,
+      "top20": [
+        "scene-0071",
+        "scene-1016",
+        "scene-1081",
+        "scene-0916",
+        "scene-0436",
+        "scene-0660",
+        "scene-0417",
+        "scene-0424",
+        "scene-0262",
+        "scene-0626",
+        "scene-0164",
+        "scene-0969",
+        "scene-0382",
+        "scene-0420",
+        "scene-0238",
+        "scene-0510",
+        "scene-1084",
+        "scene-1080",
+        "scene-0068",
+        "scene-0894"
+      ],
+      "vs_baseline": {
+        "ari_all": 0.6838604877343092,
+        "ari_joint_nonnoise": 0.7926090123199712,
+        "joint_nonnoise_count": 616,
+        "noise_membership_agreement": 0.9285714285714286,
+        "top_k_overlap_count": 13,
+        "top_k_overlap_fraction": 0.65,
+        "top_k_jaccard": 0.48148148148148145
+      }
+    },
+    {
+      "seed": 101,
+      "clusters": 16,
+      "noise_count": 36,
+      "elapsed_seconds": 1.4690000000409782,
+      "top20": [
+        "scene-1016",
+        "scene-0436",
+        "scene-0424",
+        "scene-0277",
+        "scene-0997",
+        "scene-1084",
+        "scene-0761",
+        "scene-0363",
+        "scene-0795",
+        "scene-0068",
+        "scene-0855",
+        "scene-1080",
+        "scene-1081",
+        "scene-0626",
+        "scene-0407",
+        "scene-0289",
+        "scene-0253",
+        "scene-0161",
+        "scene-0501",
+        "scene-0425"
+      ],
+      "vs_baseline": {
+        "ari_all": 0.7121461668792624,
+        "ari_joint_nonnoise": 0.7962811086668334,
+        "joint_nonnoise_count": 633,
+        "noise_membership_agreement": 0.9371428571428572,
+        "top_k_overlap_count": 13,
+        "top_k_overlap_fraction": 0.65,
+        "top_k_jaccard": 0.48148148148148145
+      }
+    }
+  ],
+  "pairwise": [
+    {
+      "seed_a": 42,
+      "seed_b": 7,
+      "ari_all": 0.3492947377971263,
+      "ari_joint_nonnoise": 0.43060348665200127,
+      "joint_nonnoise_count": 646,
+      "noise_membership_agreement": 0.9228571428571428,
+      "top_k_overlap_count": 10,
+      "top_k_overlap_fraction": 0.5,
+      "top_k_jaccard": 0.3333333333333333
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 19,
+      "ari_all": 0.35748051055287444,
+      "ari_joint_nonnoise": 0.44056930580966247,
+      "joint_nonnoise_count": 646,
+      "noise_membership_agreement": 0.9228571428571428,
+      "top_k_overlap_count": 9,
+      "top_k_overlap_fraction": 0.45,
+      "top_k_jaccard": 0.2903225806451613
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 73,
+      "ari_all": 0.6838604877343092,
+      "ari_joint_nonnoise": 0.7926090123199712,
+      "joint_nonnoise_count": 616,
+      "noise_membership_agreement": 0.9285714285714286,
+      "top_k_overlap_count": 13,
+      "top_k_overlap_fraction": 0.65,
+      "top_k_jaccard": 0.48148148148148145
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 101,
+      "ari_all": 0.7121461668792624,
+      "ari_joint_nonnoise": 0.7962811086668334,
+      "joint_nonnoise_count": 633,
+      "noise_membership_agreement": 0.9371428571428572,
+      "top_k_overlap_count": 13,
+      "top_k_overlap_fraction": 0.65,
+      "top_k_jaccard": 0.48148148148148145
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 19,
+      "ari_all": 0.991697333083612,
+      "ari_joint_nonnoise": 0.991697333083612,
+      "joint_nonnoise_count": 700,
+      "noise_membership_agreement": 1.0,
+      "top_k_overlap_count": 12,
+      "top_k_overlap_fraction": 0.6,
+      "top_k_jaccard": 0.42857142857142855
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 73,
+      "ari_all": 0.265537055233409,
+      "ari_joint_nonnoise": 0.331957636102858,
+      "joint_nonnoise_count": 636,
+      "noise_membership_agreement": 0.9085714285714286,
+      "top_k_overlap_count": 7,
+      "top_k_overlap_fraction": 0.35,
+      "top_k_jaccard": 0.21212121212121213
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 101,
+      "ari_all": 0.2868134203015493,
+      "ari_joint_nonnoise": 0.326061613083249,
+      "joint_nonnoise_count": 664,
+      "noise_membership_agreement": 0.9485714285714286,
+      "top_k_overlap_count": 9,
+      "top_k_overlap_fraction": 0.45,
+      "top_k_jaccard": 0.2903225806451613
+    },
+    {
+      "seed_a": 19,
+      "seed_b": 73,
+      "ari_all": 0.2715510086284339,
+      "ari_joint_nonnoise": 0.33960330597935984,
+      "joint_nonnoise_count": 636,
+      "noise_membership_agreement": 0.9085714285714286,
+      "top_k_overlap_count": 10,
+      "top_k_overlap_fraction": 0.5,
+      "top_k_jaccard": 0.3333333333333333
+    },
+    {
+      "seed_a": 19,
+      "seed_b": 101,
+      "ari_all": 0.287618035603408,
+      "ari_joint_nonnoise": 0.3258576573136284,
+      "joint_nonnoise_count": 664,
+      "noise_membership_agreement": 0.9485714285714286,
+      "top_k_overlap_count": 7,
+      "top_k_overlap_fraction": 0.35,
+      "top_k_jaccard": 0.21212121212121213
+    },
+    {
+      "seed_a": 73,
+      "seed_b": 101,
+      "ari_all": 0.6499605678757762,
+      "ari_joint_nonnoise": 0.7416688054601647,
+      "joint_nonnoise_count": 629,
+      "noise_membership_agreement": 0.94,
+      "top_k_overlap_count": 8,
+      "top_k_overlap_fraction": 0.4,
+      "top_k_jaccard": 0.25
+    }
+  ],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\seed_stability_20260927\\seed_42.csv",
+      "sha256": "e7858dbcf10200326b12062c65844b93c127ffda9a5e71ceb1529654d98cc5e2"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\seed_stability_20260927\\seed_7.csv",
+      "sha256": "9f62aba624a36edc86a2219c56f8d1a4829a6bc335eaba3ed4c71e19cd4bf78a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\seed_stability_20260927\\seed_19.csv",
+      "sha256": "336f2765ed2ceef701623e6cf246e669d3bf7fc3d84ce2a9ddef0a1b14ace637"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\seed_stability_20260927\\seed_73.csv",
+      "sha256": "2a677070c57b2e40ebcad4d0586140933bbcb3345ae3cf7c83331e7766769787"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\seed_stability_20260927\\seed_101.csv",
+      "sha256": "47a204c1d38c826279363bde20fe5d0005722c3f9bffa40057d441820d095d9a"
+    }
+  ],
+  "limitations": [
+    "ARI includes noise as one label; joint-nonnoise ARI also reported.",
+    "Top20 uses raw score with deterministic scene-name tie breaking.",
+    "Five seeds only; no parameter search, resampling or held-out validation.",
+    "Inherits original extraction fallback limitations. No best seed selected."
+  ],
+  "seed42_reproduced_baseline": true,
+  "top20_all_seed_intersection": [
+    "scene-0068",
+    "scene-0436",
+    "scene-1080"
+  ]
+}

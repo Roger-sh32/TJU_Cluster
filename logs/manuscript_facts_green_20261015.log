@@ -1,0 +1,11 @@
+test_ast_parameter_reader_does_not_execute_module (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_changed_or_missing_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_duplicate_or_extra_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_fact_table_exact_values (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_nonliteral_or_ambiguous_parameters_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+test_unclosed_math_block_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.718s
+
+OK

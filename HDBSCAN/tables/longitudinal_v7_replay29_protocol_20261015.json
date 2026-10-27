@@ -1,0 +1,221 @@
+{
+  "version": "longitudinal_candidate_v7_20261015",
+  "created_at_utc": "2026-10-15T12:23:33.295567+00:00",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/longitudinal_v7_replay_20261015.py",
+    "prepare"
+  ],
+  "parent_sha256": "51b6be617bb455bfd44a2d8bcf9010b73ee1d16bc7aa9f60963dacc9186c3209",
+  "stage": "fixed_before_baseline_and_candidate_replay",
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_protocol_20261015.json",
+      "sha256": "51b6be617bb455bfd44a2d8bcf9010b73ee1d16bc7aa9f60963dacc9186c3209",
+      "bytes": 6936
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_comparison_20261015.json",
+      "sha256": "9cc0ff917895087587155ea65611099043ba288a8ec7f64513d1945c92bcc42a",
+      "bytes": 2694
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+      "sha256": "081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147",
+      "bytes": 33847
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv.manifest.json",
+      "sha256": "903baff3aa9667e21f502d4ec2125dccaa9085d58a974b94f30669f9c38407f9",
+      "bytes": 2284
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_events_20261015.json",
+      "sha256": "cd17b6785a181f6f26bc642d8229e1fdf8ab12fe255b121f955782dc0caabe49",
+      "bytes": 75967
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff",
+      "bytes": 45134
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample.json",
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d",
+      "bytes": 7424233
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample_annotation.json",
+      "sha256": "1f4f3835cb86f4efe49ccad3ae6f5f6a2d068422696de564c5892b5b06bea2a9",
+      "bytes": 583417244
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b",
+      "bytes": 285132
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\evaluation_media_audit_20260926.py",
+      "sha256": "ae06907415d8b3a12eb65ee45c349f209defe99e47fc054c440f4db52f628310",
+      "bytes": 9106
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\longitudinal_candidate_v7.py",
+      "sha256": "33059b93410c70148d161ce7adf94c1d58f1e96167edff31ce0f9157c76c5a3e",
+      "bytes": 10953
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_longitudinal_candidate_v7.py",
+      "sha256": "53e25d6521066915f3def82aa3097c86a56c006389df2d7bddf51b60e3613703",
+      "bytes": 8270
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\longitudinal_v7_replay_20261015.py",
+      "sha256": "f3fe00f96a3c6a07c2d890712ffa4227146dff0d90c46d3dfc6701fea5fa0fac",
+      "bytes": 20751
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_longitudinal_v7_replay_20261015.py",
+      "sha256": "53a2b2fedcec85171ec38e1f2944f77c28e47c49e3c224d6fef1f1e290b660ef",
+      "bytes": 4066
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\ttc_scope_diagnosis_20261015.md",
+      "sha256": "bcaf2e4ec0ec736b3c01127b991c781081c9c9941f93716566511bb1ca120cc5",
+      "bytes": 10387
+    }
+  ],
+  "runtime": {
+    "python": "3.9.23",
+    "executable": {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+      "sha256": "102dc158e0428a9ee945f010b33acf67091575725042ba537dcc8371efef0e14",
+      "bytes": 96256
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "nuscenes-devkit": "1.2.0",
+      "shapely": "2.0.7",
+      "pyquaternion": "0.9.9"
+    }
+  },
+  "names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "tokens": [
+    "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+    "bc219c0fa63b43b4b9dddab47fce1fef",
+    "c075fbdd97124beaba95bc5c25149f30",
+    "d1e57234fd6a463d963670938f9f556e",
+    "b79d940da8df43d09ee972c2414ffeca",
+    "82aef599650d462db73731b7ff40918b",
+    "9047b53fd41540649dce014a128cbe1b",
+    "c6c092a66329470f836714f46b92d59b",
+    "6d4b2bd795ae4c66900ad98ccd2371a6",
+    "446af4b1d7da4735a607bc3e45c2e0b3",
+    "83773bcf46ac486383529098de0542dd",
+    "cb0cd06a1dd84271968466d7b65e48f8",
+    "b0b26c1e5a1140e69598422f12ae1dc0",
+    "5557f4edc1464442812293e2ea90a586",
+    "78c5f7d7b547483c906d8524a8c3190f",
+    "cba3ddd5c3664a43b6a08e586e094900",
+    "2eb4d7f00e584a548aa0b899638bfb0a",
+    "ddb615d9bb22484cabc6545b632a1025",
+    "fcbccedd61424f1b85dcbf8f897f9754",
+    "3b2ee26cb8484f77895bc336663df502",
+    "fb73d1a6c16147ee9416faf6b310fadb",
+    "e6cb595f6df44b3999db28c65f2244ac",
+    "ba76f4185aa34ed3bff467ac640da902",
+    "c0d3796765e2452d990309b2568adac5",
+    "e0b14a8e11994763acba690bbcc3f56a",
+    "16e50a63b809463099cb4c378fe0641e",
+    "30783e1b472a4101b82be19e41636ba2",
+    "c5b36e5275cc4a2285d095e87347c49a",
+    "0e247ba64b9d4a34a7256b6c173b1b5d"
+  ],
+  "allowed_changes": [
+    "blocked_path_obstacle_ratio",
+    "car_following_ratio",
+    "close_following_ratio",
+    "dangerous_ttc_frame_ratio",
+    "dangerous_ttc_max_duration",
+    "dangerous_ttc_ratio",
+    "ego_evasive_lane_change_flag",
+    "ego_evasive_lateral_shift",
+    "ego_evasive_net_heading_change",
+    "following_event_count",
+    "following_max_duration",
+    "front_vehicle_min_dist",
+    "min_ttc",
+    "min_ttc_relative_speed",
+    "min_ttc_scene_time",
+    "min_ttc_target_annotation_token",
+    "min_ttc_target_category",
+    "min_ttc_target_clearance",
+    "min_ttc_target_forward_speed",
+    "min_ttc_target_heading_delta",
+    "min_ttc_target_instance_token",
+    "min_ttc_target_lateral_distance",
+    "min_ttc_target_speed",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand",
+    "stationary_lead_event_count",
+    "stationary_lead_min_dist",
+    "stationary_lead_obstacle_ratio",
+    "stopped_lead_ratio",
+    "temporarily_stopped_lead_ratio",
+    "ttc_valid_ratio"
+  ],
+  "outputs": [
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_baseline_20261015.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+    "F:\\Scene_cluster\\outputs\\人工复核\\纵向目标v7固定29条对照_20261015.md"
+  ],
+  "exact_baseline_required": true,
+  "new_extraction": false,
+  "evaluation_used": false,
+  "fit_allowed": false,
+  "policy": "Permanent static, opposing halfplane cos(delta)<0, local turn>=.35, speed<.5, supported/map known, full6s geometry SEPARATED; existing avoidance/raw deviation protected. Unknown future never proves separation. Gate before nearest selection; inherited TTC postfilter retained. TTC formula/clips, v6 geometry/margin, v6.1 crossing, VRU, weights and schema unchanged."
+}

@@ -1,0 +1,57 @@
+{
+  "client_date": "2026-10-16",
+  "scope": "Original five user-provided official sources only; verified TLS, no experiment",
+  "records": [
+    {
+      "file": "S13_pegasus.html",
+      "requested_url": "https://www.pegasusprojekt.de/en/",
+      "host_utc": "2026-10-16T00:59:17.926658+00:00",
+      "final_url": "https://www.pegasusprojekt.de/en/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 58294,
+      "sha256": "cf288f41296a7bc719749d7f4569cfe3ecb736014d27b18c4189a9f6ee7e29f0"
+    },
+    {
+      "file": "S14_enable_s3.html",
+      "requested_url": "https://cordis.europa.eu/project/id/692455/results",
+      "host_utc": "2026-10-16T00:59:20.260814+00:00",
+      "final_url": "https://cordis.europa.eu/project/id/692455/results",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "saved": true,
+      "bytes": 227216,
+      "sha256": "5349bacc240284da5911b017ac84265c7ef0f5d0a5bb5d515838549a5352c126"
+    },
+    {
+      "file": "S15_iso34502.html",
+      "requested_url": "https://www.iso.org/standard/78951.html",
+      "host_utc": "2026-10-16T00:59:22.341759+00:00",
+      "saved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "S16_ivista.html",
+      "requested_url": "https://www.i-vista.org/autoindex/index5/",
+      "host_utc": "2026-10-16T00:59:23.012228+00:00",
+      "final_url": "https://www.i-vista.org/autoindex/index5/",
+      "status": 200,
+      "content_type": "text/html",
+      "saved": true,
+      "bytes": 77961,
+      "sha256": "8c92347ce1bc8b39316812aa7dc2ba35c008b77a3c662c8bfe1fbe4aae361698"
+    },
+    {
+      "file": "S17_cicap.html",
+      "requested_url": "https://www.c-ncap.org.cn/cncap-guicheng-detail?id=15",
+      "host_utc": "2026-10-16T00:59:24.111235+00:00",
+      "final_url": "https://www.c-ncap.org.cn/cncap-guicheng-detail?id=15",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 11788,
+      "sha256": "23aef72f3473b4b9852c671a43f126b4daaafb089e0214e34df008be67e582d7"
+    }
+  ]
+}

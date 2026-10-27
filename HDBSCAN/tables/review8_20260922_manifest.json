@@ -1,0 +1,145 @@
+{
+  "generated_at_utc": "2026-09-22T00:47:00.311489+00:00",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "python_version": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.1",
+    "nuscenes-devkit": "1.2.0",
+    "shapely": "2.0.7"
+  },
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review8_20260922.csv",
+      "sha256": "135904ed1c33a4fc701e13f53ea59c15406933e095297493f13c8dd104305950"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_route_tightening_regression_0011_0042.csv",
+      "sha256": "936070705bae2155d98d4c6a1205f9bc22aa1fe15fa7253c56ab21db37316fe3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_route_tightening_0051_0100_final.csv",
+      "sha256": "2641bf4a83b93979cb9080d35fb48bbe86793e0a417e12620df7f0561b85be2f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_route_tightening_smoke_0011.csv",
+      "sha256": "c5a63a4a07d6be74259de86f40b90f1eec45dcf304f6d4b728ca159263e9a9a3"
+    }
+  ],
+  "scripts_at_audit_time": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\audit_feature_revision.py",
+      "sha256": "9ef10b08b82cb6764e84ec3bbbd95260906573fcfc51ba7d4e951baca9883c6f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+      "sha256": "071ffeda997fc46bfcbe3e799e7a6da12d67176ec279cf871693ac53adbb716e"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "44bb358e6e9b68c96595e0758b165d8ebc2bc34d336220caffe8f7fb3343b58e"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "sha256": "77b40cdd37dc4e1b9f6f3a8c8dccf4ee3218fee90a97a2781f73d8854878487c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+    }
+  ],
+  "scene_count": 14,
+  "scene_names": [
+    "scene-0007",
+    "scene-0011",
+    "scene-0026",
+    "scene-0030",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0097",
+    "scene-0103",
+    "scene-0109",
+    "scene-0122"
+  ],
+  "semantic_feature_count": 52,
+  "semantic_features": [
+    "avg_speed",
+    "speed_std",
+    "avg_vehicle_count",
+    "neighbor_density_std",
+    "neighbor_speed_std",
+    "pedestrian_nearby_ratio",
+    "pedestrian_front_ratio",
+    "ego_avg_speed",
+    "ego_speed_std",
+    "ego_heading_change_total",
+    "ego_stopped_at_scene_start",
+    "ego_stop_from_motion_flag",
+    "ego_restart_after_stop_flag",
+    "car_following_ratio",
+    "following_max_duration",
+    "merge_exposure_ratio",
+    "merge_observed_relevance_ratio",
+    "merge_lane_entry_relevance_ratio",
+    "adjacent_lane_intrusion_ratio",
+    "side_entry_candidate_ratio",
+    "overtaking_exposure_ratio",
+    "crossing_vehicle_exposure_ratio",
+    "crossing_route_conflict_ratio",
+    "left_turn_crossing_yield_ratio",
+    "left_turn_cross_traffic_interaction_ratio",
+    "vru_crossing_exposure_ratio",
+    "same_lane_vru_exposure_ratio",
+    "same_direction_vru_ratio",
+    "vru_path_conflict_ratio",
+    "vru_observed_relevance_ratio",
+    "vru_crosswalk_conflict_ratio",
+    "obstacle_avoidance_vru_conflict_ratio",
+    "oncoming_during_avoidance_ratio",
+    "stationary_lead_obstacle_ratio",
+    "temporarily_stopped_lead_ratio",
+    "blocked_path_obstacle_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand",
+    "ego_evasive_lane_change_flag",
+    "truck_bus_dynamic_ratio",
+    "bicycle_ratio",
+    "motorcycle_ratio",
+    "two_wheeler_dynamic_ratio",
+    "intersection_density",
+    "lane_connector_density",
+    "ped_crossing_density",
+    "intersection_stop_ratio",
+    "traffic_light_control_density",
+    "stop_sign_control_density",
+    "stop_sign_stop_candidate",
+    "turn_stop_control_density",
+    "non_signalized_intersection_density"
+  ],
+  "all_zero_semantic_features": [
+    "adjacent_lane_intrusion_ratio",
+    "crossing_route_conflict_ratio",
+    "same_direction_vru_ratio",
+    "oncoming_during_avoidance_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand"
+  ],
+  "missing_baseline_scenes": [
+    "scene-0007"
+  ],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review8_20260922_risk.csv",
+      "sha256": "96960491cbd2afb3bced4c945ae9f5a7b1fb225d23f45b51b19a5c4c4a7cb8fb"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review8_20260922_comparison.csv",
+      "sha256": "c919b1b553a22efac194e24591933872b3ddf99e11827ef4186fabdc3899f275"
+    }
+  ],
+  "note": "Risk-only audit; no clustering or corner-score rerun. Baseline risks are recalculated with the current scorer and historical available fields."
+}

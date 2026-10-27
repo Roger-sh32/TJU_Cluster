@@ -1,0 +1,50 @@
+{
+  "client_date": "2026-10-16",
+  "tls": "Verified certifi CA, verification enabled",
+  "records": [
+    {
+      "file": "R03_joss.html",
+      "requested_url": "https://joss.theoj.org/papers/10.21105/joss.00861",
+      "host_utc": "2026-10-16T00:41:06.638246+00:00",
+      "final_url": "https://joss.theoj.org/papers/10.21105/joss.00861",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 19580,
+      "sha256": "b7b14501af9d9b9a363c96f9fae99c6d5f1321bc29639d1d68a2c9dd28cd6497",
+      "saved": true
+    },
+    {
+      "file": "R06_joss.html",
+      "requested_url": "https://joss.theoj.org/papers/10.21105/joss.00205",
+      "host_utc": "2026-10-16T00:41:07.825265+00:00",
+      "final_url": "https://joss.theoj.org/papers/10.21105/joss.00205",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 19436,
+      "sha256": "f6ca0ec3fc3de4243acb5d14389922590058378e7b7d067d9e38510f11cf4927",
+      "saved": true
+    },
+    {
+      "file": "R04_springer.html",
+      "requested_url": "https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14",
+      "host_utc": "2026-10-16T00:41:08.802427+00:00",
+      "final_url": "https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14?error=cookies_not_supported&code=28d64108-1ac6-4484-904c-e4eed0e791c7",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 309369,
+      "sha256": "cf1bc5372d2bdcfe6ebc87be06af0b25160c39daaddc4c09af592ba885871931",
+      "saved": true
+    },
+    {
+      "file": "R05_jcu.html",
+      "requested_url": "https://researchonline.jcu.edu.au/47065/",
+      "host_utc": "2026-10-16T00:41:13.747830+00:00",
+      "final_url": "https://researchonline.jcu.edu.au/47065/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 41792,
+      "sha256": "6bd4dc3ec36c0b07c69930e2a14bd5fa3da12cc6029ca1ca291517caadd3dc3c",
+      "saved": true
+    }
+  ]
+}

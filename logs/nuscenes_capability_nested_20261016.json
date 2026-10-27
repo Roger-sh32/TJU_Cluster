@@ -1,0 +1,145 @@
+{
+  "scope": "Recursive field-name inventory only, not live signal or barrier classification",
+  "maps": [
+    {
+      "file": "nuScenes\\maps\\expansion\\boston-seaport.json",
+      "source_sha256": "fc33712481efd763be39ce7edca0ec924d2d1fe20e1c89d52e21bf43d86e6b59",
+      "traffic_light_nested_keys": [
+        "color",
+        "from_road_block_token",
+        "items",
+        "line_token",
+        "pose",
+        "rel_pos",
+        "rx",
+        "ry",
+        "rz",
+        "shape",
+        "to_road_block_tokens",
+        "token",
+        "traffic_light_type",
+        "tx",
+        "ty",
+        "tz"
+      ],
+      "temporal_name_matches": [],
+      "lane_divider_nested_keys": [
+        "lane_divider_segments",
+        "line_token",
+        "node_token",
+        "segment_type",
+        "token"
+      ],
+      "road_divider_nested_keys": [
+        "line_token",
+        "road_segment_token",
+        "token"
+      ]
+    },
+    {
+      "file": "nuScenes\\maps\\expansion\\singapore-hollandvillage.json",
+      "source_sha256": "0c9209c277686e367b06ab5bbe2547ba357f7f790365cb4927f44ae0f78266b2",
+      "traffic_light_nested_keys": [
+        "color",
+        "from_road_block_token",
+        "items",
+        "line_token",
+        "pose",
+        "rel_pos",
+        "rx",
+        "ry",
+        "rz",
+        "shape",
+        "to_road_block_tokens",
+        "token",
+        "traffic_light_type",
+        "tx",
+        "ty",
+        "tz"
+      ],
+      "temporal_name_matches": [],
+      "lane_divider_nested_keys": [
+        "lane_divider_segments",
+        "line_token",
+        "node_token",
+        "segment_type",
+        "token"
+      ],
+      "road_divider_nested_keys": [
+        "line_token",
+        "road_segment_token",
+        "token"
+      ]
+    },
+    {
+      "file": "nuScenes\\maps\\expansion\\singapore-onenorth.json",
+      "source_sha256": "17939122b940d7faff50fa7ff623ded7f739549a781c32dff1ecd1ac7bebca02",
+      "traffic_light_nested_keys": [
+        "color",
+        "from_road_block_token",
+        "items",
+        "line_token",
+        "pose",
+        "rel_pos",
+        "rx",
+        "ry",
+        "rz",
+        "shape",
+        "to_road_block_tokens",
+        "token",
+        "traffic_light_type",
+        "tx",
+        "ty",
+        "tz"
+      ],
+      "temporal_name_matches": [],
+      "lane_divider_nested_keys": [
+        "lane_divider_segments",
+        "line_token",
+        "node_token",
+        "segment_type",
+        "token"
+      ],
+      "road_divider_nested_keys": [
+        "line_token",
+        "road_segment_token",
+        "token"
+      ]
+    },
+    {
+      "file": "nuScenes\\maps\\expansion\\singapore-queenstown.json",
+      "source_sha256": "c7e75f5a5643c4831aae1c99a0fdcc61e9ba3c01f98d922f0fafa34ea1062927",
+      "traffic_light_nested_keys": [
+        "color",
+        "from_road_block_token",
+        "items",
+        "line_token",
+        "pose",
+        "rel_pos",
+        "rx",
+        "ry",
+        "rz",
+        "shape",
+        "to_road_block_tokens",
+        "token",
+        "traffic_light_type",
+        "tx",
+        "ty",
+        "tz"
+      ],
+      "temporal_name_matches": [],
+      "lane_divider_nested_keys": [
+        "lane_divider_segments",
+        "line_token",
+        "node_token",
+        "segment_type",
+        "token"
+      ],
+      "road_divider_nested_keys": [
+        "line_token",
+        "road_segment_token",
+        "token"
+      ]
+    }
+  ]
+}

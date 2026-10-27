@@ -1,0 +1,15 @@
+test_brief_static_integration_keeps_legacy_strict_evasion (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_candidate_stage_counts_keep_rejection_and_measurement_distinct (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_missing_static_target_identity_is_not_guessed (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_no_static_flags_proves_no_absence_of_obstacles (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_parent_diagnosis_original_seal_required (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_same_anchor_can_have_both_roles (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_selected_and_stationary_identity_must_match (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_static_anchor_survives_absent_blocked_flag (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_static_and_minimum_event_roles_do_not_collapse (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+test_strict_boolean_static_flags (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.577s
+
+OK

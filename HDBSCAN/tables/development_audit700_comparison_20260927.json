@@ -1,0 +1,73 @@
+{
+  "created_at_utc": "2026-09-27T13:09:26.902137+00:00",
+  "scope": "full-development structural audit; not expert or semantic acceptance",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/check_development_audit700_20260927.py",
+    "--wait-seconds",
+    "14400"
+  ],
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\check_development_audit700_20260927.py",
+    "sha256": "4302d8a117b07c42a7addefe147932483304e7c018be9d132cabd939e815ea06"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv",
+    "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+  },
+  "baseline": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_20260926.csv",
+    "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+  },
+  "extraction_manifest": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.manifest.json",
+    "sha256": "93cc883ead4f904aa3d3e788dd9e6a3410b37328cffec82b50cfc216259dffcf"
+  },
+  "quality": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.quality.json",
+    "sha256": "b05d6f47e296074efc3117c486160040fa5166c0eb010f7951bfd3a44e3ee58b"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "scene_count": 700,
+  "column_count": 129,
+  "clustering_feature_count": 52,
+  "all_development_members_present_once": true,
+  "all_output_numeric_values_finite": true,
+  "map_available_scene_count": 700,
+  "intersection_flag_positive_count": 586,
+  "constant_clustering_features": [],
+  "nonfinite_cell_count": 1078,
+  "nonfinite_by_column": {
+    "merge_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 494,
+      "negative_inf": 0
+    },
+    "vru_observed_min_distance": {
+      "nan": 0,
+      "positive_inf": 584,
+      "negative_inf": 0
+    }
+  },
+  "query_exception_count": 0,
+  "query_exception_counts_by_stage": {},
+  "feature_comparison": {
+    "changed_cell_count": 0,
+    "changed_scene_count": 0,
+    "changed_columns": [],
+    "changes": []
+  },
+  "changed_risk_cell_count": 0,
+  "requires_review": false,
+  "review_reasons": [],
+  "semantic_validity_verified": false,
+  "fit_started": false,
+  "limitations": [
+    "Known positive-Inf diagnostic sentinels are listed, not treated as measured 30m.",
+    "No guarantee for intermediate values or explicit finite fallbacks.",
+    "No automatic parameter selection, model fit, evaluation or expert labels."
+  ]
+}

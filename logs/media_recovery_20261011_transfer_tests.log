@@ -1,0 +1,21 @@
+test_archive_without_receipt_is_reconciled (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_bounded_range_request_requires_exact_end_and_length (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_empty_partial_is_reusable (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_failed_decode_never_creates_dataset_file (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_first_bounded_request_is_206_not_200 (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_fresh_download_requires_exact_object (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_interrupted_receipt_serialization_never_publishes_partial_json (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_jpeg_dimensions_and_full_decoding_required (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_malformed_tar_after_valid_member_fails_before_publication (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_multiple_bounded_chunks_complete_with_empty_partial (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_no_overwrite_and_archive_links_rejected (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_publication_requires_prior_durable_intent (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_range_start_total_length_and_etag_must_match (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_space_reserve_is_enforced (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_unsafe_or_non_camera_names_rejected (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+test_validated_image_is_published_only_when_absent (logs.test_recover_camera_media_20261011.RecoverySafetyTest) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.102s
+
+OK

@@ -1,0 +1,105 @@
+{
+  "requests": [
+    {
+      "requested_url": "https://pypi.org/pypi/hdbscan/0.8.39/json",
+      "final_url": "https://pypi.org/pypi/hdbscan/0.8.39/json",
+      "status": 200,
+      "at_utc": "2026-10-24T03:26:37.932250+00:00",
+      "content_type": "application/json",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\pypi_verified_0.8.39.json",
+      "bytes": 28006,
+      "sha256": "608e1e5cc40aab9ec336b65c54dc21ced5819b82d4d5d2930707bd63eadcb485"
+    },
+    {
+      "requested_url": "https://files.pythonhosted.org/packages/f4/a1/a8f1d60a44ae9f720e5c77a30c2d01962f3ff1d2de81f0eb640354c400b2/hdbscan-0.8.39.tar.gz",
+      "final_url": "https://files.pythonhosted.org/packages/f4/a1/a8f1d60a44ae9f720e5c77a30c2d01962f3ff1d2de81f0eb640354c400b2/hdbscan-0.8.39.tar.gz",
+      "status": 200,
+      "at_utc": "2026-10-24T03:26:38.744945+00:00",
+      "content_type": "application/octet-stream",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\hdbscan-0.8.39.tar.gz",
+      "bytes": 5771399,
+      "sha256": "2aa1351f42fa79efdc47d53695381aa9a2efef6d1855b96c42d030646fee74f7"
+    },
+    {
+      "requested_url": "https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html",
+      "final_url": "https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html",
+      "status": 403,
+      "at_utc": "2026-10-24T03:26:43.371889+00:00",
+      "content_type": "text/plain; charset=UTF-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\official_how.response",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "requested_url": "https://hdbscan.readthedocs.io/en/latest/outlier_detection.html",
+      "final_url": "https://hdbscan.readthedocs.io/en/latest/outlier_detection.html",
+      "status": 403,
+      "at_utc": "2026-10-24T03:26:44.129582+00:00",
+      "content_type": "text/plain; charset=UTF-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\official_outliers.response",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "requested_url": "https://researchonline.jcu.edu.au/47065/",
+      "final_url": "https://researchonline.jcu.edu.au/47065/",
+      "status": 403,
+      "at_utc": "2026-10-24T03:26:45.809389+00:00",
+      "content_type": "text/plain; charset=UTF-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\jcu_record.response",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "requested_url": "https://core.ac.uk/download/pdf/78275467.pdf",
+      "final_url": "https://core.ac.uk/download/pdf/78275467.pdf",
+      "status": 403,
+      "at_utc": "2026-10-24T03:26:47.098901+00:00",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\core_fulltext.response",
+      "bytes": 5426,
+      "sha256": "9fffb7fcb975d5aa87cfec6f39706ee1ec37c7aa526eea8d42efeae0b482072f"
+    },
+    {
+      "requested_url": "https://repositorio.usp.br/item/002709770",
+      "at_utc": "2026-10-24T03:26:47.786994+00:00",
+      "error": "URLError: <urlopen error _ssl.c:1130: The handshake operation timed out>",
+      "response_received": false
+    }
+  ],
+  "sdist_sha256": "2aa1351f42fa79efdc47d53695381aa9a2efef6d1855b96c42d030646fee74f7",
+  "extracted": [
+    {
+      "member": "hdbscan-0.8.39/LICENSE",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist_LICENSE",
+      "bytes": 1484,
+      "sha256": "d5be17fef04ce2213c09a3fffec11021065eaff565733c46ef287248b353a081"
+    },
+    {
+      "member": "hdbscan-0.8.39/hdbscan/hdbscan_.py",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist_hdbscan_.py",
+      "bytes": 61742,
+      "sha256": "81511870830f5e6207f877ea7d535435675fe488f265355a4cd309c7335cc41a"
+    },
+    {
+      "member": "hdbscan-0.8.39/hdbscan/_hdbscan_tree.pyx",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist__hdbscan_tree.pyx",
+      "bytes": 38098,
+      "sha256": "c6c0a3f390baeb88e20e6d60819e92b5e4ea793fbaaae9217a92486a0a586347"
+    },
+    {
+      "member": "hdbscan-0.8.39/hdbscan/_hdbscan_reachability.pyx",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist__hdbscan_reachability.pyx",
+      "bytes": 6411,
+      "sha256": "c46c210a4f4f8df59ad676b0f9f3eeefed7b06af3837caaecb35307cb87a5ff6"
+    },
+    {
+      "member": "hdbscan-0.8.39/hdbscan/prediction.py",
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist_prediction.py",
+      "bytes": 25705,
+      "sha256": "a3775742fcd42ac696e4b55f78997de88e5e3540892274105f97f2cda863376e"
+    }
+  ],
+  "explicit_ca_file": "D:\\Python\\Conda\\envs\\autodrive-cluster\\lib\\site-packages\\certifi\\cacert.pem",
+  "certificate_verification": true
+}

@@ -1,0 +1,136 @@
+{
+  "scope": "SYN formula/API illustration only; NO formal metric choice, no alpha estimation, no data/model access or fit",
+  "sklearn_version": "1.6.1",
+  "local_library_sources": [
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\sklearn\\utils\\_param_validation.py",
+      "bytes": 28502,
+      "sha256": "b3c7a8397c0726ea38a361f7fd827c352fc6ea6d22a6f84e27ef12c993bdc4a5"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\sklearn\\utils\\_param_validation.py",
+      "bytes": 28502,
+      "sha256": "b3c7a8397c0726ea38a361f7fd827c352fc6ea6d22a6f84e27ef12c993bdc4a5"
+    }
+  ],
+  "signatures": {
+    "ndcg": "(y_true, y_score, *, k=None, sample_weight=None, ignore_ties=False)",
+    "kappa": "(y1, y2, *, labels=None, weights=None, sample_weight=None)"
+  },
+  "labels": {
+    "SYN_1": 2,
+    "SYN_2": 1,
+    "SYN_3": 1,
+    "SYN_4": 0,
+    "SYN_5": 0
+  },
+  "orders": {
+    "A": [
+      "SYN_2",
+      "SYN_3",
+      "SYN_4",
+      "SYN_1",
+      "SYN_5"
+    ],
+    "B": [
+      "SYN_4",
+      "SYN_1",
+      "SYN_5",
+      "SYN_2",
+      "SYN_3"
+    ]
+  },
+  "k": 3,
+  "gain_results": {
+    "linear": {
+      "A": {
+        "manual": 0.5209090851403014,
+        "sklearn": 0.5209090851403014
+      },
+      "B": {
+        "manual": 0.4030302838010049,
+        "sklearn": 0.40303028380100486
+      }
+    },
+    "exponential": {
+      "A": {
+        "manual": 0.39480936517049525,
+        "sklearn": 0.3948093651704952
+      },
+      "B": {
+        "manual": 0.45819933371607996,
+        "sklearn": 0.45819933371607985
+      }
+    }
+  },
+  "ties": {
+    "averaged_api": 0.75,
+    "illustrative_fixed_total_order": 1.0
+  },
+  "undefined_demo": {
+    "all_zero_IDCG": null,
+    "any_unknown": null
+  },
+  "ordinal_distance_demo": {
+    "rating_units": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        null
+      ],
+      [
+        1,
+        2,
+        null
+      ],
+      [
+        2,
+        null,
+        null
+      ]
+    ],
+    "pairable_frequencies": {
+      "0": 4,
+      "1": 2,
+      "2": 1
+    },
+    "squared_distance": {
+      "0-1": 9.0,
+      "1-2": 2.25,
+      "0-2": 20.25
+    },
+    "not_alpha": true
+  },
+  "preserved": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\evaluation_metrics.py",
+      "bytes": 9287,
+      "sha256": "1c4f1cf858953a4244cb19d5ed3313a752105c1c109784c4f9a9915f1ebbe7dc"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261016\\专家盲评填写说明_待校准.md",
+      "bytes": 4839,
+      "sha256": "0da78f003b276394b4f3680f128c211ea261b7e98e242df13dee427c0b34232a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_20261015_证据索引.json",
+      "bytes": 7101,
+      "sha256": "d7b82321ea70e63293a20668ea88d99763597b8a9692465095a9ccdaf0d18ac9"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\第六章_开发验证与误差分析事实稿_20261016_证据索引.json",
+      "bytes": 8833,
+      "sha256": "4e14e158b4b364fe8c26b444f8064995c8653ebeed90c8c8d99ff72c1f6fb3cd"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261013\\manifest.json",
+      "bytes": 15472,
+      "sha256": "444e398e9feee9f958b5cba941efa4a1aade85e81b28327c017ee472be4986e7"
+    }
+  ]
+}

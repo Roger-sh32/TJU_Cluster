@@ -1,0 +1,867 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Description" content="This is the Turner-Fairbank Highway Research Center." />
+<meta name="Keywords" content="Public Roads, Research and Technology Transporter, Transporter, Turner-Fairbank, Highway Administration, TFHRC, Federal Highway Administration, FHWA, Department of Transportation, DOT, research, highways" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+
+<title>Index - Surrogate Safety Assessment Model and Validation: Final Report, June 2008 - FHWA-HRT-08-051</title>
+<link rel="STYLESHEET" type="text/css" href="/publications/research/techbrief.css" />
+<link rel="STYLESHEET" type="text/css" href="/css/fhwadoc.css" />
+<link href="//www.fhwa.dot.gov//css/fhwa2/screen.css" media="screen" rel="stylesheet" type="text/css" /> <!-- general stylesheet -->
+<link href="//www.fhwa.dot.gov//css/fhwa2/dropdown.css" rel="stylesheet" type="text/css" /> <!-- submenu dropdown -->
+<link href="//www.fhwa.dot.gov//css/fhwa2/print.css" media="print" rel="stylesheet" type="text/css" /> <!-- print stylesheet -->
+
+
+
+
+<script type="text/javascript" src="/includes/fhwaload.js"></script> <!-- forsee code -->
+
+
+
+<link rel="icon" href="//www.fhwa.dot.gov//images/fhwa2/icon/favicon.ico" type="image/x-icon" /> <!-- favicon -->
+<link rel="apple-touch-icon" href="//www.fhwa.dot.gov//images/fhwa2/icon/appledotseal.png" />
+<link rel="image_src" href="//www.fhwa.dot.gov//images/fhwa2/icon/imgdotseallg.png" />
+
+
+<style type="text/css">
+a:link, a:visited {text-decoration:underline; color:#000;}
+a:hover {text-decoration:underline; color:#03F;}
+<!--h1,h2,h3,h4,h5,h6 { font-weight:bold; color:#06C;}-->
+h4{ font-weight:bold; font-style:italic; font-size:16px; color:black !important;}
+h5{ font-weight:bold; font-size:14px; color:black !important;}
+h6{ font-weight:bold; font-size:13px; font-style:italic; color:black !important;}
+h2 a, h2{font-size:20px; text-transform:capitalize; font-weight:bold; }
+h3{font-size:18px; color:#000 !important}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+
+<body id="programs" class="prgmoffice nosectiontitle returntop tfhrc">
+<a id="top" name="top"></a>
+<!-- page title for printing -->
+<div class="printonly">
+	<p>U.S. Department of Transportation<br />
+    	<span id="printfhwatitle">Federal Highway Administration</span><br />
+        1200 New Jersey Avenue, SE<br />Washington, DC 20590<br />
+        202-366-4000</p>
+   	<hr />
+</div> <!-- start fhwa header -->
+
+
+<!-- start fhwa header -->
+
+
+<div id="fhwaheader">
+	<div class="fhwacontainer">
+ 	<a href="#content" class="floatleft noprint" tabindex="1"><img src="/images/1x1.gif" width="1" height="1" alt="Skip to content" /></a>
+  <div class="logo">
+  	<a href="https://highways.dot.gov/" tabindex="2"><img class="imgdotfhwalg" src="/images/fhwa2/bg/imgdotfhwalg.png" alt="U.S. Department of Transportation/Federal Highway Administration" /><img class="imgdotfhwasm" src="/images/fhwa2/bg/imgdotfhwasm.png" alt="U.S. Department of Transportation/Federal Highway Administration" /></a>
+  	</div>
+	
+
+	<div class="dropdown">
+	<ul>
+	<li class="arrow-whtdwn mnabout"><a href="/about/" tabindex="3">About</a>
+		
+	 
+<ul>
+	<li><a href="https://highways.dot.gov/about/fhwa-organization">FHWA Organization</a></li>
+   	<li><a href="https://highways.dot.gov/about/headquarters-offices">Headquarters Offices</a></li>
+    <li><a href="https://highways.dot.gov/about/field-offices">Field Offices</a></li>
+    <li><a href="https://highways.dot.gov/careers">Careers</a></li>
+    <li><a href="https://highways.dot.gov/about/business-opportunities">Business Opportunities</a></li>
+    <li><a href="https://highways.dot.gov/about/staff-directories">Staff Directories</a></li>
+    <li><a href="https://highways.dot.gov/highway-history">Highway History</a></li>
+</ul>
+	</li>
+	<li class="arrow-whtdwn mnprograms"><a href="/programs/" tabindex="4">Programs</a>
+		
+	 
+<ul><li><a href="/cfo/doing_business_with_fhwa.cfm">Acquisition Management</a></li>
+	
+	
+	<li><a href="https://highways.dot.gov/federal-lands">Federal Lands Highway</a></li>
+    <li><a href="/infrastructure/">Infrastructure</a></li>
+    <li><a href="/innovativeprograms/">Innovative Program Delivery</a></li>
+    <li><a href="https://ops.fhwa.dot.gov/">Operations</a></li>
+    <li><a href="/hep/">Planning, Environment, and Realty</a></li>
+    <li><a href="/policy/">Policy</a></li>
+    <li><a href="https://highways.dot.gov/research/">Research, Development &amp; Technology</a></li>
+    <li><a href="https://highways.dot.gov/safety/">Safety</a></li>
+    <li><a href="/resources/topics/">Browse by Topics</a></li>
+</ul>
+		</li>
+	<li class="arrow-whtdwn mnresources"><a href="/resources/" tabindex="5">Resources</a>
+		
+			 
+<ul>
+  <li><a  href="/resources/topics/" title="Core Highway Topics"> Core Highway Topics</a></li>
+  <li><a href="https://highways.dot.gov/fed-aid-essentials" title="Federal-Aid Essentials">Federal-Aid Essentials</a></li>
+  <li><a href="https://highways.dot.gov/automation" title="Automation">Automation</a></li>
+  <li><a href="https://highways.dot.gov/resources/publications-statistics" title="Publications &amp; Statistics">Publications &amp; Statistics</a></li>
+  <li><a   href="/resources/legsregs/" title="Laws &amp; Regulations">Laws &amp; Regulations</a></li>
+  <li><a href="/pgc/" title="Policy &amp; Guidance Center">Policy &amp; Guidance Center</a></li>
+  <li><a href="https://highways.dot.gov/section-508" title="Section 508">Section 508</a></li>
+  <li><a  href="/resources/training.cfm" title="Professional Development">Professional Development</a></li>
+  <li><a href="https://highways.dot.gov/nhi/home">National Highway Institute (NHI)</a></li>
+  <li><a href="/resourcecenter/" title="Resource Center">Resource Center</a></li>
+  <li><a href="https://highways.dot.gov/resources/accessibility-resource-library" title="Accessibility Resource Library">Accessibility Resource Library</a></li>
+  <li><a href="https://highways.dot.gov/research/resources/research-library/federal-highway-administration-research-library" title="FHWA Research Library">FHWA Research Library</a></li>
+</ul>
+		</li>
+	<li class="arrow-whtdwn mnbriefing"><a href="/briefingroom/" tabindex="6">Briefing Room</a>
+	 
+	 
+<ul><li><a href="https://highways.dot.gov/newsroom/press-releases" title="Press Releases">Press Releases</a></li>
+	<li><a href="https://highways.dot.gov/newsroom/speeches-and-testimony" title="Speeches &amp; Testimony">Speeches &amp; Testimony</a></li>
+    <li><a href="https://www.flickr.com/photos/fhwa/" title="Photos" target="_blank" rel="noopener noreferrer">Photos</a></li>
+    <li><a href="https://www.youtube.com/user/USDOTFHWA/featured"  title="Videos" target="_blank" rel="noopener noreferrer">Videos</a></li>
+    <li><a href="https://highways.dot.gov/newsroom/media-contacts" title="Media Contacts">Media Contacts</a></li>
+</ul>
+	</li>
+	<li class="mncontact"><a href="/contact/" tabindex="7">Contact</a></li>
+	
+	<li class="mnsearch"><a href="https://search.usa.gov/search?utf8=%E2%9C%93&amp;affiliate=dot-fhwa" tabindex="8"><span>Search FHWA</span></a></li>
+	
+	</ul>
+	</div>
+	
+	
+  <div class="socialbtns"><a href="https://www.facebook.com/pages/Federal-Highway-Administration/175380479155058" title="Like Us on Facebook" target="_blank" rel="noopener noreferrer" tabindex="9"><img src="/images/fhwa2/icon/facebook_med.png" alt="Facebook icon" /></a><a href="https://www.youtube.com/user/USDOTFHWA" title="Watch Us on YouTube" target="_blank" rel="noopener noreferrer" tabindex="10"><img src="/images/fhwa2/icon/youtube_med.png" alt="YouTube icon" /></a><a href="https://twitter.com/USDOTFHWA" title="Follow Us on Twitter" target="_blank" rel="noopener noreferrer" tabindex="11"><img src="/images/fhwa2/icon/twitter_med.png" alt="Twitter icon" /></a><a href="https://www.flickr.com/photos/fhwa/" title="See Our Photos on Flickr" target="_blank" rel="noopener noreferrer" tabindex="12"><img src="/images/fhwa2/icon/flickr_med.png" alt="Flickr icon" /></a><a href="https://www.linkedin.com/company/federal-highway-administration" title="Connect with Us on LinkedIn" target="_blank" rel="noopener noreferrer" tabindex="13"><img src="/images/fhwa2/icon/linkedin_med.png" alt="LinkedIn" /></a><a href="https://www.instagram.com/federalhighwayadmin/" title="See our photos on Instagram" target="_blank" rel="noopener noreferrer" tabindex="14"><img src="/images/fhwa2/icon/instagram_med.png" alt="Instagram" /></a></div>
+  
+ 	</div>
+	<div class="clearall"></div>
+</div>
+
+<!-- end fhwa header -->
+
+
+<!-- end fhwa header -->
+
+
+<div id="programtitle">
+	<div class="fhwacontainer">
+    	<p style="font-size:20px; font-family: Arial, Helvetica, sans-serif;"><strong>Federal Highway Administration Research and Technology</strong><br /><span style="font-size:18px">Coordinating, Developing, and Delivering Highway Transportation Innovations</span></p>
+   	</div>
+</div>
+
+
+
+
+<div style="background-color:#FFF; text-align:left; margin:0 auto;">
+
+
+
+
+
+
+<div id="fhwanavmenu">
+<div style="padding-right:40px;">
+<div class="search">
+<fieldset>
+<form accept-charset="UTF-8" action="//search.usa.gov/search" class="has-query-term" name="allsearch"  id="search-bar" method="get">
+<div style="margin:0;padding:0;display:inline;"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input id="affiliate" name="affiliate" type="hidden" value="dot-fhwa" />
+<input id="sitelimit" name="sitelimit" type="hidden" value="fhwa.dot.gov/research" />
+<input id="dc" name="dc" type="hidden" value="2557" />
+<input style="border-left: #fff 3px solid;
+    color: #666;
+    float: left;
+    font-size: 12px;
+    height: 22px;
+    width: 184px;" class="srchbox" id="query" name="query" type="text" maxlength="256" value=" Search Research &amp; Technology" onblur="if(this.value == '') {this.value = ' Search Research &amp; Technology';}" onfocus="if(this.value == ' Search Research &amp; Technology'){this.value = '';}" />
+<input style="float:right;" type="image" class="srchbtn" src="/images/fhwa2/bg/imgbgsrchbtn.png" name="commit" value="Search"  title="Submit Search" />
+</form>
+</fieldset>
+</div>
+</div>
+</div>
+
+	
+   
+    
+    
+    
+
+
+
+
+
+
+
+
+
+<!--top navigation -->
+<table align="center" border="0" cellpadding="5" cellspacing="0" width="100%">
+
+
+
+<tr><td bgcolor="#6699FF" align="center"><img src="/publications/images/reports2.gif" width="375" height="50" alt="Report" /></td>
+</tr>
+<tr><td bgcolor="#6699FF" align="center"><span><strong>This report is an archived publication and may contain dated technical, contact, and link information</strong></span></td>
+</tr>
+</table><table align="center" border="0" cellpadding="5" cellspacing="0" width="90%">
+<tr>
+  <td align="right" valign="top"><ul class="b2c"> 
+    <li class="b2c">
+      <a href= 'https://www.fhwa.dot.gov/'>Federal Highway Administration</a> &gt; 
+    </li>
+  
+    <li class="b2c">
+      <a href= '/publications/'>Publications</a> &gt; 
+    </li>
+  
+    <li class="b2c">
+      <a href= '/publications/lists/021.cfm'>Research Publications</a> &gt; 
+    </li>
+  
+    <li class="b2c">
+      <a href= 'index.cfm' >08051</a> &gt;
+    </li>
+  
+    <li class="b2c">
+      <a href= '/publications/lists/016.cfm'>Nondestructive Evaluation</a> &gt; 
+    </li>
+   <li class="b2c"> Surrogate Safety Assessment Model and Validation: Final Report </li> </ul></td>
+</tr>
+
+</table>
+
+
+<table align="center" border="0" cellpadding="5" cellspacing="0" width="90%">
+<tr><td align="right"><div align="right"><strong>Publication Number: FHWA-HRT-08-051<br />
+    Date: June 2008<br />
+  </strong></div>
+    </td>  
+</tr>
+<!-- Content Starts -->
+<tr><td id="container">
+<a name="content" id="content"></a>
+<h1 align="center"><span class="center style3">Surrogate Safety Assessment Model and Validation: Final Report</span></h1>
+<!--<p align="center" class="minor">FHWA  Contact: John Doremi,<br /> 
+  HRDI-10, (202) 493-3052, John.doremi@dot.gov</p>-->
+<div align="center"><a href="08051.pdf"><strong>PDF Version</strong></a> (3.39 MB)</div>
+<p class="pdfview">PDF files can be viewed with the <a href="/exit.cfm?link=https://get.adobe.com/reader/">Acrobat&reg; Reader&reg;</a></p>
+
+
+<p align="center"><strong><a href="#toc">Table of Contents</a></strong></p>
+<h2 align="center">FOREWORD<br /></h2>
+<p>The safety of intersections, interchanges, and other traffic facilities is most often assessed by tracking and analyzing police-reported motor vehicle crashes over time. Given the infrequent and random nature of crashes, this process is slow to reveal the need for remediation of either the roadway design or the flow-control strategy. This process is also not applicable to assess new designs that have yet to be built, or to assess new flow-control strategies before they are employed on-site.</p>
+<p>This document is a final report on research and development of an alternative safety-assessment approach utilizing conflict analysis&mdash;analyzing the frequency and character of narrowly averted vehicle-to-vehicle collisions in traffic&mdash;as a surrogate measure of actual crash data. A software prototype has been developed to automate conflict analysis of vehicle trajectory data, which can now be exported from the traffic simulation software of four vendors who collaborated on the project. The majority of the report describes validation testing conducted to evaluate the efficacy of this approach. The findings may be of interest to transportation engineers, safety engineers, researchers, simulation designers, and firms providing simulation or intersection design services.</p>
+<div class="zeromargin">
+<p align="right">Michael Trentacoste</p>
+<p align="right">Director, Office of Safety</p>
+
+<p align="right">Research and Development</p>
+</div>
+<center>
+<div style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 4pt; PADDING-BOTTOM: 8pt; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 6pt; BORDER-BOTTOM: windowtext 1pt solid; mso-element: para-border-div; mso-border-alt: solid windowtext .5pt; width:80%">
+  <p align="center"><strong>Notice </strong></p>
+  <p align="left">This document is disseminated under the sponsorship of the
+U.S. Department of Transportation in the interest of information exchange. The
+U.S. Government assumes no liability for the use of the information contained in this document.<br style="mso-special-character: line-break" />
+    
+    <br style="mso-special-character: line-break" />
+  </p>
+  <p align="left">The
+U.S. Government does not endorse products or manufacturers. Trademarks or manufacturers' names appear in this report only because they are considered essential to the objective of the document.<br style="mso-special-character: line-break" />
+    
+    <br style="mso-special-character: line-break" />
+  </p>
+  <p align="center"><strong>Quality Assurance Statement </strong></p>
+  <p align="left">The Federal Highway Administration (FHWA) provides high-quality information to serve Government, industry, and the public in a manner that promotes public understanding. Standards and policies are used to ensure and maximize the quality, objectivity, utility, and integrity of its information. FHWA periodically reviews quality issues and adjusts its programs and processes to ensure continuous quality improvement.</p>
+</div></center>
+<p align="center">TECHNICAL REPORT DOCUMENTATION PAGE<br /></p>
+
+<table align="center" border="1" cellspacing="0" cellpadding="4" class="zeromargin" width="95%">
+<tr>
+<td align="left" width="154" valign="top" height="38"><strong>1. Report No.<br />
+</strong> FHWA-HRT-08-051</td>
+<td colspan="3" align="left" width="188" valign="top" height="38"><strong>2. Government Accession No.</strong></td>
+<td colspan="3" align="left" width="283" valign="top" height="38"><strong>3. Recipient&rsquo;s Catalog No.</strong></td>
+</tr>
+<tr>
+<td colspan="4" rowspan="2" align="left" width="342" valign="top" height="73"><strong>4. Title and Subtitle<br />
+</strong>Surrogate Safety Assessment Model and Validation: Final Report</td>
+<td colspan="3" align="left" width="283" valign="top" height="37"><strong>5. Report Date<br />
+</strong>June 2008</td>
+</tr>
+<tr>
+
+<td colspan="3" align="left" width="283" valign="top" height="37"><strong>6. Performing Organization Code:</strong></td>
+</tr>
+<tr>
+<td colspan="4" align="left" width="342" valign="top" height="37"><strong>7. Author(s)</strong><br />
+  Douglas Gettman, Lili Pu, Tarek Sayed, and Steve Shelby</td>
+<td colspan="3" align="left" width="283" valign="top" height="37"><strong>8. Performing Organization Report No.</strong></td>
+</tr>
+<tr>
+<td colspan="4" rowspan="2" align="left" width="342" valign="top" height="91"><strong>9. Performing Organization Name and Address<br />
+</strong>Siemens Energy &amp; Automation, Inc. Business Unit Intelligent Transportation Systems 6375 E. Tanque Verde, Suite 170 Tucson, AZ 85715</td>
+<td colspan="3" align="left" width="283" valign="top" height="37"><strong>10. Work Unit No.</strong></td>
+</tr>
+
+<tr>
+<td colspan="3" align="left" width="283" valign="top" height="54"><strong>11. Contract or Grant No.</strong><br />
+  DTFH61-03-C-00129</td>
+</tr>
+<tr>
+<td colspan="4" rowspan="2" align="left" width="342" valign="top" height="109"><strong>12. Sponsoring Agency Name and Address<br />
+</strong>Office of Safety RD&amp;T Turner Fairbank Highway Research Center Federal Highway Administration 6300 Georgetown Pike McLean, VA 22101-2296</td>
+<td colspan="3" align="left" width="283" valign="top" height="37"><strong>13. Type of Report and Period Covered</strong><br />
+  Final Report: September 2003&ndash;November 2007</td>
+</tr>
+<tr>
+<td colspan="3" align="left" width="283" valign="top" height="72"><strong>14. Sponsoring Agency Code<br />
+</strong>HRDS-05</td>
+</tr>
+<tr>
+
+<td colspan="7" align="left" width="625" valign="top" height="37"><strong>15. Supplementary Notes<br />
+</strong>FHWA Contracting Officer&rsquo;s Technical Representative (COTR): Joe Bared</td>
+</tr>
+<tr>
+<td colspan="7" align="left" width="625" valign="top"><strong>16. Abstract<br />
+</strong>Safety of traffic facilities is most often measured by counting the number (and severity) of crashes that occur. It is not possible to apply such a measurement technique to traffic facility designs that have not yet been built or deployed in the real world. This project has resulted in the development of a software tool for deriving surrogate safety measures for traffic facilities from data output by traffic simulation models. This software is referred to as SSAM&mdash;an acronym for the Surrogate Safety Assessment Model. The surrogate measures developed in this project are based on the identification, classification, and evaluation of traffic conflicts that occur in the simulation model. By comparing one simulated design case with another, this software allows an analyst to make statistical judgments about the relative safety of the two designs. An open-standard vehicle trajectory data format was designed, and support for this format has been added as an output option by four simulation model vendors/developers&mdash; PTV (VISSIM), TSS (AIMSUN), Quadstone (Paramics), and Rioux Engineering (TEXAS). Eleven &ldquo;theoretical&rdquo; validation tests were performed to compare the surrogate safety assessment results of pairs of simulated design alternatives. In addition, a field validation exercise was completed to compare the output from SSAM with real-world crash records. Eighty-three intersections from British Columbia, Canada were modeled in VISSM and simulated under AM-peak traffic conditions. The processed conflict results were then compared with the crash records in a number of different statistical validation tests. Last, sensitivity analysis was performed to identify differences between the SSAM-related outputs of each simulation model vendor&rsquo;s system on the same traffic facility designs. These comparative analyses provide some guidance to the relative use of surrogate measures data from each simulation system. The SSAM software tool and user manual (FHWA-HRT08-050) are available to the public at no cost from FHWA.</td>
+</tr>
+<tr>
+<td colspan="3" align="left" width="289" valign="top" height="67"><strong>17. Key Words<br />
+</strong>Surrogate measures, safety, traffic simulation, validation, traffic conflicts, conflicts, crashes, accidents, prediction</td>
+
+<td colspan="4" align="left" width="336" valign="top" height="67"><strong>18. Distribution Statement<br />
+</strong>No restrictions. This document is available through the National Technical Information Service, Springfield, VA 22161.</td>
+</tr>
+<tr>
+<td colspan="2" align="left" width="207" valign="top" height="37"><strong>19. Security Classif. (of this report)</strong><br />
+  Unclassified</td>
+<td colspan="3" align="left" width="206" valign="top" height="37"><strong>20. Security Classif. (of this page)</strong><br />
+  Unclassified</td>
+<td align="left" width="112" valign="top" height="37"><p><strong>21. No. of Pages</strong><br />322</p></td>
+<td align="left" width="100" valign="top" height="37"><strong>22. Price</strong></td>
+</tr>
+</table>
+<p align="center">Form DOT F 1700.7 (8-72) Reproduction of completed page authorized</p>
+<hr />
+
+<!-- START SI* (MODERN METRIC) CONVERSION FACTORS LINK -->
+<p><a href="/publications/convtabl.cfm"><strong>SI* (Modern Metric) Conversion Factors</strong></a></p>
+<!-- END SI* (MODERN METRIC) CONVERSION FACTORS LINK -->
+<hr />
+<!-- START TABLE OF CONTENTS -->
+<a name="toc" id="toc"></a>
+<h2 align="center">TABLE OF CONTENTS</h2>
+<p><a href="01.cfm"><strong>Chapter 1. Introduction</strong></a></p>
+<ol>
+<li><a href="01.cfm#back">Background</a></li>
+<li><a href="01.cfm#safety">Safety Prediction Models</a></li>
+<li><a href="01.cfm#stat">Statistical Challenges</a></li>
+
+<li><a href="01.cfm#surrogate">Surrogate Safety Measures</a></li>
+<li><a href="01.cfm#traffic">Traffic Conflicts</a></li>
+<li><a href="01.cfm#model">Surrogate Safety Assessment Model</a></li>
+<li><a href="01.cfm#report">Report Organization<br /></a></li>
+</ol>
+<p><a href="02.cfm"><strong>Chapter 2. SSAM Software</strong></a></p>
+<ol>
+<li><a href="02.cfm#ssam">SSAM Workflow<br /></a></li>
+<li><a href="02.cfm#conflict">Conflict Identification Algorithms<br /></a></li>
+<li><a href="02.cfm#step1">Step 1<br /></a></li>
+
+<li><a href="02.cfm#step2">Step 2<br /></a></li>
+<li><a href="02.cfm#step3">Step 3<br /></a></li>
+<li><a href="02.cfm#step4">Step 4<br /></a></li>
+<li><a href="02.cfm#terms">Terms and Definitions<br /></a></li>
+<li><a href="02.cfm#def">Definitions of Surrogate Measures Computed by SSAM</a></li>
+</ol>
+<p><a href="03a.cfm"><strong>Chapter 3. Theoretical Validation</strong></a></p>
+<ul>
+<li><a href="03a.cfm#purpose">Purpose</a></li>
+<li><a href="03a.cfm#method">Methodlogy</a></li>
+
+<li><a href="03a.cfm#implement">Implement Alternative Intersection Designs</a></li>
+<li><a href="03a.cfm#measures">Measures of Discrimination Between Designs</a></li>
+<li><a href="03a.cfm#comparison">Comparison to Predicted Crash Frequency</a></li>
+<li><a href="03a.cfm#issues">Issues with Validation Metrics</a></li>
+<li><a href="03b.cfm#case">Case Studies</a></li>
+<li><a href="03b.cfm#texas">Texas Cases</a></li>
+<li><a href="03b.cfm#vissim">VISSIM Cases</a></li>
+<li><a href="03b.cfm#aimsum">AIMSUN Cases</a></li>
+<li><a href="03b.cfm#case1">Case 1: Conventional Four-Leg Intersection with Permitted Left Turn Versus Protected Left Turn (TEXAS)</a></li>
+
+<li><a href="03b.cfm#case2">Case 2: Left-Turn Bay Versus No Left-Turn Bay (TEXAS)<br /></a></li>
+<li><a href="03b.cfm#case3">Case 3: Right-Turn Bay Versus No Right-Turn Bay (TEXAS)<br /></a></li>
+<li><a href="03b.cfm#case4">Case 4: Leading Left Turn Versus Lagging Left Turn (VISSIM)<br /></a></li>
+<li><a href="03c.cfm#case5">Case 5: Three-Phase Interchange Versus Four-Phase Interchange (VISSIM)<br /></a></li>
+<li><a href="03c.cfm#case6">Case 6: Single-Point Urban Interchange Versus Diamond interchange (VISSIM)<br /></a></li>
+<li><a href="03c.cfm#case7">Case 7: Cross Four-Leg Intersection Versus Offset T-Intersection (VISSIM)<br /></a></li>
+<li><a href="03d.cfm#case8">Case 8: Mid-Block U-Turn Versus Left Turn at Signalized Intersection (VISSIM)<br /></a></li>
+<li><a href="03d.cfm#case9">Case 9 and 10: Single Roundabout Versus Four- and Three-Approach Intersections (AIMSUN)</a><br /></li>
+<li><a href="03d.cfm#case11">Case 11: Double Roundabout Versus Diamond Intersection (AIMSUN)<br /></a></li>
+
+<li><a href="03d.cfm#summary">Summary</a><br /></li>
+<li><a href="03d.cfm#texas">TEXAS Cases<br /></a></li>
+<li><a href="03d.cfm#vcases">VISSIM Cases<br /></a></li>
+<li><a href="03d.cfm#acases">AIMSUN Cases<br /></a></li>
+<li><a href="03d.cfm#type">Analysis of Conflict Rates by Design Type<br /></a></li>
+<li><a href="03d.cfm#events">Analysis of Removed Crashes and Low-Speed Events<br /></a></li>
+<li><a href="03d.cfm#sum">Summary<br /></a></li>
+</ul>
+<p><a href="04.cfm"><strong>Chapter 4. Field Validation</strong></a></p>
+
+<ul>
+<li><a href="04.cfm#purpose">Purpose</a></li>
+<li><a href="04.cfm#meth">Methodology</a></li>
+<li><a href="04.cfm#test1">Test 1: Intersection Ranking by Total Incidents</a></li>
+<li><a href="04.cfm#test2">Test 2: Intersection Ranking by Incident Types</a></li>
+<li><a href="04.cfm#test3">Test 3: Conflicts-Based Crash-Prediction Regression Model</a></li>
+<li><a href="04.cfm#test4">Test 4: Identification of Incident-Prone Locations</a></li>
+<li><a href="04.cfm#test5">Test 5: Identification of Type-Specific Incident-Prone Locations</a></li>
+<li><a href="04.cfm#field">Field Data Simulation Modeling of Field Sites</a></li>
+
+<li><a href="04.cfm#modeling">Modeling Process</a></li>
+<li><a href="04.cfm#assumptions">VISSIM Assumptions</a></li>
+<li><a href="04.cfm#issues">Modeling Issues</a></li>
+<li><a href="04.cfm#modsum">VISSIM Modeling Summary</a></li>
+<li><a href="04.cfm#testresults">Test Results and Discussion</a></li>
+<li><a href="04.cfm#vtest1">Validation Test 1: Safety Ranking</a></li>
+<li><a href="04.cfm#vtest2">Validation Test 2: Safety Ranking by Incident Types</a></li>
+<li><a href="04.cfm#vtest3">Validation Test 3: Conflicts-Based Crash-Prediction Regression Model</a></li>
+<li><a href="04.cfm#vtest4">Validation Test 4: Identification of Incident Prone Locations</a></li>
+
+<li><a href="04.cfm#vtest5">Validation Test 5: Identification of Type-Specific Incident-Prone Locations</a></li>
+<li><a href="04.cfm#sim">Simulation Modeling Issues</a></li>
+<li><a href="04.cfm#effect">Effect of Redefining the Priority Rules</a></li>
+<li><a href="04.cfm#varying">Effect of Varying the Gap Size</a></li>
+<li><a href="04.cfm#changing">Effect of Changing the Lateral Clearance Parameter</a></li>
+<li><a href="04.cfm#summ">SUMMARY</a></li>
+</ul>
+<p><a href="05a.cfm"><strong>Chapter 5. Sensitivity Analysis</strong></a></p>
+<ul>
+<li><a href="05a.cfm#purpose">Purpose</a></li>
+
+<li><a href="05a.cfm#method">Methodology</a></li>
+<li><a href="05a.cfm#imp">Implement Intersection Designs in all four of Microsimulation Platforms</a></li>
+<li><a href="05a.cfm#obtain">Obtain Measures for Each Case</a></li>
+<li><a href="05a.cfm#sens">Sensitivity Analysis Results</a></li>
+<li><a href="05a.cfm#intersect">Intersection Descriptions</a></li>
+<li><a href="05a.cfm#data">Data Analysis and Comparison Results</a></li>
+<li><a href="05b.cfm#sum">Summary</a></li>
+</ul>
+<p><a href="06.cfm"><strong>Chapter 6. Conclusion</strong></a></p>
+
+<ul>
+<li><a href="06.cfm#s">Summary</a></li>
+<li><a href="06.cfm#moddev">Model Development</a></li>
+<li><a href="06.cfm#modval">Model Validation</a></li>
+<li><a href="06.cfm#find">Findings</a></li>
+<li><a href="06.cfm#theo">Theoretical Validation</a></li>
+<li><a href="06.cfm#field">Field Validation</a></li>
+<li><a href="06.cfm#sens">Sensitivity Analysis</a></li>
+<li><a href="06.cfm#rec">Recommendations</a></li>
+
+<li><a href="06.cfm#improve">Improve Driver Behavior Modeling in Simulations</a></li>
+<li><a href="06.cfm#develop">Develop a Composite &ldquo;Safety Index&rdquo;</a></li>
+<li><a href="06.cfm#study">Study the Underlying Nature of Conflicts in Real-World Data</a></li>
+<li><a href="06.cfm#collect">Collect Adequate Vehicle Trajectory Datasets from the Real World</a></li>
+<li><a href="06.cfm#invest">Investigate Conflict Classification Criteria</a></li>
+<li><a href="06.cfm#res">Resources</a></li>
+</ul>
+<p><a href="a.cfm"><strong>Appendix A. Description of Canadian Intersections</strong></a></p>
+<p><a href="b.cfm"><strong>Appendix B. Abrupt Lane-Change Behavior</strong></a></p>
+
+<p><a href="c.cfm"><strong>Appendix C. Conflicts Analysis Results</strong></a></p>
+<p><a href="d.cfm"><strong>Appendix D. Gap Configuration and Conflict Frequency</strong></a></p>
+<p><a href="ref.cfm"><strong>References</strong><br />
+</a></p>
+<h3>LIST OF FIGURES</h3>
+<p><a href="02.cfm#fig1">Figure 1. Illustration. SSAM Operational Concept<br /></a> <a href="02.cfm#fig2">Figure 2. Screen Capture. SSAM User Interface after Launching<br /></a> <a href="02.cfm#fig3">Figure 3. Screen Capture. SSAM User Interface with Case File Defined<br /></a> <a href="02.cfm#fig4">Figure 4. Screen Capture. SSAM User Interface with Conflicts Tab Selected<br /></a> <a href="02.cfm#fig5">Figure 5. Screen Capture. SSAM User Interface with Summary Tab Selected<br /></a> <a href="02.cfm#fig6">Figure 6. Screen Capture. SSAM User Interface with Filter Tab Selected<br /></a> <a href="02.cfm#fig7">Figure 7. Screen Capture. CSV File from SSAM<br /></a> <a href="02.cfm#fig8">Figure 8. Illustration. Illustration of Zone Grid<br /></a> <a href="02.cfm#fig9">Figure 9. Illustration. Illustration of Vehicle Path<br /></a> <a href="02.cfm#fig10">Figure 10. Illustration. DIS<sub>1</sub> and DIS<sub>2</sub></a><br />
+
+<a href="02.cfm#fig11">Figure 11. Illustration. Updated DIS<sub>1</sub> and DIS<sub>2</sub> when Old DIS<sub>1</sub> &gt; DIS<sub>2</sub></a><br />
+<a href="02.cfm#fig12">Figure 12. Illustration. Projection Point when DIS<sub>1</sub> &lt; DIS<sub>2</sub></a><br />
+
+<a href="02.cfm#fig13">Figure 13. Illustration. Checking Conflict Between Two Vehicles at MaxTTC<br /></a> <a href="02.cfm#fig14">Figure 14. Illustration. Checking Conflict Between Two Vehicles at TTC = 1.3 (Vehicles No Longer in Conflict)<br /></a> <a href="02.cfm#fig15">Figure 15. Illustration. Conflict Angle<br /></a> <a href="02.cfm#fig16">Figure 16. Illustration. Clock Angle<br /></a> <a href="03a.cfm#fig17">Figure 17. Equation. Accident Prediction Model for an Urban, Four-Leg, Signalized Intersection<br /></a> <a href="03a.cfm#fig18">Figure 18. Equation. Accident Prediction Model for an Urban, Four-Leg, Stop-Controlled Intersection<br /></a> <a href="03a.cfm#fig19">Figure 19. Equation. Accident Prediction Model for a Three-Leg, Signalized Intersection<br /></a> <a href="03a.cfm#fig20">Figure 20. Equation. Accident Prediction Model for an Urban, Three-Leg, Stop-Controlled Intersection<br /></a> <a href="03a.cfm#fig21">Figure 21. Equation. Accident Prediction Model for a Diamond Interchange<br /></a> <a href="03a.cfm#fig22">Figure 22. Equation. Entry-Circulating Roundabout Accident Prediction Model<br /></a> <a href="03a.cfm#fig23">Figure 23. Equation. Accident Prediction Model for Roundabout Approaches<br /></a> <a href="03a.cfm#fig24">Figure 24. Equation. Single-Vehicle Accident Model for Roundabouts<br /></a> <a href="03a.cfm#fig25">Figure 25. Equation. Other Vehicle Accident Prediction Model for Roundabouts<br /></a> <a href="03a.cfm#fig26">Figure 26. Equation. Pedestrian Accident Prediction Model for Roundabouts<br /></a> <a href="03a.cfm#fig27">Figure 27. Equation. Spearman Rank Correlation Coefficient<br /></a> <a href="03a.cfm#fig28">Figure 28. Equation. Using <i>K</i>-Factors to Scale Hourly Volume to Daily Volume<br /></a> <a href="03b.cfm#fig29">Figure 29. Screen Capture. Intersection Geometry for Testing Control Logic<br /></a> <a href="03b.cfm#fig30">Figure 30. Illustration. Timing Plan for Permitted Left Turn in Low Volumes<br /></a> <a href="03b.cfm#fig31">Figure 31. Illustration. Timing Plan for Protected Left Turn in Low Volumes<br /></a> <a href="03b.cfm#fig32">Figure 32. Illustration. Timing Plan for Permitted Left Turn in Medium Volumes<br /></a> <a href="03b.cfm#fig33">Figure 33. Illustration. Timing Plan for Protected Left Turn in Medium Volumes<br /></a> <a href="03b.cfm#fig34">Figure 34. Illustration. Timing Plan for Permitted Left Turn in High Volumes<br /></a> <a href="03b.cfm#fig35">Figure 35. Illustration. Timing Plan for Protected Left Turn in High Volumes<br /></a> <a href="03b.cfm#fig36">Figure 36. Screen Capture. Exclusive Left-Turn Lane<br /></a> <a href="03b.cfm#fig37">Figure 37. Screen Capture. Shared Use Left-Turn and Through Lane<br /></a> <a href="03b.cfm#fig38">Figure 38. Illustration. Timing Plan for Intersection with Left-Turn Bay in Low Volumes</a><br />
+
+<a href="03b.cfm#fig39">Figure 39. Illustration. Timing Plan for Intersection without Left-Turn Bay in Low Volumes</a><br />
+<a href="03b.cfm#fig40">Figure 40. Illustration. Timing Plan for Intersection with Left-Turn Bay in Medium Volumes</a><br />
+<a href="03b.cfm#fig41">Figure 41. Illustration. Timing Plan for Intersection without Left-Turn Bay in Medium Volumes</a><br />
+<a href="03b.cfm#fig42">Figure 42. Illustration. Timing Plan for Intersection with Left-Turn Bay in High Volumes</a><br />
+<a href="03b.cfm#fig43">Figure 43. Illustration. Timing Plan for Intersection without Left-Turn Bay in High Volumes</a><br />
+<a href="03b.cfm#fig44">Figure 44. Screen Capture. Intersection with Right-Turn Bay</a><br />
+<a href="03b.cfm#fig45">Figure 45. Screen Capture. Intersection without Right-Turn Bay</a><br />
+<a href="03b.cfm#fig46">Figure 46. Illustration. Timing Plan for Intersection with Right-Turn Bay in Low Volumes</a><br />
+<a href="03b.cfm#fig47">Figure 47. Illustration. Timing Plan for Intersection without Right-Turn Bay in Low Volumes</a><br />
+
+<a href="03b.cfm#fig48">Figure 48. Illustration. Timing Plan for Intersection with Right-Turn Bay in Medium Volumes</a><br />
+<a href="03b.cfm#fig49">Figure 49. Illustration. Timing Plan for Intersection without Right-Turn Bay in Medium Volumes</a><br />
+<a href="03b.cfm#fig50">Figure 50. Illustration. Timing Plan for Intersection with Right-Turn Bay in High Volumes</a><br />
+<a href="03b.cfm#fig51">Figure 51. Illustration. Timing Plan for Intersection without Right-Turn Bay in High Volumes</a><br />
+<a href="03b.cfm#fig52">Figure 52. Screen Capture. Intersection with Leading Left Turn</a><br />
+<a href="03b.cfm#fig53">Figure 53. Screen Capture. Intersection with Lagging Left Turn</a><br />
+<a href="03b.cfm#fig54">Figure 54. Illustration. Timing Plan for Intersection with Lag Left Turn in Low Volumes (Cycle: 80; Split: 22, 17, 22, and 19)</a><br />
+<a href="03b.cfm#fig55">Figure 55. Illustration. Timing Plan for Intersection with Lead Left Turn in Low Volumes (Cycle: 80; Split: 17, 22, 22, and 19)</a><br />
+<a href="03b.cfm#fig56">Figure 56. Illustration. Timing Plan for Intersection with Lag Left Turn in Medium Volumes (Cycle: 80; Split: 33, 17, 15, and 15)</a><br />
+
+<a href="03b.cfm#fig57">Figure 57. Illustration. Timing Plan for Intersection with Lead Left Turn in Medium Volumes (Cycle: 80; Split: 17, 33, 15, and 15)</a><br />
+<a href="03b.cfm#fig58">Figure 58. Illustration. Timing Plan for Intersection with Lag Left Turn in High Volumes (Cycle: 75; Split: 20, 11, 23, and 21)</a><br />
+<a href="03b.cfm#fig59">Figure 59. Illustration. Timing Plan for Intersection with Lead Left Turn in High Volumes (Cycle: 75; Split: 11, 20, 23, and 21)</a><br />
+<a href="03c.cfm#fig60">Figure 60. Illustration. Diamond Interchange</a><br />
+<a href="03c.cfm#fig61">Figure 61. Screen Capture. Three-Phase Sequencing Signal Control for Diamond Interchange</a><br />
+<a href="03c.cfm#fig62">Figure 62. Screen Capture. Four-Phase Sequencing Signal Control for Diamond Interchange</a><br />
+<a href="03c.cfm#fig63">Figure 63. Screen Capture. Intersection for Diamond Interchange with Three-Phase Test</a> <a href="03c.cfm#fig64"><br />
+Figure 64. Screen Capture. Intersection for Diamond Interchange with Four-Phase Test</a> <a href="03c.cfm#fig65"><br />
+
+Figure 65. Screen Capture. Timing Plan for Three-Phase Diamond Interchange in Low Volumes</a> <a href="03c.cfm#fig66"><br />
+Figure 66. Screen Capture. Timing Plan for Four-Phase Diamond Interchange in Low Volumes</a> <a href="03c.cfm#fig67"><br />
+Figure 67. Screen Capture. Timing Plan for Three-Phase Diamond Interchange in Medium Volumes</a> <a href="03c.cfm#fig68"><br />
+Figure 68. Screen Capture. Timing Plan Four-Phase Diamond Interchange in Medium Volumes</a><br />
+<a href="03c.cfm#fig69">Figure 69. Screen Capture. Timing Plan for Three-Phase Diamond Interchange in High Volumes</a><br />
+<a href="03c.cfm#fig70">Figure 70. Screen Capture. Timing Plan for Four-Phase Diamond Interchange in High Volumes</a><br />
+<a href="03c.cfm#fig71">Figure 71. Screen Capture. Single-Point Urban Interchange<br /></a><a href="03c.cfm#fig72">Figure 72. Screen Capture. Phase 1</a><br />
+
+<a href="03c.cfm#fig73">Figure 73. Screen Capture. Phase 2</a><br />
+<a href="03c.cfm#fig74">Figure 74. Screen Capture. Phase 3</a><br />
+<a href="03c.cfm#fig75">Figure 75. Screen Capture. Diamond Interchange in VISSIM</a><br />
+<a href="03c.cfm#fig76">Figure 76. Screen Capture. Link-Connector View of Diamond Interchange Model in VISSIM</a><br />
+<a href="03c.cfm#fig77">Figure 77. Screen Capture. SPUI in VISSIM</a><br />
+<a href="03c.cfm#fig78">Figure 78. Illustration. Timing Plan for Diamond Interchange in Low Volumes</a><br />
+<a href="03c.cfm#fig79">Figure 79. Illustration. Timing Plan for SPUI in Low Volumes</a> <a href="03c.cfm#fig80"><br />
+Figure 80. Illustration. Timing Plan for Diamond Interchange in Medium Volumes</a> <a href="03c.cfm#fig81"><br />
+
+Figure 81. Illustration. Timing Plan SPUI in Medium Volumes</a><br />
+<a href="03c.cfm#fig82">Figure 82. Illustration. Timing Plan for Diamond Interchange in High Volumes</a><br />
+<a href="03c.cfm#fig83">Figure 83. Illustration. Timing Plan for SPUI in High Volumes</a><br />
+<a href="03c.cfm#fig84">Figure 84. Illustration. Potential Conflict Points for 2 x 2-Lane Intersections.</a> <sup><sup>(<a href="ref.cfm#ref14">14</a>)</sup><br /></sup> <a href="03c.cfm#fig85">Figure 85. Screen Capture. Conventional Nonsignalized Intersection</a><br />
+<a href="03c.cfm#fig86">Figure 86. Screen Capture. Offset T-Intersection</a><br />
+<a href="03d.cfm#fig87">Figure 87. Illustration. Mid-Block U-Turn at Signalized Intersection</a><br />
+
+<a href="03d.cfm#fig88">Figure 88. Screen Capture. Conventional Intersection in VISSIM</a><br />
+<a href="03d.cfm#fig89">Figure 89. Screen Capture. Intersection with Median U-Turn in VISSIM</a> <a href="03d.cfm#fig90"><br />
+Figure 90. Illustration. Timing Plan Conventional Intersection in Low Volumes (Cycle: 80; Split: 12, 28, 10, 10)</a><br />
+<a href="03d.cfm#fig91">Figure 91. Illustration. Timing Plan for Median U Turn in Low Volumes</a><br />
+<a href="03d.cfm#fig92">Figure 92. Illustration. Timing Plan for Conventional Intersection in Medium Volumes (Cycle: 80; Split: 12, 28, 10, 10)</a> <a href="03d.cfm#fig93">Figure 93. Illustration. Timing Plan for Median U Turn in Medium Volumes (Cycle: 80; Split: 49, 9.5, 6.5, 21)</a> <a href="03d.cfm#fig94"><br />
+Figure 94. Illustration. Timing Plan for Conventional Intersection in High Volumes (Cycle: 80; Split: 12, 28, 10, 10)</a><br />
+<a href="03d.cfm#fig95">Figure 95. Illustration. Timing Plan for Median U Turn in High Volumes (Cycle: 80; Split: 49, 9.5, 6.5, 21) ..<br /></a> <a href="03d.cfm#fig96">Figure 96. Illustration. Conflict Points for Intersections with Four Single-Lane Approaches.</a><sup><sup>(<a href="ref.cfm#ref23">23</a>)</sup></sup><br />
+
+<a href="03d.cfm#fig97">Figure 97. Illustration. Conflict Points for T-Intersections with Single-Lane Approaches.</a> <sup><sup>(<a href="ref.cfm#ref23">23</a>)</sup><br /></sup> <a href="03d.cfm#fig98">Figure 98. Screen Capture. Conventional Intersection in AIMSUN<br /></a> <a href="03d.cfm#fig99">Figure 99. Screen Capture. Four-Approach Roundabout in AIMSUN<br /></a> <a href="03d.cfm#fig100">Figure 100. Screen Capture. Timing Plan for Conventional Intersection in Low Volumes<br /></a> <a href="03d.cfm#fig101">Figure 101. Screen Capture. Timing Plan for Conventional Intersection in Medium Volumes<br /></a> <a href="03d.cfm#fig102">Figure 102. Screen Capture. Timing Plan for Conventional Intersection in High Volumes<br /></a> <a href="03d.cfm#fig103">Figure 103. Screen Capture. T-Intersection in AIMSUN<br /></a> <a href="03d.cfm#fig104">Figure 104. Screen Capture. Three-Approach Roundabout in AIMSUN<br /></a> <a href="03d.cfm#fig105">Figure 105. Illustration. Timing Plan for T-Intersection in Low Volumes<br /></a> <a href="03d.cfm#fig106">Figure 106. Illustration. Timing Plan for T-Intersection in Medium Volumes<br /></a> <a href="03d.cfm#fig107">Figure 107. Illustration. Timing Plan for T-Intersection in High Volumes<br /></a> <a href="03d.cfm#fig108">Figure 108. Illustration. Double Roundabout<br /></a> <a href="03d.cfm#fig109">Figure 109. Screen Capture. Diamond Interchange in AIMSUN<br /></a> <a href="03d.cfm#fig110">Figure 110. Screen Capture. Double Roundabout in AIMSUN<br /></a> <a href="03d.cfm#fig111">Figure 111. Screen Capture. Timing Plan for Four-Phase Diamond Interchange in Low Volumes<br /></a> <a href="03d.cfm#fig112">Figure 112. Screen Capture. Timing Plan for Four-Phase Diamond Interchange in Medium Volumes<br /></a> <a href="03d.cfm#fig113">Figure 113. Screen Capture. Timing Plan for Four-Phase Diamond Interchange in High Volumes<br /></a> <a href="04.cfm#fig114">Figure 114. Equation. Spearman Rank Correlation Coefficient<br /></a> <a href="04.cfm#fig115">Figure 115. Equation. Standard Deviation for Paired Data Samples<br /></a> <a href="04.cfm#fig116">Figure 116. Equation. Critical <i>Z</i>-Value<br /></a> <a href="04.cfm#fig117">Figure 117. Equation. Pearson Chi-Squared Goodness of Fit Measure<br /></a> <a href="04.cfm#fig118">Figure 118. Equation. Scaled Deviance Measure<br /></a> <a href="04.cfm#fig119">Figure 119. Equation. R-Squared Goodness of Fit Measure<br /></a> <a href="04.cfm#fig120">Figure 120. Equation. Calculation of Gamma Parameters for Prior Distribution<br /></a> <a href="04.cfm#fig121">Figure 121. Equation. 50<sup>th</sup> Percentile</a><br />
+
+<a href="04.cfm#fig122">Figure 122. Equation. Safety Estimate<br /></a> <a href="04.cfm#fig123">Figure 123. Equation. Variance<br /></a> <a href="04.cfm#fig124">Figure 124. Equation. Gamma Parameters for Posterior Distribution<br /></a> <a href="04.cfm#fig125">Figure 125. Equation. Probability Density Function for Posterior Distribution<br /></a> <a href="04.cfm#fig126">Figure 126. Equation. Criterion for a Crash Prone Site Rating<br /></a> <a href="04.cfm#fig127">Figure 127. Screen Capture. First Taper Modeling Configuration<br /></a> <a href="04.cfm#fig128">Figure 128. Screen Capture. Second Taper Modeling Configuration<br /></a> <a href="04.cfm#fig129">Figure 129. Screen Capture. Queuing Problem Due to the Second Taper Configuration<br /></a> <a href="04.cfm#fig130">Figure 130. Equation. Normal Linear Regression Model for Crashes as a Function of Conflicts</a><br />
+
+<a href="04.cfm#fig131">Figure 131. Equation. Nonlinear Regression Model for Crashes as a Function of Conflicts</a><br />
+<a href="04.cfm#fig132">Figure 132. Graph. Effect of Redefining the Priority Rules on Total Conflicts (Including Simulated Crashes)</a><br />
+<a href="04.cfm#fig133">Figure 133. Graph. Effect of Redefining the Priority Rules on Total Conflicts (Excluding Simulated Crashes)</a><br />
+<a href="05a.cfm#fig134">Figure 134. Photo. Google<sup>TM</sup> Map View of Briarcliff Rd &amp; North Druid Hills Rd</a><br />
+<a href="05a.cfm#fig135">Figure 135. Screen Capture. VISSIM Model of Briarcliff Rd &amp; North Druid Hills Rd</a><br />
+
+<a href="05a.cfm#fig136">Figure 136. Screen Capture. AIMSUN Model of Briarcliff Rd &amp; North Druid Hills Rd</a><br />
+<a href="05a.cfm#fig137">Figure 137. Screen Capture. PARAMICS Model of Briarcliff Rd &amp; North Druid Hills Rd</a><br />
+<a href="05a.cfm#fig138">Figure 138. Screen Capture. TEXAS Model of Briarcliff Rd &amp; North Druid Hills Rd</a><br />
+<a href="05a.cfm#fig139">Figure 139. Photo. Google<sup>TM</sup> Map View of Roswell Road &amp; Abernathy Road</a><br />
+
+<a href="05a.cfm#fig140">Figure 140. Screen Capture. VISSIM Model of Roswell Road &amp; Abernathy Road</a><br />
+<a href="05a.cfm#fig141">Figure 141. Screen Capture. AIMSUN Model of Roswell Road &amp; Abernathy Road</a><br />
+<a href="05a.cfm#fig142">Figure 142. Screen Capture. PARAMICS Model of Roswell Road &amp; Abernathy Road</a><br />
+<a href="05a.cfm#fig143">Figure 143. Screen Capture. TEXAS Model of Roswell Road &amp; Abernathy Road</a><br />
+<a href="05a.cfm#fig144">Figure 144. Photo. Google<sup>TM</sup> Map View of Lafayette Ave &amp; Fulton Street</a><br />
+
+<a href="05a.cfm#fig145">Figure 145. Screen Capture. VISSIM Model of Lafayette Ave &amp; Fulton Street</a><br />
+<a href="05a.cfm#fig146">Figure 146. Screen Capture. AIMSUN Model of Lafayette Ave &amp; Fulton Street</a><br />
+<a href="05a.cfm#fig147">Figure 147. Screen Capture. PARAMICS Model of Lafayette Ave &amp; Fulton Street</a><br />
+<a href="05a.cfm#fig148">Figure 148. Screen Capture. TEXAS Model of Lafayette Ave &amp; Fulton Street</a><br />
+<a href="05a.cfm#fig149">Figure 149. Photo. Google<sup>TM</sup> Map View of Ryan Ave &amp; Davison Ave</a><br />
+
+<a href="05a.cfm#fig150">Figure 150. Screen Capture. VISSIM Model of Ryan Ave &amp; Davison Ave</a><br />
+<a href="05a.cfm#fig151">Figure 151. Screen Capture. AIMSUN Model of Ryan Ave &amp; Davison Ave</a><br />
+<a href="05a.cfm#fig152">Figure 152. Screen Capture. PARAMICS Model of Ryan Ave &amp; Davison Ave</a><br />
+<a href="05a.cfm#fig153">Figure 153. Screen Capture. TEXAS Model of Ryan Ave &amp; Davison Ave</a><br />
+<a href="05a.cfm#fig154">Figure 154. Photo. Google<sup>TM</sup> Map View of Howe Ave &amp; Fair Oaks Boulevard</a><br />
+
+<a href="05a.cfm#fig155">Figure 155. Screen Capture. VISSIM Model of Howe Ave &amp; Fair Oaks Boulevard</a><br />
+<a href="05a.cfm#fig156">Figure 156. Screen Capture. AIMSUN Model of Howe Ave &amp; Fair Oaks Boulevard</a><br />
+<a href="05a.cfm#fig157">Figure 157. Screen Capture. PARAMICS Model of Howe Ave &amp; Fair Oaks Boulevard</a><br />
+<a href="05a.cfm#fig158">Figure 158. Screen Capture. TEXAS Model of Howe Ave &amp; Fair Oaks Boulevard</a><br />
+<a href="05a.cfm#fig159">Figure 159. Graph. Conflicts Number C-N2 Comparison for Intersection 1 at AM Peak</a><br />
+
+<a href="05a.cfm#fig160">Figure 160. Graph. Conflicts Number C-N3 Comparison for Intersection 1 at AM Peak</a><br />
+<a href="05a.cfm#fig161">Figure 161. Graph. Conflicts Number C-N2 Comparison for Intersection 1 at Mid Peak</a><br />
+<a href="05a.cfm#fig162">Figure 162. Graph. Conflicts Number C-N3 Comparison for Intersection 1 at Mid Peak</a><br />
+<a href="05a.cfm#fig163">Figure 163. Graph. Conflicts Number C-N2 Comparison for Intersection 1 at PM Peak</a><br />
+<a href="05a.cfm#fig164">Figure 164. Graph. Conflicts Number C-N3 Comparison for Intersection 1 at PM Peak</a><br />
+<a href="05a.cfm#fig165">Figure 165. Graph. Conflicts Number C-N2 Comparison for Intersection 2 at AM Peak</a><br />
+<a href="05a.cfm#fig166">Figure 166. Graph. Conflicts Number C-N3 Comparison for Intersection 2 at AM Peak</a><br />
+<a href="05a.cfm#fig167">Figure 167. Graph. Conflicts Number C-N2 Comparison for Intersection 2 at Mid Peak</a><br />
+<a href="05a.cfm#fig168">Figure 168. Graph. Conflicts Number C-N3 Comparison for Intersection 2 at Mid Peak</a><br />
+
+<a href="05a.cfm#fig169">Figure 169. Graph. Conflicts Number C-N2 Comparison for Intersection 2 at PM Peak</a><br />
+<a href="05a.cfm#fig170">Figure 170. Graph. Conflicts Number C-N3 Comparison for Intersection 2 at PM Peak</a><br />
+<a href="05a.cfm#fig171">Figure 171. Graph. Conflicts Number C-N2 Comparison for Intersection 3 at AM Peak</a><br />
+<a href="05a.cfm#fig172">Figure 172. Graph. Conflicts Number C-N3 Comparison for Intersection 3 at AM Peak</a><br />
+<a href="05a.cfm#fig173">Figure 173. Graph. Conflicts Number C-N2 Comparison for Intersection 3 at PM Peak</a><br />
+<a href="05a.cfm#fig174">Figure 174. Graph. Conflicts Number C-N3 Comparison for Intersection 3 at PM Peak</a><br />
+<a href="05a.cfm#fig175">Figure 175. Graph. Conflicts Number C-N2 Comparison for Intersection 4 at AM Peak</a><br />
+<a href="05a.cfm#fig176">Figure 176. Graph. Conflicts Number C-N3 Comparison for Intersection 4 at AM Peak</a><br />
+<a href="05a.cfm#fig177">Figure 177. Graph. Conflicts Number C-N2 Comparison for Intersection 4 at PM Peak</a><br />
+
+<a href="05a.cfm#fig178">Figure 178. Graph. Conflicts Number C-N3 Comparison for Intersection 4 at PM Peak</a><br />
+<a href="05a.cfm#fig179">Figure 179. Graph. Conflicts Number C-N2 Comparison for Intersection 5 at AM Peak</a><br />
+<a href="05a.cfm#fig180">Figure 180. Graph. Conflicts Number C-N3 Comparison for Intersection 5 at AM Peak</a><br />
+<a href="05a.cfm#fig181">Figure 181. Graph. Conflicts Number C-N2 Comparison for Intersection 5 at PM Peak</a><br />
+<a href="05a.cfm#fig182">Figure 182. Graph. Conflicts Number C-N3 Comparison for Intersection 5 at PM Peak</a><br />
+<a href="05b.cfm#fig183">Figure 183. Screen Capture. VISSIM Conflict Layout for AM Peak Hour of Intersection 1 (Total 85)</a><br />
+<a href="05b.cfm#fig184">Figure 184. Screen Capture. AIMSUN Conflict Layout for AM Peak Hour of Intersection 1 (Total 271)</a><br />
+<a href="05b.cfm#fig185">Figure 185. Screen Capture. PARAMICS Conflict Layout for AM Peak Hour of Intersection 1 (Total 427)</a><br />
+<a href="05b.cfm#fig186">Figure 186. Screen Capture. TEXAS Conflict Layout for AM Peak Hour of Intersection 1 (Total 2,178)</a><br />
+
+<a href="05b.cfm#fig187">Figure 187. Screen Capture. VISSIM Conflict Layout for Mid Peak Hour of Intersection 1 (Total 84)</a><br />
+<a href="05b.cfm#fig188">Figure 188. Screen Capture. AIMSUN Conflict Layout for Mid Peak Hour of Intersection 1 (Total 222)</a><br />
+<a href="05b.cfm#fig189">Figure 189. Screen Capture. PARAMICS Conflict Layout for Mid Peak Hour of Intersection 1 (Total 209)</a><br />
+<a href="05b.cfm#fig190">Figure 190. Screen Capture. TEXAS Conflict Layout for Mid Peak Hour of Intersection 1 (Total 1,359)</a><br />
+<a href="05b.cfm#fig191">Figure 191. Screen Capture. VISSIM Conflict Layout for PM Peak Hour of Intersection 1 (Total 47</a><br />
+<a href="05b.cfm#fig192">Figure 192. Screen Capture. AIMSUN Conflict Layout for PM Peak Hour of Intersection 1 (Total 156)</a><br />
+<a href="05b.cfm#fig193">Figure 193. Screen Capture. PARAMICS Conflict Layout for PM Peak Hour of Intersection 1 (Total 118)</a><br />
+<a href="05b.cfm#fig194">Figure 194. Screen Capture. TEXAS Conflict Layout for PM Peak Hour of Intersection 1 (Total 878)</a><br />
+<a href="05b.cfm#fig195">Figure 195. Screen Capture. VISSIM Conflict Layout for AM Peak Hour of Intersection 2 (Total 181)</a><br />
+
+<a href="05b.cfm#fig196">Figure 196. Screen Capture. AIMSUN Conflict Layout for AM Peak Hour of Intersection 2 (Total 997)</a><br />
+<a href="05b.cfm#fig197">Figure 197. Screen Capture. PARAMICS Conflict Layout for AM Peak Hour of Intersection 2 (Total 565)</a><br />
+<a href="05b.cfm#fig198">Figure 198. Screen Capture. TEXAS Conflict Layout for AM Peak Hour of Intersection 2 (Total 2,242)</a><br />
+<a href="05b.cfm#fig199">Figure 199. Screen Capture. VISSIM Conflict Layout for Mid Peak Hour of Intersection 2 (Total 215)</a><br />
+<a href="05b.cfm#fig200">Figure 200. Screen Capture. AIMSUN Conflict Layout for Mid Peak Hour of Intersection 2 (Total 1,107)</a><br />
+<a href="05b.cfm#fig201">Figure 201. Screen Capture. PARAMICS Conflict Layout for Mid Peak Hour of Intersection 2 (Total 708)</a><br />
+<a href="05b.cfm#fig202">Figure 202. Screen Capture. TEXAS Conflict Layout for Mid Peak Hour of Intersection 2 (Total 5,173)</a><br />
+<a href="05b.cfm#fig203">Figure 203. Screen Capture. VISSIM Conflict Layout for PM Peak Hour of Intersection 2 (Total 214)</a><br />
+<a href="05b.cfm#fig204">Figure 204. Screen Capture. AIMSUN Conflict Layout for PM Peak Hour of Intersection 2 (Total 619)</a><br />
+
+<a href="05b.cfm#fig205">Figure 205. Screen Capture. PARAMICS Conflict Layout for PM Peak Hour of Intersection 2 (Total 485)</a><br />
+<a href="05b.cfm#fig206">Figure 206. Screen Capture. TEXAS Conflict Layout for PM Peak Hour of Intersection 2 (Total 4,652</a><br />
+<a href="05b.cfm#fig207">Figure 207. Screen Capture. VISSIM Conflict Layout for AM Peak Hour of Intersection 3 (Total 59)</a><br />
+<a href="05b.cfm#fig208">Figure 208. Screen Capture. AIMSUN Conflict Layout for AM Peak Hour of Intersection 3 (Total 128)</a><br />
+<a href="05b.cfm#fig209">Figure 209. Screen Capture. PARAMICS Conflict Layout for AM Peak Hour of Intersection 3 (Total 46)</a><br />
+<a href="05b.cfm#fig210">Figure 210. Screen Capture. TEXAS Conflict Layout for AM Peak Hour of 7,500B (Total 138)</a><br />
+<a href="05b.cfm#fig211">Figure 211. Screen Capture. VISSIM Conflict Layout for PM Peak Hour of Intersection 3 (Total 93)</a><br />
+<a href="05b.cfm#fig212">Figure 212. Screen Capture. AIMSUN Conflict Layout for PM Peak Hour of Intersection 3 (Total 184)</a><br />
+<a href="05b.cfm#fig213">Figure 213. Screen Capture. PARAMICS Conflict Layout for PM Peak Hour of Intersection 3 (Total 45)</a><br />
+
+<a href="05b.cfm#fig214">Figure 214. Screen Capture. TEXAS Conflict Layout for PM Peak Hour of Intersection 3 (Total 182)</a><br />
+<a href="05b.cfm#fig215">Figure 215. Screen Capture. VISSIM Conflict Layout for AM Peak Hour of Intersection 4 (Total 78)</a><br />
+<a href="05b.cfm#fig216">Figure 216. Screen Capture. AIMSUN Conflict Layout for AM Peak Hour of Intersection 4 (Total 143)</a><br />
+<a href="05b.cfm#fig217">Figure 217. Screen Capture. PARAMICS Conflict Layout for AM Peak Hour of Intersection 4 (Total 45)</a><br />
+<a href="05b.cfm#fig218">Figure 218. Screen Capture. TEXAS Conflict Layout for AM Peak Hour of Intersection 4 (Total 206)</a><br />
+<a href="05b.cfm#fig219">Figure 219. Screen Capture. VISSIM Conflict Layout for PM Peak Hour of Intersection 4 (Total 104)</a><br />
+<a href="05b.cfm#fig220">Figure 220. Screen Capture. AIMSUN Conflict Layout for PM Peak Hour of Intersection 4 (Total 229)</a><br />
+<a href="05b.cfm#fig221">Figure 221. Screen Capture. PARAMICS Conflict Layout for PM Peak Hour of Intersection 4 (Total 111</a><br />
+<a href="05b.cfm#fig222">Figure 222. Screen Capture. TEXAS Conflict Layout for PM Peak Hour of Intersection 4 (Total 379)</a><br />
+
+<a href="05b.cfm#fig223">Figure 223. Screen Capture. VISSIM Conflict Layout for AM Peak Hour of Intersection 5 (Total 185)</a><br />
+<a href="05b.cfm#fig224">Figure 224. Screen Capture. AIMSUN Conflict Layout for AM Peak Hour of Intersection 5 (Total 558)</a><br />
+<a href="05b.cfm#fig225">Figure 225. Screen Capture. PARAMICS Conflict Layout for AM Peak Hour of Intersection 5 (Total 352)</a><br />
+<a href="05b.cfm#fig226">Figure 226. Screen Capture. TEXAS Conflict Layout for AM Peak Hour of Intersection 5 (Total 1,972)</a><br />
+<a href="05b.cfm#fig227">Figure 227. Screen Capture. VISSIM Conflict Layout for PM Peak Hour of Intersection 5 (Total 301)</a><br />
+<a href="05b.cfm#fig228">Figure 228. Screen Capture. AIMSUN Conflict Layout for PM Peak Hour of Intersection 5 (Total 988)</a><br />
+<a href="05b.cfm#fig229">Figure 229. Screen Capture. PARAMICS Conflict Layout for PM Peak Hour of Intersection 5 (Total 389)</a><br />
+<a href="05b.cfm#fig230">Figure 230. Screen Capture. TEXAS Conflict Layout for PM Peak Hour of Intersection 5 (Total 4,349)</a><br />
+<a href="05b.cfm#fig231">Figure 231. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 1 at AM Peak</a><br />
+
+<a href="05b.cfm#fig232">Figure 232. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 1 at Mid Peak</a><br />
+<a href="05b.cfm#fig233">Figure 233. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 1 at PM Peak</a><br />
+<a href="05b.cfm#fig234">Figure 234. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 2 at AM Peak</a><br />
+<a href="05b.cfm#fig235">Figure 235. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 2 at Mid Peak</a><br />
+<a href="05b.cfm#fig236">Figure 236. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 2 at PM Peak</a><br />
+<a href="05b.cfm#fig237">Figure 237. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 3 at AM Peak</a><br />
+<a href="05b.cfm#fig238">Figure 238. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 3 at PM Peak</a><br />
+<a href="05b.cfm#fig239">Figure 239. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 4 at AM Peak</a><br />
+<a href="05b.cfm#fig240">Figure 240. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 4 at PM Peak</a><br />
+
+<a href="05b.cfm#fig241">Figure 241. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 5 at AM Peak</a><br />
+<a href="05b.cfm#fig242">Figure 242. Graph. 3-D View of the Comparison on Major Surrogate Safety Measures for Intersection 5 at PM Peak</a><br />
+<a href="b.cfm#fig243">Figure 243. Screen Capture. First and Second Vehicles Arriving<br /></a> <a href="b.cfm#fig244">Figure 244. Screen Capture. First Vehicle Stops and Second Vehicle Decides to Change Lanes</a><br />
+<a href="b.cfm#fig245">Figure 245. Screen Capture. Second Vehicle Changes Lanes and Stops</a><br />
+<a href="b.cfm#fig246">Figure 246. Screen Capture. Third Vehicle Arriving</a><br />
+<a href="b.cfm#fig247">Figure 247. Screen Capture. Third Vehicle Crashing into Second Vehicle</a><br /></p>
+<h3 align="center">LIST OF TABLES<br /></h3>
+<p><a href="03a.cfm#tab1">Table 1. Conflict Events Data for Each Replication<br /></a> <a href="03a.cfm#tab2">Table 2. Mean Safety Measures for Each Conflict Type<br /></a> <a href="03a.cfm#tab3">Table 3. Example of <i>T</i>-Test Results for Number of Conflict Events<br /></a> <a href="03a.cfm#tab4">Table 4. Example of <i>T</i>-Test Results for Average TTC Value<br /></a> <a href="03a.cfm#tab5">Table 5. Example of Rank Order Data Sets<br /></a> <a href="03a.cfm#tab6">Table 6. Example for the Spearman Rank Correlation Calculation<br /></a> <a href="03a.cfm#tab7">Table 7. Typical <i>K</i>-Factors<br /></a> <a href="03b.cfm#tab8">Table 8. Case 1 Service Flow by Each Approach<br /></a> <a href="03b.cfm#tab9">Table 9. Case 1 Comparison Results for Total Conflicts<br /></a> <a href="03b.cfm#tab10">Table 10. Case 1 Comparison Results for Only Crossing Conflicts<br /></a> <a href="03b.cfm#tab11">Table 11. Case 1 Comparison Results for Rear-End Conflicts<br /></a> <a href="03b.cfm#tab12">Table 12. Case 1 Comparison Results for Lane Change Conflicts<br /></a> <a href="03b.cfm#tab13">Table 13. Case 1 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03b.cfm#tab14">Table 14. Case 1 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03b.cfm#tab15">Table 15. Case 2 Service Flow by Each Approach<br /></a> <a href="03b.cfm#tab16">Table 16. Case 2 Comparison Results for Total Conflicts<br /></a> <a href="03b.cfm#tab17">Table 17. Case 2 Comparison Results for Crossing Conflicts<br /></a> <a href="03b.cfm#tab18">Table 18. Case 2 Comparison Results for Rear-End Conflicts<br /></a> <a href="03b.cfm#tab19">Table 19. Case 2 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03b.cfm#tab20">Table 20. Case 2 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03b.cfm#tab21">Table 21. Case 2 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03b.cfm#tab22">Table 22. Case 3 Service Flow by Each Approach<br /></a> <a href="03b.cfm#tab23">Table 23. Case 3 Comparison Results for Total Conflicts<br /></a> <a href="03b.cfm#tab24">Table 24. Case 3 Comparison Results for Crossing Conflicts<br /></a> <a href="03b.cfm#tab25">Table 25. Case 3 Comparison Results for Rear-End Conflicts<br /></a> <a href="03b.cfm#tab26">Table 26. Case 3 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03b.cfm#tab27">Table 27. Case 3 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03b.cfm#tab28">Table 28. Case 3 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03b.cfm#tab29">Table 29. Case 4 Service Flow by Each Approach<br /></a> <a href="03b.cfm#tab30">Table 30. Case 4 Comparison Results for All Conflict Event Types<br /></a> <a href="03b.cfm#tab31">Table 31. Case 4 Comparison Results for Rear-End Conflicts<br /></a> <a href="03b.cfm#tab32">Table 32. Case 4 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03b.cfm#tab33">Table 33. Case 4 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03b.cfm#tab34">Table 34. Case 4 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03c.cfm#tab35">Table 35. Case 5 Service Flow by Each Approach<br /></a> <a href="03c.cfm#tab36">Table 36. Case 5 Comparison Results for Total Conflicts<br /></a> <a href="03c.cfm#tab37">Table 37. Case 5 Comparison Results for Rear-End Conflicts<br /></a> <a href="03c.cfm#tab38">Table 38. Case 5 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03c.cfm#tab39">Table 39. Case 5 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03c.cfm#tab40">Table 40. Case 5 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03c.cfm#tab41">Table 41. Case 6 Service Flow by Each Approach<br /></a> <a href="03c.cfm#tab42">Table 42. Case 6 Comparison Results for Total Conflicts<br /></a> <a href="03c.cfm#tab43">Table 43. Case 6 Comparison Results for Rear-End Conflicts<br /></a> <a href="03c.cfm#tab44">Table 44. Case 6 Comparison Results for Lane Change Conflicts<br /></a> <a href="03c.cfm#tab45">Table 45. Case 6 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03c.cfm#tab46">Table 46. Case 6 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03c.cfm#tab47">Table 47. Case 7 Service Flow by Each Approach<br /></a> <a href="03c.cfm#tab48">Table 48. Case 7 Comparison Results for Total Conflicts<br /></a> <a href="03c.cfm#tab49">Table 49. Case 7 Comparison Results for Rear-End Conflicts<br /></a> <a href="03c.cfm#tab50">Table 50. Case 7 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03c.cfm#tab51">Table 51. Case 7 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03c.cfm#tab52">Table 52. Case 7 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03d.cfm#tab53">Table 53. Case 8 Service Flow by Each Approach<br /></a> <a href="03d.cfm#tab54">Table 54. Case 8 Comparison Results for Total Conflicts<br /></a> <a href="03d.cfm#tab55">Table 55. Case 8 Comparison Results for Crossing Conflicts<br /></a> <a href="03d.cfm#tab56">Table 56. Case 8 Comparison Results for Rear-End Conflicts<br /></a> <a href="03d.cfm#tab57">Table 57. Case 8 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03d.cfm#tab58">Table 58. Case 8 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03d.cfm#tab59">Table 59. Case 9 Service Flow by Each Approach<br /></a> <a href="03d.cfm#tab60">Table 60. Case 10 Service Flow by Each Approach<br /></a> <a href="03d.cfm#tab61">Table 61. Case 9 Comparison Results for Total Conflicts<br /></a> <a href="03d.cfm#tab62">Table 62. Case 9 Comparison Results for Crossing Conflicts<br /></a> <a href="03d.cfm#tab63">Table 63. Case 9 Comparison Results for Rear-End Conflicts<br /></a> <a href="03d.cfm#tab64">Table 64. Case 9 Comparison Results for Lane Change Conflicts<br /></a> <a href="03d.cfm#tab65">Table 65. Case 9 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03d.cfm#tab66">Table 66. Case 10 Comparison Results for Total Conflicts<br /></a> <a href="03d.cfm#tab67">Table 67. Case 10 Comparison Results for Crossing Conflicts<br /></a> <a href="03d.cfm#tab68">Table 68. Case 10 Comparison Results for Rear-End Conflicts<br /></a> <a href="03d.cfm#tab69">Table 69. Case 10 Comparison Results for Lane-Change Conflicts<br /></a> <a href="03d.cfm#tab70">Table 70. Case 10 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03d.cfm#tab71">Table 71. Case 9 Spearman Rank Correlations Between Conflicts and Crash Frequency<br /></a> <a href="03d.cfm#tab72">Table 72. Case 11 Service Flow by Each Approach<br /></a> <a href="03d.cfm#tab73">Table 73. Case 11 Comparison Results for Total Conflicts<br /></a> <a href="03d.cfm#tab74">Table 74. Case 11 Comparison Results for Crossing Conflicts<br /></a> <a href="03d.cfm#tab75">Table 75. Case 11 Comparison Results for Rear-End Conflicts<br /></a> <a href="03d.cfm#tab76">Table 76. Case 11 Comparison Results for Lane Change Conflicts<br /></a> <a href="03d.cfm#tab77">Table 77. Case 11 Comparison Results for Average Surrogate Measures of Safety<br /></a> <a href="03d.cfm#tab78">Table 78. Summary of Theoretical Validation Case Studies<br /></a> <a href="03d.cfm#tab79">Table 79. Summary of Conflict Rates by Test Case (Conflicts/100 Entering Vehicles)<br /></a> <a href="03d.cfm#tab80">Table 80. Summary of Removed Crash and Low-Speed Event Data<br /></a> <a href="04.cfm#tab81">Table 81. Distribution of Conflicts and Crashes by Incident Type<br /></a> <a href="04.cfm#tab82">Table 82. Prediction Model for Crashes as a Function of Major and Minor ADT<br /></a> <a href="04.cfm#tab83">Table 83. Nonlinear Regression Model for Crashes as a Function of Conflicts<br /></a> <a href="04.cfm#tab84">Table 84. Prediction Model for Total Conflicts as a Function of Volume<br /></a> <a href="04.cfm#tab85">Table 85. Prediction Models for Crossing Conflicts Based on Traffic Volume<br /></a> <a href="04.cfm#tab86">Table 86. Prediction Model for Rear-End Crashes Based on Traffic Volume<br /></a> <a href="04.cfm#tab87">Table 87. Number and Type of Conflicts Based on Different Modeling Schemes<br /></a> <a href="04.cfm#tab88">Table 88. Number and Type of Conflicts Based on Gap Size<br /></a> <a href="04.cfm#tab89">Table 89. Percentages of Locations Exhibiting a Decrease in the Number of Conflicts (Including Simulated Crashes)<br /></a> <a href="04.cfm#tab90">Table 90. Percentages of Locations Exhibiting a Decrease in the Number of Conflicts (Excluding Simulated Crashes)<br /></a> <a href="04.cfm#tab91">Table 91. Effect of Varying Lateral Clearance (Simulated Crashes Included)<br /></a> <a href="04.cfm#tab92">Table 92. Effect of Varying Lateral Clearance (Simulated Crashes Excluded)<br /></a> <a href="05a.cfm#tab93">Table 93. Conflicts Number Under AM Peak-Hour Condition for Intersection 1<br /></a> <a href="05a.cfm#tab94">Table 94. Conflicts Number Under Mid Peak-Hour Condition for Intersection 1<br /></a> <a href="05a.cfm#tab95">Table 95. Conflicts Number Under PM Peak-Hour Condition for Intersection 1<br /></a> <a href="05a.cfm#table96">Table 96. Conflicts Number Under AM Peak-Hour Condition for Intersection 2<br /></a> <a href="05a.cfm#table97">Table 97. Conflicts Number Under Mid Peak-Hour Condition for Intersection 2<br /></a> <a href="05a.cfm#table98">Table 98. Conflicts Number Under PM Peak-Hour Condition for Intersection 2<br /></a> <a href="05a.cfm#table99">Table 99. Conflicts Number Under AM Peak-Hour Condition for Intersection 3<br /></a> <a href="05a.cfm#table100">Table 100. Conflicts Number Under PM Peak-Hour Condition for Intersection 3<br /></a> <a href="05a.cfm#table101">Table 101. Conflicts Number Under AM Peak-Hour Condition for Intersection 4<br /></a> <a href="05a.cfm#table102">Table 102. Conflicts Number Under PM Peak-Hour Condition for Intersection 4<br /></a> <a href="05a.cfm#table103">Table 103. Conflicts Number Under AM Peak-Hour Condition for Intersection 5<br /></a> <a href="05a.cfm#table104">Table 104. Conflicts Number Under PM Peak-Hour Condition for Intersection 5<br /></a> <a href="05b.cfm#table105">Table 105. Safety Measures Under AM Peak Hour for Intersection 1<br /></a> <a href="05b.cfm#table106">Table 106. Safety Measures Under Mid Peak Hour for Intersection 1<br /></a> <a href="05b.cfm#table107">Table 107. Safety Measures Under PM Peak Hour for Intersection 1<br /></a> <a href="05b.cfm#table108">Table 108. Safety Measures Under AM Peak Hour for Intersection 2<br /></a> <a href="05b.cfm#table109">Table 109. Safety Measures Under Mid Peak Hour for Intersection 2<br /></a> <a href="05b.cfm#table110">Table 110. Safety Measures Under PM Peak Hour for Intersection 2<br /></a> <a href="05b.cfm#table111">Table 111. Safety Measures Under AM Peak Hour for Intersection 3<br /></a> <a href="05b.cfm#table112">Table 112. Safety Measures Under PM Peak Hour for Intersection 3<br /></a> <a href="05b.cfm#table113">Table 113. Safety Measures under AM Peak Hour for Intersection 4<br /></a> <a href="05b.cfm#table114">Table 114. Safety Measures Under PM Peak Hour for Intersection 4<br /></a> <a href="05b.cfm#table115">Table 115. Safety Measures Under AM Peak Hour for Intersection 5<br /></a> <a href="05b.cfm#table116">Table 116. Safety Measures Under PM Peak Hour for Intersection 5<br /></a> <a href="05b.cfm#table117">Table 117. MOEs for Intersection 1<br /></a> <a href="05b.cfm#table118">Table 118. MOEs for Intersection 2<br /></a> <a href="05b.cfm#table119">Table 119. MOEs for Intersection 3<br /></a> <a href="05b.cfm#table120">Table 120. MOEs for Intersection 4<br /></a> <a href="05b.cfm#table121">Table 121. MOEs for Intersection 5<br /></a> <a href="a.cfm#tab122">Table 122. Canadian Intersections Geometry and Traffic Flow Data<br /></a> <a href="a.cfm#tab123">Table 123. Average Yearly Crashes per Intersection<br /></a> <a href="a.cfm#tab124">Table 124. Average Hourly Conflicts per Intersection<br /></a> <a href="c.cfm#table125">Table 125. Average Hourly Conflicts per Intersection</a><br /> <a href="c.cfm#table125">Table 126. Gap Sizes of 4, 5, and 6 Seconds and Their Corresponding Conflict Counts</a></p>
+
+<h3>LIST OF ACRONYMS AND SYMBOLS</h3>
+<h4>Acronym Definition</h4>
+<table width="64%" border="0" cellspacing="2" cellpadding="2">
+<tr>
+<td width="14%" scope="col">
+<div align="left">AADT</div>
+</td>
+<td width="86%">annual average daily traffic</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">ADT</div>
+
+</td>
+<td>average daily traffic</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">AMF</div>
+</td>
+<td>accident modification factor</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">CSV</div>
+</td>
+
+<td>comma separated values</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">EB</div>
+</td>
+<td>Empirical Bayes</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">FHWA</div>
+</td>
+<td>Federal Highway Administration</td>
+
+</tr>
+<tr>
+<td scope="row">
+<div align="left">GUI</div>
+</td>
+<td>graphical user interface</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">ICBC</div>
+</td>
+<td>Insurance Corporation of British Columbia</td>
+</tr>
+
+<tr>
+<td scope="row">
+<div align="left">PET</div>
+</td>
+<td>post-encroachment time</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">SPUI</div>
+</td>
+<td>Single-Point Urban Interchange</td>
+</tr>
+<tr>
+
+<td scope="row">
+<div align="left">SSAM</div>
+</td>
+<td>Surrogate Safety Assessment Model</td>
+</tr>
+<tr>
+<td scope="row">
+<div align="left">TRJ</div>
+</td>
+<td>The filename extension for vehicle trajectory files.</td>
+</tr>
+<tr>
+<td scope="row">
+
+<div align="left">TTC</div>
+</td>
+<td>time to collision</td>
+</tr>
+</table>
+<h4>Symbol Definition</h4>
+<p>&alpha; Greek letter Alpha</p>
+<p>&beta; Greek letter Beta</p>
+<p>&Delta; Greek letter Delta</p>
+
+<p>&lambda; Greek letter Lamda</p>
+<p>&pi; Greek letter Pi</p>
+<p>&theta; Greek letter Theta</p>
+<p align="center"><strong><a href="#toc">Table of Contents</a> | <a href="01.cfm">Next</a></strong></p>
+</td>
+</tr>
+</table>
+
+<!-- Content Ends below here is the footer includes -->
+
+		
+  
+  
+  <div id="footer" style="border-top:#999 3px solid;">
+    <div style=" margin-left:10%;">
+      <table id="footermain" align="left" border="0" cellpadding="2" cellspacing="5">
+        <tr>
+          <td class="left" style="line-height:1.5em"><div class="zeromarginblue">
+              
+              Page Owner: Office of Research, Development, and Technology, Office of Safety, RDT <br/>
+            </div>
+            
+            
+            
+            <div class="zeromargin"> 
+                  Topics: research, safety<br/>
+                
+                  Keywords: research, safety, Surrogate measures, safety, traffic simulation, validation, traffic conflicts, conflicts, crashes, accidents, prediction <br/>
+                
+                  TRT Terms: research, Safety and security, Safety, Transportation safety<br/>
+                
+                  Scheduled Update: Archive -  No Update needed <br/>
+                   </div>
+            
+            
+            
+            
+            <div id="moddate"> This page last modified on 03/08/2016  </div></td>
+        </tr>
+        
+        
+      </table>
+    </div>
+  </div>
+  
+  
+  
+   <div class="clearall"></div> 
+	</div>
+
+    <!-- return to top -->
+    <table><tr><td><p class="txtright txtsmall noprint returntoplink">&nbsp;</p></td></tr></table>
+
+    
+    
+<!-- end content -->        
+
+
+
+<!-- start fhwa footer -->
+<div id="fhwafooter">
+	<div class="fhwacontainer">
+    	<div class="fhwasign" title="U.S. Department of Transportation/Federal Highway Administration"></div>
+        <div class="noprint"><a href="/privacy.cfm">Privacy Policy</a> | <a href="/foia/">Freedom of Information Act (FOIA)</a> | <a href="https://highways.dot.gov/section-508/our-commitment">Accessibility</a> | <a href="/webpolicies/publishschedule.cfm">Web Policies &amp; Notices</a> | <a href="https://www.transportation.gov/civil-rights/civil-rights-awareness-enforcement/no-fear-act">No Fear Act</a> | <a href="https://www.oig.dot.gov/Hotline">Report Waste, Fraud and Abuse</a> <br /> <a href="https://www.transportation.gov/">U.S. DOT Home</a> | <a href="https://www.usa.gov/">USA.gov</a> | <a href="https://www.whitehouse.gov/">WhiteHouse.gov</a><br /><br /></div>
+        <div>
+            <a href="https://highways.dot.gov/">Federal Highway Administration</a> | 1200 New Jersey Avenue, SE | Washington, DC 20590 | 202-366-4000
+                        
+            <br /><a href="/research/">Turner-Fairbank Highway Research Center</a> | 6300 Georgetown Pike | McLean, VA | 22101		
+            	
+            
+     	</div>
+    </div>
+</div>
+<!-- end fhwa footer -->
+
+</body>
+</html> 

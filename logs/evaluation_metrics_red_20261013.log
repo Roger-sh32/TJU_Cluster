@@ -1,0 +1,148 @@
+test_bootstrap_does_not_silently_drop_too_small_cohorts (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_bootstrap_refuses_missing_labels_or_group_membership (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_budget_savings_keep_negative_result_and_require_same_target (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_duplicate_review_or_unexpected_identity_is_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_invalid_ranking_labels_k_and_recall_targets_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_log_bootstrap_identical_methods_have_zero_difference (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_log_bootstrap_uses_same_resample_and_retains_sign (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_missing_outside_top_k_also_disables_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_no_positive_does_not_report_zero_recall_or_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_precision_recall_budget_and_unattainable_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_seeded_random_baseline_reproducible_without_mutation (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_three_independent_reviews_median_and_missing_not_zero (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_unknown_top_k_bounds_no_backfill_no_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+
+======================================================================
+ERROR: test_bootstrap_does_not_silently_drop_too_small_cohorts (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 106, in test_bootstrap_does_not_silently_drop_too_small_cohorts
+    result = self.api().paired_log_bootstrap(list(labels), list(labels), labels, groups, 4, 100, 1)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_bootstrap_refuses_missing_labels_or_group_membership (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 112, in test_bootstrap_refuses_missing_labels_or_group_membership
+    api = self.api()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_budget_savings_keep_negative_result_and_require_same_target (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 66, in test_budget_savings_keep_negative_result_and_require_same_target
+    api = self.api()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_duplicate_review_or_unexpected_identity_is_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 25, in test_duplicate_review_or_unexpected_identity_is_refused
+    self.api().aggregate_reviews(['a'], rows, ['R1', 'R2', 'R3'])
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_invalid_ranking_labels_k_and_recall_targets_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 63, in test_invalid_ranking_labels_k_and_recall_targets_refused
+    self.api().ranking_metrics(ranking, labels, ks, targets)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_log_bootstrap_identical_methods_have_zero_difference (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 88, in test_log_bootstrap_identical_methods_have_zero_difference
+    result = self.api().paired_log_bootstrap(list(labels), list(labels), labels, groups, 2, 50, 7)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_log_bootstrap_uses_same_resample_and_retains_sign (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 97, in test_log_bootstrap_uses_same_resample_and_retains_sign
+    api = self.api()
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_missing_outside_top_k_also_disables_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 47, in test_missing_outside_top_k_also_disables_full_recall
+    result = self.api().ranking_metrics(['a','b'], {'a': 2,'b': None}, [1], [.5])
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_no_positive_does_not_report_zero_recall_or_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 52, in test_no_positive_does_not_report_zero_recall_or_budget
+    result = self.api().ranking_metrics(['a','b'], {'a': 0,'b': 1}, [1], [.5])
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_precision_recall_budget_and_unattainable_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 29, in test_precision_recall_budget_and_unattainable_budget
+    result = self.api().ranking_metrics(list(labels), labels, [2], [.5, 1.], max_budget=2)
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_seeded_random_baseline_reproducible_without_mutation (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 77, in test_seeded_random_baseline_reproducible_without_mutation
+    first = self.api().random_baseline(labels, [2], [.5], [3,7,11])
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_three_independent_reviews_median_and_missing_not_zero (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 15, in test_three_independent_reviews_median_and_missing_not_zero
+    result = self.api().aggregate_reviews(['a', 'b'], reviews, ['R1', 'R2', 'R3'])
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+======================================================================
+ERROR: test_unknown_top_k_bounds_no_backfill_no_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 38, in test_unknown_top_k_bounds_no_backfill_no_full_recall
+    result = self.api().ranking_metrics(list(labels), labels, [2], [.5])
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 7, in api
+    from HDBSCAN.scripts import evaluation_metrics
+ImportError: cannot import name 'evaluation_metrics' from 'HDBSCAN.scripts' (unknown location)
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+FAILED (errors=13)

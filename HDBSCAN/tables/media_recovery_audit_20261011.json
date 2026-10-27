@@ -1,0 +1,535 @@
+{
+  "created_at_utc": "2026-10-11T20:58:02.364921+00:00",
+  "scope": "Media identity/integrity only; no evaluation semantics or labels",
+  "protocol": {
+    "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\transfer_protocol_v2.json",
+    "sha256": "73ee4228aa3c1c8466ea6005ffb24cefb995f56a019a1553186b20b2ef78c5eb",
+    "bytes": 60290
+  },
+  "preparation_protocol": {
+    "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\protocol.json",
+    "sha256": "7400a5e08fbe20ef98ccad2e04757790e0f8bdaf7a96dd91f82d85452885f9a5",
+    "bytes": 57726
+  },
+  "counts_before": {
+    "development_keyframe_present": 119,
+    "development_associated_nonkeyframe_present": 574,
+    "evaluation_associated_nonkeyframe_present": 28259,
+    "evaluation_keyframe_present": 5886,
+    "evaluation_keyframe_missing_or_empty": 30312,
+    "evaluation_associated_nonkeyframe_missing_or_empty": 145074,
+    "development_associated_nonkeyframe_missing_or_empty": 979,
+    "development_keyframe_missing_or_empty": 204
+  },
+  "counts_after": {
+    "development/CAM_FRONT/keyframe/decoded": 323,
+    "development/CAM_FRONT/associated_nonkeyframe/decoded": 1553,
+    "evaluation/CAM_FRONT/associated_nonkeyframe/decoded": 29079,
+    "evaluation/CAM_FRONT/keyframe/decoded": 6033,
+    "evaluation/CAM_FRONT_RIGHT/associated_nonkeyframe/exists_not_decoded": 28941,
+    "evaluation/CAM_FRONT_RIGHT/keyframe/decoded": 6033,
+    "evaluation/CAM_BACK_RIGHT/associated_nonkeyframe/exists_not_decoded": 29086,
+    "evaluation/CAM_BACK_RIGHT/keyframe/decoded": 6033,
+    "evaluation/CAM_BACK/keyframe/decoded": 6033,
+    "evaluation/CAM_BACK/associated_nonkeyframe/exists_not_decoded": 28654,
+    "evaluation/CAM_BACK_LEFT/keyframe/decoded": 6033,
+    "evaluation/CAM_BACK_LEFT/associated_nonkeyframe/exists_not_decoded": 28488,
+    "evaluation/CAM_FRONT_LEFT/associated_nonkeyframe/exists_not_decoded": 29085,
+    "evaluation/CAM_FRONT_LEFT/keyframe/decoded": 6033
+  },
+  "selected_file_count": 211407,
+  "per_scene": {
+    "scene-0002": {
+      "files": 232
+    },
+    "scene-0093": {
+      "files": 229
+    },
+    "scene-0102": {
+      "files": 232
+    },
+    "scene-0177": {
+      "files": 1391
+    },
+    "scene-0178": {
+      "files": 1373
+    },
+    "scene-0179": {
+      "files": 1394
+    },
+    "scene-0180": {
+      "files": 1367
+    },
+    "scene-0181": {
+      "files": 1372
+    },
+    "scene-0182": {
+      "files": 1392
+    },
+    "scene-0183": {
+      "files": 1396
+    },
+    "scene-0184": {
+      "files": 1403
+    },
+    "scene-0185": {
+      "files": 1395
+    },
+    "scene-0187": {
+      "files": 1366
+    },
+    "scene-0188": {
+      "files": 1125
+    },
+    "scene-0199": {
+      "files": 1379
+    },
+    "scene-0200": {
+      "files": 1369
+    },
+    "scene-0202": {
+      "files": 1360
+    },
+    "scene-0203": {
+      "files": 1387
+    },
+    "scene-0204": {
+      "files": 1366
+    },
+    "scene-0206": {
+      "files": 1360
+    },
+    "scene-0207": {
+      "files": 1385
+    },
+    "scene-0208": {
+      "files": 1393
+    },
+    "scene-0209": {
+      "files": 1367
+    },
+    "scene-0210": {
+      "files": 1361
+    },
+    "scene-0211": {
+      "files": 1359
+    },
+    "scene-0212": {
+      "files": 1369
+    },
+    "scene-0213": {
+      "files": 1359
+    },
+    "scene-0214": {
+      "files": 1357
+    },
+    "scene-0376": {
+      "files": 1394
+    },
+    "scene-0377": {
+      "files": 1369
+    },
+    "scene-0378": {
+      "files": 1367
+    },
+    "scene-0379": {
+      "files": 1336
+    },
+    "scene-0380": {
+      "files": 1413
+    },
+    "scene-0381": {
+      "files": 1389
+    },
+    "scene-0388": {
+      "files": 1403
+    },
+    "scene-0389": {
+      "files": 1398
+    },
+    "scene-0390": {
+      "files": 1384
+    },
+    "scene-0391": {
+      "files": 1395
+    },
+    "scene-0392": {
+      "files": 1382
+    },
+    "scene-0393": {
+      "files": 1390
+    },
+    "scene-0394": {
+      "files": 1380
+    },
+    "scene-0395": {
+      "files": 1390
+    },
+    "scene-0396": {
+      "files": 1377
+    },
+    "scene-0397": {
+      "files": 1388
+    },
+    "scene-0398": {
+      "files": 1406
+    },
+    "scene-0453": {
+      "files": 238
+    },
+    "scene-0457": {
+      "files": 1426
+    },
+    "scene-0458": {
+      "files": 1432
+    },
+    "scene-0459": {
+      "files": 1415
+    },
+    "scene-0461": {
+      "files": 1404
+    },
+    "scene-0462": {
+      "files": 1417
+    },
+    "scene-0463": {
+      "files": 1390
+    },
+    "scene-0464": {
+      "files": 1420
+    },
+    "scene-0465": {
+      "files": 1418
+    },
+    "scene-0467": {
+      "files": 1418
+    },
+    "scene-0468": {
+      "files": 1417
+    },
+    "scene-0469": {
+      "files": 1393
+    },
+    "scene-0471": {
+      "files": 1384
+    },
+    "scene-0472": {
+      "files": 1381
+    },
+    "scene-0474": {
+      "files": 1402
+    },
+    "scene-0475": {
+      "files": 1423
+    },
+    "scene-0476": {
+      "files": 1425
+    },
+    "scene-0477": {
+      "files": 1419
+    },
+    "scene-0478": {
+      "files": 1389
+    },
+    "scene-0479": {
+      "files": 1418
+    },
+    "scene-0480": {
+      "files": 1384
+    },
+    "scene-0552": {
+      "files": 239
+    },
+    "scene-0566": {
+      "files": 1424
+    },
+    "scene-0568": {
+      "files": 1421
+    },
+    "scene-0570": {
+      "files": 1394
+    },
+    "scene-0571": {
+      "files": 1423
+    },
+    "scene-0572": {
+      "files": 1409
+    },
+    "scene-0573": {
+      "files": 1419
+    },
+    "scene-0574": {
+      "files": 1394
+    },
+    "scene-0575": {
+      "files": 1403
+    },
+    "scene-0576": {
+      "files": 1393
+    },
+    "scene-0577": {
+      "files": 1415
+    },
+    "scene-0578": {
+      "files": 1423
+    },
+    "scene-0580": {
+      "files": 1420
+    },
+    "scene-0582": {
+      "files": 1403
+    },
+    "scene-0583": {
+      "files": 1398
+    },
+    "scene-0639": {
+      "files": 1411
+    },
+    "scene-0640": {
+      "files": 1391
+    },
+    "scene-0641": {
+      "files": 1403
+    },
+    "scene-0642": {
+      "files": 1413
+    },
+    "scene-0643": {
+      "files": 1412
+    },
+    "scene-0644": {
+      "files": 1394
+    },
+    "scene-0645": {
+      "files": 1409
+    },
+    "scene-0646": {
+      "files": 1418
+    },
+    "scene-0647": {
+      "files": 1420
+    },
+    "scene-0648": {
+      "files": 1408
+    },
+    "scene-0649": {
+      "files": 1418
+    },
+    "scene-0650": {
+      "files": 1395
+    },
+    "scene-0651": {
+      "files": 1411
+    },
+    "scene-0652": {
+      "files": 1414
+    },
+    "scene-0669": {
+      "files": 235
+    },
+    "scene-0770": {
+      "files": 1394
+    },
+    "scene-0771": {
+      "files": 1427
+    },
+    "scene-0775": {
+      "files": 1424
+    },
+    "scene-0777": {
+      "files": 1392
+    },
+    "scene-0778": {
+      "files": 1400
+    },
+    "scene-0780": {
+      "files": 1421
+    },
+    "scene-0781": {
+      "files": 1386
+    },
+    "scene-0782": {
+      "files": 1425
+    },
+    "scene-0783": {
+      "files": 1402
+    },
+    "scene-0784": {
+      "files": 1420
+    },
+    "scene-0815": {
+      "files": 233
+    },
+    "scene-0816": {
+      "files": 238
+    },
+    "scene-0923": {
+      "files": 1393
+    },
+    "scene-0924": {
+      "files": 1400
+    },
+    "scene-0925": {
+      "files": 1409
+    },
+    "scene-0926": {
+      "files": 1433
+    },
+    "scene-0927": {
+      "files": 1407
+    },
+    "scene-0928": {
+      "files": 1399
+    },
+    "scene-0929": {
+      "files": 1401
+    },
+    "scene-0930": {
+      "files": 1411
+    },
+    "scene-0931": {
+      "files": 1394
+    },
+    "scene-0945": {
+      "files": 1401
+    },
+    "scene-0947": {
+      "files": 1398
+    },
+    "scene-0949": {
+      "files": 1401
+    },
+    "scene-0952": {
+      "files": 1388
+    },
+    "scene-0953": {
+      "files": 1393
+    },
+    "scene-0955": {
+      "files": 1395
+    },
+    "scene-0956": {
+      "files": 1399
+    },
+    "scene-0957": {
+      "files": 1416
+    },
+    "scene-0958": {
+      "files": 1397
+    },
+    "scene-0959": {
+      "files": 1399
+    },
+    "scene-0960": {
+      "files": 1385
+    },
+    "scene-0961": {
+      "files": 1399
+    },
+    "scene-0975": {
+      "files": 1415
+    },
+    "scene-0976": {
+      "files": 1397
+    },
+    "scene-0977": {
+      "files": 1384
+    },
+    "scene-0978": {
+      "files": 1424
+    },
+    "scene-0979": {
+      "files": 1372
+    },
+    "scene-0980": {
+      "files": 1415
+    },
+    "scene-0981": {
+      "files": 1413
+    },
+    "scene-0982": {
+      "files": 1407
+    },
+    "scene-0983": {
+      "files": 1398
+    },
+    "scene-0984": {
+      "files": 1405
+    },
+    "scene-0988": {
+      "files": 1395
+    },
+    "scene-0989": {
+      "files": 1391
+    },
+    "scene-0990": {
+      "files": 1404
+    },
+    "scene-0991": {
+      "files": 1431
+    },
+    "scene-1059": {
+      "files": 1408
+    },
+    "scene-1060": {
+      "files": 1403
+    },
+    "scene-1061": {
+      "files": 1422
+    },
+    "scene-1062": {
+      "files": 1425
+    },
+    "scene-1063": {
+      "files": 1413
+    },
+    "scene-1064": {
+      "files": 1401
+    },
+    "scene-1065": {
+      "files": 1400
+    },
+    "scene-1066": {
+      "files": 1403
+    },
+    "scene-1067": {
+      "files": 1394
+    },
+    "scene-1068": {
+      "files": 1394
+    },
+    "scene-1069": {
+      "files": 1405
+    },
+    "scene-1070": {
+      "files": 1414
+    },
+    "scene-1071": {
+      "files": 1400
+    },
+    "scene-1072": {
+      "files": 1395
+    },
+    "scene-1073": {
+      "files": 1357
+    }
+  },
+  "failure_examples_at_most_100": [],
+  "restoration_journal": {
+    "path": "F:\\Scene_cluster\\exports\\media_recovery_20261011\\restored_files.jsonl",
+    "sha256": "1428e1e30a57acb1739407922ef2e4c99f908085c460e104a107e3247812f71f",
+    "bytes": 99557240
+  },
+  "restoration_provenance_failure_count": 0,
+  "ignored_torn_journal_line_count": 0,
+  "all_selected_media_present_and_required_decode_checks_passed": true,
+  "evaluation_scene_count": 150,
+  "development_scene_count": 8,
+  "evaluation_semantics_inspected": false,
+  "split_or_features_changed": false,
+  "limits": [
+    "All six keyframe channels decoded; all CAM_FRONT associated nonkeyframes decoded.",
+    "Other associated nonkeyframes checked for presence/nonempty, not decoded.",
+    "Not expert semantic acceptance or permission to tune using evaluation."
+  ]
+}

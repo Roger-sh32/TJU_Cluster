@@ -1,0 +1,68 @@
+{
+  "stage": "candidate_feature_replay",
+  "fit_scope": "development",
+  "scene_names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "output": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv",
+    "sha256": "b9e753e34ff803956d161368aa1577d0517209ef052129fa8343b221e9f8e633",
+    "bytes": 33848
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv",
+    "sha256": "19108e421555355e82cc4d6ad41defc5f67e075ac8d99bf7db5e253659057333",
+    "bytes": 33934
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\logs\\crossing_v6_replay_20261014.py",
+    "sha256": "e7baebcedc846f4714b2213b5773284b852689be533f6547b7e47f688fbc3168",
+    "bytes": 19787
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+    "bytes": 2153
+  },
+  "extra": {
+    "formal_fit_allowed": false,
+    "new_extraction": false,
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+      "bytes": 30874
+    }
+  }
+}

@@ -1,0 +1,7 @@
+test_nonpolygon_is_reported_unknown_not_sent_to_api (logs.test_complete_target_diagnosis8_20261012.ContinuationTests) ... ok
+test_only_named_geometry_helpers_load_no_extraction (logs.test_complete_target_diagnosis8_20261012.ContinuationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.013s
+
+OK

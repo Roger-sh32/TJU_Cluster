@@ -1,0 +1,10 @@
+test_current_formal_fitter_refuses_candidate_manifest (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_diff_keeps_allowed_change_and_rejects_order_drift (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_diff_refuses_unrelated_change (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_publication_uses_actual_grouped_risk_column (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+test_uncertainty_inclusion_is_not_dropped_from_comparison (logs.test_crossing_v5_regression_20261013.RegressionContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.127s
+
+OK

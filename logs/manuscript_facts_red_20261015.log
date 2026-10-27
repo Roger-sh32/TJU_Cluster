@@ -1,0 +1,71 @@
+test_ast_parameter_reader_does_not_execute_module (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+test_changed_or_missing_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+test_duplicate_or_extra_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+test_fact_table_exact_values (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+test_nonliteral_or_ambiguous_parameters_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+test_unclosed_math_block_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests) ... FAIL
+
+======================================================================
+FAIL: test_ast_parameter_reader_does_not_execute_module (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 28, in test_ast_parameter_reader_does_not_execute_module
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.verify_manuscript_facts_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_changed_or_missing_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 15, in test_changed_or_missing_fact_refused
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.verify_manuscript_facts_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_duplicate_or_extra_fact_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 21, in test_duplicate_or_extra_fact_refused
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.verify_manuscript_facts_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_fact_table_exact_values (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 12, in test_fact_table_exact_values
+    self.module().validate_fact_table('| F01 | 样本 | 700 / 150 | S01 |', {'F01': '700 / 150'})
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.verify_manuscript_facts_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_nonliteral_or_ambiguous_parameters_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 33, in test_nonliteral_or_ambiguous_parameters_refused
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.verify_manuscript_facts_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_unclosed_math_block_refused (logs.test_manuscript_facts_20261015.ManuscriptFactsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 40, in test_unclosed_math_block_refused
+    self.module().validate_math('$$\nx=1\n')
+  File "F:\Scene_cluster\logs\test_manuscript_facts_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.verify_manuscript_facts_20261015'))
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=6)

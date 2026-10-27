@@ -1,0 +1,14 @@
+test_real_bracketing_frame_covers_irregular_horizon (HDBSCAN.tests.test_crossing_candidate_v5_2.CrossingV52Tests) ... FAIL
+
+======================================================================
+FAIL: test_real_bracketing_frame_covers_irregular_horizon (HDBSCAN.tests.test_crossing_candidate_v5_2.CrossingV52Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_2.py", line 13, in test_real_bracketing_frame_covers_irregular_horizon
+    self.assertTrue(item['future_complete'])
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.033s
+
+FAILED (failures=1)

@@ -1,0 +1,28 @@
+{
+  "status": "passed_limited_bibliographic_validation",
+  "record_count": 6,
+  "raw_responses_hash_checked": 13,
+  "author_counts": [
+    10,
+    3,
+    4,
+    3,
+    4,
+    3
+  ],
+  "ris_tags_and_required_fields": true,
+  "metadata_comparison": true,
+  "explicit_exceptions": [
+    "R01 uses Crossref pages, CVF alternate disclosed",
+    "R02 PY2020 cited v3, arXiv citation_online_date2020 while citation_date and DataCite issued2018",
+    "R05 institutional article-prefixed pages, Crossref unprefixed disclosed",
+    "R06 journal spelling follows JOSS publisher"
+  ],
+  "original_manuscript_and_index_unchanged": true,
+  "not_checked": [
+    "Reference-manager GUI import",
+    "School citation style",
+    "Full-text algorithm equations",
+    "Semantic or formal experiment acceptance"
+  ]
+}

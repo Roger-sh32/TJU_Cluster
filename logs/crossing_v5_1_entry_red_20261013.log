@@ -1,0 +1,18 @@
+test_actual_entry_preflight_accepts_fixed_subset_and_refuses_scope_escape (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... FAIL
+
+======================================================================
+FAIL: test_actual_entry_preflight_accepts_fixed_subset_and_refuses_scope_escape (logs.test_crossing_v5_1_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_1_regression_20261013.py", line 23, in test_actual_entry_preflight_accepts_fixed_subset_and_refuses_scope_escape
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\scripts\scene_feature_hdbscan_v5_1.py", line 104, in <module>
+    raise ValueError('Frozen parent protocol changed')
+ValueError: Frozen parent protocol changed
+
+
+----------------------------------------------------------------------
+Ran 1 test in 1.402s
+
+FAILED (failures=1)

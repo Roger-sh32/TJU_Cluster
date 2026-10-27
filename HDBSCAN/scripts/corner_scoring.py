@@ -4,6 +4,25 @@ import numpy as np
 import pandas as pd
 
 
+# The frozen pipeline requires the current full scoring contract. Legacy helper
+# defaults remain available only for historical analyses and small rule tests.
+FROZEN_RISK_INPUTS = (
+    'adjacent_lane_intrusion_max_duration', 'adjacent_lane_intrusion_ratio',
+    'close_following_ratio', 'crossing_conflict_max_duration',
+    'crossing_route_conflict_max_duration', 'crossing_route_conflict_ratio',
+    'crossing_vehicle_conflict_ratio', 'crossing_vehicle_exposure_ratio',
+    'dangerous_ttc_frame_ratio', 'dangerous_ttc_max_duration', 'ego_decel_min',
+    'ego_hard_brake_ratio', 'ego_stop_from_motion_flag', 'ego_stopped_at_scene_start',
+    'intersection_stop_ratio', 'left_turn_cross_traffic_interaction_ratio',
+    'merge_conflict_ratio', 'merge_max_duration', 'merge_observed_relevance_ratio',
+    'min_ttc', 'non_signalized_intersection_density', 'route_deviation_decision_demand',
+    'side_entry_candidate_ratio', 'stop_sign_stop_candidate', 'traffic_light_control_density',
+    'ttc_valid_ratio', 'vru_conflict_max_duration', 'vru_crossing_exposure_ratio',
+    'vru_observed_max_duration', 'vru_observed_relevance_ratio', 'vru_path_conflict_ratio',
+    'vru_sustained_max_duration', 'vru_sustained_relevance_ratio',
+)
+
+
 def _column(df, name, default=0.0):
     if name in df.columns:
         return pd.to_numeric(df[name], errors="coerce").fillna(default).to_numpy(dtype=float)
@@ -55,16 +74,24 @@ def calculate_grouped_risk(df):
             0.10,
         )
     )
-    crossing_risk = np.maximum(
-        _scaled(_column(df, "crossing_vehicle_conflict_ratio"), 0.20),
-        _scaled(_column(df, "crossing_conflict_max_duration"), 2.0),
-    )
+    route_evidence_available = 'crossing_route_conflict_ratio' in df.columns
+    # Successful yielding can remove realized proximity. Missing future-route
+    # conflict is not enough to erase a preceding predicted conflict.
+    crossing_ratio = np.maximum(_column(df, 'crossing_vehicle_conflict_ratio'),
+                                _column(df, 'crossing_route_conflict_ratio'))
+    crossing_duration = np.maximum(_column(df, 'crossing_conflict_max_duration'),
+                                   _column(df, 'crossing_route_conflict_max_duration'))
+    crossing_risk = np.maximum(_scaled(crossing_ratio, 0.20), _scaled(crossing_duration, 2.0))
     yielding_factor = 1.0 - 0.80 * _scaled(
         _column(df, "intersection_stop_ratio"),
         0.30,
     )
     crossing_risk = crossing_risk * yielding_factor
-    result["interaction_risk"] = np.maximum(merge_risk, crossing_risk)
+    intrusion_risk = np.minimum(
+        _scaled(_column(df, 'adjacent_lane_intrusion_ratio'), 0.20),
+        _scaled(_column(df, 'adjacent_lane_intrusion_max_duration'), 2.0),
+    )
+    result["interaction_risk"] = np.maximum.reduce([merge_risk, crossing_risk, intrusion_risk])
 
     if "vru_sustained_relevance_ratio" in df.columns:
         vru_relevance = _column(df, "vru_sustained_relevance_ratio")
@@ -116,10 +143,21 @@ def calculate_grouped_risk(df):
         0.0,
         1.0,
     )
-    result["decision_demand"] = np.maximum(
+    # A mapped stop-sign stop has a regulatory explanation. Retain gap-selection
+    # demand, and restore full demand when route-relevant traffic is observed.
+    if route_evidence_available:
+        stop_control = np.clip(_column(df, 'stop_sign_stop_candidate'), 0.0, 1.0)
+        relevant_flow = np.maximum.reduce([
+            _scaled(_column(df, 'crossing_route_conflict_ratio'), 0.10),
+            _scaled(_column(df, 'left_turn_cross_traffic_interaction_ratio'), 0.10),
+            _scaled(vru_relevance, 0.10),
+        ])
+        intersection_decision_demand *= 1.0 - 0.60 * stop_control * (1.0 - relevant_flow)
+    result["decision_demand"] = np.maximum.reduce([
         intersection_decision_demand,
         np.clip(_column(df, "route_deviation_decision_demand"), 0.0, 1.0),
-    )
+        0.30 * _scaled(_column(df, 'side_entry_candidate_ratio'), 0.20),
+    ])
     result["risk"] = np.clip(
         result["observed_risk"] + 0.20 * result["decision_demand"],
         0.0,
@@ -160,4 +198,43 @@ def calculate_corner_scores(df):
         output["corner_score_norm"] = 0.0
     else:
         output["corner_score_norm"] = (output["corner_score"] - score_min) / score_range
+    return output
+
+
+def fit_score_reference(development_clusters):
+    """Capture development-only denominators; callers must validate membership."""
+    if development_clusters.empty:
+        raise ValueError('Empty scoring reference')
+    scored = calculate_corner_scores(development_clusters)
+    return {
+        'total': len(scored),
+        'cluster_sizes': {str(int(k)): int(v) for k, v in
+                          scored.loc[scored.cluster >= 0, 'cluster'].value_counts().items()},
+        'score_min': float(scored.corner_score.min()),
+        'score_max': float(scored.corner_score.max()),
+    }
+
+
+def calculate_frozen_corner_scores(df, reference):
+    """Score without estimating rarity or normalization from the query batch."""
+    output = df.copy()
+    grouped = calculate_grouped_risk(output)
+    for column in grouped:
+        output[column] = grouped[column]
+    total = reference['total']
+    if total <= 0:
+        raise ValueError('Invalid scoring reference size')
+    def rarity(cluster):
+        if cluster == -1:
+            return 1.0 - 1.0 / total
+        key = str(int(cluster))
+        if cluster != int(cluster) or key not in reference['cluster_sizes']:
+            raise ValueError('Unknown cluster in frozen scoring')
+        return 1.0 - reference['cluster_sizes'][key] / total
+    output['rarity'] = output.cluster.map(rarity)
+    output['atypical_norm'] = pd.to_numeric(output.cluster_outlier_score, errors='raise')
+    output['corner_score'] = .20 * output.rarity + .25 * output.atypical_norm + .55 * output.risk
+    spread = reference['score_max'] - reference['score_min']
+    output['corner_score_norm'] = (0.0 if spread < 1e-9 else
+                                   ((output.corner_score - reference['score_min']) / spread).clip(0, 1))
     return output

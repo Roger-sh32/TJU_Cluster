@@ -1,0 +1,452 @@
+{
+  "scope": "Dataset ontology and static-map schema only; no scene/sample/sample_annotation/ego_pose/image or holdout labels read",
+  "sdk_version": "1.2.0",
+  "sdk_source": {
+    "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\nuscenes\\map_expansion\\map_api.py",
+    "bytes": 101428,
+    "sha256": "0eb406cfa70acb41cde9b9807b639bf72f83e1b5ba6a836157e5c92e2fec6a67"
+  },
+  "sdk_declared_layers": {
+    "geometric_layers": [
+      "polygon",
+      "line",
+      "node"
+    ],
+    "non_geometric_polygon_layers": [
+      "drivable_area",
+      "road_segment",
+      "road_block",
+      "lane",
+      "ped_crossing",
+      "walkway",
+      "stop_line",
+      "carpark_area"
+    ],
+    "non_geometric_line_layers": [
+      "road_divider",
+      "lane_divider",
+      "traffic_light"
+    ]
+  },
+  "maps": [
+    {
+      "source": {
+        "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\boston-seaport.json",
+        "bytes": 16244922,
+        "sha256": "fc33712481efd763be39ce7edca0ec924d2d1fe20e1c89d52e21bf43d86e6b59"
+      },
+      "version": "1.3",
+      "top_level_keys": [
+        "arcline_path_3",
+        "canvas_edge",
+        "carpark_area",
+        "connectivity",
+        "drivable_area",
+        "lane",
+        "lane_connector",
+        "lane_divider",
+        "line",
+        "node",
+        "ped_crossing",
+        "polygon",
+        "road_block",
+        "road_divider",
+        "road_segment",
+        "stop_line",
+        "traffic_light",
+        "version",
+        "walkway"
+      ],
+      "selected_layer_schemas": {
+        "lane": {
+          "count": 1215,
+          "field_names": [
+            "from_edge_line_token",
+            "lane_type",
+            "left_lane_divider_segments",
+            "polygon_token",
+            "right_lane_divider_segments",
+            "to_edge_line_token",
+            "token"
+          ]
+        },
+        "lane_connector": {
+          "count": 1631,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "walkway": {
+          "count": 301,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "road_divider": {
+          "count": 377,
+          "field_names": [
+            "line_token",
+            "road_segment_token",
+            "token"
+          ]
+        },
+        "lane_divider": {
+          "count": 671,
+          "field_names": [
+            "lane_divider_segments",
+            "line_token",
+            "token"
+          ]
+        },
+        "traffic_light": {
+          "count": 307,
+          "field_names": [
+            "from_road_block_token",
+            "items",
+            "line_token",
+            "pose",
+            "token",
+            "traffic_light_type"
+          ]
+        },
+        "stop_line": {
+          "count": 775,
+          "field_names": [
+            "ped_crossing_tokens",
+            "polygon_token",
+            "road_block_token",
+            "stop_line_type",
+            "token",
+            "traffic_light_tokens"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-hollandvillage.json",
+        "bytes": 8203967,
+        "sha256": "0c9209c277686e367b06ab5bbe2547ba357f7f790365cb4927f44ae0f78266b2"
+      },
+      "version": "1.3",
+      "top_level_keys": [
+        "arcline_path_3",
+        "canvas_edge",
+        "carpark_area",
+        "connectivity",
+        "drivable_area",
+        "lane",
+        "lane_connector",
+        "lane_divider",
+        "line",
+        "node",
+        "ped_crossing",
+        "polygon",
+        "road_block",
+        "road_divider",
+        "road_segment",
+        "stop_line",
+        "traffic_light",
+        "version",
+        "walkway"
+      ],
+      "selected_layer_schemas": {
+        "lane": {
+          "count": 601,
+          "field_names": [
+            "from_edge_line_token",
+            "lane_type",
+            "left_lane_divider_segments",
+            "polygon_token",
+            "right_lane_divider_segments",
+            "to_edge_line_token",
+            "token"
+          ]
+        },
+        "lane_connector": {
+          "count": 719,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "walkway": {
+          "count": 498,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "road_divider": {
+          "count": 107,
+          "field_names": [
+            "line_token",
+            "road_segment_token",
+            "token"
+          ]
+        },
+        "lane_divider": {
+          "count": 220,
+          "field_names": [
+            "lane_divider_segments",
+            "line_token",
+            "token"
+          ]
+        },
+        "traffic_light": {
+          "count": 119,
+          "field_names": [
+            "from_road_block_token",
+            "items",
+            "line_token",
+            "pose",
+            "token",
+            "traffic_light_type"
+          ]
+        },
+        "stop_line": {
+          "count": 300,
+          "field_names": [
+            "ped_crossing_tokens",
+            "polygon_token",
+            "road_block_token",
+            "stop_line_type",
+            "token",
+            "traffic_light_tokens"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-onenorth.json",
+        "bytes": 13809722,
+        "sha256": "17939122b940d7faff50fa7ff623ded7f739549a781c32dff1ecd1ac7bebca02"
+      },
+      "version": "1.3",
+      "top_level_keys": [
+        "arcline_path_3",
+        "canvas_edge",
+        "carpark_area",
+        "connectivity",
+        "drivable_area",
+        "lane",
+        "lane_connector",
+        "lane_divider",
+        "line",
+        "node",
+        "ped_crossing",
+        "polygon",
+        "road_block",
+        "road_divider",
+        "road_segment",
+        "stop_line",
+        "traffic_light",
+        "version",
+        "walkway"
+      ],
+      "selected_layer_schemas": {
+        "lane": {
+          "count": 936,
+          "field_names": [
+            "from_edge_line_token",
+            "lane_type",
+            "left_lane_divider_segments",
+            "polygon_token",
+            "right_lane_divider_segments",
+            "to_edge_line_token",
+            "token"
+          ]
+        },
+        "lane_connector": {
+          "count": 1066,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "walkway": {
+          "count": 838,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "road_divider": {
+          "count": 152,
+          "field_names": [
+            "line_token",
+            "road_segment_token",
+            "token"
+          ]
+        },
+        "lane_divider": {
+          "count": 357,
+          "field_names": [
+            "lane_divider_segments",
+            "line_token",
+            "token"
+          ]
+        },
+        "traffic_light": {
+          "count": 127,
+          "field_names": [
+            "from_road_block_token",
+            "items",
+            "line_token",
+            "pose",
+            "token",
+            "traffic_light_type"
+          ]
+        },
+        "stop_line": {
+          "count": 451,
+          "field_names": [
+            "ped_crossing_tokens",
+            "polygon_token",
+            "road_block_token",
+            "stop_line_type",
+            "token",
+            "traffic_light_tokens"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-queenstown.json",
+        "bytes": 11011530,
+        "sha256": "c7e75f5a5643c4831aae1c99a0fdcc61e9ba3c01f98d922f0fafa34ea1062927"
+      },
+      "version": "1.3",
+      "top_level_keys": [
+        "arcline_path_3",
+        "canvas_edge",
+        "carpark_area",
+        "connectivity",
+        "drivable_area",
+        "lane",
+        "lane_connector",
+        "lane_divider",
+        "line",
+        "node",
+        "ped_crossing",
+        "polygon",
+        "road_block",
+        "road_divider",
+        "road_segment",
+        "stop_line",
+        "traffic_light",
+        "version",
+        "walkway"
+      ],
+      "selected_layer_schemas": {
+        "lane": {
+          "count": 910,
+          "field_names": [
+            "from_edge_line_token",
+            "lane_type",
+            "left_lane_divider_segments",
+            "polygon_token",
+            "right_lane_divider_segments",
+            "to_edge_line_token",
+            "token"
+          ]
+        },
+        "lane_connector": {
+          "count": 1173,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "walkway": {
+          "count": 457,
+          "field_names": [
+            "polygon_token",
+            "token"
+          ]
+        },
+        "road_divider": {
+          "count": 172,
+          "field_names": [
+            "line_token",
+            "road_segment_token",
+            "token"
+          ]
+        },
+        "lane_divider": {
+          "count": 257,
+          "field_names": [
+            "lane_divider_segments",
+            "line_token",
+            "token"
+          ]
+        },
+        "traffic_light": {
+          "count": 81,
+          "field_names": [
+            "from_road_block_token",
+            "items",
+            "line_token",
+            "pose",
+            "token",
+            "traffic_light_type"
+          ]
+        },
+        "stop_line": {
+          "count": 437,
+          "field_names": [
+            "ped_crossing_tokens",
+            "polygon_token",
+            "road_block_token",
+            "stop_line_type",
+            "token",
+            "traffic_light_tokens"
+          ]
+        }
+      }
+    }
+  ],
+  "category_source": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\category.json",
+    "bytes": 4747,
+    "sha256": "30f64fb175e5bd7db99892d90f9034481bca491f26600c5c0d1a56106b198dfe"
+  },
+  "category_count": 23,
+  "selected_category_definitions": {
+    "human.pedestrian.construction_worker": "Construction worker",
+    "vehicle.construction": "Vehicles primarily designed for construction. Typically very slow moving or stationary. Cranes and extremities of construction vehicles are only included in annotations if they interfere with traffic. Trucks used to haul rocks or building materials are considered vehicle.truck rather than construction vehicles.",
+    "movable_object.barrier": "Temporary road barrier placed in the scene in order to redirect traffic. Commonly used at construction sites. This includes concrete barrier, metal barrier and water barrier. No fences.",
+    "movable_object.trafficcone": "All types of traffic cone."
+  },
+  "visibility_source": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\visibility.json",
+    "bytes": 418,
+    "sha256": "87088bf2c78d070e1e215ff108f9c5c0958d124a14cce8f72bfb5d9651295749"
+  },
+  "visibility_levels": [
+    {
+      "description": "visibility of whole object is between 0 and 40%",
+      "token": "1",
+      "level": "v0-40"
+    },
+    {
+      "description": "visibility of whole object is between 40 and 60%",
+      "token": "2",
+      "level": "v40-60"
+    },
+    {
+      "description": "visibility of whole object is between 60 and 80%",
+      "token": "3",
+      "level": "v60-80"
+    },
+    {
+      "description": "visibility of whole object is between 80 and 100%",
+      "token": "4",
+      "level": "v80-100"
+    }
+  ]
+}

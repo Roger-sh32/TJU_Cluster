@@ -1,0 +1,10 @@
+Metadata rows scanned: 500000
+Metadata rows scanned: 1000000
+Metadata rows scanned: 1500000
+Metadata rows scanned: 2000000
+Metadata rows scanned: 2500000
+scene-0905 -> scene-0107, C5, rank 77, risk 0.319
+scene-0544 -> scene-0151, C3, rank 203, risk 0.160
+scene-0997 -> scene-0032, C9, rank 116, risk 0.016
+scene-0703 -> scene-0014, C8, rank 348, risk 0.005
+Available development scenes: 145; report F:\Scene_cluster\HDBSCAN\tables\semantic_review_supplements_20261001.json

@@ -1,0 +1,207 @@
+{
+  "scope": "seven development scenes only; no clustering fit or evaluation",
+  "baseline_sha256": "4346e1b992a7277b28bc61910d758bb0e1b90fc026ef2d6f761ac8673dfe8ec5",
+  "new_sha256": "8bcc5c9d4a9d5b9e3524d058af203905bdd169f0b77d810179f2648e00f4cb95",
+  "snapshot_verified": true,
+  "current_provenance_passed": true,
+  "historical_current_provenance_rejected": true,
+  "shape": [
+    7,
+    129
+  ],
+  "clustering_fields_identical": 52,
+  "caught_exceptions": 0,
+  "positive_inf_diagnostic_cells": 9,
+  "changed_cells": [
+    {
+      "scene_name": "scene-0151",
+      "column": "crossing_vehicle_conflict_ratio",
+      "before": 0.05,
+      "after": 0.0
+    },
+    {
+      "scene_name": "scene-0151",
+      "column": "crossing_conflict_pre_stop_ratio",
+      "before": 0.05,
+      "after": 0.0
+    },
+    {
+      "scene_name": "scene-0151",
+      "column": "crossing_conflict_max_duration",
+      "before": 1.0002861022949219,
+      "after": 0.0
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "scene_name": "scene-0151",
+      "index": 5,
+      "instance_token": "31a8227b9a194e099a25cf1b0deac81b",
+      "category": "vehicle.bicycle",
+      "heading_change": 1.002389675174602,
+      "minimum_future_route_distance": 4.307764420555309,
+      "actor_width": 0.496,
+      "actor_bounding_diameter": 1.694230208678856,
+      "yielding_response": false,
+      "future_complete": true,
+      "rejected_turning_projection": true
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 6,
+      "instance_token": "31a8227b9a194e099a25cf1b0deac81b",
+      "category": "vehicle.bicycle",
+      "heading_change": 1.0713778473334232,
+      "minimum_future_route_distance": 3.904637641164993,
+      "actor_width": 0.496,
+      "actor_bounding_diameter": 1.694230208678856,
+      "yielding_response": false,
+      "future_complete": true,
+      "rejected_turning_projection": true
+    }
+  ],
+  "risk_before": [
+    {
+      "scene_name": "scene-0014",
+      "longitudinal_risk": 0.014999999999999996,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.005249999999999999,
+      "decision_demand": 0.0,
+      "risk": 0.005249999999999999
+    },
+    {
+      "scene_name": "scene-0032",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.08020833333333333,
+      "risk": 0.016041666666666666
+    },
+    {
+      "scene_name": "scene-0068",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 1.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.3,
+      "decision_demand": 1.0,
+      "risk": 0.5
+    },
+    {
+      "scene_name": "scene-0074",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.3125,
+      "risk": 0.0625
+    },
+    {
+      "scene_name": "scene-0107",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 1.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.3,
+      "decision_demand": 0.09374999999999997,
+      "risk": 0.31875
+    },
+    {
+      "scene_name": "scene-0151",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.5001430511474609,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.15004291534423828,
+      "decision_demand": 0.05208333333333333,
+      "risk": 0.16045958201090493
+    },
+    {
+      "scene_name": "scene-0158",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.0,
+      "risk": 0.0
+    }
+  ],
+  "risk_after": [
+    {
+      "scene_name": "scene-0014",
+      "longitudinal_risk": 0.014999999999999996,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.005249999999999999,
+      "decision_demand": 0.0,
+      "risk": 0.005249999999999999
+    },
+    {
+      "scene_name": "scene-0032",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.08020833333333333,
+      "risk": 0.016041666666666666
+    },
+    {
+      "scene_name": "scene-0068",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 1.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.3,
+      "decision_demand": 1.0,
+      "risk": 0.5
+    },
+    {
+      "scene_name": "scene-0074",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.3125,
+      "risk": 0.0625
+    },
+    {
+      "scene_name": "scene-0107",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 1.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.3,
+      "decision_demand": 0.09374999999999997,
+      "risk": 0.31875
+    },
+    {
+      "scene_name": "scene-0151",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.05208333333333333,
+      "risk": 0.010416666666666666
+    },
+    {
+      "scene_name": "scene-0158",
+      "longitudinal_risk": 0.0,
+      "interaction_risk": 0.0,
+      "vru_risk": 0.0,
+      "ego_response_risk": 0.0,
+      "observed_risk": 0.0,
+      "decision_demand": 0.0,
+      "risk": 0.0
+    }
+  ]
+}

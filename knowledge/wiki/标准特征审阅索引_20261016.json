@@ -1,0 +1,61 @@
+{
+  "status": "reference_audit_only_not_experiment_configuration",
+  "date": "2026-10-16",
+  "feature_source": "HDBSCAN/scripts/feature_selection.py",
+  "feature_source_sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+  "expected_feature_count": 52,
+  "grouping_note": "Human-readable audit index only; not implemented feature groups, ablation configuration or standard conformity mapping.",
+  "groups": [
+    {
+      "id": "G1",
+      "label": "交通统计与行人邻近",
+      "evidence_level": "PEGASUS layer-4 conceptual correspondence only",
+      "features": ["avg_speed", "speed_std", "avg_vehicle_count", "neighbor_density_std", "neighbor_speed_std", "pedestrian_nearby_ratio", "pedestrian_front_ratio"]
+    },
+    {
+      "id": "G2",
+      "label": "自车运动与停车阶段",
+      "evidence_level": "PEGASUS layer-4 conceptual correspondence; no normative thresholds inferred",
+      "features": ["ego_avg_speed", "ego_speed_std", "ego_heading_change_total", "ego_stopped_at_scene_start", "ego_stop_from_motion_flag", "ego_restart_after_stop_flag"]
+    },
+    {
+      "id": "G3",
+      "label": "车辆跟随与横向交互",
+      "evidence_level": "PEGASUS layer-4 concept; IVISTA2026 section5.2.2.8 selected crossing scenario reference, not field-by-field equivalence",
+      "features": ["car_following_ratio", "following_max_duration", "merge_exposure_ratio", "merge_observed_relevance_ratio", "merge_lane_entry_relevance_ratio", "adjacent_lane_intrusion_ratio", "side_entry_candidate_ratio", "overtaking_exposure_ratio", "crossing_vehicle_exposure_ratio", "crossing_route_conflict_ratio", "left_turn_crossing_yield_ratio", "left_turn_cross_traffic_interaction_ratio"]
+    },
+    {
+      "id": "G4",
+      "label": "VRU接近与路径候选",
+      "evidence_level": "PEGASUS layer-4 concept; IVISTA2026 section5.2.2.7 selected occluded bicycle scenario reference, no visibility validation",
+      "features": ["vru_crossing_exposure_ratio", "same_lane_vru_exposure_ratio", "same_direction_vru_ratio", "vru_path_conflict_ratio", "vru_observed_relevance_ratio", "vru_crosswalk_conflict_ratio"]
+    },
+    {
+      "id": "G5",
+      "label": "障碍受阻与避让需求候选",
+      "evidence_level": "Conceptual interaction/obstruction correspondence; no dedicated obstacle-avoidance protocol clause verified",
+      "features": ["obstacle_avoidance_vru_conflict_ratio", "oncoming_during_avoidance_ratio", "stationary_lead_obstacle_ratio", "temporarily_stopped_lead_ratio", "blocked_path_obstacle_ratio", "obstacle_induced_route_deviation_flag", "route_deviation_decision_demand", "ego_evasive_lane_change_flag"]
+    },
+    {
+      "id": "G6",
+      "label": "参与者类别与动态组成",
+      "evidence_level": "PEGASUS layer-4 concept; category occurrence is not protocol target conformity or a conflict label",
+      "features": ["truck_bus_dynamic_ratio", "bicycle_ratio", "motorcycle_ratio", "two_wheeler_dynamic_ratio"]
+    },
+    {
+      "id": "G7",
+      "label": "地图路口控制与停车上下文",
+      "evidence_level": "Partial road/infrastructure and interaction proxies; traffic-control map presence is not live signal state or verified legal attribution",
+      "features": ["intersection_density", "lane_connector_density", "ped_crossing_density", "intersection_stop_ratio", "traffic_light_control_density", "stop_sign_control_density", "stop_sign_stop_candidate", "turn_stop_control_density", "non_signalized_intersection_density"]
+    }
+  ],
+  "not_currently_established": [
+    "Rule-compliant actual lane/route membership and physical barrier isolation",
+    "Target-level occlusion and first-visibility timing",
+    "Construction/temporary-road semantic representation",
+    "Quantitative weather, illumination, road friction or sensor quality",
+    "V2X, digital-message or signal-phase time series",
+    "SUT identity, automation mode, protocol test validity and conformance"
+  ],
+  "no_changes": ["feature schema", "thresholds", "scores", "models", "split", "evaluation semantics"]
+}

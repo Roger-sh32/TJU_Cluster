@@ -1,0 +1,29 @@
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 27.536 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 5.9 seconds.
+======
+DIAGNOSED scene-0002: 1 crossing, 0 VRU, 1 static frames
+DIAGNOSED scene-0093: 1 crossing, 0 VRU, 0 static frames
+DIAGNOSED scene-0102: 1 crossing, 3 VRU, 0 static frames
+DIAGNOSED scene-0453: 1 crossing, 0 VRU, 0 static frames
+DIAGNOSED scene-0552: 2 crossing, 0 VRU, 3 static frames
+DIAGNOSED scene-0669: 1 crossing, 0 VRU, 5 static frames
+DIAGNOSED scene-0815: 2 crossing, 0 VRU, 0 static frames
+DIAGNOSED scene-0816: 2 crossing, 0 VRU, 0 static frames
+COMPLETED: existing eight rows reused, all target diagnostics finished.

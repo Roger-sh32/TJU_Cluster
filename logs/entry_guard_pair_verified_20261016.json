@@ -1,0 +1,104 @@
+{
+  "scope": "Paired preflight with explicit same input/stage/env/source bindings; NO FIT",
+  "rows": [
+    {
+      "source": {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py",
+        "sha256": "be1ffc107673436b2adc348fab4c2b6864635774361ec83ec3d74e38d6c26a7f"
+      },
+      "command": [
+        "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "HDBSCAN\\scripts\\cluster_umap_hdbscan.py",
+        "--preflight"
+      ],
+      "pid": 45000,
+      "input_binding": {
+        "features": {
+          "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+          "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93"
+        },
+        "manifest": {
+          "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+          "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c"
+        },
+        "stage": "candidate_feature_replay"
+      },
+      "env_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MKL_THREADING_LAYER": "SEQUENTIAL",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SCENE_CLUSTER_FEATURE_INPUT": "scene_features_longitudinal_v7_replay29_20261015.csv",
+        "SCENE_CLUSTER_CLUSTER_OUTPUT": "_preflight_no_run_20261016.csv",
+        "SCENE_CLUSTER_CLUSTER_FIGURE": "_preflight_no_run_20261016.png",
+        "SCENE_CLUSTER_GRID_OUTPUT": "_grid_preflight_no_run_20261016.csv"
+      },
+      "started_at_utc": "2026-10-16T01:20:14.799658+00:00",
+      "elapsed_seconds": 0.611761,
+      "timeout_seconds": 20,
+      "timed_out": false,
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\r\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py\", line 77, in <module>\r\n    main()\r\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py\", line 27, in main\r\n    require_feature_provenance(input_path, raw)\r\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py\", line 63, in require_feature_provenance\r\n    raise ValueError('Feature extraction version/provenance mismatch')\r\nValueError: Feature extraction version/provenance mismatch\r\n"
+    },
+    {
+      "source": {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\grid_search.py",
+        "sha256": "eb0f615a35f1287dfd0aab2f035a07fbc5abafa47cd4db1baea7a19488da4485"
+      },
+      "command": [
+        "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "HDBSCAN\\scripts\\grid_search.py",
+        "--preflight"
+      ],
+      "pid": 45136,
+      "input_binding": {
+        "features": {
+          "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+          "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93"
+        },
+        "manifest": {
+          "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+          "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c"
+        },
+        "stage": "candidate_feature_replay"
+      },
+      "env_overrides": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "MKL_THREADING_LAYER": "SEQUENTIAL",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "SCENE_CLUSTER_FEATURE_INPUT": "scene_features_longitudinal_v7_replay29_20261015.csv",
+        "SCENE_CLUSTER_CLUSTER_OUTPUT": "_preflight_no_run_20261016.csv",
+        "SCENE_CLUSTER_CLUSTER_FIGURE": "_preflight_no_run_20261016.png",
+        "SCENE_CLUSTER_GRID_OUTPUT": "_grid_preflight_no_run_20261016.csv"
+      },
+      "started_at_utc": "2026-10-16T01:20:15.412419+00:00",
+      "elapsed_seconds": 0.595664,
+      "timeout_seconds": 20,
+      "timed_out": false,
+      "returncode": 0,
+      "stdout": "{\r\n  \"stage\": \"parameter_search\",\r\n  \"preflight_only\": true,\r\n  \"fit_scope\": \"development\",\r\n  \"scene_count\": 29,\r\n  \"split_sha256\": \"0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa\",\r\n  \"semantic_feature_count\": 52\r\n}\r\n",
+      "stderr": ""
+    }
+  ],
+  "outputs_absent": true,
+  "output_paths": [
+    "HDBSCAN\\tables\\_preflight_no_run_20261016.csv",
+    "HDBSCAN\\tables\\_preflight_no_run_20261016.csv.manifest.json",
+    "HDBSCAN\\tables\\_preflight_no_run_20261016.model",
+    "HDBSCAN\\pictures\\_preflight_no_run_20261016.png",
+    "HDBSCAN\\tables\\_grid_preflight_no_run_20261016.csv",
+    "HDBSCAN\\tables\\_grid_preflight_no_run_20261016.csv.manifest.json"
+  ]
+}

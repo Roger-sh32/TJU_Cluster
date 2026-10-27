@@ -1,0 +1,133 @@
+{
+  "created_at_utc": "2026-10-12T12:26:07.732721+00:00",
+  "scope": "Eight fixed development cases, CAM_FRONT media review only; no evaluation semantics or fit",
+  "names": [
+    "scene-0002",
+    "scene-0552",
+    "scene-0093",
+    "scene-0102",
+    "scene-0453",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_comparison_20261001.json",
+      "sha256": "96ab2e1f8cc99bb5bf2d64ace048d40ec26cb1212d2350a21748fe866a6b515e",
+      "bytes": 15483
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\media_recovery_audit_20261011.json",
+      "sha256": "ec708a4c29f1320a2b585b25ccef82efd95d63fb098af1e6c8f1fd6c3f7add3f",
+      "bytes": 10792
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_candidate700_20261001.csv",
+      "sha256": "748eb9a498e7eeeaeb250294241c6f8b62ecf9a0df398571fe592265d7f7b741",
+      "bytes": 694912
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv",
+      "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3",
+      "bytes": 695154
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_risk_20261001.csv",
+      "sha256": "706719c2eb10fd999a43f860a911e15b01046356601682e6cd7c24b745e0f02d",
+      "bytes": 121307
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\build_development_media_review_20261012.py",
+      "sha256": "4ae968e70246a32a234c39572968c96e5d220860bd6c45913f6c2647469777b2",
+      "bytes": 13373
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_development_media_review_20261012.py",
+      "sha256": "a371bb7fe9ae747b820e5c207487ef0078dbc72e751574823c69c93eb32a7c2d",
+      "bytes": 1612
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\build_semantic_review_pack_20261001.py",
+      "sha256": "d967d6a1066e4210a439750c564cd0055ef86204b3b7db77b1703d0a757220cf",
+      "bytes": 11733
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\evaluation_media_audit_20260926.py",
+      "sha256": "ae06907415d8b3a12eb65ee45c349f209defe99e47fc054c440f4db52f628310",
+      "bytes": 9106
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b",
+      "bytes": 285132
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample.json",
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d",
+      "bytes": 7424233
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample_data.json",
+      "sha256": "6dcad49f0b9bd7b1cef04e2a0ff2ac2879b46b938e8d48153f00693cebb4de21",
+      "bytes": 1345678379
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sensor.json",
+      "sha256": "4d5c96570e2d8b09b88ce4c605e40ee43c4909f97bea5741185f18f92eb491ae",
+      "bytes": 1185
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\calibrated_sensor.json",
+      "sha256": "67781a5dd7b2504b046ef89d6dcb267b12d1cc91af21f1ec5758624588e99865",
+      "bytes": 3268133
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py",
+      "sha256": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552",
+      "bytes": 12595
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "sha256": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620",
+      "bytes": 10137
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+      "bytes": 2153
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d",
+      "bytes": 30874
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+      "sha256": "2c0d6b2b46e573af3f559d7c6e0f750697d4868bc22ce4e6e1f04a6c60781859",
+      "bytes": 67931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+      "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db",
+      "bytes": 8223
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\extraction_audit.py",
+      "sha256": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707",
+      "bytes": 3236
+    }
+  ],
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/build_development_media_review_20261012.py"
+  ],
+  "sampling_hz": 6,
+  "final_frame_hold": "one additional interval",
+  "overwrite_allowed": false
+}

@@ -1,0 +1,29 @@
+{
+  "protocol": {
+    "path": "F:\\Scene_cluster\\logs\\short_static_diagnosis_v2_protocol_20261015.json",
+    "sha256": "b7fb9861781d08ffd69a225ba986543556630e844eba5e6cd29f60771570afd6",
+    "bytes": 3589
+  },
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\logs\\short_static_diagnosis_v2_evidence_20261015.json",
+      "sha256": "ad06afda49ee0682e9c61fc0da58a2c5bb4fee42a875c40f672adbccd94eac2b",
+      "bytes": 69831
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\短暂静态障碍与持续受阻对照_20261015.md",
+      "sha256": "700439848687b2436aae57f6c691c1e097c1772791984e53a5215e1760423182",
+      "bytes": 4609
+    }
+  ],
+  "completed_at_utc": "2026-10-15T13:35:24.551650+00:00",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/diagnose_short_static_v2_20261015.py",
+    "run",
+    "--expected-protocol-sha",
+    "b7fb9861781d08ffd69a225ba986543556630e844eba5e6cd29f60771570afd6"
+  ],
+  "stage": "completed_short_static_diagnosis",
+  "feature_updates": false
+}

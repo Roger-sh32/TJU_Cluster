@@ -1,0 +1,60 @@
+test_baseline_difference_is_not_silently_tolerated (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... FAIL
+test_existing_evasion_cannot_change_first_obstacle (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... FAIL
+test_mismatched_static_trace_stops_before_gate (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... FAIL
+test_new_evasion_dependency_is_not_published_with_stale_vru (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... FAIL
+test_unrelated_column_change_is_rejected (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... FAIL
+
+======================================================================
+FAIL: test_baseline_difference_is_not_silently_tolerated (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 12, in test_baseline_difference_is_not_silently_tolerated
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.longitudinal_v7_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_existing_evasion_cannot_change_first_obstacle (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 28, in test_existing_evasion_cannot_change_first_obstacle
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.longitudinal_v7_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_mismatched_static_trace_stops_before_gate (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 17, in test_mismatched_static_trace_stops_before_gate
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.longitudinal_v7_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_new_evasion_dependency_is_not_published_with_stale_vru (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 22, in test_new_evasion_dependency_is_not_published_with_stale_vru
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.longitudinal_v7_replay_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_unrelated_column_change_is_rejected (logs.test_longitudinal_v7_replay_20261015.ReplayContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 35, in test_unrelated_column_change_is_rejected
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_longitudinal_v7_replay_20261015.py", line 7, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.longitudinal_v7_replay_20261015'))
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)

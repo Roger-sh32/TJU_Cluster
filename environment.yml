@@ -1,4 +1,6 @@
 name: autodrive-cluster
+variables:
+  MKL_THREADING_LAYER: SEQUENTIAL
 channels:
   - conda-forge
   - defaults

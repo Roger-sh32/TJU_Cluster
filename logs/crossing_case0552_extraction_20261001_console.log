@@ -1,0 +1,31 @@
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 29.212 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 5.9 seconds.
+======
+
+Processing scenes:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing scenes: 100%|██████████| 1/1 [00:07<00:00,  7.11s/it]
+Processing scenes: 100%|██████████| 1/1 [00:07<00:00,  7.11s/it]
+===== 场景特征表已保存 =====
+   scene_name  ... map_available
+0  scene-0552  ...             1
+
+[1 rows x 129 columns]
+共 1 个场景特征，已保存到: F:\Scene_cluster\HDBSCAN\tables\scene_features_crossing_case0552_20261001.csv
+Pre-fill nonfinite cells: 2; caught query exceptions: 0; audit: F:\Scene_cluster\HDBSCAN\tables\scene_features_crossing_case0552_20261001.csv.quality.json

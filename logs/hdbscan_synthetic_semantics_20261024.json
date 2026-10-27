@@ -1,0 +1,497 @@
+{
+  "stage": "synthetic_hdbscan_array_tree_semantics_only",
+  "created_at_utc": "2026-10-24T03:35:26.410340+00:00",
+  "command": [
+    "logs/hdbscan_semantics_20261024.py",
+    "--run"
+  ],
+  "child_command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "-X",
+    "utf8",
+    "F:\\Scene_cluster\\logs\\hdbscan_semantics_20261024.py",
+    "--worker"
+  ],
+  "timeout_seconds": 25,
+  "child_env_overrides": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "MKL_THREADING_LAYER": "SEQUENTIAL"
+  },
+  "child_exit_code": 0,
+  "child_stderr": "",
+  "child": {
+    "cases": {
+      "SYN-DENSE": {
+        "input": [
+          [
+            0.0,
+            1.0,
+            4.0
+          ],
+          [
+            1.0,
+            0.0,
+            3.0
+          ],
+          [
+            4.0,
+            3.0,
+            0.0
+          ]
+        ],
+        "min_points": 1,
+        "alpha": 1.0,
+        "hand_core": [
+          1.0,
+          1.0,
+          3.0
+        ],
+        "hand": [
+          [
+            1.0,
+            1.0,
+            4.0
+          ],
+          [
+            1.0,
+            1.0,
+            3.0
+          ],
+          [
+            4.0,
+            3.0,
+            3.0
+          ]
+        ],
+        "native": [
+          [
+            1.0,
+            1.0,
+            4.0
+          ],
+          [
+            1.0,
+            1.0,
+            3.0
+          ],
+          [
+            4.0,
+            3.0,
+            3.0
+          ]
+        ],
+        "scope": "dense helper only; not automatic MST/Boruvka path"
+      },
+      "SYN-NOISE": {
+        "edges": [
+          [
+            5,
+            4,
+            0.5,
+            1
+          ],
+          [
+            5,
+            6,
+            1.0,
+            2
+          ],
+          [
+            5,
+            7,
+            1.0,
+            2
+          ],
+          [
+            6,
+            0,
+            2.0,
+            1
+          ],
+          [
+            6,
+            1,
+            4.0,
+            1
+          ],
+          [
+            7,
+            2,
+            2.0,
+            1
+          ],
+          [
+            7,
+            3,
+            2.0,
+            1
+          ]
+        ],
+        "hand_stability": {
+          "5": 4.5,
+          "6": 4.0,
+          "7": 2.0
+        },
+        "native_stability": {
+          "5": 4.5,
+          "6": 4.0,
+          "7": 2.0
+        },
+        "outlier": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5
+        ],
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          -1
+        ],
+        "membership": [
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "selected_cluster_coherence": [
+          0.5,
+          0.25
+        ]
+      },
+      "SYN-EOM-LEAF": {
+        "edges": [
+          [
+            7,
+            8,
+            1.0,
+            5
+          ],
+          [
+            7,
+            9,
+            1.0,
+            2
+          ],
+          [
+            8,
+            0,
+            5.0,
+            1
+          ],
+          [
+            8,
+            10,
+            5.0,
+            2
+          ],
+          [
+            8,
+            11,
+            5.0,
+            2
+          ],
+          [
+            9,
+            5,
+            2.0,
+            1
+          ],
+          [
+            9,
+            6,
+            2.0,
+            1
+          ],
+          [
+            10,
+            1,
+            8.0,
+            1
+          ],
+          [
+            10,
+            2,
+            8.0,
+            1
+          ],
+          [
+            11,
+            3,
+            8.0,
+            1
+          ],
+          [
+            11,
+            4,
+            8.0,
+            1
+          ]
+        ],
+        "hand_stability": {
+          "7": 7.0,
+          "8": 20.0,
+          "9": 2.0,
+          "10": 6.0,
+          "11": 6.0
+        },
+        "native_stability": {
+          "7": 7.0,
+          "8": 20.0,
+          "9": 2.0,
+          "10": 6.0,
+          "11": 6.0
+        },
+        "outlier": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "eom": {
+          "labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "membership": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "selected_cluster_coherence": [
+            0.5,
+            0.125
+          ]
+        },
+        "leaf": {
+          "labels": [
+            -1,
+            1,
+            1,
+            2,
+            2,
+            0,
+            0
+          ],
+          "membership": [
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "selected_cluster_coherence": [
+            0.125,
+            0.375,
+            0.375
+          ]
+        }
+      }
+    },
+    "checks_passed": true,
+    "runtime": {
+      "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+      "executable": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+      "packages": {
+        "hdbscan": "0.8.39",
+        "numpy": "1.26.4",
+        "scipy": "1.13.1",
+        "scikit-learn": "1.6.1"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\logs\\hdbscan_source_retrieval_20261024.json",
+      "bytes": 5375,
+      "sha256": "a4dee09003a19499b4b119937ba8f10844e2b8ece701bef389a021404c6359c0"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\pypi_verified_0.8.39.json",
+      "bytes": 28006,
+      "sha256": "608e1e5cc40aab9ec336b65c54dc21ced5819b82d4d5d2930707bd63eadcb485"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\hdbscan-0.8.39.tar.gz",
+      "bytes": 5771399,
+      "sha256": "2aa1351f42fa79efdc47d53695381aa9a2efef6d1855b96c42d030646fee74f7"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\official_how.response",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\official_outliers.response",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\jcu_record.response",
+      "bytes": 17,
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\core_fulltext.response",
+      "bytes": 5426,
+      "sha256": "9fffb7fcb975d5aa87cfec6f39706ee1ec37c7aa526eea8d42efeae0b482072f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist_LICENSE",
+      "bytes": 1484,
+      "sha256": "d5be17fef04ce2213c09a3fffec11021065eaff565733c46ef287248b353a081"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist_hdbscan_.py",
+      "bytes": 61742,
+      "sha256": "81511870830f5e6207f877ea7d535435675fe488f265355a4cd309c7335cc41a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist__hdbscan_tree.pyx",
+      "bytes": 38098,
+      "sha256": "c6c0a3f390baeb88e20e6d60819e92b5e4ea793fbaaae9217a92486a0a586347"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist__hdbscan_reachability.pyx",
+      "bytes": 6411,
+      "sha256": "c46c210a4f4f8df59ad676b0f9f3eeefed7b06af3837caaecb35307cb87a5ff6"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\HDBSCAN原理与实现_20261024\\sdist_prediction.py",
+      "bytes": 25705,
+      "sha256": "a3775742fcd42ac696e4b55f78997de88e5e3540892274105f97f2cda863376e"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\hdbscan_.py",
+      "bytes": 61742,
+      "sha256": "81511870830f5e6207f877ea7d535435675fe488f265355a4cd309c7335cc41a"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\prediction.py",
+      "bytes": 25705,
+      "sha256": "a3775742fcd42ac696e4b55f78997de88e5e3540892274105f97f2cda863376e"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\_hdbscan_boruvka.cp39-win_amd64.pyd",
+      "bytes": 317440,
+      "sha256": "bebcee3277f8e408c1c3e7aa265041828f048f614bcbb1e5d3844d4681ac1a47"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\_hdbscan_linkage.cp39-win_amd64.pyd",
+      "bytes": 194048,
+      "sha256": "d378365fb4a06f9dccccc67acd1fa11b4e781824527685f4b9ffa0c4dc1826c1"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\_hdbscan_reachability.cp39-win_amd64.pyd",
+      "bytes": 104960,
+      "sha256": "9cfe0037428863dae61521e5651580225ab8997d24178d9af14cffa611c40b31"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\_hdbscan_tree.cp39-win_amd64.pyd",
+      "bytes": 346624,
+      "sha256": "6ecc0eeccee4de9a47dd352d1979849478c9ec94722fed503dd8fc239bf4d267"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\_prediction_utils.cp39-win_amd64.pyd",
+      "bytes": 222208,
+      "sha256": "e2b28dd3c3427d9702ed7fa5297032fd8bccaa55a8be14ce653e214666a43455"
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\hdbscan\\dist_metrics.cp39-win_amd64.pyd",
+      "bytes": 259584,
+      "sha256": "6de814470dc0174412c9c3ab4ece4cf2ebc00cbe8fff23d0d66519a0d2891bc7"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py",
+      "bytes": 3402,
+      "sha256": "be1ffc107673436b2adc348fab4c2b6864635774361ec83ec3d74e38d6c26a7f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "bytes": 10137,
+      "sha256": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_20261015.md",
+      "bytes": 22165,
+      "sha256": "e3cd1034ba06ce052db5ed0ef6f129e1090e6ecf412faff40c2cbe675fd6b536"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024_report.json",
+      "bytes": 11068,
+      "sha256": "9035ce0ea61084e5c4fa1c9f195a2c73a15b29680cb423e90e3a0e5dbdb02e18"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_candidate_causes35_20261024.json",
+      "bytes": 71418,
+      "sha256": "5a457c29d6ec7c7ddd69901dfb9f73de8143c2176b9f8fd75cf3371a10db46e2"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py",
+      "bytes": 12595,
+      "sha256": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\sources\\参考文献\\外文\\McInnes_2017_HDBSCAN_JOSS.pdf",
+      "bytes": 257923,
+      "sha256": "9338398c56bb6a231606af02729c41bee259aafdbddab2d6e5b68ee4340a960d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\hdbscan_semantics_pdf_20261024\\joss_page1.png",
+      "bytes": 255690,
+      "sha256": "7237c50702c31d83286845eb7b448130d21cea75d5ad8f63b76bfa992dbd1e81"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\hdbscan_semantics_pdf_20261024\\joss_page2.png",
+      "bytes": 162876,
+      "sha256": "ee5dbc19bf8667eb5bd34c140c26ffd649eeb5db596a10837fbaefa9c23cf5b2"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\hdbscan_semantics_20261024.py",
+      "bytes": 11938,
+      "sha256": "4b3a8347d5ca7699d55104bc21122920196c5b7d150c828965c585d9c855df65"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_hdbscan_semantics_20261024.py",
+      "bytes": 2999,
+      "sha256": "36adbfc433fc0d89b2cf8a2b838219f6c9be0c9ff80cd06574aea518628cf37c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\wiki\\HDBSCAN公式与软件输出边界_20261024.md",
+      "bytes": 7494,
+      "sha256": "59db429fe1c74e5403c1c6c4ce002d69133e7d16c16cc7d530e2ea6f231f1706"
+    }
+  ],
+  "estimator_fit": false,
+  "model_load": false,
+  "scene_data": false,
+  "evaluation": false,
+  "production_change": false,
+  "paper_fulltext_verified": false,
+  "formal_choice": false,
+  "compiled_equivalence_to_official_build": "not_proven; local binaries recorded only"
+}

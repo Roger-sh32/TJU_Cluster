@@ -1,0 +1,12 @@
+test_baseline_difference_is_not_silently_tolerated (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_exclusive_run_claim_does_not_overwrite_first_owner (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_existing_evasion_cannot_change_first_obstacle (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_failed_baseline_prevents_gate_and_feature_publication (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_mismatched_static_trace_stops_before_gate (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_new_evasion_dependency_is_not_published_with_stale_vru (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+test_unrelated_column_change_is_rejected (logs.test_longitudinal_v7_replay_20261015.ReplayContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.603s
+
+OK

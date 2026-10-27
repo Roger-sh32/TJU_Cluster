@@ -1,0 +1,541 @@
+{
+  "kind": "citation_annotation_only",
+  "date": "2026-10-16",
+  "status": "draft_requires_author_and_school_review",
+  "parent_expected_sha256": "e3cd1034ba06ce052db5ed0ef6f129e1090e6ecf412faff40c2cbe675fd6b536",
+  "parent_index_expected_sha256": "d7b82321ea70e63293a20668ea88d99763597b8a9692465095a9ccdaf0d18ac9",
+  "source_records": [
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_20261015.md",
+      "bytes": 22165,
+      "sha256": "e3cd1034ba06ce052db5ed0ef6f129e1090e6ecf412faff40c2cbe675fd6b536"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_20261015_证据索引.json",
+      "bytes": 7101,
+      "sha256": "d7b82321ea70e63293a20668ea88d99763597b8a9692465095a9ccdaf0d18ac9"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法原始引用_20261016.ris",
+      "bytes": 3946,
+      "sha256": "e73c12bf2d39a567ce061c4f0096c3fb9b1fb8364dbff876a17fe2cb6b8524eb"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\TTC与评价补充引用_20261016.ris",
+      "bytes": 3786,
+      "sha256": "e79aea95e4a4ddc476db6d701594d366303e98a3064d545ca756fc8c55522f3d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法原始引用与插入建议_20261016.md",
+      "bytes": 8837,
+      "sha256": "c1efd2c7ae0f9efe3947dd77189641073991cf255e51ab5bdc698a89387b7a58"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\wiki\\TTC与评价指标引用边界_20261016.md",
+      "bytes": 10793,
+      "sha256": "49c8dd344829ca59d493ce1b052e1d0b62dea70a64889467fb96933bacf92206"
+    },
+    {
+      "path": "F:\\Scene_cluster\\knowledge\\wiki\\标准来源与现有特征映射_20261016.md",
+      "bytes": 8701,
+      "sha256": "1aea1a606787fe921857b5b4d693c90123d62f256d14b1bff8f76f038b99ef99"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261016\\执行链路审计与恢复顺序.md",
+      "bytes": 9088,
+      "sha256": "caa139000d77bc9fd44dbdfe9df3eddc430e28e4fb9def50ab1f3f8a43264716"
+    }
+  ],
+  "output": {
+    "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_引文补注_20261016.md",
+    "bytes": 32988,
+    "sha256": "b704476aa4a577aa16d257679dc596fd1af5b3f567f47d01b4e9c676bc6754e6"
+  },
+  "annotations": [
+    {
+      "id": "C01",
+      "section": "### 3.1 分析单元与输出",
+      "reference_ids": [
+        "R01"
+      ]
+    },
+    {
+      "id": "C02",
+      "section": "### 4.3 TTC证据与缺失语义",
+      "reference_ids": [
+        "R07",
+        "R12"
+      ]
+    },
+    {
+      "id": "C03",
+      "section": "### 4.7 降维、聚类与参数状态",
+      "reference_ids": [
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ]
+    },
+    {
+      "id": "C04",
+      "section": "### 5.2 稀有性、离群程度与综合得分",
+      "reference_ids": [
+        "R05",
+        "R06"
+      ]
+    },
+    {
+      "id": "C05",
+      "section": "### 6.2 历史参数稳定性，而非最终参数选择",
+      "reference_ids": [
+        "R08"
+      ]
+    },
+    {
+      "id": "C06",
+      "section": "### 6.4 当前不能填写的正式成绩",
+      "reference_ids": [
+        "R09",
+        "R10",
+        "R11"
+      ]
+    },
+    {
+      "id": "C07",
+      "section": "## 写作说明与待补项",
+      "reference_ids": []
+    }
+  ],
+  "bibliographic_core": [
+    {
+      "ID": [
+        "R01"
+      ],
+      "AU": [
+        "Caesar, Holger",
+        "Bankiti, Varun",
+        "Lang, Alex H.",
+        "Vora, Sourabh",
+        "Liong, Venice Erin",
+        "Xu, Qiang",
+        "Krishnan, Anush",
+        "Pan, Yu",
+        "Baldan, Giancarlo",
+        "Beijbom, Oscar"
+      ],
+      "TI": [
+        "nuScenes: A Multimodal Dataset for Autonomous Driving"
+      ],
+      "PY": [
+        "2020"
+      ],
+      "T2": [
+        "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+      ],
+      "SP": [
+        "11618"
+      ],
+      "EP": [
+        "11628"
+      ],
+      "DO": [
+        "10.1109/CVPR42600.2020.01164"
+      ],
+      "UR": [
+        "https://doi.org/10.1109/CVPR42600.2020.01164"
+      ]
+    },
+    {
+      "ID": [
+        "R02"
+      ],
+      "AU": [
+        "McInnes, Leland",
+        "Healy, John",
+        "Melville, James"
+      ],
+      "TI": [
+        "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction"
+      ],
+      "PY": [
+        "2020"
+      ],
+      "DO": [
+        "10.48550/arXiv.1802.03426"
+      ],
+      "UR": [
+        "https://arxiv.org/abs/1802.03426v3"
+      ],
+      "DA": [
+        "2020/09/18"
+      ]
+    },
+    {
+      "ID": [
+        "R03"
+      ],
+      "AU": [
+        "McInnes, Leland",
+        "Healy, John",
+        "Saul, Nathaniel",
+        "Großberger, Lukas"
+      ],
+      "TI": [
+        "UMAP: Uniform Manifold Approximation and Projection"
+      ],
+      "PY": [
+        "2018"
+      ],
+      "JO": [
+        "Journal of Open Source Software"
+      ],
+      "VL": [
+        "3"
+      ],
+      "IS": [
+        "29"
+      ],
+      "SP": [
+        "861"
+      ],
+      "DO": [
+        "10.21105/joss.00861"
+      ],
+      "UR": [
+        "https://joss.theoj.org/papers/10.21105/joss.00861"
+      ],
+      "DA": [
+        "2018/09/02"
+      ]
+    },
+    {
+      "ID": [
+        "R04"
+      ],
+      "AU": [
+        "Campello, Ricardo J. G. B.",
+        "Moulavi, Davoud",
+        "Sander, Joerg"
+      ],
+      "TI": [
+        "Density-Based Clustering Based on Hierarchical Density Estimates"
+      ],
+      "PY": [
+        "2013"
+      ],
+      "T2": [
+        "Advances in Knowledge Discovery and Data Mining"
+      ],
+      "T3": [
+        "Lecture Notes in Computer Science"
+      ],
+      "VL": [
+        "7819"
+      ],
+      "SP": [
+        "160"
+      ],
+      "EP": [
+        "172"
+      ],
+      "PB": [
+        "Springer"
+      ],
+      "CY": [
+        "Berlin, Heidelberg"
+      ],
+      "DO": [
+        "10.1007/978-3-642-37456-2_14"
+      ],
+      "UR": [
+        "https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14"
+      ]
+    },
+    {
+      "ID": [
+        "R05"
+      ],
+      "AU": [
+        "Campello, Ricardo J. G. B.",
+        "Moulavi, Davoud",
+        "Zimek, Arthur",
+        "Sander, Jörg"
+      ],
+      "TI": [
+        "Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection"
+      ],
+      "PY": [
+        "2015"
+      ],
+      "JO": [
+        "ACM Transactions on Knowledge Discovery from Data"
+      ],
+      "VL": [
+        "10"
+      ],
+      "IS": [
+        "1"
+      ],
+      "SP": [
+        "5:1"
+      ],
+      "EP": [
+        "5:51"
+      ],
+      "C7": [
+        "5"
+      ],
+      "DO": [
+        "10.1145/2733381"
+      ],
+      "UR": [
+        "https://doi.org/10.1145/2733381"
+      ],
+      "DA": [
+        "2015/07/22"
+      ]
+    },
+    {
+      "ID": [
+        "R06"
+      ],
+      "AU": [
+        "McInnes, Leland",
+        "Healy, John",
+        "Astels, Steve"
+      ],
+      "TI": [
+        "hdbscan: Hierarchical density based clustering"
+      ],
+      "PY": [
+        "2017"
+      ],
+      "JO": [
+        "Journal of Open Source Software"
+      ],
+      "VL": [
+        "2"
+      ],
+      "IS": [
+        "11"
+      ],
+      "SP": [
+        "205"
+      ],
+      "DO": [
+        "10.21105/joss.00205"
+      ],
+      "UR": [
+        "https://joss.theoj.org/papers/10.21105/joss.00205"
+      ],
+      "DA": [
+        "2017/03/21"
+      ]
+    },
+    {
+      "ID": [
+        "R07"
+      ],
+      "AU": [
+        "Minderhoud, Michiel M.",
+        "Bovy, Piet H.L."
+      ],
+      "TI": [
+        "Extended time-to-collision measures for road traffic safety assessment"
+      ],
+      "PY": [
+        "2001"
+      ],
+      "JO": [
+        "Accident Analysis & Prevention"
+      ],
+      "VL": [
+        "33"
+      ],
+      "IS": [
+        "1"
+      ],
+      "SP": [
+        "89"
+      ],
+      "EP": [
+        "97"
+      ],
+      "DO": [
+        "10.1016/S0001-4575(00)00019-1"
+      ],
+      "UR": [
+        "https://doi.org/10.1016/S0001-4575(00)00019-1"
+      ]
+    },
+    {
+      "ID": [
+        "R08"
+      ],
+      "AU": [
+        "Hubert, Lawrence",
+        "Arabie, Phipps"
+      ],
+      "TI": [
+        "Comparing partitions"
+      ],
+      "PY": [
+        "1985"
+      ],
+      "JO": [
+        "Journal of Classification"
+      ],
+      "VL": [
+        "2"
+      ],
+      "IS": [
+        "1"
+      ],
+      "SP": [
+        "193"
+      ],
+      "EP": [
+        "218"
+      ],
+      "DO": [
+        "10.1007/BF01908075"
+      ],
+      "UR": [
+        "https://link.springer.com/article/10.1007/BF01908075"
+      ]
+    },
+    {
+      "ID": [
+        "R09"
+      ],
+      "AU": [
+        "Manning, Christopher D.",
+        "Raghavan, Prabhakar",
+        "Schütze, Hinrich"
+      ],
+      "TI": [
+        "Introduction to Information Retrieval"
+      ],
+      "PY": [
+        "2008"
+      ],
+      "PB": [
+        "Cambridge University Press"
+      ],
+      "DO": [
+        "10.1017/CBO9780511809071"
+      ],
+      "UR": [
+        "https://nlp.stanford.edu/IR-book/"
+      ]
+    },
+    {
+      "ID": [
+        "R10"
+      ],
+      "AU": [
+        "Efron, B."
+      ],
+      "TI": [
+        "Bootstrap Methods: Another Look at the Jackknife"
+      ],
+      "PY": [
+        "1979"
+      ],
+      "JO": [
+        "The Annals of Statistics"
+      ],
+      "VL": [
+        "7"
+      ],
+      "IS": [
+        "1"
+      ],
+      "DO": [
+        "10.1214/aos/1176344552"
+      ],
+      "UR": [
+        "https://doi.org/10.1214/aos/1176344552"
+      ]
+    },
+    {
+      "ID": [
+        "R11"
+      ],
+      "AU": [
+        "Field, C. A.",
+        "Welsh, A. H."
+      ],
+      "TI": [
+        "Bootstrapping Clustered Data"
+      ],
+      "PY": [
+        "2007"
+      ],
+      "JO": [
+        "Journal of the Royal Statistical Society Series B: Statistical Methodology"
+      ],
+      "VL": [
+        "69"
+      ],
+      "IS": [
+        "3"
+      ],
+      "SP": [
+        "369"
+      ],
+      "EP": [
+        "390"
+      ],
+      "DO": [
+        "10.1111/j.1467-9868.2007.00593.x"
+      ],
+      "UR": [
+        "https://doi.org/10.1111/j.1467-9868.2007.00593.x"
+      ]
+    },
+    {
+      "ID": [
+        "R12"
+      ],
+      "AU": [
+        "Gettman, Douglas",
+        "Pu, Lili",
+        "Sayed, Tarek",
+        "Shelby, Steve"
+      ],
+      "TI": [
+        "Surrogate Safety Assessment Model and Validation: Final Report"
+      ],
+      "PY": [
+        "2008"
+      ],
+      "PB": [
+        "Federal Highway Administration"
+      ],
+      "UR": [
+        "https://www.fhwa.dot.gov/publications/research/safety/08051/"
+      ],
+      "M1": [
+        "FHWA-HRT-08-051"
+      ],
+      "DA": [
+        "2008/06"
+      ]
+    }
+  ],
+  "verification_scope": [
+    "Exact parent rollback only for original prose/formulas/numbers",
+    "Reference ID/anchor and RIS core-field transcription",
+    "New annotations require independent review; original verifier does not validate them"
+  ],
+  "not_claimed": [
+    "Formal citation style or author acceptance",
+    "Full text/formula audit of original papers",
+    "Formal feature/model/evaluation approval",
+    "New experiment or efficiency results"
+  ]
+}
+

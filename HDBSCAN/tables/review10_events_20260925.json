@@ -1,0 +1,336 @@
+{
+  "created_at_utc": "2026-09-25T02:41:44.604356+00:00",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "HDBSCAN/scripts/audit_interaction_events.py",
+    "--audit",
+    "HDBSCAN/tables/review10_trajectory_audit_20260925.json",
+    "--features",
+    "HDBSCAN/tables/scene_features_review10_20260925.csv",
+    "--output-prefix",
+    "HDBSCAN/tables/review10_events_20260925"
+  ],
+  "scope": "development",
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_review10_20260925.csv",
+      "sha256": "39c9dd1a136cc5758529636c966f2566d2eb7647c5b6fdeedcb636d22c212887"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review10_trajectory_audit_20260925.json",
+      "sha256": "6d367f099279eda9534f85961915890a6560788d3027c434ec6bc2537dccb725"
+    }
+  ],
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\audit_interaction_events.py",
+    "sha256": "4d3e324c0bd71fc78644cdd5672f3f6579d17f9bb58e0f14887e30da419ebe91"
+  },
+  "markdown": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\review10_events_20260925.md",
+    "sha256": "af1a9f195806bc46f2d87c4eff96a92c6cb7d14d0d8f1160182b1b5edb00a31d"
+  },
+  "scenes": {
+    "scene-0007": [],
+    "scene-0011": [],
+    "scene-0026": [],
+    "scene-0030": [
+      {
+        "scene_name": "scene-0030",
+        "scene_token": "82aef599650d462db73731b7ff40918b",
+        "event_type": "low_speed_stop",
+        "instance_token": "",
+        "category": "",
+        "start_s": 16.8486750125885,
+        "end_s": 18.998038053512573,
+        "observed_span_s": 2.1493630409240723,
+        "frame_count": 5,
+        "phase": "during_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 0.13984759137009417,
+        "ego_speed_max": 0.8639687920648779,
+        "stop_sign_context_observed": true,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0042": [],
+    "scene-0053": [],
+    "scene-0055": [],
+    "scene-0056": [],
+    "scene-0067": [
+      {
+        "scene_name": "scene-0067",
+        "scene_token": "cb0cd06a1dd84271968466d7b65e48f8",
+        "event_type": "predicted_crossing",
+        "instance_token": "30d55e8a3a5b420ea40e230fc112be86",
+        "category": "vehicle.bus.rigid",
+        "start_s": 2.8990039825439453,
+        "end_s": 2.8990039825439453,
+        "observed_span_s": 0.0,
+        "frame_count": 1,
+        "phase": "before_first_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 3.6397149357750185,
+        "ego_speed_max": 3.6397149357750185,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0067",
+        "scene_token": "cb0cd06a1dd84271968466d7b65e48f8",
+        "event_type": "low_speed_stop",
+        "instance_token": "",
+        "category": "",
+        "start_s": 12.34965705871582,
+        "end_s": 15.39867901802063,
+        "observed_span_s": 3.0490219593048096,
+        "frame_count": 7,
+        "phase": "during_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 0.02588758731447039,
+        "ego_speed_max": 0.9466029704266394,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0068": [
+      {
+        "scene_name": "scene-0068",
+        "scene_token": "b0b26c1e5a1140e69598422f12ae1dc0",
+        "event_type": "predicted_crossing",
+        "instance_token": "727349048e9044d98846cbeeb3a1b5fd",
+        "category": "vehicle.truck",
+        "start_s": 7.551222085952759,
+        "end_s": 8.051088094711304,
+        "observed_span_s": 0.4998660087585449,
+        "frame_count": 2,
+        "phase": "no_stop_observed",
+        "related_stop_id": null,
+        "ego_speed_min": 6.418765447911651,
+        "ego_speed_max": 6.700296574215389,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0068",
+        "scene_token": "b0b26c1e5a1140e69598422f12ae1dc0",
+        "event_type": "predicted_crossing",
+        "instance_token": "086c94a711804c6ca0933f21d3570038",
+        "category": "vehicle.car",
+        "start_s": 13.551384925842285,
+        "end_s": 13.551384925842285,
+        "observed_span_s": 0.0,
+        "frame_count": 1,
+        "phase": "no_stop_observed",
+        "related_stop_id": null,
+        "ego_speed_min": 2.2531926398490376,
+        "ego_speed_max": 2.2531926398490376,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0068",
+        "scene_token": "b0b26c1e5a1140e69598422f12ae1dc0",
+        "event_type": "predicted_crossing",
+        "instance_token": "683ac2af5ccf4a868c7d22f16d5b6b8e",
+        "category": "vehicle.bus.bendy",
+        "start_s": 16.501436948776245,
+        "end_s": 18.051368951797485,
+        "observed_span_s": 1.5499320030212402,
+        "frame_count": 4,
+        "phase": "no_stop_observed",
+        "related_stop_id": null,
+        "ego_speed_min": 4.858833463481244,
+        "ego_speed_max": 5.876115880150001,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0068",
+        "scene_token": "b0b26c1e5a1140e69598422f12ae1dc0",
+        "event_type": "predicted_crossing",
+        "instance_token": "934ca5912fa64af48c57015086df8615",
+        "category": "vehicle.bus.bendy",
+        "start_s": 18.551244974136353,
+        "end_s": 19.051110982894897,
+        "observed_span_s": 0.4998660087585449,
+        "frame_count": 2,
+        "phase": "no_stop_observed",
+        "related_stop_id": null,
+        "ego_speed_min": 5.445543290686918,
+        "ego_speed_max": 5.861583701078826,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0073": [
+      {
+        "scene_name": "scene-0073",
+        "scene_token": "5557f4edc1464442812293e2ea90a586",
+        "event_type": "predicted_crossing",
+        "instance_token": "ef7f4554978d4642a1a0963057461f8d",
+        "category": "vehicle.truck",
+        "start_s": 9.499250173568726,
+        "end_s": 11.997533082962036,
+        "observed_span_s": 2.4982829093933105,
+        "frame_count": 6,
+        "phase": "before_first_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 2.14325396207876,
+        "ego_speed_max": 5.638711778962637,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0073",
+        "scene_token": "5557f4edc1464442812293e2ea90a586",
+        "event_type": "predicted_crossing",
+        "instance_token": "c6ca20d3ea564971a3639556bdfcb34d",
+        "category": "vehicle.trailer",
+        "start_s": 11.497666120529175,
+        "end_s": 11.997533082962036,
+        "observed_span_s": 0.49986696243286133,
+        "frame_count": 2,
+        "phase": "before_first_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 2.14325396207876,
+        "ego_speed_max": 2.928447955579034,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0073",
+        "scene_token": "5557f4edc1464442812293e2ea90a586",
+        "event_type": "low_speed_stop",
+        "instance_token": "",
+        "category": "",
+        "start_s": 12.997853994369507,
+        "end_s": 14.49857497215271,
+        "observed_span_s": 1.5007209777832031,
+        "frame_count": 4,
+        "phase": "during_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 0.5791298261402174,
+        "ego_speed_max": 0.9604447590084676,
+        "stop_sign_context_observed": true,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0073",
+        "scene_token": "5557f4edc1464442812293e2ea90a586",
+        "event_type": "predicted_crossing",
+        "instance_token": "c43ceb86fe894276adf3d53c5d31be91",
+        "category": "vehicle.car",
+        "start_s": 16.900070190429688,
+        "end_s": 17.400504112243652,
+        "observed_span_s": 0.5004339218139648,
+        "frame_count": 2,
+        "phase": "after_last_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 2.6999245466828405,
+        "ego_speed_max": 2.902752977667851,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0074": [
+      {
+        "scene_name": "scene-0074",
+        "scene_token": "78c5f7d7b547483c906d8524a8c3190f",
+        "event_type": "low_speed_stop",
+        "instance_token": "",
+        "category": "",
+        "start_s": 0.5004169940948486,
+        "end_s": 2.500653028488159,
+        "observed_span_s": 2.0002360343933105,
+        "frame_count": 5,
+        "phase": "during_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 0.06376027162055727,
+        "ego_speed_max": 0.7798483774420968,
+        "stop_sign_context_observed": true,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0097": [
+      {
+        "scene_name": "scene-0097",
+        "scene_token": "2eb4d7f00e584a548aa0b899638bfb0a",
+        "event_type": "low_speed_stop",
+        "instance_token": "",
+        "category": "",
+        "start_s": 0.4998819828033447,
+        "end_s": 8.249608039855957,
+        "observed_span_s": 7.749726057052612,
+        "frame_count": 16,
+        "phase": "during_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 1.2297188817634169e-08,
+        "ego_speed_max": 0.7627741490578311,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0103": [
+      {
+        "scene_name": "scene-0103",
+        "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+        "event_type": "predicted_crossing",
+        "instance_token": "dc762bf1bc694d3e8141bf592f9b1456",
+        "category": "vehicle.car",
+        "start_s": 6.399435043334961,
+        "end_s": 6.399435043334961,
+        "observed_span_s": 0.0,
+        "frame_count": 1,
+        "phase": "no_stop_observed",
+        "related_stop_id": null,
+        "ego_speed_min": 5.246666714495385,
+        "ego_speed_max": 5.246666714495385,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      }
+    ],
+    "scene-0109": [],
+    "scene-0122": [
+      {
+        "scene_name": "scene-0122",
+        "scene_token": "e6cb595f6df44b3999db28c65f2244ac",
+        "event_type": "predicted_crossing",
+        "instance_token": "a745648fa2324541b94aa6e022c4b280",
+        "category": "vehicle.car",
+        "start_s": 5.451627016067505,
+        "end_s": 6.951274871826172,
+        "observed_span_s": 1.499647855758667,
+        "frame_count": 4,
+        "phase": "before_first_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 5.77794613665083,
+        "ego_speed_max": 6.613258118050915,
+        "stop_sign_context_observed": false,
+        "stop_reason": "undetermined"
+      },
+      {
+        "scene_name": "scene-0122",
+        "scene_token": "e6cb595f6df44b3999db28c65f2244ac",
+        "event_type": "low_speed_stop",
+        "instance_token": "",
+        "category": "",
+        "start_s": 11.94893193244934,
+        "end_s": 14.500842094421387,
+        "observed_span_s": 2.551910161972046,
+        "frame_count": 6,
+        "phase": "during_stop",
+        "related_stop_id": 1,
+        "ego_speed_min": 0.006712999851292787,
+        "ego_speed_max": 0.719526433450045,
+        "stop_sign_context_observed": true,
+        "stop_reason": "undetermined"
+      }
+    ]
+  },
+  "note": "Temporal evidence only; stop reason undetermined. No score changes."
+}

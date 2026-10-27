@@ -1,0 +1,17 @@
+test_unknown_bracket_geometry_keeps_valid_within_horizon_proximity (HDBSCAN.tests.test_crossing_candidate_v5_2.CrossingV52Tests) ... FAIL
+
+======================================================================
+FAIL: test_unknown_bracket_geometry_keeps_valid_within_horizon_proximity (HDBSCAN.tests.test_crossing_candidate_v5_2.CrossingV52Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_2.py", line 46, in test_unknown_bracket_geometry_keeps_valid_within_horizon_proximity
+    self.assertEqual(item['state'], 'observed_proximity')
+AssertionError: 'unknown_geometry' != 'observed_proximity'
+- unknown_geometry
++ observed_proximity
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+FAILED (failures=1)

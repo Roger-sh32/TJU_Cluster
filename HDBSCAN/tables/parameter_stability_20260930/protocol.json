@@ -1,0 +1,176 @@
+{
+  "created_at_utc": "2026-09-30T00:28:43.747338+00:00",
+  "stage": "development_parameter_stability",
+  "fit_scope": "development",
+  "scene_count": 700,
+  "semantic_features": [
+    "avg_speed",
+    "speed_std",
+    "avg_vehicle_count",
+    "neighbor_density_std",
+    "neighbor_speed_std",
+    "pedestrian_nearby_ratio",
+    "pedestrian_front_ratio",
+    "ego_avg_speed",
+    "ego_speed_std",
+    "ego_heading_change_total",
+    "ego_stopped_at_scene_start",
+    "ego_stop_from_motion_flag",
+    "ego_restart_after_stop_flag",
+    "car_following_ratio",
+    "following_max_duration",
+    "merge_exposure_ratio",
+    "merge_observed_relevance_ratio",
+    "merge_lane_entry_relevance_ratio",
+    "adjacent_lane_intrusion_ratio",
+    "side_entry_candidate_ratio",
+    "overtaking_exposure_ratio",
+    "crossing_vehicle_exposure_ratio",
+    "crossing_route_conflict_ratio",
+    "left_turn_crossing_yield_ratio",
+    "left_turn_cross_traffic_interaction_ratio",
+    "vru_crossing_exposure_ratio",
+    "same_lane_vru_exposure_ratio",
+    "same_direction_vru_ratio",
+    "vru_path_conflict_ratio",
+    "vru_observed_relevance_ratio",
+    "vru_crosswalk_conflict_ratio",
+    "obstacle_avoidance_vru_conflict_ratio",
+    "oncoming_during_avoidance_ratio",
+    "stationary_lead_obstacle_ratio",
+    "temporarily_stopped_lead_ratio",
+    "blocked_path_obstacle_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand",
+    "ego_evasive_lane_change_flag",
+    "truck_bus_dynamic_ratio",
+    "bicycle_ratio",
+    "motorcycle_ratio",
+    "two_wheeler_dynamic_ratio",
+    "intersection_density",
+    "lane_connector_density",
+    "ped_crossing_density",
+    "intersection_stop_ratio",
+    "traffic_light_control_density",
+    "stop_sign_control_density",
+    "stop_sign_stop_candidate",
+    "turn_stop_control_density",
+    "non_signalized_intersection_density"
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv",
+    "sha256": "b1d11f454f13ecac463c5fcc279f9d08d4c4c9d0ce76364f64e4d85a88e30ec3"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "extraction_manifest": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.manifest.json",
+    "sha256": "93cc883ead4f904aa3d3e788dd9e6a3410b37328cffec82b50cfc216259dffcf"
+  },
+  "quality": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_development_audit700_20260927.csv.quality.json",
+    "sha256": "b05d6f47e296074efc3117c486160040fa5166c0eb010f7951bfd3a44e3ee58b"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\parameter_stability.py",
+    "sha256": "c5fdac205be26c2df0242d246f17ade0862649ee74fc3ae15272ba501495643d"
+  },
+  "comparison_code": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\seed_stability.py",
+    "sha256": "96f7886d3522b8bcbce82c9e6bb2bbc516ee3fb235c5d6d77acf4fe405f8ff9d"
+  },
+  "sources": {
+    "frozen_model.py": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552",
+    "corner_scoring.py": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620",
+    "feature_selection.py": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee",
+    "scene_feature_rules.py": "d36d2eb2229cc40ff27d2f50b398681bb964a4b9da6e6b587fd0afc0097313cc",
+    "scene_feature_hdbscan.py": "a11c0e1ee604e1e2a546f7c1fb99955bef0a0e353ba776567d764535378a827d",
+    "experiment_partition.py": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db",
+    "extraction_audit.py": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+  },
+  "runtime": {
+    "python": "3.9.23",
+    "platform": "Windows",
+    "numpy": "1.24.4",
+    "pandas": "2.3.1",
+    "scikit-learn": "1.3.2",
+    "umap-learn": "0.5.5",
+    "hdbscan": "0.8.39",
+    "numba": "0.58.1",
+    "joblib": "1.5.1"
+  },
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-umap-smoke\\python.exe",
+    "HDBSCAN/scripts/parameter_stability.py",
+    "--input",
+    "HDBSCAN/tables/scene_features_development_audit700_20260927.csv",
+    "--output-dir",
+    "HDBSCAN/tables/parameter_stability_20260930"
+  ],
+  "seeds": [
+    42,
+    7,
+    19,
+    73,
+    101
+  ],
+  "configurations": [
+    {
+      "id": "n15_s1",
+      "n_neighbors": 15,
+      "min_samples": 1,
+      "min_cluster_size": 20
+    },
+    {
+      "id": "n15_s5",
+      "n_neighbors": 15,
+      "min_samples": 5,
+      "min_cluster_size": 20
+    },
+    {
+      "id": "n30_s1",
+      "n_neighbors": 30,
+      "min_samples": 1,
+      "min_cluster_size": 20
+    },
+    {
+      "id": "n30_s5",
+      "n_neighbors": 30,
+      "min_samples": 5,
+      "min_cluster_size": 20
+    }
+  ],
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1"
+  },
+  "umap_fixed": {
+    "min_dist": 0.0,
+    "n_components": 10,
+    "metric": "cosine",
+    "n_jobs": 1,
+    "low_memory": true
+  },
+  "hdbscan_fixed": {
+    "min_cluster_size": 20,
+    "prediction_data": true
+  },
+  "score_weights": {
+    "rarity": 0.2,
+    "atypical_norm": 0.25,
+    "risk": 0.55
+  },
+  "top_k": 20,
+  "selected_configuration": null,
+  "limitations": [
+    "No expert labels, held-out prediction, best-seed or automatic parameter selection.",
+    "Largest cluster fraction excludes noise in numerator but includes all scenes in denominator.",
+    "ARI includes noise as a label; joint-nonnoise ARI and subset size are also reported.",
+    "Stability alone does not establish useful clusters or meaningful risk rankings.",
+    "Degenerate means fewer than two nonnoise clusters; no dominance cutoff selected."
+  ]
+}

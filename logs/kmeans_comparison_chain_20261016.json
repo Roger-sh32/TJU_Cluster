@@ -1,0 +1,671 @@
+{
+  "scope": "Read-only comparison-chain audit; two development-only preflights; NO FIT",
+  "created_at_utc": "2026-10-16T13:41:18.850027+00:00",
+  "python": {
+    "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "bytes": 96256,
+    "sha256": "102dc158e0428a9ee945f010b33acf67091575725042ba537dcc8371efef0e14"
+  },
+  "parent_pair": {
+    "path": "F:\\Scene_cluster\\logs\\entry_guard_pair_verified_20261016.json",
+    "bytes": 4960,
+    "sha256": "115ea08753c103ec02836ef7895ce418a35c2536c9f5b4aabeb89f9deb8b7512"
+  },
+  "sources": [
+    {
+      "path": "F:\\Scene_cluster\\Kmeans\\scripts\\kmeans_semantic_baseline.py",
+      "bytes": 14797,
+      "sha256": "cf482dd4efd8a539fe22ac29a630bb1a5419d388bce4566b2400c32dd530cd93"
+    },
+    {
+      "path": "F:\\Scene_cluster\\Kmeans\\tests\\test_kmeans_semantic_baseline.py",
+      "bytes": 4306,
+      "sha256": "057f92b603ad703a111e5d843fc7693f325b81e594bb86b05969458a776b00bb"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py",
+      "bytes": 3402,
+      "sha256": "be1ffc107673436b2adc348fab4c2b6864635774361ec83ec3d74e38d6c26a7f"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+      "bytes": 8223,
+      "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "bytes": 2153,
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py",
+      "bytes": 12595,
+      "sha256": "981f38c264c883c0c4d423a9b9c8941ddad4541510f2e1858dc0dfc6c30bf552"
+    }
+  ],
+  "input_binding": {
+    "features": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+      "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93"
+    },
+    "manifest": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+      "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c"
+    },
+    "stage": "candidate_feature_replay"
+  },
+  "split": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "bytes": 99110,
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "bytes": 45134,
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff"
+    }
+  ],
+  "environment_overrides": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "MKL_THREADING_LAYER": "SEQUENTIAL",
+    "SCENE_CLUSTER_FEATURE_INPUT": "scene_features_longitudinal_v7_replay29_20261015.csv",
+    "SCENE_CLUSTER_CLUSTER_OUTPUT": "_readonly_chain_audit_20261016.csv",
+    "SCENE_CLUSTER_CLUSTER_FIGURE": "_readonly_chain_audit_20261016.png"
+  },
+  "source_calls": {
+    "main": [
+      {
+        "name": "argparse.ArgumentParser",
+        "line": 18
+      },
+      {
+        "name": "parser.add_argument",
+        "line": 19
+      },
+      {
+        "name": "parser.parse_args",
+        "line": 20
+      },
+      {
+        "name": "output.with_suffix",
+        "line": 24
+      },
+      {
+        "name": "load_development_features",
+        "line": 25
+      },
+      {
+        "name": "require_feature_provenance",
+        "line": 27
+      },
+      {
+        "name": "assert_new_outputs",
+        "line": 28
+      },
+      {
+        "name": "dict",
+        "line": 38
+      },
+      {
+        "name": "dict",
+        "line": 40
+      },
+      {
+        "name": "StandardScaler",
+        "line": 41
+      },
+      {
+        "name": "umap.UMAP",
+        "line": 42
+      },
+      {
+        "name": "scaler.fit_transform",
+        "line": 43
+      },
+      {
+        "name": "reducer.fit_transform",
+        "line": 44
+      },
+      {
+        "name": "hdbscan.HDBSCAN",
+        "line": 45
+      },
+      {
+        "name": "clusterer.fit_predict",
+        "line": 46
+      },
+      {
+        "name": "raw.copy",
+        "line": 47
+      },
+      {
+        "name": "range",
+        "line": 48
+      },
+      {
+        "name": "validate_cluster_columns",
+        "line": 53
+      },
+      {
+        "name": "save_model",
+        "line": 54
+      },
+      {
+        "name": "result.to_csv",
+        "line": 55
+      },
+      {
+        "name": "write_run_manifest",
+        "line": 56
+      },
+      {
+        "name": "print",
+        "line": 60
+      },
+      {
+        "name": "PICTURES_DIR.mkdir",
+        "line": 68
+      },
+      {
+        "name": "plt.figure",
+        "line": 69
+      },
+      {
+        "name": "plt.scatter",
+        "line": 70
+      },
+      {
+        "name": "plt.title",
+        "line": 71
+      },
+      {
+        "name": "plt.savefig",
+        "line": 72
+      },
+      {
+        "name": "plt.close",
+        "line": 73
+      },
+      {
+        "name": "os.getenv",
+        "line": 21
+      },
+      {
+        "name": "os.getenv",
+        "line": 22
+      },
+      {
+        "name": "os.getenv",
+        "line": 23
+      },
+      {
+        "name": "preflight",
+        "line": 30
+      },
+      {
+        "name": "matplotlib.use",
+        "line": 63
+      },
+      {
+        "name": "provenance_path",
+        "line": 28
+      },
+      {
+        "name": "file_record",
+        "line": 58
+      },
+      {
+        "name": "print",
+        "line": 66
+      },
+      {
+        "name": "len",
+        "line": 60
+      }
+    ],
+    "kmeans": [
+      {
+        "name": "Path(input_path).resolve",
+        "line": 227
+      },
+      {
+        "name": "load_development_features",
+        "line": 228
+      },
+      {
+        "name": "assert_new_outputs",
+        "line": 230
+      },
+      {
+        "name": "select_supported_features",
+        "line": 236
+      },
+      {
+        "name": "StandardScaler().fit_transform",
+        "line": 244
+      },
+      {
+        "name": "StandardScaler().fit_transform",
+        "line": 245
+      },
+      {
+        "name": "representations.update",
+        "line": 247
+      },
+      {
+        "name": "representations.update",
+        "line": 250
+      },
+      {
+        "name": "min",
+        "line": 259
+      },
+      {
+        "name": "representations.items",
+        "line": 260
+      },
+      {
+        "name": "pd.DataFrame",
+        "line": 275
+      },
+      {
+        "name": "reliability_mask",
+        "line": 276
+      },
+      {
+        "name": "select_candidate",
+        "line": 277
+      },
+      {
+        "name": "str",
+        "line": 278
+      },
+      {
+        "name": "int",
+        "line": 279
+      },
+      {
+        "name": "KMeans",
+        "line": 281
+      },
+      {
+        "name": "final_model.fit_predict",
+        "line": 286
+      },
+      {
+        "name": "TABLES_DIR.mkdir",
+        "line": 288
+      },
+      {
+        "name": "PICTURES_DIR.mkdir",
+        "line": 289
+      },
+      {
+        "name": "metrics_df.sort_values(['variant', 'k']).to_csv",
+        "line": 297
+      },
+      {
+        "name": "raw.copy",
+        "line": 298
+      },
+      {
+        "name": "clustered.to_csv",
+        "line": 302
+      },
+      {
+        "name": "pd.Series(labels, name='cluster').value_counts().sort_index().rename_axis('cluster').reset_index",
+        "line": 305
+      },
+      {
+        "name": "sizes.to_csv",
+        "line": 312
+      },
+      {
+        "name": "pd.DataFrame",
+        "line": 314
+      },
+      {
+        "name": "standardized.groupby('cluster').mean().reset_index",
+        "line": 316
+      },
+      {
+        "name": "profiles.insert",
+        "line": 318
+      },
+      {
+        "name": "profiles.to_csv",
+        "line": 319
+      },
+      {
+        "name": "_save_debug_plot",
+        "line": 321
+      },
+      {
+        "name": "summary_path.write_text",
+        "line": 380
+      },
+      {
+        "name": "write_run_manifest",
+        "line": 384
+      },
+      {
+        "name": "print",
+        "line": 387
+      },
+      {
+        "name": "report_preflight",
+        "line": 234
+      },
+      {
+        "name": "build_representations",
+        "line": 248
+      },
+      {
+        "name": "build_representations",
+        "line": 251
+      },
+      {
+        "name": "int",
+        "line": 259
+      },
+      {
+        "name": "range",
+        "line": 261
+      },
+      {
+        "name": "len",
+        "line": 276
+      },
+      {
+        "name": "len",
+        "line": 277
+      },
+      {
+        "name": "len",
+        "line": 311
+      },
+      {
+        "name": "sizes.set_index",
+        "line": 317
+      },
+      {
+        "name": "profiles['cluster'].map",
+        "line": 318
+      },
+      {
+        "name": "str",
+        "line": 335
+      },
+      {
+        "name": "int",
+        "line": 336
+      },
+      {
+        "name": "int",
+        "line": 337
+      },
+      {
+        "name": "list",
+        "line": 338
+      },
+      {
+        "name": "int",
+        "line": 339
+      },
+      {
+        "name": "int",
+        "line": 340
+      },
+      {
+        "name": "list",
+        "line": 341
+      },
+      {
+        "name": "list",
+        "line": 345
+      },
+      {
+        "name": "_json_safe",
+        "line": 347
+      },
+      {
+        "name": "_json_safe",
+        "line": 348
+      },
+      {
+        "name": "_json_safe",
+        "line": 349
+      },
+      {
+        "name": "int",
+        "line": 350
+      },
+      {
+        "name": "int",
+        "line": 355
+      },
+      {
+        "name": "json.dumps",
+        "line": 381
+      },
+      {
+        "name": "json.dumps",
+        "line": 387
+      },
+      {
+        "name": "Path",
+        "line": 227
+      },
+      {
+        "name": "StandardScaler",
+        "line": 244
+      },
+      {
+        "name": "StandardScaler",
+        "line": 245
+      },
+      {
+        "name": "len",
+        "line": 259
+      },
+      {
+        "name": "int",
+        "line": 261
+      },
+      {
+        "name": "evaluate_kmeans",
+        "line": 262
+      },
+      {
+        "name": "metrics.update",
+        "line": 263
+      },
+      {
+        "name": "rows.append",
+        "line": 273
+      },
+      {
+        "name": "metrics_df.sort_values",
+        "line": 297
+      },
+      {
+        "name": "pd.Series(labels, name='cluster').value_counts().sort_index().rename_axis",
+        "line": 305
+      },
+      {
+        "name": "standardized.groupby('cluster').mean",
+        "line": 316
+      },
+      {
+        "name": "metrics_df[metrics_df['variant'].str.startswith('raw_')].sort_values",
+        "line": 328
+      },
+      {
+        "name": "metrics_df[metrics_df['variant'].str.startswith('supported_')].sort_values",
+        "line": 331
+      },
+      {
+        "name": "len",
+        "line": 336
+      },
+      {
+        "name": "int",
+        "line": 344
+      },
+      {
+        "name": "int",
+        "line": 344
+      },
+      {
+        "name": "raw_best.to_dict",
+        "line": 348
+      },
+      {
+        "name": "supported_best.to_dict",
+        "line": 349
+      },
+      {
+        "name": "metrics_df[metrics_df['variant'].str.startswith('raw_')]['reliable'].sum",
+        "line": 351
+      },
+      {
+        "name": "metrics_df[metrics_df['variant'].str.startswith('supported_')]['reliable'].sum",
+        "line": 356
+      },
+      {
+        "name": "float",
+        "line": 361
+      },
+      {
+        "name": "float",
+        "line": 364
+      },
+      {
+        "name": "str",
+        "line": 369
+      },
+      {
+        "name": "str",
+        "line": 370
+      },
+      {
+        "name": "str",
+        "line": 371
+      },
+      {
+        "name": "str",
+        "line": 372
+      },
+      {
+        "name": "str",
+        "line": 385
+      },
+      {
+        "name": "list",
+        "line": 385
+      },
+      {
+        "name": "provenance_path",
+        "line": 232
+      },
+      {
+        "name": "pd.Series(labels, name='cluster').value_counts().sort_index",
+        "line": 305
+      },
+      {
+        "name": "standardized.groupby",
+        "line": 316
+      },
+      {
+        "name": "variant.startswith",
+        "line": 269
+      },
+      {
+        "name": "metrics_df['variant'].str.startswith",
+        "line": 328
+      },
+      {
+        "name": "metrics_df['variant'].str.startswith",
+        "line": 332
+      },
+      {
+        "name": "pd.Series(labels, name='cluster').value_counts",
+        "line": 305
+      },
+      {
+        "name": "metrics_df['variant'].str.startswith",
+        "line": 351
+      },
+      {
+        "name": "metrics_df['variant'].str.startswith",
+        "line": 356
+      },
+      {
+        "name": "pd.Series",
+        "line": 305
+      }
+    ]
+  },
+  "rows": [
+    {
+      "entry": "main",
+      "command": [
+        "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "HDBSCAN/scripts/cluster_umap_hdbscan.py",
+        "--preflight"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py\", line 77, in <module>\n    main()\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\cluster_umap_hdbscan.py\", line 27, in main\n    require_feature_provenance(input_path, raw)\n  File \"F:\\Scene_cluster\\HDBSCAN\\scripts\\frozen_model.py\", line 63, in require_feature_provenance\n    raise ValueError('Feature extraction version/provenance mismatch')\nValueError: Feature extraction version/provenance mismatch\n",
+      "timed_out": false,
+      "started_at_utc": "2026-10-16T13:41:14.092537+00:00",
+      "elapsed_seconds": 0.7339999999967404,
+      "timeout_seconds": 20
+    },
+    {
+      "entry": "kmeans",
+      "command": [
+        "D:/Python/Conda/envs/autodrive-cluster/python.exe",
+        "-X",
+        "utf8",
+        "-u",
+        "Kmeans/scripts/kmeans_semantic_baseline.py",
+        "--input",
+        "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+        "--output-prefix",
+        "_readonly_chain_audit_20261016",
+        "--preflight"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"stage\": \"kmeans_fit\",\n  \"preflight_only\": true,\n  \"fit_scope\": \"development\",\n  \"scene_count\": 29,\n  \"split_sha256\": \"0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa\",\n  \"semantic_feature_count\": 52\n}\n",
+      "stderr": "",
+      "timed_out": false,
+      "started_at_utc": "2026-10-16T13:41:14.839216+00:00",
+      "elapsed_seconds": 4.01600000000326,
+      "timeout_seconds": 20
+    }
+  ],
+  "sources_and_input_unchanged": true,
+  "experiment_outputs_absent": true,
+  "planned_output_paths": [
+    "F:\\Scene_cluster\\Kmeans\\tables\\_readonly_chain_audit_20261016_metrics.csv",
+    "F:\\Scene_cluster\\Kmeans\\tables\\_readonly_chain_audit_20261016_clusters.csv",
+    "F:\\Scene_cluster\\Kmeans\\tables\\_readonly_chain_audit_20261016_cluster_sizes.csv",
+    "F:\\Scene_cluster\\Kmeans\\tables\\_readonly_chain_audit_20261016_profiles.csv",
+    "F:\\Scene_cluster\\Kmeans\\tables\\_readonly_chain_audit_20261016_summary.json",
+    "F:\\Scene_cluster\\Kmeans\\tables\\_readonly_chain_audit_20261016_clusters.csv.manifest.json",
+    "F:\\Scene_cluster\\Kmeans\\pictures\\_readonly_chain_audit_20261016_pca.png",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\_readonly_chain_audit_20261016.csv",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\_readonly_chain_audit_20261016.csv.manifest.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\_readonly_chain_audit_20261016.model",
+    "F:\\Scene_cluster\\HDBSCAN\\pictures\\_readonly_chain_audit_20261016.png"
+  ]
+}

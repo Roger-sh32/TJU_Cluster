@@ -1,0 +1,9 @@
+{
+  "stage": "candidate_feature_extraction",
+  "preflight_only": true,
+  "fit_scope": "development",
+  "scene_count": 29,
+  "split_sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+  "semantic_feature_count": null
+}
+PREPARED:29 development scenes; independent v5, v4 unchanged

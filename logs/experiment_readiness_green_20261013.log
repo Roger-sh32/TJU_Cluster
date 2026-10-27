@@ -1,0 +1,8 @@
+test_bound_report_refuses_changed_linked_artifact (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_output_scope_refuses_outside_deliverables (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+test_synthetic_fixture_never_uses_real_scene_or_expert_ids (logs.test_experiment_readiness_20261013.ReadinessContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.156s
+
+OK

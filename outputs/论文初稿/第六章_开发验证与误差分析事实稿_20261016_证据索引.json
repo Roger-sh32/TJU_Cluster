@@ -1,0 +1,257 @@
+{
+  "stage": "development_experiment_writing_not_formal_results",
+  "document": {
+    "path": "F:\\Scene_cluster\\outputs\\论文初稿\\第六章_开发验证与误差分析事实稿_20261016.md",
+    "bytes": 17478,
+    "sha256": "ff4e7f589edda61ab9592de2e07b0804f2276143f3274454e6ed9a360bd776d4"
+  },
+  "sources": {
+    "E01": [
+      {
+        "path": "F:\\Scene_cluster\\knowledge\\wiki\\独立评价与专家盲评协议.md",
+        "bytes": 7729,
+        "sha256": "bdd31422b2ff04ceacad6591333fc7b42f16842d1118e7b862ea5d93aeed7bbd"
+      },
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+        "bytes": 45134,
+        "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff"
+      }
+    ],
+    "E02": [
+      {
+        "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_20261015.md",
+        "bytes": 22165,
+        "sha256": "e3cd1034ba06ce052db5ed0ef6f129e1090e6ecf412faff40c2cbe675fd6b536"
+      }
+    ],
+    "E03": [
+      {
+        "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261016\\执行链路审计与恢复顺序.md",
+        "bytes": 9088,
+        "sha256": "caa139000d77bc9fd44dbdfe9df3eddc430e28e4fb9def50ab1f3f8a43264716"
+      }
+    ],
+    "E04": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_fit_summary_20260927.json",
+        "bytes": 12458,
+        "sha256": "4e547383a6bc84c60bd43a1bea32c8e3c8c3357007bbefff25aa18ae8b52f5b8"
+      }
+    ],
+    "E05": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\development_candidate700_comparison_20261001.json",
+        "bytes": 15483,
+        "sha256": "96ab2e1f8cc99bb5bf2d64ace048d40ec26cb1212d2350a21748fe866a6b515e"
+      }
+    ],
+    "E06": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_comparison_20261014.json",
+        "bytes": 4409,
+        "sha256": "3b811a32cc26a11a647b9c6acede9759a5f2a569c59a0945b877c85161d4cbbb"
+      }
+    ],
+    "E07": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_comparison_20261015.json",
+        "bytes": 2694,
+        "sha256": "9cc0ff917895087587155ea65611099043ba288a8ec7f64513d1945c92bcc42a"
+      }
+    ],
+    "E08": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+        "bytes": 14970,
+        "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3"
+      },
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+        "bytes": 1131507,
+        "sha256": "a3082bb3d7be151e1a38bb611436bec36e01d15cc7317912565caedacbaa1667"
+      },
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\longitudinal_candidate_v7.py",
+        "bytes": 10953,
+        "sha256": "33059b93410c70148d161ce7adf94c1d58f1e96167edff31ce0f9157c76c5a3e"
+      },
+      {
+        "path": "F:\\Scene_cluster\\logs\\longitudinal_v7_replay_20261015.py",
+        "bytes": 20751,
+        "sha256": "f3fe00f96a3c6a07c2d890712ffa4227146dff0d90c46d3dfc6701fea5fa0fac"
+      }
+    ],
+    "E09": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\parameter_stability_20260930\\summary.json",
+        "bytes": 49797,
+        "sha256": "d66eba709c2de095874ab8d79a2b9508e2c96e3116959dd81b579a3a7297c356"
+      }
+    ],
+    "E10": [
+      {
+        "path": "F:\\Scene_cluster\\logs\\development_review_feedback10_20261014.md",
+        "bytes": 10908,
+        "sha256": "dca63c1c71621d1f4d94fcbe9f28493ba936b2dac16c5ef6ea42005aabd2ffcd"
+      }
+    ],
+    "E11": [
+      {
+        "path": "F:\\Scene_cluster\\outputs\\人工复核\\短暂静态障碍与持续受阻对照_20261015.md",
+        "bytes": 4609,
+        "sha256": "700439848687b2436aae57f6c691c1e097c1772791984e53a5215e1760423182"
+      },
+      {
+        "path": "F:\\Scene_cluster\\logs\\short_static_diagnosis_v2_evidence_20261015.json",
+        "bytes": 69831,
+        "sha256": "ad06afda49ee0682e9c61fc0da58a2c5bb4fee42a875c40f672adbccd94eac2b"
+      }
+    ],
+    "E12": [
+      {
+        "path": "F:\\Scene_cluster\\outputs\\人工复核\\0552部分占道绕行根因诊断_20261016.md",
+        "bytes": 6149,
+        "sha256": "e8b3d464c0411713212883a6251c942e67828736804471884879bb09b5504983"
+      },
+      {
+        "path": "F:\\Scene_cluster\\logs\\partial_bypass_evidence_20261016.json",
+        "bytes": 75356,
+        "sha256": "ea0b21f0e5d9970a140bc6173430817fbdef5aecbad3dd4aca400a90e06b2da7"
+      },
+      {
+        "path": "F:\\Scene_cluster\\logs\\partial_bypass_review_followup_20261016.md",
+        "bytes": 1833,
+        "sha256": "bdf17d8424c8c87f5cfb1ccc3b701263bdefdaa086a0408fe9909add0a87e355"
+      }
+    ],
+    "E13": [
+      {
+        "path": "F:\\Scene_cluster\\outputs\\人工复核\\纵向绕行保护根因诊断_20261015.md",
+        "bytes": 3881,
+        "sha256": "e5aadbf6a3813f801ef0e6ed93db21ec3d8f7060a3a290df2cce2fd6627428f0"
+      },
+      {
+        "path": "F:\\Scene_cluster\\logs\\longitudinal_protection_diagnosis_v1_evidence_20261015.json",
+        "bytes": 42863,
+        "sha256": "f02e2b1be109667aaeaa4d020b6a4e0a892b789cc492681d3c60249aa0532767"
+      }
+    ],
+    "E14": [
+      {
+        "path": "F:\\Scene_cluster\\knowledge\\wiki\\nuScenes数据能力与特征边界_20261016.md",
+        "bytes": 6148,
+        "sha256": "4379659d4361994442a995976d5929103b6581a3189b66839d05fa89a8d9bd7c"
+      }
+    ],
+    "E15": [
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\media_recovery_audit_20261011.json",
+        "bytes": 10792,
+        "sha256": "ec708a4c29f1320a2b585b25ccef82efd95d63fb098af1e6c8f1fd6c3f7add3f"
+      }
+    ],
+    "E16": [
+      {
+        "path": "F:\\Scene_cluster\\logs\\experiment_readiness_20261013.md",
+        "bytes": 6094,
+        "sha256": "d0f0e3356b972c2ce9ffa5262de564056788e84bb6b227e73c44ec2bcfd8bc3f"
+      },
+      {
+        "path": "F:\\Scene_cluster\\outputs\\实验准备\\20261016\\专家盲评填写说明_待校准.md",
+        "bytes": 4839,
+        "sha256": "0da78f003b276394b4f3680f128c211ea261b7e98e242df13dee427c0b34232a"
+      },
+      {
+        "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\evaluation_metrics.py",
+        "bytes": 9287,
+        "sha256": "1c4f1cf858953a4244cb19d5ed3313a752105c1c109784c4f9a9915f1ebbe7dc"
+      }
+    ]
+  },
+  "facts": {
+    "split": {
+      "development": 700,
+      "evaluation": 150
+    },
+    "logs": {
+      "development": 56,
+      "evaluation": 12
+    },
+    "historical_fit": [
+      700,
+      52,
+      12,
+      54
+    ],
+    "v4": [
+      700,
+      129,
+      52,
+      0
+    ],
+    "comparisons": {
+      "E06": {
+        "scenes": 29,
+        "changed_scenes": 4,
+        "cells": 10,
+        "clustering_cells": 1
+      },
+      "E07": {
+        "scenes": 29,
+        "changed_scenes": 1,
+        "cells": 1,
+        "clustering_cells": 1
+      },
+      "E08": {
+        "scenes": 29,
+        "changed_scenes": 6,
+        "cells": 75,
+        "clustering_cells": 13
+      }
+    },
+    "historical_parameter_runs": [
+      4,
+      5,
+      20
+    ],
+    "v7_ledger_and_gated": [
+      393,
+      13
+    ],
+    "v6_1_local_ratio": [
+      0.23076923076923078,
+      0.2564102564102564
+    ],
+    "partial55_shift_turn": [
+      22.541793628621864,
+      0.9758343992821115
+    ],
+    "partial55_late_window": {
+      "index": 33,
+      "instance_token": "07e9396834cb433ea84ebaa6fa58195d",
+      "available_future_s": 3.4471418857574463,
+      "window_s_requested": 10.0,
+      "horizon_complete": false,
+      "existing_shift_function_m": 2.118125394958779,
+      "existing_heading_function_rad": 0.15979419599327851
+    }
+  },
+  "original_writing_index": {
+    "path": "F:\\Scene_cluster\\outputs\\论文初稿\\方法与开发验证事实稿_20261015_证据索引.json",
+    "bytes": 7101,
+    "sha256": "d7b82321ea70e63293a20668ea88d99763597b8a9692465095a9ccdaf0d18ac9"
+  },
+  "source_binding_count": 26,
+  "new_experiments": false,
+  "evaluation_semantics_accessed": false,
+  "author_accepted": false,
+  "check_scope": "Source/document hashes, registered summary values, selected prose snippets and E IDs only; not all prose/formulas/semantics",
+  "created_at_utc": "2026-10-16T13:08:05.169722+00:00",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "python_version": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:49:16) [MSC v.1929 64 bit (AMD64)]",
+  "command": [
+    "experiment_chapter_documented_recipe",
+    "--register"
+  ]
+}

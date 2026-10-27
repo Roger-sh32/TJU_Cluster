@@ -1,0 +1,68 @@
+test_between_frame_close_pass_cannot_be_cleared_by_distant_endpoints (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_crosswise_long_vehicle_end_protects_actual_proximity (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_heading_after_anchor_horizon_cannot_relabel_earlier_exposure (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_inputs_are_not_mutated (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_invalid_ego_timeline_fails_closed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_left_interaction_does_not_leak_to_another_target_or_late_episode (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_cannot_override_between_frame_uncertainty (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_legacy_rejection_with_unknown_heading_stays_unknown (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_low_speed_or_braking_protection_survives_spatial_miss (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_missing_actor_frame_cannot_clear_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_near_horizon_bracketing_sample_is_not_missing_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... FAIL
+test_no_link_to_stop_beyond_response_horizon (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_observed_near_end_is_not_downgraded_to_unknown_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_old_projection_rejection_remains_explicit (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_one_frame_speed_dip_is_not_sustained_soft_response (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_short_future_is_unknown_not_negative_or_confirmed (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_spatial_overlap_without_simultaneous_arrival_is_contradicted (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_straight_driving_prediction_not_cleared_by_turn_filter (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_sustained_soft_deceleration_preserves_rolling_yield_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+test_unknown_candidate_is_not_an_interaction_anchor (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_geometry_does_not_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_unknown_heading_cannot_certify_separation (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ok
+test_wait_then_release_link_protects_same_target_not_later_other_target (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests) ... ERROR
+
+======================================================================
+ERROR: test_no_link_to_stop_beyond_response_horizon (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 54, in test_no_link_to_stop_beyond_response_horizon
+    flags = local_left_interaction_flags(times, yaws, tracks, [], [False]*len(times), speeds)
+TypeError: local_left_interaction_flags() takes 5 positional arguments but 6 were given
+
+======================================================================
+ERROR: test_one_frame_speed_dip_is_not_sustained_soft_response (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 31, in test_one_frame_speed_dip_is_not_sustained_soft_response
+    self.assertFalse(item['soft_deceleration_response'])
+KeyError: 'soft_deceleration_response'
+
+======================================================================
+ERROR: test_sustained_soft_deceleration_preserves_rolling_yield_candidate (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 24, in test_sustained_soft_deceleration_preserves_rolling_yield_candidate
+    self.assertTrue(item['soft_deceleration_response'])
+KeyError: 'soft_deceleration_response'
+
+======================================================================
+ERROR: test_wait_then_release_link_protects_same_target_not_later_other_target (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 43, in test_wait_then_release_link_protects_same_target_not_later_other_target
+    flags = local_left_interaction_flags(times, yaws, tracks, [], [False]*len(times), speeds)
+TypeError: local_left_interaction_flags() takes 5 positional arguments but 6 were given
+
+======================================================================
+FAIL: test_near_horizon_bracketing_sample_is_not_missing_future (HDBSCAN.tests.test_crossing_candidate_v5_1.CrossingV51Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_crossing_candidate_v5_1.py", line 17, in test_near_horizon_bracketing_sample_is_not_missing_future
+    self.assertTrue(item['future_complete'])
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.037s
+
+FAILED (failures=1, errors=4)

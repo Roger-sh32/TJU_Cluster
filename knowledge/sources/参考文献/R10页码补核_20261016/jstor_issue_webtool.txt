@@ -1,0 +1,201 @@
+Vol. 7, No. 1, Jan., 1979 of The Annals of Statistics | JSTOR (https://www.jstor.org/stable/i348796)
+citeturn37view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.jstor.org/stable/i348796","lineno":25}); Total lines: 241
+L0: cite0†Google Tag Manager†www.googletagmanager.com L1: 
+L2: The Annals of S...Vol. 7, No. 1, ...
+L3: 
+L4: cite1†Image: Cover of The Annals of Statistics L5: 
+L6: Vol. 7, No. 1, Jan., 1979 The Annals of Statistics
+L7: 
+L8: Published by: Institute of Mathematical Statistics
+L9: 
+L10: https://www.jstor.org/stable/i348796
+L11: 
+L12: cite2†Submissions†imstat.org L13: cite3†Journal Home Page†imstat.org L14: cite4†Subscribe†imstat.org L15: 
+L16: Table of Contents
+L17: 
+L18: Previous issue Next issue
+L19: 
+L20: Select all
+L21: 
+L22:   1. Front Matter
+L23: 
+L24: Front Matter
+L25: 
+L26: https://www.jstor.org/stable/2958829
+L27: 
+L28: cite5†XML L29:   2. The 1977 Rietz Lecture
+L30:      * Bootstrap Methods: Another Look at the Jackknife
+L31: 
+L32: Bootstrap Methods: Another Look at the Jackknife (pp. 1-26)
+L33: 
+L34: B. Efron
+L35: 
+L36: https://www.jstor.org/stable/2958830
+L37: 
+L38: cite6†XML L39: 
+L40:   3. Optimum Significance Levels for Multistage Comparison Procedures
+L41: 
+L42: Optimum Significance Levels for Multistage Comparison Procedures (pp. 27-45)
+L43: 
+L44: E. L. Lehmann and Juliet Popper Shaffer
+L45: 
+L46: https://www.jstor.org/stable/2958831
+L47: 
+L48: cite7†XML L49: cite8†Optimum Significance Levels for Multistage Comparison Procedures cite9†Download L50: 
+L51:   4. Sequential Tests for Hypergeometric Distributions and Finite Populations
+L52: 
+L53: Sequential Tests for Hypergeometric Distributions and Finite Populations (pp. 46-59)
+L54: 
+L55: Tze Leung Lai
+L56: 
+L57: https://www.jstor.org/stable/2958832
+L58: 
+L59: cite10†XML L60: 
+L61: cite11†Sequential Tests for Hypergeometric Distributions and Finite Populations cite12†Download L62: 
+L63:   5. A Nonlinear Renewal Theory with Applications to Sequential Analysis II
+L64: A Nonlinear Renewal Theory with Applications to Sequential Analysis II (pp. 60-76)
+L65: 
+L66: T. L. Lai and D. Siegmund
+L67: 
+L68: https://www.jstor.org/stable/2958833
+L69: 
+L70: cite13†XML L71: 
+L72: cite14†A Nonlinear Renewal Theory with Applications to Sequential Analysis II cite15†Download L73: 
+L74:   6. Robustness of Design Against Autocorrelation in Time I: Asymptotic Theory, Optimality for Location and Linear Regression
+L75: 
+L76: Robustness of Design Against Autocorrelation in Time I: Asymptotic Theory, Optimality for Location and Linear Regression (pp. 77-95)
+L77: P. J. Bickel and Agnes M. Herzberg
+L78: 
+L79: https://www.jstor.org/stable/2958834
+L80: 
+L81: cite16†XML L82: 
+L83: cite17†Robustness of Design Against Autocorrelation in Time I: Asymptotic Theory, Optimality for Location and Linear Regression cite18†Download L84: 
+L85:   7. On the Relation Between Fitting Autoregression and Periodogram with Applications
+L86: 
+L87: On the Relation Between Fitting Autoregression and Periodogram with Applications (pp. 96-107)
+L88: 
+L89: Hideaki Sakai, Takashi Soeda and Hidekatsu Tokumaru
+L90: 
+L91: https://www.jstor.org/stable/2958835
+L92: 
+L93: cite19†XML L94: cite20†On the Relation Between Fitting Autoregression and Periodogram with Applications cite21†Download L95: 
+L96:   8. The Asymptotic Distribution of the Supremum of the Standardized Empirical Distribution Function on Subintervals
+L97: 
+L98: The Asymptotic Distribution of the Supremum of the Standardized Empirical Distribution Function on Subintervals (pp. 108-115)
+L99: 
+L100: D. Jaeschke
+L101: 
+L102: https://www.jstor.org/stable/2958836
+L103: 
+L104: cite22†XML L105: cite23†The Asymptotic Distribution of the Supremum of the Standardized Empirical Distribution Function on Subintervals cite24†Download L106: 
+L107:   9. The Asymptotic Distribution of the Suprema of the Standardized Empirical Processes
+L108: 
+L109: The Asymptotic Distribution of the Suprema of the Standardized Empirical Processes (pp. 116-138)
+L110: 
+L111: F. Eicker
+L112: 
+L113: https://www.jstor.org/stable/2958837
+L114: 
+L115: cite25†XML L116: 
+L117: cite26†The Asymptotic Distribution of the Suprema of the Standardized Empirical Processes cite27†Download L118:   10. Contributions to the Theory of Nonparametric Regression, with Application to System Identification
+L119: 
+L120: Contributions to the Theory of Nonparametric Regression, with Application to System Identification (pp. 139-149)
+L121: 
+L122: E. Schuster and S. Yakowitz
+L123: 
+L124: https://www.jstor.org/stable/2958838
+L125: 
+L126: cite28†XML L127: 
+L128: cite29†Contributions to the Theory of Nonparametric Regression, with Application to System Identification cite30†Download L129: 
+L130:   11. Testing for Ellipsoidal Symmetry of a Multivariate Density
+L131: Testing for Ellipsoidal Symmetry of a Multivariate Density (pp. 150-162)
+L132: 
+L133: Rudolf Beran
+L134: 
+L135: https://www.jstor.org/stable/2958839
+L136: 
+L137: cite31†XML L138: 
+L139: cite32†Testing for Ellipsoidal Symmetry of a Multivariate Density cite33†Download L140: 
+L141:   12. Bayesian Nonparametric Estimation Based on Censored Data
+L142: 
+L143: Bayesian Nonparametric Estimation Based on Censored Data (pp. 163-186)
+L144: 
+L145: Thomas S. Ferguson and Eswar G. Phadia
+L146: 
+L147: https://www.jstor.org/stable/2958840
+L148: 
+L149: cite34†XML L150: cite35†Bayesian Nonparametric Estimation Based on Censored Data cite36†Download L151: 
+L152:   13. On Optimal Median Unbiased Estimators in the Presence of Nuisance Parameters
+L153: 
+L154: On Optimal Median Unbiased Estimators in the Presence of Nuisance Parameters (pp. 187-193)
+L155: 
+L156: J. Pfanzagl
+L157: 
+L158: https://www.jstor.org/stable/2958841
+L159: 
+L160: cite37†XML L161: 
+L162: cite38†On Optimal Median Unbiased Estimators in the Presence of Nuisance Parameters cite39†Download L163: 
+L164:   14. Characterizations of Estimability in the General Linear Model
+L165: Characterizations of Estimability in the General Linear Model (pp. 194-200)
+L166: 
+L167: I. S. Alalouf and G. P. H. Styan
+L168: 
+L169: https://www.jstor.org/stable/2958842
+L170: 
+L171: cite40†XML L172: 
+L173: cite41†Characterizations of Estimability in the General Linear Model cite42†Download L174: 
+L175:   15. On Estimating the Slope of a Straight Line when Both Variables are Subject to Error
+L176: 
+L177: On Estimating the Slope of a Straight Line when Both Variables are Subject to Error (pp. 201-206)
+L178: 
+L179: Clifford Spiegelman
+L180: 
+L181: https://www.jstor.org/stable/2958843
+L182: 
+L183: cite43†XML L184: cite44†On Estimating the Slope of a Straight Line when Both Variables are Subject to Error cite45†Download L185: 
+L186:   16. Identification and Selection Procedures Based on Tests
+L187: 
+L188: Identification and Selection Procedures Based on Tests (pp. 207-219)
+L189: 
+L190: Klaus J. Miescke
+L191: 
+L192: https://www.jstor.org/stable/2958844
+L193: 
+L194: cite46†XML L195: 
+L196: cite47†Identification and Selection Procedures Based on Tests cite48†Download L197: 
+L198:   17. Short Communications
+L199:      * Bounds on Expectations of Linear Systematic Statistics Based on Dependent Samples
+L200: Bounds on Expectations of Linear Systematic Statistics Based on Dependent Samples (pp. 220-223)
+L201: 
+L202: Barry C. Arnold and Richard A. Groeneveld
+L203: 
+L204: https://www.jstor.org/stable/2958845
+L205: 
+L206: cite49†XML L207: 
+L208: cite50†Bounds on Expectations of Linear Systematic Statistics Based on Dependent Samples cite51†Download L209: 
+L210:      * Further Remarks on Robust Estimation in Dependent Situations
+L211: 
+L212: Further Remarks on Robust Estimation in Dependent Situations (pp. 224-231)
+L213: 
+L214: Stephen L. Portnoy
+L215: 
+L216: https://www.jstor.org/stable/2958846
+L217: 
+L218: cite52†XML L219: cite53†Further Remarks on Robust Estimation in Dependent Situations cite54†Download L220: 
+L221:      * Differential Relations, in the Original Parameters, which Determine the First Two Moments of the Multiparameter Exponential Family
+L222: 
+L223: Differential Relations, in the Original Parameters, which Determine the First Two Moments of the Multiparameter Exponential Family (pp. 232-235)
+L224: 
+L225: Richard A. Johnson, J. Ladalla and S. T. Liu
+L226: 
+L227: https://www.jstor.org/stable/2958847
+L228: 
+L229: cite55†XML L230: cite56†Differential Relations, in the Original Parameters, which Determine the First Two Moments of the Multiparameter Exponential Family cite57†Download L231: 
+L232:   18. Back Matter
+L233: 
+L234: Back Matter
+L235: 
+L236: https://www.jstor.org/stable/2958848
+L237: 
+L238: cite58†XML L239: 
+L240: cite59†Image: Institute of Mathematical Statistics logo 

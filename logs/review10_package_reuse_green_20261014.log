@@ -1,0 +1,15 @@
+test_camera_path_cannot_escape_source_dataset (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_exact_fixed_ten_current_development_only (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_export_failure_preserves_original_seal_and_does_not_rewrite_completion (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_identity_mismatch_and_duplicate_or_extra_selection_refused (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_missing_front_keyframes_cannot_silently_fallback_or_replace (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_missing_sweeps_fallback_is_explicit_and_uses_only_real_keyframes (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_reuse_strips_historical_feature_rank_and_pending_annotations (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_runtime_mismatch_is_refused (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_ten_cards_embed_media_without_claiming_blind_evaluation (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+test_verifier_rejects_redirected_protocol_even_with_same_seal (logs.test_review10_package_20261014.ReviewPackageContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.421s
+
+OK

@@ -1,0 +1,28 @@
+test_compare_rejects_changed_summary_and_check_requires_original_digest (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_future_keeps_legacy_window_and_real_bracket_without_extrapolation (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_human_chain_cannot_cross_scene_or_drop_next (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_only_selected_humans_retained_before_geometry_access (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_original_helpers_preserve_velocity_and_do_not_execute_main (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_outputs_refuse_existing_file (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_positive_and_empty_human_replay_keeps_censored_candidates (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_raw_instance_endpoints_cannot_point_to_another_human (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_scope_refuses_evaluation_duplicate_or_changed_members (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_stream_accepts_small_chunks_and_rejects_malformed_arrays (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_summary_counts_candidate_frames_not_target_count (logs.test_collect_human_evidence_20261024.HumanEvidenceTest) ... ok
+test_anchor_identity_and_raw_flag_mismatch_fail (logs.test_analyze_human_candidates_20261024.CandidateAnalysisTest) ... ok
+test_original_confirmation_conditions_are_separate_not_safety_labels (logs.test_analyze_human_candidates_20261024.CandidateAnalysisTest) ... ok
+test_prediction_uses_original_linear_inputs_without_new_gate (logs.test_analyze_human_candidates_20261024.CandidateAnalysisTest) ... ok
+test_true_observed_positive_is_not_cleared_by_walkway_or_short_future (logs.test_analyze_human_candidates_20261024.CandidateAnalysisTest) ... ok
+test_hand_stability_uses_birth_and_child_size (logs.test_hdbscan_semantics_20261024.SemanticsTest) ... ok
+test_native_synthetic_counterexample_and_eom_leaf (logs.test_hdbscan_semantics_20261024.SemanticsTest) ... ok
+test_original_digest_is_required_and_mismatch_rejected (logs.test_hdbscan_semantics_20261024.SemanticsTest) ... ok
+test_probe_has_no_estimator_fit_or_scene_loading (logs.test_hdbscan_semantics_20261024.SemanticsTest) ... ok
+test_ast_weights_are_extracted_without_importing_production (logs.test_verify_scoring_chapter_20261024.WritingChecks) ... ok
+test_document_rejects_missing_unknown_fact_and_unclosed_math (logs.test_verify_scoring_chapter_20261024.WritingChecks) ... ok
+test_refuse_existing_index_and_require_original_digest (logs.test_verify_scoring_chapter_20261024.WritingChecks) ... ok
+test_registered_source_values_and_hand_example (logs.test_verify_scoring_chapter_20261024.WritingChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.251s
+
+OK

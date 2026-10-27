@@ -1,0 +1,14 @@
+test_positive_control_gate_refuses_lost_yield_and_preserves_input (logs.test_crossing_v5_1_regression_20261013.RegressionContracts) ... ERROR
+
+======================================================================
+ERROR: test_positive_control_gate_refuses_lost_yield_and_preserves_input (logs.test_crossing_v5_1_regression_20261013.RegressionContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_crossing_v5_1_regression_20261013.py", line 89, in test_positive_control_gate_refuses_lost_yield_and_preserves_input
+    from logs.crossing_v5_1_regression_20261013 import check_positive_controls
+ImportError: cannot import name 'check_positive_controls' from 'logs.crossing_v5_1_regression_20261013' (F:\Scene_cluster\logs\crossing_v5_1_regression_20261013.py)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.048s
+
+FAILED (errors=1)

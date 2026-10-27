@@ -1,0 +1,93 @@
+test_missing_static_target_identity_is_not_guessed (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_no_static_flags_proves_no_absence_of_obstacles (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_parent_diagnosis_original_seal_required (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_same_anchor_can_have_both_roles (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_selected_and_stationary_identity_must_match (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_static_anchor_survives_absent_blocked_flag (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_static_and_minimum_event_roles_do_not_collapse (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+test_strict_boolean_static_flags (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests) ... FAIL
+
+======================================================================
+FAIL: test_missing_static_target_identity_is_not_guessed (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 22, in test_missing_static_target_identity_is_not_guessed
+    self.module().static_anchors(trace)
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_no_static_flags_proves_no_absence_of_obstacles (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 31, in test_no_static_flags_proves_no_absence_of_obstacles
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_parent_diagnosis_original_seal_required (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 54, in test_parent_diagnosis_original_seal_required
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_same_anchor_can_have_both_roles (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 50, in test_same_anchor_can_have_both_roles
+    roles = self.module().anchor_roles({(1, 'a')}, dict(frame_index=1, instance_token='a'))
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_selected_and_stationary_identity_must_match (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 28, in test_selected_and_stationary_identity_must_match
+    self.module().static_anchors(trace)
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_static_anchor_survives_absent_blocked_flag (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 13, in test_static_anchor_survives_absent_blocked_flag
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_static_and_minimum_event_roles_do_not_collapse (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 43, in test_static_and_minimum_event_roles_do_not_collapse
+    m = self.module()
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+======================================================================
+FAIL: test_strict_boolean_static_flags (logs.test_short_static_diagnosis_v2_20261015.ShortStaticTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 40, in test_strict_boolean_static_flags
+    self.module().static_anchors(trace)
+  File "F:\Scene_cluster\logs\test_short_static_diagnosis_v2_20261015.py", line 8, in module
+    self.assertIsNotNone(importlib.util.find_spec('logs.diagnose_short_static_v2_20261015'))
+AssertionError: unexpectedly None
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=8)

@@ -21,3 +21,7 @@
 *.pptx binary
 *.xls binary
 *.xlsx binary
+
+# Provenance records bind exact bytes, including line endings.
+# Override the earlier normalization rules without changing file contents.
+* -text !eol

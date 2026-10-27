@@ -1,0 +1,94 @@
+{
+  "created_at_utc": "2026-10-13T01:29:47.211487+00:00",
+  "stage": "candidate_feature_extraction",
+  "fit_scope": "development",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan_v5_1.py"
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+    "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+  },
+  "output": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_1_regression29_20261013.csv",
+    "sha256": "750bb31b8edbc9b225535337fa2dfdbab681d60b66b0c3898f0d3588b8e17d0e"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan_v5_1.py",
+    "sha256": "7bcc14fb14d21c39e066e6624b3b09bcb170e31dd1c2c7c21a830f4ca1d6d0b2"
+  },
+  "guard": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+    "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db"
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+  },
+  "scene_names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "semantic_features": [],
+  "extra": {
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d"
+    },
+    "candidate_version": "crossing_candidate_v5_1_20261013",
+    "candidate_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\crossing_candidate_v5_1.py",
+      "sha256": "52001d905243d500d566c8c1b83db622ec8a093c1a625e63268ec8f0ea2dc2c8"
+    },
+    "base_extractor": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+      "sha256": "2c0d6b2b46e573af3f559d7c6e0f750697d4868bc22ce4e6e1f04a6c60781859"
+    },
+    "formal_fit_allowed": false,
+    "extraction_audit_code": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\extraction_audit.py",
+      "sha256": "6f5a4f2ed1c3a59a8962842b184d900509434cafd4bd9c3e1ca7590a8c789707"
+    },
+    "quality_audit": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_1_regression29_20261013.csv.quality.json",
+      "sha256": "592b4b0a455bfc2e39ad2c26572b4b1a88b1a77e15e5c79600840ecec1891894"
+    },
+    "trajectory_audit": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_1_regression29_trajectory_20261013.json",
+      "sha256": "d31e72e51bcef12fe5fff16ad27057fbf0f6b07beb760fa4a36717b76d289f92"
+    }
+  }
+}

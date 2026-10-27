@@ -1,0 +1,17 @@
+test_active_frame_without_identity_rejected (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_gap_cannot_be_a_complete_motion_window (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_gap_splits_episode_without_inventing_coverage (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_initial_placeholder_not_an_observed_stop (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_invalid_timeline_and_boolean_anchor_rejected (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_missing_geometry_identity_cannot_be_silently_skipped (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_normal_curve_can_trigger_frozen_raw_rule (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_route_diagnosis_does_not_mutate_protected_source (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_tail_has_unknown_motion_not_safe_zero (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_target_switch_splits_episode (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_wrapped_yaw_not_full_circle_change (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+test_wrong_original_digest_fails_before_reading_protocol (logs.test_longitudinal_protection_diagnosis_v1_20261015.DiagnosisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.622s
+
+OK

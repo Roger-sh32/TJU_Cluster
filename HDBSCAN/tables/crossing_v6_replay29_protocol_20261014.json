@@ -1,0 +1,222 @@
+{
+  "created_at_utc": "2026-10-14T12:57:58.652851+00:00",
+  "version": "crossing_candidate_v6_replay_20261014",
+  "stage": "fixed_before_candidate_replay",
+  "names": [
+    "scene-0002",
+    "scene-0007",
+    "scene-0011",
+    "scene-0014",
+    "scene-0026",
+    "scene-0030",
+    "scene-0032",
+    "scene-0042",
+    "scene-0053",
+    "scene-0055",
+    "scene-0056",
+    "scene-0067",
+    "scene-0068",
+    "scene-0073",
+    "scene-0074",
+    "scene-0093",
+    "scene-0097",
+    "scene-0102",
+    "scene-0103",
+    "scene-0107",
+    "scene-0109",
+    "scene-0122",
+    "scene-0151",
+    "scene-0158",
+    "scene-0453",
+    "scene-0552",
+    "scene-0669",
+    "scene-0815",
+    "scene-0816"
+  ],
+  "scene_tokens": [
+    "c3e0e9f6ee8d4170a3d22a6179f1ca3a",
+    "bc219c0fa63b43b4b9dddab47fce1fef",
+    "c075fbdd97124beaba95bc5c25149f30",
+    "d1e57234fd6a463d963670938f9f556e",
+    "b79d940da8df43d09ee972c2414ffeca",
+    "82aef599650d462db73731b7ff40918b",
+    "9047b53fd41540649dce014a128cbe1b",
+    "c6c092a66329470f836714f46b92d59b",
+    "6d4b2bd795ae4c66900ad98ccd2371a6",
+    "446af4b1d7da4735a607bc3e45c2e0b3",
+    "83773bcf46ac486383529098de0542dd",
+    "cb0cd06a1dd84271968466d7b65e48f8",
+    "b0b26c1e5a1140e69598422f12ae1dc0",
+    "5557f4edc1464442812293e2ea90a586",
+    "78c5f7d7b547483c906d8524a8c3190f",
+    "cba3ddd5c3664a43b6a08e586e094900",
+    "2eb4d7f00e584a548aa0b899638bfb0a",
+    "ddb615d9bb22484cabc6545b632a1025",
+    "fcbccedd61424f1b85dcbf8f897f9754",
+    "3b2ee26cb8484f77895bc336663df502",
+    "fb73d1a6c16147ee9416faf6b310fadb",
+    "e6cb595f6df44b3999db28c65f2244ac",
+    "ba76f4185aa34ed3bff467ac640da902",
+    "c0d3796765e2452d990309b2568adac5",
+    "e0b14a8e11994763acba690bbcc3f56a",
+    "16e50a63b809463099cb4c378fe0641e",
+    "30783e1b472a4101b82be19e41636ba2",
+    "c5b36e5275cc4a2285d095e87347c49a",
+    "0e247ba64b9d4a34a7256b6c173b1b5d"
+  ],
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_protocol_20261013.json",
+      "sha256": "06408591e3646a37e5bbd9824b42bebc17f5794ba7657cf0515ad808abe32846",
+      "bytes": 13595
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_comparison_20261013.json",
+      "sha256": "160b527a62320f5c2715200a14380eebb016069dc8e3b782786ed9198a6a3a46",
+      "bytes": 6815
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv",
+      "sha256": "19108e421555355e82cc4d6ad41defc5f67e075ac8d99bf7db5e253659057333",
+      "bytes": 33934
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv.manifest.json",
+      "sha256": "444553bead871eadff2809d664732c22e880150ab174d60aa5c86d397b9806a4",
+      "bytes": 3458
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv.quality.json",
+      "sha256": "8e661bfbd206231d658381a4b518538ca532a276e5b2365dd60bcb9f0457fac9",
+      "bytes": 9673
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff",
+      "bytes": 45134
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\development_review_feedback10_20261014.md",
+      "sha256": "dca63c1c71621d1f4d94fcbe9f28493ba936b2dac16c5ef6ea42005aabd2ffcd",
+      "bytes": 10908
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\crossing_candidate_v6.py",
+      "sha256": "4403f470ddf11105320a155ce5c22c077a684c189aaae396f50aa73335e0b35d",
+      "bytes": 7176
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_crossing_candidate_v6.py",
+      "sha256": "0a76025063851245b8d9320785be7f536913c927bf8e475b3847c0c94967dfe0",
+      "bytes": 7353
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\crossing_v6_replay_20261014.py",
+      "sha256": "e7baebcedc846f4714b2213b5773284b852689be533f6547b7e47f688fbc3168",
+      "bytes": 19787
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_crossing_v6_replay_20261014.py",
+      "sha256": "bc2c1a0c196b2b61cd35a508d8b619d1c37c7557f370b79d6c32fd2db9513c88",
+      "bytes": 3511
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\crossing_v5_2_regression_20261013.py",
+      "sha256": "3510f6ce862fe082b3c60091a941fd803d9f8d77960063e1668c306b0c8342a4",
+      "bytes": 24155
+    }
+  ],
+  "runtime": {
+    "python": "3.9.23",
+    "executable": {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+      "sha256": "102dc158e0428a9ee945f010b33acf67091575725042ba537dcc8371efef0e14",
+      "bytes": 96256
+    },
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.1",
+      "nuscenes-devkit": "1.2.0",
+      "shapely": "2.0.7",
+      "pyquaternion": "0.9.9"
+    }
+  },
+  "outputs": [
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_replay29_20261014.csv.manifest.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_evidence_20261014.json",
+    "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_replay29_comparison_20261014.json",
+    "F:\\Scene_cluster\\outputs\\人工复核\\横向交互v6重放对照_20261014.md"
+  ],
+  "allowed_changed_columns": [
+    "crossing_conflict_max_duration",
+    "crossing_conflict_post_stop_ratio",
+    "crossing_conflict_pre_stop_ratio",
+    "crossing_route_conflict_max_duration",
+    "crossing_route_conflict_ratio",
+    "crossing_vehicle_conflict_ratio",
+    "left_turn_cross_traffic_interaction_ratio",
+    "obstacle_induced_route_deviation_flag",
+    "route_deviation_decision_demand"
+  ],
+  "event_controls": {
+    "scene-0068": {
+      "crossing": {
+        "727349048e9044d98846cbeeb3a1b5fd": [
+          15,
+          16
+        ]
+      }
+    },
+    "scene-0552": {
+      "local_left": {
+        "8f7327b31d334c768455a9e22adbc6db": [
+          0,
+          1,
+          2
+        ],
+        "8300fb2dc4554627a01ba8a3084325fe": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/crossing_v6_replay_20261014.py",
+    "prepare"
+  ],
+  "geometry_model": "Piecewise-linear centers/sizes; shortest yaw; conservative swept rectangle envelopes",
+  "route_window": "Same-target real six-second bracket versus remaining observed ego route; no extrapolation",
+  "passage": "Require travel and end-clearance gain each >= ego length after closest observed body approach",
+  "clearance_margin_m": 1.0,
+  "ego_length_m": 4.5,
+  "ego_width_m": 2.0,
+  "annotation": "Conditional observed-route filter, not lane identity, causal inference or continuous real-world safety proof",
+  "new_extraction": false,
+  "fit_allowed": false,
+  "evaluation_used": false,
+  "deferred": [
+    "TTC",
+    "VRU",
+    "partial_truck_bypass",
+    "weather",
+    "weights",
+    "full700"
+  ]
+}

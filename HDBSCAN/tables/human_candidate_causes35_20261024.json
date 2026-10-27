@@ -1,0 +1,1768 @@
+{
+  "stage": "development_human_candidate_cause_analysis_only",
+  "created_at_host_utc": "2026-10-24T03:08:04.314991+00:00",
+  "command": [
+    "logs/analyze_human_candidates_20261024.py",
+    "--run"
+  ],
+  "executable": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "inputs": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+      "bytes": 14970,
+      "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60",
+      "bytes": 7367931
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v5_2_regression29_20261013.csv",
+      "bytes": 33934,
+      "sha256": "19108e421555355e82cc4d6ad41defc5f67e075ac8d99bf7db5e253659057333"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\target_diagnosis8_20261012.json",
+      "bytes": 25103,
+      "sha256": "ca28a0801b7269cd61c91f11e7c9e6a8a2b1a57e4c5077d4f5063c1aa0a57df1"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan_v5_2.py",
+      "bytes": 70036,
+      "sha256": "a34af552a0bdc396cec210aed1ebf63c5e20d75c0e084f987e51c1d3302e2974"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "bytes": 30874,
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+      "bytes": 2153,
+      "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\corner_scoring.py",
+      "bytes": 10137,
+      "sha256": "18c9f88e48087017e5615f0639f13503b54d64335264d94df209fcbc7bbec620"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_protocol_20261015.json",
+      "bytes": 8398,
+      "sha256": "ea4d2412a372e475989a96cc3d32e2b1804e4790e335ea55c0aecfb2d0daac3d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_baseline_20261015.json",
+      "bytes": 1177,
+      "sha256": "44aab6ab4b2065d4aa98b9d070324b0c70d071b7198dc372242249ccd3c4d925"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv",
+      "bytes": 33264,
+      "sha256": "0146b494e11a16beb06d248c6e21491b9d1d3a21c5f2b9b5533c9d7eecec2c93"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_longitudinal_v7_replay29_20261015.csv.manifest.json",
+      "bytes": 2287,
+      "sha256": "df8ef20305a122fca8e9a7c2e9fb7d8676a84fd4bc168b278d800d60da8de26c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_ledger_20261015.json",
+      "bytes": 1131507,
+      "sha256": "a3082bb3d7be151e1a38bb611436bec36e01d15cc7317912565caedacbaa1667"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\纵向目标v7固定29条对照_20261015.md",
+      "bytes": 7868,
+      "sha256": "84d1b4ca79395179657918e4f7f21bb38f1354c820026c62be3582d0e03f9a19"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+      "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa",
+      "bytes": 99110
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_protocol_20261015.json",
+      "sha256": "51b6be617bb455bfd44a2d8bcf9010b73ee1d16bc7aa9f60963dacc9186c3209",
+      "bytes": 6936
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_comparison_20261015.json",
+      "sha256": "9cc0ff917895087587155ea65611099043ba288a8ec7f64513d1945c92bcc42a",
+      "bytes": 2694
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv",
+      "sha256": "081a0a13b5ee7e18a38d0e1fdf5e315a15913e65e883ebab36c92f1578f88147",
+      "bytes": 33847
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\scene_features_crossing_v6_1_replay29_20261015.csv.manifest.json",
+      "sha256": "903baff3aa9667e21f502d4ec2125dccaa9085d58a974b94f30669f9c38407f9",
+      "bytes": 2284
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v6_1_replay29_events_20261015.json",
+      "sha256": "cd17b6785a181f6f26bc642d8229e1fdf8ab12fe255b121f955782dc0caabe49",
+      "bytes": 75967
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924_manifest.json",
+      "sha256": "0c144d782950749984ad0d43915c668267f4a374532b9d52ea448cac4bb825ff",
+      "bytes": 45134
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample.json",
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d",
+      "bytes": 7424233
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\sample_annotation.json",
+      "sha256": "1f4f3835cb86f4efe49ccad3ae6f5f6a2d068422696de564c5892b5b06bea2a9",
+      "bytes": 583417244
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\scene.json",
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b",
+      "bytes": 285132
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\evaluation_media_audit_20260926.py",
+      "sha256": "ae06907415d8b3a12eb65ee45c349f209defe99e47fc054c440f4db52f628310",
+      "bytes": 9106
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\longitudinal_candidate_v7.py",
+      "sha256": "33059b93410c70148d161ce7adf94c1d58f1e96167edff31ce0f9157c76c5a3e",
+      "bytes": 10953
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\test_longitudinal_candidate_v7.py",
+      "sha256": "53e25d6521066915f3def82aa3097c86a56c006389df2d7bddf51b60e3613703",
+      "bytes": 8270
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\longitudinal_v7_replay_20261015.py",
+      "sha256": "f3fe00f96a3c6a07c2d890712ffa4227146dff0d90c46d3dfc6701fea5fa0fac",
+      "bytes": 20751
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_longitudinal_v7_replay_20261015.py",
+      "sha256": "53a2b2fedcec85171ec38e1f2944f77c28e47c49e3c224d6fef1f1e290b660ef",
+      "bytes": 4066
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\ttc_scope_diagnosis_20261015.md",
+      "sha256": "bcaf2e4ec0ec736b3c01127b991c781081c9c9941f93716566511bb1ca120cc5",
+      "bytes": 10387
+    },
+    {
+      "path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\Lib\\site-packages\\nuscenes\\map_expansion\\map_api.py",
+      "bytes": 101428,
+      "sha256": "0eb406cfa70acb41cde9b9807b639bf72f83e1b5ba6a836157e5c92e2fec6a67"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\category.json",
+      "bytes": 4747,
+      "sha256": "30f64fb175e5bd7db99892d90f9034481bca491f26600c5c0d1a56106b198dfe"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\boston-seaport.json",
+      "bytes": 16244922,
+      "sha256": "fc33712481efd763be39ce7edca0ec924d2d1fe20e1c89d52e21bf43d86e6b59"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-hollandvillage.json",
+      "bytes": 8203967,
+      "sha256": "0c9209c277686e367b06ab5bbe2547ba357f7f790365cb4927f44ae0f78266b2"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-onenorth.json",
+      "bytes": 13809722,
+      "sha256": "17939122b940d7faff50fa7ff623ded7f739549a781c32dff1ecd1ac7bebca02"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\maps\\expansion\\singapore-queenstown.json",
+      "bytes": 11011530,
+      "sha256": "c7e75f5a5643c4831aae1c99a0fdcc61e9ba3c01f98d922f0fafa34ea1062927"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\vru_evidence_inventory_20261017.json",
+      "bytes": 23204,
+      "sha256": "506c7ecc9c8bff0b33d2c4366410ba65f2ef727140a6ca482506206dee5c70ad"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\nuscenes_capability_inventory_20261016.json",
+      "bytes": 12100,
+      "sha256": "60bdcd2180bd68e854c7234f080271652b8814ed7ef5755776dd1e3b2fcbbdb0"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\collect_human_evidence_20261024.py",
+      "bytes": 35064,
+      "sha256": "f761bce11adcad5c3c00238d10026cb26467e0bfe5b6241192aff16467ad332c"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_collect_human_evidence_20261024.py",
+      "bytes": 11462,
+      "sha256": "9ee483305376afb953cda0e7c2eb304a918dc052032d45fa02a6dca59c66175e"
+    },
+    {
+      "path": "F:\\Scene_cluster\\nuScenes\\v1.0-trainval\\instance.json",
+      "bytes": 16012833,
+      "sha256": "8f8b19496ce45353874714ce23a9df7f47f48cb6203df2dd456ea0247d146461"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024.json",
+      "bytes": 14839364,
+      "sha256": "a80747e508464f6332d7d70dd03122118d1f0afec2a45ca2a48d7e5d7ebb07e4"
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\行人目标证据补充_20261024.md",
+      "bytes": 2635,
+      "sha256": "f2a3280ac43bde80704aaeb21216319b0af0c7622d1423c49624447cf2c38a01"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024_report.json",
+      "bytes": 11068,
+      "sha256": "9035ce0ea61084e5c4fa1c9f195a2c73a15b29680cb423e90e3a0e5dbdb02e18"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\analyze_human_candidates_20261024.py",
+      "bytes": 11408,
+      "sha256": "46b1adc808d72b61428d345ce2e3e5828872ff6d54048f24c4c1fb6b77821d12"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\test_analyze_human_candidates_20261024.py",
+      "bytes": 4854,
+      "sha256": "7954b3c4f3d97fe97bdbe149b1a377093189422f70d0199d984345fe1daa773e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\行人候选逐目标原因对照_20261024.md",
+      "bytes": 5388,
+      "sha256": "5bbc73ae3c012b91d483fb58fa6f7aa8bee2a4294b726881fe1862167080d286"
+    }
+  ],
+  "rows": [
+    {
+      "scene_name": "scene-0007",
+      "index": 19,
+      "time_s": 9.650268077850342,
+      "annotation_token": "70e78bbf1d194a9892441741e0663052",
+      "instance_token": "6065ee5104dc4c948514b15a8cc6bcf0",
+      "category": "human.pedestrian.adult",
+      "forward_m": 17.229083693337728,
+      "lateral_m": 4.550705513685339,
+      "lateral_speed_mps": -0.5393828087172887,
+      "prediction": {
+        "closing_speed_mps": 3.186157248278999,
+        "nominal_overlap_time_s": 5.407480657975688,
+        "predicted_lateral_m": 1.6340034083020005,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 5.122127959889643,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "b9205aac-d98c-4d0f-849a-8df345f71d6d",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.949384927749634,
+        "ego_available_future_s": 9.449527978897095,
+        "target_available_future_s": 9.449527978897095,
+        "first_beyond_horizon_token": "67f8b9571a514b8b883499261932bbb0",
+        "first_beyond_horizon_delta_s": 8.449240922927856,
+        "remaining_chain_max_gap_s": 0.5507159233093262,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0007",
+      "index": 20,
+      "time_s": 10.100391149520874,
+      "annotation_token": "86343ec80dea4bc38a7c6f5f6d2e343d",
+      "instance_token": "6065ee5104dc4c948514b15a8cc6bcf0",
+      "category": "human.pedestrian.adult",
+      "forward_m": 16.119199045257176,
+      "lateral_m": 2.95765920601203,
+      "lateral_speed_mps": -0.3651607700093033,
+      "prediction": {
+        "closing_speed_mps": 3.1916889471182888,
+        "nominal_overlap_time_s": 5.05036653393523,
+        "predicted_lateral_m": 1.1134634736510254,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 5.122127959889643,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "b9205aac-d98c-4d0f-849a-8df345f71d6d",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.999117851257324,
+        "ego_available_future_s": 8.999404907226562,
+        "target_available_future_s": 8.999404907226562,
+        "first_beyond_horizon_token": "7bccfdbb9bc54d118421b1f3d6e6e7fe",
+        "first_beyond_horizon_delta_s": 8.49954080581665,
+        "remaining_chain_max_gap_s": 0.5507159233093262,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0007",
+      "index": 32,
+      "time_s": 16.14865016937256,
+      "annotation_token": "0d08917b2cf64c8a9f868b3eaa9ef4d3",
+      "instance_token": "8ab01204cf0044da909dd285258328c1",
+      "category": "human.pedestrian.adult",
+      "forward_m": 27.001563130214954,
+      "lateral_m": 5.703071607280226,
+      "lateral_speed_mps": -0.904496073184229,
+      "prediction": {
+        "closing_speed_mps": 5.943041318939343,
+        "nominal_overlap_time_s": 4.543391452481763,
+        "predicted_lateral_m": 1.5935918795716804,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 8.52525661783025,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "44d28d30-5028-4454-ac3e-5325daa91c2c",
+        "road_segment": "eed07dd5-7606-4a3f-983b-2c8076f53220"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 2.951145887374878,
+        "ego_available_future_s": 2.951145887374878,
+        "target_available_future_s": 2.951145887374878,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5507159233093262,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 11,
+      "time_s": 5.498090982437134,
+      "annotation_token": "3892c709de6648d2a9714e5435d05f3b",
+      "instance_token": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 29.676767338438005,
+      "lateral_m": 6.102723738020307,
+      "lateral_speed_mps": -0.7147516133662352,
+      "prediction": {
+        "closing_speed_mps": 4.120696745278131,
+        "nominal_overlap_time_s": 7.2018809373546695,
+        "predicted_lateral_m": 0.9551677187745229,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.1855573995227724,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.502007961273193,
+        "ego_available_future_s": 14.002055883407593,
+        "target_available_future_s": 13.000653982162476,
+        "first_beyond_horizon_token": "c4ba30df34ae4593a9f2c4c336612f53",
+        "first_beyond_horizon_delta_s": 8.001354932785034,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 12,
+      "time_s": 5.998003005981445,
+      "annotation_token": "59c6df5a2af7434bacf7c85f0ef8026f",
+      "instance_token": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 27.783735282549323,
+      "lateral_m": 3.725803345054583,
+      "lateral_speed_mps": -0.6217638301522324,
+      "prediction": {
+        "closing_speed_mps": 4.617096758234395,
+        "nominal_overlap_time_s": 6.017577005073202,
+        "predicted_lateral_m": -0.015708381855730202,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.1855573995227724,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.501442909240723,
+        "ego_available_future_s": 13.502143859863281,
+        "target_available_future_s": 12.500741958618164,
+        "first_beyond_horizon_token": "de8e35a997bb46d2b64b8e152a72108c",
+        "first_beyond_horizon_delta_s": 8.00130295753479,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 13,
+      "time_s": 6.498441934585571,
+      "annotation_token": "024519fda10748f09f5a80843082a885",
+      "instance_token": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 18.818347699823708,
+      "lateral_m": 3.3605771953963313,
+      "lateral_speed_mps": -0.41599861557688744,
+      "prediction": {
+        "closing_speed_mps": 4.634083552325507,
+        "nominal_overlap_time_s": 4.060856367248743,
+        "predicted_lateral_m": 1.6712665685642658,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.2965766893720314,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.500864028930664,
+        "ego_available_future_s": 13.001704931259155,
+        "target_available_future_s": 12.501288890838623,
+        "first_beyond_horizon_token": "807185f58a554c08943d498f9604fc66",
+        "first_beyond_horizon_delta_s": 8.100821018218994,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 13,
+      "time_s": 6.498441934585571,
+      "annotation_token": "9f21b537fa4544b5bf570bfd516a12c7",
+      "instance_token": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 25.448194210064823,
+      "lateral_m": 2.5724374548403635,
+      "lateral_speed_mps": -0.5164630800428174,
+      "prediction": {
+        "closing_speed_mps": 4.977420126668658,
+        "nominal_overlap_time_s": 5.112727791193521,
+        "predicted_lateral_m": -0.06809768761995283,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.1855573995227724,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.500864028930664,
+        "ego_available_future_s": 13.001704931259155,
+        "target_available_future_s": 12.000303030014038,
+        "first_beyond_horizon_token": "9adf403111e348589d26fabd625fe99d",
+        "first_beyond_horizon_delta_s": 8.100821018218994,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 14,
+      "time_s": 6.998845815658569,
+      "annotation_token": "7f258ae85ea844d8a43a842a78b6355f",
+      "instance_token": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 16.353413491361565,
+      "lateral_m": 3.107799226185704,
+      "lateral_speed_mps": -0.4157238306229941,
+      "prediction": {
+        "closing_speed_mps": 4.937664451320125,
+        "nominal_overlap_time_s": 3.311973434523147,
+        "predicted_lateral_m": 1.7309329430641471,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.2965766893720314,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.600417137145996,
+        "ego_available_future_s": 12.501301050186157,
+        "target_available_future_s": 12.000885009765625,
+        "first_beyond_horizon_token": "768ba6660edd43c7800e7d5d924a7bf7",
+        "first_beyond_horizon_delta_s": 8.099740028381348,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 15,
+      "time_s": 7.499269962310791,
+      "annotation_token": "bb2dd302b4e146de8cfa817b120c2bdb",
+      "instance_token": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 13.672439516139818,
+      "lateral_m": 3.000067500666111,
+      "lateral_speed_mps": -0.4173799768122962,
+      "prediction": {
+        "closing_speed_mps": 5.319362921642519,
+        "nominal_overlap_time_s": 2.5703152271321295,
+        "predicted_lateral_m": 1.9272693907654108,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.2965766893720314,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.9996678829193115,
+        "ego_available_future_s": 12.000876903533936,
+        "target_available_future_s": 11.500460863113403,
+        "first_beyond_horizon_token": "99a0f0cdd55a4061b06a4b87181cf770",
+        "first_beyond_horizon_delta_s": 8.449213981628418,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 16,
+      "time_s": 7.999135971069336,
+      "annotation_token": "17fcfbda11da41df8221a4ad200087b2",
+      "instance_token": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 10.869340646723318,
+      "lateral_m": 2.8685395300063155,
+      "lateral_speed_mps": -0.41690752747808146,
+      "prediction": {
+        "closing_speed_mps": 5.581503407623885,
+        "nominal_overlap_time_s": 1.9473858301110543,
+        "predicted_lateral_m": 2.0566597185288646,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.2965766893720314,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.949347972869873,
+        "ego_available_future_s": 11.50101089477539,
+        "target_available_future_s": 11.000594854354858,
+        "first_beyond_horizon_token": "adc8abd98a3f41ed9535ef73eaec5d6c",
+        "first_beyond_horizon_delta_s": 8.449225902557373,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 19,
+      "time_s": 9.44953989982605,
+      "annotation_token": "cd8d3a6333d5456f8bb304a1f2875d83",
+      "instance_token": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 3.0812761743692723,
+      "lateral_m": 2.624807472679024,
+      "lateral_speed_mps": -0.7174310354585101,
+      "prediction": {
+        "closing_speed_mps": 5.4800186984339545,
+        "nominal_overlap_time_s": 0.5622747556043596,
+        "predicted_lateral_m": 2.2214141125536075,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.2965766893720314,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.998020887374878,
+        "ego_available_future_s": 10.050606966018677,
+        "target_available_future_s": 9.550190925598145,
+        "first_beyond_horizon_token": "a1c2ad01641b48e8b5e444a8ff1ccbe9",
+        "first_beyond_horizon_delta_s": 8.498456001281738,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 20,
+      "time_s": 9.949440002441406,
+      "annotation_token": "2a543d8b211445b18eebc9b833d403f2",
+      "instance_token": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 0.24067678021218675,
+      "lateral_m": 2.2839306420365952,
+      "lateral_speed_mps": -0.6760506263670831,
+      "prediction": {
+        "closing_speed_mps": 5.869947003659233,
+        "nominal_overlap_time_s": 0.04100152523730668,
+        "predicted_lateral_m": 2.256211535217908,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.2965766893720314,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.998555898666382,
+        "ego_available_future_s": 9.55070686340332,
+        "target_available_future_s": 9.050290822982788,
+        "first_beyond_horizon_token": "6a91207fb51240b9a08269ab1c790e91",
+        "first_beyond_horizon_delta_s": 8.549304962158203,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 20,
+      "time_s": 9.949440002441406,
+      "annotation_token": "7af262a259aa44afa586596ff4de3f42",
+      "instance_token": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 4.756219747774557,
+      "lateral_m": 2.1335188469582174,
+      "lateral_speed_mps": -0.37140213790483667,
+      "prediction": {
+        "closing_speed_mps": 6.224279621712784,
+        "nominal_overlap_time_s": 0.7641397939743829,
+        "predicted_lateral_m": 1.8497156938179702,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.1855573995227724,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.998555898666382,
+        "ego_available_future_s": 9.55070686340332,
+        "target_available_future_s": 8.549304962158203,
+        "first_beyond_horizon_token": "42ba2b5717974b5ebb9bdc9c27f0e1ca",
+        "first_beyond_horizon_delta_s": 8.549304962158203,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 21,
+      "time_s": 10.45042085647583,
+      "annotation_token": "84c0ba8a47234a7797dedf17ef558ef8",
+      "instance_token": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 1.6027650444711483,
+      "lateral_m": 1.9513485557500756,
+      "lateral_speed_mps": -0.5394145873698384,
+      "prediction": {
+        "closing_speed_mps": 6.047871973216578,
+        "nominal_overlap_time_s": 0.265013057744791,
+        "predicted_lateral_m": 1.80839664655905,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.1855573995227724,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.497575044631958,
+        "ego_available_future_s": 9.049726009368896,
+        "target_available_future_s": 8.04832410812378,
+        "first_beyond_horizon_token": "42ba2b5717974b5ebb9bdc9c27f0e1ca",
+        "first_beyond_horizon_delta_s": 8.04832410812378,
+        "remaining_chain_max_gap_s": 0.5999569892883301,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 38,
+      "time_s": 18.999730825424194,
+      "annotation_token": "14f92ebe499848ae9c936cb5669fede4",
+      "instance_token": "fd02193b66f342b1ba7a85583b0c53b9",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 28.45264223542045,
+      "lateral_m": 1.6392979474173899,
+      "lateral_speed_mps": -0.4552830357832247,
+      "prediction": {
+        "closing_speed_mps": 4.119141009203045,
+        "nominal_overlap_time_s": 6.907421273476955,
+        "predicted_lateral_m": -1.5055337794048262,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 26.370739774816634,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 0.5004160404205322,
+        "ego_available_future_s": 0.5004160404205322,
+        "target_available_future_s": 0.5004160404205322,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5004160404205322,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 39,
+      "time_s": 19.500146865844727,
+      "annotation_token": "21fb03be53b84675a41ca0e84e870abc",
+      "instance_token": "fd02193b66f342b1ba7a85583b0c53b9",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 26.33401564151799,
+      "lateral_m": 1.3912355887419086,
+      "lateral_speed_mps": -0.45728166475666265,
+      "prediction": {
+        "closing_speed_mps": 4.239597516210525,
+        "nominal_overlap_time_s": 6.211442369429468,
+        "predicted_lateral_m": -1.449143118490868,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 26.370739774816634,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "a32b19b7-96ca-4d20-92c1-f7025e658dc8",
+        "road_segment": "975129fe-2bd6-4ea6-b17a-6284dd18b39d"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 0.0,
+        "ego_available_future_s": 0.0,
+        "target_available_future_s": 0.0,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.0,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 12,
+      "time_s": 5.998895883560181,
+      "annotation_token": "e7f04e78ec3b420daac06909003893cc",
+      "instance_token": "f69448592eb04b498c87ad273999fa81",
+      "category": "human.pedestrian.police_officer",
+      "forward_m": 4.028228277722136,
+      "lateral_m": -2.4497707743385178,
+      "lateral_speed_mps": 0.45292138216510075,
+      "prediction": {
+        "closing_speed_mps": 6.8345169806184956,
+        "nominal_overlap_time_s": 0.5893947281344816,
+        "predicted_lateral_m": -2.1828212994310245,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.542502795942108,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": "aa22ee59-c9ef-4759-a69c-c295469f3e37"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.850375175476074,
+        "ego_available_future_s": 13.399928092956543,
+        "target_available_future_s": 11.399883031845093,
+        "first_beyond_horizon_token": "152109bf5ef048888d2fae004be70713",
+        "first_beyond_horizon_delta_s": 8.34968900680542,
+        "remaining_chain_max_gap_s": 0.5496671199798584,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 13,
+      "time_s": 6.399247884750366,
+      "annotation_token": "b45841e4f6754990a14e7e069ff8b080",
+      "instance_token": "f69448592eb04b498c87ad273999fa81",
+      "category": "human.pedestrian.police_officer",
+      "forward_m": 1.2057813320909625,
+      "lateral_m": -2.238394926404718,
+      "lateral_speed_mps": 0.399833389256477,
+      "prediction": {
+        "closing_speed_mps": 7.030006808467537,
+        "nominal_overlap_time_s": 0.17151922678632647,
+        "predicted_lateral_m": -2.1698158126360907,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 2.542502795942108,
+      "legacy_enters_ego_lane": true,
+      "legacy_observed_relevant": true,
+      "original_reason": "original_observed_confirmed",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": "aa22ee59-c9ef-4759-a69c-c295469f3e37"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.949337005615234,
+        "ego_available_future_s": 12.999576091766357,
+        "target_available_future_s": 10.999531030654907,
+        "first_beyond_horizon_token": "3c9d9c5a6b3b49b9888ce3a580a087fe",
+        "first_beyond_horizon_delta_s": 8.449764013290405,
+        "remaining_chain_max_gap_s": 0.5496671199798584,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 16,
+      "time_s": 7.849118947982788,
+      "annotation_token": "a933ed6da9ea4a8eaea3506969b3fe60",
+      "instance_token": "f3be212fd74c4256a186476153c80bf3",
+      "category": "human.pedestrian.adult",
+      "forward_m": 28.447047923217312,
+      "lateral_m": -5.612088016097058,
+      "lateral_speed_mps": 0.7928437226404761,
+      "prediction": {
+        "closing_speed_mps": 7.128472796844935,
+        "nominal_overlap_time_s": 3.990623059655637,
+        "predicted_lateral_m": -2.448147573824756,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 9.999679396846092,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.549560070037842,
+        "ego_available_future_s": 11.549705028533936,
+        "target_available_future_s": 11.549705028533936,
+        "first_beyond_horizon_token": "b13f071f2f634ddd89ad3e1120751c64",
+        "first_beyond_horizon_delta_s": 8.049983024597168,
+        "remaining_chain_max_gap_s": 0.5999331474304199,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 21,
+      "time_s": 10.398251056671143,
+      "annotation_token": "d12b202d9ad34e15b36928d25c1de1f9",
+      "instance_token": "f3be212fd74c4256a186476153c80bf3",
+      "category": "human.pedestrian.adult",
+      "forward_m": 14.687438089137288,
+      "lateral_m": -4.252407892453916,
+      "lateral_speed_mps": 0.5679176527819197,
+      "prediction": {
+        "closing_speed_mps": 3.8511734558529325,
+        "nominal_overlap_time_s": 3.8137565751071607,
+        "predicted_lateral_m": -2.086508210037444,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 7.296969862474756,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "14423c8b-a650-4bd3-9baa-69b9bf734128",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.600461006164551,
+        "ego_available_future_s": 9.000572919845581,
+        "target_available_future_s": 9.000572919845581,
+        "first_beyond_horizon_token": "574a2af88bf5423b9edad1cfdd9bee25",
+        "first_beyond_horizon_delta_s": 8.100311994552612,
+        "remaining_chain_max_gap_s": 0.5999331474304199,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 22,
+      "time_s": 10.898125886917114,
+      "annotation_token": "71f16b35d20a494787560bdcc636b0cd",
+      "instance_token": "f3be212fd74c4256a186476153c80bf3",
+      "category": "human.pedestrian.adult",
+      "forward_m": 13.141295178607098,
+      "lateral_m": -3.9747505688333353,
+      "lateral_speed_mps": 1.418392296613442,
+      "prediction": {
+        "closing_speed_mps": 2.87159080152697,
+        "nominal_overlap_time_s": 4.576311907538918,
+        "predicted_lateral_m": 2.516254987720232,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 7.296969862474756,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.600437164306641,
+        "ego_available_future_s": 8.50069808959961,
+        "target_available_future_s": 8.50069808959961,
+        "first_beyond_horizon_token": "b0d6251b71c44edba8129f98d1a25882",
+        "first_beyond_horizon_delta_s": 8.100877046585083,
+        "remaining_chain_max_gap_s": 0.5999331474304199,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 23,
+      "time_s": 11.39910888671875,
+      "annotation_token": "8ac39f30ac344ec7b37704bfc79adf5f",
+      "instance_token": "f3be212fd74c4256a186476153c80bf3",
+      "category": "human.pedestrian.adult",
+      "forward_m": 12.064163763318644,
+      "lateral_m": -3.263752362551956,
+      "lateral_speed_mps": 1.419367770198982,
+      "prediction": {
+        "closing_speed_mps": 2.1018179978464158,
+        "nominal_overlap_time_s": 5.739870805026857,
+        "predicted_lateral_m": 4.883235263209249,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 7.296969862474756,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "62c8a498-c226-4210-9d82-0677f13b7010",
+        "lane": "",
+        "road_segment": "45f28e11-5179-41b1-8963-b5821a0b8b7e"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.999715089797974,
+        "ego_available_future_s": 7.999715089797974,
+        "target_available_future_s": 7.999715089797974,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5999331474304199,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 24,
+      "time_s": 11.899534940719604,
+      "annotation_token": "239ca705183545e9860bdf3beca75cb6",
+      "instance_token": "f3be212fd74c4256a186476153c80bf3",
+      "category": "human.pedestrian.adult",
+      "forward_m": 11.336219715586068,
+      "lateral_m": -2.529049534328335,
+      "lateral_speed_mps": 1.5779525920323039,
+      "prediction": {
+        "closing_speed_mps": 1.4654269929166397,
+        "nominal_overlap_time_s": 7.735779244125692,
+        "predicted_lateral_m": 9.677643375329497,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 7.296969862474756,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "62c8a498-c226-4210-9d82-0677f13b7010",
+        "lane": "",
+        "road_segment": "45f28e11-5179-41b1-8963-b5821a0b8b7e"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.499289035797119,
+        "ego_available_future_s": 7.499289035797119,
+        "target_available_future_s": 7.499289035797119,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5999331474304199,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0073",
+      "index": 35,
+      "time_s": 17.400504112243652,
+      "annotation_token": "1e49e0320aaf423eb67451ee84b95eff",
+      "instance_token": "43575d429be540689acb928074e16bfb",
+      "category": "human.pedestrian.adult",
+      "forward_m": 29.05328809674669,
+      "lateral_m": -5.215308875317319,
+      "lateral_speed_mps": 0.47021950032513554,
+      "prediction": {
+        "closing_speed_mps": 3.8726508078222563,
+        "nominal_overlap_time_s": 7.502170874291787,
+        "predicted_lateral_m": -1.68764183545405,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 20.01867482665382,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 1.9985129833221436,
+        "ego_available_future_s": 1.9985129833221436,
+        "target_available_future_s": 1.9985129833221436,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5004310607910156,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0102",
+      "index": 8,
+      "time_s": 3.899458885192871,
+      "annotation_token": "73012190577e41e19aeab91338f4547f",
+      "instance_token": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+      "category": "human.pedestrian.adult",
+      "forward_m": 19.40577912956147,
+      "lateral_m": 1.3538237647174656,
+      "lateral_speed_mps": -1.1457234839993538,
+      "prediction": {
+        "closing_speed_mps": 3.327024455924222,
+        "nominal_overlap_time_s": 5.832773214217535,
+        "predicted_lateral_m": -5.328921483653957,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 9.840706176993281,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "e6fc8c35-c08f-49b4-a7ac-1dd923496d88",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.9497740268707275,
+        "ego_available_future_s": 15.450374126434326,
+        "target_available_future_s": 9.950006008148193,
+        "first_beyond_horizon_token": "a04ebd16beb64f0eb725ea0e3d8e4295",
+        "first_beyond_horizon_delta_s": 8.449832201004028,
+        "remaining_chain_max_gap_s": 0.5009851455688477,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0102",
+      "index": 9,
+      "time_s": 4.400439023971558,
+      "annotation_token": "33a27cc303a94c3ea1fdb3c39dfd1620",
+      "instance_token": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+      "category": "human.pedestrian.adult",
+      "forward_m": 17.123794026271423,
+      "lateral_m": 4.537184662221013,
+      "lateral_speed_mps": -1.0226919526586518,
+      "prediction": {
+        "closing_speed_mps": 3.2258795934939712,
+        "nominal_overlap_time_s": 5.3082557888419295,
+        "predicted_lateral_m": -0.8915258156813319,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 9.840706176993281,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "e6fc8c35-c08f-49b4-a7ac-1dd923496d88",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.948852062225342,
+        "ego_available_future_s": 14.94939398765564,
+        "target_available_future_s": 9.449025869369507,
+        "first_beyond_horizon_token": "a727ea28a487456ea3bd2b83e3260f34",
+        "first_beyond_horizon_delta_s": 8.449270963668823,
+        "remaining_chain_max_gap_s": 0.5009851455688477,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0102",
+      "index": 10,
+      "time_s": 4.899770975112915,
+      "annotation_token": "12b7dfab9411462689b1f146cc63dd99",
+      "instance_token": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+      "category": "human.pedestrian.adult",
+      "forward_m": 14.583062211689484,
+      "lateral_m": 6.880989869030421,
+      "lateral_speed_mps": -0.8620497610159646,
+      "prediction": {
+        "closing_speed_mps": 2.7764334829603365,
+        "nominal_overlap_time_s": 5.252444296320934,
+        "predicted_lateral_m": 2.353121518637294,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 9.840706176993281,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "e6fc8c35-c08f-49b4-a7ac-1dd923496d88",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.949939012527466,
+        "ego_available_future_s": 14.450062036514282,
+        "target_available_future_s": 8.94969391822815,
+        "first_beyond_horizon_token": "3b6239bea1104ddab115148c85ce6ee2",
+        "first_beyond_horizon_delta_s": 8.449826002120972,
+        "remaining_chain_max_gap_s": 0.5009851455688477,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0107",
+      "index": 1,
+      "time_s": 0.5004370212554932,
+      "annotation_token": "0a9eb7af0ee849d8bedd28b15f74ca88",
+      "instance_token": "b308402449444cc2b6a66059d3c10ba9",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 25.361503362698596,
+      "lateral_m": 4.94645218371673,
+      "lateral_speed_mps": -0.9900610895703523,
+      "prediction": {
+        "closing_speed_mps": 5.351284758860989,
+        "nominal_overlap_time_s": 4.739329806866182,
+        "predicted_lateral_m": 0.25422615129754966,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 4.824931432833849,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "36d4809d-9b21-4843-8fd1-709c4e4f2d75",
+        "lane": "8439a11e-d345-4a34-9a11-11c5fc296f5d",
+        "road_segment": "b28344e8-9e3e-410e-a891-d4faf31211a0"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.89847993850708,
+        "ego_available_future_s": 18.897964000701904,
+        "target_available_future_s": 8.4984610080719,
+        "first_beyond_horizon_token": "1bca143a72994fd0814de1fa370a97fb",
+        "first_beyond_horizon_delta_s": 8.4984610080719,
+        "remaining_chain_max_gap_s": 0.5999810695648193,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0107",
+      "index": 2,
+      "time_s": 0.8996760845184326,
+      "annotation_token": "f9c034a745ef4979acd8c57b0f01f862",
+      "instance_token": "b308402449444cc2b6a66059d3c10ba9",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 23.056060018136805,
+      "lateral_m": 4.990225914055265,
+      "lateral_speed_mps": -0.7116648763675434,
+      "prediction": {
+        "closing_speed_mps": 5.220598934263141,
+        "nominal_overlap_time_s": 4.416363009006177,
+        "predicted_lateral_m": 1.8472554792566922,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 4.824931432833849,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "36d4809d-9b21-4843-8fd1-709c4e4f2d75",
+        "lane": "8439a11e-d345-4a34-9a11-11c5fc296f5d",
+        "road_segment": "b28344e8-9e3e-410e-a891-d4faf31211a0"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.499240875244141,
+        "ego_available_future_s": 18.498724937438965,
+        "target_available_future_s": 8.09922194480896,
+        "first_beyond_horizon_token": "1bca143a72994fd0814de1fa370a97fb",
+        "first_beyond_horizon_delta_s": 8.09922194480896,
+        "remaining_chain_max_gap_s": 0.5999810695648193,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0107",
+      "index": 3,
+      "time_s": 1.4990999698638916,
+      "annotation_token": "9281a8388a8f4964930f76b18cda24ec",
+      "instance_token": "b308402449444cc2b6a66059d3c10ba9",
+      "category": "human.pedestrian.construction_worker",
+      "forward_m": 19.580382803362756,
+      "lateral_m": 5.363491928646816,
+      "lateral_speed_mps": -0.8641023482815543,
+      "prediction": {
+        "closing_speed_mps": 5.503442182376971,
+        "nominal_overlap_time_s": 3.5578429198480044,
+        "predicted_lateral_m": 2.2891515067892536,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 4.824931432833849,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "36d4809d-9b21-4843-8fd1-709c4e4f2d75",
+        "lane": "8439a11e-d345-4a34-9a11-11c5fc296f5d",
+        "road_segment": "b28344e8-9e3e-410e-a891-d4faf31211a0"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.499798059463501,
+        "ego_available_future_s": 17.899301052093506,
+        "target_available_future_s": 7.499798059463501,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5999810695648193,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 10,
+      "time_s": 5.000990152359009,
+      "annotation_token": "927d3302b73f4ba8b30e93a2d1632a87",
+      "instance_token": "c31e211af5954934b33164d290e656b9",
+      "category": "human.pedestrian.adult",
+      "forward_m": 17.477805057977974,
+      "lateral_m": -1.241018402696061,
+      "lateral_speed_mps": 0.4795160672569448,
+      "prediction": {
+        "closing_speed_mps": 5.252904963965797,
+        "nominal_overlap_time_s": 3.327264661720192,
+        "predicted_lateral_m": 0.35445846261501424,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 4.890190153590751,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+        "lane": "",
+        "road_segment": "4c024e78-14ef-4636-a91c-754f9051199a"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 3.7999508380889893,
+        "ego_available_future_s": 14.04904294013977,
+        "target_available_future_s": 3.7999508380889893,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.600513219833374,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 10,
+      "time_s": 5.000990152359009,
+      "annotation_token": "37a11f9bbcb74fe2a894aa23044f3c15",
+      "instance_token": "7096cf144da94021962d4f7067f3774d",
+      "category": "human.pedestrian.adult",
+      "forward_m": 16.79125157519273,
+      "lateral_m": -1.9976981997536702,
+      "lateral_speed_mps": 0.43827590863762433,
+      "prediction": {
+        "closing_speed_mps": 4.632503551054791,
+        "nominal_overlap_time_s": 3.6246602706585023,
+        "predicted_lateral_m": -0.4090969261281179,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 4.328526749845587,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "",
+        "ped_crossing": "530f5d85-fad2-4fc3-b8d5-4d4ae0929ef4",
+        "lane": "",
+        "road_segment": "4c024e78-14ef-4636-a91c-754f9051199a"
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 6.751106023788452,
+        "ego_available_future_s": 14.04904294013977,
+        "target_available_future_s": 6.751106023788452,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.600513219833374,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 12,
+      "time_s": 5.900649070739746,
+      "annotation_token": "e16565538b3f46c5ab4b9a196d347960",
+      "instance_token": "3cc4c5206ca04ea7812313a55cbc0d1e",
+      "category": "human.pedestrian.adult",
+      "forward_m": 15.702609977222536,
+      "lateral_m": 1.3109821349742452,
+      "lateral_speed_mps": -0.7213830854971149,
+      "prediction": {
+        "closing_speed_mps": 4.957166906557234,
+        "nominal_overlap_time_s": 3.1676581146484017,
+        "predicted_lateral_m": -0.9741128495707927,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 4.679248379524826,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "lane_evidence_only_not_met",
+      "point_layers": {
+        "walkway": "2e753b89-9df4-44d4-ac93-591a190c9a79",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 7.751383066177368,
+        "ego_available_future_s": 13.149384021759033,
+        "target_available_future_s": 8.750030040740967,
+        "first_beyond_horizon_token": "92d0fdd3608842179c1ef86a66ec7d36",
+        "first_beyond_horizon_delta_s": 8.2501540184021,
+        "remaining_chain_max_gap_s": 0.600513219833374,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 14,
+      "time_s": 6.900959014892578,
+      "annotation_token": "7e8d6e92ec19499ba60907a0dacc4bd6",
+      "instance_token": "388e12f072534297b009d9776070c998",
+      "category": "human.pedestrian.adult",
+      "forward_m": 21.700083762227482,
+      "lateral_m": 6.011991159633202,
+      "lateral_speed_mps": -0.6371784566037737,
+      "prediction": {
+        "closing_speed_mps": 3.0720911563487254,
+        "nominal_overlap_time_s": 7.063619748841925,
+        "predicted_lateral_m": 1.5112048300301684,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 12.998967985148736,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "4c610509-3432-476d-84a1-686ef62bc3b5",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 4.851137161254883,
+        "ego_available_future_s": 12.149074077606201,
+        "target_available_future_s": 4.851137161254883,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.600513219833374,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 18,
+      "time_s": 8.800940990447998,
+      "annotation_token": "10d784fc6e9f4038bdac230288c2a8d1",
+      "instance_token": "5377b08135eb4ad1af12d2573ebf2d6e",
+      "category": "human.pedestrian.adult",
+      "forward_m": 27.65556674106523,
+      "lateral_m": 1.2764449538596567,
+      "lateral_speed_mps": -0.39108321977868327,
+      "prediction": {
+        "closing_speed_mps": 4.359767249884473,
+        "nominal_overlap_time_s": 6.343358522590411,
+        "predicted_lateral_m": -1.2043361213655528,
+        "original_formula_result": true,
+        "model_assumption": "anchor ego heading and relative velocity, not observed future route"
+      },
+      "closest_distance_m": 8.478329830195248,
+      "legacy_enters_ego_lane": false,
+      "legacy_observed_relevant": false,
+      "original_reason": "both_original_conditions_not_met",
+      "point_layers": {
+        "walkway": "34035279-9b2d-49c1-b9b1-5e8c83199a7b",
+        "ped_crossing": "",
+        "lane": "",
+        "road_segment": ""
+      },
+      "future": {
+        "requested_horizon_s": 8.0,
+        "legacy_observed_span_s": 5.349862098693848,
+        "ego_available_future_s": 10.249092102050781,
+        "target_available_future_s": 5.349862098693848,
+        "first_beyond_horizon_token": null,
+        "first_beyond_horizon_delta_s": null,
+        "remaining_chain_max_gap_s": 0.5004959106445312,
+        "remaining_chain_missing_sample_count": 0,
+        "extrapolated": false,
+        "physical_barrier_evidence": "unknown",
+        "future_safety": "not_inferred"
+      },
+      "physical_isolation": "unknown",
+      "safety_label_assigned": false
+    }
+  ],
+  "counts": {
+    "lane_evidence_only_not_met": 8,
+    "both_original_conditions_not_met": 14,
+    "original_observed_confirmed": 13
+  },
+  "candidate_target_frames": 35,
+  "candidate_instances": 15,
+  "safety_labels": false,
+  "rule_change": false,
+  "reextraction": false,
+  "fit": false,
+  "evaluation_used": false,
+  "semantic_acceptance": false
+}

@@ -1,0 +1,29 @@
+{
+  "protocol": {
+    "path": "F:\\Scene_cluster\\logs\\longitudinal_protection_diagnosis_v1_protocol_20261015.json",
+    "sha256": "fd405aeee930f47ad9534bbb84b5f4a49c09ffc74eed1b4377aa954fa5a7637b",
+    "bytes": 3774
+  },
+  "outputs": [
+    {
+      "path": "F:\\Scene_cluster\\logs\\longitudinal_protection_diagnosis_v1_evidence_20261015.json",
+      "sha256": "f02e2b1be109667aaeaa4d020b6a4e0a892b789cc492681d3c60249aa0532767",
+      "bytes": 42863
+    },
+    {
+      "path": "F:\\Scene_cluster\\outputs\\人工复核\\纵向绕行保护根因诊断_20261015.md",
+      "sha256": "e5aadbf6a3813f801ef0e6ed93db21ec3d8f7060a3a290df2cce2fd6627428f0",
+      "bytes": 3881
+    }
+  ],
+  "completed_at_utc": "2026-10-15T13:21:41.748294+00:00",
+  "stage": "completed_diagnosis_requires_design",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "logs/diagnose_longitudinal_protection_v1_20261015.py",
+    "run",
+    "--expected-protocol-sha",
+    "fd405aeee930f47ad9534bbb84b5f4a49c09ffc74eed1b4377aa954fa5a7637b"
+  ],
+  "feature_updates": false
+}

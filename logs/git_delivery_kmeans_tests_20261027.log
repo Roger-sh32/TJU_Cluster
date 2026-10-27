@@ -1,0 +1,10 @@
+test_build_representations_keeps_direct_and_reduces_pca (test_kmeans_semantic_baseline.KMeansSemanticBaselineTest) ... ok
+test_evaluate_kmeans_reports_stable_separated_blobs (test_kmeans_semantic_baseline.KMeansSemanticBaselineTest) ... ok
+test_select_candidate_marks_weak_separation_unreliable (test_kmeans_semantic_baseline.KMeansSemanticBaselineTest) ... ok
+test_select_candidate_rejects_unstable_and_tiny_clusters (test_kmeans_semantic_baseline.KMeansSemanticBaselineTest) ... ok
+test_select_supported_features_removes_singletons_and_constants (test_kmeans_semantic_baseline.KMeansSemanticBaselineTest) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.344s
+
+OK

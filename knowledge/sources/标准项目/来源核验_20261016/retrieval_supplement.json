@@ -1,0 +1,29 @@
+{
+  "client_date": "2026-10-16",
+  "records": [
+    {
+      "file": "S13_pegasus_method.html",
+      "requested_url": "https://www.pegasusprojekt.de/en/pegasus-method",
+      "host_utc": "2026-10-16T01:00:16.639818+00:00",
+      "final_url": "https://www.pegasusprojekt.de/en/pegasus-method",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_encoding": null,
+      "saved": true,
+      "bytes": 297883,
+      "sha256": "76618d8c14a1f3d48e1679bea8de709d3ebf2bc5477722d6a82888557a5c79a9"
+    },
+    {
+      "file": "S16_ivista_safety_2026.pdf",
+      "requested_url": "https://www.i-vista.org/d/file/p/2026-06-08/a3ab8a23847dbf7246da78a99d946fab.pdf",
+      "host_utc": "2026-10-16T01:00:19.750149+00:00",
+      "final_url": "https://www.i-vista.org/d/file/p/2026-06-08/a3ab8a23847dbf7246da78a99d946fab.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "content_encoding": null,
+      "saved": true,
+      "bytes": 3744550,
+      "sha256": "a21530e13d93ec2a0221b5a23d46dea412daf9a0074dec7a9e064f1054bff18a"
+    }
+  ]
+}

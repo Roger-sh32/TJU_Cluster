@@ -1,0 +1,101 @@
+{
+  "client_date": "2026-10-16",
+  "tls": "Verified certifi CA; hostname and certificate checking enabled",
+  "records": [
+    {
+      "file": "R07_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/S0001-4575(00)00019-1",
+      "host_utc": "2026-10-16T00:50:47.219770+00:00",
+      "final_url": "https://api.crossref.org/works/10.1016/S0001-4575(00)00019-1",
+      "status": 200,
+      "content_type": "application/json",
+      "saved": true,
+      "bytes": 4806,
+      "sha256": "5546be05eb99e5c75f0ce456873378c78ebe8bf977bd1f8e49775c3e0927d4cc"
+    },
+    {
+      "file": "R08_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1007/BF01908075",
+      "host_utc": "2026-10-16T00:50:48.028571+00:00",
+      "final_url": "https://api.crossref.org/works/10.1007/BF01908075",
+      "status": 200,
+      "content_type": "application/json",
+      "saved": true,
+      "bytes": 15185,
+      "sha256": "721dc4293d28c8ccbd3f522a1ef84b4a9eabe642194fc549b3efe3b17c234f9a"
+    },
+    {
+      "file": "R09_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1017/CBO9780511809071",
+      "host_utc": "2026-10-16T00:50:48.921469+00:00",
+      "final_url": "https://api.crossref.org/works/10.1017/CBO9780511809071",
+      "status": 200,
+      "content_type": "application/json",
+      "saved": true,
+      "bytes": 2995,
+      "sha256": "6ab3a651f6125baa68e0b1d76971892c454a7a5e4c8ee4fbbc62808e5f7f77f8"
+    },
+    {
+      "file": "R10_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1214/aos/1176344552",
+      "host_utc": "2026-10-16T00:50:49.961799+00:00",
+      "final_url": "https://api.crossref.org/works/10.1214/aos/1176344552",
+      "status": 200,
+      "content_type": "application/json",
+      "saved": true,
+      "bytes": 1786,
+      "sha256": "456d1d06606ee513ef9eb81d5fc7f540024423a77fb5596fcfd5bc235bc3ec79"
+    },
+    {
+      "file": "R11_crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1111/j.1467-9868.2007.00593.x",
+      "host_utc": "2026-10-16T00:50:50.912392+00:00",
+      "final_url": "https://api.crossref.org/works/10.1111/j.1467-9868.2007.00593.x",
+      "status": 200,
+      "content_type": "application/json",
+      "saved": true,
+      "bytes": 9044,
+      "sha256": "d0ea01a75cebcac3ff4308e0eadc1d26e6363ed08216f45643df173f6e2bffa8"
+    },
+    {
+      "file": "R09_stanford.html",
+      "requested_url": "https://nlp.stanford.edu/IR-book/",
+      "host_utc": "2026-10-16T00:50:52.811707+00:00",
+      "final_url": "https://nlp.stanford.edu/IR-book/",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "saved": true,
+      "bytes": 10872,
+      "sha256": "2500db3d6129db8199f5a218b4baee1e40d5983fd5677b792a992110f42b2134"
+    },
+    {
+      "file": "R09_ranked.html",
+      "requested_url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html",
+      "host_utc": "2026-10-16T00:50:53.675797+00:00",
+      "final_url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "saved": true,
+      "bytes": 26992,
+      "sha256": "fda4071b4368a439738a16cef99dc1598f037e7e4eca350f463618f2271e93b5"
+    },
+    {
+      "file": "R09_unranked.html",
+      "requested_url": "https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-1.html",
+      "host_utc": "2026-10-16T00:50:54.555863+00:00",
+      "saved": false,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "file": "R12_fhwa.html",
+      "requested_url": "https://www.fhwa.dot.gov/publications/research/safety/08051/",
+      "host_utc": "2026-10-16T00:50:55.354772+00:00",
+      "final_url": "https://www.fhwa.dot.gov/publications/research/safety/08051/",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "saved": true,
+      "bytes": 76178,
+      "sha256": "af144f22c5e333a40637afff682ae748c8f2326080dd74174c0e46e030294d21"
+    }
+  ]
+}

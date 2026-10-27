@@ -1,0 +1,40 @@
+test_bootstrap_does_not_silently_drop_too_small_cohorts (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_bootstrap_refuses_missing_labels_or_group_membership (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_budget_savings_keep_negative_result_and_require_same_target (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_duplicate_review_or_unexpected_identity_is_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_invalid_ranking_labels_k_and_recall_targets_refused (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_log_bootstrap_identical_methods_have_zero_difference (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_log_bootstrap_uses_same_resample_and_retains_sign (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_missing_outside_top_k_also_disables_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_no_positive_does_not_report_zero_recall_or_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_padded_log_identity_cannot_invent_independent_groups (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... FAIL
+test_precision_recall_budget_and_unattainable_budget (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_random_baseline_materializes_metric_iterators_once (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ERROR
+test_seeded_random_baseline_reproducible_without_mutation (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_three_independent_reviews_median_and_missing_not_zero (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+test_unknown_top_k_bounds_no_backfill_no_full_recall (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests) ... ok
+
+======================================================================
+ERROR: test_random_baseline_materializes_metric_iterators_once (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 92, in test_random_baseline_materializes_metric_iterators_once
+    self.assertEqual(api.random_baseline(labels, iter([1]), iter([.5]), [7,8]), expected)
+  File "F:\Scene_cluster\HDBSCAN\scripts\evaluation_metrics.py", line 132, in random_baseline
+    'metrics': ranking_metrics(order, labels, ks, target_recalls)})
+  File "F:\Scene_cluster\HDBSCAN\scripts\evaluation_metrics.py", line 66, in ranking_metrics
+    raise ValueError('Nonempty unique K values and recall targets required')
+ValueError: Nonempty unique K values and recall targets required
+
+======================================================================
+FAIL: test_padded_log_identity_cannot_invent_independent_groups (HDBSCAN.tests.test_evaluation_metrics.EvaluationMetricsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\Scene_cluster\HDBSCAN\tests\test_evaluation_metrics.py", line 96, in test_padded_log_identity_cannot_invent_independent_groups
+    self.api().paired_log_bootstrap(['a','b'], ['b','a'], {'a':2,'b':0},
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.016s
+
+FAILED (failures=1, errors=1)
