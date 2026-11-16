@@ -1,0 +1,21 @@
+{
+  "scope": "official arXiv raw acquisition only",
+  "records": [
+    {
+      "url": "https://arxiv.org/abs/1802.03426v3",
+      "started_at_utc": "2026-10-27T11:51:04.322856+00:00",
+      "accepted": false,
+      "error_type": "SSLError",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)",
+      "finished_at_utc": "2026-10-27T11:51:04.351857+00:00"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1802.03426v3",
+      "started_at_utc": "2026-10-27T11:51:07.554808+00:00",
+      "accepted": false,
+      "error_type": "SSLError",
+      "error": "[ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4192)",
+      "finished_at_utc": "2026-10-27T11:51:07.557808+00:00"
+    }
+  ]
+}

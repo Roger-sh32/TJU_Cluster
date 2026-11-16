@@ -1,0 +1,53 @@
+{
+  "created_at_utc": "2026-11-15T02:26:33.459492+00:00",
+  "stage": "synthetic_features",
+  "fit_scope": "development",
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+  "command": [
+    "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe",
+    "HDBSCAN/tests/smoke_frozen_pipeline.py",
+    "--output-dir",
+    "logs/SYN_day1_pipeline_20261115"
+  ],
+  "input": {
+    "path": "F:\\Scene_cluster\\logs\\SYN_day1_pipeline_20261115\\SYNTHETIC_query.csv",
+    "sha256": "53817023e187f2c33c502331d7763344abe91c3e032102bc01ed625cafeadb76"
+  },
+  "output": {
+    "path": "F:\\Scene_cluster\\logs\\SYN_day1_pipeline_20261115\\SYNTHETIC_query.csv",
+    "sha256": "53817023e187f2c33c502331d7763344abe91c3e032102bc01ed625cafeadb76"
+  },
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_hdbscan.py",
+    "sha256": "2c0d6b2b46e573af3f559d7c6e0f750697d4868bc22ce4e6e1f04a6c60781859"
+  },
+  "guard": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\experiment_partition.py",
+    "sha256": "b33756c4c4d95eb4170ab052f7a1fc5f3625eba3783f201e3115087b24ade4db"
+  },
+  "feature_schema": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\feature_selection.py",
+    "sha256": "36cef6e7d7fed0226377555688e749e853faa777622112605d643b1c229103ee"
+  },
+  "scene_names": [
+    "scene-0132",
+    "scene-0133",
+    "scene-0134"
+  ],
+  "semantic_features": [],
+  "extra": {
+    "feature_rules": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\scene_feature_rules.py",
+      "sha256": "6a21d3d56a08fe7ee60e9143dbb0aa1d3db02f573cfb4206eed17062c92e181d"
+    },
+    "generator": {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\smoke_frozen_pipeline.py",
+      "sha256": "d7a308ec34f61d09d9f47f1183b76ab136f3d1272a0acb5d9c1982603feefb43"
+    },
+    "synthetic": true
+  }
+}

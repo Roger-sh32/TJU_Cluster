@@ -1,0 +1,401 @@
+{
+  "scope": "geometry evidence only; no feature suppression or barrier inference",
+  "sources": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024_report.json",
+      "sha256": "9035ce0ea61084e5c4fa1c9f195a2c73a15b29680cb423e90e3a0e5dbdb02e18"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024.json",
+      "sha256": "a80747e508464f6332d7d70dd03122118d1f0afec2a45ca2a48d7e5d7ebb07e4"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\human_route_v8.py",
+      "sha256": "3a6fdb120168a47139d6130a816ffdc87fac68a7e8b16b07f7ac512791d1d68a"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\check_human_route_v8_20261116.py",
+      "sha256": "8b99bfebab45cdf93f4d6aeb355c4b93d14705e070acbf37b803fbfce9f8274e"
+    }
+  ],
+  "targets": [
+    {
+      "scene_name": "scene-0007",
+      "index": 19,
+      "instance": "6065ee5104dc4c948514b15a8cc6bcf0",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 36
+    },
+    {
+      "scene_name": "scene-0007",
+      "index": 20,
+      "instance": "6065ee5104dc4c948514b15a8cc6bcf0",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 37
+    },
+    {
+      "scene_name": "scene-0007",
+      "index": 32,
+      "instance": "8ab01204cf0044da909dd285258328c1",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 11,
+      "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 27
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 12,
+      "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 28
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 13,
+      "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 29
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 13,
+      "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 29
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 14,
+      "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 30
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 15,
+      "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 32
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 16,
+      "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 33
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 19,
+      "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 36
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 20,
+      "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 37
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 20,
+      "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 37
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 21,
+      "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 37
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 38,
+      "instance": "fd02193b66f342b1ba7a85583b0c53b9",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0011",
+      "index": 39,
+      "instance": "fd02193b66f342b1ba7a85583b0c53b9",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 12,
+      "instance": "f69448592eb04b498c87ad273999fa81",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.31046588682805504,
+      "passage_observed": false,
+      "last_target_index": 29
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 13,
+      "instance": "f69448592eb04b498c87ad273999fa81",
+      "observed_positive": true,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.3104658868280565,
+      "passage_observed": false,
+      "last_target_index": 30
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 16,
+      "instance": "f3be212fd74c4256a186476153c80bf3",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 32
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 21,
+      "instance": "f3be212fd74c4256a186476153c80bf3",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 37
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 22,
+      "instance": "f3be212fd74c4256a186476153c80bf3",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 38
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 23,
+      "instance": "f3be212fd74c4256a186476153c80bf3",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0067",
+      "index": 24,
+      "instance": "f3be212fd74c4256a186476153c80bf3",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0073",
+      "index": 35,
+      "instance": "43575d429be540689acb928074e16bfb",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0102",
+      "index": 8,
+      "instance": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+      "observed_positive": false,
+      "relation": "separated_observed_route",
+      "complete": true,
+      "clearance_lower_m": 8.451531221007041,
+      "passage_observed": true,
+      "last_target_index": 25
+    },
+    {
+      "scene_name": "scene-0102",
+      "index": 9,
+      "instance": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+      "observed_positive": false,
+      "relation": "separated_observed_route",
+      "complete": true,
+      "clearance_lower_m": 8.451531221007041,
+      "passage_observed": true,
+      "last_target_index": 26
+    },
+    {
+      "scene_name": "scene-0102",
+      "index": 10,
+      "instance": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+      "observed_positive": false,
+      "relation": "separated_observed_route",
+      "complete": true,
+      "clearance_lower_m": 8.451531221007041,
+      "passage_observed": true,
+      "last_target_index": 27
+    },
+    {
+      "scene_name": "scene-0107",
+      "index": 1,
+      "instance": "b308402449444cc2b6a66059d3c10ba9",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 18
+    },
+    {
+      "scene_name": "scene-0107",
+      "index": 2,
+      "instance": "b308402449444cc2b6a66059d3c10ba9",
+      "observed_positive": false,
+      "relation": "potential_route_overlap",
+      "complete": true,
+      "clearance_lower_m": 0.0,
+      "passage_observed": false,
+      "last_target_index": 18
+    },
+    {
+      "scene_name": "scene-0107",
+      "index": 3,
+      "instance": "b308402449444cc2b6a66059d3c10ba9",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 10,
+      "instance": "c31e211af5954934b33164d290e656b9",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 10,
+      "instance": "7096cf144da94021962d4f7067f3774d",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 12,
+      "instance": "3cc4c5206ca04ea7812313a55cbc0d1e",
+      "observed_positive": false,
+      "relation": "separated_observed_route",
+      "complete": true,
+      "clearance_lower_m": 3.1222380610619123,
+      "passage_observed": true,
+      "last_target_index": 29
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 14,
+      "instance": "388e12f072534297b009d9776070c998",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    },
+    {
+      "scene_name": "scene-0151",
+      "index": 18,
+      "instance": "5377b08135eb4ad1af12d2573ebf2d6e",
+      "observed_positive": false,
+      "relation": "unknown",
+      "complete": false,
+      "clearance_lower_m": null,
+      "passage_observed": false
+    }
+  ]
+}

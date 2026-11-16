@@ -1,5 +1,7 @@
 # knowledge/wiki
 
+[UMAP原文与项目实现边界](UMAP原文与项目实现边界_20261115.md)补充原论文公式页与局部密度解释，原文下载已成功。
+
 [HDBSCAN公式与软件输出边界](HDBSCAN公式与软件输出边界_20261024.md)核对0.8.39官方源包、本地wrapper及SYN底层树/矩阵，区分成员强度、GLOSH和项目评分。不是R04/R05理论全文验收、完整拟合恢复或正式参数批准。
 
 [专家序数一致性与等级排序边界](F:/Scene_cluster/knowledge/wiki/专家序数一致性与等级排序边界_20261016.md) distinguishes original-rating reliability, three-reviewer aggregation and ranked effectiveness. Official/author sources and SYN-only gain/tie examples are preparation, not implemented coefficients, formal metric choices or real evaluation.

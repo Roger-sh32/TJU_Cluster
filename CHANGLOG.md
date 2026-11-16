@@ -4,7 +4,17 @@ This file records project-container changes at the repository root.
 
 Note: the filename follows the requested spelling `CHANGLOG.md`.
 
+## 2026-11-16
+
+- Added separately versioned development candidates for target-local obstruction and human observed-route relevance. Fixed29 comparisons improve selected0669/0102/0151 fields while preserving specified positive controls; incomplete human futures remain unknown. Full extraction integration, semantic acceptance and formal experiments remain unfinished. See logs/critical_errors_v8_20261115.md.
+
+## 2026-11-15
+
+- Verified the previously downloaded UMAP PDF hash, visually inspected pages15/20/49 and added a theory/implementation note. Recorded download succeeded with existing CA verification; no environment reinstall or experiments. See logs/umap_theory_source_20261027.md.
+
 ## 2026-10-27
+
+- Added a verbatim chapters3-6 continuous Markdown reader with four original body/index pairs and two implementation bindings. The83818 source bytes remain unchanged in an86376-byte navigable reader; no reference renumbering, method/experiment/author acceptance or DOCX claim. Six new SYN tests and364 combined tests pass; narrow review no confirmedP1/P2, temporary-directory wording aligned. Windows DOCX renderer unavailable, no unverified Word exported. See [process](logs/chapter_reader_20261027.md). Included in the 2026-11-16 Git checkpoint.
 
 - Prepared the user-requested Git checkpoint of accumulated code, tests, derived evidence and thesis facts drafts. Added byte-preserving Git attributes for existing hash-bound files and ignored local pickle payloads; excluded new third-party PDF/archive and source-render QA images without deleting them or changing old digests. 330 HDBSCAN,5 KMeans and23 recent evidence tests passed; four original chapter indices/source bindings matched. Raw-source/log whitespace remains preserved and is not a clean-lint claim. Commit/push verification is reported by the actual Git/remote result, not assumed here. See [delivery record](logs/git_delivery_20261027.md).
 

@@ -1,0 +1,731 @@
+{
+  "scope": "experimental fixed development29; not feature promotion or fit",
+  "history_horizon_seconds": 1.0,
+  "historical_clearance_margin_m": 1.0,
+  "sustained_observed_span_seconds": 0.8,
+  "positive_controls_unchanged": true,
+  "sources": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\longitudinal_v7_replay29_comparison_20261015.json",
+      "sha256": "b7df6d51107f04cf3b7fdf9142fcddf24cec1a997e99277555ce3eab4872bdf3"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\replay_target_obstruction_v8_20261116.py",
+      "sha256": "0aecbc451ef31082925c90ab561dc6c661289816f7fea8a22b40371f278f3ecc"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\target_obstruction_v8.py",
+      "sha256": "ec169a6ebcacf3ae82c66d212eed6ccfb0e6452d490673a7aa9fc29e3ec3b7dd"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\longitudinal_candidate_v7.py",
+      "sha256": "33059b93410c70148d161ce7adf94c1d58f1e96167edff31ce0f9157c76c5a3e"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_name": "scene-0002",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0007",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0011",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": [
+        {
+          "instance_token": "8a557d57675e48eb801633e3e327d939",
+          "indices": [
+            11
+          ],
+          "start_time": 5.498090982437134,
+          "end_time": 5.498090982437134,
+          "observed_duration": 0.0
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0014",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0026",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0030",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": [
+        {
+          "instance_token": "4bcbde94a9884756aa02d3097d84e3d7",
+          "indices": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "start_time": 4.398782968521118,
+          "end_time": 6.898728132247925,
+          "observed_duration": 2.4999451637268066
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0032",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0042",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0053",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0055",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0056",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0067",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": [
+        {
+          "instance_token": "19d9792dc9bf4bccad644a242a958cf4",
+          "indices": [
+            5
+          ],
+          "start_time": 2.3997249603271484,
+          "end_time": 2.3997249603271484,
+          "observed_duration": 0.0
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0068",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0073",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0074",
+      "extra_rejected": [
+        [
+          22,
+          "3629afad16744aa09d2ce46970f071b6"
+        ],
+        [
+          23,
+          "e172f8f667924406a343ee7cfd82b98c"
+        ],
+        [
+          24,
+          "3ee25941c18d493691306761140d0326"
+        ],
+        [
+          24,
+          "9db8fabbfec741b18349446863ff3c6f"
+        ],
+        [
+          24,
+          "d56847ca0bb8472594472588d1965116"
+        ]
+      ],
+      "changes": {
+        "car_following_ratio": {
+          "before": 0.225,
+          "after": 0.175
+        },
+        "following_event_count": {
+          "before": 2,
+          "after": 3
+        },
+        "following_max_duration": {
+          "before": 2.8990259170532227,
+          "after": 1.3988277912139893
+        },
+        "stopped_lead_ratio": {
+          "before": 0.15,
+          "after": 0.1
+        },
+        "stationary_lead_obstacle_ratio": {
+          "before": 0.1,
+          "after": 0.05
+        },
+        "blocked_path_obstacle_ratio": {
+          "before": 0.075,
+          "after": 0.0
+        },
+        "stationary_lead_min_dist": {
+          "before": 20.833329364912352,
+          "after": 29.681817792666482
+        },
+        "ttc_valid_ratio": {
+          "before": 0.15,
+          "after": 0.1
+        }
+      },
+      "decisions": [
+        {
+          "index": 22,
+          "instance_token": "3629afad16744aa09d2ce46970f071b6",
+          "history": {
+            "complete": true,
+            "clearance": 7.252906612734439,
+            "reference_indices": [
+              19,
+              20
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 23,
+          "instance_token": "e172f8f667924406a343ee7cfd82b98c",
+          "history": {
+            "complete": true,
+            "clearance": 2.487701965786699,
+            "reference_indices": [
+              21,
+              22
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 24,
+          "instance_token": "3ee25941c18d493691306761140d0326",
+          "history": {
+            "complete": true,
+            "clearance": 3.183234001031636,
+            "reference_indices": [
+              22,
+              23
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 24,
+          "instance_token": "9db8fabbfec741b18349446863ff3c6f",
+          "history": {
+            "complete": true,
+            "clearance": 3.021100007544674,
+            "reference_indices": [
+              22,
+              23
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 24,
+          "instance_token": "d56847ca0bb8472594472588d1965116",
+          "history": {
+            "complete": true,
+            "clearance": 1.9234571964769307,
+            "reference_indices": [
+              22,
+              23
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 24,
+          "instance_token": "edf689d881fb46c982b544effc665974",
+          "history": {
+            "complete": true,
+            "clearance": -0.4258906266540632,
+            "reference_indices": [
+              22,
+              23
+            ]
+          },
+          "release": false
+        }
+      ],
+      "episodes": [
+        {
+          "instance_token": "698274afaabd4874a9d6ab422f88b155",
+          "indices": [
+            20
+          ],
+          "start_time": 9.751086950302124,
+          "end_time": 9.751086950302124,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "3629afad16744aa09d2ce46970f071b6",
+          "indices": [
+            22
+          ],
+          "start_time": 10.750117063522339,
+          "end_time": 10.750117063522339,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "e172f8f667924406a343ee7cfd82b98c",
+          "indices": [
+            23
+          ],
+          "start_time": 11.250557899475098,
+          "end_time": 11.250557899475098,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "edf689d881fb46c982b544effc665974",
+          "indices": [
+            24
+          ],
+          "start_time": 11.75042986869812,
+          "end_time": 11.75042986869812,
+          "observed_duration": 0.0
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0093",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0097",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0102",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0103",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0107",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0109",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": [
+        {
+          "instance_token": "9467cbbe7f8843b688f31c48ebacb9f4",
+          "indices": [
+            15
+          ],
+          "start_time": 7.400799989700317,
+          "end_time": 7.400799989700317,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "9467cbbe7f8843b688f31c48ebacb9f4",
+          "indices": [
+            17,
+            18
+          ],
+          "start_time": 8.400556087493896,
+          "end_time": 8.900434017181396,
+          "observed_duration": 0.4998779296875
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0122",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0151",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0158",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": [
+        {
+          "instance_token": "0e6cc7c194bd4ce6b968507c9a505f7f",
+          "indices": [
+            37,
+            38,
+            39
+          ],
+          "start_time": 18.399738073349,
+          "end_time": 19.40058207511902,
+          "observed_duration": 1.0008440017700195
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0453",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0552",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": [
+        {
+          "instance_token": "ea8274545a234a8aad2bf2d600cb1bd8",
+          "indices": [
+            28
+          ],
+          "start_time": 13.898118019104004,
+          "end_time": 13.898118019104004,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "07e9396834cb433ea84ebaa6fa58195d",
+          "indices": [
+            33
+          ],
+          "start_time": 16.401369094848633,
+          "end_time": 16.401369094848633,
+          "observed_duration": 0.0
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0669",
+      "extra_rejected": [
+        [
+          7,
+          "fe685eb2dbb64c50b12a357d003c5811"
+        ],
+        [
+          8,
+          "03d6e4cbdfe8436d8a21c6e404192ae1"
+        ],
+        [
+          8,
+          "2f1f40f7040043fc9ed54c0bf133a279"
+        ],
+        [
+          9,
+          "45373623926544e19dc1f42a6bbce07f"
+        ],
+        [
+          9,
+          "c897767a405647bc887c3ebe13b28c0a"
+        ],
+        [
+          10,
+          "febbd7e2f1dd4ce590b84c35b42922ae"
+        ]
+      ],
+      "changes": {
+        "car_following_ratio": {
+          "before": 0.4146341463414634,
+          "after": 0.3170731707317073
+        },
+        "following_max_duration": {
+          "before": 2.5004955530166626,
+          "after": 2.0000416040420532
+        },
+        "front_vehicle_min_dist": {
+          "before": 18.210812124815632,
+          "after": 20.77692417933784
+        },
+        "stopped_lead_ratio": {
+          "before": 0.12195121951219512,
+          "after": 0.07317073170731707
+        },
+        "stationary_lead_obstacle_ratio": {
+          "before": 0.12195121951219512,
+          "after": 0.07317073170731707
+        },
+        "blocked_path_obstacle_ratio": {
+          "before": 0.12195121951219512,
+          "after": 0.07317073170731707
+        },
+        "stationary_lead_event_count": {
+          "before": 2,
+          "after": 1
+        },
+        "stationary_lead_min_dist": {
+          "before": 18.210812124815632,
+          "after": 20.77692417933784
+        },
+        "min_ttc": {
+          "before": 3.36368416871326,
+          "after": 5.436937850173067
+        },
+        "min_ttc_scene_time": {
+          "before": 3.847081184387207,
+          "after": 2.347452163696289
+        },
+        "min_ttc_target_annotation_token": {
+          "before": "a627a14ae98b4bb9a9ea825ff336c08b",
+          "after": "5b2ad4ea74044e929156e366fe43dc31"
+        },
+        "min_ttc_target_instance_token": {
+          "before": "03d6e4cbdfe8436d8a21c6e404192ae1",
+          "after": "8c933940fb2d477896c388972c452343"
+        },
+        "min_ttc_target_category": {
+          "before": "vehicle.car",
+          "after": "vehicle.truck"
+        },
+        "min_ttc_target_clearance": {
+          "before": 18.210812124815632,
+          "after": 20.77692417933784
+        },
+        "min_ttc_target_lateral_distance": {
+          "before": 0.46303458032194644,
+          "after": -0.8381296918781445
+        },
+        "min_ttc_relative_speed": {
+          "before": 5.413948281530241,
+          "after": 3.8214386023699856
+        },
+        "min_ttc_target_heading_delta": {
+          "before": 2.26025710306261,
+          "after": 1.843586480526994
+        },
+        "ttc_valid_ratio": {
+          "before": 0.14634146341463414,
+          "after": 0.0975609756097561
+        }
+      },
+      "decisions": [
+        {
+          "index": 4,
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "history": {
+            "complete": true,
+            "clearance": -0.7935676265683065,
+            "reference_indices": [
+              1,
+              2
+            ]
+          },
+          "release": false
+        },
+        {
+          "index": 5,
+          "instance_token": "8c933940fb2d477896c388972c452343",
+          "history": {
+            "complete": true,
+            "clearance": -0.13833587504260647,
+            "reference_indices": [
+              2,
+              3
+            ]
+          },
+          "release": false
+        },
+        {
+          "index": 7,
+          "instance_token": "fe685eb2dbb64c50b12a357d003c5811",
+          "history": {
+            "complete": true,
+            "clearance": 1.5981775616926992,
+            "reference_indices": [
+              4,
+              5
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 8,
+          "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+          "history": {
+            "complete": true,
+            "clearance": 2.280775701175437,
+            "reference_indices": [
+              5,
+              6
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 8,
+          "instance_token": "2f1f40f7040043fc9ed54c0bf133a279",
+          "history": {
+            "complete": true,
+            "clearance": 4.17459241832831,
+            "reference_indices": [
+              5,
+              6
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 9,
+          "instance_token": "45373623926544e19dc1f42a6bbce07f",
+          "history": {
+            "complete": true,
+            "clearance": 1.6620517381791204,
+            "reference_indices": [
+              7,
+              8
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 9,
+          "instance_token": "c897767a405647bc887c3ebe13b28c0a",
+          "history": {
+            "complete": true,
+            "clearance": 1.1584692504278618,
+            "reference_indices": [
+              7,
+              8
+            ]
+          },
+          "release": true
+        },
+        {
+          "index": 10,
+          "instance_token": "febbd7e2f1dd4ce590b84c35b42922ae",
+          "history": {
+            "complete": true,
+            "clearance": 3.1385297708169224,
+            "reference_indices": [
+              8,
+              9
+            ]
+          },
+          "release": true
+        }
+      ],
+      "episodes": [
+        {
+          "instance_token": "a853cb21c9864c238f59d23d16b92aa5",
+          "indices": [
+            3,
+            4
+          ],
+          "start_time": 1.4986591339111328,
+          "end_time": 1.8984551429748535,
+          "observed_duration": 0.3997960090637207
+        },
+        {
+          "instance_token": "8c933940fb2d477896c388972c452343",
+          "indices": [
+            5
+          ],
+          "start_time": 2.347452163696289,
+          "end_time": 2.347452163696289,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "fe685eb2dbb64c50b12a357d003c5811",
+          "indices": [
+            7
+          ],
+          "start_time": 3.34720516204834,
+          "end_time": 3.34720516204834,
+          "observed_duration": 0.0
+        },
+        {
+          "instance_token": "03d6e4cbdfe8436d8a21c6e404192ae1",
+          "indices": [
+            8
+          ],
+          "start_time": 3.847081184387207,
+          "end_time": 3.847081184387207,
+          "observed_duration": 0.0
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0815",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    },
+    {
+      "scene_name": "scene-0816",
+      "extra_rejected": [],
+      "changes": {},
+      "decisions": [],
+      "episodes": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "synthetic pipeline verification only; not scene research results",
+  "training_count": 105,
+  "prediction_count": 3,
+  "partition": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\evaluation_split_20260924.csv",
+    "sha256": "0d288dba6f8fc404ab592939de2a24052cd42042e7bd64b9da40298019c535fa"
+  },
+  "script": {
+    "path": "F:\\Scene_cluster\\HDBSCAN\\tests\\smoke_frozen_pipeline.py",
+    "sha256": "d7a308ec34f61d09d9f47f1183b76ab136f3d1272a0acb5d9c1982603feefb43"
+  },
+  "model_manifest": {
+    "path": "F:\\Scene_cluster\\logs\\SYN_day1_pipeline_20261115\\SYNTHETIC_clusters.model\\manifest.json",
+    "sha256": "29a5bac54ce1a8910cf78b139980686a6e7be54315cba81e571d1677141e6b23"
+  },
+  "batch_invariance": true,
+  "reload_invariance": true,
+  "prediction_entry_passed": true,
+  "python": "D:\\Python\\Conda\\envs\\autodrive-cluster\\python.exe"
+}

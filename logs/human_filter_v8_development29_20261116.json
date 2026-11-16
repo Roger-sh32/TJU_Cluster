@@ -1,0 +1,483 @@
+{
+  "scope": "development candidate, no promotion or scoring",
+  "baseline_eight_columns_matched": true,
+  "scenes": [
+    {
+      "scene_name": "scene-0002",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0007",
+      "changes": {},
+      "decisions": [
+        {
+          "index": 19,
+          "instance": "6065ee5104dc4c948514b15a8cc6bcf0",
+          "response_protected": false,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 20,
+          "instance": "6065ee5104dc4c948514b15a8cc6bcf0",
+          "response_protected": false,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 32,
+          "instance": "8ab01204cf0044da909dd285258328c1",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0011",
+      "changes": {},
+      "decisions": [
+        {
+          "index": 11,
+          "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 12,
+          "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 13,
+          "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 13,
+          "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 14,
+          "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 15,
+          "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 16,
+          "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 19,
+          "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 20,
+          "instance": "e3392ac6f1ba4bfe99bcc6bf1eb6430f",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 20,
+          "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 21,
+          "instance": "cd60cdc88c4a4b29b18670ce1c08c54c",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 38,
+          "instance": "fd02193b66f342b1ba7a85583b0c53b9",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        },
+        {
+          "index": 39,
+          "instance": "fd02193b66f342b1ba7a85583b0c53b9",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0014",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0026",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0030",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0032",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0042",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0053",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0055",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0056",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0067",
+      "changes": {},
+      "decisions": [
+        {
+          "index": 12,
+          "instance": "f69448592eb04b498c87ad273999fa81",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 13,
+          "instance": "f69448592eb04b498c87ad273999fa81",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 16,
+          "instance": "f3be212fd74c4256a186476153c80bf3",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 21,
+          "instance": "f3be212fd74c4256a186476153c80bf3",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 22,
+          "instance": "f3be212fd74c4256a186476153c80bf3",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 23,
+          "instance": "f3be212fd74c4256a186476153c80bf3",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        },
+        {
+          "index": 24,
+          "instance": "f3be212fd74c4256a186476153c80bf3",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0068",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0073",
+      "changes": {},
+      "decisions": [
+        {
+          "index": 35,
+          "instance": "43575d429be540689acb928074e16bfb",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0074",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0093",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0097",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0102",
+      "changes": {
+        "pedestrian_crossing_risk_ratio": {
+          "before": 0.075,
+          "after": 0.0
+        },
+        "vru_path_conflict_ratio": {
+          "before": 0.075,
+          "after": 0.0
+        },
+        "vru_conflict_event_count": {
+          "before": 1,
+          "after": 0
+        },
+        "vru_conflict_max_duration": {
+          "before": 1.5001912117004395,
+          "after": 0.0
+        },
+        "vru_crosswalk_conflict_ratio": {
+          "before": 0.075,
+          "after": 0.0
+        },
+        "vru_crosswalk_conflict_event_count": {
+          "before": 1,
+          "after": 0
+        },
+        "vru_observed_min_distance": {
+          "before": 9.840706176993281,
+          "after": 30.0
+        },
+        "vru_observed_min_distance_time": {
+          "before": 7.900141000747681,
+          "after": -1.0
+        }
+      },
+      "decisions": [
+        {
+          "index": 8,
+          "instance": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+          "response_protected": false,
+          "relation": "separated_observed_route",
+          "suppressed": true
+        },
+        {
+          "index": 9,
+          "instance": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+          "response_protected": false,
+          "relation": "separated_observed_route",
+          "suppressed": true
+        },
+        {
+          "index": 10,
+          "instance": "3f0eed8e022644aeb3fa2ecbca72d7e2",
+          "response_protected": false,
+          "relation": "separated_observed_route",
+          "suppressed": true
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0103",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0107",
+      "changes": {},
+      "decisions": [
+        {
+          "index": 1,
+          "instance": "b308402449444cc2b6a66059d3c10ba9",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 2,
+          "instance": "b308402449444cc2b6a66059d3c10ba9",
+          "response_protected": true,
+          "relation": "potential_route_overlap",
+          "suppressed": false
+        },
+        {
+          "index": 3,
+          "instance": "b308402449444cc2b6a66059d3c10ba9",
+          "response_protected": true,
+          "relation": "unknown",
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0109",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0122",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0151",
+      "changes": {
+        "pedestrian_crossing_risk_ratio": {
+          "before": 0.1,
+          "after": 0.075
+        },
+        "vru_path_conflict_ratio": {
+          "before": 0.1,
+          "after": 0.075
+        },
+        "vru_conflict_event_count": {
+          "before": 4,
+          "after": 3
+        },
+        "vru_crosswalk_conflict_ratio": {
+          "before": 0.1,
+          "after": 0.075
+        },
+        "vru_crosswalk_conflict_event_count": {
+          "before": 4,
+          "after": 3
+        }
+      },
+      "decisions": [
+        {
+          "index": 10,
+          "instance": "c31e211af5954934b33164d290e656b9",
+          "response_protected": false,
+          "relation": "unknown",
+          "suppressed": false
+        },
+        {
+          "index": 10,
+          "instance": "7096cf144da94021962d4f7067f3774d",
+          "response_protected": false,
+          "relation": "unknown",
+          "suppressed": false
+        },
+        {
+          "index": 12,
+          "instance": "3cc4c5206ca04ea7812313a55cbc0d1e",
+          "response_protected": false,
+          "relation": "separated_observed_route",
+          "suppressed": true
+        },
+        {
+          "index": 14,
+          "instance": "388e12f072534297b009d9776070c998",
+          "response_protected": false,
+          "relation": "unknown",
+          "suppressed": false
+        },
+        {
+          "index": 18,
+          "instance": "5377b08135eb4ad1af12d2573ebf2d6e",
+          "response_protected": false,
+          "relation": "unknown",
+          "suppressed": false
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0158",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0453",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0552",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0669",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0815",
+      "changes": {},
+      "decisions": []
+    },
+    {
+      "scene_name": "scene-0816",
+      "changes": {},
+      "decisions": []
+    }
+  ],
+  "sources": [
+    {
+      "path": "F:\\Scene_cluster\\logs\\human_route_v8_35_20261116.json",
+      "sha256": "89f234f4aabbc640a70fbf7aa59d1535a0802a3d04887f990ff18ddf2072dcd1"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024_report.json",
+      "sha256": "9035ce0ea61084e5c4fa1c9f195a2c73a15b29680cb423e90e3a0e5dbdb02e18"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024.json",
+      "sha256": "a80747e508464f6332d7d70dd03122118d1f0afec2a45ca2a48d7e5d7ebb07e4"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\scripts\\human_filter_v8.py",
+      "sha256": "866ed9eea2e0f6ed71ab40e5a4e932fda8ad617307c80157181d446c1993209d"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\replay_human_filter_v8_20261116.py",
+      "sha256": "abfcaac73031e945c069db12bb45ad1d102015cb57bfec6f114fd554fd800da1"
+    }
+  ]
+}

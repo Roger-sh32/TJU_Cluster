@@ -1,0 +1,805 @@
+{
+  "scope": "body intersection with heading-aligned strip, not lane occupancy or causal response",
+  "sources": [
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\crossing_v5_2_regression29_trajectory_20261013.json",
+      "sha256": "1b8723d72ed3de9f2d90fca91acf59d3716245f343bc5019326a99e972dbfc60"
+    },
+    {
+      "path": "F:\\Scene_cluster\\HDBSCAN\\tables\\human_evidence29_20261024_report.json",
+      "sha256": "9035ce0ea61084e5c4fa1c9f195a2c73a15b29680cb423e90e3a0e5dbdb02e18"
+    },
+    {
+      "path": "F:\\Scene_cluster\\logs\\inspect_partial_body_20261116.py",
+      "sha256": "90b25eccfcdd75e20adc9c75349397c50b3a5fc3daa04dd526d154fc753781e4"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_name": "scene-0002",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0007",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0011",
+      "targets": [
+        {
+          "instance": "f076581134024c35a0a45b1a930fcbe4",
+          "category": "vehicle.truck",
+          "frames": [
+            {
+              "index": 4,
+              "time": 2.0017149448394775,
+              "center_outside": true,
+              "overlap_area": 0.19729618146703673
+            },
+            {
+              "index": 5,
+              "time": 2.451270818710327,
+              "center_outside": true,
+              "overlap_area": 0.1421456134361898
+            },
+            {
+              "index": 6,
+              "time": 3.0003609657287598,
+              "center_outside": true,
+              "overlap_area": 0.011564710801862471
+            }
+          ],
+          "available_ego_future_seconds": 17.49843192100525,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 8.884122492646622,
+          "observed_net_turn": 0.30675397601632065
+        },
+        {
+          "instance": "eed5e2e84e364f5d9e86059147a7355a",
+          "category": "vehicle.truck",
+          "frames": [
+            {
+              "index": 22,
+              "time": 10.950276851654053,
+              "center_outside": true,
+              "overlap_area": 0.06981254152145248
+            },
+            {
+              "index": 23,
+              "time": 11.45071291923523,
+              "center_outside": true,
+              "overlap_area": 0.26698885727262933
+            },
+            {
+              "index": 24,
+              "time": 11.951140880584717,
+              "center_outside": true,
+              "overlap_area": 0.20017039635135522
+            },
+            {
+              "index": 25,
+              "time": 12.45100998878479,
+              "center_outside": true,
+              "overlap_area": 0.005403384443772526
+            }
+          ],
+          "available_ego_future_seconds": 8.549870014190674,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 0.9800910091848714,
+          "observed_net_turn": 0.05906730827103823
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0014",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0026",
+      "targets": [
+        {
+          "instance": "b3aed680542247009e9bb3dcd5596221",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 0,
+              "time": 0.0,
+              "center_outside": true,
+              "overlap_area": 0.6115932017123632
+            },
+            {
+              "index": 1,
+              "time": 0.5009708404541016,
+              "center_outside": true,
+              "overlap_area": 0.0006040539167987819
+            }
+          ],
+          "available_ego_future_seconds": 19.04945683479309,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 0.9965380653914693,
+          "observed_net_turn": 0.0037853568563234186
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0030",
+      "targets": [
+        {
+          "instance": "4bcbde94a9884756aa02d3097d84e3d7",
+          "category": "vehicle.motorcycle",
+          "frames": [
+            {
+              "index": 8,
+              "time": 3.898376941680908,
+              "center_outside": true,
+              "overlap_area": 0.90785911781593
+            },
+            {
+              "index": 9,
+              "time": 4.398782968521118,
+              "center_outside": false,
+              "overlap_area": 1.9788209157037604
+            },
+            {
+              "index": 10,
+              "time": 4.8986570835113525,
+              "center_outside": false,
+              "overlap_area": 1.9839269999999996
+            },
+            {
+              "index": 11,
+              "time": 5.39909815788269,
+              "center_outside": false,
+              "overlap_area": 1.9839269999999956
+            },
+            {
+              "index": 12,
+              "time": 5.898959159851074,
+              "center_outside": false,
+              "overlap_area": 1.9839269999999993
+            },
+            {
+              "index": 13,
+              "time": 6.39830207824707,
+              "center_outside": false,
+              "overlap_area": 1.983927000000002
+            },
+            {
+              "index": 14,
+              "time": 6.898728132247925,
+              "center_outside": false,
+              "overlap_area": 1.7306725740169722
+            },
+            {
+              "index": 15,
+              "time": 7.398606061935425,
+              "center_outside": true,
+              "overlap_area": 0.8519478574650956
+            },
+            {
+              "index": 16,
+              "time": 7.898460149765015,
+              "center_outside": true,
+              "overlap_area": 0.15828685658418748
+            },
+            {
+              "index": 17,
+              "time": 8.398890018463135,
+              "center_outside": true,
+              "overlap_area": 0.05335431492703657
+            },
+            {
+              "index": 18,
+              "time": 8.898975133895874,
+              "center_outside": true,
+              "overlap_area": 0.006014291009260576
+            }
+          ],
+          "available_ego_future_seconds": 15.600106000900269,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 11.899628787672384,
+          "observed_net_turn": 0.25007936576355005
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0032",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0042",
+      "targets": [
+        {
+          "instance": "9a40b6773c3b459d8e68859e1205b851",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 0,
+              "time": 0.0,
+              "center_outside": true,
+              "overlap_area": 0.023226938596896028
+            },
+            {
+              "index": 1,
+              "time": 0.4993469715118408,
+              "center_outside": true,
+              "overlap_area": 0.31633441646060284
+            }
+          ],
+          "available_ego_future_seconds": 19.500123977661133,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 0.5344884305513986,
+          "observed_net_turn": 0.010265728623697346
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0053",
+      "targets": [
+        {
+          "instance": "9e27b8dee97e4f2faac9947aadb20f43",
+          "category": "vehicle.bicycle",
+          "frames": [
+            {
+              "index": 22,
+              "time": 11.150995016098022,
+              "center_outside": true,
+              "overlap_area": 0.08226129183792907
+            },
+            {
+              "index": 23,
+              "time": 11.65087080001831,
+              "center_outside": false,
+              "overlap_area": 0.8271250000000046
+            },
+            {
+              "index": 24,
+              "time": 12.100979804992676,
+              "center_outside": false,
+              "overlap_area": 0.8271250000000012
+            },
+            {
+              "index": 25,
+              "time": 12.65063190460205,
+              "center_outside": false,
+              "overlap_area": 0.5639029880078513
+            },
+            {
+              "index": 26,
+              "time": 13.150499820709229,
+              "center_outside": true,
+              "overlap_area": 0.018877469533865834
+            }
+          ],
+          "available_ego_future_seconds": 8.099217891693115,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 20.51264109230106,
+          "observed_net_turn": 0.24659598608489253
+        },
+        {
+          "instance": "2ce9d79dd19544cdba6856342fe65021",
+          "category": "vehicle.bicycle",
+          "frames": [
+            {
+              "index": 15,
+              "time": 7.649115800857544,
+              "center_outside": false,
+              "overlap_area": 1.0325279999999972
+            },
+            {
+              "index": 16,
+              "time": 8.148984909057617,
+              "center_outside": false,
+              "overlap_area": 1.032528
+            },
+            {
+              "index": 17,
+              "time": 8.599634885787964,
+              "center_outside": false,
+              "overlap_area": 1.022882630310412
+            },
+            {
+              "index": 18,
+              "time": 9.100064992904663,
+              "center_outside": true,
+              "overlap_area": 8.643017771994375e-05
+            }
+          ],
+          "available_ego_future_seconds": 11.601097106933594,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 31.742213677430698,
+          "observed_net_turn": 0.4471076494284125
+        },
+        {
+          "instance": "8259bd12edcc4b89970c493b79bffff7",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 24,
+              "time": 12.100979804992676,
+              "center_outside": true,
+              "overlap_area": 0.6914744191722257
+            },
+            {
+              "index": 25,
+              "time": 12.65063190460205,
+              "center_outside": false,
+              "overlap_area": 6.341466835643113
+            },
+            {
+              "index": 26,
+              "time": 13.150499820709229,
+              "center_outside": false,
+              "overlap_area": 5.733749587758548
+            },
+            {
+              "index": 27,
+              "time": 13.751015901565552,
+              "center_outside": true,
+              "overlap_area": 0.5555957877960733
+            }
+          ],
+          "available_ego_future_seconds": 7.149233102798462,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 14.256803742821512,
+          "observed_net_turn": 0.178458325766643
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0055",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0056",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0067",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0068",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0073",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0074",
+      "targets": [
+        {
+          "instance": "0d88f23ea99c47dfa81f6469557f3850",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 19,
+              "time": 9.250463008880615,
+              "center_outside": true,
+              "overlap_area": 2.4784893979492715
+            }
+          ],
+          "available_ego_future_seconds": 9.899657011032104,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 62.711784633369845,
+          "observed_net_turn": 1.1849516266993565
+        },
+        {
+          "instance": "e9812b5900c842a3b02f65182df2ef95",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 21,
+              "time": 10.250216960906982,
+              "center_outside": false,
+              "overlap_area": 6.602852404099014
+            }
+          ],
+          "available_ego_future_seconds": 8.899903059005737,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 44.00490836055051,
+          "observed_net_turn": 0.7603356164847991
+        },
+        {
+          "instance": "698274afaabd4874a9d6ab422f88b155",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 20,
+              "time": 9.751086950302124,
+              "center_outside": false,
+              "overlap_area": 7.206782098045249
+            }
+          ],
+          "available_ego_future_seconds": 9.399033069610596,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 54.48182627779405,
+          "observed_net_turn": 0.974216789227641
+        },
+        {
+          "instance": "0a54202f1a86443c82f16328cd696c5a",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 21,
+              "time": 10.250216960906982,
+              "center_outside": false,
+              "overlap_area": 3.953332946520354
+            }
+          ],
+          "available_ego_future_seconds": 8.899903059005737,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 44.00490836055051,
+          "observed_net_turn": 0.7603356164847991
+        },
+        {
+          "instance": "35eae769229e4e81b29687b26680d4da",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 20,
+              "time": 9.751086950302124,
+              "center_outside": false,
+              "overlap_area": 4.068755366515107
+            }
+          ],
+          "available_ego_future_seconds": 9.399033069610596,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 54.48182627779405,
+          "observed_net_turn": 0.974216789227641
+        },
+        {
+          "instance": "54d525d50f774373a6831becd43b653c",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 22,
+              "time": 10.750117063522339,
+              "center_outside": true,
+              "overlap_area": 0.3108265280773656
+            }
+          ],
+          "available_ego_future_seconds": 8.40000295639038,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 33.97918984188127,
+          "observed_net_turn": 0.5809228223239284
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0093",
+      "targets": [
+        {
+          "instance": "dc75fc9e05da4c66a593611dfb3cbfc7",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 1,
+              "time": 0.4998898506164551,
+              "center_outside": true,
+              "overlap_area": 2.3265476221050276
+            }
+          ],
+          "available_ego_future_seconds": 18.59994912147522,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 54.243724779621466,
+          "observed_net_turn": 1.481120628600989
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0097",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0102",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0103",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0107",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0109",
+      "targets": [
+        {
+          "instance": "9835d8a1f11c45c6aaf64f2ced3f04fd",
+          "category": "vehicle.trailer",
+          "frames": [
+            {
+              "index": 16,
+              "time": 7.901241064071655,
+              "center_outside": false,
+              "overlap_area": 11.282312216391166
+            }
+          ],
+          "available_ego_future_seconds": 11.499924898147583,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 20.547603261194332,
+          "observed_net_turn": 0.09092588351035369
+        },
+        {
+          "instance": "ce8780bfacba42c980ff57893b28541f",
+          "category": "vehicle.construction",
+          "frames": [
+            {
+              "index": 12,
+              "time": 5.900624990463257,
+              "center_outside": false,
+              "overlap_area": 6.856665999999988
+            },
+            {
+              "index": 21,
+              "time": 10.350851058959961,
+              "center_outside": false,
+              "overlap_area": 6.856666000000013
+            },
+            {
+              "index": 22,
+              "time": 10.900488138198853,
+              "center_outside": true,
+              "overlap_area": 0.0024690596925378604
+            }
+          ],
+          "available_ego_future_seconds": 13.500540971755981,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 7.2991327351553,
+          "observed_net_turn": 0.20635244362131078
+        },
+        {
+          "instance": "34242b5f38cd4ed2a6fc7f9131ba47d1",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 25,
+              "time": 12.500784158706665,
+              "center_outside": false,
+              "overlap_area": 5.598498626072427
+            },
+            {
+              "index": 26,
+              "time": 13.004970073699951,
+              "center_outside": false,
+              "overlap_area": 4.178414343029989
+            },
+            {
+              "index": 27,
+              "time": 13.500545978546143,
+              "center_outside": true,
+              "overlap_area": 2.8850519992834673
+            },
+            {
+              "index": 28,
+              "time": 14.000422954559326,
+              "center_outside": true,
+              "overlap_area": 2.5666624579851023
+            },
+            {
+              "index": 29,
+              "time": 14.500856161117554,
+              "center_outside": false,
+              "overlap_area": 5.1737501698601385
+            }
+          ],
+          "available_ego_future_seconds": 6.900381803512573,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 12.008461859329753,
+          "observed_net_turn": 0.4740131057231911
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0122",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0151",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0158",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0453",
+      "targets": [
+        {
+          "instance": "34538db642ae4e1fa6ad4c61ea6bf8be",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 4,
+              "time": 1.9978249073028564,
+              "center_outside": true,
+              "overlap_area": 1.7022163644236854
+            }
+          ],
+          "available_ego_future_seconds": 17.900458097457886,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 9.355422369924012,
+          "observed_net_turn": 0.5133253766546995
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0552",
+      "targets": [
+        {
+          "instance": "07e9396834cb433ea84ebaa6fa58195d",
+          "category": "vehicle.trailer",
+          "frames": [
+            {
+              "index": 32,
+              "time": 15.900949001312256,
+              "center_outside": true,
+              "overlap_area": 0.03935752911079614
+            },
+            {
+              "index": 33,
+              "time": 16.401369094848633,
+              "center_outside": false,
+              "overlap_area": 39.236315999999995
+            },
+            {
+              "index": 34,
+              "time": 16.901239156723022,
+              "center_outside": true,
+              "overlap_area": 17.637794021316548
+            },
+            {
+              "index": 35,
+              "time": 17.401111125946045,
+              "center_outside": true,
+              "overlap_area": 4.739458630670076
+            },
+            {
+              "index": 36,
+              "time": 17.900452136993408,
+              "center_outside": true,
+              "overlap_area": 1.1111087128037855
+            },
+            {
+              "index": 37,
+              "time": 18.399778127670288,
+              "center_outside": true,
+              "overlap_area": 0.0023456262251159115
+            }
+          ],
+          "available_ego_future_seconds": 3.9475619792938232,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 4.271754950199751,
+          "observed_net_turn": 0.250531720308729
+        },
+        {
+          "instance": "88d91f55ae214473ae529bd01ab004be",
+          "category": "vehicle.truck",
+          "frames": [
+            {
+              "index": 33,
+              "time": 16.401369094848633,
+              "center_outside": false,
+              "overlap_area": 17.019135
+            },
+            {
+              "index": 34,
+              "time": 16.901239156723022,
+              "center_outside": true,
+              "overlap_area": 5.752005926380268
+            }
+          ],
+          "available_ego_future_seconds": 3.4471418857574463,
+          "ten_second_future_available": false,
+          "observed_lateral_shift": 2.118125394958779,
+          "observed_net_turn": 0.15979419599327851
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0669",
+      "targets": [
+        {
+          "instance": "389fee9eb8fd493d8dd40bb61d6c2b33",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 0,
+              "time": 0.0,
+              "center_outside": false,
+              "overlap_area": 9.035012593321962
+            },
+            {
+              "index": 1,
+              "time": 0.49948716163635254,
+              "center_outside": false,
+              "overlap_area": 8.693051243150222
+            },
+            {
+              "index": 2,
+              "time": 0.9993300437927246,
+              "center_outside": true,
+              "overlap_area": 4.395253116745595
+            }
+          ],
+          "available_ego_future_seconds": 19.64792513847351,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 37.27792169951135,
+          "observed_net_turn": 1.4793734728467272
+        },
+        {
+          "instance": "a036b065e01d4379b954043432ddbdb2",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 0,
+              "time": 0.0,
+              "center_outside": true,
+              "overlap_area": 0.15908325832206507
+            },
+            {
+              "index": 1,
+              "time": 0.49948716163635254,
+              "center_outside": true,
+              "overlap_area": 0.00013205938232966008
+            }
+          ],
+          "available_ego_future_seconds": 19.64792513847351,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 37.27792169951135,
+          "observed_net_turn": 1.4793734728467272
+        }
+      ]
+    },
+    {
+      "scene_name": "scene-0815",
+      "targets": []
+    },
+    {
+      "scene_name": "scene-0816",
+      "targets": [
+        {
+          "instance": "110e63a704e24e31888e0903ba5c875a",
+          "category": "vehicle.trailer",
+          "frames": [
+            {
+              "index": 17,
+              "time": 8.501252889633179,
+              "center_outside": true,
+              "overlap_area": 1.4909997281336
+            },
+            {
+              "index": 18,
+              "time": 9.001681089401245,
+              "center_outside": true,
+              "overlap_area": 0.0006837006291982172
+            }
+          ],
+          "available_ego_future_seconds": 11.250543117523193,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 19.43585870613341,
+          "observed_net_turn": 0.7668139416255602
+        },
+        {
+          "instance": "b37cc5efee0f495d8118b1657582900a",
+          "category": "vehicle.car",
+          "frames": [
+            {
+              "index": 14,
+              "time": 6.999957084655762,
+              "center_outside": true,
+              "overlap_area": 1.8289502945129616
+            }
+          ],
+          "available_ego_future_seconds": 12.75183892250061,
+          "ten_second_future_available": true,
+          "observed_lateral_shift": 35.23863581496887,
+          "observed_net_turn": 1.1371261197708384
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "scope": "official arXiv acquisition with existing explicit CA; TLS verification enabled",
+  "ca_path": "D:\\Python\\Conda\\envs\\autodrive-cluster\\lib\\site-packages\\certifi\\cacert.pem",
+  "ca_sha256": "9102e6a3644a071ba6cdbd4a53698f291c4a64b18450a08bc046548b6db5cc8b",
+  "verify_mode": 2,
+  "check_hostname": true,
+  "records": [
+    {
+      "url": "https://arxiv.org/abs/1802.03426v3",
+      "started_at_utc": "2026-10-27T11:52:54.778337+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1802.03426v3",
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "41013",
+        "x-cloud-trace-context": "d71de22b6b68b839396fd47ba31bccc5",
+        "server": "Google Frontend",
+        "content-security-policy": "frame-ancestors 'none'",
+        "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+        "content-type": "text/html; charset=utf-8",
+        "x-frame-options": "SAMEORIGIN",
+        "last-modified": "Mon, 24 Aug 2026 20:22:41 GMT",
+        "cache-control": "max-age=3600",
+        "Accept-Ranges": "bytes",
+        "Age": "589596",
+        "Date": "Tue, 27 Oct 2026 11:52:56 GMT",
+        "X-Served-By": "cache-lga-kjfk8660056-LGA, cache-lga-kjfk8660056-LGA, cache-lga-kjfk8660021-LGA, cache-nrt-rjtt7900026-NRT",
+        "X-Cache": "MISS, HIT, HIT",
+        "X-Timer": "S1793101976.050648,VS0,VE1"
+      },
+      "path": "knowledge/sources/参考文献/UMAP原理核验_20261027/explicit_certifi_ca/arxiv_v3.html",
+      "bytes": 41013,
+      "sha256": "8909f30086175ca3bbe15bb40415b5ed3576f5f12275554d97e73eb5132384e9",
+      "pdf_magic": false,
+      "accepted": true,
+      "finished_at_utc": "2026-10-27T11:52:56.091627+00:00"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1802.03426v3",
+      "started_at_utc": "2026-10-27T11:52:59.297025+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/1802.03426v3",
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "7880321",
+        "content-disposition": "inline; filename=\"1802.03426v3.pdf\"",
+        "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+        "last-modified": "Sun, 22 Jan 2023 20:32:07 GMT",
+        "etag": "\"sha256:694648f8b53b35a53ba80d18ddee8f7cb96e35d56bd292bb3d3241692b355d1a\"",
+        "content-type": "application/pdf",
+        "server": "Google Frontend",
+        "link": "<https://arxiv.org/pdf/1802.03426>; rel='canonical'",
+        "x-cloud-trace-context": "a720fdfca8963291f112db4a019664bf",
+        "access-control-allow-origin": "*",
+        "Accept-Ranges": "bytes",
+        "Age": "108016",
+        "Date": "Tue, 27 Oct 2026 11:53:14 GMT",
+        "X-Served-By": "cache-lga-kjfk8660025-LGA, cache-lga-kjfk8660025-LGA, cache-lga-kjfk8660025-LGA, cache-nrt-rjtt7900049-NRT",
+        "X-Cache": "MISS, HIT, HIT",
+        "X-Timer": "S1793101994.167174,VS0,VE1"
+      },
+      "path": "knowledge/sources/参考文献/UMAP原理核验_20261027/explicit_certifi_ca/UMAP_1802.03426v3.pdf",
+      "bytes": 7880321,
+      "sha256": "45ca6cfcd08d5808ab20b5cf53364d2b2d5ab19dca95a594f54af515a15421c3",
+      "pdf_magic": true,
+      "accepted": true,
+      "finished_at_utc": "2026-10-27T11:53:53.728999+00:00"
+    }
+  ]
+}
